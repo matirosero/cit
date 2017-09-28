@@ -19,6 +19,8 @@ wp-content/*
 
 wp-content/plugins/*
 
+wp-content/mu-plugins/*
+
 wp-content/themes/*
 !wp-content/themes/cit-2017/
 
