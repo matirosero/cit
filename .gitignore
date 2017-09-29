@@ -22,6 +22,6 @@ wp-content/plugins/*
 wp-content/mu-plugins/*
 
 wp-content/themes/*
-!wp-content/themes/cit-2017/
+!wp-content/themes/JointsCIT/
 
 wp-content/languages/*
