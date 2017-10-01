@@ -12,7 +12,7 @@ CSS file.
 @import "base/variables";
 
 // Import custom mixins
-@import "mixins";
+@import "base/mixins";
 
 // Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
 @import "settings";
@@ -67,7 +67,13 @@ CSS file.
   @include foundation-float-classes;
 
 // Import your custom styles
-@import "main";
+@import "main/main";
+
+// Import Foundation style tweaks
+@import "foundation/foundation";
+
+// Import your plugin styles
+@import "plugins/plugins";
 
 // Import your retina/HD styles
 @import "2x";
