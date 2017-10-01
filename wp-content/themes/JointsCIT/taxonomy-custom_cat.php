@@ -17,11 +17,11 @@ taxonomy-shoes.php
 
 <div id="container" class="row expand">
 
-	<div id="sidebar-menu" class="large-2 columns">
+	<div id="sidebar-menu" class="medium-3 large-2 columns hide-for-small-only">
 		Side menu hi
 	</div><!-- end #sidebar-menu -->
 
-	<div id="content">
+	<div id="content" class="medium-9 large-10 columns">
 
 		<div id="inner-content" class="row">
 
