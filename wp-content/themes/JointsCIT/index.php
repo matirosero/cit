@@ -4,7 +4,7 @@
 
 	<div id="sidebar-menu" class="large-2 columns">
 		Side menu hi
-	</div>
+	</div><!-- end #sidebar-menu -->
 
 	<div id="content" class="large-10 columns">
 
@@ -35,6 +35,6 @@
 
 	</div> <!-- end #content -->
 
-</div><!-- .row -->
+</div><!-- end #container -->
 
 <?php get_footer(); ?>

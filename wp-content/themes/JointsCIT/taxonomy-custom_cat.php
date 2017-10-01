@@ -14,38 +14,46 @@ taxonomy-shoes.php
 ?>
 
 <?php get_header(); ?>
-			
-<div id="content">
 
-	<div id="inner-content" class="row">
+<div id="container" class="row expand">
 
-	    <main id="main" class="large-8 medium-8 columns first" role="main">
-	
-		    <header>
-		    	<h1 class="page-title"><span><?php _e( 'Posts Categorized:', 'jointswp' ); ?></span> <?php single_cat_title(); ?></h1>
-		    </header>
+	<div id="sidebar-menu" class="large-2 columns">
+		Side menu hi
+	</div><!-- end #sidebar-menu -->
 
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		 
-				<!-- To see additional archive styles, visit the /parts directory -->
-				<?php get_template_part( 'parts/loop', 'archive' ); ?>
-			    
-			<?php endwhile; ?>	
+	<div id="content">
 
-				<?php joints_page_navi(); ?>
-				
-			<?php else : ?>
-										
-				<?php get_template_part( 'parts/content', 'missing' ); ?>
-					
-			<?php endif; ?>
+		<div id="inner-content" class="row">
 
-	    </main> <!-- end #main -->
+		    <main id="main" class="large-8 medium-8 columns first" role="main">
 
-	    <?php get_sidebar(); ?>
-	    
-	</div> <!-- end #inner-content -->
+			    <header>
+			    	<h1 class="page-title"><span><?php _e( 'Posts Categorized:', 'jointswp' ); ?></span> <?php single_cat_title(); ?></h1>
+			    </header>
 
-</div> <!-- end #content -->
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+					<!-- To see additional archive styles, visit the /parts directory -->
+					<?php get_template_part( 'parts/loop', 'archive' ); ?>
+
+				<?php endwhile; ?>
+
+					<?php joints_page_navi(); ?>
+
+				<?php else : ?>
+
+					<?php get_template_part( 'parts/content', 'missing' ); ?>
+
+				<?php endif; ?>
+
+		    </main> <!-- end #main -->
+
+		    <?php get_sidebar(); ?>
+
+		</div> <!-- end #inner-content -->
+
+	</div> <!-- end #content -->
+
+</div><!-- end #container -->
 
 <?php get_footer(); ?>
