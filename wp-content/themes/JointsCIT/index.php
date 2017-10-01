@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="row expand">
+<div id="container" class="row expand">
 
-	<div id="side-menu" class="large-2 columns">
+	<div id="sidebar-menu" class="large-2 columns">
 		Side menu hi
 	</div>
 
