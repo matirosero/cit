@@ -8,4 +8,11 @@ a, a:visited {
 		//Highlight links on iOS, Similar to :hover for mobile devices.
 		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
 	}
+
+	.entry-title & {
+		color: $black;
+		@include hover {
+			color: color('blue', 'base');
+		}
+	}
 }

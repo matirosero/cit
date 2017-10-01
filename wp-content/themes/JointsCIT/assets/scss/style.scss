@@ -14,6 +14,10 @@ CSS file.
 // Import custom mixins
 @import "base/mixins";
 
+// Import mixins
+// Heisenberg theme
+@import "base/utilities";
+
 // Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
 @import "settings";
 

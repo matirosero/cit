@@ -105,4 +105,13 @@ CSS3 GRADIENTS.
 	background-image: linear-gradient(to bottom, $from, $to);
 }
 
+/*********************
+TYPOGRAPHY
+*********************/
 
+@mixin navigation-type-style($size:14px) {
+  font-family: $sans-family;
+  font-size: $size;
+  font-weight: 400;
+  text-transform: uppercase;
+}

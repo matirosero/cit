@@ -13,7 +13,21 @@ var gulp  = require('gulp'),
     plumber = require('gulp-plumber'),
     bower = require('gulp-bower'),
     babel = require('gulp-babel'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    cache       = require('gulp-cache'),
+    imagemin = require('gulp-imagemin');
+
+
+// Optimize images
+gulp.task('optimize-images', function(){
+  return gulp.src('./assets/images-src/raster/**/*.+(png|jpg|gif)')
+  // Caching images that ran through imagemin
+  .pipe(cache(imagemin({
+      interlaced: true
+    })))
+  .pipe(gulp.dest('./assets/images'))
+});
+
 
 // Compile Sass, Autoprefix and minify
 gulp.task('styles', function() {
@@ -34,14 +48,14 @@ gulp.task('styles', function() {
         .pipe(sourcemaps.write('.')) // Creates sourcemaps for minified styles
         .pipe(gulp.dest('./assets/css/'))
 });
-    
+
 // JSHint, concat, and minify JavaScript
 gulp.task('site-js', function() {
-  return gulp.src([	
-	  
+  return gulp.src([
+
            // Grab your custom scripts
   		  './assets/js/scripts/*.js'
-  		  
+
   ])
     .pipe(plumber())
     .pipe(sourcemaps.init())
@@ -53,16 +67,16 @@ gulp.task('site-js', function() {
     .pipe(uglify())
     .pipe(sourcemaps.write('.')) // Creates sourcemap for minified JS
     .pipe(gulp.dest('./assets/js'))
-});    
+});
 
 // JSHint, concat, and minify Foundation JavaScript
 gulp.task('foundation-js', function() {
-  return gulp.src([	
-  		  
+  return gulp.src([
+
   		  // Foundation core - needed if you want to use any of the components below
           './vendor/foundation-sites/js/foundation.core.js',
           './vendor/foundation-sites/js/foundation.util.*.js',
-          
+
           // Pick the components you need in your project
           './vendor/foundation-sites/js/foundation.abide.js',
           './vendor/foundation-sites/js/foundation.accordion.js',
@@ -95,19 +109,19 @@ gulp.task('foundation-js', function() {
     .pipe(uglify())
     .pipe(sourcemaps.write('.')) // Creates sourcemap for minified Foundation JS
     .pipe(gulp.dest('./assets/js'))
-}); 
+});
 
 // Update Foundation with Bower and save to /vendor
 gulp.task('bower', function() {
   return bower({ cmd: 'update'})
     .pipe(gulp.dest('vendor/'))
-});  
+});
 
 // Browser-Sync watch files and inject changes
 gulp.task('browsersync', function() {
     // Watch files
     var files = [
-    	'./assets/css/*.css', 
+    	'./assets/css/*.css',
     	'./assets/js/*.js',
     	'**/*.php',
     	'assets/images/**/*.{png,jpg,gif,svg,webp}',
@@ -117,8 +131,9 @@ gulp.task('browsersync', function() {
 	    // Replace with URL of your local site
 	    proxy: "http://cit.dev/",
     });
-    
+
     gulp.watch('./assets/scss/**/*.scss', ['styles']);
+    gulp.watch('./assets/images-src/raster/**/*.+(png|jpg|gif)', ['optimize-images']);
     gulp.watch('./assets/js/scripts/*.js', ['site-js']).on('change', browserSync.reload);
 
 });
@@ -129,15 +144,17 @@ gulp.task('watch', function() {
   // Watch .scss files
   gulp.watch('./assets/scss/**/*.scss', ['styles']);
 
+  gulp.watch('./assets/images-src/raster/**/*.+(png|jpg|gif)', ['optimize-images']);
+
   // Watch site-js files
   gulp.watch('./assets/js/scripts/*.js', ['site-js']);
-  
+
   // Watch foundation-js files
   gulp.watch('./vendor/foundation-sites/js/*.js', ['foundation-js']);
 
-}); 
+});
 
 // Run styles, site-js and foundation-js
 gulp.task('default', function() {
-  gulp.start('styles', 'site-js', 'foundation-js');
+  gulp.start('styles', 'optimize-images', 'site-js', 'foundation-js');
 });

@@ -433,8 +433,8 @@ $meter-fill-bad: $alert-color;
 
 $offcanvas-size: 250px;
 $offcanvas-vertical-size: 250px;
-$offcanvas-background: $light-gray;
-$offcanvas-shadow: 0 0 10px rgba($black, 0.7);
+$offcanvas-background: $white;
+$offcanvas-shadow: 0 0 10px rgba($black, 0.2);
 $offcanvas-push-zindex: 1;
 $offcanvas-overlap-zindex: 10;
 $offcanvas-reveal-zindex: 1;
@@ -612,8 +612,8 @@ $tooltip-radius: $global-radius;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-padding: 0;
+$topbar-background: color('grey', 'light');//$light-gray;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.45rem 1rem 0 1rem;
 $topbar-input-width: 200px;

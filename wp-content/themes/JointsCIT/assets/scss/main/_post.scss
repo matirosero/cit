@@ -3,7 +3,11 @@ POSTS & CONTENT STYLES
 *********************/
 #content {
 	#inner-content {
-		padding: 1rem 0rem;
+		// padding: 1rem 0rem;
+		background-color: color('grey', 'light');
+	}
+	#main {
+		background-color: $white;
 	}
 }
 

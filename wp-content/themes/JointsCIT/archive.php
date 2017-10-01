@@ -2,15 +2,13 @@
 
 <div id="container" class="row expand">
 
-	<div id="sidebar-menu" class="medium-3 large-2 columns hide-for-small-only">
-		Side menu hi
-	</div><!-- end #sidebar-menu -->
+	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
 	<div id="content" class="medium-9 large-10 columns">
 
 		<div id="inner-content" class="row">
 
-		    <main id="main" class="large-8 medium-8 columns" role="main">
+		    <main id="main" class="large-8 columns" role="main">
 
 		    	<header>
 		    		<h1 class="page-title"><?php the_archive_title();?></h1>

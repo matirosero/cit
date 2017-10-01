@@ -2,8 +2,12 @@
 NAVIGATION STYLES
 *********************/
 .top-bar {
+	
 	.title-area {
 		z-index: 1;
+		ul {
+			background-color: $white;
+		}
 	}
 }
 
@@ -19,4 +23,8 @@ NAVIGATION STYLES
 			margin-left: 20px;
 		}
 	}
+}
+
+.menu {
+	@include navigation-type-style;
 }

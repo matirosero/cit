@@ -60,6 +60,14 @@ span.amp {
 CSS3 GRADIENTS.
 *********************/
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+TYPOGRAPHY
+*********************/
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
 /**
  * Foundation for Sites by ZURB
  * Version 6.3.1
@@ -3364,13 +3372,13 @@ select {
   z-index: 1;
   transition: transform 0.5s ease;
   backface-visibility: hidden;
-  background: #e6e6e6; }
+  background: #fefefe; }
   [data-whatinput='mouse'] .off-canvas {
     outline: 0; }
   .off-canvas.is-transition-overlap {
     z-index: 10; }
     .off-canvas.is-transition-overlap.is-open {
-      box-shadow: 0 0 10px rgba(74, 74, 74, 0.7); }
+      box-shadow: 0 0 10px rgba(74, 74, 74, 0.2); }
   .off-canvas.is-open {
     transform: translate(0, 0); }
 
@@ -3379,13 +3387,13 @@ select {
   z-index: 1;
   transition: transform 0.5s ease;
   backface-visibility: hidden;
-  background: #e6e6e6; }
+  background: #fefefe; }
   [data-whatinput='mouse'] .off-canvas-absolute {
     outline: 0; }
   .off-canvas-absolute.is-transition-overlap {
     z-index: 10; }
     .off-canvas-absolute.is-transition-overlap.is-open {
-      box-shadow: 0 0 10px rgba(74, 74, 74, 0.7); }
+      box-shadow: 0 0 10px rgba(74, 74, 74, 0.2); }
   .off-canvas-absolute.is-open {
     transform: translate(0, 0); }
 
@@ -3404,7 +3412,7 @@ select {
     right: 0;
     height: 100%;
     width: 1px;
-    box-shadow: 0 0 10px rgba(74, 74, 74, 0.7);
+    box-shadow: 0 0 10px rgba(74, 74, 74, 0.2);
     content: " "; }
   .position-left.is-transition-overlap.is-open ~ .off-canvas-content {
     transform: none; }
@@ -3424,7 +3432,7 @@ select {
     left: 0;
     height: 100%;
     width: 1px;
-    box-shadow: 0 0 10px rgba(74, 74, 74, 0.7);
+    box-shadow: 0 0 10px rgba(74, 74, 74, 0.2);
     content: " "; }
   .position-right.is-transition-overlap.is-open ~ .off-canvas-content {
     transform: none; }
@@ -3444,7 +3452,7 @@ select {
     left: 0;
     height: 1px;
     width: 100%;
-    box-shadow: 0 0 10px rgba(74, 74, 74, 0.7);
+    box-shadow: 0 0 10px rgba(74, 74, 74, 0.2);
     content: " "; }
   .position-top.is-transition-overlap.is-open ~ .off-canvas-content {
     transform: none; }
@@ -3464,7 +3472,7 @@ select {
     left: 0;
     height: 1px;
     width: 100%;
-    box-shadow: 0 0 10px rgba(74, 74, 74, 0.7);
+    box-shadow: 0 0 10px rgba(74, 74, 74, 0.2);
     content: " "; }
   .position-bottom.is-transition-overlap.is-open ~ .off-canvas-content {
     transform: none; }
@@ -4220,7 +4228,7 @@ a.thumbnail {
     transform: translateY(-50%); }
 
 .top-bar {
-  padding: 0.5rem; }
+  padding: 0; }
   .top-bar::before, .top-bar::after {
     display: table;
     content: ' '; }
@@ -4228,7 +4236,7 @@ a.thumbnail {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #F5F5F5; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
@@ -4386,6 +4394,11 @@ LINK STYLES
 a:link, a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
+.entry-title a, .entry-title a:visited {
+  color: #4A4A4A; }
+  .entry-title a:active, .entry-title a:focus, .entry-title a:hover, .entry-title a:visited:active, .entry-title a:visited:focus, .entry-title a:visited:hover {
+    color: #006CB5; }
+
 /*********************
 LINK Typography
 *********************/
@@ -4412,6 +4425,8 @@ NAVIGATION STYLES
 *********************/
 .top-bar .title-area {
   z-index: 1; }
+  .top-bar .title-area ul {
+    background-color: #fefefe; }
 
 .off-canvas-list ul {
   margin-left: 0; }
@@ -4420,6 +4435,12 @@ NAVIGATION STYLES
   .off-canvas-list ul .dropdown {
     margin-left: 20px; }
 
+.menu {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -4427,7 +4448,10 @@ POSTS & CONTENT STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content #inner-content {
-  padding: 1rem 0rem; }
+  background-color: #F5F5F5; }
+
+#content #main {
+  background-color: #fefefe; }
 
 .page-title .vcard {
   border: 0px;
