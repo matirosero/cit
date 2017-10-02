@@ -14,5 +14,8 @@
 	#main {
 
 		// background-color: $white;
+		@include breakpoint(large) {
+			@include grid-column($columns: 66.66667%, $gutters:100px);
+		}
 	}
 }

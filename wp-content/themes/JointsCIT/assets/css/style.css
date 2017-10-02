@@ -4422,6 +4422,15 @@ LINK Layout
     border-left: 5px solid #D8D8D8;
     z-index: -1; } }
 
+@media print, screen and (min-width: 64em) {
+  #content #main {
+    width: 66.66667%;
+    float: left;
+    padding-right: 2.84091rem;
+    padding-left: 2.84091rem; }
+    #content #main:last-child:not(:first-child) {
+      float: right; } }
+
 /*********************
 HEADER STYLES
 *********************/
