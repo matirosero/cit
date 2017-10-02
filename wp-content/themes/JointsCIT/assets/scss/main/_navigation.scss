@@ -2,11 +2,72 @@
 NAVIGATION STYLES
 *********************/
 .top-bar {
-	
+
+	height: topbar-height('small');
+
+	a {
+		color: $black;
+		@include hover {
+			color: color( 'blue', 'base' );
+		}
+	}
+
 	.title-area {
-		z-index: 1;
+
 		ul {
 			background-color: $white;
+			
+
+			// border-left: 5px solid color( 'blue', 'base' );
+			li {
+
+			}
+		}
+
+		.site-logo {
+			display: block;
+			text-align: center;
+			margin: 0;
+
+			img {
+				display: inline-block;
+				margin: 0;
+			}
+		}
+	}
+
+	@include breakpoint(small only) {
+		background-color: $white;
+
+		.title-area {
+			width: 130px;
+			position: absolute;
+			left: 50%;
+			margin-left: -65px
+		}
+	}
+
+	@include breakpoint(medium) {
+		height: topbar-height('medium');
+
+		.title-area {
+			ul {
+				@include site-border($z:1, $height: topbar-height('medium') );
+				height: topbar-height('medium');
+			}
+			.site-logo {
+				width: 25vw;
+			}
+		}
+	}
+
+	@include breakpoint(large) {
+		// height: topbar-height('large');
+
+		.title-area {
+			.site-logo {
+				width: 16.66667vw;
+			}
 		}
 	}
 }
@@ -27,4 +88,37 @@ NAVIGATION STYLES
 
 .menu {
 	@include navigation-type-style;
+}
+
+.topbar-site-logo {
+
+}
+
+#sidebar-menu {
+	// @include site-border;
+	// background-color: blue;
+	> .menu {
+	border-left: 5px solid color( 'blue', 'base' );
+
+		li {
+			// @include site-border($color: color( 'blue', 'base' ), $z:1, $height: 50.63px );
+			@include hover {
+				// background-color: color('blue', 'base');
+				// border-left: 5px solid color( 'orange', 'base' );
+				// @include site-border($z:1, $height: topbar-height('medium') );
+			}
+		}
+
+		> li {
+
+			> a {
+				line-height: 1.5rem;
+				@include hover {
+					// background-color: color('blue', 'base');
+					// border-left: 5px solid color( 'orange', 'base' );
+					// @include site-border($z:1, $height: topbar-height('medium') );
+				}
+			}
+		}
+	}
 }

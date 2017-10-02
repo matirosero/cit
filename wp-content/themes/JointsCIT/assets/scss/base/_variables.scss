@@ -20,3 +20,19 @@ COLORS
 // $blue: #006CB5;
 // $dark-blue: #263F81;
 // $orange: #F03626;
+
+
+/*********************
+Topbar
+*********************/
+
+$topbar-height: (
+	minimal: 39px,
+	small: 90px,
+	medium: 115px,
+	large: 128px,
+);
+
+@function topbar-height($size) {
+    @return map-get($topbar-height, $size);
+}

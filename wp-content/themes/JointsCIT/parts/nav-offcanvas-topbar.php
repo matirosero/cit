@@ -4,7 +4,7 @@
 <div class="top-bar" id="top-bar-menu">
 	<div id="topbar-site-logo" class="title-area top-bar-left float-left">
 		<ul class="menu">
-			<li><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_cit.png" alt="<?php bloginfo('name'); ?>" /></a></li>
+			<li><a class="site-logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_cit.png" alt="<?php bloginfo('name'); ?>" /></a></li>
 		</ul>
 	</div>
 	<div class="top-bar-left float-left show-for-medium">

@@ -1,0 +1,18 @@
+.off-canvas-wrapper {
+  @include breakpoint(medium) {
+  	@include site-border;
+  }
+  // border-left: 5px solid color( 'grey', 'base' );
+}
+
+
+#content {
+	#inner-content {
+		// padding: 1rem 0rem;
+		// background-color: color('grey', 'light');
+	}
+	#main {
+
+		// background-color: $white;
+	}
+}

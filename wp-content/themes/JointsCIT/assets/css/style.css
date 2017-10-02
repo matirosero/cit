@@ -19,6 +19,9 @@ Fonts
 /*********************
 COLORS
 *********************/
+/*********************
+Topbar
+*********************/
 /******************************************************************
 
 Stylesheet: Mixins & Constants Stylesheet
@@ -1022,16 +1025,16 @@ pre {
     padding-right: 0;
     padding-left: 0; }
   .row .row {
-    margin-right: -0.56818rem;
-    margin-left: -0.56818rem; }
+    margin-right: -0.85227rem;
+    margin-left: -0.85227rem; }
     @media print, screen and (min-width: 40em) {
       .row .row {
-        margin-right: -0.85227rem;
-        margin-left: -0.85227rem; } }
+        margin-right: -1.13636rem;
+        margin-left: -1.13636rem; } }
     @media print, screen and (min-width: 64em) {
       .row .row {
-        margin-right: -0.85227rem;
-        margin-left: -0.85227rem; } }
+        margin-right: -1.13636rem;
+        margin-left: -1.13636rem; } }
     .row .row.collapse {
       margin-right: 0;
       margin-left: 0; }
@@ -1043,21 +1046,21 @@ pre {
   .row:not(.expanded) .row {
     max-width: none; }
   .row.gutter-small > .column, .row.gutter-small > .columns {
-    padding-right: 0.56818rem;
-    padding-left: 0.56818rem; }
-  .row.gutter-medium > .column, .row.gutter-medium > .columns {
     padding-right: 0.85227rem;
     padding-left: 0.85227rem; }
+  .row.gutter-medium > .column, .row.gutter-medium > .columns {
+    padding-right: 1.13636rem;
+    padding-left: 1.13636rem; }
 
 .column, .columns {
   width: 100%;
   float: left;
-  padding-right: 0.56818rem;
-  padding-left: 0.56818rem; }
+  padding-right: 0.85227rem;
+  padding-left: 0.85227rem; }
   @media print, screen and (min-width: 40em) {
     .column, .columns {
-      padding-right: 0.85227rem;
-      padding-left: 0.85227rem; } }
+      padding-right: 1.13636rem;
+      padding-left: 1.13636rem; } }
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
     float: right; }
   .column.end:last-child:last-child, .end.columns:last-child:last-child {
@@ -1325,8 +1328,8 @@ pre {
   margin-left: 0; }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
-  padding-right: 0.56818rem;
-  padding-left: 0.56818rem; }
+  padding-right: 0.85227rem;
+  padding-left: 0.85227rem; }
 
 .small-centered {
   margin-right: auto;
@@ -1540,8 +1543,8 @@ pre {
     margin-right: 0;
     margin-left: 0; }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-right: 0.85227rem;
-    padding-left: 0.85227rem; }
+    padding-right: 1.13636rem;
+    padding-left: 1.13636rem; }
   .medium-centered {
     margin-right: auto;
     margin-left: auto; }
@@ -1753,8 +1756,8 @@ pre {
     margin-right: 0;
     margin-left: 0; }
   .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-right: 0.85227rem;
-    padding-left: 0.85227rem; }
+    padding-right: 1.13636rem;
+    padding-left: 1.13636rem; }
   .large-centered {
     margin-right: auto;
     margin-left: auto; }
@@ -1770,12 +1773,12 @@ pre {
     margin-left: 0; } }
 
 .column-block {
-  margin-bottom: 1.13636rem; }
+  margin-bottom: 1.70455rem; }
   .column-block > :last-child {
     margin-bottom: 0; }
   @media print, screen and (min-width: 40em) {
     .column-block {
-      margin-bottom: 1.70455rem; }
+      margin-bottom: 2.27273rem; }
       .column-block > :last-child {
         margin-bottom: 0; } }
 
@@ -4409,6 +4412,17 @@ h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none; }
 
 /*********************
+LINK Layout
+*********************/
+@media print, screen and (min-width: 40em) {
+  .off-canvas-wrapper:before {
+    content: "\a0";
+    position: absolute;
+    height: 100%;
+    border-left: 5px solid #D8D8D8;
+    z-index: -1; } }
+
+/*********************
 HEADER STYLES
 *********************/
 /*********************
@@ -4423,10 +4437,45 @@ NAVIGATION STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-.top-bar .title-area {
-  z-index: 1; }
+.top-bar {
+  height: 90px; }
+  .top-bar a {
+    color: #4A4A4A; }
+    .top-bar a:active, .top-bar a:focus, .top-bar a:hover {
+      color: #006CB5; }
   .top-bar .title-area ul {
     background-color: #fefefe; }
+  .top-bar .title-area .site-logo {
+    display: block;
+    text-align: center;
+    margin: 0; }
+    .top-bar .title-area .site-logo img {
+      display: inline-block;
+      margin: 0; }
+  @media screen and (max-width: 39.9375em) {
+    .top-bar {
+      background-color: #fefefe; }
+      .top-bar .title-area {
+        width: 130px;
+        position: absolute;
+        left: 50%;
+        margin-left: -65px; } }
+  @media print, screen and (min-width: 40em) {
+    .top-bar {
+      height: 115px; }
+      .top-bar .title-area ul {
+        height: 115px; }
+        .top-bar .title-area ul:before {
+          content: "\a0";
+          position: absolute;
+          height: 115px;
+          border-left: 5px solid #D8D8D8;
+          z-index: 1; }
+      .top-bar .title-area .site-logo {
+        width: 25vw; } }
+  @media print, screen and (min-width: 64em) {
+    .top-bar .title-area .site-logo {
+      width: 16.66667vw; } }
 
 .off-canvas-list ul {
   margin-left: 0; }
@@ -4441,18 +4490,17 @@ NAVIGATION STYLES
   font-weight: 400;
   text-transform: uppercase; }
 
+#sidebar-menu > .menu {
+  border-left: 5px solid #006CB5; }
+  #sidebar-menu > .menu > li > a {
+    line-height: 1.5rem; }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-#content #inner-content {
-  background-color: #F5F5F5; }
-
-#content #main {
-  background-color: #fefefe; }
-
 .page-title .vcard {
   border: 0px;
   padding: 0px; }

@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<div id="container" class="row expand">
+<div id="container" class="row expand medium-collapse ">
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
 	<div id="content" class="medium-9 large-10 columns">
 
-		<div id="inner-content" class="row">
+		<div id="inner-content" class="row uncollapse">
 
 		    <main id="main" class="large-8 columns" role="main">
 
