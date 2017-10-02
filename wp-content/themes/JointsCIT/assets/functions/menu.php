@@ -8,6 +8,30 @@ register_nav_menus(
 	)
 );
 
+
+// The Top Menu
+function joints_accordion_nav() {
+     wp_nav_menu(array(
+        'container' => false,                           // Remove nav container
+        'menu_class' => 'vertical menu accordion-menu',       // Adding custom nav class
+        'items_wrap' => '<ul id="%1$s" class="%2$s" data-accordion-menu>%3$s</ul>',
+        'theme_location' => 'sidebar-nav',                  // Where it's located in the theme
+        'depth' => 5,                                   // Limit the depth of the nav
+        'fallback_cb' => false,                         // Fallback function (see below)
+        'walker' => new Accordion_Menu_Walker()
+    ));
+}
+
+
+// Big thanks to Brett Mason (https://github.com/brettsmason) for the awesome walker
+class Accordion_Menu_Walker extends Walker_Nav_Menu {
+    function start_lvl(&$output, $depth = 0, $args = Array() ) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "\n$indent<ul class=\"menu vertical nested\">\n";
+    }
+}
+
+
 // The Top Menu
 function joints_top_nav() {
 	 wp_nav_menu(array(
