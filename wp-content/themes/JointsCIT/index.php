@@ -6,7 +6,7 @@
 
 	<div id="content" class="medium-9 large-10 columns">
 
-		<div id="inner-content" class="row uncollapse">
+		<div id="inner-content" class="row">
 
 		    <main id="main" class="large-8 columns" role="main">
 

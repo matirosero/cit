@@ -15,7 +15,7 @@ single-bookmarks.php
 
 <?php get_header(); ?>
 
-<div id="container" class="row expand">
+<div id="container" class="row expand medium-collapse ">
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
