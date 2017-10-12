@@ -4585,12 +4585,37 @@ POSTS & CONTENT STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+.post {
+  margin-bottom: 3rem; }
+
 .page-title .vcard {
   border: 0px;
   padding: 0px; }
 
+.article-header {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #D8D8D8;
+  text-align: center; }
+  .article-header:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 43%;
+    top: 0;
+    right: 43%;
+    bottom: -1px;
+    border-bottom: 1px solid #006CB5; }
+
+.date {
+  margin-bottom: 0;
+  color: #999;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
 .byline {
-  color: #999; }
+  color: #999;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
 .entry-content img {
   max-width: 100%;
