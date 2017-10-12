@@ -14,6 +14,13 @@
 	#main {
 
 		// background-color: $white;
+
+		body:not(.single) & > article:first-of-type {
+			.entry-content {
+				font-size: 1.25rem;
+			}
+		}
+
 		@include breakpoint(large) {
 			@include grid-column($columns: 66.66667%, $gutters:100px);
 		}

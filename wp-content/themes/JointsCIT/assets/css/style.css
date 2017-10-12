@@ -4485,6 +4485,9 @@ LINK Layout
 #content #inner-content {
   padding: 1rem 0rem; }
 
+body:not(.single) #content #main > article:first-of-type .entry-content {
+  font-size: 1.25rem; }
+
 @media print, screen and (min-width: 64em) {
   #content #main {
     width: 66.66667%;
@@ -4645,6 +4648,9 @@ POSTS & CONTENT STYLES
   background: #eee;
   border: 1px solid #cecece;
   padding: 10px; }
+
+.entry-content .read-more {
+  text-align: center; }
 
 .wp-caption {
   max-width: 100%;
