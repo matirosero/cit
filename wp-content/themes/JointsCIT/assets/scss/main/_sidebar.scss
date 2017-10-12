@@ -2,7 +2,7 @@
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
-	
+	@include navigation-type-style;
 }
 
 #searchsubmit {

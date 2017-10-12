@@ -4849,6 +4849,12 @@ SIDEBARS & ASIDES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+.sidebar {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
 .widget ul {
   margin: 0; }
   .widget ul li {
