@@ -1906,37 +1906,37 @@ h6 {
 
 h1 {
   font-size: 1.36364rem;
-  line-height: 1.4;
+  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 h2 {
   font-size: 1.13636rem;
-  line-height: 1.4;
+  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 h3 {
   font-size: 1.07955rem;
-  line-height: 1.4;
+  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 h4 {
   font-size: 1.02273rem;
-  line-height: 1.4;
+  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 h5 {
   font-size: 0.96591rem;
-  line-height: 1.4;
+  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 h6 {
   font-size: 0.90909rem;
-  line-height: 1.4;
+  line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -4595,6 +4595,9 @@ POSTS & CONTENT STYLES
   border: 0px;
   padding: 0px; }
 
+.entry-title {
+  margin-bottom: 1rem; }
+
 .article-header {
   position: relative;
   margin-bottom: 2rem;
@@ -4612,7 +4615,6 @@ POSTS & CONTENT STYLES
     border-bottom: 1px solid #006CB5; }
 
 .date {
-  margin-bottom: 0;
   color: #999;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
