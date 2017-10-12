@@ -8,7 +8,7 @@
 
 #content {
 	#inner-content {
-		// padding: 1rem 0rem;
+		padding: 1rem 0rem;
 		// background-color: color('grey', 'light');
 	}
 	#main {
@@ -16,6 +16,13 @@
 		// background-color: $white;
 		@include breakpoint(large) {
 			@include grid-column($columns: 66.66667%, $gutters:100px);
+		}
+	}
+
+	@include breakpoint(large) {
+		#inner-content {
+			padding: 3rem 0rem;
+			// background-color: color('grey', 'light');
 		}
 	}
 }

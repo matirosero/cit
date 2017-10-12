@@ -27,6 +27,6 @@ function site_scripts() {
      * font-family: 'Libre Franklin', sans-serif; 900
      * font-family: 'Open Sans', sans-serif; 400 700
      */
-    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Libre+Franklin:900|Open+Sans:400,700|Roboto+Slab:400,700', false );
+    // wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Libre+Franklin:900|Open+Sans:400,700|Roboto+Slab:400,700', false );
 }
 add_action('wp_enqueue_scripts', 'site_scripts', 999);

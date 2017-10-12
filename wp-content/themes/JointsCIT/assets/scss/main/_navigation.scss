@@ -12,12 +12,19 @@ NAVIGATION STYLES
 		}
 	}
 
+	.top-bar-right,
+	.top-bar-left {
+		> .menu {
+			> li a {
+				line-height: rem-calc( topbar-height('small') ) - 1.4rem;
+			}
+		}
+	}
+
 	.title-area {
 
 		ul {
 			background-color: $white;
-			
-
 			// border-left: 5px solid color( 'blue', 'base' );
 			li {
 
@@ -37,6 +44,7 @@ NAVIGATION STYLES
 	}
 
 	@include breakpoint(small only) {
+
 		background-color: $white;
 
 		.title-area {
@@ -45,10 +53,28 @@ NAVIGATION STYLES
 			left: 50%;
 			margin-left: -65px
 		}
+
+		.menu {
+			background-color: $white;
+		}
 	}
 
 	@include breakpoint(medium) {
 		height: topbar-height('medium');
+
+		.top-bar-right,
+		.top-bar-left {
+			> .menu {
+				> li a {
+					line-height: rem-calc( topbar-height('medium') ) - 1.4rem;
+				}
+			}
+		}
+
+		// left margin for main menu
+		#main-menu > .menu {
+			// padding-left: 1rem;
+		}
 
 		.title-area {
 			ul {

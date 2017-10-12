@@ -8,6 +8,66 @@ all of your Sass files so they can compile into one
 CSS file. 
 
 ******************************************************************/
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url("../fonts/roboto-slab-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-v6-latin-regular.woff2") format("woff2"), url("../fonts/roboto-slab-v6-latin-regular.woff") format("woff"), url("../fonts/roboto-slab-v6-latin-regular.ttf") format("truetype"), url("../fonts/roboto-slab-v6-latin-regular.svg#RobotoSlab") format("svg");
+  /* Legacy iOS */ }
+
+/* roboto-slab-700 - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-slab-v6-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url("../fonts/roboto-slab-v6-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-v6-latin-700.woff2") format("woff2"), url("../fonts/roboto-slab-v6-latin-700.woff") format("woff"), url("../fonts/roboto-slab-v6-latin-700.ttf") format("truetype"), url("../fonts/roboto-slab-v6-latin-700.svg#RobotoSlab") format("svg");
+  /* Legacy iOS */ }
+
+/* libre-franklin-900 - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/libre-franklin-v2-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local("Libre Franklin Black"), local("LibreFranklin-Black"), url("../fonts/libre-franklin-v2-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/libre-franklin-v2-latin-900.woff2") format("woff2"), url("../fonts/libre-franklin-v2-latin-900.woff") format("woff"), url("../fonts/libre-franklin-v2-latin-900.ttf") format("truetype"), url("../fonts/libre-franklin-v2-latin-900.svg#LibreFranklin") format("svg");
+  /* Legacy iOS */ }
+
+/* libre-franklin-900italic - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/libre-franklin-v2-latin-900italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Libre Franklin Black Italic"), local("LibreFranklin-BlackItalic"), url("../fonts/libre-franklin-v2-latin-900italic.eot?#iefix") format("embedded-opentype"), url("../fonts/libre-franklin-v2-latin-900italic.woff2") format("woff2"), url("../fonts/libre-franklin-v2-latin-900italic.woff") format("woff"), url("../fonts/libre-franklin-v2-latin-900italic.ttf") format("truetype"), url("../fonts/libre-franklin-v2-latin-900italic.svg#LibreFranklin") format("svg");
+  /* Legacy iOS */ }
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v14-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v14-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v14-latin-regular.woff") format("woff"), url("../fonts/open-sans-v14-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v14-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v14-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v14-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v14-latin-700.woff") format("woff"), url("../fonts/open-sans-v14-latin-700.ttf") format("truetype"), url("../fonts/open-sans-v14-latin-700.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+
 /******************************************************************
 
 Stylesheet: Variables
@@ -4422,6 +4482,9 @@ LINK Layout
     border-left: 5px solid #D8D8D8;
     z-index: -1; } }
 
+#content #inner-content {
+  padding: 1rem 0rem; }
+
 @media print, screen and (min-width: 64em) {
   #content #main {
     width: 66.66667%;
@@ -4430,6 +4493,10 @@ LINK Layout
     padding-left: 2.84091rem; }
     #content #main:last-child:not(:first-child) {
       float: right; } }
+
+@media print, screen and (min-width: 64em) {
+  #content #inner-content {
+    padding: 3rem 0rem; } }
 
 /*********************
 HEADER STYLES
@@ -4452,6 +4519,9 @@ NAVIGATION STYLES
     color: #4A4A4A; }
     .top-bar a:active, .top-bar a:focus, .top-bar a:hover {
       color: #006CB5; }
+  .top-bar .top-bar-right > .menu > li a,
+  .top-bar .top-bar-left > .menu > li a {
+    line-height: 3.71364rem; }
   .top-bar .title-area ul {
     background-color: #fefefe; }
   .top-bar .title-area .site-logo {
@@ -4468,10 +4538,15 @@ NAVIGATION STYLES
         width: 130px;
         position: absolute;
         left: 50%;
-        margin-left: -65px; } }
+        margin-left: -65px; }
+      .top-bar .menu {
+        background-color: #fefefe; } }
   @media print, screen and (min-width: 40em) {
     .top-bar {
       height: 115px; }
+      .top-bar .top-bar-right > .menu > li a,
+      .top-bar .top-bar-left > .menu > li a {
+        line-height: 5.13409rem; }
       .top-bar .title-area ul {
         height: 115px; }
         .top-bar .title-area ul:before {
