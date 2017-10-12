@@ -4463,6 +4463,19 @@ a:link, a:visited:link {
     color: #006CB5; }
 
 /*********************
+BUTTON STYLES
+*********************/
+.button {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  margin-bottom: 2rem; }
+
+/*********************
 LINK Typography
 *********************/
 /*********************
@@ -4596,7 +4609,8 @@ POSTS & CONTENT STYLES
   padding: 0px; }
 
 .entry-title {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  color: red; }
 
 .article-header {
   position: relative;
@@ -4701,7 +4715,11 @@ PAGE NAVI STYLES
 PAGE NAVI STYLES
 *********************/
 .page-navigation {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase; }
 
 /*********************
 COMMENT STYLES

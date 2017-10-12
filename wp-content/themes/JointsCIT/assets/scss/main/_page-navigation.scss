@@ -3,4 +3,5 @@ PAGE NAVI STYLES
 *********************/
 .page-navigation {
 	margin-top: 1rem;
+	@include navigation-type-style;
 }

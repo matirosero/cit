@@ -1,0 +1,5 @@
+.button {
+	@include navigation-type-style;
+	@include border-radius(20px)
+	margin-bottom: 2rem;
+}
