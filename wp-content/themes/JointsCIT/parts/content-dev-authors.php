@@ -14,27 +14,56 @@
 
 //broken images src usuarios
 $ids = $wpdb->get_col( "
-	SELECT p.ID
+	SELECT p.ID, meta.post_id, meta.meta_key, meta.meta_value
 	FROM cit_posts p
-	LEFT JOIN cit_term_relationships rel ON p.ID = rel.object_id 
-	WHERE rel.term_taxonomy_id LIKE 31
-AND p.post_content LIKE '%legacy_assets/images%'
+	LEFT JOIN cit_postmeta meta ON p.ID = meta.post_id 
+	WHERE meta.meta_key LIKE '_mro_manual_author'
+AND meta.meta_value LIKE '%Roberto Sasso%'
 " );
 
-echo '<ol>';
+echo '<table>
+	    <thead>
+	    	<tr>
+	    		<th>&nbsp;</th>
+	    		<th>Post</th>
+	    		<th>Author</th>
+	    		<th>Manual author</th>
+	    		<th>Action</th>
+	    	</tr>
+	    </thead>';
+
+$i = 1;
 
 foreach ( $ids as $id ) { 
 	$post = get_post( intval( $id ) );
 	setup_postdata( $post );
 	?>
-	<li>
-		<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-			<?php the_title(); ?>
-		</a> - 
-	</li>
+	<tr>
+		<td><?php echo $i; ?></td>
+		<td>
+			<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+		</td>
+		<td>
+			<?php
+			if ( function_exists( 'coauthors_posts_links' ) ) {
+			    coauthors_posts_links();
+			} else {
+			    the_author_posts_link();
+			}
+			?>
+		</td>
+		<td>
+			<?php
+			$manual_author = get_post_meta( $id, '_mro_manual_author', true );
+			echo $manual_author;
+			?>
+		</td>
+		<td></td>
+	</tr>
 	<?php
+	$i++;
 }
 
-echo '<ol>';
+echo '</table>';
 
 ?>
