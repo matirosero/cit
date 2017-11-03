@@ -1,5 +1,13 @@
 .button {
 	@include navigation-type-style;
 	@include border-radius(20px)
+	@include button-gradient( 
+		color('blue', 'light'), 
+		color('blue', 'dark'), 
+		color('orange', 'light'), 
+		color('orange', 'dark'), 
+		color('white', 'base'), 
+		color('white', 'base') 
+	);
 	margin-bottom: 2rem;
 }

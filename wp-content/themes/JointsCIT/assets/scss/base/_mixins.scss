@@ -129,3 +129,14 @@ TYPOGRAPHY
     z-index: $z;
   }
 }
+
+
+
+@mixin button-gradient( $background-1, $background-2, $hover-1, $hover-2, $color, $color-hover ) {
+  @include css-gradient($background-1, $background-2);
+  color: $color;
+  @include hover {
+    @include css-gradient($hover-1, $hover-2);
+    color: $color-hover;
+  }
+}

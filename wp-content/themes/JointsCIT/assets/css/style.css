@@ -1960,7 +1960,7 @@ a {
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #005d9c; }
+    color: #F03626; }
   a img {
     border: 0; }
 
@@ -4473,7 +4473,14 @@ BUTTON STYLES
   border-radius: 20px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
+  background-color: #263F81;
+  background-image: linear-gradient(to bottom, #0589E2, #263F81);
+  color: #fff;
   margin-bottom: 2rem; }
+  .button:active, .button:focus, .button:hover {
+    background-color: #E02818;
+    background-image: linear-gradient(to bottom, #F9664D, #E02818);
+    color: #fff; }
 
 /*********************
 LINK Typography
@@ -4609,8 +4616,7 @@ POSTS & CONTENT STYLES
   padding: 0px; }
 
 .entry-title {
-  margin-bottom: 1rem;
-  color: red; }
+  margin-bottom: 1rem; }
 
 .article-header {
   position: relative;

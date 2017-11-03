@@ -30,7 +30,6 @@ POSTS & CONTENT STYLES
 
 .entry-title {
 	margin-bottom: 1rem;
-	color: red;
 }
 
 .article-header {
@@ -66,6 +65,10 @@ POSTS & CONTENT STYLES
 
 // Entry content
 .entry-content {
+
+	// .single-post & p:first-of-type {
+	// 	color: red;
+	// }
 
 	img {
 		max-width: 100%;
