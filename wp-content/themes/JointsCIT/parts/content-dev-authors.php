@@ -10,6 +10,7 @@
 // 	FROM $wpdb->posts
 // 	WHERE post_content LIKE '%align=\"left\"%'
 // " );
+$coauthors = array('roberto-sasso');
 
 
 //broken images src usuarios
@@ -18,7 +19,7 @@ $ids = $wpdb->get_col( "
 	FROM cit_posts p
 	LEFT JOIN cit_postmeta meta ON p.ID = meta.post_id 
 	WHERE meta.meta_key LIKE '_mro_manual_author'
-AND meta.meta_value LIKE '%Roberto Sasso%'
+	AND meta.meta_value LIKE '%_MISSING%'
 " );
 
 echo '<table>
@@ -28,7 +29,6 @@ echo '<table>
 	    		<th>Post</th>
 	    		<th>Author</th>
 	    		<th>Manual author</th>
-	    		<th>Action</th>
 	    	</tr>
 	    </thead>';
 
@@ -58,7 +58,10 @@ foreach ( $ids as $id ) {
 			echo $manual_author;
 			?>
 		</td>
-		<td></td>
+		<?php
+		// $CoAuthors_Plus->add_coauthors($id, $coauthors);
+		?>
+
 	</tr>
 	<?php
 	$i++;
