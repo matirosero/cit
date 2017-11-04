@@ -140,3 +140,18 @@ TYPOGRAPHY
     color: $color-hover;
   }
 }
+
+
+@mixin divider {
+  border-bottom: 1px solid color( 'grey', 'base' );
+  &:after {
+    content:' ';
+      display:block;
+      position:absolute;
+      left:43%;
+      top:0;
+      right:43%;
+      bottom:-1px; 
+      border-bottom: 1px solid color( 'blue', 'base' );
+  }
+}

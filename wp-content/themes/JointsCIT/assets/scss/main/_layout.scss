@@ -8,28 +8,40 @@
 
 #content {
 	#inner-content {
-		padding: 1rem 0rem;
+		padding: 0rem;
 		// background-color: color('grey', 'light');
 	}
 	#main {
 
+		margin-top: 1rem;
 		// background-color: $white;
 
-		body:not(.single) & > article:first-of-type {
-			.entry-content {
-				font-size: 1.25rem;
+		@include breakpoint(medium) {
+			body:not(.single) & > article:first-of-type {
+				.entry-content {
+					font-size: 1.25rem;
+				}
 			}
 		}
 
-		@include breakpoint(large) {
-			@include grid-column($columns: 66.66667%, $gutters:100px);
+		// @include breakpoint(large) {
+		// 	@include grid-column($columns: 66.66667%, $gutters:100px);
+		// }
+		@include breakpoint(xlarge) {
+			@include grid-column($columns: 75%, $gutters:150px);
+		}
+		@include breakpoint(xxlarge) {
+			@include grid-column($columns: 75%, $gutters:250px);
 		}
 	}
 
 	@include breakpoint(large) {
 		#inner-content {
-			padding: 3rem 0rem;
+			padding: 0rem;
 			// background-color: color('grey', 'light');
+		}
+		#main {
+			margin-top: 3rem;
 		}
 	}
 }

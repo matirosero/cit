@@ -15,4 +15,8 @@ a, a:visited {
 			color: color('blue', 'base');
 		}
 	}
+
+	.off-canvas & {
+		color: color('white', 'base');
+	}
 }

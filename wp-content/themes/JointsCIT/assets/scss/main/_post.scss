@@ -3,7 +3,11 @@ POSTS & CONTENT STYLES
 *********************/
 
 .post {
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
+	@include breakpoint(medium) {
+		margin-bottom: 3rem;
+	}
+	
 }
 
 .single-title,
@@ -29,24 +33,20 @@ POSTS & CONTENT STYLES
 }
 
 .entry-title {
-	margin-bottom: 1rem;
+	margin-bottom: .5rem;
+	@include breakpoint(medium) {
+		margin-bottom: 1rem;
+	}
 }
 
 .article-header {
 	position: relative;
-	margin-bottom: 2rem;
-	padding-bottom: 1rem;
-	border-bottom: 1px solid color( 'grey', 'base' );
+	margin-bottom: 1.25rem;
+	padding-bottom: 0rem;
 	text-align: center;
-	&:after {
-		content:' ';
-	    display:block;
-	    position:absolute;
-	    left:43%;
-	    top:0;
-	    right:43%;
-	    bottom:-1px; 
-	    border-bottom: 1px solid color( 'blue', 'base' );
+	@include divider;
+	@include breakpoint(medium) {
+	  	margin-bottom: 2rem;
 	}
 }
 
@@ -55,12 +55,19 @@ POSTS & CONTENT STYLES
 	color: #999;
 	font-family: $sans-family;
 	time {}
+	@include breakpoint(small only) {
+		font-size: $small-font-size;
+		margin-bottom: .5rem;
+	}
 }
 
 // Post meta
 .byline {
 	color: #999;
 	font-family: $sans-family;
+	@include breakpoint(small only) {
+		font-size: $small-font-size;
+	}
 }
 
 // Entry content
