@@ -10,7 +10,7 @@ NAVIGATION STYLES
 	.top-bar-right,
 	.top-bar-left {
 		> .menu {
-			> li a {
+			> li > a {
 				line-height: rem-calc( topbar-height('small') ) - 1.4rem;
 			}
 		}
@@ -38,6 +38,15 @@ NAVIGATION STYLES
 		}
 	}
 
+	.is-dropdown-submenu-parent {
+		> a::after {
+			border-color: $black transparent transparent !important;
+		}
+		> a:hover:after {
+			border-color: color('blue', 'base') transparent transparent !important;
+		}
+	}
+
 	@include breakpoint(small only) {
 
 		background-color: $white;
@@ -60,9 +69,22 @@ NAVIGATION STYLES
 		.top-bar-right,
 		.top-bar-left {
 			> .menu {
-				> li a {
+				> li > a {
 					line-height: rem-calc( topbar-height('medium') ) - 1.4rem;
 				}
+			}
+
+			.dropdown.menu.medium-horizontal > li > .is-dropdown-submenu {
+				// display: block;
+				top: 80px;
+				background-color: color('blue', 'base');
+				a {
+					color: $white;
+					@include hover {
+						background-color: color('orange', 'base');
+					}
+				}
+				
 			}
 		}
 
@@ -192,3 +214,6 @@ NAVIGATION STYLES
 		// width: 100%;
 	}
 }
+
+
+
