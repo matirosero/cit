@@ -5120,9 +5120,25 @@ LINK STYLES
 a:link, a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
-.entry-title a, .entry-title a:visited {
+.entry-title a,
+.top-bar a,
+#sidebar-menu a, .entry-title a:visited,
+.top-bar a:visited,
+#sidebar-menu a:visited {
   color: #4A4A4A; }
-  .entry-title a:active, .entry-title a:focus, .entry-title a:hover, .entry-title a:visited:active, .entry-title a:visited:focus, .entry-title a:visited:hover {
+  .entry-title a:active, .entry-title a:focus, .entry-title a:hover,
+  .top-bar a:active,
+  .top-bar a:focus,
+  .top-bar a:hover,
+  #sidebar-menu a:active,
+  #sidebar-menu a:focus,
+  #sidebar-menu a:hover, .entry-title a:visited:active, .entry-title a:visited:focus, .entry-title a:visited:hover,
+  .top-bar a:visited:active,
+  .top-bar a:visited:focus,
+  .top-bar a:visited:hover,
+  #sidebar-menu a:visited:active,
+  #sidebar-menu a:visited:focus,
+  #sidebar-menu a:visited:hover {
     color: #006CB5; }
 
 .off-canvas a, .off-canvas a:visited {
@@ -5223,10 +5239,6 @@ NAVIGATION STYLES
 *********************/
 .top-bar {
   height: 90px; }
-  .top-bar a {
-    color: #4A4A4A; }
-    .top-bar a:active, .top-bar a:focus, .top-bar a:hover {
-      color: #006CB5; }
   .top-bar .top-bar-right > .menu > li a,
   .top-bar .top-bar-left > .menu > li a {
     line-height: 3.71364rem; }
@@ -5286,6 +5298,24 @@ NAVIGATION STYLES
   border-left: 5px solid #006CB5; }
   #sidebar-menu > .menu > li > a {
     line-height: 1.5rem; }
+  #sidebar-menu > .menu > li:first-of-type > a {
+    padding-top: 1rem; }
+
+#sidebar-menu .is-accordion-submenu-parent > a::after {
+  display: inline-block;
+  position: relative;
+  right: 0;
+  margin-left: 0.5rem;
+  top: 0;
+  margin-top: 0;
+  padding-top: 2px;
+  border-color: #4A4A4A transparent transparent; }
+
+#sidebar-menu .is-accordion-submenu-parent > a:hover:after {
+  border-color: #006CB5 transparent transparent; }
+
+#sidebar-menu .is-accordion-submenu-parent[aria-expanded='true'] {
+  border-color: #006CB5 transparent transparent; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -5298,6 +5328,10 @@ POSTS & CONTENT STYLES
   @media print, screen and (min-width: 40em) {
     .post {
       margin-bottom: 3rem; } }
+
+.single-title,
+.page-title {
+  text-align: center; }
 
 .page-title .vcard {
   border: 0px;

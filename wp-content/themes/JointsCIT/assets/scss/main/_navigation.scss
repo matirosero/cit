@@ -5,12 +5,7 @@ NAVIGATION STYLES
 
 	height: topbar-height('small');
 
-	a {
-		color: $black;
-		@include hover {
-			color: color( 'blue', 'base' );
-		}
-	}
+
 
 	.top-bar-right,
 	.top-bar-left {
@@ -145,6 +140,30 @@ NAVIGATION STYLES
 					// @include site-border($z:1, $height: topbar-height('medium') );
 				}
 			}
+
+			// Slightly more top padding before the first link
+			&:first-of-type > a{
+				padding-top: 1rem;
+			}
 		}
 	}
+
+	.is-accordion-submenu-parent {
+		> a::after {
+			display: inline-block;
+			position: relative;
+			right: 0;
+			margin-left: 0.5rem;
+			top: 0;
+			margin-top: 0;
+			padding-top: 2px;
+			border-color: $black transparent transparent;
+		}
+		> a:hover:after {
+			border-color: color('blue', 'base') transparent transparent;
+		}
+		&[aria-expanded='true'] {
+			border-color: color('blue', 'base') transparent transparent;
+		}
+	} 
 }
