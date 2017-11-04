@@ -5193,6 +5193,10 @@ LINK Layout
       #content #main:last-child:not(:first-child) {
         float: right; } }
 
+@media print, screen and (min-width: 40em) {
+  #content #main {
+    padding-top: 2rem; } }
+
 @media print, screen and (min-width: 64em) {
   #content {
     background: #F5F5F5; }
@@ -5322,7 +5326,8 @@ POSTS & CONTENT STYLES
     border-bottom: 1px solid #006CB5; }
   @media print, screen and (min-width: 40em) {
     .article-header {
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem;
+      padding-bottom: 1rem; } }
 
 .date {
   color: #999;

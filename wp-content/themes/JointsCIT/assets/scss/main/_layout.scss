@@ -35,6 +35,12 @@
 		}
 	}
 
+	@include breakpoint(medium) {
+		#main {
+			padding-top: 2rem;
+		}
+	}
+
 	@include breakpoint(large) {
 		background: color('grey', 'light');
 

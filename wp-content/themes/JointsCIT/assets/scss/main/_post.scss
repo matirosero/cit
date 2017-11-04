@@ -47,6 +47,7 @@ POSTS & CONTENT STYLES
 	@include divider;
 	@include breakpoint(medium) {
 	  	margin-bottom: 2rem;
+	  	padding-bottom: 1rem;
 	}
 }
 
