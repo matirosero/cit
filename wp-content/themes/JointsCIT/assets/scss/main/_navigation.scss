@@ -112,6 +112,8 @@ NAVIGATION STYLES
 				width: 16.66667vw;
 			}
 		}
+
+
 	}
 }
 
@@ -137,22 +139,24 @@ NAVIGATION STYLES
 
 }
 
-#sidebar-menu {
-	// @include site-border;
-	// background-color: blue;
-	> .menu {
-	// border-left: 5px solid color( 'blue', 'base' );
+#main-menu {
+	@include breakpoint(large) {
+		margin-left: 1.13636rem;
+	}
+	@include breakpoint(xlarge) {
+		// margin-left: 65px;
+	}
+}
 
+#sidebar-menu {
+
+	> .menu {
 		li {
-			
-			// @include site-border($color: color( 'blue', 'base' ), $z:1, $height: 50.63px );
 			border-left: 5px solid color( 'blue', 'base' );
 			position: relative;
 			@include hover {
 				background-color: color('grey', 'light');
 				border-left: 5px solid color( 'orange', 'base' );
-				// border-left: 5px solid color( 'orange', 'base' );
-				// @include site-border($z:1, $height: topbar-height('medium') );
 			}
 		}
 
@@ -160,13 +164,6 @@ NAVIGATION STYLES
 			
 			> a {
 				line-height: 1.5rem;
-				// border-left: 5px solid color( 'blue', 'base' );
-				@include hover {
-					// background-color: color('blue', 'base');
-					// border-left: 5px solid color( 'orange', 'base' );
-					// @include site-border($z:1, $height: topbar-height('medium') );
-
-				}
 			}
 
 			// Slightly more top padding before the first link
@@ -187,31 +184,33 @@ NAVIGATION STYLES
 			padding-top: 2px;
 			border-color: $black transparent transparent;
 		}
-		> a:hover:after {
-			// border-color: color('blue', 'base') transparent transparent;
-		}
-		&[aria-expanded='true'] {
-			> a:hover:after {
-				// border-color: color('blue', 'base') transparent transparent;
-			}
 
+		&[aria-expanded='true'] {
+			border-left: 5px solid color( 'blue', 'dark' );
+			li {
+				border-left: 5px solid color( 'blue', 'dark' );
+			}
 		}
+
 		&:hover {
 			li {
 				border-left: 5px solid color( 'orange', 'base' );
+
 				&:hover {
 					border-left: 5px solid darken(color( 'orange', 'dark' ), 5%);
 				}
 			}
 		}
-	} 
+	}
 
 	.menu.nested {
 		margin-left: 0;
 		position: absolute;
 		left: -5px;
 		right: 0;
-		// width: 100%;
+		li {
+			padding-left: 0.75rem;
+		}
 	}
 }
 

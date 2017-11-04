@@ -11,8 +11,11 @@
 		<?php joints_top_nav(); ?>
 	</div>
 	<div class="top-bar-right show-for-medium">
-		<?php joints_top_nav(); ?>	
-	</div>
+      <ul class="menu">
+        <li><input type="search" placeholder="Search"></li>
+        <li><button type="button" class="button">Search</button></li>
+      </ul>
+    </div>
 	<div class="top-bar-right float-right show-for-small-only">
 		<ul class="menu">
 			<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
