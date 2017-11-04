@@ -99,7 +99,7 @@ NAVIGATION STYLES
 				height: topbar-height('medium');
 			}
 			.site-logo {
-				width: 25vw;
+				@include static-left-sidebar;
 			}
 		}
 	}
@@ -109,7 +109,7 @@ NAVIGATION STYLES
 
 		.title-area {
 			.site-logo {
-				width: 16.66667vw;
+				// width: 16.66667vw;
 			}
 		}
 

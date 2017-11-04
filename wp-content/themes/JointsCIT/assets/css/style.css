@@ -5194,8 +5194,7 @@ LINK Layout
     z-index: -1; } }
 
 #sidebar-menu {
-  width: 200px;
-  background-color: red; }
+  width: 200px; }
 
 #content #inner-content {
   padding: 0rem; }
@@ -5236,7 +5235,8 @@ LINK Layout
     #content #inner-content {
       padding: 0rem; }
     #content #main {
-      padding-top: 3rem; } }
+      padding-top: 3rem;
+      background: #fff; } }
 
 /*********************
 HEADER STYLES
@@ -5308,10 +5308,7 @@ NAVIGATION STYLES
           border-left: 5px solid #D8D8D8;
           z-index: 1; }
       .top-bar .title-area .site-logo {
-        width: 25vw; } }
-  @media print, screen and (min-width: 64em) {
-    .top-bar .title-area .site-logo {
-      width: 16.66667vw; } }
+        width: 200px; } }
 
 .off-canvas-list ul {
   margin-left: 0; }
