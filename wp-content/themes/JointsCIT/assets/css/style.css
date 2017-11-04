@@ -5172,7 +5172,7 @@ LINK Layout
   padding: 0rem; }
 
 #content #main {
-  margin-top: 1rem; }
+  padding-top: 1rem; }
   @media print, screen and (min-width: 40em) {
     body:not(.single) #content #main > article:first-of-type .entry-content {
       font-size: 1.25rem; } }
@@ -5194,10 +5194,13 @@ LINK Layout
         float: right; } }
 
 @media print, screen and (min-width: 64em) {
-  #content #inner-content {
-    padding: 0rem; }
-  #content #main {
-    margin-top: 3rem; } }
+  #content {
+    background: #F5F5F5; }
+    #content #inner-content {
+      padding: 0rem; }
+    #content #main {
+      padding-top: 3rem;
+      background: #fff; } }
 
 /*********************
 HEADER STYLES
@@ -5550,7 +5553,6 @@ SIDEBARS & ASIDES
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
-  background: #F5F5F5;
   padding-top: 1rem; }
   @media print, screen and (min-width: 40em) {
     .sidebar {

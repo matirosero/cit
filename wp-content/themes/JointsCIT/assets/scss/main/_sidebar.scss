@@ -3,10 +3,13 @@ SIDEBARS & ASIDES
 *********************/
 .sidebar {
 	// @include navigation-type-style;
-	background: color('grey', 'light');
+	
 	padding-top: 1rem;
 	@include breakpoint(medium) {
 		padding-top: 3rem;
+	}
+	@include breakpoint(large) {
+		// background: color('grey', 'light');
 	}
 }
 

@@ -13,7 +13,7 @@
 	}
 	#main {
 
-		margin-top: 1rem;
+		padding-top: 1rem;
 		// background-color: $white;
 
 		@include breakpoint(medium) {
@@ -36,12 +36,15 @@
 	}
 
 	@include breakpoint(large) {
+		background: color('grey', 'light');
+
 		#inner-content {
 			padding: 0rem;
 			// background-color: color('grey', 'light');
 		}
 		#main {
-			margin-top: 3rem;
+			padding-top: 3rem;
+			background: color('white', 'base');
 		}
 	}
 }
