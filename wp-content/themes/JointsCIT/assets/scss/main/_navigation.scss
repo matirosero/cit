@@ -119,25 +119,31 @@ NAVIGATION STYLES
 	// @include site-border;
 	// background-color: blue;
 	> .menu {
-	border-left: 5px solid color( 'blue', 'base' );
+	// border-left: 5px solid color( 'blue', 'base' );
 
 		li {
+			
 			// @include site-border($color: color( 'blue', 'base' ), $z:1, $height: 50.63px );
+			border-left: 5px solid color( 'blue', 'base' );
+			position: relative;
 			@include hover {
-				// background-color: color('blue', 'base');
+				background-color: color('grey', 'light');
+				border-left: 5px solid color( 'orange', 'base' );
 				// border-left: 5px solid color( 'orange', 'base' );
 				// @include site-border($z:1, $height: topbar-height('medium') );
 			}
 		}
 
 		> li {
-
+			
 			> a {
 				line-height: 1.5rem;
+				// border-left: 5px solid color( 'blue', 'base' );
 				@include hover {
 					// background-color: color('blue', 'base');
 					// border-left: 5px solid color( 'orange', 'base' );
 					// @include site-border($z:1, $height: topbar-height('medium') );
+
 				}
 			}
 
@@ -163,7 +169,25 @@ NAVIGATION STYLES
 			border-color: color('blue', 'base') transparent transparent;
 		}
 		&[aria-expanded='true'] {
-			border-color: color('blue', 'base') transparent transparent;
+			> a:hover:after {
+				border-color: color('blue', 'base') transparent transparent;
+			}
+
+		}
+		&:hover {
+			li {
+				border-left: 5px solid color( 'orange', 'base' );
+				&:hover {
+					border-left: 5px solid darken(color( 'orange', 'dark' ), 5%);
+				}
+			}
 		}
 	} 
+
+	.menu.nested {
+		margin-left: 0;
+		position: absolute;
+		left: -5px;
+		width: 100%;
+	}
 }
