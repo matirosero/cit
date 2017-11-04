@@ -1,4 +1,4 @@
-<div id="sidebar-menu" class="medium-3 large-2 columns hide-for-small-only">
+<div id="sidebar-menu" class="columns hide-for-small-only">
 
 	<?php joints_accordion_nav(); ?>
 

@@ -4,11 +4,11 @@
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
-	<div id="content" class="medium-9 large-10 columns">
+	<div id="content" class="columns">
 
 		<div id="inner-content" class="row">
 
-			<main id="main" class="large-8 columns" role="main">
+			<main id="main" class="large-8 xlarge-9 columns" role="main">
 
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

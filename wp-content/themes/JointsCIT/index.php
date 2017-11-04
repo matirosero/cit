@@ -4,7 +4,7 @@
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
-	<div id="content" class="medium-9 large-10 columns">
+	<div id="content" class="columns">
 
 		<div id="inner-content" class="row">
 
