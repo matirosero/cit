@@ -21,6 +21,19 @@ POSTS & CONTENT STYLES
 
 .page-title {
 
+	.archive & {
+		@include navigation-type-style();
+		@include divider;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+		@include breakpoint(medium) {
+			margin-bottom: 2rem;
+		}
+		@include breakpoint(large) {
+			margin-bottom: 3rem;
+		}
+	}
+
 	// Remove Foundation vcard styling from author page titles
 	.vcard {
 		border: 0px;

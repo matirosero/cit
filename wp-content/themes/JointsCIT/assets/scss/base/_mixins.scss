@@ -152,6 +152,7 @@ DIVIDER LINE
 *********************/
 @mixin divider {
   border-bottom: 1px solid color( 'grey', 'base' );
+  position: relative;
   &:after {
     content:' ';
       display:block;
@@ -169,11 +170,11 @@ DIVIDER LINE
 MY GRID
 *********************/
 @mixin static-left-sidebar {
-  width: 200px;
+  width: 210px;
   // background-color: red;
 }
 @mixin static-contentarea {
-  margin-left: 200px;
+  margin-left: 210px;
   float: none;
   width: auto;
 }
