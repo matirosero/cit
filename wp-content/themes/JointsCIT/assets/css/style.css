@@ -124,7 +124,19 @@ CSS3 GRADIENTS.
 *********************/
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
 /*********************
-TYPOGRAPHY
+TYPOGRAPHY: NAVIGATION STYLE
+*********************/
+/*********************
+LEFT SITE BORDER
+*********************/
+/*********************
+BUTTON GRADIENT
+*********************/
+/*********************
+DIVIDER LINE
+*********************/
+/*********************
+MY GRID
 *********************/
 .screen-reader-text {
   position: absolute;
@@ -5181,6 +5193,10 @@ LINK Layout
     border-left: 5px solid #D8D8D8;
     z-index: -1; } }
 
+#sidebar-menu {
+  width: 200px;
+  background-color: red; }
+
 #content #inner-content {
   padding: 0rem; }
 
@@ -5207,8 +5223,12 @@ LINK Layout
         float: right; } }
 
 @media print, screen and (min-width: 40em) {
-  #content #main {
-    padding-top: 2rem; } }
+  #content {
+    margin-left: 200px;
+    float: none;
+    width: auto; }
+    #content #main {
+      padding-top: 2rem; } }
 
 @media print, screen and (min-width: 64em) {
   #content {
@@ -5216,8 +5236,7 @@ LINK Layout
     #content #inner-content {
       padding: 0rem; }
     #content #main {
-      padding-top: 3rem;
-      background: #fff; } }
+      padding-top: 3rem; } }
 
 /*********************
 HEADER STYLES

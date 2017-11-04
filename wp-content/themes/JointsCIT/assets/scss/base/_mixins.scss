@@ -105,10 +105,10 @@ CSS3 GRADIENTS.
 	background-image: linear-gradient(to bottom, $from, $to);
 }
 
-/*********************
-TYPOGRAPHY
-*********************/
 
+/*********************
+TYPOGRAPHY: NAVIGATION STYLE
+*********************/
 @mixin navigation-type-style($size:14px) {
   font-family: $sans-family;
   font-size: $size;
@@ -117,6 +117,9 @@ TYPOGRAPHY
 }
 
 
+/*********************
+LEFT SITE BORDER
+*********************/
 @mixin site-border( $color: color('grey','base'), $z: -1, $height: 100% ) {
   &:before {
     content: "\a0";
@@ -131,7 +134,9 @@ TYPOGRAPHY
 }
 
 
-
+/*********************
+BUTTON GRADIENT
+*********************/
 @mixin button-gradient( $background-1, $background-2, $hover-1, $hover-2, $color, $color-hover ) {
   @include css-gradient($background-1, $background-2);
   color: $color;
@@ -142,6 +147,9 @@ TYPOGRAPHY
 }
 
 
+/*********************
+DIVIDER LINE
+*********************/
 @mixin divider {
   border-bottom: 1px solid color( 'grey', 'base' );
   &:after {
@@ -154,4 +162,18 @@ TYPOGRAPHY
       bottom:-1px; 
       border-bottom: 1px solid color( 'blue', 'base' );
   }
+}
+
+
+/*********************
+MY GRID
+*********************/
+@mixin static-left-sidebar {
+  width: 200px;
+  background-color: red;
+}
+@mixin static-contentarea {
+  margin-left: 200px;
+  float: none;
+  width: auto;
 }
