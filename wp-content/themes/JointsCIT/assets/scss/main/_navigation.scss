@@ -166,11 +166,11 @@ NAVIGATION STYLES
 			border-color: $black transparent transparent;
 		}
 		> a:hover:after {
-			border-color: color('blue', 'base') transparent transparent;
+			// border-color: color('blue', 'base') transparent transparent;
 		}
 		&[aria-expanded='true'] {
 			> a:hover:after {
-				border-color: color('blue', 'base') transparent transparent;
+				// border-color: color('blue', 'base') transparent transparent;
 			}
 
 		}
@@ -188,6 +188,7 @@ NAVIGATION STYLES
 		margin-left: 0;
 		position: absolute;
 		left: -5px;
-		width: 100%;
+		right: 0;
+		// width: 100%;
 	}
 }

@@ -10,14 +10,18 @@ a, a:visited {
 	}
 
 	.entry-title &,
-	.top-bar &,
-	#sidebar-menu & {
+	.top-bar & {
 		color: $black;
 		@include hover {
 			color: color('blue', 'base');
 		}
 	}
-
+	#sidebar-menu & {
+		color: $black;
+		@include hover {
+			color: $black;
+		}
+	}
 	.off-canvas & {
 		color: color('white', 'base');
 	}
