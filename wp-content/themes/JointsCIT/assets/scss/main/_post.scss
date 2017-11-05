@@ -165,3 +165,18 @@ POSTS & CONTENT STYLES
 .post-password-form input[type="submit"] {
 	@include button;
 }
+
+.nav-links {
+	@include grid-row;
+	.nav-previous,
+	.nav-next {
+		@include grid-column($columns: 50%, $gutters: 0);
+	}
+	.nav-previous {
+		padding-right: map-get($grid-column-gutter, small);
+	}
+	.nav-next {
+		padding-left: map-get($grid-column-gutter, small);
+		text-align: right;
+	}
+}

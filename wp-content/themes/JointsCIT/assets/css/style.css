@@ -5530,6 +5530,30 @@ POSTS & CONTENT STYLES
     background-color: #005c9a;
     color: #fefefe; }
 
+.nav-links {
+  max-width: 68.18182rem;
+  margin-right: auto;
+  margin-left: auto; }
+  .nav-links::before, .nav-links::after {
+    display: table;
+    content: ' '; }
+  .nav-links::after {
+    clear: both; }
+  .nav-links .nav-previous,
+  .nav-links .nav-next {
+    width: 50%;
+    float: left;
+    padding-right: 0;
+    padding-left: 0; }
+    .nav-links .nav-previous:last-child:not(:first-child),
+    .nav-links .nav-next:last-child:not(:first-child) {
+      float: right; }
+  .nav-links .nav-previous {
+    padding-right: 30px; }
+  .nav-links .nav-next {
+    padding-left: 30px;
+    text-align: right; }
+
 /*********************
 IMAGE GALLERY STYLES
 *********************/

@@ -5,7 +5,7 @@
 		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 		<?php get_template_part( 'parts/content', 'byline' ); ?>
     </header> <!-- end article header -->
-
+<?php the_post_navigation(); ?>
     <section class="entry-content" itemprop="articleBody">
 		<?php the_post_thumbnail('full'); ?>
 		<?php the_content(); ?>
@@ -15,6 +15,8 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jointswp' ), 'after'  => '</div>' ) ); ?>
 		<p class="tags"><?php the_tags('<span class="tags-title">' . __( 'Tags:', 'jointswp' ) . '</span> ', ', ', ''); ?></p>
 	</footer> <!-- end article footer -->
+
+	<?php the_post_navigation(); ?>
 
 	<?php comments_template(); ?>
 
