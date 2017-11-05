@@ -5458,8 +5458,8 @@ POSTS & CONTENT STYLES
   font-size: 1.25rem; }
   .entry-content p:first-of-type:first-child:first-letter {
     float: left;
-    font-size: 75px;
-    line-height: 60px;
+    font-size: 4.0625rem;
+    line-height: 3.4375rem;
     padding-top: 4px;
     padding-right: 8px;
     padding-left: 3px; }
