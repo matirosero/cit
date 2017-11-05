@@ -5454,6 +5454,16 @@ POSTS & CONTENT STYLES
     .byline {
       font-size: 80%; } }
 
+.entry-content p:first-of-type {
+  font-size: 1.25rem; }
+  .entry-content p:first-of-type:first-child:first-letter {
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px; }
+
 .entry-content img {
   max-width: 100%;
   height: auto; }
