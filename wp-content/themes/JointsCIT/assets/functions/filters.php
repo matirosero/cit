@@ -11,11 +11,35 @@ function clean_up_old_posts ($content) {
 
 
 		//If it is a post
-		if ( is_single() ) :
+		if ( is_singular('cit_report') ) :
+
+			$pattern = array(
+
+	   	  		//Remove "Por [name]\n[date]" from beginning of posts
+	   	  		'/^(<[^>]*>)*(Preparado por)*([a-zA-Z0-9\-_.\s]*)(<br \/>)*(\s)*(<[^>]*>)*([a-zA-Z]*)[a-zA-Z\s]*(\d{2,4})(<br \/>)*(<\/[^>]+>)*((<br \/>)*(\s)*)*/',
+
+	   	  	);
+
+	   	  	$content = preg_replace( $pattern, "", $content, 1 );
+
+
+	   	  	$pattern = array(
+
+	   	  		'/(<[^>]*>)*Resumen ejecutivo(<[^>]*>)*/',
+
+	   	  	);
+
+	   	  	$content = preg_replace( $pattern, '<h3>Resumen ejecutivo</h3>', $content, 1 );
+
+		endif;
+
+
+		//If it is a post
+		if ( is_singular('post') ) :
 
 
 	   	  	//Strip all tags except these (for divs)
-	   	  	$content = strip_tags( $content, '<p><br><table><th><tr><td><a><strong><b><em><i><img><li><ol><ul><s><u><span>' );
+	   	  	$content = strip_tags( $content, '<p><br><table><th><tr><td><a><strong><b><em><i><img><li><ol><ul><s><u><span><blockquote><cite>' );
 
 
 	   	  	$pattern = array(

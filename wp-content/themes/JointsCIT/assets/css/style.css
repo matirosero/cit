@@ -5454,9 +5454,9 @@ POSTS & CONTENT STYLES
     .byline {
       font-size: 80%; } }
 
-.entry-content p:first-of-type {
+.single-post .entry-content p:first-of-type {
   font-size: 1.25rem; }
-  .entry-content p:first-of-type:first-child:first-letter {
+  .single-post .entry-content p:first-of-type:first-child:first-letter {
     float: left;
     font-size: 4.0625rem;
     line-height: 3.4375rem;
