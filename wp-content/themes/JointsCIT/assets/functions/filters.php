@@ -11,6 +11,10 @@ function clean_up_old_posts ($content) {
 	   	if ( $compare_date > $post_date ) :
 	   	  	//it's an old post
 
+	   	  	//Strip all tags except these (for divs)
+	   	  	$content = strip_tags( $content, '<p><br><table><th><tr><td><a><strong><b><em><i><img><li><ol><ul><s><u><span>' );
+
+
 	   	  	$pattern = array(
 
 	   	  		//Remove "Por [name]\n[date]" from beginning of posts
