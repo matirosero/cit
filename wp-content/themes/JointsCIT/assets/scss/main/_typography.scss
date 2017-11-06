@@ -28,3 +28,7 @@ h4, .h4 {
 h5, .h5 {
 
 }
+
+p strong:only-child {
+	@extend h3;
+}
