@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/Report">
 
 	<header class="article-header">
 		<p class="date"><?php the_time('F j, Y') ?></p>

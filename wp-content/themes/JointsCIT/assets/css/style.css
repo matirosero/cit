@@ -2298,7 +2298,9 @@ li,
 h1,
 h2,
 h3,
+.single-cit_report .single-title,
 h4,
+.entry-content .executive-summary-subtitle,
 h5,
 h6,
 pre,
@@ -2333,7 +2335,9 @@ small {
 h1,
 h2,
 h3,
+.single-cit_report .single-title,
 h4,
+.entry-content .executive-summary-subtitle,
 h5,
 h6 {
   font-family: "Libre Franklin", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -2343,8 +2347,8 @@ h6 {
   text-rendering: optimizeLegibility; }
   h1 small,
   h2 small,
-  h3 small,
-  h4 small,
+  h3 small, .single-cit_report .single-title small,
+  h4 small, .entry-content .executive-summary-subtitle small,
   h5 small,
   h6 small {
     line-height: 0;
@@ -2362,13 +2366,13 @@ h2 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h3 {
+h3, .single-cit_report .single-title {
   font-size: 1.13636rem;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h4 {
+h4, .entry-content .executive-summary-subtitle {
   font-size: 1.02273rem;
   line-height: 1.2;
   margin-top: 0;
@@ -2391,9 +2395,9 @@ h6 {
     font-size: 2.72727rem; }
   h2 {
     font-size: 2.27273rem; }
-  h3 {
+  h3, .single-cit_report .single-title {
     font-size: 1.76136rem; }
-  h4 {
+  h4, .entry-content .executive-summary-subtitle {
     font-size: 1.42045rem; }
   h5 {
     font-size: 1.13636rem; }
@@ -2609,11 +2613,13 @@ kbd {
     margin: 0.5cm; }
   p,
   h2,
-  h3 {
+  h3,
+  .single-cit_report .single-title {
     orphans: 3;
     widows: 3; }
   h2,
-  h3 {
+  h3,
+  .single-cit_report .single-title {
     page-break-after: avoid; }
   .print-break-inside {
     page-break-inside: auto; } }
@@ -5179,7 +5185,7 @@ LINK Typography
 /*********************
 H1, H2, H3, H4, H5 P STYLES
 *********************/
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .single-cit_report .single-title a, .h3 a, h4 a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .h5 a {
   text-decoration: none; }
 
 /*********************
@@ -5841,11 +5847,12 @@ to display none.
     max-width: 100% !important; }
   @page {
     margin: 0.5cm; }
-  p, h2, h3 {
+  p, h2, h3, .single-cit_report .single-title {
     orphans: 3;
     widows: 3; }
   h2,
-  h3 {
+  h3,
+  .single-cit_report .single-title {
     page-break-after: avoid; }
   .sidebar,
   .page-navigation,

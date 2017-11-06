@@ -16,7 +16,7 @@ function clean_up_old_posts ($content) {
 			$pattern = array(
 
 	   	  		//Remove "Por [name]\n[date]" from beginning of posts
-	   	  		'/^(<[^>]*>)*(Preparado por)*([a-zA-Z0-9\-_.\s]*)(<br \/>)*(\s)*(<[^>]*>)*([a-zA-Z]*)[a-zA-Z\s]*(\d{2,4})(<br \/>)*(<\/[^>]+>)*((<br \/>)*(\s)*)*/',
+	   	  		'/^(<[^>]*>)*(Preparado por)*(:)*([a-zA-Z0-9\-_.\p{L}\s]*)(<br \/>)*(\s)*(<[^>]*>)*([a-zA-Z]*)[a-zA-Z\s]*(\d{2,4})(<br \/>)*(<\/[^>]+>)*((<br \/>)*(\s)*)*/u',
 
 	   	  	);
 
@@ -25,11 +25,11 @@ function clean_up_old_posts ($content) {
 
 	   	  	$pattern = array(
 
-	   	  		'/(<[^>]*>)*Resumen ejecutivo(<[^>]*>)*/',
+	   	  		'/(<[^>]*>)*(Resumen ejecutivo|Resumen Ejecutivo)(<[^>]*>)*/',
 
 	   	  	);
 
-	   	  	$content = preg_replace( $pattern, '<h3>Resumen ejecutivo</h3>', $content, 1 );
+	   	  	$content = preg_replace( $pattern, '<h2 class="executive-summary-subtitle">Resumen ejecutivo</h2>', $content, 1 );
 
 		endif;
 
