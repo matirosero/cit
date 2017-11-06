@@ -5468,17 +5468,17 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto; }
 
-.entry-content .alignleft, .entry-content img.alignleft {
+.entry-content .alignleft, .entry-content img.alignleft, .entry-content img[align="left"] {
   margin-right: 1.5em;
   display: inline;
   float: left; }
 
-.entry-content .alignright, .entry-content img.alignright {
+.entry-content .alignright, .entry-content img.alignright, .entry-content img[align="right"] {
   margin-left: 1.5em;
   display: inline;
   float: right; }
 
-.entry-content .aligncenter, .entry-content img.aligncenter {
+.entry-content .aligncenter, .entry-content img.aligncenter, .entry-content img[align="center"] {
   margin-right: auto;
   margin-left: auto;
   display: block;
