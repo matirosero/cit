@@ -1,15 +1,18 @@
 <?php
 
 function clean_up_old_posts ($content) {
-	if ( is_single() ) {
 
-		//Check the date
-		global $post;
-		$compare_date = strtotime( "2017-12-31" ); //cut off date here
-	   	$post_date    = strtotime( $post->post_date ); //current post's date
+	//Check the date
+	global $post;
+	$compare_date = strtotime( "2017-12-31" ); //cut off date here
+   	$post_date    = strtotime( $post->post_date ); //current post's date
 
-	   	if ( $compare_date > $post_date ) :
-	   	  	//it's an old post
+   	if ( $compare_date > $post_date ) :
+
+
+		//If it is a post
+		if ( is_single() ) :
+
 
 	   	  	//Strip all tags except these (for divs)
 	   	  	$content = strip_tags( $content, '<p><br><table><th><tr><td><a><strong><b><em><i><img><li><ol><ul><s><u><span>' );
@@ -30,7 +33,8 @@ function clean_up_old_posts ($content) {
 
 	   	endif;
 
-	}
+	endif;
+
 	return $content;
 }
 add_filter('the_content', 'clean_up_old_posts', 1);
