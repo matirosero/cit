@@ -29,6 +29,7 @@ h5, .h5 {
 
 }
 
-p strong:only-child {
-	@extend h3;
-}
+//Can't use this, see http://localhost:3000/globalizacion-y-tic/
+// p strong:only-child {
+// 	@extend h3;
+// }

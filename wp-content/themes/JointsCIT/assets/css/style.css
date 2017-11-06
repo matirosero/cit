@@ -2298,7 +2298,6 @@ li,
 h1,
 h2,
 h3,
-p strong:only-child,
 h4,
 h5,
 h6,
@@ -2334,7 +2333,6 @@ small {
 h1,
 h2,
 h3,
-p strong:only-child,
 h4,
 h5,
 h6 {
@@ -2345,7 +2343,7 @@ h6 {
   text-rendering: optimizeLegibility; }
   h1 small,
   h2 small,
-  h3 small, p strong:only-child small,
+  h3 small,
   h4 small,
   h5 small,
   h6 small {
@@ -2364,7 +2362,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h3, p strong:only-child {
+h3 {
   font-size: 1.13636rem;
   line-height: 1.2;
   margin-top: 0;
@@ -2393,7 +2391,7 @@ h6 {
     font-size: 2.72727rem; }
   h2 {
     font-size: 2.27273rem; }
-  h3, p strong:only-child {
+  h3 {
     font-size: 1.76136rem; }
   h4 {
     font-size: 1.42045rem; }
@@ -2611,13 +2609,11 @@ kbd {
     margin: 0.5cm; }
   p,
   h2,
-  h3,
-  p strong:only-child {
+  h3 {
     orphans: 3;
     widows: 3; }
   h2,
-  h3,
-  p strong:only-child {
+  h3 {
     page-break-after: avoid; }
   .print-break-inside {
     page-break-inside: auto; } }
@@ -5183,7 +5179,7 @@ LINK Typography
 /*********************
 H1, H2, H3, H4, H5 P STYLES
 *********************/
-h1 a, .h1 a, h2 a, .h2 a, h3 a, p strong:only-child a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none; }
 
 /*********************
@@ -5465,7 +5461,7 @@ POSTS & CONTENT STYLES
     font-size: 4.0625rem;
     line-height: 3.4375rem;
     padding-top: 4px;
-    padding-right: 8px;
+    padding-right: 0.25rem;
     padding-left: 3px; }
 
 .entry-content img {
@@ -5845,12 +5841,11 @@ to display none.
     max-width: 100% !important; }
   @page {
     margin: 0.5cm; }
-  p, h2, h3, p strong:only-child {
+  p, h2, h3 {
     orphans: 3;
     widows: 3; }
   h2,
-  h3,
-  p strong:only-child {
+  h3 {
     page-break-after: avoid; }
   .sidebar,
   .page-navigation,
