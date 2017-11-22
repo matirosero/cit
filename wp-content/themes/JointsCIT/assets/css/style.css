@@ -5178,6 +5178,10 @@ BUTTON STYLES
     background-color: #E02818;
     background-image: linear-gradient(to bottom, #F9664D, #E02818);
     color: #fff; }
+  .button.search-submit {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background-clip: padding-box; }
 
 /*********************
 LINK Typography

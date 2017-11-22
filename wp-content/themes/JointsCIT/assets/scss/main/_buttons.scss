@@ -1,6 +1,6 @@
 .button {
 	@include navigation-type-style;
-	@include border-radius(20px)
+	@include border-radius(20px);
 	@include button-gradient( 
 		color('blue', 'light'), 
 		color('blue', 'dark'), 
@@ -10,4 +10,9 @@
 		color('white', 'base') 
 	);
 	margin-bottom: 2rem;
+
+	&.search-submit {
+		@include border-left-radius(0);
+		// @include border-radius(10px)
+	}
 }
