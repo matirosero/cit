@@ -10,11 +10,18 @@
 	<div id="main-menu" class="top-bar-left float-left show-for-medium">
 		<?php joints_top_nav(); ?>
 	</div>
-	<div class="top-bar-right show-for-medium">
-      <ul class="menu">
-        <li><input type="search" placeholder="Search"></li>
-        <li><button type="button" class="button">Search</button></li>
-      </ul>
+	<div class="top-bar-right top-bar-search show-for-medium">
+
+		<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+			<ul class="menu">
+				<li><label>
+					<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label', 'jointswp' ) ?></span>
+					<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search...', 'jointswp' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'jointswp' ) ?>" />
+				</label></li>
+				<li><input type="submit" class="search-submit button" value="<?php echo esc_attr_x( 'Search', 'jointswp' ) ?>" /></li>
+			</ul>
+		</form>
+
     </div>
 	<div class="top-bar-right float-right show-for-small-only">
 		<ul class="menu">
