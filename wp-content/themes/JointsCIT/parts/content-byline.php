@@ -1,3 +1,9 @@
+<?php
+$date_format = 'F j, Y';
+if ( is_singular('cit_report') ) {
+	$date_format = 'F Y';
+}
+?>
 <p class="byline">
 	<?php
 	if ( is_singular('cit_report') ) { 
@@ -10,10 +16,10 @@
 	} else {
 	    the_author_posts_link();
 	} ?>
-	<?php
+	
+</p>
+<p class="date"><?php the_time($date_format) ?><?php
 	if ( !is_singular('cit_report') ) { 
 		echo ' - '; 
 		the_category(', '); 
-	} ?>
-	
-</p>
+	} ?></p>

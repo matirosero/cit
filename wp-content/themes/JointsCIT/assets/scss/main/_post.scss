@@ -64,6 +64,19 @@ POSTS & CONTENT STYLES
 	@include breakpoint(medium) {
 	  	margin-bottom: 2rem;
 	  	padding-bottom: 1rem;
+		.single & {
+			padding-top: 0.25rem;
+		}
+	}
+}
+
+// Post meta
+.byline {
+	color: #999;
+	margin-bottom: 0;
+	font-family: $sans-family;
+	@include breakpoint(small only) {
+		font-size: $small-font-size;
 	}
 }
 
@@ -78,14 +91,7 @@ POSTS & CONTENT STYLES
 	}
 }
 
-// Post meta
-.byline {
-	color: #999;
-	font-family: $sans-family;
-	@include breakpoint(small only) {
-		font-size: $small-font-size;
-	}
-}
+
 
 // Entry content
 .entry-content {

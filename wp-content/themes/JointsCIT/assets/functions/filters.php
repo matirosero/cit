@@ -16,7 +16,9 @@ function clean_up_old_posts ($content) {
 			$pattern = array(
 
 	   	  		//Remove "Por [name]\n[date]" from beginning of posts
-	   	  		'/^(<[^>]*>)*(Preparado por)*(:)*([a-zA-Z0-9\-_.\p{L}\s]*)(<br \/>)*(\s)*(<[^>]*>)*([a-zA-Z]*)[a-zA-Z\s]*(\d{2,4})(<br \/>)*(<\/[^>]+>)*((<br \/>)*(\s)*)*/u',
+	   	  		'/^(<[^>]*>)*(Preparado por)*(:)*([a-zA-Z0-9\-_.,\p{L}\s]*)(<br \/>)*(\s)*(<[^>]*>)*([a-zA-Z]*)[a-zA-Z,\s]*(\d{2,4})(\.)*(<br \/>)*(<\/[^>]+>)*((<br \/>)*(\s)*)*/u',
+
+	   	  		// '/^(<[^>]*>)*(Preparado por)*(:)*([a-zA-Z0-9\-_.\p{L}\s]*)(<br \/>)*([a-zA-Z0-9\-_.\p{L}\s]*)*(<[^>]*>)*(\s)*(<[^>]*>)*([a-zA-Z]*)[a-zA-Z,\s]*(\d{2,4})(.)*(<br \/>)*(<\/[^>]+>)*((<br \/>)*(\s)*)*/u',
 
 	   	  	);
 

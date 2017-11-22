@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JointsCIT\n"
-"POT-Creation-Date: 2017-11-03 16:37-0600\n"
-"PO-Revision-Date: 2017-11-03 16:42-0600\n"
+"POT-Creation-Date: 2017-11-06 09:04-0600\n"
+"PO-Revision-Date: 2017-11-06 09:05-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_PE\n"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: assets/functions/comments.php:19
 msgid "(Edit)"
-msgstr ""
+msgstr "(Editar)"
 
 #: assets/functions/comments.php:23
 msgid "Your comment is awaiting moderation."
@@ -224,7 +224,11 @@ msgstr ""
 msgid "The Sidebar Menu"
 msgstr ""
 
-#: assets/functions/menu.php:7 assets/functions/menu.php:80
+#: assets/functions/menu.php:7
+msgid "The Mobile/Offcanvas Menu"
+msgstr ""
+
+#: assets/functions/menu.php:8 assets/functions/menu.php:81
 msgid "Footer Links"
 msgstr ""
 
@@ -288,9 +292,13 @@ msgstr "Comentarios más recientes"
 msgid "Comments are closed."
 msgstr "Comentarios cerrados."
 
-#: parts/content-byline.php:2
-msgid "By"
-msgstr "Por"
+#: parts/content-byline.php:4
+msgid "Prepared by "
+msgstr "Preparado por "
+
+#: parts/content-byline.php:6
+msgid "By "
+msgstr "Por "
 
 #: parts/content-missing.php:6
 msgid "Sorry, No Results."
@@ -316,15 +324,17 @@ msgstr "Falta algo. Intente revisar nuevamente."
 msgid "Read more..."
 msgstr "Leer más..."
 
-#: parts/loop-archive.php:14 parts/loop-single.php:16
+#: parts/loop-archive.php:14 parts/loop-cit_report.php:16
+#: parts/loop-past-event.php:15 parts/loop-single.php:16
 msgid "Tags:"
 msgstr "Etiquetas:"
 
+#: parts/loop-cit_report.php:15 parts/loop-past-event.php:14
 #: parts/loop-single.php:15
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: parts/nav-offcanvas-topbar.php:19 parts/nav-offcanvas.php:10
+#: parts/nav-offcanvas-topbar.php:22 parts/nav-offcanvas.php:10
 #: parts/nav-title-bar.php:7
 msgid "Menu"
 msgstr "Menú"

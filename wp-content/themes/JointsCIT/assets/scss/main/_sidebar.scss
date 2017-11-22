@@ -7,6 +7,8 @@ SIDEBARS & ASIDES
 	padding-top: 1rem;
 	@include breakpoint(medium) {
 		padding-top: 3rem;
+		// height: 100vh;
+		// position: fixed;
 	}
 	@include breakpoint(large) {
 		// background: color('grey', 'light');
