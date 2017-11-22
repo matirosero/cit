@@ -82,6 +82,10 @@ NAVIGATION STYLES
 			}
 		}
 
+		.top-bar-search {
+			padding-top: (topbar-height('medium') - 38px)/2;
+		}
+
 		// left margin for main menu
 		#main-menu > .menu {
 			// padding-left: 1rem;

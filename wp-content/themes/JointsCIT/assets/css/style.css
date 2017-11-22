@@ -5305,6 +5305,8 @@ NAVIGATION STYLES
           .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li > .is-dropdown-submenu a:focus,
           .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li > .is-dropdown-submenu a:hover {
             background-color: #F03626; }
+      .top-bar .top-bar-search {
+        padding-top: 38.5px; }
       .top-bar .title-area ul {
         height: 115px; }
         .top-bar .title-area ul:before {
