@@ -16,3 +16,9 @@
 		// @include border-radius(10px)
 	}
 }
+
+.input-group > :last-child > * {
+    @include navigation-type-style;
+    @include border-left-radius(0);
+    @include border-right-radius(20px);
+}

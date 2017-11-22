@@ -84,6 +84,9 @@ NAVIGATION STYLES
 
 		.top-bar-search {
 			padding-top: (topbar-height('medium') - 38px)/2;
+			.search-field {
+				margin-right: 0;
+			}
 		}
 
 		// left margin for main menu

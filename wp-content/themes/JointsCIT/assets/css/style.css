@@ -5183,6 +5183,18 @@ BUTTON STYLES
     border-top-left-radius: 0;
     background-clip: padding-box; }
 
+.input-group > :last-child > * {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  background-clip: padding-box;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background-clip: padding-box; }
+
 /*********************
 LINK Typography
 *********************/
@@ -5311,6 +5323,8 @@ NAVIGATION STYLES
             background-color: #F03626; }
       .top-bar .top-bar-search {
         padding-top: 38.5px; }
+        .top-bar .top-bar-search .search-field {
+          margin-right: 0; }
       .top-bar .title-area ul {
         height: 115px; }
         .top-bar .title-area ul:before {
