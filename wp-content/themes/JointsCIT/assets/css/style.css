@@ -74,7 +74,13 @@ Stylesheet: Variables
 
 ******************************************************************/
 /*********************
+COLORS
+*********************/
+/*********************
 Fonts
+*********************/
+/*********************
+BORDERS
 *********************/
 /*********************
 COLORS
@@ -98,9 +104,6 @@ TOOLS
   white-space: nowrap;
   overflow: hidden; }
 
-/*********************
-COLORS
-*********************/
 /*********************
 TYPOGRAPHY
 *********************/
@@ -5475,11 +5478,13 @@ POSTS & CONTENT STYLES
     .byline {
       font-size: 80%; } }
 
-.date {
+.date,
+.tribe-events-duration {
   color: #999;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   @media screen and (max-width: 39.9375em) {
-    .date {
+    .date,
+    .tribe-events-duration {
       font-size: 80%;
       margin-bottom: .5rem; } }
 
@@ -5760,11 +5765,28 @@ SIDEBARS & ASIDES
     border-bottom: 1px solid #006CB5; }
 
 .widget {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 80%; }
   .widget ul {
     margin: 0; }
     .widget ul li {
       list-style: none; }
+  .widget h4, .widget .entry-content .executive-summary-subtitle, .entry-content .widget .executive-summary-subtitle,
+  .widget .tribe-events-title,
+  .widget .tribe-mini-calendar-event .list-info h2 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 0.25rem; }
+  .widget .date,
+  .widget .tribe-events-duration {
+    font-size: 13px;
+    line-height: 1.6; }
+  .widget.latest_cpt_widget li {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #D8D8D8; }
 
 /*********************
 FOOTER STYLES
@@ -5786,6 +5808,11 @@ FOUNDATION STYLES
 /*********************
 PLUGIN STYLES
 *********************/
+.tribe-mini-calendar-event {
+  border-bottom: 1px solid #D8D8D8; }
+  .tribe-mini-calendar-event .list-date .list-dayname {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
 .gform_body ul {
   list-style: none outside none;
   margin: 0; }

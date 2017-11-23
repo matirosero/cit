@@ -64,3 +64,16 @@ function clean_up_old_posts ($content) {
 	return $content;
 }
 add_filter('the_content', 'clean_up_old_posts', 1);
+
+
+
+/**
+ * Widget Titles: Change default H4 to an H3.
+ *
+ * @author David Decker - DECKERWEB
+ * @link   http://deckerweb.de/twitter
+ */
+// function mro_cit_custom_widget_title_headline( $title ) {
+// 	return '<h3>' . $title . '</h3>';
+// }
+// add_filter( 'widget_title', 'mro_cit_custom_widget_title_headline' );

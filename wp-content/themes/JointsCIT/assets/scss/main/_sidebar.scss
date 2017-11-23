@@ -29,6 +29,7 @@ SIDEBARS & ASIDES
 
 .widget {
 	margin-bottom: 2rem;
+	font-size: $small-font-size;
 	ul {
 		margin: 0;
 
@@ -44,6 +45,22 @@ SIDEBARS & ASIDES
 			// deep nesting
 			ul {}
 
+		}
+	}
+
+	h4,
+	.tribe-events-title,
+	.tribe-mini-calendar-event .list-info h2 {
+		@include sidebar-list-item-heading;
+	}
+	.date,
+	.tribe-events-duration {
+		@include sidebar-small-text;
+	}
+
+	&.latest_cpt_widget {
+		li {
+			@include sidebar-list-item;
 		}
 	}
 }

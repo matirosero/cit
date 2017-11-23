@@ -19,57 +19,7 @@ TOOLS
 }
 
 
-/*********************
-COLORS
-*********************/
 
-$colors: (
- 'blue': (
-   dark: 	#263F81,
-   base: 	#006CB5,
-   light:	#0589E2,
-   lightest: #F2F5F8,
-
-   // trans: transparentize(#0069AA, .35),
-   // trans-light: transparentize(#76D8FF, .35),
-   // trans-dark: transparentize(#051C35, .35),
- ),
- 'orange': (
-   dark: 	#E02818,
-   base: 	#F03626,
-   light: 	#F9664D,
- ),
- 'grey': (
-   dark: 	#333,
-   base: 	#D8D8D8,
-   light: 	#F5F5F5,
- ),
- 'black': (
-   base: 	#4A4A4A,
-   trans: 	transparentize(#4A4A4A, .3)
- ),
- 'white': (
-   base: 	#fff,
-   trans: 	transparentize(#fff, .5)
- ),
- 'social': (
-   facebook:	#3c5a9a,
-   twitter: 	#55acee,
-   google: 		#de4b39,
-   reddit: 		#cee3f8,
-   linkedin: 	#007bb5,
-   youtube: 	#cc181e,
- )
-);
-
-@function color($color-name, $tone: base) {
-    @return map-get(map-get($colors, $color-name), $tone);
-}
-
-//usage
-// a {
-//   color: color('grey', 'dark');
-// }
 
 /*********************
 TYPOGRAPHY
@@ -117,6 +67,25 @@ TYPOGRAPHY: NAVIGATION STYLE
   text-transform: uppercase;
 }
 
+@mixin sidebar-small-text {
+  font-size: $sidebar-small-text;
+  line-height: $sidebar-line-height;
+}
+
+@mixin sidebar-list-item-heading {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+@mixin sidebar-list-item {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: $divider-base;
+}
+
 
 /*********************
 LEFT SITE BORDER
@@ -147,12 +116,12 @@ BUTTON GRADIENT
   }
 }
 
-
+// $divider-base: 1px solid color( 'grey', 'base' );
 /*********************
 DIVIDER LINE
 *********************/
 @mixin divider {
-  border-bottom: 1px solid color( 'grey', 'base' );
+  border-bottom: $divider-base;
   position: relative;
   &:after {
     content:' ';
@@ -166,6 +135,9 @@ DIVIDER LINE
   }
 }
 
+@mixin sidebar-list-item-divider {
+  border-bottom: $divider-plain-line;
+}
 
 /*********************
 MY GRID

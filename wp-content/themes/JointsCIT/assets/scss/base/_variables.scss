@@ -4,6 +4,60 @@ Stylesheet: Variables
 
 ******************************************************************/
 
+
+/*********************
+COLORS
+*********************/
+
+$colors: (
+ 'blue': (
+   dark: 	#263F81,
+   base: 	#006CB5,
+   light:	#0589E2,
+   lightest: #F2F5F8,
+
+   // trans: transparentize(#0069AA, .35),
+   // trans-light: transparentize(#76D8FF, .35),
+   // trans-dark: transparentize(#051C35, .35),
+ ),
+ 'orange': (
+   dark: 	#E02818,
+   base: 	#F03626,
+   light: 	#F9664D,
+ ),
+ 'grey': (
+   dark: 	#333,
+   base: 	#D8D8D8,
+   light: 	#F5F5F5,
+ ),
+ 'black': (
+   base: 	#4A4A4A,
+   trans: 	transparentize(#4A4A4A, .3)
+ ),
+ 'white': (
+   base: 	#fff,
+   trans: 	transparentize(#fff, .5)
+ ),
+ 'social': (
+   facebook:	#3c5a9a,
+   twitter: 	#55acee,
+   google: 		#de4b39,
+   reddit: 		#cee3f8,
+   linkedin: 	#007bb5,
+   youtube: 	#cc181e,
+ )
+);
+
+@function color($color-name, $tone: base) {
+    @return map-get(map-get($colors, $color-name), $tone);
+}
+
+//usage
+// a {
+//   color: color('grey', 'dark');
+// }
+
+
 /*********************
 Fonts
 *********************/
@@ -13,6 +67,15 @@ $header-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Roboto, Arial, sa
 $sans-family: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 
 $larger-font-size: 1.25rem;
+$sidebar-small-text: 13px;
+$sidebar-line-height: 1.6;
+
+
+/*********************
+BORDERS
+*********************/
+
+$divider-base: 1px solid color( 'grey', 'base' );
 
 
 /*********************
