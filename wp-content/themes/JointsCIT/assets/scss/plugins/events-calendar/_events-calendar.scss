@@ -1,3 +1,22 @@
+.single-tribe_events {
+	.tribe-events-single-event-title {
+		@extend h1;
+	}
+}
+
+.tribe-events-schedule {
+	h2 {
+		@extend .byline;
+		font-weight: normal;
+		color: $body-font-color;
+	}
+	.tribe-events-cost {
+		@extend .label;
+		font-size: 1rem !important;
+		border-radius: 3px;
+	}
+}
+
 .tribe-mini-calendar-event {
 	border-bottom: $divider-base;
 	.list-date {
@@ -5,4 +24,11 @@
 			font-family: $sans-family;
 		}
 	}
+}
+
+
+#tribe-events .tribe-events-button, 
+.tribe-events-button {
+	@extend .button;
+	letter-spacing: normal;
 }
