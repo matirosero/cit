@@ -180,8 +180,9 @@ NAVIGATION STYLES
 				border-left: 5px solid color( 'blue', 'dark' );
 				background: color('grey', 'light');
 				overflow: auto;
+
 				> a {
-					// background: transparent;
+					background: transparent;
 				}
 			}
 		}
@@ -195,6 +196,14 @@ NAVIGATION STYLES
 			// Slightly more top padding before the first link
 			&:first-of-type > a{
 				// padding-top: 1rem;
+			}
+
+			&.active {
+				@include hover {
+					background-color: color('grey', 'light');
+					border-left: 5px solid color( 'orange', 'base' );
+					// overflow: auto;
+				}
 			}
 		}
 	}
@@ -214,27 +223,36 @@ NAVIGATION STYLES
 		&[aria-expanded='true'] {
 			border-left: 5px solid color( 'blue', 'dark' );
 			li {
-				border-left: 5px solid color( 'blue', 'dark' );
+				// border-left: 5px solid color( 'blue', 'dark' );
+				border-left: 0;
+				&.active {
+					background-color: darken(color('grey', 'light'), 6);
+				}
 			}
 		}
 
 		&:hover {
 			li {
-				border-left: 5px solid color( 'orange', 'base' );
+				// border-left: 5px solid color( 'orange', 'base' );
 
 				&:hover {
-					border-left: 5px solid darken(color( 'orange', 'dark' ), 5%);
+					// border-left: 5px solid darken(color( 'orange', 'dark' ), 5%);
+					background-color: darken(color('grey', 'light'), 3);
 				}
 			}
+
 		}
+
+
+
 	}
 
 	.menu.nested {
 		margin-left: 0;
-		position: absolute;
-		left: -5px;
-		right: 0;
-		display: block;
+		// position: absolute;
+		// left: -5px;
+		// right: 0;
+		// display: block;
 		li {
 			padding-left: 0.75rem;
 		}
