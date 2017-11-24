@@ -33,6 +33,9 @@ require_once(get_template_directory().'/assets/functions/hooks.php');
 // Filters
 require_once(get_template_directory().'/assets/functions/filters.php'); 
 
+// Actions
+require_once(get_template_directory().'/assets/functions/actions.php'); 
+
 // Helpers
 require_once(get_template_directory().'/assets/functions/helpers.php'); 
 

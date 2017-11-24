@@ -22,7 +22,7 @@
 		// background-color: $white;
 
 		@include breakpoint(medium) {
-			body:not(.single):not(.post-type-archive-tribe_events) & > article:first-of-type {
+			body:not(.single):not(.post-type-archive-tribe_events):not(.page) & > article:first-of-type {
 				.entry-content {
 					font-size: $larger-font-size;
 				}

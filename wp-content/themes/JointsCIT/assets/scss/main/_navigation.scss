@@ -234,6 +234,10 @@ NAVIGATION STYLES
 		li {
 			padding-left: 0.75rem;
 		}
+		.no-js & {
+			position: relative;
+			left: 0;
+		}
 	}
 }
 
