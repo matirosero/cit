@@ -33,6 +33,9 @@ require_once(get_template_directory().'/assets/functions/hooks.php');
 // Filters
 require_once(get_template_directory().'/assets/functions/filters.php'); 
 
+// Helpers
+require_once(get_template_directory().'/assets/functions/helpers.php'); 
+
 // Remove 4.2 Emoji Support
 // require_once(get_template_directory().'/assets/functions/disable-emoji.php'); 
 

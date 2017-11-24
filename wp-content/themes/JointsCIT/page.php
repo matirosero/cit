@@ -12,11 +12,11 @@
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			    	<?php if ( is_singular('tribe_events') ) : ?>
-			    		<?php get_template_part( 'parts/loop', 'empty-page' ); ?>
-			    	<?php else: ?>
-				    	<?php get_template_part( 'parts/loop', 'page' ); ?>
-				    <?php endif; ?>
+			    	<?php if ( is_singular('tribe_events') || is_archive('tribe_events') ) :
+			    		get_template_part( 'parts/loop', 'empty-page' );
+			    	else:
+				    	get_template_part( 'parts/loop', 'page' );
+				    endif; ?>
 
 			    <?php endwhile; endif; ?>
 

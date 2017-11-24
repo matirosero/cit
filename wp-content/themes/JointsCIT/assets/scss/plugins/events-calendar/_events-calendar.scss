@@ -1,6 +1,31 @@
+#tribe-bar-form {
+	input[type=text] {
+		border-bottom: $divider-base;
+	}
+
+	&.tribe-bar-mini {
+		label {
+			font-family: $sans-family;
+			font-weight: normal !important;
+			// background-color: red;
+		}
+	}
+}
+
+.tribe-events-list-separator-month {
+	font-family: $sans-family;
+	font-weight: normal !important;
+	text-align: center;
+}
+
+.tribe-events-event-meta {
+	font-family: $sans-family;
+	font-weight: normal !important;
+}
+
 .single-tribe_events {
 	.tribe-events-single-event-title {
-		@extend h1;
+		@extend h3;
 	}
 }
 
@@ -27,8 +52,15 @@
 }
 
 
-#tribe-events .tribe-events-button, 
-.tribe-events-button {
+#tribe-events .tribe-events-button,
+.tribe-events-button,
+.tribe-events-read-more {
 	@extend .button;
 	letter-spacing: normal;
+}
+
+#tribe-bar-form .tribe-bar-submit input[type=submit] {
+	@extend .button;
+	@include border-radius(6px);
+	font-size: 14px !important;
 }

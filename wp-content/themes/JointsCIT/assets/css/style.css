@@ -643,7 +643,7 @@ section {
      * Correct the font size and margin on `h1` elements within `section` and
      * `article` contexts in Chrome, Firefox, and Safari.
      */
-h1, .single-tribe_events .tribe-events-single-event-title {
+h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -2299,10 +2299,11 @@ ul,
 ol,
 li,
 h1,
-.single-tribe_events .tribe-events-single-event-title,
 h2,
 h3,
 .single-cit_report .single-title,
+.single-cit_past_event .single-title,
+.single-tribe_events .tribe-events-single-event-title,
 h4,
 .entry-content .executive-summary-subtitle,
 h5,
@@ -2336,10 +2337,12 @@ small {
   font-size: 80%;
   line-height: inherit; }
 
-h1, .single-tribe_events .tribe-events-single-event-title,
+h1,
 h2,
 h3,
 .single-cit_report .single-title,
+.single-cit_past_event .single-title,
+.single-tribe_events .tribe-events-single-event-title,
 h4,
 .entry-content .executive-summary-subtitle,
 h5,
@@ -2349,16 +2352,17 @@ h6 {
   font-weight: normal;
   color: inherit;
   text-rendering: optimizeLegibility; }
-  h1 small, .single-tribe_events .tribe-events-single-event-title small,
+  h1 small,
   h2 small,
   h3 small, .single-cit_report .single-title small,
+  .single-cit_past_event .single-title small, .single-tribe_events .tribe-events-single-event-title small,
   h4 small, .entry-content .executive-summary-subtitle small,
   h5 small,
   h6 small {
     line-height: 0;
     color: #cacaca; }
 
-h1, .single-tribe_events .tribe-events-single-event-title {
+h1 {
   font-size: 1.53409rem;
   line-height: 1.2;
   margin-top: 0;
@@ -2370,7 +2374,8 @@ h2 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h3, .single-cit_report .single-title {
+h3, .single-cit_report .single-title,
+.single-cit_past_event .single-title, .single-tribe_events .tribe-events-single-event-title {
   font-size: 1.13636rem;
   line-height: 1.2;
   margin-top: 0;
@@ -2395,11 +2400,12 @@ h6 {
   margin-bottom: 0.5rem; }
 
 @media print, screen and (min-width: 40em) {
-  h1, .single-tribe_events .tribe-events-single-event-title {
+  h1 {
     font-size: 2.72727rem; }
   h2 {
     font-size: 2.27273rem; }
-  h3, .single-cit_report .single-title {
+  h3, .single-cit_report .single-title,
+  .single-cit_past_event .single-title, .single-tribe_events .tribe-events-single-event-title {
     font-size: 1.76136rem; }
   h4, .entry-content .executive-summary-subtitle {
     font-size: 1.42045rem; }
@@ -2618,12 +2624,16 @@ kbd {
   p,
   h2,
   h3,
-  .single-cit_report .single-title {
+  .single-cit_report .single-title,
+  .single-cit_past_event .single-title,
+  .single-tribe_events .tribe-events-single-event-title {
     orphans: 3;
     widows: 3; }
   h2,
   h3,
-  .single-cit_report .single-title {
+  .single-cit_report .single-title,
+  .single-cit_past_event .single-title,
+  .single-tribe_events .tribe-events-single-event-title {
     page-break-after: avoid; }
   .print-break-inside {
     page-break-inside: auto; } }
@@ -2859,7 +2869,8 @@ select {
     display: block; }
 
 .button, #tribe-events .tribe-events-button,
-.tribe-events-button {
+.tribe-events-button,
+.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[type=submit] {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
@@ -2875,218 +2886,310 @@ select {
   background-color: #006CB5;
   color: #fefefe; }
   [data-whatinput='mouse'] .button, [data-whatinput='mouse'] #tribe-events .tribe-events-button, #tribe-events [data-whatinput='mouse'] .tribe-events-button, [data-whatinput='mouse']
-  .tribe-events-button {
+  .tribe-events-button, [data-whatinput='mouse']
+  .tribe-events-read-more, [data-whatinput='mouse'] #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit [data-whatinput='mouse'] input[type=submit] {
     outline: 0; }
   .button:hover, #tribe-events .tribe-events-button:hover,
-  .tribe-events-button:hover, .button:focus, #tribe-events .tribe-events-button:focus,
-  .tribe-events-button:focus {
+  .tribe-events-button:hover,
+  .tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, .button:focus, #tribe-events .tribe-events-button:focus,
+  .tribe-events-button:focus,
+  .tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[type=submit]:focus {
     background-color: #005c9a;
     color: #fefefe; }
   .button.tiny, #tribe-events .tiny.tribe-events-button,
-  .tiny.tribe-events-button {
+  .tiny.tribe-events-button,
+  .tiny.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.tiny[type=submit] {
     font-size: 0.6rem; }
   .button.small, #tribe-events .small.tribe-events-button,
-  .small.tribe-events-button {
+  .small.tribe-events-button,
+  .small.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.small[type=submit] {
     font-size: 0.75rem; }
   .button.large, #tribe-events .large.tribe-events-button,
-  .large.tribe-events-button {
+  .large.tribe-events-button,
+  .large.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.large[type=submit] {
     font-size: 1.25rem; }
   .button.expanded, #tribe-events .expanded.tribe-events-button,
-  .expanded.tribe-events-button {
+  .expanded.tribe-events-button,
+  .expanded.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.expanded[type=submit] {
     display: block;
     width: 100%;
     margin-right: 0;
     margin-left: 0; }
   .button.primary, #tribe-events .primary.tribe-events-button,
-  .primary.tribe-events-button {
+  .primary.tribe-events-button,
+  .primary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.primary[type=submit] {
     background-color: #006CB5;
     color: #fefefe; }
     .button.primary:hover, #tribe-events .primary.tribe-events-button:hover,
-    .primary.tribe-events-button:hover, .button.primary:focus, #tribe-events .primary.tribe-events-button:focus,
-    .primary.tribe-events-button:focus {
+    .primary.tribe-events-button:hover,
+    .primary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.primary[type=submit]:hover, .button.primary:focus, #tribe-events .primary.tribe-events-button:focus,
+    .primary.tribe-events-button:focus,
+    .primary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.primary[type=submit]:focus {
       background-color: #005691;
       color: #fefefe; }
   .button.secondary, #tribe-events .secondary.tribe-events-button,
-  .secondary.tribe-events-button {
+  .secondary.tribe-events-button,
+  .secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit] {
     background-color: #767676;
     color: #fefefe; }
     .button.secondary:hover, #tribe-events .secondary.tribe-events-button:hover,
-    .secondary.tribe-events-button:hover, .button.secondary:focus, #tribe-events .secondary.tribe-events-button:focus,
-    .secondary.tribe-events-button:focus {
+    .secondary.tribe-events-button:hover,
+    .secondary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:hover, .button.secondary:focus, #tribe-events .secondary.tribe-events-button:focus,
+    .secondary.tribe-events-button:focus,
+    .secondary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:focus {
       background-color: #5e5e5e;
       color: #fefefe; }
   .button.success, #tribe-events .success.tribe-events-button,
-  .success.tribe-events-button {
+  .success.tribe-events-button,
+  .success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.success[type=submit] {
     background-color: #3adb76;
     color: #4A4A4A; }
     .button.success:hover, #tribe-events .success.tribe-events-button:hover,
-    .success.tribe-events-button:hover, .button.success:focus, #tribe-events .success.tribe-events-button:focus,
-    .success.tribe-events-button:focus {
+    .success.tribe-events-button:hover,
+    .success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.success[type=submit]:hover, .button.success:focus, #tribe-events .success.tribe-events-button:focus,
+    .success.tribe-events-button:focus,
+    .success.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.success[type=submit]:focus {
       background-color: #22bb5b;
       color: #4A4A4A; }
   .button.warning, #tribe-events .warning.tribe-events-button,
-  .warning.tribe-events-button {
+  .warning.tribe-events-button,
+  .warning.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.warning[type=submit] {
     background-color: #ffae00;
     color: #4A4A4A; }
     .button.warning:hover, #tribe-events .warning.tribe-events-button:hover,
-    .warning.tribe-events-button:hover, .button.warning:focus, #tribe-events .warning.tribe-events-button:focus,
-    .warning.tribe-events-button:focus {
+    .warning.tribe-events-button:hover,
+    .warning.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.warning[type=submit]:hover, .button.warning:focus, #tribe-events .warning.tribe-events-button:focus,
+    .warning.tribe-events-button:focus,
+    .warning.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.warning[type=submit]:focus {
       background-color: #cc8b00;
       color: #4A4A4A; }
   .button.alert, #tribe-events .alert.tribe-events-button,
-  .alert.tribe-events-button {
+  .alert.tribe-events-button,
+  .alert.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.alert[type=submit] {
     background-color: #cc4b37;
     color: #fefefe; }
     .button.alert:hover, #tribe-events .alert.tribe-events-button:hover,
-    .alert.tribe-events-button:hover, .button.alert:focus, #tribe-events .alert.tribe-events-button:focus,
-    .alert.tribe-events-button:focus {
+    .alert.tribe-events-button:hover,
+    .alert.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.alert[type=submit]:hover, .button.alert:focus, #tribe-events .alert.tribe-events-button:focus,
+    .alert.tribe-events-button:focus,
+    .alert.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.alert[type=submit]:focus {
       background-color: #a53b2a;
       color: #fefefe; }
   .button.hollow, #tribe-events .hollow.tribe-events-button,
-  .hollow.tribe-events-button {
+  .hollow.tribe-events-button,
+  .hollow.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.hollow[type=submit] {
     border: 1px solid #006CB5;
     color: #006CB5; }
     .button.hollow, #tribe-events .hollow.tribe-events-button,
-    .hollow.tribe-events-button, .button.hollow:hover, #tribe-events .hollow.tribe-events-button:hover,
-    .hollow.tribe-events-button:hover, .button.hollow:focus, #tribe-events .hollow.tribe-events-button:focus,
-    .hollow.tribe-events-button:focus {
+    .hollow.tribe-events-button,
+    .hollow.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.hollow[type=submit], .button.hollow:hover, #tribe-events .hollow.tribe-events-button:hover,
+    .hollow.tribe-events-button:hover,
+    .hollow.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow[type=submit]:hover, .button.hollow:focus, #tribe-events .hollow.tribe-events-button:focus,
+    .hollow.tribe-events-button:focus,
+    .hollow.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow[type=submit]:focus {
       background-color: transparent; }
     .button.hollow:hover, #tribe-events .hollow.tribe-events-button:hover,
-    .hollow.tribe-events-button:hover, .button.hollow:focus, #tribe-events .hollow.tribe-events-button:focus,
-    .hollow.tribe-events-button:focus {
+    .hollow.tribe-events-button:hover,
+    .hollow.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow[type=submit]:hover, .button.hollow:focus, #tribe-events .hollow.tribe-events-button:focus,
+    .hollow.tribe-events-button:focus,
+    .hollow.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow[type=submit]:focus {
       border-color: #00365b;
       color: #00365b; }
     .button.hollow.primary, #tribe-events .hollow.primary.tribe-events-button,
-    .hollow.primary.tribe-events-button {
+    .hollow.primary.tribe-events-button,
+    .hollow.primary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.hollow.primary[type=submit] {
       border: 1px solid #006CB5;
       color: #006CB5; }
       .button.hollow.primary:hover, #tribe-events .hollow.primary.tribe-events-button:hover,
-      .hollow.primary.tribe-events-button:hover, .button.hollow.primary:focus, #tribe-events .hollow.primary.tribe-events-button:focus,
-      .hollow.primary.tribe-events-button:focus {
+      .hollow.primary.tribe-events-button:hover,
+      .hollow.primary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow.primary[type=submit]:hover, .button.hollow.primary:focus, #tribe-events .hollow.primary.tribe-events-button:focus,
+      .hollow.primary.tribe-events-button:focus,
+      .hollow.primary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow.primary[type=submit]:focus {
         border-color: #00365b;
         color: #00365b; }
     .button.hollow.secondary, #tribe-events .hollow.secondary.tribe-events-button,
-    .hollow.secondary.tribe-events-button {
+    .hollow.secondary.tribe-events-button,
+    .hollow.secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.hollow.secondary[type=submit] {
       border: 1px solid #767676;
       color: #767676; }
       .button.hollow.secondary:hover, #tribe-events .hollow.secondary.tribe-events-button:hover,
-      .hollow.secondary.tribe-events-button:hover, .button.hollow.secondary:focus, #tribe-events .hollow.secondary.tribe-events-button:focus,
-      .hollow.secondary.tribe-events-button:focus {
+      .hollow.secondary.tribe-events-button:hover,
+      .hollow.secondary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow.secondary[type=submit]:hover, .button.hollow.secondary:focus, #tribe-events .hollow.secondary.tribe-events-button:focus,
+      .hollow.secondary.tribe-events-button:focus,
+      .hollow.secondary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow.secondary[type=submit]:focus {
         border-color: #3b3b3b;
         color: #3b3b3b; }
     .button.hollow.success, #tribe-events .hollow.success.tribe-events-button,
-    .hollow.success.tribe-events-button {
+    .hollow.success.tribe-events-button,
+    .hollow.success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit] {
       border: 1px solid #3adb76;
       color: #3adb76; }
       .button.hollow.success:hover, #tribe-events .hollow.success.tribe-events-button:hover,
-      .hollow.success.tribe-events-button:hover, .button.hollow.success:focus, #tribe-events .hollow.success.tribe-events-button:focus,
-      .hollow.success.tribe-events-button:focus {
+      .hollow.success.tribe-events-button:hover,
+      .hollow.success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:hover, .button.hollow.success:focus, #tribe-events .hollow.success.tribe-events-button:focus,
+      .hollow.success.tribe-events-button:focus,
+      .hollow.success.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:focus {
         border-color: #157539;
         color: #157539; }
     .button.hollow.warning, #tribe-events .hollow.warning.tribe-events-button,
-    .hollow.warning.tribe-events-button {
+    .hollow.warning.tribe-events-button,
+    .hollow.warning.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.hollow.warning[type=submit] {
       border: 1px solid #ffae00;
       color: #ffae00; }
       .button.hollow.warning:hover, #tribe-events .hollow.warning.tribe-events-button:hover,
-      .hollow.warning.tribe-events-button:hover, .button.hollow.warning:focus, #tribe-events .hollow.warning.tribe-events-button:focus,
-      .hollow.warning.tribe-events-button:focus {
+      .hollow.warning.tribe-events-button:hover,
+      .hollow.warning.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow.warning[type=submit]:hover, .button.hollow.warning:focus, #tribe-events .hollow.warning.tribe-events-button:focus,
+      .hollow.warning.tribe-events-button:focus,
+      .hollow.warning.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow.warning[type=submit]:focus {
         border-color: #805700;
         color: #805700; }
     .button.hollow.alert, #tribe-events .hollow.alert.tribe-events-button,
-    .hollow.alert.tribe-events-button {
+    .hollow.alert.tribe-events-button,
+    .hollow.alert.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.hollow.alert[type=submit] {
       border: 1px solid #cc4b37;
       color: #cc4b37; }
       .button.hollow.alert:hover, #tribe-events .hollow.alert.tribe-events-button:hover,
-      .hollow.alert.tribe-events-button:hover, .button.hollow.alert:focus, #tribe-events .hollow.alert.tribe-events-button:focus,
-      .hollow.alert.tribe-events-button:focus {
+      .hollow.alert.tribe-events-button:hover,
+      .hollow.alert.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow.alert[type=submit]:hover, .button.hollow.alert:focus, #tribe-events .hollow.alert.tribe-events-button:focus,
+      .hollow.alert.tribe-events-button:focus,
+      .hollow.alert.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow.alert[type=submit]:focus {
         border-color: #67251a;
         color: #67251a; }
   .button.disabled, #tribe-events .disabled.tribe-events-button,
-  .disabled.tribe-events-button, .button[disabled], #tribe-events [disabled].tribe-events-button,
-  [disabled].tribe-events-button {
+  .disabled.tribe-events-button,
+  .disabled.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled[type=submit], .button[disabled], #tribe-events [disabled].tribe-events-button,
+  [disabled].tribe-events-button,
+  [disabled].tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled][type=submit] {
     opacity: 0.25;
     cursor: not-allowed; }
     .button.disabled, #tribe-events .disabled.tribe-events-button,
-    .disabled.tribe-events-button, .button.disabled:hover, #tribe-events .disabled.tribe-events-button:hover,
-    .disabled.tribe-events-button:hover, .button.disabled:focus, #tribe-events .disabled.tribe-events-button:focus,
-    .disabled.tribe-events-button:focus, .button[disabled], #tribe-events [disabled].tribe-events-button,
-    [disabled].tribe-events-button, .button[disabled]:hover, #tribe-events [disabled].tribe-events-button:hover,
-    [disabled].tribe-events-button:hover, .button[disabled]:focus, #tribe-events [disabled].tribe-events-button:focus,
-    [disabled].tribe-events-button:focus {
+    .disabled.tribe-events-button,
+    .disabled.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled[type=submit], .button.disabled:hover, #tribe-events .disabled.tribe-events-button:hover,
+    .disabled.tribe-events-button:hover,
+    .disabled.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.disabled[type=submit]:hover, .button.disabled:focus, #tribe-events .disabled.tribe-events-button:focus,
+    .disabled.tribe-events-button:focus,
+    .disabled.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.disabled[type=submit]:focus, .button[disabled], #tribe-events [disabled].tribe-events-button,
+    [disabled].tribe-events-button,
+    [disabled].tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled][type=submit], .button[disabled]:hover, #tribe-events [disabled].tribe-events-button:hover,
+    [disabled].tribe-events-button:hover,
+    [disabled].tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[disabled][type=submit]:hover, .button[disabled]:focus, #tribe-events [disabled].tribe-events-button:focus,
+    [disabled].tribe-events-button:focus,
+    [disabled].tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[disabled][type=submit]:focus {
       background-color: #006CB5;
       color: #fefefe; }
     .button.disabled.primary, #tribe-events .disabled.primary.tribe-events-button,
-    .disabled.primary.tribe-events-button, .button[disabled].primary, #tribe-events [disabled].primary.tribe-events-button,
-    [disabled].primary.tribe-events-button {
+    .disabled.primary.tribe-events-button,
+    .disabled.primary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.primary[type=submit], .button[disabled].primary, #tribe-events [disabled].primary.tribe-events-button,
+    [disabled].primary.tribe-events-button,
+    [disabled].primary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].primary[type=submit] {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.primary, #tribe-events .disabled.primary.tribe-events-button,
-      .disabled.primary.tribe-events-button, .button.disabled.primary:hover, #tribe-events .disabled.primary.tribe-events-button:hover,
-      .disabled.primary.tribe-events-button:hover, .button.disabled.primary:focus, #tribe-events .disabled.primary.tribe-events-button:focus,
-      .disabled.primary.tribe-events-button:focus, .button[disabled].primary, #tribe-events [disabled].primary.tribe-events-button,
-      [disabled].primary.tribe-events-button, .button[disabled].primary:hover, #tribe-events [disabled].primary.tribe-events-button:hover,
-      [disabled].primary.tribe-events-button:hover, .button[disabled].primary:focus, #tribe-events [disabled].primary.tribe-events-button:focus,
-      [disabled].primary.tribe-events-button:focus {
+      .disabled.primary.tribe-events-button,
+      .disabled.primary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.primary[type=submit], .button.disabled.primary:hover, #tribe-events .disabled.primary.tribe-events-button:hover,
+      .disabled.primary.tribe-events-button:hover,
+      .disabled.primary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.disabled.primary[type=submit]:hover, .button.disabled.primary:focus, #tribe-events .disabled.primary.tribe-events-button:focus,
+      .disabled.primary.tribe-events-button:focus,
+      .disabled.primary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.disabled.primary[type=submit]:focus, .button[disabled].primary, #tribe-events [disabled].primary.tribe-events-button,
+      [disabled].primary.tribe-events-button,
+      [disabled].primary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].primary[type=submit], .button[disabled].primary:hover, #tribe-events [disabled].primary.tribe-events-button:hover,
+      [disabled].primary.tribe-events-button:hover,
+      [disabled].primary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[disabled].primary[type=submit]:hover, .button[disabled].primary:focus, #tribe-events [disabled].primary.tribe-events-button:focus,
+      [disabled].primary.tribe-events-button:focus,
+      [disabled].primary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[disabled].primary[type=submit]:focus {
         background-color: #006CB5;
         color: #fefefe; }
     .button.disabled.secondary, #tribe-events .disabled.secondary.tribe-events-button,
-    .disabled.secondary.tribe-events-button, .button[disabled].secondary, #tribe-events [disabled].secondary.tribe-events-button,
-    [disabled].secondary.tribe-events-button {
+    .disabled.secondary.tribe-events-button,
+    .disabled.secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit], .button[disabled].secondary, #tribe-events [disabled].secondary.tribe-events-button,
+    [disabled].secondary.tribe-events-button,
+    [disabled].secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit] {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.secondary, #tribe-events .disabled.secondary.tribe-events-button,
-      .disabled.secondary.tribe-events-button, .button.disabled.secondary:hover, #tribe-events .disabled.secondary.tribe-events-button:hover,
-      .disabled.secondary.tribe-events-button:hover, .button.disabled.secondary:focus, #tribe-events .disabled.secondary.tribe-events-button:focus,
-      .disabled.secondary.tribe-events-button:focus, .button[disabled].secondary, #tribe-events [disabled].secondary.tribe-events-button,
-      [disabled].secondary.tribe-events-button, .button[disabled].secondary:hover, #tribe-events [disabled].secondary.tribe-events-button:hover,
-      [disabled].secondary.tribe-events-button:hover, .button[disabled].secondary:focus, #tribe-events [disabled].secondary.tribe-events-button:focus,
-      [disabled].secondary.tribe-events-button:focus {
+      .disabled.secondary.tribe-events-button,
+      .disabled.secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit], .button.disabled.secondary:hover, #tribe-events .disabled.secondary.tribe-events-button:hover,
+      .disabled.secondary.tribe-events-button:hover,
+      .disabled.secondary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit]:hover, .button.disabled.secondary:focus, #tribe-events .disabled.secondary.tribe-events-button:focus,
+      .disabled.secondary.tribe-events-button:focus,
+      .disabled.secondary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit]:focus, .button[disabled].secondary, #tribe-events [disabled].secondary.tribe-events-button,
+      [disabled].secondary.tribe-events-button,
+      [disabled].secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit], .button[disabled].secondary:hover, #tribe-events [disabled].secondary.tribe-events-button:hover,
+      [disabled].secondary.tribe-events-button:hover,
+      [disabled].secondary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit]:hover, .button[disabled].secondary:focus, #tribe-events [disabled].secondary.tribe-events-button:focus,
+      [disabled].secondary.tribe-events-button:focus,
+      [disabled].secondary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit]:focus {
         background-color: #767676;
         color: #fefefe; }
     .button.disabled.success, #tribe-events .disabled.success.tribe-events-button,
-    .disabled.success.tribe-events-button, .button[disabled].success, #tribe-events [disabled].success.tribe-events-button,
-    [disabled].success.tribe-events-button {
+    .disabled.success.tribe-events-button,
+    .disabled.success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit], .button[disabled].success, #tribe-events [disabled].success.tribe-events-button,
+    [disabled].success.tribe-events-button,
+    [disabled].success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit] {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.success, #tribe-events .disabled.success.tribe-events-button,
-      .disabled.success.tribe-events-button, .button.disabled.success:hover, #tribe-events .disabled.success.tribe-events-button:hover,
-      .disabled.success.tribe-events-button:hover, .button.disabled.success:focus, #tribe-events .disabled.success.tribe-events-button:focus,
-      .disabled.success.tribe-events-button:focus, .button[disabled].success, #tribe-events [disabled].success.tribe-events-button,
-      [disabled].success.tribe-events-button, .button[disabled].success:hover, #tribe-events [disabled].success.tribe-events-button:hover,
-      [disabled].success.tribe-events-button:hover, .button[disabled].success:focus, #tribe-events [disabled].success.tribe-events-button:focus,
-      [disabled].success.tribe-events-button:focus {
+      .disabled.success.tribe-events-button,
+      .disabled.success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit], .button.disabled.success:hover, #tribe-events .disabled.success.tribe-events-button:hover,
+      .disabled.success.tribe-events-button:hover,
+      .disabled.success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit]:hover, .button.disabled.success:focus, #tribe-events .disabled.success.tribe-events-button:focus,
+      .disabled.success.tribe-events-button:focus,
+      .disabled.success.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit]:focus, .button[disabled].success, #tribe-events [disabled].success.tribe-events-button,
+      [disabled].success.tribe-events-button,
+      [disabled].success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit], .button[disabled].success:hover, #tribe-events [disabled].success.tribe-events-button:hover,
+      [disabled].success.tribe-events-button:hover,
+      [disabled].success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit]:hover, .button[disabled].success:focus, #tribe-events [disabled].success.tribe-events-button:focus,
+      [disabled].success.tribe-events-button:focus,
+      [disabled].success.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit]:focus {
         background-color: #3adb76;
         color: #4A4A4A; }
     .button.disabled.warning, #tribe-events .disabled.warning.tribe-events-button,
-    .disabled.warning.tribe-events-button, .button[disabled].warning, #tribe-events [disabled].warning.tribe-events-button,
-    [disabled].warning.tribe-events-button {
+    .disabled.warning.tribe-events-button,
+    .disabled.warning.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.warning[type=submit], .button[disabled].warning, #tribe-events [disabled].warning.tribe-events-button,
+    [disabled].warning.tribe-events-button,
+    [disabled].warning.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].warning[type=submit] {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.warning, #tribe-events .disabled.warning.tribe-events-button,
-      .disabled.warning.tribe-events-button, .button.disabled.warning:hover, #tribe-events .disabled.warning.tribe-events-button:hover,
-      .disabled.warning.tribe-events-button:hover, .button.disabled.warning:focus, #tribe-events .disabled.warning.tribe-events-button:focus,
-      .disabled.warning.tribe-events-button:focus, .button[disabled].warning, #tribe-events [disabled].warning.tribe-events-button,
-      [disabled].warning.tribe-events-button, .button[disabled].warning:hover, #tribe-events [disabled].warning.tribe-events-button:hover,
-      [disabled].warning.tribe-events-button:hover, .button[disabled].warning:focus, #tribe-events [disabled].warning.tribe-events-button:focus,
-      [disabled].warning.tribe-events-button:focus {
+      .disabled.warning.tribe-events-button,
+      .disabled.warning.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.warning[type=submit], .button.disabled.warning:hover, #tribe-events .disabled.warning.tribe-events-button:hover,
+      .disabled.warning.tribe-events-button:hover,
+      .disabled.warning.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.disabled.warning[type=submit]:hover, .button.disabled.warning:focus, #tribe-events .disabled.warning.tribe-events-button:focus,
+      .disabled.warning.tribe-events-button:focus,
+      .disabled.warning.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.disabled.warning[type=submit]:focus, .button[disabled].warning, #tribe-events [disabled].warning.tribe-events-button,
+      [disabled].warning.tribe-events-button,
+      [disabled].warning.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].warning[type=submit], .button[disabled].warning:hover, #tribe-events [disabled].warning.tribe-events-button:hover,
+      [disabled].warning.tribe-events-button:hover,
+      [disabled].warning.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[disabled].warning[type=submit]:hover, .button[disabled].warning:focus, #tribe-events [disabled].warning.tribe-events-button:focus,
+      [disabled].warning.tribe-events-button:focus,
+      [disabled].warning.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[disabled].warning[type=submit]:focus {
         background-color: #ffae00;
         color: #4A4A4A; }
     .button.disabled.alert, #tribe-events .disabled.alert.tribe-events-button,
-    .disabled.alert.tribe-events-button, .button[disabled].alert, #tribe-events [disabled].alert.tribe-events-button,
-    [disabled].alert.tribe-events-button {
+    .disabled.alert.tribe-events-button,
+    .disabled.alert.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.alert[type=submit], .button[disabled].alert, #tribe-events [disabled].alert.tribe-events-button,
+    [disabled].alert.tribe-events-button,
+    [disabled].alert.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].alert[type=submit] {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.alert, #tribe-events .disabled.alert.tribe-events-button,
-      .disabled.alert.tribe-events-button, .button.disabled.alert:hover, #tribe-events .disabled.alert.tribe-events-button:hover,
-      .disabled.alert.tribe-events-button:hover, .button.disabled.alert:focus, #tribe-events .disabled.alert.tribe-events-button:focus,
-      .disabled.alert.tribe-events-button:focus, .button[disabled].alert, #tribe-events [disabled].alert.tribe-events-button,
-      [disabled].alert.tribe-events-button, .button[disabled].alert:hover, #tribe-events [disabled].alert.tribe-events-button:hover,
-      [disabled].alert.tribe-events-button:hover, .button[disabled].alert:focus, #tribe-events [disabled].alert.tribe-events-button:focus,
-      [disabled].alert.tribe-events-button:focus {
+      .disabled.alert.tribe-events-button,
+      .disabled.alert.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.alert[type=submit], .button.disabled.alert:hover, #tribe-events .disabled.alert.tribe-events-button:hover,
+      .disabled.alert.tribe-events-button:hover,
+      .disabled.alert.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.disabled.alert[type=submit]:hover, .button.disabled.alert:focus, #tribe-events .disabled.alert.tribe-events-button:focus,
+      .disabled.alert.tribe-events-button:focus,
+      .disabled.alert.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.disabled.alert[type=submit]:focus, .button[disabled].alert, #tribe-events [disabled].alert.tribe-events-button,
+      [disabled].alert.tribe-events-button,
+      [disabled].alert.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].alert[type=submit], .button[disabled].alert:hover, #tribe-events [disabled].alert.tribe-events-button:hover,
+      [disabled].alert.tribe-events-button:hover,
+      [disabled].alert.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[disabled].alert[type=submit]:hover, .button[disabled].alert:focus, #tribe-events [disabled].alert.tribe-events-button:focus,
+      [disabled].alert.tribe-events-button:focus,
+      [disabled].alert.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[disabled].alert[type=submit]:focus {
         background-color: #cc4b37;
         color: #fefefe; }
   .button.dropdown::after, #tribe-events .dropdown.tribe-events-button::after,
-  .dropdown.tribe-events-button::after {
+  .dropdown.tribe-events-button::after,
+  .dropdown.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown[type=submit]::after {
     display: block;
     width: 0;
     height: 0;
@@ -3101,25 +3204,32 @@ select {
     float: right;
     margin-left: 1em; }
   .button.dropdown.hollow::after, #tribe-events .dropdown.hollow.tribe-events-button::after,
-  .dropdown.hollow.tribe-events-button::after {
+  .dropdown.hollow.tribe-events-button::after,
+  .dropdown.hollow.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow[type=submit]::after {
     border-top-color: #006CB5; }
   .button.dropdown.hollow.primary::after, #tribe-events .dropdown.hollow.primary.tribe-events-button::after,
-  .dropdown.hollow.primary.tribe-events-button::after {
+  .dropdown.hollow.primary.tribe-events-button::after,
+  .dropdown.hollow.primary.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.primary[type=submit]::after {
     border-top-color: #006CB5; }
   .button.dropdown.hollow.secondary::after, #tribe-events .dropdown.hollow.secondary.tribe-events-button::after,
-  .dropdown.hollow.secondary.tribe-events-button::after {
+  .dropdown.hollow.secondary.tribe-events-button::after,
+  .dropdown.hollow.secondary.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.secondary[type=submit]::after {
     border-top-color: #767676; }
   .button.dropdown.hollow.success::after, #tribe-events .dropdown.hollow.success.tribe-events-button::after,
-  .dropdown.hollow.success.tribe-events-button::after {
+  .dropdown.hollow.success.tribe-events-button::after,
+  .dropdown.hollow.success.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.success[type=submit]::after {
     border-top-color: #3adb76; }
   .button.dropdown.hollow.warning::after, #tribe-events .dropdown.hollow.warning.tribe-events-button::after,
-  .dropdown.hollow.warning.tribe-events-button::after {
+  .dropdown.hollow.warning.tribe-events-button::after,
+  .dropdown.hollow.warning.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.warning[type=submit]::after {
     border-top-color: #ffae00; }
   .button.dropdown.hollow.alert::after, #tribe-events .dropdown.hollow.alert.tribe-events-button::after,
-  .dropdown.hollow.alert.tribe-events-button::after {
+  .dropdown.hollow.alert.tribe-events-button::after,
+  .dropdown.hollow.alert.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.alert[type=submit]::after {
     border-top-color: #cc4b37; }
   .button.arrow-only::after, #tribe-events .arrow-only.tribe-events-button::after,
-  .arrow-only.tribe-events-button::after {
+  .arrow-only.tribe-events-button::after,
+  .arrow-only.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.arrow-only[type=submit]::after {
     top: -0.1em;
     float: none;
     margin-left: 0; }
@@ -3251,200 +3361,440 @@ select {
   .button-group::after {
     clear: both; }
   .button-group .button, .button-group #tribe-events .tribe-events-button, #tribe-events .button-group .tribe-events-button, .button-group
-  .tribe-events-button {
+  .tribe-events-button, .button-group
+  .tribe-events-read-more, .button-group #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group input[type=submit] {
     margin: 0;
     margin-right: 1px;
     margin-bottom: 1px;
     font-size: 0.9rem; }
     .button-group .button:last-child, .button-group #tribe-events .tribe-events-button:last-child, #tribe-events .button-group .tribe-events-button:last-child, .button-group
-    .tribe-events-button:last-child {
+    .tribe-events-button:last-child, .button-group
+    .tribe-events-read-more:last-child, .button-group #tribe-bar-form .tribe-bar-submit input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group input[type=submit]:last-child {
       margin-right: 0; }
   .button-group.tiny .button, .button-group.tiny #tribe-events .tribe-events-button, #tribe-events .button-group.tiny .tribe-events-button, .button-group.tiny
-  .tribe-events-button {
+  .tribe-events-button, .button-group.tiny
+  .tribe-events-read-more, .button-group.tiny #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.tiny input[type=submit] {
     font-size: 0.6rem; }
   .button-group.small .button, .button-group.small #tribe-events .tribe-events-button, #tribe-events .button-group.small .tribe-events-button, .button-group.small
-  .tribe-events-button {
+  .tribe-events-button, .button-group.small
+  .tribe-events-read-more, .button-group.small #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.small input[type=submit] {
     font-size: 0.75rem; }
   .button-group.large .button, .button-group.large #tribe-events .tribe-events-button, #tribe-events .button-group.large .tribe-events-button, .button-group.large
-  .tribe-events-button {
+  .tribe-events-button, .button-group.large
+  .tribe-events-read-more, .button-group.large #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.large input[type=submit] {
     font-size: 1.25rem; }
   .button-group.expanded {
     margin-right: -1px; }
     .button-group.expanded::before, .button-group.expanded::after {
       display: none; }
     .button-group.expanded .button:first-child:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:last-child, .button-group.expanded
-    .tribe-events-button:first-child:last-child {
+    .tribe-events-button:first-child:last-child, .button-group.expanded
+    .tribe-events-read-more:first-child:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:last-child {
       width: 100%; }
     .button-group.expanded .button:first-child:nth-last-child(2), .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2), #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(2), .button-group.expanded
-    .tribe-events-button:first-child:nth-last-child(2), .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .button-group.expanded
-    .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .button-group.expanded #tribe-events .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button, #tribe-events .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-button:first-child:nth-last-child(2), .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(2), .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(2), #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(2), .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button, .button-group.expanded #tribe-events .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button, #tribe-events .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button, .button-group.expanded #tribe-events
+    .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button, #tribe-events .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button, .button-group.expanded #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
     .tribe-events-button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
     .tribe-events-button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
     .tribe-events-button, .button-group.expanded
     .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
-    .tribe-events-button {
+    .tribe-events-button, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-button, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-button, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-read-more, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-read-more, .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-read-more, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-read-more, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-bar-form .tribe-bar-submit .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit
+    .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit
+    .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit] {
       display: inline-block;
       width: calc(50% - 1px);
       margin-right: 1px; }
       .button-group.expanded .button:first-child:nth-last-child(2):last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(2):last-child, .button-group.expanded
-      .tribe-events-button:first-child:nth-last-child(2):last-child, .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .button-group.expanded
-      .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .button-group.expanded #tribe-events .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-button:first-child:nth-last-child(2):last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(2):last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(2):last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(2):last-child, .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .button:last-child, .button-group.expanded #tribe-events .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button:last-child, .button-group.expanded #tribe-events
+      .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
       .tribe-events-button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
       .tribe-events-button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
       .tribe-events-button:last-child, .button-group.expanded
       .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
-      .tribe-events-button:last-child {
+      .tribe-events-button:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-read-more:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-read-more:last-child, .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-read-more:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-read-more:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded .button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit
+      .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit
+      .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(2):first-child:nth-last-child(2) ~ input[type=submit]:last-child {
         margin-right: -6px; }
     .button-group.expanded .button:first-child:nth-last-child(3), .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3), #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(3), .button-group.expanded
-    .tribe-events-button:first-child:nth-last-child(3), .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .button-group.expanded
-    .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .button-group.expanded #tribe-events .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button, #tribe-events .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-button:first-child:nth-last-child(3), .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(3), .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(3), #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(3), .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button, .button-group.expanded #tribe-events .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button, #tribe-events .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button, .button-group.expanded #tribe-events
+    .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button, #tribe-events .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button, .button-group.expanded #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
     .tribe-events-button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
     .tribe-events-button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
     .tribe-events-button, .button-group.expanded
     .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
-    .tribe-events-button {
+    .tribe-events-button, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-button, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-button, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-read-more, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-read-more, .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-read-more, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-read-more, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-bar-form .tribe-bar-submit .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit
+    .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit
+    .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit] {
       display: inline-block;
       width: calc(33.33333% - 1px);
       margin-right: 1px; }
       .button-group.expanded .button:first-child:nth-last-child(3):last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(3):last-child, .button-group.expanded
-      .tribe-events-button:first-child:nth-last-child(3):last-child, .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .button-group.expanded
-      .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .button-group.expanded #tribe-events .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-button:first-child:nth-last-child(3):last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(3):last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(3):last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(3):last-child, .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .button:last-child, .button-group.expanded #tribe-events .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button:last-child, .button-group.expanded #tribe-events
+      .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
       .tribe-events-button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
       .tribe-events-button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
       .tribe-events-button:last-child, .button-group.expanded
       .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
-      .tribe-events-button:last-child {
+      .tribe-events-button:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-read-more:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-read-more:last-child, .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-read-more:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-read-more:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded .button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit
+      .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit
+      .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(3):first-child:nth-last-child(3) ~ input[type=submit]:last-child {
         margin-right: -6px; }
     .button-group.expanded .button:first-child:nth-last-child(4), .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4), #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(4), .button-group.expanded
-    .tribe-events-button:first-child:nth-last-child(4), .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .button-group.expanded
-    .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .button-group.expanded #tribe-events .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button, #tribe-events .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-button:first-child:nth-last-child(4), .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(4), .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(4), #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(4), .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button, .button-group.expanded #tribe-events .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button, #tribe-events .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button, .button-group.expanded #tribe-events
+    .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button, #tribe-events .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button, .button-group.expanded #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
     .tribe-events-button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
     .tribe-events-button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
     .tribe-events-button, .button-group.expanded
     .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
-    .tribe-events-button {
+    .tribe-events-button, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-button, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-button, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-read-more, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-read-more, .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-read-more, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-read-more, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-bar-form .tribe-bar-submit .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit
+    .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit
+    .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit] {
       display: inline-block;
       width: calc(25% - 1px);
       margin-right: 1px; }
       .button-group.expanded .button:first-child:nth-last-child(4):last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(4):last-child, .button-group.expanded
-      .tribe-events-button:first-child:nth-last-child(4):last-child, .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .button-group.expanded
-      .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .button-group.expanded #tribe-events .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-button:first-child:nth-last-child(4):last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(4):last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(4):last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(4):last-child, .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .button:last-child, .button-group.expanded #tribe-events .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button:last-child, .button-group.expanded #tribe-events
+      .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
       .tribe-events-button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
       .tribe-events-button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
       .tribe-events-button:last-child, .button-group.expanded
       .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
-      .tribe-events-button:last-child {
+      .tribe-events-button:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-read-more:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-read-more:last-child, .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-read-more:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-read-more:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded .button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit
+      .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit
+      .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(4):first-child:nth-last-child(4) ~ input[type=submit]:last-child {
         margin-right: -6px; }
     .button-group.expanded .button:first-child:nth-last-child(5), .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5), #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(5), .button-group.expanded
-    .tribe-events-button:first-child:nth-last-child(5), .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .button-group.expanded
-    .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .button-group.expanded #tribe-events .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button, #tribe-events .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-button:first-child:nth-last-child(5), .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(5), .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(5), #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(5), .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button, .button-group.expanded #tribe-events .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button, #tribe-events .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button, .button-group.expanded #tribe-events
+    .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button, #tribe-events .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button, .button-group.expanded #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
     .tribe-events-button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
     .tribe-events-button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
     .tribe-events-button, .button-group.expanded
     .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
-    .tribe-events-button {
+    .tribe-events-button, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-button, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-button, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-read-more, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-read-more, .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-read-more, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-read-more, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-bar-form .tribe-bar-submit .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit
+    .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit
+    .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit] {
       display: inline-block;
       width: calc(20% - 1px);
       margin-right: 1px; }
       .button-group.expanded .button:first-child:nth-last-child(5):last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(5):last-child, .button-group.expanded
-      .tribe-events-button:first-child:nth-last-child(5):last-child, .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .button-group.expanded
-      .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .button-group.expanded #tribe-events .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-button:first-child:nth-last-child(5):last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(5):last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(5):last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(5):last-child, .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .button:last-child, .button-group.expanded #tribe-events .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button:last-child, .button-group.expanded #tribe-events
+      .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
       .tribe-events-button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
       .tribe-events-button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
       .tribe-events-button:last-child, .button-group.expanded
       .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
-      .tribe-events-button:last-child {
+      .tribe-events-button:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-read-more:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-read-more:last-child, .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-read-more:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-read-more:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded .button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit
+      .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit
+      .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(5):first-child:nth-last-child(5) ~ input[type=submit]:last-child {
         margin-right: -6px; }
     .button-group.expanded .button:first-child:nth-last-child(6), .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6), #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(6), .button-group.expanded
-    .tribe-events-button:first-child:nth-last-child(6), .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .button-group.expanded
-    .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .button-group.expanded #tribe-events .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button, #tribe-events .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-button:first-child:nth-last-child(6), .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(6), .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(6), #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(6), .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button, .button-group.expanded #tribe-events .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button, #tribe-events .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button, .button-group.expanded #tribe-events
+    .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button, #tribe-events .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button, .button-group.expanded #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
     .tribe-events-button, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
     .tribe-events-button, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
     .tribe-events-button, .button-group.expanded
     .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
-    .tribe-events-button {
+    .tribe-events-button, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-button, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-button, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-button, .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-read-more, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-read-more, .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-read-more, .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-read-more, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+    .tribe-events-read-more, .button-group.expanded #tribe-bar-form .tribe-bar-submit .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit
+    .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded
+    .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit
+    .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded
+    .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit], .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit] {
       display: inline-block;
       width: calc(16.66667% - 1px);
       margin-right: 1px; }
       .button-group.expanded .button:first-child:nth-last-child(6):last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(6):last-child, .button-group.expanded
-      .tribe-events-button:first-child:nth-last-child(6):last-child, .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .button-group.expanded
-      .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .button-group.expanded #tribe-events .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-button:first-child:nth-last-child(6):last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(6):last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(6):last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(6):last-child, .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .button:last-child, .button-group.expanded #tribe-events .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button:last-child, .button-group.expanded #tribe-events
+      .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button:last-child, #tribe-events .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit #tribe-events input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
       .tribe-events-button:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
       .tribe-events-button:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
       .tribe-events-button:last-child, .button-group.expanded
       .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
-      .tribe-events-button:last-child {
+      .tribe-events-button:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-button:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-button:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-button:last-child, .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-read-more:last-child, #tribe-events .button-group.expanded .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-read-more:last-child, .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-read-more:last-child, .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-read-more:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~
+      .tribe-events-read-more:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded .button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded #tribe-events .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit
+      .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded
+      .tribe-events-button:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit
+      .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded
+      .tribe-events-read-more:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit]:last-child, .button-group.expanded #tribe-bar-form .tribe-bar-submit input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.expanded input[type=submit]:first-child:nth-last-child(6):first-child:nth-last-child(6) ~ input[type=submit]:last-child {
         margin-right: -6px; }
   .button-group.primary .button, .button-group.primary #tribe-events .tribe-events-button, #tribe-events .button-group.primary .tribe-events-button, .button-group.primary
-  .tribe-events-button {
+  .tribe-events-button, .button-group.primary
+  .tribe-events-read-more, .button-group.primary #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.primary input[type=submit] {
     background-color: #006CB5;
     color: #fefefe; }
     .button-group.primary .button:hover, .button-group.primary #tribe-events .tribe-events-button:hover, #tribe-events .button-group.primary .tribe-events-button:hover, .button-group.primary
-    .tribe-events-button:hover, .button-group.primary .button:focus, .button-group.primary #tribe-events .tribe-events-button:focus, #tribe-events .button-group.primary .tribe-events-button:focus, .button-group.primary
-    .tribe-events-button:focus {
+    .tribe-events-button:hover, .button-group.primary
+    .tribe-events-read-more:hover, .button-group.primary #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.primary input[type=submit]:hover, .button-group.primary .button:focus, .button-group.primary #tribe-events .tribe-events-button:focus, #tribe-events .button-group.primary .tribe-events-button:focus, .button-group.primary
+    .tribe-events-button:focus, .button-group.primary
+    .tribe-events-read-more:focus, .button-group.primary #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.primary input[type=submit]:focus {
       background-color: #005691;
       color: #fefefe; }
   .button-group.secondary .button, .button-group.secondary #tribe-events .tribe-events-button, #tribe-events .button-group.secondary .tribe-events-button, .button-group.secondary
-  .tribe-events-button {
+  .tribe-events-button, .button-group.secondary
+  .tribe-events-read-more, .button-group.secondary #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.secondary input[type=submit] {
     background-color: #767676;
     color: #fefefe; }
     .button-group.secondary .button:hover, .button-group.secondary #tribe-events .tribe-events-button:hover, #tribe-events .button-group.secondary .tribe-events-button:hover, .button-group.secondary
-    .tribe-events-button:hover, .button-group.secondary .button:focus, .button-group.secondary #tribe-events .tribe-events-button:focus, #tribe-events .button-group.secondary .tribe-events-button:focus, .button-group.secondary
-    .tribe-events-button:focus {
+    .tribe-events-button:hover, .button-group.secondary
+    .tribe-events-read-more:hover, .button-group.secondary #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.secondary input[type=submit]:hover, .button-group.secondary .button:focus, .button-group.secondary #tribe-events .tribe-events-button:focus, #tribe-events .button-group.secondary .tribe-events-button:focus, .button-group.secondary
+    .tribe-events-button:focus, .button-group.secondary
+    .tribe-events-read-more:focus, .button-group.secondary #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.secondary input[type=submit]:focus {
       background-color: #5e5e5e;
       color: #fefefe; }
   .button-group.success .button, .button-group.success #tribe-events .tribe-events-button, #tribe-events .button-group.success .tribe-events-button, .button-group.success
-  .tribe-events-button {
+  .tribe-events-button, .button-group.success
+  .tribe-events-read-more, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit] {
     background-color: #3adb76;
     color: #4A4A4A; }
     .button-group.success .button:hover, .button-group.success #tribe-events .tribe-events-button:hover, #tribe-events .button-group.success .tribe-events-button:hover, .button-group.success
-    .tribe-events-button:hover, .button-group.success .button:focus, .button-group.success #tribe-events .tribe-events-button:focus, #tribe-events .button-group.success .tribe-events-button:focus, .button-group.success
-    .tribe-events-button:focus {
+    .tribe-events-button:hover, .button-group.success
+    .tribe-events-read-more:hover, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit]:hover, .button-group.success .button:focus, .button-group.success #tribe-events .tribe-events-button:focus, #tribe-events .button-group.success .tribe-events-button:focus, .button-group.success
+    .tribe-events-button:focus, .button-group.success
+    .tribe-events-read-more:focus, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit]:focus {
       background-color: #22bb5b;
       color: #4A4A4A; }
   .button-group.warning .button, .button-group.warning #tribe-events .tribe-events-button, #tribe-events .button-group.warning .tribe-events-button, .button-group.warning
-  .tribe-events-button {
+  .tribe-events-button, .button-group.warning
+  .tribe-events-read-more, .button-group.warning #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.warning input[type=submit] {
     background-color: #ffae00;
     color: #4A4A4A; }
     .button-group.warning .button:hover, .button-group.warning #tribe-events .tribe-events-button:hover, #tribe-events .button-group.warning .tribe-events-button:hover, .button-group.warning
-    .tribe-events-button:hover, .button-group.warning .button:focus, .button-group.warning #tribe-events .tribe-events-button:focus, #tribe-events .button-group.warning .tribe-events-button:focus, .button-group.warning
-    .tribe-events-button:focus {
+    .tribe-events-button:hover, .button-group.warning
+    .tribe-events-read-more:hover, .button-group.warning #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.warning input[type=submit]:hover, .button-group.warning .button:focus, .button-group.warning #tribe-events .tribe-events-button:focus, #tribe-events .button-group.warning .tribe-events-button:focus, .button-group.warning
+    .tribe-events-button:focus, .button-group.warning
+    .tribe-events-read-more:focus, .button-group.warning #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.warning input[type=submit]:focus {
       background-color: #cc8b00;
       color: #4A4A4A; }
   .button-group.alert .button, .button-group.alert #tribe-events .tribe-events-button, #tribe-events .button-group.alert .tribe-events-button, .button-group.alert
-  .tribe-events-button {
+  .tribe-events-button, .button-group.alert
+  .tribe-events-read-more, .button-group.alert #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.alert input[type=submit] {
     background-color: #cc4b37;
     color: #fefefe; }
     .button-group.alert .button:hover, .button-group.alert #tribe-events .tribe-events-button:hover, #tribe-events .button-group.alert .tribe-events-button:hover, .button-group.alert
-    .tribe-events-button:hover, .button-group.alert .button:focus, .button-group.alert #tribe-events .tribe-events-button:focus, #tribe-events .button-group.alert .tribe-events-button:focus, .button-group.alert
-    .tribe-events-button:focus {
+    .tribe-events-button:hover, .button-group.alert
+    .tribe-events-read-more:hover, .button-group.alert #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.alert input[type=submit]:hover, .button-group.alert .button:focus, .button-group.alert #tribe-events .tribe-events-button:focus, #tribe-events .button-group.alert .tribe-events-button:focus, .button-group.alert
+    .tribe-events-button:focus, .button-group.alert
+    .tribe-events-read-more:focus, .button-group.alert #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.alert input[type=submit]:focus {
       background-color: #a53b2a;
       color: #fefefe; }
   .button-group.stacked .button, .button-group.stacked #tribe-events .tribe-events-button, #tribe-events .button-group.stacked .tribe-events-button, .button-group.stacked
-  .tribe-events-button, .button-group.stacked-for-small .button, .button-group.stacked-for-small #tribe-events .tribe-events-button, #tribe-events .button-group.stacked-for-small .tribe-events-button, .button-group.stacked-for-small
-  .tribe-events-button, .button-group.stacked-for-medium .button, .button-group.stacked-for-medium #tribe-events .tribe-events-button, #tribe-events .button-group.stacked-for-medium .tribe-events-button, .button-group.stacked-for-medium
-  .tribe-events-button {
+  .tribe-events-button, .button-group.stacked
+  .tribe-events-read-more, .button-group.stacked #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.stacked input[type=submit], .button-group.stacked-for-small .button, .button-group.stacked-for-small #tribe-events .tribe-events-button, #tribe-events .button-group.stacked-for-small .tribe-events-button, .button-group.stacked-for-small
+  .tribe-events-button, .button-group.stacked-for-small
+  .tribe-events-read-more, .button-group.stacked-for-small #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.stacked-for-small input[type=submit], .button-group.stacked-for-medium .button, .button-group.stacked-for-medium #tribe-events .tribe-events-button, #tribe-events .button-group.stacked-for-medium .tribe-events-button, .button-group.stacked-for-medium
+  .tribe-events-button, .button-group.stacked-for-medium
+  .tribe-events-read-more, .button-group.stacked-for-medium #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.stacked-for-medium input[type=submit] {
     width: 100%; }
     .button-group.stacked .button:last-child, .button-group.stacked #tribe-events .tribe-events-button:last-child, #tribe-events .button-group.stacked .tribe-events-button:last-child, .button-group.stacked
-    .tribe-events-button:last-child, .button-group.stacked-for-small .button:last-child, .button-group.stacked-for-small #tribe-events .tribe-events-button:last-child, #tribe-events .button-group.stacked-for-small .tribe-events-button:last-child, .button-group.stacked-for-small
-    .tribe-events-button:last-child, .button-group.stacked-for-medium .button:last-child, .button-group.stacked-for-medium #tribe-events .tribe-events-button:last-child, #tribe-events .button-group.stacked-for-medium .tribe-events-button:last-child, .button-group.stacked-for-medium
-    .tribe-events-button:last-child {
+    .tribe-events-button:last-child, .button-group.stacked
+    .tribe-events-read-more:last-child, .button-group.stacked #tribe-bar-form .tribe-bar-submit input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.stacked input[type=submit]:last-child, .button-group.stacked-for-small .button:last-child, .button-group.stacked-for-small #tribe-events .tribe-events-button:last-child, #tribe-events .button-group.stacked-for-small .tribe-events-button:last-child, .button-group.stacked-for-small
+    .tribe-events-button:last-child, .button-group.stacked-for-small
+    .tribe-events-read-more:last-child, .button-group.stacked-for-small #tribe-bar-form .tribe-bar-submit input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.stacked-for-small input[type=submit]:last-child, .button-group.stacked-for-medium .button:last-child, .button-group.stacked-for-medium #tribe-events .tribe-events-button:last-child, #tribe-events .button-group.stacked-for-medium .tribe-events-button:last-child, .button-group.stacked-for-medium
+    .tribe-events-button:last-child, .button-group.stacked-for-medium
+    .tribe-events-read-more:last-child, .button-group.stacked-for-medium #tribe-bar-form .tribe-bar-submit input[type=submit]:last-child, #tribe-bar-form .tribe-bar-submit .button-group.stacked-for-medium input[type=submit]:last-child {
       margin-bottom: 0; }
   @media print, screen and (min-width: 40em) {
     .button-group.stacked-for-small .button, .button-group.stacked-for-small #tribe-events .tribe-events-button, #tribe-events .button-group.stacked-for-small .tribe-events-button, .button-group.stacked-for-small
-    .tribe-events-button {
+    .tribe-events-button, .button-group.stacked-for-small
+    .tribe-events-read-more, .button-group.stacked-for-small #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.stacked-for-small input[type=submit] {
       width: auto;
       margin-bottom: 0; } }
   @media print, screen and (min-width: 64em) {
     .button-group.stacked-for-medium .button, .button-group.stacked-for-medium #tribe-events .tribe-events-button, #tribe-events .button-group.stacked-for-medium .tribe-events-button, .button-group.stacked-for-medium
-    .tribe-events-button {
+    .tribe-events-button, .button-group.stacked-for-medium
+    .tribe-events-read-more, .button-group.stacked-for-medium #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.stacked-for-medium input[type=submit] {
       width: auto;
       margin-bottom: 0; } }
   @media screen and (max-width: 39.9375em) {
     .button-group.stacked-for-small.expanded {
       display: block; }
       .button-group.stacked-for-small.expanded .button, .button-group.stacked-for-small.expanded #tribe-events .tribe-events-button, #tribe-events .button-group.stacked-for-small.expanded .tribe-events-button, .button-group.stacked-for-small.expanded
-      .tribe-events-button {
+      .tribe-events-button, .button-group.stacked-for-small.expanded
+      .tribe-events-read-more, .button-group.stacked-for-small.expanded #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.stacked-for-small.expanded input[type=submit] {
         display: block;
         margin-right: 0; } }
 
@@ -5153,7 +5503,8 @@ a.thumbnail {
     width: 100%;
     margin-right: 0; }
   .top-bar input.button, .top-bar #tribe-events input.tribe-events-button, #tribe-events .top-bar input.tribe-events-button, .top-bar
-  input.tribe-events-button {
+  input.tribe-events-button, .top-bar
+  input.tribe-events-read-more, .top-bar #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .top-bar input[type=submit] {
     width: auto; }
   .top-bar .top-bar-left,
   .top-bar .top-bar-right {
@@ -5344,16 +5695,24 @@ a:link, a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
 .entry-title a,
-.top-bar a, .entry-title a:visited,
-.top-bar a:visited {
+.top-bar a,
+.tribe-events-list-event-title a, .entry-title a:visited,
+.top-bar a:visited,
+.tribe-events-list-event-title a:visited {
   color: #4A4A4A; }
   .entry-title a:active, .entry-title a:focus, .entry-title a:hover,
   .top-bar a:active,
   .top-bar a:focus,
-  .top-bar a:hover, .entry-title a:visited:active, .entry-title a:visited:focus, .entry-title a:visited:hover,
+  .top-bar a:hover,
+  .tribe-events-list-event-title a:active,
+  .tribe-events-list-event-title a:focus,
+  .tribe-events-list-event-title a:hover, .entry-title a:visited:active, .entry-title a:visited:focus, .entry-title a:visited:hover,
   .top-bar a:visited:active,
   .top-bar a:visited:focus,
-  .top-bar a:visited:hover {
+  .top-bar a:visited:hover,
+  .tribe-events-list-event-title a:visited:active,
+  .tribe-events-list-event-title a:visited:focus,
+  .tribe-events-list-event-title a:visited:hover {
     color: #006CB5; }
 
 #sidebar-menu a, #sidebar-menu a:visited {
@@ -5368,7 +5727,8 @@ a:link, a:visited:link {
 BUTTON STYLES
 *********************/
 .button, #tribe-events .tribe-events-button,
-.tribe-events-button {
+.tribe-events-button,
+.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[type=submit] {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -5381,14 +5741,18 @@ BUTTON STYLES
   color: #fff;
   margin-bottom: 2rem; }
   .button:active, #tribe-events .tribe-events-button:active,
-  .tribe-events-button:active, .button:focus, #tribe-events .tribe-events-button:focus,
-  .tribe-events-button:focus, .button:hover, #tribe-events .tribe-events-button:hover,
-  .tribe-events-button:hover {
+  .tribe-events-button:active,
+  .tribe-events-read-more:active, #tribe-bar-form .tribe-bar-submit input[type=submit]:active, .button:focus, #tribe-events .tribe-events-button:focus,
+  .tribe-events-button:focus,
+  .tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, .button:hover, #tribe-events .tribe-events-button:hover,
+  .tribe-events-button:hover,
+  .tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[type=submit]:hover {
     background-color: #E02818;
     background-image: linear-gradient(to bottom, #F9664D, #E02818);
     color: #fff; }
   .button.search-submit, #tribe-events .search-submit.tribe-events-button,
-  .search-submit.tribe-events-button {
+  .search-submit.tribe-events-button,
+  .search-submit.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.search-submit[type=submit] {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     background-clip: padding-box; }
@@ -5411,7 +5775,8 @@ LINK Typography
 /*********************
 H1, H2, H3, H4, H5 P STYLES
 *********************/
-h1 a, .single-tribe_events .tribe-events-single-event-title a, .h1 a, h2 a, .h2 a, h3 a, .single-cit_report .single-title a, .h3 a, h4 a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .h5 a {
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .single-cit_report .single-title a,
+.single-cit_past_event .single-title a, .single-tribe_events .tribe-events-single-event-title a, .h3 a, h4 a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .h5 a {
   text-decoration: none; }
 
 /*********************
@@ -5434,7 +5799,7 @@ LINK Layout
 #content #main {
   padding-top: 1rem; }
   @media print, screen and (min-width: 40em) {
-    body:not(.single) #content #main > article:first-of-type .entry-content {
+    body:not(.single):not(.post-type-archive-tribe_events) #content #main > article:first-of-type .entry-content {
       font-size: 1.25rem; } }
   @media screen and (min-width: 75em) {
     #content #main {
@@ -6015,6 +6380,22 @@ FOUNDATION STYLES
 /*********************
 PLUGIN STYLES
 *********************/
+#tribe-bar-form input[type=text] {
+  border-bottom: 1px solid #D8D8D8; }
+
+#tribe-bar-form.tribe-bar-mini label {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal !important; }
+
+.tribe-events-list-separator-month {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal !important;
+  text-align: center; }
+
+.tribe-events-event-meta {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal !important; }
+
 .tribe-events-schedule h2 {
   font-weight: normal;
   color: #4A4A4A; }
@@ -6029,8 +6410,15 @@ PLUGIN STYLES
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
 
 #tribe-events .tribe-events-button,
-.tribe-events-button {
+.tribe-events-button,
+.tribe-events-read-more {
   letter-spacing: normal; }
+
+#tribe-bar-form .tribe-bar-submit input[type=submit] {
+  border-radius: 6px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  font-size: 14px !important; }
 
 .gform_body ul {
   list-style: none outside none;
@@ -6116,12 +6504,15 @@ to display none.
     max-width: 100% !important; }
   @page {
     margin: 0.5cm; }
-  p, h2, h3, .single-cit_report .single-title {
+  p, h2, h3, .single-cit_report .single-title,
+  .single-cit_past_event .single-title, .single-tribe_events .tribe-events-single-event-title {
     orphans: 3;
     widows: 3; }
   h2,
   h3,
-  .single-cit_report .single-title {
+  .single-cit_report .single-title,
+  .single-cit_past_event .single-title,
+  .single-tribe_events .tribe-events-single-event-title {
     page-break-after: avoid; }
   .sidebar,
   .page-navigation,

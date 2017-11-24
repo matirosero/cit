@@ -16,7 +16,8 @@ POSTS & CONTENT STYLES
 }
 
 .single-title {
-	.single-cit_report & {
+	.single-cit_report &,
+	.single-cit_past_event & {
 		@extend h3;
 		// text-align: left;
 	}

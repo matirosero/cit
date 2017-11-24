@@ -10,7 +10,8 @@ a, a:visited {
 	}
 
 	.entry-title &,
-	.top-bar & {
+	.top-bar &,
+	.tribe-events-list-event-title & {
 		color: $black;
 		@include hover {
 			color: color('blue', 'base');
