@@ -2,12 +2,12 @@
 POSTS & CONTENT STYLES
 *********************/
 
-.post {
+.post,
+.type-tribe_events {
 	margin-bottom: 1rem;
 	@include breakpoint(medium) {
 		margin-bottom: 3rem;
 	}
-	
 }
 
 .single-title,
