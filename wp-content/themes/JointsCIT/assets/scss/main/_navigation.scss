@@ -80,7 +80,6 @@ NAVIGATION STYLES
 					}
 
 					> .is-dropdown-submenu {
-						// display: block;
 						top: 80px;
 						background-color: color('blue', 'base');
 						a {
@@ -89,7 +88,9 @@ NAVIGATION STYLES
 								background-color: color('orange', 'base');
 							}
 						}
-
+						li.active a {
+							background-color: color( 'blue', 'dark' );
+						}
 					}
 				}
 			}

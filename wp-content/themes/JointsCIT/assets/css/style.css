@@ -5923,6 +5923,9 @@ NAVIGATION STYLES
           .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li > .is-dropdown-submenu a:focus,
           .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li > .is-dropdown-submenu a:hover {
             background-color: #F03626; }
+        .top-bar .top-bar-right .dropdown.menu.medium-horizontal > li > .is-dropdown-submenu li.active a,
+        .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li > .is-dropdown-submenu li.active a {
+          background-color: #263F81; }
       .top-bar .top-bar-search {
         padding-top: 38.5px; }
         .top-bar .top-bar-search .search-field {
