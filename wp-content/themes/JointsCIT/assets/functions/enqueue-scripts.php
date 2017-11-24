@@ -19,6 +19,12 @@ function site_scripts() {
       wp_enqueue_script( 'comment-reply' );
     }
 
+    /*
+     * TEMP SCRIPTS
+     */
+    // Adding scripts file in the footer
+    wp_enqueue_script( 'sidemenu-js', get_template_directory_uri() . '/assets/js/sidemenu.js', array( 'jquery' ), '', true );
+
 
     /*
      * Google Fonts

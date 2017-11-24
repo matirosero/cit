@@ -5959,9 +5959,8 @@ NAVIGATION STYLES
       border-left: 5px solid #F03626; }
     #sidebar-menu > .menu li.active {
       border-left: 5px solid #263F81;
-      background: #F5F5F5; }
-      #sidebar-menu > .menu li.active > a {
-        background: transparent; }
+      background: #F5F5F5;
+      overflow: auto; }
   #sidebar-menu > .menu > li > a {
     line-height: 1.5rem; }
   #sidebar-menu .is-accordion-submenu-parent > a::after {
@@ -5985,7 +5984,8 @@ NAVIGATION STYLES
     margin-left: 0;
     position: absolute;
     left: -5px;
-    right: 0; }
+    right: 0;
+    display: block; }
     #sidebar-menu .menu.nested li {
       padding-left: 0.75rem; }
     .no-js #sidebar-menu .menu.nested {

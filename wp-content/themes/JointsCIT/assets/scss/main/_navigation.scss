@@ -170,15 +170,18 @@ NAVIGATION STYLES
 		li {
 			border-left: 5px solid color( 'blue', 'base' );
 			position: relative;
+			// overflow: hidden;
 			@include hover {
 				background-color: color('grey', 'light');
 				border-left: 5px solid color( 'orange', 'base' );
+				// overflow: auto;
 			}
 			&.active {
 				border-left: 5px solid color( 'blue', 'dark' );
 				background: color('grey', 'light');
+				overflow: auto;
 				> a {
-					background: transparent;
+					// background: transparent;
 				}
 			}
 		}
@@ -231,6 +234,7 @@ NAVIGATION STYLES
 		position: absolute;
 		left: -5px;
 		right: 0;
+		display: block;
 		li {
 			padding-left: 0.75rem;
 		}
