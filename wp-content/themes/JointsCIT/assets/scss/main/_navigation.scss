@@ -68,18 +68,32 @@ NAVIGATION STYLES
 				}
 			}
 
-			.dropdown.menu.medium-horizontal > li > .is-dropdown-submenu {
-				// display: block;
-				top: 80px;
-				background-color: color('blue', 'base');
-				a {
-					color: $white;
-					@include hover {
-						background-color: color('orange', 'base');
+			.dropdown.menu.medium-horizontal {
+				> li {
+					&.is-dropdown-submenu-parent {
+						> a {
+							padding-right: 1rem + rem-calc(19px);
+							&::after {
+								right:16px !important;
+							}
+						}
+					}
+
+					> .is-dropdown-submenu {
+						// display: block;
+						top: 80px;
+						background-color: color('blue', 'base');
+						a {
+							color: $white;
+							@include hover {
+								background-color: color('orange', 'base');
+							}
+						}
+
 					}
 				}
-
 			}
+
 		}
 
 		.top-bar-search {
@@ -91,7 +105,9 @@ NAVIGATION STYLES
 
 		// left margin for main menu
 		#main-menu > .menu {
-			// padding-left: 1rem;
+			> .active:not(.is-submenu-item) > a {
+				background: darken( color('grey', 'light'), 2 );
+			}
 		}
 
 		.title-area {
@@ -113,8 +129,6 @@ NAVIGATION STYLES
 				// width: 16.66667vw;
 			}
 		}
-
-
 	}
 
 	@include breakpoint(xlarge) {
@@ -125,6 +139,18 @@ NAVIGATION STYLES
 			> .menu {
 				> li > a {
 					padding: 0.7rem 30px !important;
+				}
+			}
+			> .dropdown.menu.medium-horizontal {
+				> li {
+					&.is-dropdown-submenu-parent {
+						> a {
+							padding-right: 46px !important;
+							&::after {
+								right:26px !important;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -147,6 +173,7 @@ NAVIGATION STYLES
 
 .menu {
 	@include navigation-type-style;
+
 }
 
 .topbar-site-logo {
