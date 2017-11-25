@@ -20,86 +20,142 @@
 
 		if ( $pdfs || $video_text || $videos || $gallery_text || $gallery || $evaluation ) : ?>
 
-			<ul class="accordion" data-responsive-accordion-tabs="accordion large-tabs">
+			<div data-sticky-container>
+				<div data-sticky data-anchor="foo">
 
-				<li class="accordion-item is-active" data-accordion-item>
-					<a href="#" class="accordion-title">Información</a>
-					<div class="accordion-content" data-tab-content >
+					<ul class="menu align-center" data-magellan>
 
-						<?php the_post_thumbnail('full'); ?>
-						<?php the_content(); ?>
+						<li><a href="#event-information">Información</a></li>
 
-					</div>
-				</li>
+						<?php if ( $pdfs ) : ?>
+							<li><a href="#event-presentations">Presentaciones</a></li>
+						<?php endif; ?>
+
+						<?php if ( $video_text || $videos ) : ?>
+							<li><a href="#event-videos">Videos</a></li>
+						<?php endif; ?>
+
+						<?php if ( $gallery_text || $gallery ) : ?>
+							<li><a href="#event-gallery">Galería</a></li>
+						<?php endif; ?>
+
+						<?php if ( $evaluation ) : ?>
+							<li><a href="#event-evaluation">Evaluación</a></li>
+						<?php endif; ?>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="sections" id="foo">
+
+				<section id="event-information" data-magellan-target="event-information">
+
+					<?php the_post_thumbnail('full'); ?>
+					<?php the_content(); ?>
+
+				</section>
 
 				<?php
 
 				//Presentations
 				if ( $pdfs ) : ?>
 
-					<li class="accordion-item" data-accordion-item>
-						<a href="#" class="accordion-title load-content-trigger" data-load-content="load-presentation">Presentaciones</a>
-						<div id="tab-presentation" class="accordion-content" data-tab-content>
+					<section id="event-presentations" data-magellan-target="event-presentations">
 
-							<div style="width: 500px;">
+						<?php
 
-							<?php
+						if ( count($pdfs) == 1) :
+							echo '<h2 class="section-title">Presentación del evento</h2>';
+						else:
+							echo '<h2 class="section-title">Presentaciones del evento</h2>';
+						endif;
 
-							foreach ($pdfs as $key => $presentation) {
+						foreach ($pdfs as $key => $presentation) {
 
-								if ( isset( $presentation[ 'mro_cit_event_presentation_file' ] ) ) :
-									$file = esc_html( $presentation[ 'mro_cit_event_presentation_file' ] );
+							if ( isset( $presentation[ 'mro_cit_event_presentation_file' ] ) ) :
+								$file = esc_html( $presentation[ 'mro_cit_event_presentation_file' ] );
 
-									if ( isset( $presentation[ 'mro_cit_event_presentation_name' ] ) ) :
-										$file_name = esc_html( $presentation[ 'mro_cit_event_presentation_name' ] );
-									else:
-										$file_name = 'presentación';
-									endif;
-
-									echo do_shortcode( '[pdf-embedder url="'.$file.'" title="'.$file_name.'"]' );
-
+								if ( isset( $presentation[ 'mro_cit_event_presentation_name' ] ) ) :
+									$file_name = esc_html( $presentation[ 'mro_cit_event_presentation_name' ] );
+								else:
+									$file_name = 'presentación';
 								endif;
-							} ?>
-							</div>
-						</div>
-					</li>
-				<?php endif; 
+
+								echo do_shortcode( '[pdf-embedder url="'.$file.'" title="'.$file_name.'"]' );
+
+							endif;
+						} ?>
+
+					</section>
+				<?php endif;
 
 				//Video
 				if ( $video_text || $videos ) : ?>
 
-					<li class="accordion-item" data-accordion-item>
-						<a href="#" class="accordion-title">Video</a>
-						<div id="tab-presentation" class="accordion-content" data-tab-content>
+					<section id="event-videos"  data-magellan-target="event-videos">
 
-						</div>
-					</li>
+						<h2 class="section-title">Videos del evento</h2>
+
+						<?php
+						if ( $video_text ) :
+							echo wpautop($video_text);
+						endif;
+
+						if ( $videos ) :
+							foreach ( $videos as $video ) {
+								echo wp_oembed_get( $video );
+							}
+						endif;
+						?>
+
+					</section>
 				<?php endif;
 
 				//Gallery
 				if ( $gallery_text || $gallery ) : ?>
 
-					<li class="accordion-item" data-accordion-item>
-						<a href="#" class="accordion-title">Fotos</a>
-						<div id="tab-presentation" class="accordion-content" data-tab-content>
+					<section id="event-gallery" data-magellan-target="event-gallery">
 
-						</div>
-					</li>
+						<h2 class="section-title">Galería del evento</h2>
+
+						<?php
+						if ( $gallery_text ) :
+							echo wpautop($gallery_text);
+						endif;
+
+						if ( $gallery ) : ?>
+
+							<div class="row small-up-2 large-up-4">
+
+								<?php foreach ( $gallery as $attachment_id => $attachment_url ) {
+									echo '<div class="column column-block">';
+									echo wp_get_attachment_image( $attachment_id );
+									echo '</div>';
+								} ?>
+							</div>
+						<?php endif;
+						?>
+
+					</section>
 				<?php endif;
 
 				//Gallery
 				if ( $evaluation ) : ?>
 
-					<li class="accordion-item" data-accordion-item>
-						<a href="#" class="accordion-title">Evaluación</a>
-						<div id="tab-presentation" class="accordion-content" data-tab-content>
+					<section id="event-evaluation" data-magellan-target="event-evaluation">
+						<h2 class="section-title">Evaluación del evento</h2>
 
-						</div>
-					</li>
+						<?php
+						if ( $gallery_text ) :
+							echo wpautop($evaluation);
+						endif;
+						?>
+					</section>
 				<?php endif;
 				?>
 
-			</ul><!-- end accordion -->
+			</div>
 
 
 
