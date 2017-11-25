@@ -97,6 +97,7 @@ gulp.task('foundation-js', function() {
           './vendor/foundation-sites/js/foundation.tabs.js',
           './vendor/foundation-sites/js/foundation.toggler.js',
           './vendor/foundation-sites/js/foundation.tooltip.js',
+          './vendor/foundation-sites/js/foundation.zf.responsiveAccordionTabs.js',
   ])
 	.pipe(babel({
 		presets: ['es2015'],
