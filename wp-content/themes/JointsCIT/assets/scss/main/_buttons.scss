@@ -23,3 +23,6 @@
     @include border-right-radius(20px);
 }
 
+.ddownload-link {
+	@extend .button;
+}

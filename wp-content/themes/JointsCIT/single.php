@@ -12,8 +12,14 @@
 
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			    	<?php get_template_part( 'parts/content', 'dev-info' ); ?>
-			    	<?php get_template_part( 'parts/loop', 'single' ); ?>
+			    	<?php
+			    	if ( is_singular('cit_report') ) :
+			    		get_template_part( 'parts/loop', 'single-report' );
+			    	else:
+			    		get_template_part( 'parts/content', 'dev-info' );
+			    		get_template_part( 'parts/loop', 'single' );
+			    	endif;
+			    	?>
 
 			    <?php endwhile; else : ?>
 

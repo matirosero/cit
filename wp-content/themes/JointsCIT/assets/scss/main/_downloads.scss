@@ -1,0 +1,24 @@
+.download-box {
+	padding-top: 1.25rem;
+	background: #fafafa;
+    border: 1px solid #eee;
+	text-align: center;
+	.ddownload-link {
+		margin-bottom: 0.5rem;
+	}
+	p {
+		font-size: $small-font-size;
+	}
+	@include breakpoint(small only) {
+		width: 100%;
+	}
+	@include breakpoint(medium) {
+		&.float-left,
+		&.float-right {
+			max-width: 220px;
+		}
+		&.float-left {
+			margin-right: 1rem;
+		}		
+	}
+}
