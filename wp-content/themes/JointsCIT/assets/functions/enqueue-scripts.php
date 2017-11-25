@@ -23,7 +23,7 @@ function site_scripts() {
      * TEMP SCRIPTS
      */
     // Adding scripts file in the footer
-    // wp_enqueue_script( 'sidemenu-js', get_template_directory_uri() . '/assets/js/sidemenu.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'load-tab-content-js', get_template_directory_uri() . '/assets/js/mro-load-tab-content.js', array( 'jquery' ), '', true );
 
 
     /*
