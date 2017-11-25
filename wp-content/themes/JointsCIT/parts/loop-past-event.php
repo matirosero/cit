@@ -38,33 +38,76 @@
 				if ( $pdfs ) : ?>
 
 					<li class="accordion-item" data-accordion-item>
-						<a href="#" class="accordion-title">Presentaciones</a>
-						<div class="accordion-content" data-tab-content>
-
-							<?php foreach ($pdfs as $key => $presentation) {
-
-								if ( isset( $presentation[ 'mro_cit_event_presentation_file' ] ) ) :
-									$file = esc_html( $presentation[ 'mro_cit_event_presentation_file' ] );
-
-									if ( isset( $presentation[ 'mro_cit_event_presentation_name' ] ) ) :
-										$file_name = esc_html( $presentation[ 'mro_cit_event_presentation_name' ] );
-									else:
-										$file_name = 'presentación';
-									endif;
-
-									echo do_shortcode( '[pdf-embedder url="'.$file.'" title="'.$file_name.'"]' );
-
-								endif;
-							} ?>
+						<a href="#" class="accordion-title" data-load-content="load-presentation">Presentaciones</a>
+						<div id="tab-presentation" class="accordion-content" data-tab-content>
 
 						</div>
 					</li>
-				<?php endif; ?>
+				<?php endif; 
+
+				//Video
+				if ( $video_text || $videos ) : ?>
+
+					<li class="accordion-item" data-accordion-item>
+						<a href="#" class="accordion-title">Video</a>
+						<div id="tab-presentation" class="accordion-content" data-tab-content>
+
+						</div>
+					</li>
+				<?php endif;
+
+				//Gallery
+				if ( $gallery_text || $gallery ) : ?>
+
+					<li class="accordion-item" data-accordion-item>
+						<a href="#" class="accordion-title">Fotos</a>
+						<div id="tab-presentation" class="accordion-content" data-tab-content>
+
+						</div>
+					</li>
+				<?php endif;
+
+				//Gallery
+				if ( $evaluation ) : ?>
+
+					<li class="accordion-item" data-accordion-item>
+						<a href="#" class="accordion-title">Evaluación</a>
+						<div id="tab-presentation" class="accordion-content" data-tab-content>
+
+						</div>
+					</li>
+				<?php endif;
+				?>
 
 			</ul><!-- end accordion -->
 
 			<?php
-			?>
+			if ( $pdfs ) : ?>
+
+				<div id="load-presentation" class="hide">
+
+					<div class="load-content">
+
+					<?php
+
+					foreach ($pdfs as $key => $presentation) {
+
+						if ( isset( $presentation[ 'mro_cit_event_presentation_file' ] ) ) :
+							$file = esc_html( $presentation[ 'mro_cit_event_presentation_file' ] );
+
+							if ( isset( $presentation[ 'mro_cit_event_presentation_name' ] ) ) :
+								$file_name = esc_html( $presentation[ 'mro_cit_event_presentation_name' ] );
+							else:
+								$file_name = 'presentación';
+							endif;
+
+							echo do_shortcode( '[pdf-embedder url="'.$file.'" title="'.$file_name.'"]' );
+
+						endif;
+					} ?>
+					</div>
+				</div>
+			<?php endif; ?>
 
 		<?php else: ?>
 
