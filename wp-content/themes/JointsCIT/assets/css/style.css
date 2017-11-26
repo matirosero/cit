@@ -6298,6 +6298,19 @@ PAST EVENTS STYLES
       margin-top: 2rem !important; } }
 
 /*********************
+PROFILE STYLES
+*********************/
+.profile-meta {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  color: #999; }
+
+.article-header .wp-post-image {
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+/*********************
 IMAGE GALLERY STYLES
 *********************/
 /*********************

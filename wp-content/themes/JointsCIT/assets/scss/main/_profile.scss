@@ -1,0 +1,12 @@
+.profile-meta {
+	font-family: $sans-family;
+	color: #999;
+}
+
+.wp-post-image {
+	.article-header & {
+		margin-bottom: 1rem;
+
+		@include border-radius(50%);
+	}
+}
