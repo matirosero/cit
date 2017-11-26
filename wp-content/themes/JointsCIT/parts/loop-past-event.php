@@ -23,7 +23,8 @@
 			<div data-sticky-container>
 				<div data-sticky data-anchor="foo">
 
-					<ul class="menu align-center" data-magellan>
+					<ul class="menu section-navigation align-center" data-magellan>
+
 
 						<li><a href="#event-information">Información</a></li>
 
@@ -126,7 +127,7 @@
 
 						if ( $gallery ) : ?>
 
-							<div class="row small-up-2 large-up-4">
+							<div class="row small-up-2 medium-up-3 large-up-3 xlarge-up-4">
 
 								<?php foreach ( $gallery as $attachment_id => $attachment_url ) {
 									echo '<div class="column column-block">';

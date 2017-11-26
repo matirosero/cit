@@ -2300,9 +2300,10 @@ ol,
 li,
 h1,
 h2,
-h3,
 .single-cit_report .single-title,
 .single-cit_past_event .single-title,
+h3,
+.single-cit_past_event .section-title,
 .single-tribe_events .tribe-events-single-event-title,
 h4,
 .entry-content .executive-summary-subtitle,
@@ -2344,9 +2345,10 @@ small {
 
 h1,
 h2,
-h3,
 .single-cit_report .single-title,
 .single-cit_past_event .single-title,
+h3,
+.single-cit_past_event .section-title,
 .single-tribe_events .tribe-events-single-event-title,
 h4,
 .entry-content .executive-summary-subtitle,
@@ -2358,9 +2360,9 @@ h6 {
   color: inherit;
   text-rendering: optimizeLegibility; }
   h1 small,
-  h2 small,
-  h3 small, .single-cit_report .single-title small,
-  .single-cit_past_event .single-title small, .single-tribe_events .tribe-events-single-event-title small,
+  h2 small, .single-cit_report .single-title small,
+  .single-cit_past_event .single-title small,
+  h3 small, .single-cit_past_event .section-title small, .single-tribe_events .tribe-events-single-event-title small,
   h4 small, .entry-content .executive-summary-subtitle small,
   h5 small,
   h6 small {
@@ -2368,32 +2370,32 @@ h6 {
     color: #cacaca; }
 
 h1 {
-  font-size: 1.53409rem;
+  font-size: 1.64773rem;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h2 {
-  font-size: 1.53409rem;
+h2, .single-cit_report .single-title,
+.single-cit_past_event .single-title {
+  font-size: 1.47727rem;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h3, .single-cit_report .single-title,
-.single-cit_past_event .single-title, .single-tribe_events .tribe-events-single-event-title {
-  font-size: 1.13636rem;
+h3, .single-cit_past_event .section-title, .single-tribe_events .tribe-events-single-event-title {
+  font-size: 1.30682rem;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 h4, .entry-content .executive-summary-subtitle {
-  font-size: 1.02273rem;
+  font-size: 1.13636rem;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
 h5 {
-  font-size: 0.96591rem;
+  font-size: 1.02273rem;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
@@ -2407,10 +2409,10 @@ h6 {
 @media print, screen and (min-width: 40em) {
   h1 {
     font-size: 2.72727rem; }
-  h2 {
-    font-size: 2.27273rem; }
-  h3, .single-cit_report .single-title,
-  .single-cit_past_event .single-title, .single-tribe_events .tribe-events-single-event-title {
+  h2, .single-cit_report .single-title,
+  .single-cit_past_event .single-title {
+    font-size: 2.21591rem; }
+  h3, .single-cit_past_event .section-title, .single-tribe_events .tribe-events-single-event-title {
     font-size: 1.76136rem; }
   h4, .entry-content .executive-summary-subtitle {
     font-size: 1.42045rem; }
@@ -2636,16 +2638,17 @@ kbd {
   .tribe-events-after-html p,
   .tribe-events-before-html p,
   h2,
-  h3,
   .single-cit_report .single-title,
   .single-cit_past_event .single-title,
+  h3,
+  .single-cit_past_event .section-title,
   .single-tribe_events .tribe-events-single-event-title {
     orphans: 3;
     widows: 3; }
-  h2,
-  h3,
-  .single-cit_report .single-title,
+  h2, .single-cit_report .single-title,
   .single-cit_past_event .single-title,
+  h3,
+  .single-cit_past_event .section-title,
   .single-tribe_events .tribe-events-single-event-title {
     page-break-after: avoid; }
   .print-break-inside {
@@ -5836,8 +5839,8 @@ LINK Typography
 /*********************
 H1, H2, H3, H4, H5 P STYLES
 *********************/
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .single-cit_report .single-title a,
-.single-cit_past_event .single-title a, .single-tribe_events .tribe-events-single-event-title a, .h3 a, h4 a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .h5 a {
+h1 a, .h1 a, h2 a, .single-cit_report .single-title a,
+.single-cit_past_event .single-title a, .h2 a, h3 a, .single-cit_past_event .section-title a, .single-tribe_events .tribe-events-single-event-title a, .h3 a, h4 a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .h5 a {
   text-decoration: none; }
 
 /*********************
@@ -6147,12 +6150,16 @@ POSTS & CONTENT STYLES
       .single .article-header {
         padding-top: 0.25rem; } }
 
-.byline, .tribe-events-schedule h2 {
+.byline, .tribe-events-schedule h2, .tribe-events-schedule .single-cit_report .single-title, .single-cit_report .tribe-events-schedule .single-title, .tribe-events-schedule
+.single-cit_past_event .single-title,
+.single-cit_past_event .tribe-events-schedule .single-title {
   color: #999;
   margin-bottom: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
   @media screen and (max-width: 39.9375em) {
-    .byline, .tribe-events-schedule h2 {
+    .byline, .tribe-events-schedule h2, .tribe-events-schedule .single-cit_report .single-title, .single-cit_report .tribe-events-schedule .single-title, .tribe-events-schedule
+    .single-cit_past_event .single-title,
+    .single-cit_past_event .tribe-events-schedule .single-title {
       font-size: 80%; } }
 
 .date,
@@ -6268,8 +6275,27 @@ POSTS & CONTENT STYLES
 /*********************
 PAST EVENTS STYLES
 *********************/
-.pdfemb-viewer {
-  margin-bottom: 1rem; }
+.section-navigation {
+  background: #006CB5; }
+  .section-navigation a {
+    color: #fefefe; }
+
+.single-cit_past_event .sections {
+  margin-top: 1rem; }
+  .single-cit_past_event .sections section {
+    margin-bottom: 1rem; }
+
+@media print, screen and (min-width: 40em) {
+  .single-cit_past_event .sections {
+    margin-top: 2rem; }
+    .single-cit_past_event .sections section {
+      margin-bottom: 2rem; } }
+
+.pdfemb-viewer + .pdfemb-viewer {
+  margin-top: 1rem !important; }
+  @media print, screen and (min-width: 40em) {
+    .pdfemb-viewer + .pdfemb-viewer {
+      margin-top: 2rem !important; } }
 
 /*********************
 IMAGE GALLERY STYLES
@@ -6456,7 +6482,13 @@ SIDEBARS & ASIDES
       list-style: none; }
   .widget h4, .widget .entry-content .executive-summary-subtitle, .entry-content .widget .executive-summary-subtitle,
   .widget .tribe-events-title,
-  .widget .tribe-mini-calendar-event .list-info h2 {
+  .widget .tribe-mini-calendar-event .list-info h2,
+  .widget .tribe-mini-calendar-event .list-info .single-cit_report .single-title, .single-cit_report
+  .widget .tribe-mini-calendar-event .list-info .single-title,
+  .widget .tribe-mini-calendar-event .list-info
+  .single-cit_past_event .single-title,
+  .single-cit_past_event
+  .widget .tribe-mini-calendar-event .list-info .single-title {
     font-size: 16px;
     font-weight: normal;
     line-height: 1.25;
@@ -6515,7 +6547,9 @@ PLUGIN STYLES
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal !important; }
 
-.tribe-events-schedule h2 {
+.tribe-events-schedule h2, .tribe-events-schedule .single-cit_report .single-title, .single-cit_report .tribe-events-schedule .single-title, .tribe-events-schedule
+.single-cit_past_event .single-title,
+.single-cit_past_event .tribe-events-schedule .single-title {
   font-weight: normal;
   color: #4A4A4A; }
 
@@ -6628,14 +6662,14 @@ to display none.
     margin: 0.5cm; }
   p, #tribe-events .tribe-events-content p,
   .tribe-events-after-html p,
-  .tribe-events-before-html p, h2, h3, .single-cit_report .single-title,
-  .single-cit_past_event .single-title, .single-tribe_events .tribe-events-single-event-title {
+  .tribe-events-before-html p, h2, .single-cit_report .single-title,
+  .single-cit_past_event .single-title, h3, .single-cit_past_event .section-title, .single-tribe_events .tribe-events-single-event-title {
     orphans: 3;
     widows: 3; }
-  h2,
-  h3,
-  .single-cit_report .single-title,
+  h2, .single-cit_report .single-title,
   .single-cit_past_event .single-title,
+  h3,
+  .single-cit_past_event .section-title,
   .single-tribe_events .tribe-events-single-event-title {
     page-break-after: avoid; }
   .sidebar,

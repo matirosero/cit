@@ -1,3 +1,34 @@
-.pdfemb-viewer {
-	margin-bottom: 1rem;
+.section-navigation {
+	background: color( 'blue', 'base' );
+	a {
+		color: $white;
+	}
+}
+.single-cit_past_event {
+	.sections {
+		margin-top: 1rem;
+		section {
+			margin-bottom: 1rem;
+		}
+	}
+	.section-title {
+		@extend h3;
+	}
+	@include breakpoint(medium) {
+		.sections {
+			margin-top: 2rem;
+			section {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
+
+
+
+.pdfemb-viewer + .pdfemb-viewer {
+	margin-top: 1rem !important;
+	@include breakpoint(medium) {
+		margin-top: 2rem !important;
+	}
 }

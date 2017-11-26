@@ -4,7 +4,7 @@ function clean_up_old_posts ($content) {
 
 	//Check the date
 	global $post;
-	$compare_date = strtotime( "2017-12-31" ); //cut off date here
+	$compare_date = strtotime( "2017-11-24" ); //cut off date here
    	$post_date    = strtotime( $post->post_date ); //current post's date
 
    	if ( $compare_date > $post_date ) :
