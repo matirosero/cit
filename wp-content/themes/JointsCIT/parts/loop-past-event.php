@@ -148,7 +148,7 @@
 						<h2 class="section-title">Evaluación del evento</h2>
 
 						<?php
-						if ( $gallery_text ) :
+						if ( $evaluation ) :
 							echo wpautop($evaluation);
 						endif;
 						?>
