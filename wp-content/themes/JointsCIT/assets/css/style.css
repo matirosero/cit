@@ -2306,6 +2306,13 @@ h3,
 .single-cit_past_event .section-title,
 .single-tribe_events .tribe-events-single-event-title,
 h4,
+.post-type-archive-cit_report .entry-title,
+.post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title,
+.tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title,
+.post-type-archive-cit_past_event .entry-title,
+.post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title,
+.tribe-events-list
+.post-type-archive-cit_past_event .tribe-events-list-event-title,
 .entry-content .executive-summary-subtitle,
 h5,
 h6,
@@ -2351,6 +2358,13 @@ h3,
 .single-cit_past_event .section-title,
 .single-tribe_events .tribe-events-single-event-title,
 h4,
+.post-type-archive-cit_report .entry-title,
+.post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title,
+.tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title,
+.post-type-archive-cit_past_event .entry-title,
+.post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title,
+.tribe-events-list
+.post-type-archive-cit_past_event .tribe-events-list-event-title,
 .entry-content .executive-summary-subtitle,
 h5,
 h6 {
@@ -2363,7 +2377,10 @@ h6 {
   h2 small, .single-cit_report .single-title small,
   .single-cit_past_event .single-title small,
   h3 small, .single-cit_past_event .section-title small, .single-tribe_events .tribe-events-single-event-title small,
-  h4 small, .entry-content .executive-summary-subtitle small,
+  h4 small, .post-type-archive-cit_report .entry-title small, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title small, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title small,
+  .post-type-archive-cit_past_event .entry-title small,
+  .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title small, .tribe-events-list
+  .post-type-archive-cit_past_event .tribe-events-list-event-title small, .entry-content .executive-summary-subtitle small,
   h5 small,
   h6 small {
     line-height: 0;
@@ -2388,7 +2405,10 @@ h3, .single-cit_past_event .section-title, .single-tribe_events .tribe-events-si
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h4, .entry-content .executive-summary-subtitle {
+h4, .post-type-archive-cit_report .entry-title, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title,
+.post-type-archive-cit_past_event .entry-title,
+.post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title, .tribe-events-list
+.post-type-archive-cit_past_event .tribe-events-list-event-title, .entry-content .executive-summary-subtitle {
   font-size: 1.13636rem;
   line-height: 1.2;
   margin-top: 0;
@@ -2414,7 +2434,10 @@ h6 {
     font-size: 2.21591rem; }
   h3, .single-cit_past_event .section-title, .single-tribe_events .tribe-events-single-event-title {
     font-size: 1.76136rem; }
-  h4, .entry-content .executive-summary-subtitle {
+  h4, .post-type-archive-cit_report .entry-title, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title,
+  .post-type-archive-cit_past_event .entry-title,
+  .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title, .tribe-events-list
+  .post-type-archive-cit_past_event .tribe-events-list-event-title, .entry-content .executive-summary-subtitle {
     font-size: 1.42045rem; }
   h5 {
     font-size: 1.13636rem; }
@@ -5840,7 +5863,10 @@ LINK Typography
 H1, H2, H3, H4, H5 P STYLES
 *********************/
 h1 a, .h1 a, h2 a, .single-cit_report .single-title a,
-.single-cit_past_event .single-title a, .h2 a, h3 a, .single-cit_past_event .section-title a, .single-tribe_events .tribe-events-single-event-title a, .h3 a, h4 a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .h5 a {
+.single-cit_past_event .single-title a, .h2 a, h3 a, .single-cit_past_event .section-title a, .single-tribe_events .tribe-events-single-event-title a, .h3 a, h4 a, .post-type-archive-cit_report .entry-title a, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title a,
+.post-type-archive-cit_past_event .entry-title a,
+.post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list
+.post-type-archive-cit_past_event .tribe-events-list-event-title a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .h5 a {
   text-decoration: none; }
 
 /*********************
@@ -6081,11 +6107,15 @@ POSTS & CONTENT STYLES
 POSTS & CONTENT STYLES
 *********************/
 .post,
-.type-tribe_events {
+.type-tribe_events,
+.cit_past_event,
+.cit_report {
   margin-bottom: 1rem; }
   @media print, screen and (min-width: 40em) {
     .post,
-    .type-tribe_events {
+    .type-tribe_events,
+    .cit_past_event,
+    .cit_report {
       margin-bottom: 3rem; } }
 
 .single-title,
@@ -6493,7 +6523,13 @@ SIDEBARS & ASIDES
     margin: 0; }
     .widget ul li {
       list-style: none; }
-  .widget h4, .widget .entry-content .executive-summary-subtitle, .entry-content .widget .executive-summary-subtitle,
+  .widget h4, .widget .post-type-archive-cit_report .entry-title, .post-type-archive-cit_report .widget .entry-title, .widget .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title, .post-type-archive-cit_report .tribe-events-list .widget .tribe-events-list-event-title, .widget .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title, .tribe-events-list .post-type-archive-cit_report .widget .tribe-events-list-event-title, .widget
+  .post-type-archive-cit_past_event .entry-title,
+  .post-type-archive-cit_past_event .widget .entry-title, .widget
+  .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title,
+  .post-type-archive-cit_past_event .tribe-events-list .widget .tribe-events-list-event-title, .widget .tribe-events-list
+  .post-type-archive-cit_past_event .tribe-events-list-event-title, .tribe-events-list
+  .post-type-archive-cit_past_event .widget .tribe-events-list-event-title, .widget .entry-content .executive-summary-subtitle, .entry-content .widget .executive-summary-subtitle,
   .widget .tribe-events-title,
   .widget .tribe-mini-calendar-event .list-info h2,
   .widget .tribe-mini-calendar-event .list-info .single-cit_report .single-title, .single-cit_report

@@ -3,7 +3,9 @@ POSTS & CONTENT STYLES
 *********************/
 
 .post,
-.type-tribe_events {
+.type-tribe_events,
+.cit_past_event,
+.cit_report {
 	margin-bottom: 1rem;
 	@include breakpoint(medium) {
 		margin-bottom: 3rem;
@@ -53,6 +55,10 @@ POSTS & CONTENT STYLES
 	margin-bottom: .5rem;
 	@include breakpoint(medium) {
 		margin-bottom: 1rem;
+	}
+	.post-type-archive-cit_report &,
+	.post-type-archive-cit_past_event & {
+		@extend h4;
 	}
 }
 
