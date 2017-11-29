@@ -27,7 +27,7 @@ single-bookmarks.php
 
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			    	<?php get_template_part( 'parts/content', 'dev-info' ); ?>
+			    	<?php //get_template_part( 'parts/content', 'dev-info' ); ?>
 			    	<?php get_template_part( 'parts/loop', 'past-event' ); ?>
 
 			    <?php endwhile; else : ?>

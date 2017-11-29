@@ -16,7 +16,7 @@
 			    	if ( is_singular('cit_report') ) :
 			    		get_template_part( 'parts/loop', 'single-report' );
 			    	else:
-			    		get_template_part( 'parts/content', 'dev-info' );
+			    		// get_template_part( 'parts/content', 'dev-info' );
 			    		get_template_part( 'parts/loop', 'single' );
 			    	endif;
 			    	?>

@@ -3877,7 +3877,7 @@ select {
         display: block;
         margin-right: 0; } }
 
-.callout {
+.callout, .login {
   position: relative;
   margin: 0 0 1rem 0;
   padding: 1rem;
@@ -3885,31 +3885,31 @@ select {
   border-radius: 0;
   background-color: white;
   color: #4A4A4A; }
-  .callout > :first-child {
+  .callout > :first-child, .login > :first-child {
     margin-top: 0; }
-  .callout > :last-child {
+  .callout > :last-child, .login > :last-child {
     margin-bottom: 0; }
-  .callout.primary {
+  .callout.primary, .primary.login {
     background-color: #ceebff;
     color: #4A4A4A; }
-  .callout.secondary {
+  .callout.secondary, .secondary.login {
     background-color: #eaeaea;
     color: #4A4A4A; }
-  .callout.success {
+  .callout.success, .success.login {
     background-color: #e1faea;
     color: #4A4A4A; }
-  .callout.warning {
+  .callout.warning, .warning.login {
     background-color: #fff3d9;
     color: #4A4A4A; }
-  .callout.alert {
+  .callout.alert, .alert.login {
     background-color: #f7e4e1;
     color: #4A4A4A; }
-  .callout.small {
+  .callout.small, .small.login {
     padding-top: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem; }
-  .callout.large {
+  .callout.large, .large.login {
     padding-top: 3rem;
     padding-right: 3rem;
     padding-bottom: 3rem;
@@ -5835,6 +5835,22 @@ BUTTON STYLES
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     background-clip: padding-box; }
+  .button.secondary, .secondary.ddownload-link, #tribe-events .secondary.tribe-events-button,
+  .secondary.tribe-events-button,
+  .secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit] {
+    background-color: #D8D8D8;
+    background-image: linear-gradient(to bottom, #F5F5F5, #D8D8D8);
+    color: #999999; }
+    .button.secondary:active, .secondary.ddownload-link:active, #tribe-events .secondary.tribe-events-button:active,
+    .secondary.tribe-events-button:active,
+    .secondary.tribe-events-read-more:active, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:active, .button.secondary:focus, .secondary.ddownload-link:focus, #tribe-events .secondary.tribe-events-button:focus,
+    .secondary.tribe-events-button:focus,
+    .secondary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:focus, .button.secondary:hover, .secondary.ddownload-link:hover, #tribe-events .secondary.tribe-events-button:hover,
+    .secondary.tribe-events-button:hover,
+    .secondary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:hover {
+      background-color: #E02818;
+      background-image: linear-gradient(to bottom, #F9664D, #E02818);
+      color: #fff; }
 
 .input-group > :last-child > * {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -6082,22 +6098,22 @@ NAVIGATION STYLES
 /*********************
 DOWNLOADS
 *********************/
-.download-box {
+.download-box, .login {
   padding-top: 1.25rem;
   background: #fafafa;
   border: 1px solid #eee;
   text-align: center; }
-  .download-box .ddownload-link {
+  .download-box .ddownload-link, .login .ddownload-link {
     margin-bottom: 0.5rem; }
-  .download-box p, .download-box #tribe-events .tribe-events-content p, #tribe-events .tribe-events-content .download-box p {
+  .download-box p, .login p, .download-box #tribe-events .tribe-events-content p, #tribe-events .tribe-events-content .download-box p, .login #tribe-events .tribe-events-content p, #tribe-events .tribe-events-content .login p {
     font-size: 80%; }
   @media only screen and (max-width: 750px) {
-    .download-box {
+    .download-box, .login {
       width: 100%; } }
   @media only screen and (min-width: 751px) {
-    .download-box.float-left, .download-box.float-right {
+    .download-box.float-left, .float-left.login, .download-box.float-right, .float-right.login {
       max-width: 220px; }
-    .download-box.float-left {
+    .download-box.float-left, .float-left.login {
       margin-right: 40px; } }
 
 /*********************
@@ -6491,9 +6507,6 @@ SIDEBARS & ASIDES
 *********************/
 .sidebar {
   padding-top: 1rem; }
-  @media print, screen and (min-width: 40em) {
-    .sidebar {
-      padding-top: 3rem; } }
 
 .widgettitle {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -6551,6 +6564,32 @@ SIDEBARS & ASIDES
     padding-bottom: 5px;
     margin-bottom: 5px;
     border-bottom: 1px solid #D8D8D8; }
+
+/*********************
+LOGIN
+*********************/
+.widget.login p, .widget.login #tribe-events .tribe-events-content p, #tribe-events .tribe-events-content .widget.login p,
+#loginform p,
+#loginform #tribe-events .tribe-events-content p, #tribe-events .tribe-events-content
+#loginform p {
+  text-align: left; }
+
+.widget.login #rememberme,
+#loginform #rememberme {
+  margin-bottom: 0; }
+
+.widget.login .button, .widget.login .ddownload-link, .widget.login #tribe-events .tribe-events-button, #tribe-events .widget.login .tribe-events-button, .widget.login
+.tribe-events-button, .widget.login
+.tribe-events-read-more, .widget.login #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .widget.login input[type=submit],
+#loginform .button,
+#loginform .ddownload-link,
+#loginform
+.tribe-events-button,
+#loginform
+.tribe-events-read-more,
+#loginform #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit
+#loginform input[type=submit] {
+  margin-bottom: 0; }
 
 /*********************
 FOOTER STYLES

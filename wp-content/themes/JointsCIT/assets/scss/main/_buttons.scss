@@ -15,6 +15,17 @@
 		@include border-left-radius(0);
 		// @include border-radius(10px)
 	}
+
+	&.secondary {
+		@include button-gradient( 
+			color('grey', 'light'), 
+			color('grey', 'base'), 
+			color('orange', 'light'), 
+			color('orange', 'dark'), 
+			lighten(color('grey', 'dark'), 40), 
+			color('white', 'base') 
+		);
+	}
 }
 
 .input-group > :last-child > * {
