@@ -8,25 +8,34 @@
     <section class="entry-content" itemprop="articleBody">
 
     	<?php
+
+        /*
+         * Download report
+         */
+
     	if ( ( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) && is_numeric( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) ) ) || get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true ) ) : ?>
 
     		<div class="callout float-left download-box">
 
     			<?php
-    			if ( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) && is_numeric( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) ) ) :
+                if ( current_user_can( 'download_report' ) ) : 
+        			if ( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) && is_numeric( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) ) ) :
 
-    				$download_id = get_post_meta( $post->ID, 'mro_cit_report_download_id', true );
-    				// echo 'ID is '.$download_id.'<br />';
-    				echo do_shortcode( '[ddownload id="'.$download_id.'"]' );
+        				$download_id = get_post_meta( $post->ID, 'mro_cit_report_download_id', true );
+        				// echo 'ID is '.$download_id.'<br />';
+        				echo do_shortcode( '[ddownload id="'.$download_id.'"]' );
 
-    			elseif ( get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true ) ):
+        			elseif ( get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true ) ):
 
-    				$shortcode = get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true );
-    				echo apply_filters( 'the_content', $shortcode );
-    			endif;
+        				$shortcode = get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true );
+        				echo apply_filters( 'the_content', $shortcode );
+        			endif; ?>
+                    <p>Haga click para descargar y leer el informe.</p>
+                <?php else: ?>
+                    <p  class="callout alert">Debe ser afiliado e ingresar a su cuenta para descargar el informe.</p>
+                    <?php echo do_shortcode( '[members_login_form] ' ); ?>
+                <?php endif;
     			?>
-
-    			<p>Debe ser miembro e ingresar a su cuenta para descargar el informe.</p>
 
     		</div>
 
