@@ -32,7 +32,7 @@
         			endif; ?>
                     <p>Haga click para descargar y leer el informe.</p>
                 <?php else: ?>
-                    <p  class="callout alert">Debe ser afiliado e ingresar a su cuenta para descargar el informe.</p>
+                    <p  class="callout alert">Debe ser Afiliado e ingresar a su cuenta para descargar el informe.</p>
                     <?php echo do_shortcode( '[members_login_form] ' ); ?>
                 <?php endif;
     			?>
