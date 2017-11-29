@@ -63,8 +63,13 @@ NAVIGATION STYLES
 		.top-bar-right,
 		.top-bar-left {
 			> .menu {
-				> li > a {
-					line-height: rem-calc( topbar-height('medium') ) - 1.4rem;
+				> li {
+					> a {
+						line-height: rem-calc( topbar-height('medium') ) - 1.4rem;
+					}
+					&.active > a {
+						color: $black;
+					}
 				}
 			}
 

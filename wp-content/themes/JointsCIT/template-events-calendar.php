@@ -12,9 +12,9 @@ Template Name: For Events Calendar
 
 	<div id="content" class="columns">
 
-		<div id="inner-content" class="row">
+		<div id="inner-content" class="row" data-equalizer data-equalize-on="large">
 
-			<main id="main" class="large-8 xlarge-9 columns" role="main">
+			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch>
 
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

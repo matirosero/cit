@@ -1,6 +1,10 @@
 .profile-meta {
 	font-family: $sans-family;
 	color: #999;
+	font-size: $small-font-size;
+	.profile-position {
+		text-transform: uppercase;
+	}
 }
 
 .wp-post-image {
@@ -8,5 +12,17 @@
 		margin-bottom: 1rem;
 
 		@include border-radius(50%);
+	}
+}
+
+.profile-block {
+	text-align: center;
+	.profile-image {
+		@include border-radius(50%);
+	}
+	h3 {
+		@extend h5;
+		margin-top: 0.5rem;
+		margin-bottom: 0;
 	}
 }

@@ -1,6 +1,8 @@
 <?php
 
-// passing variable by reference
+/*
+ * Add RSVP to events, depending on user capabilities.
+ */
 function mro_cit_rsvp_form() {
     echo '<h3>Confirme su asistencia</h3>';
 

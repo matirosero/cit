@@ -2315,6 +2315,11 @@ h4,
 .post-type-archive-cit_past_event .tribe-events-list-event-title,
 .entry-content .executive-summary-subtitle,
 h5,
+.profile-block h3,
+.profile-block .single-cit_past_event .section-title,
+.single-cit_past_event .profile-block .section-title,
+.profile-block .single-tribe_events .tribe-events-single-event-title,
+.single-tribe_events .profile-block .tribe-events-single-event-title,
 h6,
 pre,
 form,
@@ -2367,6 +2372,11 @@ h4,
 .post-type-archive-cit_past_event .tribe-events-list-event-title,
 .entry-content .executive-summary-subtitle,
 h5,
+.profile-block h3,
+.profile-block .single-cit_past_event .section-title,
+.single-cit_past_event .profile-block .section-title,
+.profile-block .single-tribe_events .tribe-events-single-event-title,
+.single-tribe_events .profile-block .tribe-events-single-event-title,
 h6 {
   font-family: "Libre Franklin", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
@@ -2381,7 +2391,7 @@ h6 {
   .post-type-archive-cit_past_event .entry-title small,
   .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title small, .tribe-events-list
   .post-type-archive-cit_past_event .tribe-events-list-event-title small, .entry-content .executive-summary-subtitle small,
-  h5 small,
+  h5 small, .profile-block h3 small, .profile-block .single-cit_past_event .section-title small, .single-cit_past_event .profile-block .section-title small, .profile-block .single-tribe_events .tribe-events-single-event-title small, .single-tribe_events .profile-block .tribe-events-single-event-title small,
   h6 small {
     line-height: 0;
     color: #cacaca; }
@@ -2414,7 +2424,7 @@ h4, .post-type-archive-cit_report .entry-title, .post-type-archive-cit_report .t
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
-h5 {
+h5, .profile-block h3, .profile-block .single-cit_past_event .section-title, .single-cit_past_event .profile-block .section-title, .profile-block .single-tribe_events .tribe-events-single-event-title, .single-tribe_events .profile-block .tribe-events-single-event-title {
   font-size: 1.02273rem;
   line-height: 1.2;
   margin-top: 0;
@@ -2439,7 +2449,7 @@ h6 {
   .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title, .tribe-events-list
   .post-type-archive-cit_past_event .tribe-events-list-event-title, .entry-content .executive-summary-subtitle {
     font-size: 1.42045rem; }
-  h5 {
+  h5, .profile-block h3, .profile-block .single-cit_past_event .section-title, .single-cit_past_event .profile-block .section-title, .profile-block .single-tribe_events .tribe-events-single-event-title, .single-tribe_events .profile-block .tribe-events-single-event-title {
     font-size: 1.13636rem; }
   h6 {
     font-size: 0.90909rem; } }
@@ -5882,7 +5892,7 @@ h1 a, .h1 a, h2 a, .single-cit_report .single-title a,
 .single-cit_past_event .single-title a, .h2 a, h3 a, .single-cit_past_event .section-title a, .single-tribe_events .tribe-events-single-event-title a, .h3 a, h4 a, .post-type-archive-cit_report .entry-title a, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title a,
 .post-type-archive-cit_past_event .entry-title a,
 .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list
-.post-type-archive-cit_past_event .tribe-events-list-event-title a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .h5 a {
+.post-type-archive-cit_past_event .tribe-events-list-event-title a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .profile-block h3 a, .profile-block .single-cit_past_event .section-title a, .single-cit_past_event .profile-block .section-title a, .profile-block .single-tribe_events .tribe-events-single-event-title a, .single-tribe_events .profile-block .tribe-events-single-event-title a, .h5 a {
   text-decoration: none; }
 
 /*********************
@@ -5990,6 +6000,9 @@ NAVIGATION STYLES
       .top-bar .top-bar-right > .menu > li > a,
       .top-bar .top-bar-left > .menu > li > a {
         line-height: 5.13409rem; }
+      .top-bar .top-bar-right > .menu > li.active > a,
+      .top-bar .top-bar-left > .menu > li.active > a {
+        color: #4A4A4A; }
       .top-bar .top-bar-right .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a,
       .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a {
         padding-right: 2.07955rem; }
@@ -6348,13 +6361,26 @@ PROFILE STYLES
 *********************/
 .profile-meta {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  color: #999; }
+  color: #999;
+  font-size: 80%; }
+  .profile-meta .profile-position {
+    text-transform: uppercase; }
 
 .article-header .wp-post-image {
   margin-bottom: 1rem;
   border-radius: 50%;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
+
+.profile-block {
+  text-align: center; }
+  .profile-block .profile-image {
+    border-radius: 50%;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */ }
+  .profile-block h3, .profile-block .single-cit_past_event .section-title, .single-cit_past_event .profile-block .section-title, .profile-block .single-tribe_events .tribe-events-single-event-title, .single-tribe_events .profile-block .tribe-events-single-event-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0; }
 
 /*********************
 IMAGE GALLERY STYLES
@@ -6619,12 +6645,22 @@ PLUGIN STYLES
   font-weight: normal !important; }
 
 .tribe-events-list-separator-month,
-.tribe-events-day-time-slot h5 {
+.tribe-events-day-time-slot h5,
+.tribe-events-day-time-slot .profile-block h3, .profile-block
+.tribe-events-day-time-slot h3,
+.tribe-events-day-time-slot .profile-block .single-cit_past_event .section-title, .profile-block .single-cit_past_event
+.tribe-events-day-time-slot .section-title,
+.tribe-events-day-time-slot .single-cit_past_event .profile-block .section-title, .single-cit_past_event .profile-block
+.tribe-events-day-time-slot .section-title,
+.tribe-events-day-time-slot .profile-block .single-tribe_events .tribe-events-single-event-title, .profile-block .single-tribe_events
+.tribe-events-day-time-slot .tribe-events-single-event-title,
+.tribe-events-day-time-slot .single-tribe_events .profile-block .tribe-events-single-event-title, .single-tribe_events .profile-block
+.tribe-events-day-time-slot .tribe-events-single-event-title {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal !important;
   text-align: center; }
 
-.tribe-events-day-time-slot h5 {
+.tribe-events-day-time-slot h5, .tribe-events-day-time-slot .profile-block h3, .profile-block .tribe-events-day-time-slot h3, .tribe-events-day-time-slot .profile-block .single-cit_past_event .section-title, .profile-block .single-cit_past_event .tribe-events-day-time-slot .section-title, .tribe-events-day-time-slot .single-cit_past_event .profile-block .section-title, .single-cit_past_event .profile-block .tribe-events-day-time-slot .section-title, .tribe-events-day-time-slot .profile-block .single-tribe_events .tribe-events-single-event-title, .profile-block .single-tribe_events .tribe-events-day-time-slot .tribe-events-single-event-title, .tribe-events-day-time-slot .single-tribe_events .profile-block .tribe-events-single-event-title, .single-tribe_events .profile-block .tribe-events-day-time-slot .tribe-events-single-event-title {
   margin-bottom: 2.25em !important; }
 
 .tribe-events-list .type-tribe_events {
