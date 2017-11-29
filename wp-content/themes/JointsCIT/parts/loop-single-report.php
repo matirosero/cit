@@ -18,7 +18,7 @@
     		<div class="callout float-left download-box">
 
     			<?php
-                if ( current_user_can( 'download_report' ) ) : 
+                if ( current_user_can( 'download_report' ) ) :
         			if ( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) && is_numeric( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) ) ) :
 
         				$download_id = get_post_meta( $post->ID, 'mro_cit_report_download_id', true );
