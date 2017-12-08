@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JointsCIT\n"
 "POT-Creation-Date: 2017-12-08 10:58-0600\n"
-"PO-Revision-Date: 2017-12-08 10:58-0600\n"
+"PO-Revision-Date: 2017-12-08 11:25-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_PE\n"
@@ -358,7 +358,7 @@ msgstr "Menú"
 
 #: search.php:13
 msgid "Search Results for:"
-msgstr "Buscar resultados para:"
+msgstr "Resultados de búsqueda de:"
 
 #: searchform.php:5
 msgctxt "jointswp"
