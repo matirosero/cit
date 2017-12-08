@@ -10,6 +10,12 @@
 
 			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch>
 
+				<header class="article-header">
+					<h1 class="entry-title" itemprop="headline">Eventos pasados</h1>
+
+					<p>Póngase al día con todo el conocimiento y experiencia de eventos anteriores. </p>    
+				</header>
+
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<!-- To see additional archive styles, visit the /parts directory -->

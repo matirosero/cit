@@ -18,7 +18,7 @@ Template Name: Dev
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<?php get_template_part( 'parts/content', 'dev' ); ?>
+					<?php get_template_part( 'parts/content', 'dev-events' ); ?>
 
 				<?php endwhile; endif; ?>
 

@@ -57,9 +57,18 @@ POSTS & CONTENT STYLES
 		margin-bottom: 1rem;
 	}
 	.post-type-archive-cit_report &,
-	.post-type-archive-cit_past_event & {
+	.post-type-archive-cit_past_event &{
 		@extend h4;
 	}
+}
+
+.archive-title {
+	margin-bottom: .5rem;
+
+	@include breakpoint(medium) {
+		margin-bottom: 1rem;
+	}
+	@extend h4;
 }
 
 .article-header {

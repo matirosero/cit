@@ -1051,12 +1051,12 @@ img {
 textarea {
   height: auto;
   min-height: 50px;
-  border-radius: 0; }
+  border-radius: 3px; }
 
 select {
   box-sizing: border-box;
   width: 100%;
-  border-radius: 0; }
+  border-radius: 3px; }
 
 .map_canvas img,
 .map_canvas embed,
@@ -1072,7 +1072,7 @@ button {
   -moz-appearance: none;
   appearance: none;
   border: 0;
-  border-radius: 0;
+  border-radius: 3px;
   background: transparent;
   line-height: 1; }
   [data-whatinput='mouse'] button {
@@ -2313,6 +2313,7 @@ h4,
 .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title,
 .tribe-events-list
 .post-type-archive-cit_past_event .tribe-events-list-event-title,
+.archive-title,
 .entry-content .executive-summary-subtitle,
 h5,
 .profile-block h3,
@@ -2370,6 +2371,7 @@ h4,
 .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title,
 .tribe-events-list
 .post-type-archive-cit_past_event .tribe-events-list-event-title,
+.archive-title,
 .entry-content .executive-summary-subtitle,
 h5,
 .profile-block h3,
@@ -2390,7 +2392,7 @@ h6 {
   h4 small, .post-type-archive-cit_report .entry-title small, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title small, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title small,
   .post-type-archive-cit_past_event .entry-title small,
   .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title small, .tribe-events-list
-  .post-type-archive-cit_past_event .tribe-events-list-event-title small, .entry-content .executive-summary-subtitle small,
+  .post-type-archive-cit_past_event .tribe-events-list-event-title small, .archive-title small, .entry-content .executive-summary-subtitle small,
   h5 small, .profile-block h3 small, .profile-block .single-cit_past_event .section-title small, .single-cit_past_event .profile-block .section-title small, .profile-block .single-tribe_events .tribe-events-single-event-title small, .single-tribe_events .profile-block .tribe-events-single-event-title small,
   h6 small {
     line-height: 0;
@@ -2418,7 +2420,7 @@ h3, .single-cit_past_event .section-title, .single-tribe_events .tribe-events-si
 h4, .post-type-archive-cit_report .entry-title, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title,
 .post-type-archive-cit_past_event .entry-title,
 .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title, .tribe-events-list
-.post-type-archive-cit_past_event .tribe-events-list-event-title, .entry-content .executive-summary-subtitle {
+.post-type-archive-cit_past_event .tribe-events-list-event-title, .archive-title, .entry-content .executive-summary-subtitle {
   font-size: 1.13636rem;
   line-height: 1.2;
   margin-top: 0;
@@ -2447,7 +2449,7 @@ h6 {
   h4, .post-type-archive-cit_report .entry-title, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title,
   .post-type-archive-cit_past_event .entry-title,
   .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title, .tribe-events-list
-  .post-type-archive-cit_past_event .tribe-events-list-event-title, .entry-content .executive-summary-subtitle {
+  .post-type-archive-cit_past_event .tribe-events-list-event-title, .archive-title, .entry-content .executive-summary-subtitle {
     font-size: 1.42045rem; }
   h5, .profile-block h3, .profile-block .single-cit_past_event .section-title, .single-cit_past_event .profile-block .section-title, .profile-block .single-tribe_events .tribe-events-single-event-title, .single-tribe_events .profile-block .tribe-events-single-event-title {
     font-size: 1.13636rem; }
@@ -2541,7 +2543,8 @@ kbd {
   padding: 0.11364rem 0.22727rem 0;
   background-color: #e6e6e6;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  color: #4A4A4A; }
+  color: #4A4A4A;
+  border-radius: 3px; }
 
 .subheader {
   margin-top: 0.2rem;
@@ -2696,7 +2699,7 @@ textarea {
   margin: 0 0 0.90909rem;
   padding: 0.45455rem;
   border: 1px solid #cacaca;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #fefefe;
   box-shadow: inset 0 1px 2px rgba(74, 74, 74, 0.1);
   font-family: inherit;
@@ -2739,7 +2742,7 @@ textarea[readonly] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 0; }
+  border-radius: 3px; }
 
 input[type='search'] {
   box-sizing: border-box; }
@@ -2789,9 +2792,9 @@ label {
   width: 100%;
   margin-bottom: 0.90909rem; }
   .input-group > :first-child {
-    border-radius: 0 0 0 0; }
+    border-radius: 3px 0 0 3px; }
   .input-group > :last-child > * {
-    border-radius: 0 0 0 0; }
+    border-radius: 0 3px 3px 0; }
 
 .input-group-label, .input-group-field, .input-group-button, .input-group-button a,
 .input-group-button input,
@@ -2865,7 +2868,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   border: 1px solid #cacaca;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #fefefe;
   font-family: inherit;
   font-size: 0.90909rem;
@@ -2897,15 +2900,15 @@ select {
     background-image: none; }
 
 .is-invalid-input:not(:focus) {
-  border-color: #cc4b37;
-  background-color: #f9ecea; }
+  border-color: #F03626;
+  background-color: #fdeae8; }
   .is-invalid-input:not(:focus):-ms-input-placeholder {
-    color: #cc4b37; }
+    color: #F03626; }
   .is-invalid-input:not(:focus)::placeholder {
-    color: #cc4b37; }
+    color: #F03626; }
 
 .is-invalid-label {
-  color: #cc4b37; }
+  color: #F03626; }
 
 .form-error {
   display: none;
@@ -2913,7 +2916,7 @@ select {
   margin-bottom: 0.90909rem;
   font-size: 0.68182rem;
   font-weight: bold;
-  color: #cc4b37; }
+  color: #F03626; }
   .form-error.is-visible {
     display: block; }
 
@@ -2926,7 +2929,7 @@ select {
   padding: 0.85em 1em;
   -webkit-appearance: none;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 3px;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-size: 0.9rem;
   line-height: 1;
@@ -2976,16 +2979,16 @@ select {
     .primary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.primary[type=submit]:focus {
       background-color: #005691;
       color: #fefefe; }
-  .button.secondary, .secondary.ddownload-link, #tribe-events .secondary.tribe-events-button,
-  .secondary.tribe-events-button,
-  .secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit] {
+  .button.secondary, .secondary.ddownload-link, #tribe-events .secondary.tribe-events-button, #tribe-events .tribe-event-featured .tribe-events-button, .tribe-event-featured #tribe-events .tribe-events-button,
+  .secondary.tribe-events-button, .tribe-event-featured .tribe-events-button,
+  .secondary.tribe-events-read-more, .tribe-event-featured .tribe-events-read-more, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit], .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit input.secondary[type=submit] {
     background-color: #767676;
     color: #fefefe; }
-    .button.secondary:hover, .secondary.ddownload-link:hover, #tribe-events .secondary.tribe-events-button:hover,
-    .secondary.tribe-events-button:hover,
-    .secondary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:hover, .button.secondary:focus, .secondary.ddownload-link:focus, #tribe-events .secondary.tribe-events-button:focus,
-    .secondary.tribe-events-button:focus,
-    .secondary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:focus {
+    .button.secondary:hover, .secondary.ddownload-link:hover, #tribe-events .secondary.tribe-events-button:hover, #tribe-events .tribe-event-featured .tribe-events-button:hover, .tribe-event-featured #tribe-events .tribe-events-button:hover,
+    .secondary.tribe-events-button:hover, .tribe-event-featured .tribe-events-button:hover,
+    .secondary.tribe-events-read-more:hover, .tribe-event-featured .tribe-events-read-more:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit]:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:hover, .button.secondary:focus, .secondary.ddownload-link:focus, #tribe-events .secondary.tribe-events-button:focus, #tribe-events .tribe-event-featured .tribe-events-button:focus, .tribe-event-featured #tribe-events .tribe-events-button:focus,
+    .secondary.tribe-events-button:focus, .tribe-event-featured .tribe-events-button:focus,
+    .secondary.tribe-events-read-more:focus, .tribe-event-featured .tribe-events-read-more:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit]:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:focus {
       background-color: #5e5e5e;
       color: #fefefe; }
   .button.success, .success.ddownload-link, #tribe-events .success.tribe-events-button,
@@ -3015,14 +3018,14 @@ select {
   .button.alert, .alert.ddownload-link, #tribe-events .alert.tribe-events-button,
   .alert.tribe-events-button,
   .alert.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.alert[type=submit] {
-    background-color: #cc4b37;
+    background-color: #F03626;
     color: #fefefe; }
     .button.alert:hover, .alert.ddownload-link:hover, #tribe-events .alert.tribe-events-button:hover,
     .alert.tribe-events-button:hover,
     .alert.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.alert[type=submit]:hover, .button.alert:focus, .alert.ddownload-link:focus, #tribe-events .alert.tribe-events-button:focus,
     .alert.tribe-events-button:focus,
     .alert.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.alert[type=submit]:focus {
-      background-color: #a53b2a;
+      background-color: #d01e0e;
       color: #fefefe; }
   .button.hollow, .hollow.ddownload-link, #tribe-events .hollow.tribe-events-button,
   .hollow.tribe-events-button,
@@ -3056,16 +3059,16 @@ select {
       .hollow.primary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow.primary[type=submit]:focus {
         border-color: #00365b;
         color: #00365b; }
-    .button.hollow.secondary, .hollow.secondary.ddownload-link, #tribe-events .hollow.secondary.tribe-events-button,
-    .hollow.secondary.tribe-events-button,
-    .hollow.secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.hollow.secondary[type=submit] {
+    .button.hollow.secondary, .hollow.secondary.ddownload-link, #tribe-events .hollow.secondary.tribe-events-button, #tribe-events .tribe-event-featured .hollow.tribe-events-button, .tribe-event-featured #tribe-events .hollow.tribe-events-button,
+    .hollow.secondary.tribe-events-button, .tribe-event-featured .hollow.tribe-events-button,
+    .hollow.secondary.tribe-events-read-more, .tribe-event-featured .hollow.tribe-events-read-more, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.hollow.tribe-events-button[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.hollow.tribe-events-button[type=submit], .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.hollow.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.hollow.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit input.hollow.secondary[type=submit] {
       border: 1px solid #767676;
       color: #767676; }
-      .button.hollow.secondary:hover, .hollow.secondary.ddownload-link:hover, #tribe-events .hollow.secondary.tribe-events-button:hover,
-      .hollow.secondary.tribe-events-button:hover,
-      .hollow.secondary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow.secondary[type=submit]:hover, .button.hollow.secondary:focus, .hollow.secondary.ddownload-link:focus, #tribe-events .hollow.secondary.tribe-events-button:focus,
-      .hollow.secondary.tribe-events-button:focus,
-      .hollow.secondary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow.secondary[type=submit]:focus {
+      .button.hollow.secondary:hover, .hollow.secondary.ddownload-link:hover, #tribe-events .hollow.secondary.tribe-events-button:hover, #tribe-events .tribe-event-featured .hollow.tribe-events-button:hover, .tribe-event-featured #tribe-events .hollow.tribe-events-button:hover,
+      .hollow.secondary.tribe-events-button:hover, .tribe-event-featured .hollow.tribe-events-button:hover,
+      .hollow.secondary.tribe-events-read-more:hover, .tribe-event-featured .hollow.tribe-events-read-more:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.hollow.tribe-events-button[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.hollow.tribe-events-button[type=submit]:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.hollow.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.hollow.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit input.hollow.secondary[type=submit]:hover, .button.hollow.secondary:focus, .hollow.secondary.ddownload-link:focus, #tribe-events .hollow.secondary.tribe-events-button:focus, #tribe-events .tribe-event-featured .hollow.tribe-events-button:focus, .tribe-event-featured #tribe-events .hollow.tribe-events-button:focus,
+      .hollow.secondary.tribe-events-button:focus, .tribe-event-featured .hollow.tribe-events-button:focus,
+      .hollow.secondary.tribe-events-read-more:focus, .tribe-event-featured .hollow.tribe-events-read-more:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.hollow.tribe-events-button[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.hollow.tribe-events-button[type=submit]:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.hollow.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.hollow.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit input.hollow.secondary[type=submit]:focus {
         border-color: #3b3b3b;
         color: #3b3b3b; }
     .button.hollow.success, .hollow.success.ddownload-link, #tribe-events .hollow.success.tribe-events-button,
@@ -3095,15 +3098,15 @@ select {
     .button.hollow.alert, .hollow.alert.ddownload-link, #tribe-events .hollow.alert.tribe-events-button,
     .hollow.alert.tribe-events-button,
     .hollow.alert.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.hollow.alert[type=submit] {
-      border: 1px solid #cc4b37;
-      color: #cc4b37; }
+      border: 1px solid #F03626;
+      color: #F03626; }
       .button.hollow.alert:hover, .hollow.alert.ddownload-link:hover, #tribe-events .hollow.alert.tribe-events-button:hover,
       .hollow.alert.tribe-events-button:hover,
       .hollow.alert.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow.alert[type=submit]:hover, .button.hollow.alert:focus, .hollow.alert.ddownload-link:focus, #tribe-events .hollow.alert.tribe-events-button:focus,
       .hollow.alert.tribe-events-button:focus,
       .hollow.alert.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow.alert[type=submit]:focus {
-        border-color: #67251a;
-        color: #67251a; }
+        border-color: #821309;
+        color: #821309; }
   .button.disabled, .disabled.ddownload-link, #tribe-events .disabled.tribe-events-button,
   .disabled.tribe-events-button,
   .disabled.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled[type=submit], .button[disabled], [disabled].ddownload-link, #tribe-events [disabled].tribe-events-button,
@@ -3148,26 +3151,26 @@ select {
       [disabled].primary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[disabled].primary[type=submit]:focus {
         background-color: #006CB5;
         color: #fefefe; }
-    .button.disabled.secondary, .disabled.secondary.ddownload-link, #tribe-events .disabled.secondary.tribe-events-button,
-    .disabled.secondary.tribe-events-button,
-    .disabled.secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit], .button[disabled].secondary, [disabled].secondary.ddownload-link, #tribe-events [disabled].secondary.tribe-events-button,
-    [disabled].secondary.tribe-events-button,
-    [disabled].secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit] {
+    .button.disabled.secondary, .disabled.secondary.ddownload-link, #tribe-events .disabled.secondary.tribe-events-button, #tribe-events .tribe-event-featured .disabled.tribe-events-button, .tribe-event-featured #tribe-events .disabled.tribe-events-button,
+    .disabled.secondary.tribe-events-button, .tribe-event-featured .disabled.tribe-events-button,
+    .disabled.secondary.tribe-events-read-more, .tribe-event-featured .disabled.tribe-events-read-more, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.disabled.tribe-events-button[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.disabled.tribe-events-button[type=submit], .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.disabled.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.disabled.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit], .button[disabled].secondary, [disabled].secondary.ddownload-link, #tribe-events [disabled].secondary.tribe-events-button, #tribe-events .tribe-event-featured [disabled].tribe-events-button, .tribe-event-featured #tribe-events [disabled].tribe-events-button,
+    [disabled].secondary.tribe-events-button, .tribe-event-featured [disabled].tribe-events-button,
+    [disabled].secondary.tribe-events-read-more, .tribe-event-featured [disabled].tribe-events-read-more, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input[disabled].tribe-events-button[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input[disabled].tribe-events-button[type=submit], .tribe-event-featured #tribe-bar-form .tribe-bar-submit input[disabled].tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input[disabled].tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.secondary, .disabled.secondary.ddownload-link, #tribe-events .disabled.secondary.tribe-events-button,
-      .disabled.secondary.tribe-events-button,
-      .disabled.secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit], .button.disabled.secondary:hover, .disabled.secondary.ddownload-link:hover, #tribe-events .disabled.secondary.tribe-events-button:hover,
-      .disabled.secondary.tribe-events-button:hover,
-      .disabled.secondary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit]:hover, .button.disabled.secondary:focus, .disabled.secondary.ddownload-link:focus, #tribe-events .disabled.secondary.tribe-events-button:focus,
-      .disabled.secondary.tribe-events-button:focus,
-      .disabled.secondary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit]:focus, .button[disabled].secondary, [disabled].secondary.ddownload-link, #tribe-events [disabled].secondary.tribe-events-button,
-      [disabled].secondary.tribe-events-button,
-      [disabled].secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit], .button[disabled].secondary:hover, [disabled].secondary.ddownload-link:hover, #tribe-events [disabled].secondary.tribe-events-button:hover,
-      [disabled].secondary.tribe-events-button:hover,
-      [disabled].secondary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit]:hover, .button[disabled].secondary:focus, [disabled].secondary.ddownload-link:focus, #tribe-events [disabled].secondary.tribe-events-button:focus,
-      [disabled].secondary.tribe-events-button:focus,
-      [disabled].secondary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit]:focus {
+      .button.disabled.secondary, .disabled.secondary.ddownload-link, #tribe-events .disabled.secondary.tribe-events-button, #tribe-events .tribe-event-featured .disabled.tribe-events-button, .tribe-event-featured #tribe-events .disabled.tribe-events-button,
+      .disabled.secondary.tribe-events-button, .tribe-event-featured .disabled.tribe-events-button,
+      .disabled.secondary.tribe-events-read-more, .tribe-event-featured .disabled.tribe-events-read-more, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.disabled.tribe-events-button[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.disabled.tribe-events-button[type=submit], .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.disabled.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.disabled.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit], .button.disabled.secondary:hover, .disabled.secondary.ddownload-link:hover, #tribe-events .disabled.secondary.tribe-events-button:hover, #tribe-events .tribe-event-featured .disabled.tribe-events-button:hover, .tribe-event-featured #tribe-events .disabled.tribe-events-button:hover,
+      .disabled.secondary.tribe-events-button:hover, .tribe-event-featured .disabled.tribe-events-button:hover,
+      .disabled.secondary.tribe-events-read-more:hover, .tribe-event-featured .disabled.tribe-events-read-more:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.disabled.tribe-events-button[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.disabled.tribe-events-button[type=submit]:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.disabled.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.disabled.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit]:hover, .button.disabled.secondary:focus, .disabled.secondary.ddownload-link:focus, #tribe-events .disabled.secondary.tribe-events-button:focus, #tribe-events .tribe-event-featured .disabled.tribe-events-button:focus, .tribe-event-featured #tribe-events .disabled.tribe-events-button:focus,
+      .disabled.secondary.tribe-events-button:focus, .tribe-event-featured .disabled.tribe-events-button:focus,
+      .disabled.secondary.tribe-events-read-more:focus, .tribe-event-featured .disabled.tribe-events-read-more:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.disabled.tribe-events-button[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.disabled.tribe-events-button[type=submit]:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.disabled.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.disabled.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit input.disabled.secondary[type=submit]:focus, .button[disabled].secondary, [disabled].secondary.ddownload-link, #tribe-events [disabled].secondary.tribe-events-button, #tribe-events .tribe-event-featured [disabled].tribe-events-button, .tribe-event-featured #tribe-events [disabled].tribe-events-button,
+      [disabled].secondary.tribe-events-button, .tribe-event-featured [disabled].tribe-events-button,
+      [disabled].secondary.tribe-events-read-more, .tribe-event-featured [disabled].tribe-events-read-more, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input[disabled].tribe-events-button[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input[disabled].tribe-events-button[type=submit], .tribe-event-featured #tribe-bar-form .tribe-bar-submit input[disabled].tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input[disabled].tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit], .button[disabled].secondary:hover, [disabled].secondary.ddownload-link:hover, #tribe-events [disabled].secondary.tribe-events-button:hover, #tribe-events .tribe-event-featured [disabled].tribe-events-button:hover, .tribe-event-featured #tribe-events [disabled].tribe-events-button:hover,
+      [disabled].secondary.tribe-events-button:hover, .tribe-event-featured [disabled].tribe-events-button:hover,
+      [disabled].secondary.tribe-events-read-more:hover, .tribe-event-featured [disabled].tribe-events-read-more:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input[disabled].tribe-events-button[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input[disabled].tribe-events-button[type=submit]:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input[disabled].tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input[disabled].tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit]:hover, .button[disabled].secondary:focus, [disabled].secondary.ddownload-link:focus, #tribe-events [disabled].secondary.tribe-events-button:focus, #tribe-events .tribe-event-featured [disabled].tribe-events-button:focus, .tribe-event-featured #tribe-events [disabled].tribe-events-button:focus,
+      [disabled].secondary.tribe-events-button:focus, .tribe-event-featured [disabled].tribe-events-button:focus,
+      [disabled].secondary.tribe-events-read-more:focus, .tribe-event-featured [disabled].tribe-events-read-more:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input[disabled].tribe-events-button[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input[disabled].tribe-events-button[type=submit]:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input[disabled].tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input[disabled].tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit]:focus {
         background-color: #767676;
         color: #fefefe; }
     .button.disabled.success, .disabled.success.ddownload-link, #tribe-events .disabled.success.tribe-events-button,
@@ -3234,7 +3237,7 @@ select {
       [disabled].alert.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[disabled].alert[type=submit]:hover, .button[disabled].alert:focus, [disabled].alert.ddownload-link:focus, #tribe-events [disabled].alert.tribe-events-button:focus,
       [disabled].alert.tribe-events-button:focus,
       [disabled].alert.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[disabled].alert[type=submit]:focus {
-        background-color: #cc4b37;
+        background-color: #F03626;
         color: #fefefe; }
   .button.dropdown::after, .dropdown.ddownload-link::after, #tribe-events .dropdown.tribe-events-button::after,
   .dropdown.tribe-events-button::after,
@@ -3260,9 +3263,9 @@ select {
   .dropdown.hollow.primary.tribe-events-button::after,
   .dropdown.hollow.primary.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.primary[type=submit]::after {
     border-top-color: #006CB5; }
-  .button.dropdown.hollow.secondary::after, .dropdown.hollow.secondary.ddownload-link::after, #tribe-events .dropdown.hollow.secondary.tribe-events-button::after,
-  .dropdown.hollow.secondary.tribe-events-button::after,
-  .dropdown.hollow.secondary.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.secondary[type=submit]::after {
+  .button.dropdown.hollow.secondary::after, .dropdown.hollow.secondary.ddownload-link::after, #tribe-events .dropdown.hollow.secondary.tribe-events-button::after, #tribe-events .tribe-event-featured .dropdown.hollow.tribe-events-button::after, .tribe-event-featured #tribe-events .dropdown.hollow.tribe-events-button::after,
+  .dropdown.hollow.secondary.tribe-events-button::after, .tribe-event-featured .dropdown.hollow.tribe-events-button::after,
+  .dropdown.hollow.secondary.tribe-events-read-more::after, .tribe-event-featured .dropdown.hollow.tribe-events-read-more::after, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.tribe-events-button[type=submit]::after, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.dropdown.hollow.tribe-events-button[type=submit]::after, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.tribe-events-read-more[type=submit]::after, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.dropdown.hollow.tribe-events-read-more[type=submit]::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.secondary[type=submit]::after {
     border-top-color: #767676; }
   .button.dropdown.hollow.success::after, .dropdown.hollow.success.ddownload-link::after, #tribe-events .dropdown.hollow.success.tribe-events-button::after,
   .dropdown.hollow.success.tribe-events-button::after,
@@ -3275,7 +3278,7 @@ select {
   .button.dropdown.hollow.alert::after, .dropdown.hollow.alert.ddownload-link::after, #tribe-events .dropdown.hollow.alert.tribe-events-button::after,
   .dropdown.hollow.alert.tribe-events-button::after,
   .dropdown.hollow.alert.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.alert[type=submit]::after {
-    border-top-color: #cc4b37; }
+    border-top-color: #F03626; }
   .button.arrow-only::after, .arrow-only.ddownload-link::after, #tribe-events .arrow-only.tribe-events-button::after,
   .arrow-only.tribe-events-button::after,
   .arrow-only.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.arrow-only[type=submit]::after {
@@ -3289,10 +3292,10 @@ select {
   list-style-type: none; }
 
 .accordion-item:first-child > :first-child {
-  border-radius: 0 0 0 0; }
+  border-radius: 3px 3px 0 0; }
 
 .accordion-item:last-child > :last-child {
-  border-radius: 0 0 0 0; }
+  border-radius: 0 0 3px 3px; }
 
 .accordion-title {
   position: relative;
@@ -3305,7 +3308,7 @@ select {
   color: #006CB5; }
   :last-child:not(.is-active) > .accordion-title {
     border-bottom: 1px solid #e6e6e6;
-    border-radius: 0 0 0 0; }
+    border-radius: 0 0 3px 3px; }
   .accordion-title:hover, .accordion-title:focus {
     background-color: #e6e6e6; }
   .accordion-title::before {
@@ -3359,7 +3362,7 @@ select {
   .badge.primary {
     background: #006CB5;
     color: #fefefe; }
-  .badge.secondary {
+  .badge.secondary, .tribe-event-featured #tribe-events .badge.tribe-events-button, .tribe-event-featured .badge.tribe-events-button, .tribe-event-featured .badge.tribe-events-read-more {
     background: #767676;
     color: #fefefe; }
   .badge.success {
@@ -3369,7 +3372,7 @@ select {
     background: #ffae00;
     color: #4A4A4A; }
   .badge.alert {
-    background: #cc4b37;
+    background: #F03626;
     color: #fefefe; }
 
 .breadcrumbs {
@@ -3802,16 +3805,34 @@ select {
     .tribe-events-read-more:focus, .button-group.primary #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.primary input[type=submit]:focus {
       background-color: #005691;
       color: #fefefe; }
-  .button-group.secondary .button, .button-group.secondary .ddownload-link, .button-group.secondary #tribe-events .tribe-events-button, #tribe-events .button-group.secondary .tribe-events-button, .button-group.secondary
+  .button-group.secondary .button, .tribe-event-featured #tribe-events .button-group.tribe-events-button .button, .tribe-event-featured .button-group.tribe-events-button .button, .tribe-event-featured .button-group.tribe-events-read-more .button, .button-group.secondary .ddownload-link, .tribe-event-featured #tribe-events .button-group.tribe-events-button .ddownload-link, .tribe-event-featured .button-group.tribe-events-button .ddownload-link, .tribe-event-featured .button-group.tribe-events-read-more .ddownload-link, .button-group.secondary #tribe-events .tribe-events-button, #tribe-events .button-group.secondary .tribe-events-button, .tribe-event-featured .button-group.tribe-events-button #tribe-events .tribe-events-button, #tribe-events .tribe-event-featured .button-group.tribe-events-button .tribe-events-button, .tribe-event-featured .button-group.tribe-events-read-more #tribe-events .tribe-events-button, #tribe-events .tribe-event-featured .button-group.tribe-events-read-more .tribe-events-button, .button-group.secondary
+  .tribe-events-button, .tribe-event-featured #tribe-events .button-group.tribe-events-button
+  .tribe-events-button, .tribe-event-featured .button-group.tribe-events-button
+  .tribe-events-button, .tribe-event-featured .button-group.tribe-events-read-more
   .tribe-events-button, .button-group.secondary
-  .tribe-events-read-more, .button-group.secondary #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.secondary input[type=submit] {
+  .tribe-events-read-more, .tribe-event-featured #tribe-events .button-group.tribe-events-button
+  .tribe-events-read-more, .tribe-event-featured .button-group.tribe-events-button
+  .tribe-events-read-more, .tribe-event-featured .button-group.tribe-events-read-more
+  .tribe-events-read-more, .button-group.secondary #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.secondary input[type=submit], .tribe-event-featured .button-group.tribe-events-button #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured .button-group.tribe-events-button input[type=submit], .tribe-event-featured .button-group.tribe-events-read-more #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured .button-group.tribe-events-read-more input[type=submit] {
     background-color: #767676;
     color: #fefefe; }
-    .button-group.secondary .button:hover, .button-group.secondary .ddownload-link:hover, .button-group.secondary #tribe-events .tribe-events-button:hover, #tribe-events .button-group.secondary .tribe-events-button:hover, .button-group.secondary
+    .button-group.secondary .button:hover, .tribe-event-featured #tribe-events .button-group.tribe-events-button .button:hover, .tribe-event-featured .button-group.tribe-events-button .button:hover, .tribe-event-featured .button-group.tribe-events-read-more .button:hover, .button-group.secondary .ddownload-link:hover, .tribe-event-featured #tribe-events .button-group.tribe-events-button .ddownload-link:hover, .tribe-event-featured .button-group.tribe-events-button .ddownload-link:hover, .tribe-event-featured .button-group.tribe-events-read-more .ddownload-link:hover, .button-group.secondary #tribe-events .tribe-events-button:hover, #tribe-events .button-group.secondary .tribe-events-button:hover, .tribe-event-featured .button-group.tribe-events-button #tribe-events .tribe-events-button:hover, #tribe-events .tribe-event-featured .button-group.tribe-events-button .tribe-events-button:hover, .tribe-event-featured .button-group.tribe-events-read-more #tribe-events .tribe-events-button:hover, #tribe-events .tribe-event-featured .button-group.tribe-events-read-more .tribe-events-button:hover, .button-group.secondary
+    .tribe-events-button:hover, .tribe-event-featured #tribe-events .button-group.tribe-events-button
+    .tribe-events-button:hover, .tribe-event-featured .button-group.tribe-events-button
+    .tribe-events-button:hover, .tribe-event-featured .button-group.tribe-events-read-more
     .tribe-events-button:hover, .button-group.secondary
-    .tribe-events-read-more:hover, .button-group.secondary #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.secondary input[type=submit]:hover, .button-group.secondary .button:focus, .button-group.secondary .ddownload-link:focus, .button-group.secondary #tribe-events .tribe-events-button:focus, #tribe-events .button-group.secondary .tribe-events-button:focus, .button-group.secondary
+    .tribe-events-read-more:hover, .tribe-event-featured #tribe-events .button-group.tribe-events-button
+    .tribe-events-read-more:hover, .tribe-event-featured .button-group.tribe-events-button
+    .tribe-events-read-more:hover, .tribe-event-featured .button-group.tribe-events-read-more
+    .tribe-events-read-more:hover, .button-group.secondary #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.secondary input[type=submit]:hover, .tribe-event-featured .button-group.tribe-events-button #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured .button-group.tribe-events-button input[type=submit]:hover, .tribe-event-featured .button-group.tribe-events-read-more #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured .button-group.tribe-events-read-more input[type=submit]:hover, .button-group.secondary .button:focus, .tribe-event-featured #tribe-events .button-group.tribe-events-button .button:focus, .tribe-event-featured .button-group.tribe-events-button .button:focus, .tribe-event-featured .button-group.tribe-events-read-more .button:focus, .button-group.secondary .ddownload-link:focus, .tribe-event-featured #tribe-events .button-group.tribe-events-button .ddownload-link:focus, .tribe-event-featured .button-group.tribe-events-button .ddownload-link:focus, .tribe-event-featured .button-group.tribe-events-read-more .ddownload-link:focus, .button-group.secondary #tribe-events .tribe-events-button:focus, #tribe-events .button-group.secondary .tribe-events-button:focus, .tribe-event-featured .button-group.tribe-events-button #tribe-events .tribe-events-button:focus, #tribe-events .tribe-event-featured .button-group.tribe-events-button .tribe-events-button:focus, .tribe-event-featured .button-group.tribe-events-read-more #tribe-events .tribe-events-button:focus, #tribe-events .tribe-event-featured .button-group.tribe-events-read-more .tribe-events-button:focus, .button-group.secondary
+    .tribe-events-button:focus, .tribe-event-featured #tribe-events .button-group.tribe-events-button
+    .tribe-events-button:focus, .tribe-event-featured .button-group.tribe-events-button
+    .tribe-events-button:focus, .tribe-event-featured .button-group.tribe-events-read-more
     .tribe-events-button:focus, .button-group.secondary
-    .tribe-events-read-more:focus, .button-group.secondary #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.secondary input[type=submit]:focus {
+    .tribe-events-read-more:focus, .tribe-event-featured #tribe-events .button-group.tribe-events-button
+    .tribe-events-read-more:focus, .tribe-event-featured .button-group.tribe-events-button
+    .tribe-events-read-more:focus, .tribe-event-featured .button-group.tribe-events-read-more
+    .tribe-events-read-more:focus, .button-group.secondary #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.secondary input[type=submit]:focus, .tribe-event-featured .button-group.tribe-events-button #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured .button-group.tribe-events-button input[type=submit]:focus, .tribe-event-featured .button-group.tribe-events-read-more #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured .button-group.tribe-events-read-more input[type=submit]:focus {
       background-color: #5e5e5e;
       color: #fefefe; }
   .button-group.success .button, .button-group.success .ddownload-link, .button-group.success #tribe-events .tribe-events-button, #tribe-events .button-group.success .tribe-events-button, .button-group.success
@@ -3841,14 +3862,14 @@ select {
   .button-group.alert .button, .button-group.alert .ddownload-link, .button-group.alert #tribe-events .tribe-events-button, #tribe-events .button-group.alert .tribe-events-button, .button-group.alert
   .tribe-events-button, .button-group.alert
   .tribe-events-read-more, .button-group.alert #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.alert input[type=submit] {
-    background-color: #cc4b37;
+    background-color: #F03626;
     color: #fefefe; }
     .button-group.alert .button:hover, .button-group.alert .ddownload-link:hover, .button-group.alert #tribe-events .tribe-events-button:hover, #tribe-events .button-group.alert .tribe-events-button:hover, .button-group.alert
     .tribe-events-button:hover, .button-group.alert
     .tribe-events-read-more:hover, .button-group.alert #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.alert input[type=submit]:hover, .button-group.alert .button:focus, .button-group.alert .ddownload-link:focus, .button-group.alert #tribe-events .tribe-events-button:focus, #tribe-events .button-group.alert .tribe-events-button:focus, .button-group.alert
     .tribe-events-button:focus, .button-group.alert
     .tribe-events-read-more:focus, .button-group.alert #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.alert input[type=submit]:focus {
-      background-color: #a53b2a;
+      background-color: #d01e0e;
       color: #fefefe; }
   .button-group.stacked .button, .button-group.stacked .ddownload-link, .button-group.stacked #tribe-events .tribe-events-button, #tribe-events .button-group.stacked .tribe-events-button, .button-group.stacked
   .tribe-events-button, .button-group.stacked
@@ -3892,27 +3913,27 @@ select {
   margin: 0 0 1rem 0;
   padding: 1rem;
   border: 1px solid rgba(74, 74, 74, 0.25);
-  border-radius: 0;
+  border-radius: 3px;
   background-color: white;
   color: #4A4A4A; }
   .callout > :first-child, .login > :first-child {
     margin-top: 0; }
   .callout > :last-child, .login > :last-child {
     margin-bottom: 0; }
-  .callout.primary, .primary.login {
-    background-color: #ceebff;
+  .callout.primary, .primary.login, .tribe-events-notices {
+    background-color: #def2ff;
     color: #4A4A4A; }
-  .callout.secondary, .secondary.login {
-    background-color: #eaeaea;
+  .callout.secondary, .secondary.login, .tribe-event-featured #tribe-events .login.tribe-events-button, .tribe-event-featured .login.tribe-events-button, .tribe-event-featured .login.tribe-events-read-more, .tribe-event-featured #tribe-events .callout.tribe-events-button, .tribe-event-featured .callout.tribe-events-button, .tribe-event-featured .callout.tribe-events-read-more {
+    background-color: #f1f1f1;
     color: #4A4A4A; }
   .callout.success, .success.login {
-    background-color: #e1faea;
+    background-color: #ebfbf1;
     color: #4A4A4A; }
   .callout.warning, .warning.login {
-    background-color: #fff3d9;
+    background-color: #fff7e6;
     color: #4A4A4A; }
   .callout.alert, .alert.login {
-    background-color: #f7e4e1;
+    background-color: #feebe9;
     color: #4A4A4A; }
   .callout.small, .small.login {
     padding-top: 0.5rem;
@@ -3928,7 +3949,7 @@ select {
 .card {
   margin-bottom: 1rem;
   border: 1px solid #e6e6e6;
-  border-radius: 0;
+  border-radius: 3px;
   background: #fefefe;
   box-shadow: none;
   overflow: hidden;
@@ -4214,7 +4235,7 @@ select {
   padding: 1rem;
   visibility: hidden;
   border: 1px solid #cacaca;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #fefefe;
   font-size: 1rem; }
   .dropdown-pane.is-open {
@@ -4593,7 +4614,7 @@ select {
 .label, .tribe-events-schedule .tribe-events-cost {
   display: inline-block;
   padding: 0.33333rem 0.5rem;
-  border-radius: 0;
+  border-radius: 3px;
   font-size: 0.8rem;
   line-height: 1;
   white-space: nowrap;
@@ -4603,7 +4624,7 @@ select {
   .label.primary, .tribe-events-schedule .primary.tribe-events-cost {
     background: #006CB5;
     color: #fefefe; }
-  .label.secondary, .tribe-events-schedule .secondary.tribe-events-cost {
+  .label.secondary, .tribe-events-schedule .secondary.tribe-events-cost, .tribe-events-schedule .tribe-event-featured #tribe-events .tribe-events-cost.tribe-events-button, .tribe-event-featured #tribe-events .tribe-events-schedule .tribe-events-cost.tribe-events-button, .tribe-events-schedule .tribe-event-featured .tribe-events-cost.tribe-events-button, .tribe-event-featured .tribe-events-schedule .tribe-events-cost.tribe-events-button, .tribe-events-schedule .tribe-event-featured .tribe-events-cost.tribe-events-read-more, .tribe-event-featured .tribe-events-schedule .tribe-events-cost.tribe-events-read-more, .tribe-event-featured #tribe-events .label.tribe-events-button, .tribe-event-featured .label.tribe-events-button, .tribe-event-featured .label.tribe-events-read-more {
     background: #767676;
     color: #fefefe; }
   .label.success, .tribe-events-schedule .success.tribe-events-cost {
@@ -4613,7 +4634,7 @@ select {
     background: #ffae00;
     color: #4A4A4A; }
   .label.alert, .tribe-events-schedule .alert.tribe-events-cost {
-    background: #cc4b37;
+    background: #F03626;
     color: #fefefe; }
 
 .media-object {
@@ -4953,7 +4974,7 @@ select {
     clear: both; }
   .pagination li {
     margin-right: 0.05682rem;
-    border-radius: 0;
+    border-radius: 3px;
     font-size: 0.79545rem;
     display: none; }
     .pagination li:last-child, .pagination li:first-child {
@@ -4965,7 +4986,7 @@ select {
   .pagination button {
     display: block;
     padding: 0.17045rem 0.56818rem;
-    border-radius: 0;
+    border-radius: 3px;
     color: #4A4A4A; }
     .pagination a:hover,
     .pagination button:hover {
@@ -5001,25 +5022,26 @@ select {
 .progress {
   height: 1rem;
   margin-bottom: 1rem;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #cacaca; }
   .progress.primary .progress-meter {
     background-color: #006CB5; }
-  .progress.secondary .progress-meter {
+  .progress.secondary .progress-meter, .tribe-event-featured #tribe-events .progress.tribe-events-button .progress-meter, .tribe-event-featured .progress.tribe-events-button .progress-meter, .tribe-event-featured .progress.tribe-events-read-more .progress-meter {
     background-color: #767676; }
   .progress.success .progress-meter {
     background-color: #3adb76; }
   .progress.warning .progress-meter {
     background-color: #ffae00; }
   .progress.alert .progress-meter {
-    background-color: #cc4b37; }
+    background-color: #F03626; }
 
 .progress-meter {
   position: relative;
   display: block;
   width: 0%;
   height: 100%;
-  background-color: #006CB5; }
+  background-color: #006CB5;
+  border-radius: 3px; }
 
 .progress-meter-text {
   position: absolute;
@@ -5031,7 +5053,8 @@ select {
   font-size: 0.75rem;
   font-weight: bold;
   color: #fefefe;
-  white-space: nowrap; }
+  white-space: nowrap;
+  border-radius: 3px; }
 
 .slider {
   position: relative;
@@ -5069,7 +5092,7 @@ select {
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #006CB5;
   transition: all 0.2s ease-in-out;
   -ms-touch-action: manipulation;
@@ -5157,7 +5180,7 @@ html.is-reveal-open body {
   display: none;
   padding: 1rem;
   border: 1px solid #cacaca;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #fefefe;
   position: relative;
   top: 100px;
@@ -5245,7 +5268,7 @@ html.is-reveal-open body {
   display: block;
   width: 4rem;
   height: 2rem;
-  border-radius: 0;
+  border-radius: 3px;
   background: #cacaca;
   transition: all 0.25s ease-out;
   font-weight: inherit;
@@ -5261,7 +5284,7 @@ html.is-reveal-open body {
     width: 1.5rem;
     height: 1.5rem;
     transform: translate3d(0, 0, 0);
-    border-radius: 0;
+    border-radius: 3px;
     background: #fefefe;
     transition: all 0.25s ease-out;
     content: ''; }
@@ -5333,7 +5356,7 @@ html.is-reveal-open body {
 table {
   width: 100%;
   margin-bottom: 1rem;
-  border-radius: 0; }
+  border-radius: 3px; }
   table thead,
   table tbody,
   table tfoot {
@@ -5470,7 +5493,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   max-width: 100%;
   margin-bottom: 1rem;
   border: solid 4px #fefefe;
-  border-radius: 0;
+  border-radius: 3px;
   box-shadow: 0 0 0 1px rgba(74, 74, 74, 0.2);
   line-height: 0; }
 
@@ -5519,7 +5542,7 @@ a.thumbnail {
   z-index: 1200;
   max-width: 10rem;
   padding: 0.75rem;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #4A4A4A;
   font-size: 80%;
   color: #fefefe; }
@@ -5845,19 +5868,19 @@ BUTTON STYLES
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     background-clip: padding-box; }
-  .button.secondary, .secondary.ddownload-link, #tribe-events .secondary.tribe-events-button,
-  .secondary.tribe-events-button,
-  .secondary.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit] {
+  .button.secondary, .secondary.ddownload-link, #tribe-events .secondary.tribe-events-button, #tribe-events .tribe-event-featured .tribe-events-button, .tribe-event-featured #tribe-events .tribe-events-button,
+  .secondary.tribe-events-button, .tribe-event-featured .tribe-events-button,
+  .secondary.tribe-events-read-more, .tribe-event-featured .tribe-events-read-more, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit], .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit input.secondary[type=submit] {
     background-color: #D8D8D8;
     background-image: linear-gradient(to bottom, #F5F5F5, #D8D8D8);
-    color: #999999; }
-    .button.secondary:active, .secondary.ddownload-link:active, #tribe-events .secondary.tribe-events-button:active,
-    .secondary.tribe-events-button:active,
-    .secondary.tribe-events-read-more:active, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:active, .button.secondary:focus, .secondary.ddownload-link:focus, #tribe-events .secondary.tribe-events-button:focus,
-    .secondary.tribe-events-button:focus,
-    .secondary.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:focus, .button.secondary:hover, .secondary.ddownload-link:hover, #tribe-events .secondary.tribe-events-button:hover,
-    .secondary.tribe-events-button:hover,
-    .secondary.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:hover {
+    color: #666666; }
+    .button.secondary:active, .secondary.ddownload-link:active, #tribe-events .secondary.tribe-events-button:active, #tribe-events .tribe-event-featured .tribe-events-button:active, .tribe-event-featured #tribe-events .tribe-events-button:active,
+    .secondary.tribe-events-button:active, .tribe-event-featured .tribe-events-button:active,
+    .secondary.tribe-events-read-more:active, .tribe-event-featured .tribe-events-read-more:active, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit]:active, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit]:active, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit]:active, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit]:active, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:active, .button.secondary:focus, .secondary.ddownload-link:focus, #tribe-events .secondary.tribe-events-button:focus, #tribe-events .tribe-event-featured .tribe-events-button:focus, .tribe-event-featured #tribe-events .tribe-events-button:focus,
+    .secondary.tribe-events-button:focus, .tribe-event-featured .tribe-events-button:focus,
+    .secondary.tribe-events-read-more:focus, .tribe-event-featured .tribe-events-read-more:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit]:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:focus, .button.secondary:hover, .secondary.ddownload-link:hover, #tribe-events .secondary.tribe-events-button:hover, #tribe-events .tribe-event-featured .tribe-events-button:hover, .tribe-event-featured #tribe-events .tribe-events-button:hover,
+    .secondary.tribe-events-button:hover, .tribe-event-featured .tribe-events-button:hover,
+    .secondary.tribe-events-read-more:hover, .tribe-event-featured .tribe-events-read-more:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit]:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:hover {
       background-color: #E02818;
       background-image: linear-gradient(to bottom, #F9664D, #E02818);
       color: #fff; }
@@ -5892,7 +5915,7 @@ h1 a, .h1 a, h2 a, .single-cit_report .single-title a,
 .single-cit_past_event .single-title a, .h2 a, h3 a, .single-cit_past_event .section-title a, .single-tribe_events .tribe-events-single-event-title a, .h3 a, h4 a, .post-type-archive-cit_report .entry-title a, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title a,
 .post-type-archive-cit_past_event .entry-title a,
 .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list
-.post-type-archive-cit_past_event .tribe-events-list-event-title a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .profile-block h3 a, .profile-block .single-cit_past_event .section-title a, .single-cit_past_event .profile-block .section-title a, .profile-block .single-tribe_events .tribe-events-single-event-title a, .single-tribe_events .profile-block .tribe-events-single-event-title a, .h5 a {
+.post-type-archive-cit_past_event .tribe-events-list-event-title a, .archive-title a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .profile-block h3 a, .profile-block .single-cit_past_event .section-title a, .single-cit_past_event .profile-block .section-title a, .profile-block .single-tribe_events .tribe-events-single-event-title a, .single-tribe_events .profile-block .tribe-events-single-event-title a, .h5 a {
   text-decoration: none; }
 
 /*********************
@@ -6186,6 +6209,12 @@ POSTS & CONTENT STYLES
     .entry-title, .tribe-events-list .tribe-events-list-event-title {
       margin-bottom: 1rem; } }
 
+.archive-title {
+  margin-bottom: .5rem; }
+  @media print, screen and (min-width: 40em) {
+    .archive-title {
+      margin-bottom: 1rem; } }
+
 .article-header {
   position: relative;
   margin-bottom: 1.25rem;
@@ -6293,7 +6322,7 @@ POSTS & CONTENT STYLES
   padding: 0.85em 1em;
   -webkit-appearance: none;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 3px;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-size: 0.9rem;
   line-height: 1;
@@ -6568,7 +6597,7 @@ SIDEBARS & ASIDES
   .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title,
   .post-type-archive-cit_past_event .tribe-events-list .widget .tribe-events-list-event-title, .widget .tribe-events-list
   .post-type-archive-cit_past_event .tribe-events-list-event-title, .tribe-events-list
-  .post-type-archive-cit_past_event .widget .tribe-events-list-event-title, .widget .entry-content .executive-summary-subtitle, .entry-content .widget .executive-summary-subtitle,
+  .post-type-archive-cit_past_event .widget .tribe-events-list-event-title, .widget .archive-title, .widget .entry-content .executive-summary-subtitle, .entry-content .widget .executive-summary-subtitle,
   .widget .tribe-events-title,
   .widget .tribe-mini-calendar-event .list-info h2,
   .widget .tribe-mini-calendar-event .list-info .single-cit_report .single-title, .single-cit_report
@@ -6634,6 +6663,23 @@ FOUNDATION STYLES
 .row.expand {
   max-width: none; }
 
+.callout, .login {
+  text-shadow: 0 1px 0 #fff; }
+  .callout.small, .small.login {
+    padding: 8px 1rem; }
+  .callout.primary, .primary.login, .tribe-events-notices {
+    border-color: #b5e1ff;
+    color: #003e69; }
+  .callout.success, .success.login {
+    border-color: #c0f3d3;
+    color: #136933; }
+  .callout.warning, .warning.login {
+    border-color: #ffe7b3;
+    color: #664600; }
+  .callout.alert, .alert.login {
+    border-color: #fcd1cd;
+    color: #751108; }
+
 /*********************
 PLUGIN STYLES
 *********************/
@@ -6669,7 +6715,22 @@ PLUGIN STYLES
 
 .tribe-events-event-meta {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal !important; }
+  font-weight: normal !important;
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+.tribe-events-schedule {
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+.tribe-events-list .tribe-events-loop .tribe-event-featured {
+  background-color: #006cb5 !important; }
+
+.tribe-events-adv-list-widget .tribe-event-featured .tribe-mini-calendar-event,
+.tribe-mini-calendar-list-wrapper .tribe-event-featured .tribe-mini-calendar-event {
+  background-color: #006cb5 !important; }
 
 .tribe-events-schedule h2, .tribe-events-schedule .single-cit_report .single-title, .single-cit_report .tribe-events-schedule .single-title, .tribe-events-schedule
 .single-cit_past_event .single-title,
@@ -6690,6 +6751,18 @@ PLUGIN STYLES
 .tribe-events-button,
 .tribe-events-read-more {
   letter-spacing: normal; }
+  .tribe-event-featured #tribe-events .tribe-events-button, .tribe-event-featured
+  .tribe-events-button, .tribe-event-featured
+  .tribe-events-read-more {
+    color: #666666 !important; }
+    .tribe-event-featured #tribe-events .tribe-events-button:active, .tribe-event-featured #tribe-events .tribe-events-button:focus, .tribe-event-featured #tribe-events .tribe-events-button:hover, .tribe-event-featured
+    .tribe-events-button:active, .tribe-event-featured
+    .tribe-events-button:focus, .tribe-event-featured
+    .tribe-events-button:hover, .tribe-event-featured
+    .tribe-events-read-more:active, .tribe-event-featured
+    .tribe-events-read-more:focus, .tribe-event-featured
+    .tribe-events-read-more:hover {
+      color: #fff !important; }
 
 .tribe-events-cal-links .tribe-events-button {
   margin-right: 0.5rem !important; }
@@ -6699,6 +6772,9 @@ PLUGIN STYLES
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   font-size: 14px !important; }
+
+.tribe-events-notices {
+  margin: 10px 0 18px; }
 
 .gform_body ul {
   list-style: none outside none;

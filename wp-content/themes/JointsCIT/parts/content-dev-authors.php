@@ -68,5 +68,3 @@ foreach ( $ids as $id ) {
 }
 
 echo '</table>';
-
-?>

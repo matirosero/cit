@@ -22,7 +22,7 @@
 			color('grey', 'base'), 
 			color('orange', 'light'), 
 			color('orange', 'dark'), 
-			lighten(color('grey', 'dark'), 40), 
+			lighten(color('grey', 'dark'), 20), 
 			color('white', 'base') 
 		);
 	}

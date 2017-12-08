@@ -37,9 +37,15 @@
 .tribe-events-event-meta {
 	font-family: $sans-family;
 	font-weight: normal !important;
+	@include border-radius($global-radius);
+
 	.article-header & {
 
 	}
+}
+
+.tribe-events-schedule {
+	@include border-radius($global-radius);
 }
 
 p {
@@ -48,6 +54,21 @@ p {
 	.tribe-events-before-html & {
 		@extend p;
 	}
+}
+
+.tribe-event-featured {
+	.tribe-events-list .tribe-events-loop & {
+		background-color: lighten( color('blue', 'base'), 0 ) !important;
+	}
+	// background-color: lighten( color('blue', 'base'), 0 ) !important;
+
+	.tribe-mini-calendar-event {
+		.tribe-events-adv-list-widget &,
+		.tribe-mini-calendar-list-wrapper & {
+			background-color: lighten( color('blue', 'base'), 0 ) !important;
+		}
+	}
+
 }
 
 
@@ -85,6 +106,14 @@ p {
 .tribe-events-read-more {
 	@extend .button;
 	letter-spacing: normal;
+
+	.tribe-event-featured & {
+		@extend .secondary;
+		color: lighten(color('grey', 'dark'), 20) !important;
+		@include hover {
+			color: color('white', 'base') !important;
+		}
+	}
 }
 
 .tribe-events-cal-links .tribe-events-button {
@@ -95,4 +124,10 @@ p {
 	@extend .button;
 	@include border-radius(6px);
 	font-size: 14px !important;
+}
+
+
+.tribe-events-notices {
+	@extend .callout.primary;
+	margin: 10px 0 18px;
 }

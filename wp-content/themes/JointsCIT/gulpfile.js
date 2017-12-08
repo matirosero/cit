@@ -119,7 +119,7 @@ gulp.task('bower', function() {
 });
 
 // Browser-Sync watch files and inject changes
-gulp.task('browsersync', function() {
+gulp.task('serve', function() {
     // Watch files
     var files = [
     	'./assets/css/*.css',
