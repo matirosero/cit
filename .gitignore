@@ -28,3 +28,4 @@ wp-content/themes/*
 
 
 wp-content/languages/*
+!wp-content/languages/plugins/
