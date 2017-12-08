@@ -3040,7 +3040,9 @@ select {
   .tiny.tribe-events-button,
   .tiny.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.tiny[type=submit] {
     font-size: 0.6rem; }
-  .button.small, .small.ddownload-link, #tribe-events .small.tribe-events-button,
+  .button.small, .small.ddownload-link, .caldera-grid .ddownload-link.alert, .caldera-grid .button.alert, .caldera-grid #tribe-events .alert.tribe-events-button, #tribe-events .caldera-grid .alert.tribe-events-button, .caldera-grid
+  .alert.tribe-events-button, .caldera-grid
+  .alert.tribe-events-read-more, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert[type=submit], #tribe-events .small.tribe-events-button,
   .small.tribe-events-button,
   .small.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.small[type=submit] {
     font-size: 0.75rem; }
@@ -3079,14 +3081,20 @@ select {
     .secondary.tribe-events-read-more:focus, .tribe-event-featured .tribe-events-read-more:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit]:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:focus {
       background-color: #5e5e5e;
       color: #fefefe; }
-  .button.success, .success.ddownload-link, #tribe-events .success.tribe-events-button,
+  .button.success, .success.ddownload-link, .caldera-grid .ddownload-link.alert.alert-success, .caldera-grid .button.alert.alert-success, .caldera-grid #tribe-events .alert.alert-success.tribe-events-button, #tribe-events .caldera-grid .alert.alert-success.tribe-events-button, .caldera-grid
+  .alert.alert-success.tribe-events-button, .caldera-grid
+  .alert.alert-success.tribe-events-read-more, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert.alert-success[type=submit], #tribe-events .success.tribe-events-button,
   .success.tribe-events-button,
   .success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.success[type=submit] {
     background-color: #3adb76;
     color: #4A4A4A; }
-    .button.success:hover, .success.ddownload-link:hover, #tribe-events .success.tribe-events-button:hover,
+    .button.success:hover, .success.ddownload-link:hover, .caldera-grid .ddownload-link.alert.alert-success:hover, .caldera-grid .button.alert.alert-success:hover, .caldera-grid #tribe-events .alert.alert-success.tribe-events-button:hover, #tribe-events .caldera-grid .alert.alert-success.tribe-events-button:hover, .caldera-grid
+    .alert.alert-success.tribe-events-button:hover, .caldera-grid
+    .alert.alert-success.tribe-events-read-more:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert.alert-success[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert.alert-success[type=submit]:hover, #tribe-events .success.tribe-events-button:hover,
     .success.tribe-events-button:hover,
-    .success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.success[type=submit]:hover, .button.success:focus, .success.ddownload-link:focus, #tribe-events .success.tribe-events-button:focus,
+    .success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.success[type=submit]:hover, .button.success:focus, .success.ddownload-link:focus, .caldera-grid .ddownload-link.alert.alert-success:focus, .caldera-grid .button.alert.alert-success:focus, .caldera-grid #tribe-events .alert.alert-success.tribe-events-button:focus, #tribe-events .caldera-grid .alert.alert-success.tribe-events-button:focus, .caldera-grid
+    .alert.alert-success.tribe-events-button:focus, .caldera-grid
+    .alert.alert-success.tribe-events-read-more:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert.alert-success[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert.alert-success[type=submit]:focus, #tribe-events .success.tribe-events-button:focus,
     .success.tribe-events-button:focus,
     .success.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.success[type=submit]:focus {
       background-color: #22bb5b;
@@ -3159,14 +3167,20 @@ select {
       .hollow.secondary.tribe-events-read-more:focus, .tribe-event-featured .hollow.tribe-events-read-more:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.hollow.tribe-events-button[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.hollow.tribe-events-button[type=submit]:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.hollow.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.hollow.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit input.hollow.secondary[type=submit]:focus {
         border-color: #3b3b3b;
         color: #3b3b3b; }
-    .button.hollow.success, .hollow.success.ddownload-link, #tribe-events .hollow.success.tribe-events-button,
+    .button.hollow.success, .hollow.success.ddownload-link, .caldera-grid .hollow.ddownload-link.alert.alert-success, .caldera-grid .button.hollow.alert.alert-success, .caldera-grid #tribe-events .hollow.alert.alert-success.tribe-events-button, #tribe-events .caldera-grid .hollow.alert.alert-success.tribe-events-button, .caldera-grid
+    .hollow.alert.alert-success.tribe-events-button, .caldera-grid
+    .hollow.alert.alert-success.tribe-events-read-more, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert.alert-success[type=submit], #tribe-events .hollow.success.tribe-events-button,
     .hollow.success.tribe-events-button,
     .hollow.success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit] {
       border: 1px solid #3adb76;
       color: #3adb76; }
-      .button.hollow.success:hover, .hollow.success.ddownload-link:hover, #tribe-events .hollow.success.tribe-events-button:hover,
+      .button.hollow.success:hover, .hollow.success.ddownload-link:hover, .caldera-grid .hollow.ddownload-link.alert.alert-success:hover, .caldera-grid .button.hollow.alert.alert-success:hover, .caldera-grid #tribe-events .hollow.alert.alert-success.tribe-events-button:hover, #tribe-events .caldera-grid .hollow.alert.alert-success.tribe-events-button:hover, .caldera-grid
+      .hollow.alert.alert-success.tribe-events-button:hover, .caldera-grid
+      .hollow.alert.alert-success.tribe-events-read-more:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert.alert-success[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert.alert-success[type=submit]:hover, #tribe-events .hollow.success.tribe-events-button:hover,
       .hollow.success.tribe-events-button:hover,
-      .hollow.success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:hover, .button.hollow.success:focus, .hollow.success.ddownload-link:focus, #tribe-events .hollow.success.tribe-events-button:focus,
+      .hollow.success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:hover, .button.hollow.success:focus, .hollow.success.ddownload-link:focus, .caldera-grid .hollow.ddownload-link.alert.alert-success:focus, .caldera-grid .button.hollow.alert.alert-success:focus, .caldera-grid #tribe-events .hollow.alert.alert-success.tribe-events-button:focus, #tribe-events .caldera-grid .hollow.alert.alert-success.tribe-events-button:focus, .caldera-grid
+      .hollow.alert.alert-success.tribe-events-button:focus, .caldera-grid
+      .hollow.alert.alert-success.tribe-events-read-more:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert.alert-success[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert.alert-success[type=submit]:focus, #tribe-events .hollow.success.tribe-events-button:focus,
       .hollow.success.tribe-events-button:focus,
       .hollow.success.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:focus {
         border-color: #157539;
@@ -3261,24 +3275,40 @@ select {
       [disabled].secondary.tribe-events-read-more:focus, .tribe-event-featured [disabled].tribe-events-read-more:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input[disabled].tribe-events-button[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input[disabled].tribe-events-button[type=submit]:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input[disabled].tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input[disabled].tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit input[disabled].secondary[type=submit]:focus {
         background-color: #767676;
         color: #fefefe; }
-    .button.disabled.success, .disabled.success.ddownload-link, #tribe-events .disabled.success.tribe-events-button,
+    .button.disabled.success, .disabled.success.ddownload-link, .caldera-grid .disabled.ddownload-link.alert.alert-success, .caldera-grid .button.disabled.alert.alert-success, .caldera-grid #tribe-events .disabled.alert.alert-success.tribe-events-button, #tribe-events .caldera-grid .disabled.alert.alert-success.tribe-events-button, .caldera-grid
+    .disabled.alert.alert-success.tribe-events-button, .caldera-grid
+    .disabled.alert.alert-success.tribe-events-read-more, .caldera-grid #tribe-bar-form .tribe-bar-submit input.disabled.alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.disabled.alert.alert-success[type=submit], #tribe-events .disabled.success.tribe-events-button,
     .disabled.success.tribe-events-button,
-    .disabled.success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit], .button[disabled].success, [disabled].success.ddownload-link, #tribe-events [disabled].success.tribe-events-button,
+    .disabled.success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit], .button[disabled].success, [disabled].success.ddownload-link, .caldera-grid [disabled].ddownload-link.alert.alert-success, .caldera-grid .button[disabled].alert.alert-success, .caldera-grid #tribe-events [disabled].alert.alert-success.tribe-events-button, #tribe-events .caldera-grid [disabled].alert.alert-success.tribe-events-button, .caldera-grid
+    [disabled].alert.alert-success.tribe-events-button, .caldera-grid
+    [disabled].alert.alert-success.tribe-events-read-more, .caldera-grid #tribe-bar-form .tribe-bar-submit input[disabled].alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input[disabled].alert.alert-success[type=submit], #tribe-events [disabled].success.tribe-events-button,
     [disabled].success.tribe-events-button,
     [disabled].success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit] {
       opacity: 0.25;
       cursor: not-allowed; }
-      .button.disabled.success, .disabled.success.ddownload-link, #tribe-events .disabled.success.tribe-events-button,
+      .button.disabled.success, .disabled.success.ddownload-link, .caldera-grid .disabled.ddownload-link.alert.alert-success, .caldera-grid .button.disabled.alert.alert-success, .caldera-grid #tribe-events .disabled.alert.alert-success.tribe-events-button, #tribe-events .caldera-grid .disabled.alert.alert-success.tribe-events-button, .caldera-grid
+      .disabled.alert.alert-success.tribe-events-button, .caldera-grid
+      .disabled.alert.alert-success.tribe-events-read-more, .caldera-grid #tribe-bar-form .tribe-bar-submit input.disabled.alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.disabled.alert.alert-success[type=submit], #tribe-events .disabled.success.tribe-events-button,
       .disabled.success.tribe-events-button,
-      .disabled.success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit], .button.disabled.success:hover, .disabled.success.ddownload-link:hover, #tribe-events .disabled.success.tribe-events-button:hover,
+      .disabled.success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit], .button.disabled.success:hover, .disabled.success.ddownload-link:hover, .caldera-grid .disabled.ddownload-link.alert.alert-success:hover, .caldera-grid .button.disabled.alert.alert-success:hover, .caldera-grid #tribe-events .disabled.alert.alert-success.tribe-events-button:hover, #tribe-events .caldera-grid .disabled.alert.alert-success.tribe-events-button:hover, .caldera-grid
+      .disabled.alert.alert-success.tribe-events-button:hover, .caldera-grid
+      .disabled.alert.alert-success.tribe-events-read-more:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.disabled.alert.alert-success[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.disabled.alert.alert-success[type=submit]:hover, #tribe-events .disabled.success.tribe-events-button:hover,
       .disabled.success.tribe-events-button:hover,
-      .disabled.success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit]:hover, .button.disabled.success:focus, .disabled.success.ddownload-link:focus, #tribe-events .disabled.success.tribe-events-button:focus,
+      .disabled.success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit]:hover, .button.disabled.success:focus, .disabled.success.ddownload-link:focus, .caldera-grid .disabled.ddownload-link.alert.alert-success:focus, .caldera-grid .button.disabled.alert.alert-success:focus, .caldera-grid #tribe-events .disabled.alert.alert-success.tribe-events-button:focus, #tribe-events .caldera-grid .disabled.alert.alert-success.tribe-events-button:focus, .caldera-grid
+      .disabled.alert.alert-success.tribe-events-button:focus, .caldera-grid
+      .disabled.alert.alert-success.tribe-events-read-more:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.disabled.alert.alert-success[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.disabled.alert.alert-success[type=submit]:focus, #tribe-events .disabled.success.tribe-events-button:focus,
       .disabled.success.tribe-events-button:focus,
-      .disabled.success.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit]:focus, .button[disabled].success, [disabled].success.ddownload-link, #tribe-events [disabled].success.tribe-events-button,
+      .disabled.success.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit]:focus, .button[disabled].success, [disabled].success.ddownload-link, .caldera-grid [disabled].ddownload-link.alert.alert-success, .caldera-grid .button[disabled].alert.alert-success, .caldera-grid #tribe-events [disabled].alert.alert-success.tribe-events-button, #tribe-events .caldera-grid [disabled].alert.alert-success.tribe-events-button, .caldera-grid
+      [disabled].alert.alert-success.tribe-events-button, .caldera-grid
+      [disabled].alert.alert-success.tribe-events-read-more, .caldera-grid #tribe-bar-form .tribe-bar-submit input[disabled].alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input[disabled].alert.alert-success[type=submit], #tribe-events [disabled].success.tribe-events-button,
       [disabled].success.tribe-events-button,
-      [disabled].success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit], .button[disabled].success:hover, [disabled].success.ddownload-link:hover, #tribe-events [disabled].success.tribe-events-button:hover,
+      [disabled].success.tribe-events-read-more, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit], .button[disabled].success:hover, [disabled].success.ddownload-link:hover, .caldera-grid [disabled].ddownload-link.alert.alert-success:hover, .caldera-grid .button[disabled].alert.alert-success:hover, .caldera-grid #tribe-events [disabled].alert.alert-success.tribe-events-button:hover, #tribe-events .caldera-grid [disabled].alert.alert-success.tribe-events-button:hover, .caldera-grid
+      [disabled].alert.alert-success.tribe-events-button:hover, .caldera-grid
+      [disabled].alert.alert-success.tribe-events-read-more:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input[disabled].alert.alert-success[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input[disabled].alert.alert-success[type=submit]:hover, #tribe-events [disabled].success.tribe-events-button:hover,
       [disabled].success.tribe-events-button:hover,
-      [disabled].success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit]:hover, .button[disabled].success:focus, [disabled].success.ddownload-link:focus, #tribe-events [disabled].success.tribe-events-button:focus,
+      [disabled].success.tribe-events-read-more:hover, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit]:hover, .button[disabled].success:focus, [disabled].success.ddownload-link:focus, .caldera-grid [disabled].ddownload-link.alert.alert-success:focus, .caldera-grid .button[disabled].alert.alert-success:focus, .caldera-grid #tribe-events [disabled].alert.alert-success.tribe-events-button:focus, #tribe-events .caldera-grid [disabled].alert.alert-success.tribe-events-button:focus, .caldera-grid
+      [disabled].alert.alert-success.tribe-events-button:focus, .caldera-grid
+      [disabled].alert.alert-success.tribe-events-read-more:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input[disabled].alert.alert-success[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input[disabled].alert.alert-success[type=submit]:focus, #tribe-events [disabled].success.tribe-events-button:focus,
       [disabled].success.tribe-events-button:focus,
       [disabled].success.tribe-events-read-more:focus, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit]:focus {
         background-color: #3adb76;
@@ -3355,7 +3385,9 @@ select {
   .dropdown.hollow.secondary.tribe-events-button::after, .tribe-event-featured .dropdown.hollow.tribe-events-button::after,
   .dropdown.hollow.secondary.tribe-events-read-more::after, .tribe-event-featured .dropdown.hollow.tribe-events-read-more::after, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.tribe-events-button[type=submit]::after, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.dropdown.hollow.tribe-events-button[type=submit]::after, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.tribe-events-read-more[type=submit]::after, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.dropdown.hollow.tribe-events-read-more[type=submit]::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.secondary[type=submit]::after {
     border-top-color: #767676; }
-  .button.dropdown.hollow.success::after, .dropdown.hollow.success.ddownload-link::after, #tribe-events .dropdown.hollow.success.tribe-events-button::after,
+  .button.dropdown.hollow.success::after, .dropdown.hollow.success.ddownload-link::after, .caldera-grid .dropdown.hollow.ddownload-link.alert.alert-success::after, .caldera-grid .button.dropdown.hollow.alert.alert-success::after, .caldera-grid #tribe-events .dropdown.hollow.alert.alert-success.tribe-events-button::after, #tribe-events .caldera-grid .dropdown.hollow.alert.alert-success.tribe-events-button::after, .caldera-grid
+  .dropdown.hollow.alert.alert-success.tribe-events-button::after, .caldera-grid
+  .dropdown.hollow.alert.alert-success.tribe-events-read-more::after, .caldera-grid #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.alert.alert-success[type=submit]::after, #tribe-bar-form .tribe-bar-submit .caldera-grid input.dropdown.hollow.alert.alert-success[type=submit]::after, #tribe-events .dropdown.hollow.success.tribe-events-button::after,
   .dropdown.hollow.success.tribe-events-button::after,
   .dropdown.hollow.success.tribe-events-read-more::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.success[type=submit]::after {
     border-top-color: #3adb76; }
@@ -3453,7 +3485,7 @@ select {
   .badge.secondary, .tribe-event-featured #tribe-events .badge.tribe-events-button, .tribe-event-featured .badge.tribe-events-button, .tribe-event-featured .badge.tribe-events-read-more {
     background: #767676;
     color: #fefefe; }
-  .badge.success {
+  .badge.success, .caldera-grid .badge.alert.alert-success {
     background: #3adb76;
     color: #4A4A4A; }
   .badge.warning {
@@ -3515,9 +3547,11 @@ select {
   .tribe-events-button, .button-group.tiny
   .tribe-events-read-more, .button-group.tiny #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.tiny input[type=submit] {
     font-size: 0.6rem; }
-  .button-group.small .button, .button-group.small .ddownload-link, .button-group.small #tribe-events .tribe-events-button, #tribe-events .button-group.small .tribe-events-button, .button-group.small
+  .button-group.small .button, .caldera-grid .button-group.alert .button, .button-group.small .ddownload-link, .caldera-grid .button-group.alert .ddownload-link, .button-group.small #tribe-events .tribe-events-button, #tribe-events .button-group.small .tribe-events-button, .caldera-grid .button-group.alert #tribe-events .tribe-events-button, #tribe-events .caldera-grid .button-group.alert .tribe-events-button, .button-group.small
+  .tribe-events-button, .caldera-grid .button-group.alert
   .tribe-events-button, .button-group.small
-  .tribe-events-read-more, .button-group.small #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.small input[type=submit] {
+  .tribe-events-read-more, .caldera-grid .button-group.alert
+  .tribe-events-read-more, .button-group.small #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.small input[type=submit], .caldera-grid .button-group.alert #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert input[type=submit] {
     font-size: 0.75rem; }
   .button-group.large .button, .button-group.large .ddownload-link, .button-group.large #tribe-events .tribe-events-button, #tribe-events .button-group.large .tribe-events-button, .button-group.large
   .tribe-events-button, .button-group.large
@@ -3923,16 +3957,22 @@ select {
     .tribe-events-read-more:focus, .button-group.secondary #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.secondary input[type=submit]:focus, .tribe-event-featured .button-group.tribe-events-button #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured .button-group.tribe-events-button input[type=submit]:focus, .tribe-event-featured .button-group.tribe-events-read-more #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured .button-group.tribe-events-read-more input[type=submit]:focus {
       background-color: #5e5e5e;
       color: #fefefe; }
-  .button-group.success .button, .button-group.success .ddownload-link, .button-group.success #tribe-events .tribe-events-button, #tribe-events .button-group.success .tribe-events-button, .button-group.success
+  .button-group.success .button, .caldera-grid .button-group.alert.alert-success .button, .button-group.success .ddownload-link, .caldera-grid .button-group.alert.alert-success .ddownload-link, .button-group.success #tribe-events .tribe-events-button, #tribe-events .button-group.success .tribe-events-button, .caldera-grid .button-group.alert.alert-success #tribe-events .tribe-events-button, #tribe-events .caldera-grid .button-group.alert.alert-success .tribe-events-button, .button-group.success
+  .tribe-events-button, .caldera-grid .button-group.alert.alert-success
   .tribe-events-button, .button-group.success
-  .tribe-events-read-more, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit] {
+  .tribe-events-read-more, .caldera-grid .button-group.alert.alert-success
+  .tribe-events-read-more, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit], .caldera-grid .button-group.alert.alert-success #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert.alert-success input[type=submit] {
     background-color: #3adb76;
     color: #4A4A4A; }
-    .button-group.success .button:hover, .button-group.success .ddownload-link:hover, .button-group.success #tribe-events .tribe-events-button:hover, #tribe-events .button-group.success .tribe-events-button:hover, .button-group.success
+    .button-group.success .button:hover, .caldera-grid .button-group.alert.alert-success .button:hover, .button-group.success .ddownload-link:hover, .caldera-grid .button-group.alert.alert-success .ddownload-link:hover, .button-group.success #tribe-events .tribe-events-button:hover, #tribe-events .button-group.success .tribe-events-button:hover, .caldera-grid .button-group.alert.alert-success #tribe-events .tribe-events-button:hover, #tribe-events .caldera-grid .button-group.alert.alert-success .tribe-events-button:hover, .button-group.success
+    .tribe-events-button:hover, .caldera-grid .button-group.alert.alert-success
     .tribe-events-button:hover, .button-group.success
-    .tribe-events-read-more:hover, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit]:hover, .button-group.success .button:focus, .button-group.success .ddownload-link:focus, .button-group.success #tribe-events .tribe-events-button:focus, #tribe-events .button-group.success .tribe-events-button:focus, .button-group.success
+    .tribe-events-read-more:hover, .caldera-grid .button-group.alert.alert-success
+    .tribe-events-read-more:hover, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit]:hover, .caldera-grid .button-group.alert.alert-success #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert.alert-success input[type=submit]:hover, .button-group.success .button:focus, .caldera-grid .button-group.alert.alert-success .button:focus, .button-group.success .ddownload-link:focus, .caldera-grid .button-group.alert.alert-success .ddownload-link:focus, .button-group.success #tribe-events .tribe-events-button:focus, #tribe-events .button-group.success .tribe-events-button:focus, .caldera-grid .button-group.alert.alert-success #tribe-events .tribe-events-button:focus, #tribe-events .caldera-grid .button-group.alert.alert-success .tribe-events-button:focus, .button-group.success
+    .tribe-events-button:focus, .caldera-grid .button-group.alert.alert-success
     .tribe-events-button:focus, .button-group.success
-    .tribe-events-read-more:focus, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit]:focus {
+    .tribe-events-read-more:focus, .caldera-grid .button-group.alert.alert-success
+    .tribe-events-read-more:focus, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit]:focus, .caldera-grid .button-group.alert.alert-success #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert.alert-success input[type=submit]:focus {
       background-color: #22bb5b;
       color: #4A4A4A; }
   .button-group.warning .button, .button-group.warning .ddownload-link, .button-group.warning #tribe-events .tribe-events-button, #tribe-events .button-group.warning .tribe-events-button, .button-group.warning
@@ -3996,7 +4036,7 @@ select {
         display: block;
         margin-right: 0; } }
 
-.callout, .login {
+.callout, .login, .caldera-grid .alert {
   position: relative;
   margin: 0 0 1rem 0;
   padding: 1rem;
@@ -4004,31 +4044,31 @@ select {
   border-radius: 3px;
   background-color: white;
   color: #4A4A4A; }
-  .callout > :first-child, .login > :first-child {
+  .callout > :first-child, .login > :first-child, .caldera-grid .alert > :first-child {
     margin-top: 0; }
-  .callout > :last-child, .login > :last-child {
+  .callout > :last-child, .login > :last-child, .caldera-grid .alert > :last-child {
     margin-bottom: 0; }
-  .callout.primary, .primary.login, .tribe-events-notices {
+  .callout.primary, .primary.login, .caldera-grid .primary.alert, .tribe-events-notices {
     background-color: #def2ff;
     color: #4A4A4A; }
-  .callout.secondary, .secondary.login, .tribe-event-featured #tribe-events .login.tribe-events-button, .tribe-event-featured .login.tribe-events-button, .tribe-event-featured .login.tribe-events-read-more, .tribe-event-featured #tribe-events .callout.tribe-events-button, .tribe-event-featured .callout.tribe-events-button, .tribe-event-featured .callout.tribe-events-read-more {
+  .callout.secondary, .secondary.login, .tribe-event-featured #tribe-events .login.tribe-events-button, .tribe-event-featured .login.tribe-events-button, .tribe-event-featured .login.tribe-events-read-more, .caldera-grid .secondary.alert, .caldera-grid .tribe-event-featured #tribe-events .alert.tribe-events-button, .tribe-event-featured #tribe-events .caldera-grid .alert.tribe-events-button, .caldera-grid .tribe-event-featured .alert.tribe-events-button, .tribe-event-featured .caldera-grid .alert.tribe-events-button, .caldera-grid .tribe-event-featured .alert.tribe-events-read-more, .tribe-event-featured .caldera-grid .alert.tribe-events-read-more, .tribe-event-featured #tribe-events .callout.tribe-events-button, .tribe-event-featured .callout.tribe-events-button, .tribe-event-featured .callout.tribe-events-read-more {
     background-color: #f1f1f1;
     color: #4A4A4A; }
-  .callout.success, .success.login {
+  .callout.success, .success.login, .caldera-grid .success.alert, .caldera-grid .alert.alert-success {
     background-color: #ebfbf1;
     color: #4A4A4A; }
-  .callout.warning, .warning.login {
+  .callout.warning, .warning.login, .caldera-grid .warning.alert {
     background-color: #fff7e6;
     color: #4A4A4A; }
-  .callout.alert, .alert.login {
+  .callout.alert, .alert.login, .caldera-grid .alert {
     background-color: #feebe9;
     color: #4A4A4A; }
-  .callout.small, .small.login {
+  .callout.small, .small.login, .caldera-grid .alert {
     padding-top: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0.5rem; }
-  .callout.large, .large.login {
+  .callout.large, .large.login, .caldera-grid .large.alert {
     padding-top: 3rem;
     padding-right: 3rem;
     padding-bottom: 3rem;
@@ -4064,7 +4104,7 @@ select {
     outline: 0; }
   .close-button:hover, .close-button:focus {
     color: #4A4A4A; }
-  .close-button.small {
+  .close-button.small, .caldera-grid .close-button.alert {
     right: 0.66rem;
     top: 0.33em;
     font-size: 1.5em;
@@ -4332,7 +4372,7 @@ select {
 .dropdown-pane.tiny {
   width: 100px; }
 
-.dropdown-pane.small {
+.dropdown-pane.small, .caldera-grid .dropdown-pane.alert {
   width: 200px; }
 
 .dropdown-pane.large {
@@ -4715,7 +4755,7 @@ select {
   .label.secondary, .tribe-events-schedule .secondary.tribe-events-cost, .tribe-events-schedule .tribe-event-featured #tribe-events .tribe-events-cost.tribe-events-button, .tribe-event-featured #tribe-events .tribe-events-schedule .tribe-events-cost.tribe-events-button, .tribe-events-schedule .tribe-event-featured .tribe-events-cost.tribe-events-button, .tribe-event-featured .tribe-events-schedule .tribe-events-cost.tribe-events-button, .tribe-events-schedule .tribe-event-featured .tribe-events-cost.tribe-events-read-more, .tribe-event-featured .tribe-events-schedule .tribe-events-cost.tribe-events-read-more, .tribe-event-featured #tribe-events .label.tribe-events-button, .tribe-event-featured .label.tribe-events-button, .tribe-event-featured .label.tribe-events-read-more {
     background: #767676;
     color: #fefefe; }
-  .label.success, .tribe-events-schedule .success.tribe-events-cost {
+  .label.success, .caldera-grid .label.alert.alert-success, .caldera-grid .tribe-events-schedule .alert.alert-success.tribe-events-cost, .tribe-events-schedule .caldera-grid .alert.alert-success.tribe-events-cost, .tribe-events-schedule .success.tribe-events-cost {
     background: #3adb76;
     color: #4A4A4A; }
   .label.warning, .tribe-events-schedule .warning.tribe-events-cost {
@@ -5116,7 +5156,7 @@ select {
     background-color: #006CB5; }
   .progress.secondary .progress-meter, .tribe-event-featured #tribe-events .progress.tribe-events-button .progress-meter, .tribe-event-featured .progress.tribe-events-button .progress-meter, .tribe-event-featured .progress.tribe-events-read-more .progress-meter {
     background-color: #767676; }
-  .progress.success .progress-meter {
+  .progress.success .progress-meter, .caldera-grid .progress.alert.alert-success .progress-meter {
     background-color: #3adb76; }
   .progress.warning .progress-meter {
     background-color: #ffae00; }
@@ -5300,7 +5340,7 @@ html.is-reveal-open body {
       width: 30%;
       max-width: 68.18182rem; } }
   @media print, screen and (min-width: 40em) {
-    .reveal.small {
+    .reveal.small, .caldera-grid .reveal.alert {
       width: 50%;
       max-width: 68.18182rem; } }
   @media print, screen and (min-width: 40em) {
@@ -5413,18 +5453,18 @@ html.is-reveal-open body {
   .switch.tiny input:checked ~ .switch-paddle::after {
     left: 1.75rem; }
 
-.switch.small {
+.switch.small, .caldera-grid .switch.alert {
   height: 1.75rem; }
-  .switch.small .switch-paddle {
+  .switch.small .switch-paddle, .caldera-grid .switch.alert .switch-paddle {
     width: 3.5rem;
     height: 1.75rem;
     font-size: 0.68182rem; }
-  .switch.small .switch-paddle::after {
+  .switch.small .switch-paddle::after, .caldera-grid .switch.alert .switch-paddle::after {
     top: 0.25rem;
     left: 0.25rem;
     width: 1.25rem;
     height: 1.25rem; }
-  .switch.small input:checked ~ .switch-paddle::after {
+  .switch.small input:checked ~ .switch-paddle::after, .caldera-grid .switch.alert input:checked ~ .switch-paddle::after {
     left: 2rem; }
 
 .switch.large {
@@ -6013,12 +6053,18 @@ LINK Typography
 /*********************
 H1, H2, H3, H4, H5 P STYLES
 *********************/
-h1 a, .h1 a, h2 a, .single-cit_report .single-title a,
-.single-cit_past_event .single-title a, .h2 a, h3 a, .single-cit_past_event .section-title a, .single-tribe_events .tribe-events-single-event-title a, .h3 a, h4 a, .post-type-archive-cit_report .entry-title a, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title a,
-.post-type-archive-cit_past_event .entry-title a,
-.post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list
-.post-type-archive-cit_past_event .tribe-events-list-event-title a, .archive-title a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .profile-block h3 a, .profile-block .single-cit_past_event .section-title a, .single-cit_past_event .profile-block .section-title a, .profile-block .single-tribe_events .tribe-events-single-event-title a, .single-tribe_events .profile-block .tribe-events-single-event-title a, .h5 a {
-  text-decoration: none; }
+h1, .h1, h2, .single-cit_report .single-title,
+.single-cit_past_event .single-title, .h2, h3, .single-cit_past_event .section-title, .single-tribe_events .tribe-events-single-event-title, .h3, h4, .post-type-archive-cit_report .entry-title, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title,
+.post-type-archive-cit_past_event .entry-title,
+.post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title, .tribe-events-list
+.post-type-archive-cit_past_event .tribe-events-list-event-title, .archive-title, .entry-content .executive-summary-subtitle, .h4, h5, .profile-block h3, .profile-block .single-cit_past_event .section-title, .single-cit_past_event .profile-block .section-title, .profile-block .single-tribe_events .tribe-events-single-event-title, .single-tribe_events .profile-block .tribe-events-single-event-title, .h5 {
+  font-weight: 900; }
+  h1 a, .h1 a, h2 a, .single-cit_report .single-title a,
+  .single-cit_past_event .single-title a, .h2 a, h3 a, .single-cit_past_event .section-title a, .single-tribe_events .tribe-events-single-event-title a, .h3 a, h4 a, .post-type-archive-cit_report .entry-title a, .post-type-archive-cit_report .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list .post-type-archive-cit_report .tribe-events-list-event-title a,
+  .post-type-archive-cit_past_event .entry-title a,
+  .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list
+  .post-type-archive-cit_past_event .tribe-events-list-event-title a, .archive-title a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .profile-block h3 a, .profile-block .single-cit_past_event .section-title a, .single-cit_past_event .profile-block .section-title a, .profile-block .single-tribe_events .tribe-events-single-event-title a, .single-tribe_events .profile-block .tribe-events-single-event-title a, .h5 a {
+    text-decoration: none; }
 
 /*********************
 LINK Layout
@@ -6378,6 +6424,7 @@ POSTS & CONTENT STYLES
 .single-post .entry-content p:first-of-type, .single-post .entry-content #tribe-events .tribe-events-content p:first-of-type, #tribe-events .tribe-events-content .single-post .entry-content p:first-of-type {
   font-size: 1.25rem; }
   .single-post .entry-content p:first-of-type:first-child:first-letter, .single-post .entry-content #tribe-events .tribe-events-content p:first-of-type:first-child:first-letter, #tribe-events .tribe-events-content .single-post .entry-content p:first-of-type:first-child:first-letter {
+    box-sizing: border-box;
     float: left;
     font-size: 4.0625rem;
     line-height: 3.4375rem;
@@ -6722,7 +6769,7 @@ SIDEBARS & ASIDES
   .single-cit_past_event
   .widget .tribe-mini-calendar-event .list-info .single-title {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 900;
     line-height: 1.25;
     margin-top: 0;
     margin-bottom: 0.25rem; }
@@ -6778,28 +6825,40 @@ FOUNDATION STYLES
 .row.expand {
   max-width: none; }
 
-.callout.small, .small.login {
+.callout.small, .small.login, .caldera-grid .alert {
   padding: 8px 1rem; }
 
-.callout.primary, .primary.login, .tribe-events-notices {
+.callout.primary, .primary.login, .caldera-grid .primary.alert, .tribe-events-notices {
   border-color: #b5e1ff;
   color: #003e69; }
 
-.callout.success, .success.login {
+.callout.success, .success.login, .caldera-grid .success.alert, .caldera-grid .alert.alert-success {
   border-color: #c0f3d3;
   color: #136933; }
 
-.callout.warning, .warning.login {
+.callout.warning, .warning.login, .caldera-grid .warning.alert {
   border-color: #ffe7b3;
   color: #664600; }
 
-.callout.alert, .alert.login {
+.callout.alert, .alert.login, .caldera-grid .alert {
   border-color: #fcd1cd;
   color: #751108; }
 
 /*********************
 PLUGIN STYLES
 *********************/
+.caldera_forms_form .form-group {
+  margin-bottom: 1rem; }
+  .caldera_forms_form .form-group input {
+    margin-bottom: 0; }
+
+.caldera_forms_form .control-label,
+.caldera_forms_form .help-block {
+  font-size: 80%; }
+  .caldera_forms_form .control-label.caldera_ajax_error_block,
+  .caldera_forms_form .help-block.caldera_ajax_error_block {
+    color: #F03626; }
+
 #tribe-bar-form input[type=text] {
   border-bottom: 1px solid #D8D8D8; }
 
