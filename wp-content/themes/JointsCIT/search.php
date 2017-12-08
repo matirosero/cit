@@ -9,7 +9,8 @@
 		<div id="inner-content" class="row" data-equalizer data-equalize-on="large">
 
 			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch>
-				<header>
+				
+				<header class="article-header">
 					<h1 class="archive-title"><?php _e( 'Search Results for:', 'jointswp' ); ?> <?php echo esc_attr(get_search_query()); ?></h1>
 				</header>
 
