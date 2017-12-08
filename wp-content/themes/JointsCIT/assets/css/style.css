@@ -68,6 +68,94 @@ CSS file.
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v14-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v14-latin-700.woff") format("woff"), url("../fonts/open-sans-v14-latin-700.ttf") format("truetype"), url("../fonts/open-sans-v14-latin-700.svg#OpenSans") format("svg");
   /* Legacy iOS */ }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?42807956");
+  src: url("../fonts/fontello.eot?42807956#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?42807956") format("woff2"), url("../fonts/fontello.woff?42807956") format("woff"), url("../fonts/fontello.ttf?42807956") format("truetype"), url("../fonts/fontello.svg?42807956#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?42807956#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-search:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-mail:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-tag:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-download:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-tags:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-facebook:before {
+  content: '\f09a'; }
+
+/* '' */
+.icon-menu:before {
+  content: '\f0c9'; }
+
+/* '' */
+.icon-linkedin:before {
+  content: '\f0e1'; }
+
+/* '' */
+.icon-download-cloud:before {
+  content: '\f0ed'; }
+
+/* '' */
+.icon-doc-text:before {
+  content: '\f0f6'; }
+
+/* '' */
+.icon-doc-text-inv:before {
+  content: '\f15c'; }
+
+/* '' */
 /******************************************************************
 
 Stylesheet: Variables
@@ -2725,11 +2813,11 @@ textarea {
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #cacaca; }
+  color: #8a8a8a; }
 
 input::placeholder,
 textarea::placeholder {
-  color: #cacaca; }
+  color: #8a8a8a; }
 
 input:disabled, input[readonly],
 textarea:disabled,
@@ -6005,6 +6093,12 @@ NAVIGATION STYLES
 *********************/
 .top-bar {
   height: 90px; }
+  .top-bar button {
+    margin-right: 1rem; }
+    .top-bar button [class^="icon-"]:before, .top-bar button [class*=" icon-"]:before {
+      font-size: 1.25rem;
+      line-height: 13px;
+      margin-left: 0; }
   .top-bar .top-bar-right > .menu > li > a,
   .top-bar .top-bar-left > .menu > li > a {
     line-height: 3.71364rem; }
@@ -6677,22 +6771,24 @@ FOUNDATION STYLES
 .row.expand {
   max-width: none; }
 
-.callout, .login {
-  text-shadow: 0 1px 0 #fff; }
-  .callout.small, .small.login {
-    padding: 8px 1rem; }
-  .callout.primary, .primary.login, .tribe-events-notices {
-    border-color: #b5e1ff;
-    color: #003e69; }
-  .callout.success, .success.login {
-    border-color: #c0f3d3;
-    color: #136933; }
-  .callout.warning, .warning.login {
-    border-color: #ffe7b3;
-    color: #664600; }
-  .callout.alert, .alert.login {
-    border-color: #fcd1cd;
-    color: #751108; }
+.callout.small, .small.login {
+  padding: 8px 1rem; }
+
+.callout.primary, .primary.login, .tribe-events-notices {
+  border-color: #b5e1ff;
+  color: #003e69; }
+
+.callout.success, .success.login {
+  border-color: #c0f3d3;
+  color: #136933; }
+
+.callout.warning, .warning.login {
+  border-color: #ffe7b3;
+  color: #664600; }
+
+.callout.alert, .alert.login {
+  border-color: #fcd1cd;
+  color: #751108; }
 
 /*********************
 PLUGIN STYLES

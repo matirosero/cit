@@ -5,6 +5,15 @@ NAVIGATION STYLES
 
 	height: topbar-height('small');
 
+	button {
+		margin-right: 1rem;
+		[class^="icon-"]:before, [class*=" icon-"]:before {
+			font-size: 1.25rem;
+			line-height: 13px;
+			margin-left: 0;
+		}
+	}
+
 	.top-bar-right,
 	.top-bar-left {
 		> .menu {
