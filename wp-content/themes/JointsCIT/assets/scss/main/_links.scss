@@ -15,6 +15,9 @@ a, a:visited {
 		color: $black;
 		@include hover {
 			color: color('blue', 'base');
+			.tribe-event-featured & {
+				color: hsla(0,0%,100%,.9);
+			}
 		}
 	}
 	#sidebar-menu & {

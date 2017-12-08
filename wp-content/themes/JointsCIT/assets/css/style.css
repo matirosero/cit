@@ -5826,6 +5826,20 @@ a:link, a:visited:link {
   .tribe-events-list-event-title a:visited:focus,
   .tribe-events-list-event-title a:visited:hover {
     color: #006CB5; }
+    .tribe-event-featured .entry-title a:active, .tribe-event-featured .tribe-events-list .tribe-events-list-event-title a:active, .tribe-events-list .tribe-event-featured .tribe-events-list-event-title a:active, .tribe-event-featured .entry-title a:focus, .tribe-event-featured .tribe-events-list .tribe-events-list-event-title a:focus, .tribe-events-list .tribe-event-featured .tribe-events-list-event-title a:focus, .tribe-event-featured .entry-title a:hover, .tribe-event-featured .tribe-events-list .tribe-events-list-event-title a:hover, .tribe-events-list .tribe-event-featured .tribe-events-list-event-title a:hover, .tribe-event-featured
+    .top-bar a:active, .tribe-event-featured
+    .top-bar a:focus, .tribe-event-featured
+    .top-bar a:hover, .tribe-event-featured
+    .tribe-events-list-event-title a:active, .tribe-event-featured
+    .tribe-events-list-event-title a:focus, .tribe-event-featured
+    .tribe-events-list-event-title a:hover, .tribe-event-featured .entry-title a:visited:active, .tribe-event-featured .tribe-events-list .tribe-events-list-event-title a:visited:active, .tribe-events-list .tribe-event-featured .tribe-events-list-event-title a:visited:active, .tribe-event-featured .entry-title a:visited:focus, .tribe-event-featured .tribe-events-list .tribe-events-list-event-title a:visited:focus, .tribe-events-list .tribe-event-featured .tribe-events-list-event-title a:visited:focus, .tribe-event-featured .entry-title a:visited:hover, .tribe-event-featured .tribe-events-list .tribe-events-list-event-title a:visited:hover, .tribe-events-list .tribe-event-featured .tribe-events-list-event-title a:visited:hover, .tribe-event-featured
+    .top-bar a:visited:active, .tribe-event-featured
+    .top-bar a:visited:focus, .tribe-event-featured
+    .top-bar a:visited:hover, .tribe-event-featured
+    .tribe-events-list-event-title a:visited:active, .tribe-event-featured
+    .tribe-events-list-event-title a:visited:focus, .tribe-event-featured
+    .tribe-events-list-event-title a:visited:hover {
+      color: rgba(255, 255, 255, 0.9); }
 
 #sidebar-menu a, #sidebar-menu a:visited {
   color: #4A4A4A; }
@@ -6775,6 +6789,10 @@ PLUGIN STYLES
 
 .tribe-events-notices {
   margin: 10px 0 18px; }
+
+.tribe-events-adv-list-widget .tribe-event-featured .list-info,
+.tribe-mini-calendar-list-wrapper .tribe-event-featured .list-info {
+  padding: .25rem 1rem !important; }
 
 .gform_body ul {
   list-style: none outside none;

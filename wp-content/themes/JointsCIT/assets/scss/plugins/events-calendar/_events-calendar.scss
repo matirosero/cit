@@ -131,3 +131,10 @@ p {
 	@extend .callout.primary;
 	margin: 10px 0 18px;
 }
+
+.list-info {
+	.tribe-events-adv-list-widget .tribe-event-featured &,
+	.tribe-mini-calendar-list-wrapper .tribe-event-featured & {
+		padding: .25rem 1rem !important;
+	}
+}
