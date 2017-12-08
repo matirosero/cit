@@ -6368,6 +6368,13 @@ POSTS & CONTENT STYLES
       font-size: 80%;
       margin-bottom: .5rem; } }
 
+.post-type.label, .tribe-events-schedule .post-type.tribe-events-cost {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  margin-bottom: 0.5rem; }
+  @media screen and (max-width: 39.9375em) {
+    .post-type.label, .tribe-events-schedule .post-type.tribe-events-cost {
+      font-size: 80%; } }
+
 .single-post .entry-content p:first-of-type, .single-post .entry-content #tribe-events .tribe-events-content p:first-of-type, #tribe-events .tribe-events-content .single-post .entry-content p:first-of-type {
   font-size: 1.25rem; }
   .single-post .entry-content p:first-of-type:first-child:first-letter, .single-post .entry-content #tribe-events .tribe-events-content p:first-of-type:first-child:first-letter, #tribe-events .tribe-events-content .single-post .entry-content p:first-of-type:first-child:first-letter {

@@ -108,6 +108,15 @@ POSTS & CONTENT STYLES
 	}
 }
 
+.post-type.label {
+	font-family: $sans-family;
+	margin-bottom: 0.5rem;
+	@include breakpoint(small only) {
+		font-size: $small-font-size;
+	}
+	
+}
+
 
 
 // Entry content
