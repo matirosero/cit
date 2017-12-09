@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../fonts/fontello.eot?87292774');
-  src: url('../fonts/fontello.eot?87292774#iefix') format('embedded-opentype'),
-       url('../fonts/fontello.woff2?87292774') format('woff2'),
-       url('../fonts/fontello.woff?87292774') format('woff'),
-       url('../fonts/fontello.ttf?87292774') format('truetype'),
-       url('../fonts/fontello.svg?87292774#fontello') format('svg');
+  src: url('../fonts/fontello.eot?56751737');
+  src: url('../fonts/fontello.eot?56751737#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?56751737') format('woff2'),
+       url('../fonts/fontello.woff?56751737') format('woff'),
+       url('../fonts/fontello.ttf?56751737') format('truetype'),
+       url('../fonts/fontello.svg?56751737#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -64,8 +64,7 @@
 .icon-tag:before { content: '\e802'; } /* '' */
 .icon-download:before { content: '\e803'; } /* '' */
 .icon-tags:before { content: '\e804'; } /* '' */
-.icon-right-open:before { content: '\e805'; } /* '' */
-.icon-left-open:before { content: '\e806'; } /* '' */
+.icon-attention-circled:before { content: '\e807'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
@@ -77,3 +76,8 @@
 .icon-doc-text-inv:before { content: '\f15c'; } /* '' */
 .icon-calendar-plus-o:before { content: '\f271'; } /* '' */
 .icon-user-circle:before { content: '\f2bd'; } /* '' */
+
+/*
+ * USAGE
+ * <i class="demo-icon icon-search"></i>
+ */

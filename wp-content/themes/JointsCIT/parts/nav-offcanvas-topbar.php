@@ -19,7 +19,7 @@
 					<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search...', 'input placeholder', 'jointswp' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'jointswp' ) ?>" />
 				</label></li>
 				<li>
-					<button type="submit" class="search-submit button"><i class="demo-icon icon-search"></i></button>
+					<button type="submit" class="search-submit button"><i class="demo-icon icon-search"></i><span class="screen-reader-text"><?php echo _x( 'Search', 'label', 'jointswp' ) ?></span></button>
 				</li>
 			</ul>
 		</form>

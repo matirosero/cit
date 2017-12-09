@@ -114,7 +114,6 @@ POSTS & CONTENT STYLES
 	@include breakpoint(small only) {
 		font-size: $small-font-size;
 	}
-	
 }
 
 
@@ -214,5 +213,16 @@ POSTS & CONTENT STYLES
 	.nav-next {
 		padding-left: map-get($grid-column-gutter, small);
 		text-align: right;
+	}
+}
+
+.suggestions-404 {
+	.medium-6.column {
+		&:nth-child(2) {
+			padding-right: map-get($grid-column-gutter, medium)/2;
+		}
+		&:nth-child(3) {
+			padding-left: map-get($grid-column-gutter, medium)/2;
+		}
 	}
 }

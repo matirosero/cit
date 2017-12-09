@@ -4,3 +4,21 @@
 		width: 4.5rem;
 	}
 }
+
+.search-form {
+	button {
+		margin-right: 1rem;
+		[class^="icon-"]:before, [class*=" icon-"]:before {
+			font-size: 1.25rem;
+			line-height: 12px;
+			margin-left: 0;
+		}
+	}
+
+	#content-not-found & {
+		margin: 1.5rem 0 2rem;
+		@include breakpoint(medium) {
+			margin: 3rem 0 4rem;
+		}
+	}
+}

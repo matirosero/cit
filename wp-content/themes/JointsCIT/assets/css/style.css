@@ -70,8 +70,8 @@ CSS file.
 
 @font-face {
   font-family: 'fontello';
-  src: url("../fonts/fontello.eot?87292774");
-  src: url("../fonts/fontello.eot?87292774#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?87292774") format("woff2"), url("../fonts/fontello.woff?87292774") format("woff"), url("../fonts/fontello.ttf?87292774") format("truetype"), url("../fonts/fontello.svg?87292774#fontello") format("svg");
+  src: url("../fonts/fontello.eot?56751737");
+  src: url("../fonts/fontello.eot?56751737#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?56751737") format("woff2"), url("../fonts/fontello.woff?56751737") format("woff"), url("../fonts/fontello.ttf?56751737") format("truetype"), url("../fonts/fontello.svg?56751737#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -132,14 +132,10 @@ CSS file.
   content: '\e804'; }
 
 /* '' */
-.icon-right-open:before {
-  content: '\e805'; }
+.icon-attention-circled:before {
+  content: '\e807'; }
 
-/* '' */
-.icon-left-open:before {
-  content: '\e806'; }
-
-/* '' */
+/* '' */
 .icon-facebook:before {
   content: '\f09a'; }
 
@@ -186,6 +182,10 @@ CSS file.
   content: '\f2bd'; }
 
 /* '' */
+/*
+ * USAGE
+ * <i class="demo-icon icon-search"></i>
+ */
 /******************************************************************
 
 Stylesheet: Variables
@@ -6139,6 +6139,19 @@ FORM STYLES
   .tribe-events-single-event-description [type='number'] {
     width: 4.5rem; }
 
+.search-form button {
+  margin-right: 1rem; }
+  .search-form button [class^="icon-"]:before, .search-form button [class*=" icon-"]:before {
+    font-size: 1.25rem;
+    line-height: 12px;
+    margin-left: 0; }
+
+#content-not-found .search-form {
+  margin: 1.5rem 0 2rem; }
+  @media print, screen and (min-width: 40em) {
+    #content-not-found .search-form {
+      margin: 3rem 0 4rem; } }
+
 /*********************
 LINK Typography
 *********************/
@@ -6157,6 +6170,9 @@ h1, .h1, h2, .single-cit_report .single-title,
   .post-type-archive-cit_past_event .tribe-events-list .tribe-events-list-event-title a, .tribe-events-list
   .post-type-archive-cit_past_event .tribe-events-list-event-title a, .archive-title a, .entry-content .executive-summary-subtitle a, .h4 a, h5 a, .profile-block h3 a, .profile-block .single-cit_past_event .section-title a, .single-cit_past_event .profile-block .section-title a, .profile-block .single-tribe_events .tribe-events-single-event-title a, .single-tribe_events .profile-block .tribe-events-single-event-title a, .h5 a {
     text-decoration: none; }
+
+.alert-text {
+  color: #F03626; }
 
 /*********************
 LINK Layout
@@ -6231,12 +6247,6 @@ NAVIGATION STYLES
 *********************/
 .top-bar {
   height: 90px; }
-  .top-bar button {
-    margin-right: 1rem; }
-    .top-bar button [class^="icon-"]:before, .top-bar button [class*=" icon-"]:before {
-      font-size: 1.25rem;
-      line-height: 12px;
-      margin-left: 0; }
   .top-bar .top-bar-right > .menu > li > a,
   .top-bar .top-bar-left > .menu > li > a {
     line-height: 3.71364rem; }
@@ -6610,6 +6620,12 @@ POSTS & CONTENT STYLES
   .nav-links .nav-next {
     padding-left: 30px;
     text-align: right; }
+
+.suggestions-404 .medium-6.column:nth-child(2), .suggestions-404 .medium-6.columns:nth-child(2) {
+  padding-right: 20px; }
+
+.suggestions-404 .medium-6.column:nth-child(3), .suggestions-404 .medium-6.columns:nth-child(3) {
+  padding-left: 20px; }
 
 /*********************
 PAST EVENTS STYLES

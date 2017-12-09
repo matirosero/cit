@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JointsCIT\n"
-"POT-Creation-Date: 2017-12-08 10:58-0600\n"
-"PO-Revision-Date: 2017-12-08 11:25-0600\n"
+"POT-Creation-Date: 2017-12-09 12:11-0600\n"
+"PO-Revision-Date: 2017-12-09 12:24-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_PE\n"
@@ -22,15 +22,28 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:16
-msgid "Epic 404 - Article Not Found"
-msgstr "Épico 404 - Artículo no encontrado"
+msgid "Article Not Found"
+msgstr "Ese contenido no existe"
 
 #: 404.php:20
 msgid ""
-"The article you were looking for was not found, but maybe try looking again!"
+"The content you were looking for was not found, but maybe a search would "
+"help."
 msgstr ""
-"La publicación que estás buscando no se encontró ¡pero puedes intentar de "
-"nuevo!"
+"El contenido que desea accesar no se encontró, pero quizás una búsqueda "
+"ayude."
+
+#: 404.php:33
+msgid "Here are some suggestions:"
+msgstr "Aquí tiene algunas sugerencias:"
+
+#: 404.php:40
+msgid "We tried finding the matching what you're looking for:"
+msgstr "Intentamos encontrar lo que está buscando:"
+
+#: 404.php:59
+msgid "Try some of our website's top pages:"
+msgstr "Intente algunas de las páginas más importantes de nuestro sitio:"
 
 #: assets/functions/admin.php:35
 msgid "The RSS Feed is either empty or unavailable."
@@ -49,14 +62,16 @@ msgid ""
 "<span id=\"footer-thankyou\">Developed by <a href=\"#\" target=\"_blank"
 "\">Your Site Name</a></span>."
 msgstr ""
+"<span id=“footer-thankyou”>Desarrollado por <a href=“#” target=“_blank”>Your "
+"Site Name</a></span>."
 
 #: assets/functions/cleanup.php:74
 msgid "Read"
 msgstr "Leer"
 
 #: assets/functions/cleanup.php:74
-msgid "... Read more &raquo;"
-msgstr "… Seguir leyendo &raquo;"
+msgid "... Read more"
+msgstr "… Leer más"
 
 #: assets/functions/cleanup.php:96
 #, php-format
@@ -234,7 +249,7 @@ msgstr ""
 
 #: assets/functions/page-navi.php:35
 msgid "First"
-msgstr ""
+msgstr "Primero"
 
 #: assets/functions/page-navi.php:39
 msgid "Previous"
@@ -278,7 +293,7 @@ msgstr[1] "%1$s comentarios sobre &ldquo;%2$s&rdquo;"
 
 #: comments.php:24 comments.php:40
 msgid "Comment navigation"
-msgstr ""
+msgstr "Navegación de comentarios"
 
 #: comments.php:27 comments.php:43
 msgid "Older Comments"
@@ -296,7 +311,7 @@ msgstr "Comentarios cerrados."
 msgid "Prepared by "
 msgstr "Preparado por "
 
-#: parts/content-byline.php:6
+#: parts/content-byline.php:5
 msgid "By "
 msgstr "Por "
 
@@ -324,14 +339,14 @@ msgstr "Falta algo. Intente revisar nuevamente."
 msgid "Read more..."
 msgstr "Leer más..."
 
-#: parts/loop-archive.php:18 parts/loop-board-member.php:22
+#: parts/loop-archive.php:40 parts/loop-board-member.php:22
 #: parts/loop-cit_report.php:15 parts/loop-past-event.php:175
-#: parts/loop-single-report.php:51 parts/loop-single.php:15
+#: parts/loop-single-report.php:61 parts/loop-single.php:15
 msgid "Tags:"
 msgstr "Etiquetas:"
 
 #: parts/loop-board-member.php:21 parts/loop-cit_report.php:14
-#: parts/loop-past-event.php:174 parts/loop-single-report.php:50
+#: parts/loop-past-event.php:174 parts/loop-single-report.php:60
 #: parts/loop-single.php:14
 msgid "Pages:"
 msgstr "Páginas:"
@@ -341,7 +356,7 @@ msgctxt "label"
 msgid "Search for:"
 msgstr "Buscar por:"
 
-#: parts/nav-offcanvas-topbar.php:19
+#: parts/nav-offcanvas-topbar.php:19 searchform.php:5
 msgctxt "input placeholder"
 msgid "Search..."
 msgstr "Buscar…"
@@ -351,19 +366,19 @@ msgctxt "jointswp"
 msgid "Search for:"
 msgstr "Buscar por:"
 
+#: parts/nav-offcanvas-topbar.php:22 searchform.php:8
+msgctxt "label"
+msgid "Search"
+msgstr "Buscar"
+
 #: parts/nav-offcanvas-topbar.php:31 parts/nav-offcanvas.php:10
 #: parts/nav-title-bar.php:7
 msgid "Menu"
 msgstr "Menú"
 
-#: search.php:13
+#: search.php:14
 msgid "Search Results for:"
 msgstr "Resultados de búsqueda de:"
-
-#: searchform.php:5
-msgctxt "jointswp"
-msgid "Search..."
-msgstr "Buscar…"
 
 #: searchform.php:8
 msgctxt "jointswp"
@@ -382,9 +397,24 @@ msgstr "Publicaciones categorizadas:"
 msgid "Events by year:"
 msgstr "Eventos por año:"
 
+#: tribe-events/list/nav.php:20
+#, php-format
+msgid "%s List Navigation"
+msgstr "%s Navegación de lista"
+
+#: tribe-events/list/nav.php:26
+#, php-format
+msgid "Previous %s"
+msgstr "Anterior %s"
+
+#: tribe-events/list/nav.php:34
+#, php-format
+msgid "Next %s"
+msgstr "Siguiente %s"
+
 #: tribe-events/list/single-event.php:95
 msgid "Find out more"
-msgstr ""
+msgstr "Más información"
 
 #: tribe-events/modules/meta/venue.php:49
 msgid "Phone:"
@@ -408,7 +438,7 @@ msgstr "%s Navegación"
 #: tribe-events/tickets/tickets/rsvp.php:34
 msgctxt "form heading"
 msgid "RSVP"
-msgstr ""
+msgstr "Confirmar Asistencia"
 
 #: tribe-events/tickets/tickets/rsvp.php:52
 msgid "Please fill in the RSVP confirmation name and email fields."
@@ -440,11 +470,11 @@ msgstr ""
 #: tribe-events/tickets/tickets/rsvp.php:153
 msgctxt "order status label"
 msgid "RSVP"
-msgstr ""
+msgstr "Confirmar Asistencia"
 
 #: tribe-events/tickets/tickets/rsvp.php:181
 msgid "Don't list me on the public attendee list"
-msgstr ""
+msgstr "No mostrarme en la lista pública de asistencia"
 
 #: tribe-events/tickets/tickets/rsvp.php:193
 msgid "Login to RSVP"
@@ -477,3 +507,10 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://www.matilderosero.com"
 msgstr ""
+
+#~ msgid "... Read more &raquo;"
+#~ msgstr "… Seguir leyendo &raquo;"
+
+#~ msgctxt "jointswp"
+#~ msgid "Search..."
+#~ msgstr "Buscar…"
