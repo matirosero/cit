@@ -10,7 +10,7 @@ function the_excerpt_more_link( $excerpt ){
     if ( !has_excerpt() ) :
 	    $excerpt = str_replace('</p>', '...</p>', $excerpt);
 	endif;
-    $excerpt .= '<p class="read-more"><a class="button round" href="'. get_permalink($post->ID) . '">' . __( 'Read more', 'jointswp' ) . ' &raquo;</a></p>';
+    $excerpt .= '<p class="text-center"><a class="button round read-more" href="'. get_permalink($post->ID) . '">' . __( 'Read more', 'jointswp' ) . '</a></p>';
     // $excerpt .=  '[.....]';
     return $excerpt;
 }

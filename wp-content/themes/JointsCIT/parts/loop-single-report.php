@@ -13,29 +13,38 @@
          * Download report
          */
 
-    	if ( ( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) && is_numeric( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) ) ) || get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true ) ) : ?>
+    	// Download exists
+        if ( ( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) && is_numeric( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) ) ) || get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true ) ) : ?>
 
     		<div class="callout float-left download-box">
 
     			<?php
+                // Check current user capabilities
                 if ( current_user_can( 'download_report' ) ) :
-        			if ( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) && is_numeric( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) ) ) :
+
+                    // If download ID is used
+                    if ( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) && is_numeric( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) ) ) :
 
         				$download_id = get_post_meta( $post->ID, 'mro_cit_report_download_id', true );
         				// echo 'ID is '.$download_id.'<br />';
         				echo do_shortcode( '[ddownload id="'.$download_id.'"]' );
 
-        			elseif ( get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true ) ):
+        			// If download shortcode is used
+                    elseif ( get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true ) ):
 
         				$shortcode = get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true );
         				echo apply_filters( 'the_content', $shortcode );
         			endif; ?>
+
                     <p>Haga click para descargar y leer el informe.</p>
-                <?php else: ?>
+
+                <?php
+
+                // Login form if user is logged out
+                else: ?>
                     <p  class="callout primary">Debe ser Afiliado e ingresar a su cuenta para descargar el informe.</p>
                     <?php echo do_shortcode( '[members_login_form] ' ); ?>
-                <?php endif;
-    			?>
+                <?php endif; ?>
 
     		</div>
 
@@ -44,6 +53,7 @@
 
 		<?php the_post_thumbnail('full'); ?>
 		<?php the_content(); ?>
+
 	</section> <!-- end article section -->
 
 	<footer class="article-footer">

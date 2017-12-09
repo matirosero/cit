@@ -9,16 +9,16 @@
 	p {
 		font-size: $small-font-size;
 	}
-	@media only screen and (max-width: 750px ) { 
+	@media only screen and (max-width: 750px ) {
 		width: 100%;
 	}
 	@media only screen and (min-width: 751px ) {
 		&.float-left,
 		&.float-right {
-			max-width: 220px;
+			max-width: 235px;
 		}
 		&.float-left {
 			margin-right: map-get($grid-column-gutter, medium);
-		}		
+		}
 	}
 }

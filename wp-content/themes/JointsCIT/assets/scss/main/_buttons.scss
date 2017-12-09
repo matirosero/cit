@@ -26,6 +26,16 @@
 			color('white', 'base') 
 		);
 	}
+
+	&.read-more {
+		padding-left: 1.25em;
+		&:after {
+			@include icon-before;
+			margin-left: 0.25rem;
+			margin-right: 0;
+			@extend .icon-right-open:before;
+		}
+	}
 }
 
 .input-group > :last-child > * {
@@ -36,4 +46,9 @@
 
 .ddownload-link {
 	@extend .button;
+	&:before {
+		@include icon-before;
+		margin-right: 0.25rem;
+		@extend .icon-download:before;
+	}
 }
