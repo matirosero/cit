@@ -10,7 +10,7 @@
 	<div id="main-menu" class="top-bar-left float-left show-for-medium">
 		<?php joints_top_nav(); ?>
 	</div>
-	<div class="top-bar-right top-bar-search show-for-medium">
+	<div class="top-bar-right top-bar-search show-for-large">
 
 		<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 			<ul class="menu">
@@ -28,7 +28,7 @@
 	<div class="top-bar-right float-right show-for-small-only">
 		<ul class="menu">
 			<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
-			<li><a data-toggle="off-canvas"><?php _e( 'Menu', 'jointswp' ); ?></a></li>
+			<li><a data-toggle="off-canvas"><i class="icon-menu"></i><?php _e( 'Menu', 'jointswp' ); ?></a></li>
 		</ul>
 	</div>
 </div>
