@@ -91,8 +91,8 @@ $organizer = tribe_get_organizer();
 <?php do_action( 'tribe_events_before_the_content' ); ?>
 <div class="tribe-events-list-event-description tribe-events-content description entry-summary">
 	<?php echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
-	<p class="read-more">
-		<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'Find out more', 'the-events-calendar' ) ?> &raquo;</a>
+	<p class="text-center">
+		<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="button read-more" rel="bookmark"><?php esc_html_e( 'Find out more', 'the-events-calendar' ) ?></a>
 	</p>
 </div><!-- .tribe-events-list-event-description -->
 <?php
