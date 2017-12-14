@@ -23,3 +23,14 @@ function crunchify_print_scripts_styles() {
 
     return $result;
 }
+
+
+// show admin bar only for admins and editors
+if (!current_user_can('edit_posts')) {
+  add_filter('show_admin_bar', '__return_false');
+}
+function hideAdminBar() { ?>
+  <style type="text/css">.show-admin-bar { display: none; }</style>
+<?php 
+}
+add_action('admin_print_scripts-profile.php', 'hideAdminBar');
