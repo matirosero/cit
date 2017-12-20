@@ -55,5 +55,8 @@ require_once(get_template_directory().'/assets/functions/csv-helpers.php');
 // Customize the WordPress login menu
 require_once(get_template_directory().'/assets/functions/login.php'); 
 
+//Temporary file, these should be moved to plugin
+require_once(get_template_directory().'/assets/functions/temp.php'); 
+
 // Customize the WordPress admin
 // require_once(get_template_directory().'/assets/functions/admin.php'); 
