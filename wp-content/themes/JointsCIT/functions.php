@@ -38,6 +38,7 @@ require_once(get_template_directory().'/assets/functions/actions.php');
 
 // Helpers
 require_once(get_template_directory().'/assets/functions/helpers.php'); 
+require_once(get_template_directory().'/assets/functions/eventcal-helpers.php'); 
 require_once(get_template_directory().'/assets/functions/csv-helpers.php'); 
 
 // Remove 4.2 Emoji Support
