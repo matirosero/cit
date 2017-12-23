@@ -10,7 +10,6 @@
 }
 
 #content {
-	
 
 	#inner-content {
 		padding: 0rem;
@@ -38,6 +37,11 @@
 		@include breakpoint(xxlarge) {
 			@include grid-column($columns: 75%, $gutters:250px);
 		}
+	}
+
+	#main,
+	.sidebar {
+		padding-bottom: 2rem;
 	}
 
 	@include breakpoint(medium) {

@@ -6213,6 +6213,10 @@ LINK Layout
       #content #main:last-child:not(:first-child) {
         float: right; } }
 
+#content #main,
+#content .sidebar {
+  padding-bottom: 2rem; }
+
 @media print, screen and (min-width: 40em) {
   #content {
     margin-left: 210px;
@@ -6926,10 +6930,15 @@ FOOTER STYLES
 /*********************
 FOOTER STYLES
 *********************/
-.footer {
+#site-footer {
   clear: both;
-  margin-top: 1em;
-  text-align: center; }
+  margin-top: 0;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #4A4A4A;
+  color: #fff; }
+  #site-footer p:last-child {
+    margin-bottom: 0; }
 
 /*********************
 FOUNDATION STYLES
