@@ -298,5 +298,17 @@ NAVIGATION STYLES
 	}
 }
 
-
+.title-bar {
+	.menu {
+		a {
+			padding: 1.2rem 1.5rem;
+			@include hover {
+				background-color: color('orange', 'base');
+			}
+			&.active {
+				background-color: color('blue', 'dark');
+			}
+		}
+	}
+}
 

@@ -5663,8 +5663,8 @@ a.thumbnail {
     box-shadow: none; }
 
 .title-bar {
-  padding: 0.5rem;
-  background: #4A4A4A;
+  padding: 0;
+  background: #006CB5;
   color: #fefefe; }
   .title-bar::before, .title-bar::after {
     display: table;
@@ -6386,6 +6386,13 @@ NAVIGATION STYLES
     .no-js #sidebar-menu .menu.nested {
       position: relative;
       left: 0; }
+
+.title-bar .menu a {
+  padding: 1.2rem 1.5rem; }
+  .title-bar .menu a:active, .title-bar .menu a:focus, .title-bar .menu a:hover {
+    background-color: #F03626; }
+  .title-bar .menu a.active {
+    background-color: #263F81; }
 
 /*********************
 DOWNLOADS

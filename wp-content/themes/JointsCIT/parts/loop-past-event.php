@@ -21,30 +21,34 @@
 		if ( $pdfs || $video_text || $videos || $gallery_text || $gallery || $evaluation ) : ?>
 
 			<div data-sticky-container>
-				<div data-sticky data-anchor="foo">
+				<div class="title-bar" data-sticky data-anchor="foo" style="width:100%" >
 
-					<ul class="menu section-navigation align-center" data-magellan>
+					<div class="title-bar-left">
+						<ul class="menu section-navigation align-center" data-magellan>
+
+							<li><a href="#event-information">Información</a></li>
+
+							<?php if ( $pdfs ) : ?>
+								<li><a href="#event-presentations">Presentaciones</a></li>
+							<?php endif; ?>
+
+							<?php if ( $video_text || $videos ) : ?>
+								<li><a href="#event-videos">Videos</a></li>
+							<?php endif; ?>
+
+							<?php if ( $gallery_text || $gallery ) : ?>
+								<li><a href="#event-gallery">Galería</a></li>
+							<?php endif; ?>
+
+							<?php if ( $evaluation ) : ?>
+								<li><a href="#event-evaluation">Evaluación</a></li>
+							<?php endif; ?>
+
+						</ul>						
+					</div>
+					
 
 
-						<li><a href="#event-information">Información</a></li>
-
-						<?php if ( $pdfs ) : ?>
-							<li><a href="#event-presentations">Presentaciones</a></li>
-						<?php endif; ?>
-
-						<?php if ( $video_text || $videos ) : ?>
-							<li><a href="#event-videos">Videos</a></li>
-						<?php endif; ?>
-
-						<?php if ( $gallery_text || $gallery ) : ?>
-							<li><a href="#event-gallery">Galería</a></li>
-						<?php endif; ?>
-
-						<?php if ( $evaluation ) : ?>
-							<li><a href="#event-evaluation">Evaluación</a></li>
-						<?php endif; ?>
-
-					</ul>
 				</div>
 			</div>
 
@@ -158,8 +162,6 @@
 
 			</div>
 
-
-
 		<?php else: ?>
 
 			<?php the_post_thumbnail('full'); ?>
@@ -175,6 +177,6 @@
 		<p class="tags"><?php the_tags('<span class="tags-title">' . __( 'Tags:', 'jointswp' ) . '</span> ', ', ', ''); ?></p>
 	</footer> <!-- end article footer -->
 
-	<?php comments_template(); ?>
+	<?php //comments_template(); ?>
 
 </article> <!-- end article -->
