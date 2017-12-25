@@ -52,10 +52,11 @@ function setup_tribe_field_in_query( $query ){
 		$year = $_REQUEST['tribe-bar-year-field'];
 		$year = (int)$year;
 
+	    //Check that input is a year
 	    if ( $year>1000 && $year<2100 ) {
-	      	write_log($year.'is a year!');
+	      	write_log($year.' is a year!');
 	    } else {
-	    	write_log($year.'is NOT a year!');
+	    	write_log($year.' is NOT a year!');
 	    }
         // do stuff
     }
