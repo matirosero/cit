@@ -7,7 +7,7 @@
 	 */
 	$args = array(
 
-		'post_type'   => 'tribe_events',
+		'post_type'   => 'cit_past_event',
 		'post_status' => 'publish',
 		'order'               => 'DESC',
 		'orderby'             => 'date',
@@ -26,10 +26,14 @@ else : ?>
 	<table>
 		<tr>
 			<th></th>
+			<th>ID</th>
 			<th>Título</th>
+			<th>Post date</th>
 			<th>Start date</th>
 			<th>GMT start date</th>
-			<th>Post date</th>
+			<th>End date</th>
+			<th>GMT end date</th>
+			<th>Start date TRIBE</th>
 		</tr>
 
 	<?php
@@ -42,27 +46,62 @@ else : ?>
         		<?php echo $i; ?>
         	</td>
         	<td>
-        		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <?php edit_post_link('edit', '[', ']'); ?>
+        		<?php echo $post->ID; ?>
         	</td>
         	<td>
+        		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <?php edit_post_link('edit', '[', ']'); ?>
+        	</td>
+			<td>
+				<?php the_date(); ?>
+			</td>
+        	<td>
         		<?php
-        		$start = tribe_get_start_date( null, false, 'Y-m-d H:i:s' );
+        		$start = get_the_date( 'Y-m-d H:i:s' );
         		echo $start;
         		?>
 			</td>
         	<td>
         		<?php
         		$gmt = get_gmt_from_date( $start );
+
         		echo $gmt;
         		?>
 	        </td>
+	        <td>
+        		<?php
+        		$timestamp = strtotime($start);
+		        $end = date("Y-m-d H:i:s", strtotime($start." +2 hours"));
+				echo $end;
+        		?>
+	        </td>
+	        <td>
+        		<?php
+        		$gmt_end = get_gmt_from_date( $end );
 
-			<td>
-				<?php the_date(); ?>
-			</td>
+        		echo $gmt_end;
+        		?>
+	        </td>
+	        <td>
+	        	<?php $tribe_start = tribe_get_start_date( null, false, 'Y-m-d H:i:s' );
+        		echo $tribe_start; ?>
+	        </td>
+
         </tr>
 
-        <?php $i++; ?>
+        <?php 
+// if ( ! add_post_meta( $post->ID, '_EventStartDate', $start, true ) ) { 
+//    update_post_meta( $post->ID, '_EventStartDate', $start );
+// }
+// if ( ! add_post_meta( $post->ID, '_EventEndDate', $end, true ) ) { 
+//    update_post_meta( $post->ID, '_EventEndDate', $end );
+// }
+// if ( ! add_post_meta( $post->ID, '_EventStartDateUTC', $gmt, true ) ) { 
+//    update_post_meta( $post->ID, '_EventStartDateUTC', $gmt );
+// }
+// if ( ! add_post_meta( $post->ID, '_EventEndDateUTC', $gmt_end, true ) ) { 
+//    update_post_meta( $post->ID, '_EventEndDateUTC', $gmt_end );
+// }
+        $i++; ?>
 
     <?php endwhile;
 
