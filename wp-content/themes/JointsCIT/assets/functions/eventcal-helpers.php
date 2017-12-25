@@ -16,6 +16,53 @@ function mro_cit_past_reverse_chronological ($post_object) {
 add_filter('the_posts', 'mro_cit_past_reverse_chronological', 100);
 
 
+/*
+ * Remove filters from tribe events bar
+ */
+add_filter( 'tribe-events-bar-filters',  'mro_cit_remove_search_from_bar', 1000, 1 );
+function mro_cit_remove_search_from_bar( $filters ) {
+  	if ( isset( $filters['tribe-bar-geoloc'] ) ) {
+        unset( $filters['tribe-bar-geoloc'] );
+    }
+
+    return $filters;
+}
+
+
+/*
+ * Set up year filter in bar
+ */
+add_filter( 'tribe-events-bar-filters',  'mro_cit_setup_year_field_in_bar', 1, 1 );
+function mro_cit_setup_year_field_in_bar( $filters ) {
+    $filters['tribe-bar-year-field'] = array(
+        'name' => 'tribe-bar-year-field',
+        'caption' => 'Year',
+        'html' => '<input type="text" name="tribe-bar-year-field" id="tribe-bar-year-field">'
+    );
+
+    return $filters;
+}
+
+
+add_filter( 'tribe_events_pre_get_posts', 'setup_tribe_field_in_query', 10, 1 );
+ 
+function setup_tribe_field_in_query( $query ){
+    if ( !empty( $_REQUEST['tribe-bar-year-field'] ) ) {
+
+		$year = $_REQUEST['tribe-bar-year-field'];
+		$year = (int)$year;
+
+	    if ( $year>1000 && $year<2100 ) {
+	      	write_log($year.'is a year!');
+	    } else {
+	    	write_log($year.'is NOT a year!');
+	    }
+        // do stuff
+    }
+ 
+    return $query;
+}
+
 
 /*
  * Add RSVP to events, depending on user capabilities.
