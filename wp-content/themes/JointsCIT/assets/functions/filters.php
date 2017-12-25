@@ -88,6 +88,15 @@ function mro_cit_archive_title( $title ) {
 add_filter( 'get_the_archive_title', 'mro_cit_archive_title' );
 
 
+add_action('init', 'mro_cit_setup_cpt_filters');
+function mro_cit_setup_cpt_filters() {
+    // globalize it so that we can call methods on the returned object
+    global $my_cpt_filters;
+    // We'll show you what goes in this later
+    $filter_array = array();
+    $my_cpt_filters = tribe_setup_apm('cit_past_event', $filter_array );
+}
+
 /**
  * Widget Titles: Change default H4 to an H3.
  *
