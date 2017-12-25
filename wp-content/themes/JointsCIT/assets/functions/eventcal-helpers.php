@@ -1,4 +1,21 @@
 <?php
+/*
+ * Past events list in reverse chronological order
+ */
+// Changes past event views to reverse chronological order
+function mro_cit_past_reverse_chronological ($post_object) {
+
+	$past_ajax = (defined( 'DOING_AJAX' ) && DOING_AJAX && $_REQUEST['tribe_event_display'] === 'past') ? true : false;
+
+	if(tribe_is_past() || $past_ajax) {
+		$post_object = array_reverse($post_object);
+	}
+
+	return $post_object;
+}
+add_filter('the_posts', 'mro_cit_past_reverse_chronological', 100);
+
+
 
 /*
  * Add RSVP to events, depending on user capabilities.
