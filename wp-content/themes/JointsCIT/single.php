@@ -22,7 +22,7 @@ General Single post template
 			    	if ( is_singular('cit_report') ) :
 			    		get_template_part( 'parts/loop', 'single-report' );
 			    	elseif ( is_singular('cit_past_event') ) :
-			    		get_template_part( 'parts/loop', 'past-event' );
+			    		get_template_part( 'parts/loop', 'single-past-event' );
 			    	else:
 			    		// get_template_part( 'parts/content', 'dev-info' );
 			    		get_template_part( 'parts/loop', 'single' );
