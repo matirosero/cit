@@ -36,9 +36,18 @@ $event_id = get_the_ID();
 		<?php the_title( '<h1 class="tribe-events-single-event-title">', '</h1>' ); ?>
 
 		<div class="tribe-events-schedule tribe-clearfix">
-			<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
-			<?php if ( tribe_get_cost() ) : ?>
-				<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
+			<?php
+			if ( tribe_is_past_event() ) : ?>
+				<h2>
+					<span class="tribe-event-date-start"><?php
+				echo tribe_get_start_date( $event_id, false, 'F j, Y' ); 
+				?></span>
+				</h2>
+			<?php else : ?> 
+				<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
+				<?php if ( tribe_get_cost() ) : ?>
+					<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
+				<?php endif; ?>
 			<?php endif; ?>
 		</div>
 
@@ -71,9 +80,11 @@ $event_id = get_the_ID();
 			<!-- .tribe-events-single-event-description -->
 			<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
-			
+
 			<?php
-			//Show event meta only on future events
+			/*
+			 * MRo: Show event meta only on future events
+			 */
 			if ( !tribe_is_past_event() ) { ?>
 				<!-- Event meta -->
 				<?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
