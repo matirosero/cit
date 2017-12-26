@@ -4,7 +4,8 @@
 		color: $white;
 	}
 }
-.single-cit_past_event {
+.single-cit_past_event,
+.single-tribe_events {
 	.sections {
 		margin-top: 1rem;
 		section {
@@ -31,4 +32,8 @@
 	@include breakpoint(medium) {
 		margin-top: 2rem !important;
 	}
+}
+
+body.single-tribe_events .past-event-content .tribe-events-cal-links {
+    display: none !important;
 }
