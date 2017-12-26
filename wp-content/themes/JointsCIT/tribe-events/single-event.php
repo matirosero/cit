@@ -37,6 +37,9 @@ $event_id = get_the_ID();
 
 		<div class="tribe-events-schedule tribe-clearfix">
 			<?php
+			/*
+			 * MRo: if is past event, show only start date and no time
+			 */
 			if ( tribe_is_past_event() ) : ?>
 				<h2>
 					<span class="tribe-event-date-start"><?php
