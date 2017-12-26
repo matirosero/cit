@@ -44,7 +44,23 @@ $organizer = tribe_get_organizer();
 
 			<!-- Schedule & Recurrence Details -->
 			<div class="tribe-event-schedule-details">
-				<?php echo tribe_events_event_schedule_details() ?>
+
+
+				<?php
+				/*
+				 * MRo: if is past event, show only start date and no time
+				 */
+				if ( tribe_is_past_event() ) : ?>
+					<span class="tribe-event-date-start"><?php
+					echo tribe_get_start_date( get_the_ID(), false, 'F j, Y' ); 
+					?></span>
+				<?php else : ?> 
+
+
+
+					<?php echo tribe_events_event_schedule_details() ?>
+				<?php endif; ?> 
+
 			</div>
 
 			<?php if ( $venue_details ) : ?>
