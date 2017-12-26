@@ -19,8 +19,8 @@ add_filter('the_posts', 'mro_cit_past_reverse_chronological', 100);
 /*
  * Remove filters from tribe events bar
  */
-add_filter( 'tribe-events-bar-filters',  'mro_cit_remove_search_from_bar', 1000, 1 );
-function mro_cit_remove_search_from_bar( $filters ) {
+add_filter( 'tribe-events-bar-filters',  'mro_cit_remove_geo_from_bar', 1000, 1 );
+function mro_cit_remove_geo_from_bar( $filters ) {
   	if ( isset( $filters['tribe-bar-geoloc'] ) ) {
         unset( $filters['tribe-bar-geoloc'] );
     }
@@ -37,7 +37,7 @@ function mro_cit_setup_year_field_in_bar( $filters ) {
     $filters = array_reverse($filters);
     $filters['tribe-bar-year-field'] = array(
         'name' => 'tribe-bar-year-field',
-        'caption' => 'Year',
+        'caption' => __( 'Events by year', 'jointswp' ),
         'html' => '<input type="text" name="tribe-bar-year-field" id="tribe-bar-year-field" placeholder="'.date('Y').'">'
     );
 
@@ -57,7 +57,7 @@ function mro_cit_setup_year_field_in_query( $query ){
 
 	    //Check that input is a year
 	    if ( $year>1000 && $year<2100 ) {
-	      	write_log($year.' is a year!');
+	      	// write_log($year.' is a year!');
 
 	      	$first_date = $_REQUEST['tribe-bar-year-field'].'-01-01 00:00:00';
 	      	$second_date = $_REQUEST['tribe-bar-year-field'].'-12-31 23:59:59';
@@ -82,17 +82,9 @@ function mro_cit_setup_year_field_in_query( $query ){
 		           'compare' => 'BETWEEN'
 	            )
 	        ) );
-
-	        // var_dump($query);
-
-
-
-	    } else {
-	    	write_log($year.' is NOT a year!');
 	    }
-        // do stuff
     }
- 
+
     return $query;
 }
 

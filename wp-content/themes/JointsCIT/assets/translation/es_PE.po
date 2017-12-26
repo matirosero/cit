@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JointsCIT\n"
-"POT-Creation-Date: 2017-12-09 12:11-0600\n"
-"PO-Revision-Date: 2017-12-09 12:24-0600\n"
+"POT-Creation-Date: 2017-12-26 01:20-0600\n"
+"PO-Revision-Date: 2017-12-26 01:21-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_PE\n"
@@ -227,6 +227,10 @@ msgstr ""
 msgid "New Custom Tag Name"
 msgstr ""
 
+#: assets/functions/eventcal-helpers.php:40
+msgid "Events by year"
+msgstr "Eventos en el año"
+
 #: assets/functions/hooks.php:13
 msgid "Read more"
 msgstr "Leer más"
@@ -307,11 +311,11 @@ msgstr "Comentarios más recientes"
 msgid "Comments are closed."
 msgstr "Comentarios cerrados."
 
-#: parts/content-byline-report.php:4
+#: parts/content-byline.php:5
 msgid "Prepared by "
 msgstr "Preparado por "
 
-#: parts/content-byline.php:5
+#: parts/content-byline.php:7
 msgid "By "
 msgstr "Por "
 
@@ -340,13 +344,13 @@ msgid "Read more..."
 msgstr "Leer más..."
 
 #: parts/loop-archive.php:40 parts/loop-board-member.php:22
-#: parts/loop-cit_report.php:15 parts/loop-past-event.php:175
+#: parts/loop-cit_report.php:15 parts/loop-single-past-event.php:176
 #: parts/loop-single-report.php:61 parts/loop-single.php:15
 msgid "Tags:"
 msgstr "Etiquetas:"
 
 #: parts/loop-board-member.php:21 parts/loop-cit_report.php:14
-#: parts/loop-past-event.php:174 parts/loop-single-report.php:60
+#: parts/loop-single-past-event.php:175 parts/loop-single-report.php:60
 #: parts/loop-single.php:14
 msgid "Pages:"
 msgstr "Páginas:"
@@ -385,7 +389,7 @@ msgctxt "jointswp"
 msgid "Search"
 msgstr "Buscar"
 
-#: sidebar.php:12
+#: sidebar.php:14
 msgid "Please activate some Widgets."
 msgstr ""
 
@@ -412,7 +416,7 @@ msgstr "Anterior %s"
 msgid "Next %s"
 msgstr "Siguiente %s"
 
-#: tribe-events/list/single-event.php:95
+#: tribe-events/list/single-event.php:108
 msgid "Find out more"
 msgstr "Más información"
 
@@ -430,7 +434,7 @@ msgctxt "%s Events plural label"
 msgid "All %s"
 msgstr ""
 
-#: tribe-events/single-event.php:53 tribe-events/single-event.php:86
+#: tribe-events/single-event.php:108
 #, php-format
 msgid "%s Navigation"
 msgstr "%s Navegación"
@@ -507,6 +511,9 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://www.matilderosero.com"
 msgstr ""
+
+#~ msgid "Year"
+#~ msgstr "Año"
 
 #~ msgid "... Read more &raquo;"
 #~ msgstr "… Seguir leyendo &raquo;"

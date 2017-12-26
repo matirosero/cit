@@ -6695,6 +6695,16 @@ PAST EVENTS STYLES
 body.single-tribe_events .past-event-content .tribe-events-cal-links {
   display: none !important; }
 
+.tribe-bar-year-field-filter {
+  padding: 15px;
+  float: left;
+  width: 25%;
+  margin-bottom: 0; }
+  .tribe-bar-collapse .tribe-bar-year-field-filter {
+    width: 100%;
+    float: none;
+    clear: both; }
+
 /*********************
 PROFILE STYLES
 *********************/
