@@ -44,9 +44,11 @@ function mro_cit_setup_year_field_in_bar( $filters ) {
 }
 
 
-add_filter( 'tribe_events_pre_get_posts', 'setup_tribe_field_in_query', 10, 1 );
- 
-function setup_tribe_field_in_query( $query ){
+/*
+ * Handle Year filter
+ */
+add_filter( 'tribe_events_pre_get_posts', 'mro_cit_setup_year_field_in_query', 10, 1 );
+function mro_cit_setup_year_field_in_query( $query ){
     if ( !empty( $_REQUEST['tribe-bar-year-field'] ) ) {
 
 		$year = $_REQUEST['tribe-bar-year-field'];
@@ -55,6 +57,20 @@ function setup_tribe_field_in_query( $query ){
 	    //Check that input is a year
 	    if ( $year>1000 && $year<2100 ) {
 	      	write_log($year.' is a year!');
+
+
+	        $query->set( 'tax_query', array(
+	            // 'relation' => 'OR',
+	            array(
+	                'taxonomy' => 'mro_cit_event_year',
+	                'field' => 'slug',
+	                'terms' => 'eventos-y-actividades-2014',
+	                'operator' => 'IN'
+	            )
+	        ) );
+
+
+
 	    } else {
 	    	write_log($year.' is NOT a year!');
 	    }
