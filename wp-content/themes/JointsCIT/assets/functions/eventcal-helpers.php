@@ -34,10 +34,11 @@ function mro_cit_remove_search_from_bar( $filters ) {
  */
 add_filter( 'tribe-events-bar-filters',  'mro_cit_setup_year_field_in_bar', 1, 1 );
 function mro_cit_setup_year_field_in_bar( $filters ) {
+    $filters = array_reverse($filters);
     $filters['tribe-bar-year-field'] = array(
         'name' => 'tribe-bar-year-field',
         'caption' => 'Year',
-        'html' => '<input type="text" name="tribe-bar-year-field" id="tribe-bar-year-field">'
+        'html' => '<input type="text" name="tribe-bar-year-field" id="tribe-bar-year-field" placeholder="'.date('Y').'">'
     );
 
     return $filters;
@@ -58,16 +59,31 @@ function mro_cit_setup_year_field_in_query( $query ){
 	    if ( $year>1000 && $year<2100 ) {
 	      	write_log($year.' is a year!');
 
+	      	$first_date = $_REQUEST['tribe-bar-year-field'].'-01-01 00:00:00';
+	      	$second_date = $_REQUEST['tribe-bar-year-field'].'-12-31 23:59:59';
+	      	// write_log($date);
 
-	        $query->set( 'tax_query', array(
+	        // $query->set( 'tax_query', array(
+	        //     // 'relation' => 'OR',
+	        //     array(
+	        //         'taxonomy' => 'mro_cit_event_year',
+	        //         'field' => 'slug',
+	        //         'terms' => 'eventos-y-actividades-2014',
+	        //         'operator' => 'IN'
+	        //     )
+	        // ) );
+
+			$query->set( 'meta_query', array(
 	            // 'relation' => 'OR',
 	            array(
-	                'taxonomy' => 'mro_cit_event_year',
-	                'field' => 'slug',
-	                'terms' => 'eventos-y-actividades-2014',
-	                'operator' => 'IN'
+		            'key' => '_EventStartDate',
+		            'value' => array($first_date, $second_date ),
+		           'type' => 'DATE',
+		           'compare' => 'BETWEEN'
 	            )
 	        ) );
+
+	        // var_dump($query);
 
 
 

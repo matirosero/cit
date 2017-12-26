@@ -55,9 +55,6 @@ $organizer = tribe_get_organizer();
 					echo tribe_get_start_date( get_the_ID(), false, 'F j, Y' ); 
 					?></span>
 				<?php else : ?> 
-
-
-
 					<?php echo tribe_events_event_schedule_details() ?>
 				<?php endif; ?> 
 
