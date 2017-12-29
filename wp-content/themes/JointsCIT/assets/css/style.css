@@ -7055,6 +7055,13 @@ PLUGIN STYLES
   font-weight: normal !important;
   text-align: center; }
 
+.tribe-events-list-separator-month {
+  margin: 0 0 36px 0; }
+  .tribe-events-list-separator-month:first-child {
+    margin: 36px 0; }
+  .tribe-events-list-separator-month + .type-tribe_events.tribe-events-first {
+    padding-top: 0; }
+
 .tribe-events-day-time-slot h5, .tribe-events-day-time-slot .profile-block h3, .profile-block .tribe-events-day-time-slot h3, .tribe-events-day-time-slot .profile-block .single-cit_past_event .section-title, .profile-block .single-cit_past_event .tribe-events-day-time-slot .section-title, .tribe-events-day-time-slot .single-cit_past_event .profile-block .section-title, .single-cit_past_event .profile-block .tribe-events-day-time-slot .section-title, .tribe-events-day-time-slot .profile-block
 .single-tribe_events .section-title, .profile-block
 .single-tribe_events .tribe-events-day-time-slot .section-title, .tribe-events-day-time-slot
@@ -7077,6 +7084,9 @@ PLUGIN STYLES
   border-radius: 3px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
+
+p:last-child, #tribe-events .tribe-events-content p:last-child {
+  margin-bottom: 0; }
 
 .tribe-events-list .tribe-events-loop .tribe-event-featured {
   background-color: #006cb5 !important; }

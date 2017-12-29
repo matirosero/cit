@@ -1,5 +1,10 @@
 <?php
 
+function force_relative_url($url) {
+    return preg_replace ('/^(http)?s?:?\/\/[^\/]*(\/?.*)$/i', '$2', '' . $url);
+}
+
+
 function crunchify_print_scripts_styles() {
 
     $result = [];
