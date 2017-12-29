@@ -357,3 +357,12 @@
 .tribe-theme-twentyfifteen .tribe-mini-calendar div[id*='daynum-'] a {
 	padding: 5px 0 15px 0;
 }
+
+@include breakpoint(770px) { 
+	.tribe-events-list {
+		.tribe-events-venue-details {
+			margin-bottom: 0;
+			color: red;
+		}
+	}
+}

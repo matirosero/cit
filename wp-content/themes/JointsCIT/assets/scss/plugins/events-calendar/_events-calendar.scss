@@ -133,8 +133,13 @@ p {
 }
 
 
-.tribe-events-cal-links .tribe-events-button {
-	margin-right: 0.5rem !important;
+.tribe-events-cal-links {
+	.tribe-events-button {
+		margin-right: 0.5rem !important;
+	}
+	body.single-tribe_events .past-event-content & {
+		display: none !important;
+	}
 }
 
 #tribe-bar-form .tribe-bar-submit input[type=submit] {
