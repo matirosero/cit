@@ -63,16 +63,6 @@ function mro_cit_setup_year_field_in_query( $query ){
 	      	$second_date = $_REQUEST['tribe-bar-year-field'].'-12-31 23:59:59';
 	      	// write_log($date);
 
-	        // $query->set( 'tax_query', array(
-	        //     // 'relation' => 'OR',
-	        //     array(
-	        //         'taxonomy' => 'mro_cit_event_year',
-	        //         'field' => 'slug',
-	        //         'terms' => 'eventos-y-actividades-2014',
-	        //         'operator' => 'IN'
-	        //     )
-	        // ) );
-
 			$query->set( 'meta_query', array(
 	            // 'relation' => 'OR',
 	            array(
@@ -82,6 +72,12 @@ function mro_cit_setup_year_field_in_query( $query ){
 		           'compare' => 'BETWEEN'
 	            )
 	        ) );
+
+	        // $query->set( 'eventDisplay', 'past' );
+
+	        // $query->tribe_is_past = true;
+
+	        // 'eventDisplay' => 'custom',
 	    }
     }
 
