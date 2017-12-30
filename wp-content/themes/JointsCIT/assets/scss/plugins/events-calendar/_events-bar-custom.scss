@@ -1,5 +1,5 @@
 .tribe-bar-year-field-filter {
-	padding: 10px;
+	padding: 15px;
 	float: left;
 	width: 25%;
 	margin-bottom: 0;
@@ -9,6 +9,7 @@
 		clear: both;
 		padding: 15px;
 	}
+	.tribe-bar-mini & {
+		padding: 10px;
+	}
 }
-
-

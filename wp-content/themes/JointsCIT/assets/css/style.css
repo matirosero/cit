@@ -7134,7 +7134,7 @@ body.single-tribe_events .past-event-content .tribe-events-cal-links {
   padding: .25rem 1rem !important; }
 
 .tribe-bar-year-field-filter {
-  padding: 10px;
+  padding: 15px;
   float: left;
   width: 25%;
   margin-bottom: 0; }
@@ -7143,6 +7143,8 @@ body.single-tribe_events .past-event-content .tribe-events-cal-links {
     float: none;
     clear: both;
     padding: 15px; }
+  .tribe-bar-mini .tribe-bar-year-field-filter {
+    padding: 10px; }
 
 .gform_body ul {
   list-style: none outside none;
