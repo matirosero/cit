@@ -82,6 +82,8 @@ function mro_cit_setup_year_field_in_query( $query ){
 		           'compare' => 'BETWEEN'
 	            )
 	        ) );
+
+	        //https://theeventscalendar.com/knowledgebase/set-calendar-to-show-specific-month/ Look here
 	    }
     }
 
