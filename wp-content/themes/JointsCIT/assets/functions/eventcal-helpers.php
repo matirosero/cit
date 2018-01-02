@@ -5,7 +5,7 @@
 // Changes past event views to reverse chronological order
 function mro_cit_past_reverse_chronological ($post_object) {
 
-	$past_ajax = (defined( 'DOING_AJAX' ) && DOING_AJAX && $_REQUEST['tribe_event_display'] === 'past') ? true : false;
+	$past_ajax = (defined( 'DOING_AJAX' ) && DOING_AJAX && ( $_REQUEST['tribe_event_display'] === 'past' || !empty( $_REQUEST['tribe-bar-year-field'] ) ) ) ? true : false;
 
 	if(tribe_is_past() || $past_ajax) {
 		$post_object = array_reverse($post_object);
@@ -73,21 +73,110 @@ function mro_cit_setup_year_field_in_query( $query ){
 	        //     )
 	        // ) );
 
-			$query->set( 'meta_query', array(
-	            // 'relation' => 'OR',
-	            array(
-		            'key' => '_EventStartDate',
-		            'value' => array($first_date, $second_date ),
-		           'type' => 'DATE',
-		           'compare' => 'BETWEEN'
-	            )
-	        ) );
-
+			// $query->set( 'meta_query', array(
+	  //           // 'relation' => 'OR',
+	  //           array(
+		 //            'key' => '_EventStartDate',
+		 //            'value' => array($first_date, $second_date ),
+		 //           'type' => 'DATE',
+		 //           'compare' => 'BETWEEN'
+	  //           )
+	  //       ) );
 	        //https://theeventscalendar.com/knowledgebase/set-calendar-to-show-specific-month/ Look here
+
+		    // Change this to whatever date you prefer
+		    $default_date = $first_date;
+		    // Use the preferred default date
+		    $query->set( 'eventDate', $default_date );
+		    $query->set( 'start_date', $default_date );
+		    $query->set( 'end_date', $second_date );
+		    $_REQUEST['tribe-bar-date'] = $default_date;
+		    // $query->set( 'eventDate', $_REQUEST['tribe-bar-date'] );
+		    // $query->set( 'eventDisplay', $query->get( 'eventDisplay', Tribe__Events__Main::instance()->displaying ) );
+
+		    // $query->set( 'order', 'ASC' );
+
+		    // $query->set( 'posts_per_page', (int) tribe_get_option( 'postsPerPage', -1 ) );
+
+		    $query->set( 'posts_per_page', -1 );
+
+
 	    }
     }
 
     return $query;
+}
+
+
+/*
+ * Modify events title
+ */
+add_filter( 'tribe_get_events_title', 'mro_cit_tribe_modify_events_title', 10, 2 );
+function mro_cit_tribe_modify_events_title( $title, $depth ) {
+
+	global $wp_query;
+
+	$events_label_plural = tribe_get_event_label_plural();
+
+	if ( $wp_query->get( 'featured' ) ) {
+		$events_label_plural = sprintf( _x( 'Featured %s', 'featured events title', 'the-events-calendar'), $events_label_plural );
+	}
+
+	$tribe_ecp = Tribe__Events__Main::instance();
+
+	if ( is_single() && tribe_is_event() ) {
+		// For single events, the event title itself is required
+		$title = get_the_title();
+	} else {
+		// For all other cases, start with 'upcoming events'
+		$title = sprintf( esc_html__( 'Upcoming %s', 'the-events-calendar' ), $events_label_plural );
+	}
+
+
+	// If there's a date selected in the tribe bar, show the date range of the currently showing events
+	
+	// MRo edit for Year filter
+	if ( isset( $_REQUEST['tribe-bar-year-field'] ) && $wp_query->have_posts() ) {
+
+		$year = $_REQUEST['tribe-bar-year-field'];
+
+		$title = sprintf( __( '%1$s for %2$s', 'jointswp' ), $events_label_plural, $year );
+	
+	// End MRo edit (originally if statemente starts here)
+	} elseif ( isset( $_REQUEST['tribe-bar-date'] ) && $wp_query->have_posts() ) {
+		$first_returned_date = tribe_get_start_date( $wp_query->posts[0], false, Tribe__Date_Utils::DBDATEFORMAT );
+		$first_event_date    = tribe_get_start_date( $wp_query->posts[0], false );
+		$last_event_date     = tribe_get_end_date( $wp_query->posts[ count( $wp_query->posts ) - 1 ], false );
+		// If we are on page 1 then we may wish to use the *selected* start date in place of the
+		// first returned event date
+		if ( 1 == $wp_query->get( 'paged' ) && $_REQUEST['tribe-bar-date'] < $first_returned_date ) {
+			$first_event_date = tribe_format_date( $_REQUEST['tribe-bar-date'], false );
+		}
+		$title = sprintf( __( '%1$s for %2$s - %3$s', 'the-events-calendar' ), $events_label_plural, $first_event_date, $last_event_date );
+	} elseif ( tribe_is_past() ) {
+		$title = sprintf( esc_html__( 'Past %s', 'the-events-calendar' ), $events_label_plural );
+	}
+	if ( tribe_is_month() ) {
+		$title = sprintf(
+			esc_html_x( '%1$s for %2$s', 'month view', 'the-events-calendar' ),
+			$events_label_plural,
+			date_i18n( tribe_get_date_option( 'monthAndYearFormat', 'F Y' ), strtotime( tribe_get_month_view_date() ) )
+		);
+	}
+	// day view title
+	if ( tribe_is_day() ) {
+		$title = sprintf(
+			esc_html_x( '%1$s for %2$s', 'day_view', 'the-events-calendar' ),
+			$events_label_plural,
+			date_i18n( tribe_get_date_format( true ), strtotime( $wp_query->get( 'start_date' ) ) )
+		);
+	}
+	if ( is_tax( $tribe_ecp->get_event_taxonomy() ) && $depth ) {
+		$cat = get_queried_object();
+		$title = '<a href="' . esc_url( tribe_get_events_link() ) . '">' . $title . '</a>';
+		$title .= ' &#8250; ' . $cat->name;
+	}
+	return $title;
 }
 
 
