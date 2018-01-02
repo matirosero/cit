@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JointsCIT\n"
-"POT-Creation-Date: 2017-12-26 01:20-0600\n"
-"PO-Revision-Date: 2017-12-26 01:21-0600\n"
+"POT-Creation-Date: 2018-01-02 16:09-0600\n"
+"PO-Revision-Date: 2018-01-02 16:10-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_PE\n"
@@ -231,6 +231,44 @@ msgstr ""
 msgid "Events by year"
 msgstr "Eventos en el año"
 
+#: assets/functions/eventcal-helpers.php:103
+#, php-format
+msgctxt "featured events title"
+msgid "Featured %s"
+msgstr ""
+
+#: assets/functions/eventcal-helpers.php:113
+#, php-format
+msgid "Upcoming %s"
+msgstr ""
+
+#: assets/functions/eventcal-helpers.php:124
+#, php-format
+msgid "%1$s for %2$s"
+msgstr "%1$s del %2$s"
+
+#: assets/functions/eventcal-helpers.php:136
+#, php-format
+msgid "%1$s for %2$s - %3$s"
+msgstr ""
+
+#: assets/functions/eventcal-helpers.php:138
+#, php-format
+msgid "Past %s"
+msgstr ""
+
+#: assets/functions/eventcal-helpers.php:142
+#, php-format
+msgctxt "month view"
+msgid "%1$s for %2$s"
+msgstr ""
+
+#: assets/functions/eventcal-helpers.php:150
+#, php-format
+msgctxt "day_view"
+msgid "%1$s for %2$s"
+msgstr ""
+
 #: assets/functions/hooks.php:13
 msgid "Read more"
 msgstr "Leer más"
@@ -343,14 +381,14 @@ msgstr "Falta algo. Intente revisar nuevamente."
 msgid "Read more..."
 msgstr "Leer más..."
 
-#: parts/loop-archive.php:40 parts/loop-board-member.php:22
-#: parts/loop-cit_report.php:15 parts/loop-single-past-event.php:176
+#: parts/loop-archive.php:40 parts/loop-cit_report.php:15
+#: parts/loop-single-past-event.php:176 parts/loop-single-profile.php:22
 #: parts/loop-single-report.php:61 parts/loop-single.php:15
 msgid "Tags:"
 msgstr "Etiquetas:"
 
-#: parts/loop-board-member.php:21 parts/loop-cit_report.php:14
-#: parts/loop-single-past-event.php:175 parts/loop-single-report.php:60
+#: parts/loop-cit_report.php:14 parts/loop-single-past-event.php:175
+#: parts/loop-single-profile.php:21 parts/loop-single-report.php:60
 #: parts/loop-single.php:14
 msgid "Pages:"
 msgstr "Páginas:"
