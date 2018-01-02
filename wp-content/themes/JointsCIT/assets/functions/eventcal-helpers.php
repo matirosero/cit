@@ -3,17 +3,17 @@
  * Past events list in reverse chronological order
  */
 // Changes past event views to reverse chronological order
-function mro_cit_past_reverse_chronological ($post_object) {
+// function mro_cit_past_reverse_chronological ($post_object) {
 
-	$past_ajax = (defined( 'DOING_AJAX' ) && DOING_AJAX && ( $_REQUEST['tribe_event_display'] === 'past' || !empty( $_REQUEST['tribe-bar-year-field'] ) ) ) ? true : false;
+// 	$past_ajax = (defined( 'DOING_AJAX' ) && DOING_AJAX && $_REQUEST['tribe_event_display'] === 'past' ) ? true : false;
 
-	if(tribe_is_past() || $past_ajax) {
-		$post_object = array_reverse($post_object);
-	}
+// 	if(tribe_is_past() || $past_ajax || !empty( $_REQUEST['tribe-bar-year-field'] ) ) {
+// 		$post_object = array_reverse($post_object);
+// 	}
 
-	return $post_object;
-}
-add_filter('the_posts', 'mro_cit_past_reverse_chronological', 100);
+// 	return $post_object;
+// }
+// add_filter('the_posts', 'mro_cit_past_reverse_chronological', 100);
 
 
 /*
@@ -63,25 +63,6 @@ function mro_cit_setup_year_field_in_query( $query ){
 	      	$second_date = $_REQUEST['tribe-bar-year-field'].'-12-31 23:59:59';
 	      	// write_log($date);
 
-	        // $query->set( 'tax_query', array(
-	        //     // 'relation' => 'OR',
-	        //     array(
-	        //         'taxonomy' => 'mro_cit_event_year',
-	        //         'field' => 'slug',
-	        //         'terms' => 'eventos-y-actividades-2014',
-	        //         'operator' => 'IN'
-	        //     )
-	        // ) );
-
-			// $query->set( 'meta_query', array(
-	  //           // 'relation' => 'OR',
-	  //           array(
-		 //            'key' => '_EventStartDate',
-		 //            'value' => array($first_date, $second_date ),
-		 //           'type' => 'DATE',
-		 //           'compare' => 'BETWEEN'
-	  //           )
-	  //       ) );
 	        //https://theeventscalendar.com/knowledgebase/set-calendar-to-show-specific-month/ Look here
 
 		    // Change this to whatever date you prefer

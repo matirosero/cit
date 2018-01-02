@@ -37,10 +37,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php do_action( 'tribe_events_before_header' ); ?>
 	<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
 
-		<!-- Header Navigation -->
-		<?php do_action( 'tribe_events_before_header_nav' ); ?>
-		<?php tribe_get_template_part( 'list/nav', 'header' ); ?>
-		<?php do_action( 'tribe_events_after_header_nav' ); ?>
+		<?php
+		// MRo change links if years
+		if ( empty( $_REQUEST['tribe-bar-year-field'] ) ) { ?>
+			<!-- Header Navigation -->
+			<?php do_action( 'tribe_events_before_header_nav' ); ?>
+			<?php tribe_get_template_part( 'list/nav', 'header' ); ?>
+			<?php do_action( 'tribe_events_after_header_nav' ); ?>
+		<?php } ?>
+
 
 	</div>
 	<!-- #tribe-events-header -->
@@ -57,10 +62,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php do_action( 'tribe_events_before_footer' ); ?>
 	<div id="tribe-events-footer">
 
-		<!-- Footer Navigation -->
-		<?php do_action( 'tribe_events_before_footer_nav' ); ?>
-		<?php tribe_get_template_part( 'list/nav', 'footer' ); ?>
-		<?php do_action( 'tribe_events_after_footer_nav' ); ?>
+		<?php
+		// MRo change links if years
+		if ( empty( $_REQUEST['tribe-bar-year-field'] ) ) { ?>
+			<!-- Footer Navigation -->
+			<?php do_action( 'tribe_events_before_footer_nav' ); ?>
+			<?php tribe_get_template_part( 'list/nav', 'footer' ); ?>
+			<?php do_action( 'tribe_events_after_footer_nav' ); ?>
+		<?php } ?>
 
 	</div>
 	<!-- #tribe-events-footer -->
