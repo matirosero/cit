@@ -5798,10 +5798,9 @@ a.thumbnail {
   .top-bar .top-bar-left,
   .top-bar .top-bar-right {
     width: 100%; }
-  @media print, screen and (min-width: 40em) {
-    .top-bar .top-bar-left,
-    .top-bar .top-bar-right {
-      width: auto; } }
+  .top-bar .top-bar-left,
+  .top-bar .top-bar-right {
+    width: auto; }
   @media screen and (max-width: 63.9375em) {
     .top-bar.stacked-for-medium .top-bar-left,
     .top-bar.stacked-for-medium .top-bar-right {
@@ -6296,10 +6295,7 @@ NAVIGATION STYLES
     .top-bar {
       background-color: #fefefe; }
       .top-bar .title-area {
-        width: 130px;
-        position: absolute;
-        left: 50%;
-        margin-left: -65px; }
+        width: 130px; }
       .top-bar .menu {
         background-color: #fefefe; } }
   @media print, screen and (min-width: 40em) {
