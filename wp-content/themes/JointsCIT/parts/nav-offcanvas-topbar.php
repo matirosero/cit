@@ -39,7 +39,7 @@
 	</div>
 
 	<!-- Main tablet menu: medium right -->
-	<div id="main-tablet-menu" class="top-bar-left float-left show-for-medium-only">
+	<div id="main-tablet-menu" class="top-bar-right float-right show-for-medium-only">
 		<?php joints_top_tablet_nav(); ?>
 	</div>
 
