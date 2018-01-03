@@ -28,9 +28,12 @@
 			}
 		}
 
-		// @include breakpoint(large) {
-		// 	@include grid-column($columns: 66.66667%, $gutters:100px);
-		// }
+		@include breakpoint(medium) {
+			@include grid-column($columns: 100%, $gutters:100px);
+		}
+		@include breakpoint(large) {
+			@include grid-column($columns: 66.66667%, $gutters:30px);
+		}
 		@include breakpoint(xlarge) {
 			@include grid-column($columns: 75%, $gutters:150px);
 		}
@@ -45,13 +48,14 @@
 	}
 
 	@include breakpoint(medium) {
-		@include static-contentarea;
+		// @include static-contentarea;
 		#main {
 			padding-top: 2rem;
 		}
 	}
 
 	@include breakpoint(large) {
+		@include static-contentarea;
 		background: color('grey', 'light');
 
 		#inner-content {

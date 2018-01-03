@@ -6220,6 +6220,22 @@ LINK Layout
   @media print, screen and (min-width: 40em) {
     body:not(.single):not(.post-type-archive-tribe_events):not(.page) #content #main > article:first-of-type .entry-content {
       font-size: 1.25rem; } }
+  @media print, screen and (min-width: 40em) {
+    #content #main {
+      width: 100%;
+      float: left;
+      padding-right: 2.84091rem;
+      padding-left: 2.84091rem; }
+      #content #main:last-child:not(:first-child) {
+        float: right; } }
+  @media print, screen and (min-width: 64em) {
+    #content #main {
+      width: 66.66667%;
+      float: left;
+      padding-right: 0.85227rem;
+      padding-left: 0.85227rem; }
+      #content #main:last-child:not(:first-child) {
+        float: right; } }
   @media screen and (min-width: 75em) {
     #content #main {
       width: 75%;
@@ -6242,15 +6258,14 @@ LINK Layout
   padding-bottom: 2rem; }
 
 @media print, screen and (min-width: 40em) {
-  #content {
-    margin-left: 210px;
-    float: none;
-    width: auto; }
-    #content #main {
-      padding-top: 2rem; } }
+  #content #main {
+    padding-top: 2rem; } }
 
 @media print, screen and (min-width: 64em) {
   #content {
+    margin-left: 210px;
+    float: none;
+    width: auto;
     background: #F5F5F5; }
     #content #inner-content {
       padding: 0rem; }
