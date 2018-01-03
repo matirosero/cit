@@ -7,9 +7,13 @@
 			<li><a class="site-logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_cit.png" alt="<?php bloginfo('name'); ?>" /></a></li>
 		</ul>
 	</div>
-	<div id="main-menu" class="top-bar-left float-left show-for-medium">
+	
+	<!-- Main menu: large left -->
+	<div id="main-menu" class="top-bar-left float-left show-for-large">
 		<?php joints_top_nav(); ?>
 	</div>
+	
+	<!-- Search bar: large right -->
 	<div class="top-bar-right top-bar-search show-for-large">
 
 		<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
@@ -25,10 +29,18 @@
 		</form>
 
     </div>
-	<div class="top-bar-right float-right show-for-small-only">
+
+    <!-- Menu icon: small-medium right -->
+	<div class="top-bar-right float-right hide-for-large">
 		<ul class="menu">
 			<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
-			<li><a data-toggle="off-canvas"><i class="icon-menu"></i><?php _e( 'Menu', 'jointswp' ); ?></a></li>
+			<li><a data-toggle="off-canvas"><i class="icon-menu"></i><span class="show-for-small-only"><?php _e( 'Menu', 'jointswp' ); ?></span><span class="show-for-medium"><?php _e( 'Más', 'jointswp' ); ?></span></a></li>
 		</ul>
 	</div>
+
+	<!-- Main tablet menu: medium right -->
+	<div id="main-tablet-menu" class="top-bar-left float-left show-for-medium-only">
+		<?php joints_top_tablet_nav(); ?>
+	</div>
+
 </div>
