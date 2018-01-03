@@ -29,11 +29,6 @@
         				// echo 'ID is '.$download_id.'<br />';
         				echo do_shortcode( '[ddownload id="'.$download_id.'"]' );
 
-        			// If download shortcode is used
-                    elseif ( get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true ) ):
-
-        				$shortcode = get_post_meta( $post->ID, 'mro_cit_report_download_shortcode', true );
-        				echo apply_filters( 'the_content', $shortcode );
         			endif; ?>
 
                     <p>Haga click para descargar y leer el informe.</p>
