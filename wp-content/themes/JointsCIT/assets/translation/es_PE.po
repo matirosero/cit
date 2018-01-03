@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JointsCIT\n"
-"POT-Creation-Date: 2018-01-02 16:09-0600\n"
-"PO-Revision-Date: 2018-01-02 16:10-0600\n"
+"POT-Creation-Date: 2018-01-03 11:27-0600\n"
+"PO-Revision-Date: 2018-01-03 11:28-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_PE\n"
@@ -240,7 +240,7 @@ msgstr ""
 #: assets/functions/eventcal-helpers.php:113
 #, php-format
 msgid "Upcoming %s"
-msgstr ""
+msgstr "Próximos %s"
 
 #: assets/functions/eventcal-helpers.php:124
 #, php-format
@@ -383,12 +383,12 @@ msgstr "Leer más..."
 
 #: parts/loop-archive.php:40 parts/loop-cit_report.php:15
 #: parts/loop-single-past-event.php:176 parts/loop-single-profile.php:22
-#: parts/loop-single-report.php:61 parts/loop-single.php:15
+#: parts/loop-single-report.php:56 parts/loop-single.php:15
 msgid "Tags:"
 msgstr "Etiquetas:"
 
 #: parts/loop-cit_report.php:14 parts/loop-single-past-event.php:175
-#: parts/loop-single-profile.php:21 parts/loop-single-report.php:60
+#: parts/loop-single-profile.php:21 parts/loop-single-report.php:55
 #: parts/loop-single.php:14
 msgid "Pages:"
 msgstr "Páginas:"
