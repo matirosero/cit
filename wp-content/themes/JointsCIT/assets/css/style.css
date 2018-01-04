@@ -6518,9 +6518,9 @@ OFFCANVAS STYLES
 DOWNLOADS
 *********************/
 .download-box, .login {
-  padding-top: 1.25rem;
   background: #fafafa;
   border: 1px solid #eee;
+  padding-top: 1.25rem;
   text-align: center; }
   .download-box .ddownload-link, .login .ddownload-link {
     margin-bottom: 0.5rem; }
@@ -6533,7 +6533,9 @@ DOWNLOADS
     .download-box.float-left, .float-left.login, .download-box.float-right, .float-right.login {
       max-width: 235px; }
     .download-box.float-left, .float-left.login {
-      margin-right: 40px; } }
+      margin-right: 40px; }
+    .heateor_sss_horizontal_sharing + .download-box, .heateor_sss_horizontal_sharing + .login {
+      clear: left; } }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -6652,7 +6654,7 @@ POSTS & CONTENT STYLES
 
 .single-post .entry-content p:first-of-type, .single-post .entry-content #tribe-events .tribe-events-content p:first-of-type, #tribe-events .tribe-events-content .single-post .entry-content p:first-of-type {
   font-size: 1.25rem; }
-  .single-post .entry-content p:first-of-type:first-child:first-letter, .single-post .entry-content #tribe-events .tribe-events-content p:first-of-type:first-child:first-letter, #tribe-events .tribe-events-content .single-post .entry-content p:first-of-type:first-child:first-letter {
+  .single-post .entry-content p:first-of-type:first-letter, .single-post .entry-content #tribe-events .tribe-events-content p:first-of-type:first-letter, #tribe-events .tribe-events-content .single-post .entry-content p:first-of-type:first-letter {
     box-sizing: border-box;
     float: left;
     font-size: 4.0625rem;
@@ -7090,6 +7092,15 @@ FOUNDATION STYLES
 /*********************
 PLUGIN STYLES
 *********************/
+.heateor_sss_horizontal_sharing {
+  margin-bottom: 1rem; }
+  @media only screen and (min-width: 751px) {
+    .single-cit_report .heateor_sss_horizontal_sharing {
+      float: left;
+      clear: left;
+      width: 235px;
+      margin-right: 40px; } }
+
 .caldera_forms_form .form-group {
   margin-bottom: 1rem; }
   .caldera_forms_form .form-group input {

@@ -6,8 +6,10 @@
     </header> <!-- end article header -->
 
     <section class="entry-content" itemprop="articleBody">
-
-    	<?php
+        <?php if ( shortcode_exists( 'Sassy_Social_Share' ) ) {
+            echo do_shortcode( '[Sassy_Social_Share title="Compartir"]' );
+        } ?>
+        <?php
 
         /*
          * Download report
@@ -46,7 +48,6 @@
     	<?php endif;
     	?>
 
-		<?php the_post_thumbnail('full'); ?>
 		<?php the_content(); ?>
 
 	</section> <!-- end article section -->

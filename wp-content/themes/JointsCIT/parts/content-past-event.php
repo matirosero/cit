@@ -35,11 +35,8 @@ if ( $pdfs || $video_text || $videos || $gallery_text || $gallery || $evaluation
 						<li><a href="#event-evaluation">Evaluación</a></li>
 					<?php endif; ?>
 
-				</ul>						
+				</ul>
 			</div>
-			
-
-
 		</div>
 	</div>
 
@@ -48,6 +45,9 @@ if ( $pdfs || $video_text || $videos || $gallery_text || $gallery || $evaluation
 		<section id="event-information" data-magellan-target="event-information">
 
 			<?php the_post_thumbnail('full'); ?>
+			<?php if ( shortcode_exists( 'Sassy_Social_Share' ) ) {
+	            echo do_shortcode( '[Sassy_Social_Share title="Compartir"]' );
+	        } ?>
 			<?php the_content(); ?>
 
 		</section>

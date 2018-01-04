@@ -1,7 +1,6 @@
 .download-box {
+	@include light-grey-box;
 	padding-top: 1.25rem;
-	background: #fafafa;
-    border: 1px solid #eee;
 	text-align: center;
 	.ddownload-link {
 		margin-bottom: 0.5rem;
@@ -20,5 +19,10 @@
 		&.float-left {
 			margin-right: map-get($grid-column-gutter, medium);
 		}
+
+		.heateor_sss_horizontal_sharing + & {
+			clear: left;
+		}
 	}
 }
+

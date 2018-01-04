@@ -1,5 +1,17 @@
 <?php
 
+// function mro_cit_social_share ($content) {
+// 	global $post;
+// 	if ( shortcode_exists( 'Sassy_Social_Share' ) ) {
+// 		if ( is_singular('post') || is_singular('cit_report') ) {
+// 			$content = do_shortcode( '[Sassy_Social_Share title="Compartir"]' ).$content;
+// 		}
+// 	}
+// 	return $content;
+// }
+// add_filter('the_content', 'mro_cit_social_share', 1);
+
+
 function clean_up_old_posts ($content) {
 
 	//Check the date

@@ -127,7 +127,7 @@ POSTS & CONTENT STYLES
 
 	.single-post & p:first-of-type {
 		font-size: $larger-font-size;
-		&:first-child:first-letter {
+		&:first-letter {
 			box-sizing: border-box;
 			float: left;
 			font-size: $larger-font-size*3.25;

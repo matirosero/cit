@@ -79,6 +79,9 @@ $event_id = get_the_ID();
 				get_template_part( 'parts/content', 'past-event' );
 			else: ?>
 				<div class="tribe-events-single-event-description tribe-events-content">
+					<?php if ( shortcode_exists( 'Sassy_Social_Share' ) ) {
+			            echo do_shortcode( '[Sassy_Social_Share title="Compartir"]' );
+			        } ?>
 					<?php the_content(); ?>
 				</div>
 				<!-- .tribe-events-single-event-description -->

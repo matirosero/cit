@@ -151,3 +151,9 @@ MY GRID
   float: none;
   width: auto;
 }
+
+
+@mixin light-grey-box {
+  background: #fafafa;
+    border: 1px solid #eee;
+}
