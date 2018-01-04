@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JointsCIT\n"
-"POT-Creation-Date: 2018-01-03 11:27-0600\n"
-"PO-Revision-Date: 2018-01-03 11:28-0600\n"
+"POT-Creation-Date: 2018-01-03 22:38-0600\n"
+"PO-Revision-Date: 2018-01-03 22:38-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_PE\n"
@@ -278,16 +278,24 @@ msgid "The Main Menu"
 msgstr ""
 
 #: assets/functions/menu.php:6
-msgid "The Sidebar Menu"
+msgid "The Main Menu for Tablets"
 msgstr ""
 
 #: assets/functions/menu.php:7
+msgid "The Sidebar Menu"
+msgstr ""
+
+#: assets/functions/menu.php:8
 msgid "The Mobile/Offcanvas Menu"
 msgstr ""
 
-#: assets/functions/menu.php:8 assets/functions/menu.php:81
+#: assets/functions/menu.php:9 assets/functions/menu.php:106
 msgid "Footer Links"
 msgstr ""
+
+#: assets/functions/menu.php:68
+msgid "Log out"
+msgstr "Cerrar sesión"
 
 #: assets/functions/page-navi.php:35
 msgid "First"
@@ -377,6 +385,35 @@ msgstr "¡Oops, no se encuentra el contenido!"
 msgid "Uh Oh. Something is missing. Try double checking things."
 msgstr "Falta algo. Intente revisar nuevamente."
 
+#: parts/content-offcanvas.php:15 parts/nav-offcanvas-topbar.php:22
+#: searchform.php:4
+msgctxt "label"
+msgid "Search for:"
+msgstr "Buscar por:"
+
+#: parts/content-offcanvas.php:16 parts/nav-offcanvas-topbar.php:23
+#: searchform.php:5
+msgctxt "input placeholder"
+msgid "Search..."
+msgstr "Buscar…"
+
+#: parts/content-offcanvas.php:16 parts/nav-offcanvas-topbar.php:23
+#: searchform.php:5
+msgctxt "jointswp"
+msgid "Search for:"
+msgstr "Buscar por:"
+
+#: parts/content-offcanvas.php:19 searchform.php:8
+msgctxt "jointswp"
+msgid "Search"
+msgstr "Buscar"
+
+#: parts/content-offcanvas.php:19 parts/nav-offcanvas-topbar.php:26
+#: searchform.php:8
+msgctxt "label"
+msgid "Search"
+msgstr "Buscar"
+
 #: parts/loop-archive-grid.php:26
 msgid "Read more..."
 msgstr "Leer más..."
@@ -393,39 +430,17 @@ msgstr "Etiquetas:"
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: parts/nav-offcanvas-topbar.php:18 searchform.php:4
-msgctxt "label"
-msgid "Search for:"
-msgstr "Buscar por:"
+#: parts/nav-offcanvas-topbar.php:37
+msgid "Más"
+msgstr ""
 
-#: parts/nav-offcanvas-topbar.php:19 searchform.php:5
-msgctxt "input placeholder"
-msgid "Search..."
-msgstr "Buscar…"
-
-#: parts/nav-offcanvas-topbar.php:19 searchform.php:5
-msgctxt "jointswp"
-msgid "Search for:"
-msgstr "Buscar por:"
-
-#: parts/nav-offcanvas-topbar.php:22 searchform.php:8
-msgctxt "label"
-msgid "Search"
-msgstr "Buscar"
-
-#: parts/nav-offcanvas-topbar.php:31 parts/nav-offcanvas.php:10
-#: parts/nav-title-bar.php:7
+#: parts/nav-offcanvas.php:10 parts/nav-title-bar.php:7
 msgid "Menu"
 msgstr "Menú"
 
 #: search.php:14
 msgid "Search Results for:"
 msgstr "Resultados de búsqueda de:"
-
-#: searchform.php:8
-msgctxt "jointswp"
-msgid "Search"
-msgstr "Buscar"
 
 #: sidebar.php:14
 msgid "Please activate some Widgets."
