@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-01-02 16:21:31+0000\n"
+"PO-Revision-Date: 2018-01-02 18:36:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -74,10 +74,37 @@ msgid "Number of results found: %s"
 msgstr "S'han trobat %s resultats"
 
 #. translators: %s expands to robots.txt.
+#: admin/views/tool-file-editor.php:19
+msgid "You cannot create a %s file."
+msgstr "No podeu crear el fitxer %s."
+
+#. translators: %s expands to robots.txt.
+#. translators: %s expands to ".htaccess".
+#: admin/views/tool-file-editor.php:40 admin/views/tool-file-editor.php:67
+msgid "You cannot edit the %s file."
+msgstr "No podeu editar el fitxer %s."
+
+#. translators: %s expands to robots.txt.
+#: admin/views/tool-file-editor.php:56
+msgid "Updated %s"
+msgstr "S'ha actualitzat el %s"
+
+#. translators: %s expands to robots.txt.
+#: admin/views/tool-file-editor.php:124
+msgid "Create %s file"
+msgstr "Crea el fitxer %s"
+
+#. translators: %s expands to robots.txt.
 #. translators: %s expands to ".htaccess".
 #: admin/views/tool-file-editor.php:164 admin/views/tool-file-editor.php:214
 msgid "Edit the content of your %s:"
 msgstr "Editeu el contingut del vostre %s:"
+
+#. translators: %s expands to robots.txt.
+#. translators: %s expands to ".htaccess".
+#: admin/views/tool-file-editor.php:173 admin/views/tool-file-editor.php:223
+msgid "Save changes to %s"
+msgstr "Desa els canvis a %s"
 
 #. translators: %s expands to ".htaccess".
 #: admin/views/tool-file-editor.php:185
@@ -101,13 +128,42 @@ msgstr "Més informació"
 msgid "%1$s Integrations"
 msgstr "Integracions amb %1$s"
 
+#. translators: %1$s expands to the dependency name.
+#: admin/class-suggested-plugins.php:132
+msgid "More information about %1$s"
+msgstr "Més informació quant a %1$s"
+
+#: inc/wpseo-non-ajax-functions.php:132
+msgid "Configuration Wizard"
+msgstr "Assisten de configuració"
+
+#: admin/views/about.php:178
+msgid "QA"
+msgstr "QA"
+
 #: admin/config-ui/fields/class-field-success-message.php:23
 msgid "You've done it!"
 msgstr "Ho heu aconseguit!"
 
+#: admin/views/licenses.php:159 admin/views/licenses.php:217
+msgid "Manage your subscription on My Yoast"
+msgstr "Gestioneu la vostra subscripció al My Yoast"
+
+#: admin/class-help-center.php:219
+msgid "Open support form"
+msgstr "Formulari de suport obert"
+
+#: admin/class-help-center.php:148
+msgid "Loading help center."
+msgstr "S'està carregant el centre d'ajuda."
+
 #: admin/class-help-center.php:179 admin/class-help-center.php:200
 msgid "Get support"
 msgstr "Obteniu ajuda"
+
+#: admin/class-help-center.php:206
+msgid "View in KB"
+msgstr "Mostra-ho al centre de coneixement"
 
 #: admin/class-help-center.php:208
 msgid "Go back"
