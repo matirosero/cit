@@ -34,7 +34,7 @@
 	<div class="top-bar-right float-right hide-for-large">
 		<ul class="menu">
 			<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
-			<li><a data-toggle="off-canvas"><i class="icon-menu"></i><span class="show-for-small-only"><?php _e( 'Menu', 'jointswp' ); ?></span><span class="show-for-medium"><?php _e( 'Más', 'jointswp' ); ?></span></a></li>
+			<li><a data-toggle="off-canvas"><i class="icon-menu"></i><?php _e( 'Más', 'jointswp' ); ?></a></li>
 		</ul>
 	</div>
 

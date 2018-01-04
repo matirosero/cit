@@ -16,7 +16,8 @@
 		// @include border-radius(10px)
 	}
 
-	&.secondary {
+	&.secondary,
+	.off-canvas & {
 		@include button-gradient( 
 			color('grey', 'light'), 
 			color('grey', 'base'), 

@@ -1,8 +1,7 @@
 .off-canvas-wrapper {
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
   	@include site-border;
   }
-  // border-left: 5px solid color( 'grey', 'base' );
 }
 
 #sidebar-menu {

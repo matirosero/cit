@@ -1,6 +1,7 @@
 /*********************
 NAVIGATION STYLES
 *********************/
+.menu .active > a {}
 .top-bar {
 
 	height: topbar-height('small');
@@ -71,6 +72,7 @@ NAVIGATION STYLES
 					}
 					&.active > a {
 						color: $black;
+						background-color: transparent;
 					}
 				}
 			}
@@ -105,7 +107,7 @@ NAVIGATION STYLES
 		}
 
 		.top-bar-search {
-			padding-top: (topbar-height('medium') - 38px)/2;
+			padding-top: (topbar-height('large') - 42px)/2;
 			.search-field {
 				margin-right: 0;
 			}
@@ -119,23 +121,70 @@ NAVIGATION STYLES
 		}
 
 		.title-area {
+			width: 145px;
 			ul {
-				@include site-border($z:1, $height: topbar-height('medium') );
-				height: topbar-height('medium');
+				// @include site-border($z:1, $height: topbar-height('medium') );
+				// height: topbar-height('medium');
 			}
 			.site-logo {
-				@include static-left-sidebar;
+				// @include static-left-sidebar;
 			}
 		}
 	}
 
 	@include breakpoint(large) {
-		// height: topbar-height('large');
+		height: topbar-height('large');
 		background-color: color('grey', 'light');
 
+		.top-bar-right,
+		.top-bar-left {
+			> .menu {
+				> li {
+					> a {
+						line-height: rem-calc( topbar-height('large') ) - 1.4rem;
+					}
+					&.active > a {
+						color: $black;
+					}
+				}
+			}
+
+			.dropdown.menu.medium-horizontal {
+				> li {
+					&.is-dropdown-submenu-parent {
+						> a {
+							padding-right: 1rem + rem-calc(19px);
+							&::after {
+								right:16px !important;
+							}
+						}
+					}
+
+					> .is-dropdown-submenu {
+						top: 80px;
+						// background-color: color('blue', 'base');
+						// a {
+						// 	color: $white;
+						// 	@include hover {
+						// 		background-color: color('orange', 'base');
+						// 	}
+						// }
+						// li.active a {
+						// 	background-color: color( 'blue', 'dark' );
+						// }
+					}
+				}
+			}
+
+		}
 		.title-area {
+			width: auto;
+			ul {
+				@include site-border($z:1, $height: topbar-height('large') );
+				height: topbar-height('large');
+			}
 			.site-logo {
-				// width: 16.66667vw;
+				@include static-left-sidebar;
 			}
 		}
 

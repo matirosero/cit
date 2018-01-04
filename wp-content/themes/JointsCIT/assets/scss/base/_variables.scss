@@ -94,8 +94,8 @@ Topbar
 $topbar-height: (
 	minimal: 39px,
 	small: 90px,
-	medium: 115px,
-	large: 128px,
+	medium: 90px,
+	large: 115px,
 );
 
 @function topbar-height($size) {

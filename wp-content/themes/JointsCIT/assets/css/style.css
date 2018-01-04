@@ -105,7 +105,7 @@ CSS file.
   /* remove if not needed */
   margin-left: .2em;
   /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
+  font-size: 120%;
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4902,12 +4902,12 @@ select {
 .position-left {
   top: 0;
   left: 0;
-  width: 250px;
+  width: 275px;
   height: 100%;
-  transform: translateX(-250px);
+  transform: translateX(-275px);
   overflow-y: auto; }
   .position-left.is-open ~ .off-canvas-content {
-    transform: translateX(250px); }
+    transform: translateX(275px); }
   .position-left.is-transition-push::after {
     position: absolute;
     top: 0;
@@ -4922,12 +4922,12 @@ select {
 .position-right {
   top: 0;
   right: 0;
-  width: 250px;
+  width: 275px;
   height: 100%;
-  transform: translateX(250px);
+  transform: translateX(275px);
   overflow-y: auto; }
   .position-right.is-open ~ .off-canvas-content {
-    transform: translateX(-250px); }
+    transform: translateX(-275px); }
   .position-right.is-transition-push::after {
     position: absolute;
     top: 0;
@@ -4988,88 +4988,88 @@ select {
     transform: none;
     z-index: 1; }
     .position-left.reveal-for-medium ~ .off-canvas-content {
-      margin-left: 250px; }
+      margin-left: 275px; }
   .position-right.reveal-for-medium {
     transform: none;
     z-index: 1; }
     .position-right.reveal-for-medium ~ .off-canvas-content {
-      margin-right: 250px; }
+      margin-right: 275px; }
   .position-top.reveal-for-medium {
     transform: none;
     z-index: 1; }
     .position-top.reveal-for-medium ~ .off-canvas-content {
-      margin-top: 250px; }
+      margin-top: 275px; }
   .position-bottom.reveal-for-medium {
     transform: none;
     z-index: 1; }
     .position-bottom.reveal-for-medium ~ .off-canvas-content {
-      margin-bottom: 250px; } }
+      margin-bottom: 275px; } }
 
 @media print, screen and (min-width: 64em) {
   .position-left.reveal-for-large {
     transform: none;
     z-index: 1; }
     .position-left.reveal-for-large ~ .off-canvas-content {
-      margin-left: 250px; }
+      margin-left: 275px; }
   .position-right.reveal-for-large {
     transform: none;
     z-index: 1; }
     .position-right.reveal-for-large ~ .off-canvas-content {
-      margin-right: 250px; }
+      margin-right: 275px; }
   .position-top.reveal-for-large {
     transform: none;
     z-index: 1; }
     .position-top.reveal-for-large ~ .off-canvas-content {
-      margin-top: 250px; }
+      margin-top: 275px; }
   .position-bottom.reveal-for-large {
     transform: none;
     z-index: 1; }
     .position-bottom.reveal-for-large ~ .off-canvas-content {
-      margin-bottom: 250px; } }
+      margin-bottom: 275px; } }
 
 @media screen and (min-width: 75em) {
   .position-left.reveal-for-xlarge {
     transform: none;
     z-index: 1; }
     .position-left.reveal-for-xlarge ~ .off-canvas-content {
-      margin-left: 250px; }
+      margin-left: 275px; }
   .position-right.reveal-for-xlarge {
     transform: none;
     z-index: 1; }
     .position-right.reveal-for-xlarge ~ .off-canvas-content {
-      margin-right: 250px; }
+      margin-right: 275px; }
   .position-top.reveal-for-xlarge {
     transform: none;
     z-index: 1; }
     .position-top.reveal-for-xlarge ~ .off-canvas-content {
-      margin-top: 250px; }
+      margin-top: 275px; }
   .position-bottom.reveal-for-xlarge {
     transform: none;
     z-index: 1; }
     .position-bottom.reveal-for-xlarge ~ .off-canvas-content {
-      margin-bottom: 250px; } }
+      margin-bottom: 275px; } }
 
 @media screen and (min-width: 90em) {
   .position-left.reveal-for-xxlarge {
     transform: none;
     z-index: 1; }
     .position-left.reveal-for-xxlarge ~ .off-canvas-content {
-      margin-left: 250px; }
+      margin-left: 275px; }
   .position-right.reveal-for-xxlarge {
     transform: none;
     z-index: 1; }
     .position-right.reveal-for-xxlarge ~ .off-canvas-content {
-      margin-right: 250px; }
+      margin-right: 275px; }
   .position-top.reveal-for-xxlarge {
     transform: none;
     z-index: 1; }
     .position-top.reveal-for-xxlarge ~ .off-canvas-content {
-      margin-top: 250px; }
+      margin-top: 275px; }
   .position-bottom.reveal-for-xxlarge {
     transform: none;
     z-index: 1; }
     .position-bottom.reveal-for-xxlarge ~ .off-canvas-content {
-      margin-bottom: 250px; } }
+      margin-bottom: 275px; } }
 
 .orbit {
   position: relative; }
@@ -6060,7 +6060,17 @@ BUTTON STYLES
     background-clip: padding-box; }
   .button.secondary, .secondary.ddownload-link, #tribe-events .secondary.tribe-events-button, #tribe-events .tribe-event-featured .tribe-events-button, .tribe-event-featured #tribe-events .tribe-events-button,
   .secondary.tribe-events-button, .tribe-event-featured .tribe-events-button,
-  .secondary.tribe-events-read-more, .tribe-event-featured .tribe-events-read-more, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit], .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit input.secondary[type=submit] {
+  .secondary.tribe-events-read-more, .tribe-event-featured .tribe-events-read-more, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit], .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit], #tribe-bar-form .tribe-bar-submit input.secondary[type=submit],
+  .off-canvas .button,
+  .off-canvas .ddownload-link,
+  .off-canvas #tribe-events .tribe-events-button, #tribe-events
+  .off-canvas .tribe-events-button,
+  .off-canvas
+  .tribe-events-button,
+  .off-canvas
+  .tribe-events-read-more,
+  .off-canvas #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit
+  .off-canvas input[type=submit] {
     background-color: #D8D8D8;
     background-image: linear-gradient(to bottom, #F5F5F5, #D8D8D8);
     color: #666666; }
@@ -6070,7 +6080,37 @@ BUTTON STYLES
     .secondary.tribe-events-button:focus, .tribe-event-featured .tribe-events-button:focus,
     .secondary.tribe-events-read-more:focus, .tribe-event-featured .tribe-events-read-more:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit]:focus, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit]:focus, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:focus, .button.secondary:hover, .secondary.ddownload-link:hover, #tribe-events .secondary.tribe-events-button:hover, #tribe-events .tribe-event-featured .tribe-events-button:hover, .tribe-event-featured #tribe-events .tribe-events-button:hover,
     .secondary.tribe-events-button:hover, .tribe-event-featured .tribe-events-button:hover,
-    .secondary.tribe-events-read-more:hover, .tribe-event-featured .tribe-events-read-more:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit]:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:hover {
+    .secondary.tribe-events-read-more:hover, .tribe-event-featured .tribe-events-read-more:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-button[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-button[type=submit]:hover, .tribe-event-featured #tribe-bar-form .tribe-bar-submit input.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .tribe-event-featured input.tribe-events-read-more[type=submit]:hover, #tribe-bar-form .tribe-bar-submit input.secondary[type=submit]:hover,
+    .off-canvas .button:active,
+    .off-canvas .ddownload-link:active,
+    .off-canvas #tribe-events .tribe-events-button:active, #tribe-events
+    .off-canvas .tribe-events-button:active,
+    .off-canvas
+    .tribe-events-button:active,
+    .off-canvas
+    .tribe-events-read-more:active,
+    .off-canvas #tribe-bar-form .tribe-bar-submit input[type=submit]:active, #tribe-bar-form .tribe-bar-submit
+    .off-canvas input[type=submit]:active,
+    .off-canvas .button:focus,
+    .off-canvas .ddownload-link:focus,
+    .off-canvas #tribe-events .tribe-events-button:focus, #tribe-events
+    .off-canvas .tribe-events-button:focus,
+    .off-canvas
+    .tribe-events-button:focus,
+    .off-canvas
+    .tribe-events-read-more:focus,
+    .off-canvas #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit
+    .off-canvas input[type=submit]:focus,
+    .off-canvas .button:hover,
+    .off-canvas .ddownload-link:hover,
+    .off-canvas #tribe-events .tribe-events-button:hover, #tribe-events
+    .off-canvas .tribe-events-button:hover,
+    .off-canvas
+    .tribe-events-button:hover,
+    .off-canvas
+    .tribe-events-read-more:hover,
+    .off-canvas #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit
+    .off-canvas input[type=submit]:hover {
       background-color: #E02818;
       background-image: linear-gradient(to bottom, #F9664D, #E02818);
       color: #fff; }
@@ -6100,7 +6140,7 @@ BUTTON STYLES
       /* remove if not needed */
       margin-left: .2em;
       /* you can be more comfortable with increased icons size */
-      /* font-size: 120%; */
+      font-size: 120%;
       /* Font smoothing. That was taken from TWBS */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -6141,7 +6181,7 @@ BUTTON STYLES
   /* remove if not needed */
   margin-left: .2em;
   /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
+  font-size: 120%;
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -6201,7 +6241,7 @@ h1, .h1, h2, .single-cit_report .single-title,
 /*********************
 LINK Layout
 *********************/
-@media print, screen and (min-width: 40em) {
+@media print, screen and (min-width: 64em) {
   .off-canvas-wrapper:before {
     content: "\a0";
     position: absolute;
@@ -6313,13 +6353,14 @@ NAVIGATION STYLES
       background-color: #fefefe; } }
   @media print, screen and (min-width: 40em) {
     .top-bar {
-      height: 115px; }
+      height: 90px; }
       .top-bar .top-bar-right > .menu > li > a,
       .top-bar .top-bar-left > .menu > li > a {
-        line-height: 5.13409rem; }
+        line-height: 3.71364rem; }
       .top-bar .top-bar-right > .menu > li.active > a,
       .top-bar .top-bar-left > .menu > li.active > a {
-        color: #4A4A4A; }
+        color: #4A4A4A;
+        background-color: transparent; }
       .top-bar .top-bar-right .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a,
       .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a {
         padding-right: 2.07955rem; }
@@ -6342,24 +6383,44 @@ NAVIGATION STYLES
         .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li > .is-dropdown-submenu li.active a {
           background-color: #263F81; }
       .top-bar .top-bar-search {
-        padding-top: 38.5px; }
+        padding-top: 36.5px; }
         .top-bar .top-bar-search .search-field {
           margin-right: 0; }
       .top-bar #main-menu > .menu > .active:not(.is-submenu-item) > a {
         background: #f0f0f0; }
-      .top-bar .title-area ul {
-        height: 115px; }
-        .top-bar .title-area ul:before {
-          content: "\a0";
-          position: absolute;
-          height: 115px;
-          border-left: 5px solid #D8D8D8;
-          z-index: 1; }
-      .top-bar .title-area .site-logo {
-        width: 210px; } }
+      .top-bar .title-area {
+        width: 145px; } }
   @media print, screen and (min-width: 64em) {
     .top-bar {
+      height: 115px;
       background-color: #F5F5F5; }
+      .top-bar .top-bar-right > .menu > li > a,
+      .top-bar .top-bar-left > .menu > li > a {
+        line-height: 5.13409rem; }
+      .top-bar .top-bar-right > .menu > li.active > a,
+      .top-bar .top-bar-left > .menu > li.active > a {
+        color: #4A4A4A; }
+      .top-bar .top-bar-right .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a,
+      .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a {
+        padding-right: 2.07955rem; }
+        .top-bar .top-bar-right .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after,
+        .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
+          right: 16px !important; }
+      .top-bar .top-bar-right .dropdown.menu.medium-horizontal > li > .is-dropdown-submenu,
+      .top-bar .top-bar-left .dropdown.menu.medium-horizontal > li > .is-dropdown-submenu {
+        top: 80px; }
+      .top-bar .title-area {
+        width: auto; }
+        .top-bar .title-area ul {
+          height: 115px; }
+          .top-bar .title-area ul:before {
+            content: "\a0";
+            position: absolute;
+            height: 115px;
+            border-left: 5px solid #D8D8D8;
+            z-index: 1; }
+        .top-bar .title-area .site-logo {
+          width: 210px; }
       .top-bar ul {
         background-color: #F5F5F5; } }
   @media screen and (min-width: 75em) {
@@ -6436,6 +6497,22 @@ NAVIGATION STYLES
     background-color: #F03626; }
   .title-bar .menu a.active {
     background-color: #263F81; }
+
+/*********************
+OFFCANVAS STYLES
+*********************/
+.off-canvas {
+  color: #fefefe; }
+  .off-canvas .menu {
+    margin-bottom: 1rem; }
+  .off-canvas a:active, .off-canvas a:focus, .off-canvas a:hover {
+    background-color: #F03626; }
+  .off-canvas label {
+    color: #fefefe; }
+  .off-canvas li > form, .off-canvas li > span {
+    padding: 0.7rem 1rem; }
+  .off-canvas li .input-group {
+    margin-bottom: 0; }
 
 /*********************
 DOWNLOADS
@@ -6524,7 +6601,7 @@ POSTS & CONTENT STYLES
 .article-header {
   position: relative;
   margin-bottom: 1.25rem;
-  padding-bottom: 0rem;
+  padding-bottom: 1rem;
   text-align: center;
   border-bottom: 1px solid #D8D8D8;
   position: relative; }

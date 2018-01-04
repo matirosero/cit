@@ -1,0 +1,26 @@
+.off-canvas {
+	color: $white;
+	
+	.menu {
+		margin-bottom: 1rem;
+	}
+
+	a {
+		@include hover {
+			background-color: color('orange', 'base');
+
+		}
+	}
+	label {
+		color: $white;
+	}
+	li {
+		> form, > span {
+			padding: $menu-item-padding;
+		}
+
+		.input-group {
+			margin-bottom: 0;
+		}
+	}
+}

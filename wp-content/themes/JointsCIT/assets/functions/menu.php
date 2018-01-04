@@ -62,6 +62,15 @@ function joints_top_tablet_nav() {
 } 
 
 
+add_filter( 'wp_nav_menu_items', 'mro_cit_add_loginout_link', 10, 2 );
+function mro_cit_add_loginout_link( $items, $args ) {
+    if (is_user_logged_in() && $args->theme_location == 'mobile-nav') {
+        $items .= '<li><a href="' . wp_logout_url() . '">' . __( 'Log out', 'jointswp' ) . '</a></li>';
+    }
+    return $items;
+}
+
+
 // Big thanks to Brett Mason (https://github.com/brettsmason) for the awesome walker
 class Topbar_Menu_Walker extends Walker_Nav_Menu {
     function start_lvl(&$output, $depth = 0, $args = Array() ) {
