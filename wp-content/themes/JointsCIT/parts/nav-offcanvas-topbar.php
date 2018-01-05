@@ -7,12 +7,12 @@
 			<li><a class="site-logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_cit.png" alt="<?php bloginfo('name'); ?>" /></a></li>
 		</ul>
 	</div>
-	
+
 	<!-- Main menu: large left -->
 	<div id="main-menu" class="top-bar-left float-left show-for-large">
 		<?php joints_top_nav(); ?>
 	</div>
-	
+
 	<!-- Search bar: large right -->
 	<div class="top-bar-right top-bar-search show-for-large">
 
@@ -31,7 +31,7 @@
     </div>
 
     <!-- Menu icon: small-medium right -->
-	<div class="top-bar-right float-right hide-for-large">
+	<div id="menu-toggle" class="top-bar-right float-right hide-for-large">
 		<ul class="menu">
 			<!-- <li><button class="menu-icon" type="button" data-toggle="off-canvas"></button></li> -->
 			<li><a data-toggle="off-canvas"><i class="icon-menu"></i><?php _e( 'Más', 'jointswp' ); ?></a></li>

@@ -77,6 +77,11 @@
 .icon-calendar-plus-o:before { content: '\f271'; } /* '' */
 .icon-user-circle:before { content: '\f2bd'; } /* '' */
 
+
+.icon-menu:before {
+  margin-top: -5px;
+  line-height: 0.5rem;
+}
 /*
  * USAGE
  * <i class="demo-icon icon-search"></i>

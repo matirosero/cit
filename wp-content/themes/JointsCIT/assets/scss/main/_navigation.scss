@@ -7,12 +7,56 @@ NAVIGATION STYLES
 	height: topbar-height('small');
 
 	.top-bar-right,
-	.top-bar-left {
+	.top-bar-left:not(.title-area) {
 		> .menu {
-			> li > a {
-				line-height: rem-calc( topbar-height('small') ) - 1.4rem;
+			> li {
+				padding-top: rem-calc( topbar-height('small') ) / 2 - 0.7rem - 0.5rem;
+
+				> a {
+					margin: 0 0.15rem;
+					@include border-radius($global-radius);
+				}
+
+				&.is-dropdown-submenu-parent {
+
+					> a {
+						@include hover {
+							background-color: color('grey', 'lightish');
+							color: $black;
+						}
+
+						//Drowddown arrow
+						&::after {
+							border-color: $black transparent transparent !important;
+						}
+					}
+					// > a:hover:after {
+					// 	// border-color: $white transparent transparent !important;
+					// }
+
+					&.is-active > a {
+						background-color: color('grey', 'lightish');
+						@include border-bottom-radius(0px);
+					}
+				}
+
+				&:not(.is-dropdown-submenu-parent) {
+					> a {
+						@include hover {
+							background-color: $anchor-color-hover;
+							color: $white;
+						}
+					}
+				}
 			}
 		}
+	}
+
+	#main-menu {
+		margin-left:  map-get($grid-column-gutter, small)/2;
+	}
+	#menu-toggle {
+		margin-right:  map-get($grid-column-gutter, small)/2;
 	}
 
 	.title-area {
@@ -33,14 +77,7 @@ NAVIGATION STYLES
 		}
 	}
 
-	.is-dropdown-submenu-parent {
-		> a::after {
-			border-color: $black transparent transparent !important;
-		}
-		> a:hover:after {
-			border-color: color('blue', 'base') transparent transparent !important;
-		}
-	}
+
 
 	@include breakpoint(small only) {
 
@@ -58,7 +95,6 @@ NAVIGATION STYLES
 		}
 	}
 
-	
 
 	@include breakpoint(medium) {
 		height: topbar-height('medium');
@@ -67,9 +103,6 @@ NAVIGATION STYLES
 		.top-bar-left {
 			> .menu {
 				> li {
-					> a {
-						line-height: rem-calc( topbar-height('medium') ) - 1.4rem;
-					}
 					&.active > a {
 						color: $black;
 						background-color: transparent;
@@ -77,32 +110,7 @@ NAVIGATION STYLES
 				}
 			}
 
-			.dropdown.menu.medium-horizontal {
-				> li {
-					&.is-dropdown-submenu-parent {
-						> a {
-							padding-right: 1rem + rem-calc(19px);
-							&::after {
-								right:16px !important;
-							}
-						}
-					}
 
-					> .is-dropdown-submenu {
-						top: 80px;
-						background-color: color('blue', 'base');
-						a {
-							color: $white;
-							@include hover {
-								background-color: color('orange', 'base');
-							}
-						}
-						li.active a {
-							background-color: color( 'blue', 'dark' );
-						}
-					}
-				}
-			}
 
 		}
 
@@ -137,11 +145,12 @@ NAVIGATION STYLES
 		background-color: color('grey', 'light');
 
 		.top-bar-right,
-		.top-bar-left {
+		.top-bar-left:not(.title-area) {
 			> .menu {
 				> li {
+					padding-top: rem-calc( topbar-height('large') ) / 2 - 0.7rem - 0.5rem;
 					> a {
-						line-height: rem-calc( topbar-height('large') ) - 1.4rem;
+						// line-height: rem-calc( topbar-height('large') ) - 1.4rem;
 					}
 					&.active > a {
 						color: $black;
@@ -161,20 +170,29 @@ NAVIGATION STYLES
 					}
 
 					> .is-dropdown-submenu {
-						top: 80px;
-						// background-color: color('blue', 'base');
-						// a {
-						// 	color: $white;
-						// 	@include hover {
-						// 		background-color: color('orange', 'base');
-						// 	}
-						// }
-						// li.active a {
-						// 	background-color: color( 'blue', 'dark' );
-						// }
+						top: rem-calc( topbar-height('large') ) / 2 + 1rem;
+						left: 0.15rem;
+						background-color: color('grey', 'lightish');
+						overflow: hidden;
+						border: 0;
+
+						@include border-radius($global-radius);
+						@include border-top-left-radius(0px);
+
+						a {
+							@include hover {
+								background-color: $anchor-color-hover;
+								color: $white;
+							}
+						}
+						li.active a {
+							background-color: color( 'blue', 'base' );
+							color: $white;
+						}
 					}
 				}
 			}
+
 
 		}
 		.title-area {
@@ -200,16 +218,16 @@ NAVIGATION STYLES
 		.top-bar-left {
 			> .menu {
 				> li > a {
-					padding: 0.7rem 30px !important;
+					// padding: 0.7rem 30px !important;
 				}
 			}
 			> .dropdown.menu.medium-horizontal {
 				> li {
 					&.is-dropdown-submenu-parent {
 						> a {
-							padding-right: 46px !important;
+							// padding-right: 46px !important;
 							&::after {
-								right:26px !important;
+								// right:26px !important;
 							}
 						}
 					}
@@ -359,7 +377,7 @@ NAVIGATION STYLES
 		a {
 			padding: 0.75rem;
 			@include hover {
-				background-color: color('orange', 'base');
+				background-color: $anchor-color-hover;
 			}
 			&.active {
 				background-color: color('blue', 'dark');

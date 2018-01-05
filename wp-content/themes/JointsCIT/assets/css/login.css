@@ -186,6 +186,10 @@ http://codex.wordpress.org/Creating_Admin_Themes
   content: '\f2bd'; }
 
 /* '' */
+.icon-menu:before {
+  margin-top: -5px;
+  line-height: 0.5rem; }
+
 /*
  * USAGE
  * <i class="demo-icon icon-search"></i>
