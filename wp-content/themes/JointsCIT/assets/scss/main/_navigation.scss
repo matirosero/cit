@@ -100,8 +100,8 @@ NAVIGATION STYLES
 			> .menu {
 				> li {
 					&.active > a {
-						color: $black !important;
-						background: transparent !important;
+						color: $black;
+						background: transparent;
 						cursor: default;
 					}
 				}
