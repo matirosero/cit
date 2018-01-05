@@ -2,12 +2,34 @@
 	// background: red;
 	margin-bottom: 1rem;
 
+	@media only screen and (max-width: 750px ) {
+		text-align: center !important;
+		ul.heateor_sss_login_ul, 
+		ul.heateor_sss_sharing_ul {
+			text-align: center !important;
+			> li {
+				float: none !important;
+				display: inline-block !important;
+			}
+		}
+
+	}
 	@media only screen and (min-width: 751px ) {
+		margin-top: 0.25rem;
 		.single-cit_report & {
 			float:left;
 			clear: left;
 			width: 235px;
 			margin-right: map-get($grid-column-gutter, medium);
+			@include light-grey-box;
+			padding: 0.5rem 1rem;;
+		}
+
+		body:not(.single-cit_report) & {
+			float:right;
+			margin-left: map-get($grid-column-gutter, small);
+			@include light-grey-box;
+			padding: 0.5rem 1rem;
 		}
 	}
 }

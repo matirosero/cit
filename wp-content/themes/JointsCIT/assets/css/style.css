@@ -7094,12 +7094,33 @@ PLUGIN STYLES
 *********************/
 .heateor_sss_horizontal_sharing {
   margin-bottom: 1rem; }
+  @media only screen and (max-width: 750px) {
+    .heateor_sss_horizontal_sharing {
+      text-align: center !important; }
+      .heateor_sss_horizontal_sharing ul.heateor_sss_login_ul,
+      .heateor_sss_horizontal_sharing ul.heateor_sss_sharing_ul {
+        text-align: center !important; }
+        .heateor_sss_horizontal_sharing ul.heateor_sss_login_ul > li,
+        .heateor_sss_horizontal_sharing ul.heateor_sss_sharing_ul > li {
+          float: none !important;
+          display: inline-block !important; } }
   @media only screen and (min-width: 751px) {
-    .single-cit_report .heateor_sss_horizontal_sharing {
-      float: left;
-      clear: left;
-      width: 235px;
-      margin-right: 40px; } }
+    .heateor_sss_horizontal_sharing {
+      margin-top: 0.25rem; }
+      .single-cit_report .heateor_sss_horizontal_sharing {
+        float: left;
+        clear: left;
+        width: 235px;
+        margin-right: 40px;
+        background: #fafafa;
+        border: 1px solid #eee;
+        padding: 0.5rem 1rem; }
+      body:not(.single-cit_report) .heateor_sss_horizontal_sharing {
+        float: right;
+        margin-left: 30px;
+        background: #fafafa;
+        border: 1px solid #eee;
+        padding: 0.5rem 1rem; } }
 
 .caldera_forms_form .form-group {
   margin-bottom: 1rem; }
