@@ -104,14 +104,12 @@ NAVIGATION STYLES
 			> .menu {
 				> li {
 					&.active > a {
-						color: $black;
-						background-color: transparent;
+						color: $black !important;
+						background: transparent !important;
+						cursor: default;
 					}
 				}
 			}
-
-
-
 		}
 
 		.top-bar-search {
@@ -121,24 +119,11 @@ NAVIGATION STYLES
 			}
 		}
 
-		// left margin for main menu
-		#main-menu > .menu {
-			> .active:not(.is-submenu-item) > a {
-				background: darken( color('grey', 'light'), 2 );
-			}
-		}
-
 		.title-area {
 			width: 145px;
-			ul {
-				// @include site-border($z:1, $height: topbar-height('medium') );
-				// height: topbar-height('medium');
-			}
-			.site-logo {
-				// @include static-left-sidebar;
-			}
 		}
 	}
+
 
 	@include breakpoint(large) {
 		height: topbar-height('large');
@@ -149,9 +134,6 @@ NAVIGATION STYLES
 			> .menu {
 				> li {
 					padding-top: rem-calc( topbar-height('large') ) / 2 - 0.7rem - 0.5rem;
-					> a {
-						// line-height: rem-calc( topbar-height('large') ) - 1.4rem;
-					}
 					&.active > a {
 						color: $black;
 					}
@@ -192,9 +174,8 @@ NAVIGATION STYLES
 					}
 				}
 			}
-
-
 		}
+
 		.title-area {
 			width: auto;
 			ul {
@@ -208,31 +189,6 @@ NAVIGATION STYLES
 
 		ul {
 			background-color: color('grey', 'light');
-		}
-	}
-
-	@include breakpoint(xlarge) {
-		// height: topbar-height('large');
-
-		.top-bar-right,
-		.top-bar-left {
-			> .menu {
-				> li > a {
-					// padding: 0.7rem 30px !important;
-				}
-			}
-			> .dropdown.menu.medium-horizontal {
-				> li {
-					&.is-dropdown-submenu-parent {
-						> a {
-							// padding-right: 46px !important;
-							&::after {
-								// right:26px !important;
-							}
-						}
-					}
-				}
-			}
 		}
 	}
 }
@@ -253,10 +209,6 @@ NAVIGATION STYLES
 
 .menu {
 	@include navigation-type-style;
-
-}
-
-.topbar-site-logo {
 
 }
 
