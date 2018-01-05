@@ -6501,7 +6501,7 @@ NAVIGATION STYLES
       #sidebar-menu > .menu li.active > a {
         background: transparent; }
   #sidebar-menu > .menu > li > a {
-    line-height: 1.5rem; }
+    line-height: 1.2; }
   #sidebar-menu > .menu > li.active:active, #sidebar-menu > .menu > li.active:focus, #sidebar-menu > .menu > li.active:hover {
     background-color: #F5F5F5;
     border-left: 5px solid #F03626; }

@@ -78,11 +78,7 @@ NAVIGATION STYLES
 	}
 
 
-
 	@include breakpoint(small only) {
-
-		// background-color: $white;
-
 		.title-area {
 			width: 130px;
 			// position: absolute;
@@ -209,17 +205,8 @@ NAVIGATION STYLES
 
 .menu {
 	@include navigation-type-style;
-
 }
 
-#main-menu {
-	@include breakpoint(large) {
-
-	}
-	@include breakpoint(xlarge) {
-
-	}
-}
 
 #sidebar-menu {
 
@@ -249,7 +236,7 @@ NAVIGATION STYLES
 		> li {
 
 			> a {
-				line-height: 1.5rem;
+				line-height: 1.2;
 			}
 
 			// Slightly more top padding before the first link
@@ -335,9 +322,6 @@ NAVIGATION STYLES
 				background-color: color('blue', 'dark');
 			}
 		}
-		// > li:first-child > a {
-		// 	@include border-left-radius($global-radius);
-		// }
 	}
 	@include breakpoint(small only) {
 		.title-bar-left {
