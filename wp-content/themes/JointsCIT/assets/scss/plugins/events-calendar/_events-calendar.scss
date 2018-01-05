@@ -61,14 +61,12 @@
 	@include border-radius($global-radius);
 }
 
-p {
-	#tribe-events .tribe-events-content &, 
-	.tribe-events-after-html &, 
-	.tribe-events-before-html & {
+
+#tribe-events .tribe-events-content, 
+.tribe-events-after-html, 
+.tribe-events-before-html {
+	p {
 		@extend p;
-	}
-	&:last-child {
-		margin-bottom: 0;
 	}
 }
 

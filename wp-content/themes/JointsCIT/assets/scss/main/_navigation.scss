@@ -353,6 +353,8 @@ NAVIGATION STYLES
 }
 
 .title-bar {
+	@include border-radius($global-radius);
+	overflow: hidden;
 	.menu {
 		a {
 			padding: 0.75rem;
@@ -363,6 +365,9 @@ NAVIGATION STYLES
 				background-color: color('blue', 'dark');
 			}
 		}
+		// > li:first-child > a {
+		// 	@include border-left-radius($global-radius);
+		// }
 	}
 	@include breakpoint(small only) {
 		.title-bar-left {

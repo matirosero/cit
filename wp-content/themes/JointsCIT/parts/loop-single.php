@@ -18,7 +18,7 @@
 		<p class="tags"><?php the_tags('<span class="tags-title">' . __( 'Tags:', 'jointswp' ) . '</span> ', ', ', ''); ?></p>
 	</footer> <!-- end article footer -->
 
-	<?php the_post_navigation(); ?>
+	<?php //the_post_navigation(); ?>
 
 	<?php comments_template(); ?>
 
