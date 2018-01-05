@@ -259,6 +259,9 @@ DIVIDER LINE
 /*********************
 MY GRID
 *********************/
+/*********************
+Callout box
+*********************/
 .screen-reader-text {
   position: absolute;
   top: -9999px;
@@ -6530,12 +6533,14 @@ DOWNLOADS
     .download-box, .login {
       width: 100%; } }
   @media only screen and (min-width: 751px) {
-    .download-box.float-left, .float-left.login, .download-box.float-right, .float-right.login {
-      max-width: 235px; }
-    .download-box.float-left, .float-left.login {
-      margin-right: 40px; }
-    .heateor_sss_horizontal_sharing + .download-box, .heateor_sss_horizontal_sharing + .login {
-      clear: left; } }
+    .download-box, .login {
+      margin-top: 0.25rem; }
+      .download-box.float-left, .float-left.login, .download-box.float-right, .float-right.login {
+        max-width: 240px; }
+      .download-box.float-left, .float-left.login {
+        margin-right: 40px; }
+      .heateor_sss_horizontal_sharing + .download-box, .heateor_sss_horizontal_sharing + .login {
+        clear: left; } }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -7094,33 +7099,40 @@ PLUGIN STYLES
 *********************/
 .heateor_sss_horizontal_sharing {
   margin-bottom: 1rem; }
+  .heateor_sss_horizontal_sharing ul.heateor_sss_sharing_ul {
+    text-align: center !important; }
+    .heateor_sss_horizontal_sharing ul.heateor_sss_sharing_ul > li {
+      float: none !important;
+      display: inline-block !important; }
+  .heateor_sss_horizontal_sharing .share-title {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center; }
   @media only screen and (max-width: 750px) {
     .heateor_sss_horizontal_sharing {
-      text-align: center !important; }
-      .heateor_sss_horizontal_sharing ul.heateor_sss_login_ul,
-      .heateor_sss_horizontal_sharing ul.heateor_sss_sharing_ul {
-        text-align: center !important; }
-        .heateor_sss_horizontal_sharing ul.heateor_sss_login_ul > li,
-        .heateor_sss_horizontal_sharing ul.heateor_sss_sharing_ul > li {
-          float: none !important;
-          display: inline-block !important; } }
+      text-align: center !important; } }
   @media only screen and (min-width: 751px) {
     .heateor_sss_horizontal_sharing {
-      margin-top: 0.25rem; }
+      margin-top: 0.25rem;
+      background: #fafafa;
+      border: 1px solid #eee;
+      padding: 0.5rem 1rem;
+      border-radius: 3px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */ }
       .single-cit_report .heateor_sss_horizontal_sharing {
         float: left;
         clear: left;
-        width: 235px;
+        width: 240px;
         margin-right: 40px;
         background: #fafafa;
         border: 1px solid #eee;
         padding: 0.5rem 1rem; }
       body:not(.single-cit_report) .heateor_sss_horizontal_sharing {
         float: right;
-        margin-left: 30px;
-        background: #fafafa;
-        border: 1px solid #eee;
-        padding: 0.5rem 1rem; } }
+        margin-left: 30px; } }
 
 .caldera_forms_form .form-group {
   margin-bottom: 1rem; }

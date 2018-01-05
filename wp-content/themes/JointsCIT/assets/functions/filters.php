@@ -11,6 +11,17 @@
 // }
 // add_filter('the_content', 'mro_cit_social_share', 1);
 
+add_filter( 'do_shortcode_tag','mro_cit_filter_sassy_social_share',10,3);
+function mro_cit_filter_sassy_social_share($output, $tag, $attr){
+	if('Sassy_Social_Share' != $tag){ //make sure it is the right shortcode
+		return $output;
+	}
+
+	$output = str_replace( 'div style="font-weight:bold"', 'div class="share-title"', $output);
+
+	return $output;
+}
+
 
 function clean_up_old_posts ($content) {
 
@@ -93,10 +104,10 @@ function mro_cit_archive_title( $title ) {
     } elseif ( is_tax() ) {
         $title = single_term_title( '', false );
     }
-  
+
     return $title;
 }
- 
+
 add_filter( 'get_the_archive_title', 'mro_cit_archive_title' );
 
 

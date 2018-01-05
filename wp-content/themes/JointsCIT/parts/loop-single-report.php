@@ -6,9 +6,7 @@
     </header> <!-- end article header -->
 
     <section class="entry-content" itemprop="articleBody">
-        <?php if ( shortcode_exists( 'Sassy_Social_Share' ) ) {
-            echo do_shortcode( '[Sassy_Social_Share title="Compartir"]' );
-        } ?>
+
         <?php
 
         /*
@@ -48,6 +46,10 @@
     	<?php endif;
     	?>
 
+        <?php if ( shortcode_exists( 'Sassy_Social_Share' ) ) {
+            echo do_shortcode( '[Sassy_Social_Share title="Compartir"]' );
+        } ?>
+        
 		<?php the_content(); ?>
 
 	</section> <!-- end article section -->
