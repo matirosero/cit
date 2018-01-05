@@ -15,7 +15,7 @@ if ( $pdfs || $video_text || $videos || $gallery_text || $gallery || $evaluation
 		<div class="title-bar" data-sticky data-anchor="foo" style="width:100%" >
 
 			<div class="title-bar-left">
-				<ul class="menu section-navigation align-center" data-magellan>
+				<ul class="vertical medium-horizontal menu section-navigation" data-magellan data-options="data-hide-for: large">
 
 					<li><a href="#event-information">Información</a></li>
 

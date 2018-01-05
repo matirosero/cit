@@ -355,12 +355,31 @@ NAVIGATION STYLES
 .title-bar {
 	.menu {
 		a {
-			padding: 1.2rem 1.5rem;
+			padding: 0.75rem;
 			@include hover {
 				background-color: color('orange', 'base');
 			}
 			&.active {
 				background-color: color('blue', 'dark');
+			}
+		}
+	}
+	@include breakpoint(small only) {
+		.title-bar-left {
+			float: none;
+		}
+	}
+	@include breakpoint(medium) {
+		.menu {
+			a {
+				padding: 0.75rem 0.6rem;
+			}
+		}
+	}
+	@include breakpoint(xlarge) {
+		.menu {
+			a {
+				padding: 1.2rem 1.5rem;
 			}
 		}
 	}

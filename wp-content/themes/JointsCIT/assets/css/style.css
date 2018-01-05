@@ -6495,11 +6495,23 @@ NAVIGATION STYLES
       left: 0; }
 
 .title-bar .menu a {
-  padding: 1.2rem 1.5rem; }
+  padding: 0.75rem; }
   .title-bar .menu a:active, .title-bar .menu a:focus, .title-bar .menu a:hover {
     background-color: #F03626; }
   .title-bar .menu a.active {
     background-color: #263F81; }
+
+@media screen and (max-width: 39.9375em) {
+  .title-bar .title-bar-left {
+    float: none; } }
+
+@media print, screen and (min-width: 40em) {
+  .title-bar .menu a {
+    padding: 0.75rem 0.6rem; } }
+
+@media screen and (min-width: 75em) {
+  .title-bar .menu a {
+    padding: 1.2rem 1.5rem; } }
 
 /*********************
 OFFCANVAS STYLES
