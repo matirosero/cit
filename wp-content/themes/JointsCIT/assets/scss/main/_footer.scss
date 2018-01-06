@@ -8,6 +8,8 @@ FOOTER STYLES
 	text-align: center;
 	background-color: color('black', 'base');
 	color: color('white', 'base');
+	z-index: 99;
+	position: relative;
 
 	p:last-child {
 		margin-bottom: 0;

@@ -143,11 +143,11 @@ DIVIDER LINE
 MY GRID
 *********************/
 @mixin static-left-sidebar {
-  width: 210px;
+  width: $sidebar-menu-width;
   // background-color: red;
 }
 @mixin static-contentarea {
-  margin-left: 210px;
+  margin-left: $sidebar-menu-width;
   float: none;
   width: auto;
 }

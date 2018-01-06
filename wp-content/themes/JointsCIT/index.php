@@ -6,9 +6,13 @@
 
 	<div id="content" class="columns">
 
-		<div id="inner-content" class="row" data-equalizer data-equalize-on="large">
+		<?php
+		if ( has_header_image() ) :
+			get_template_part( 'parts/hero/hero', 'full' );
+		endif;
+		?>
 
-			<?php get_template_part( 'parts/hero/header', 'image' ); ?>
+		<div id="inner-content" class="row" data-equalizer data-equalize-on="large">
 
 			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch>
 

@@ -9,7 +9,7 @@
  */
 
 ?>
-<div class="custom-header">
+<div class="custom-header hero-full">
 
 		<div class="custom-header-media">
 			<?php 

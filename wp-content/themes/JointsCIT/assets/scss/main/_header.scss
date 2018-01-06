@@ -2,7 +2,132 @@
 HEADER STYLES
 *********************/
 .header {
+	position: relative;
+	z-index: 99;
 	ul.off-canvas-list li {
 		list-style: none;
+	}
+}
+
+/*********************
+HERO STYLES
+*********************/
+
+.custom-header {
+	position: relative;
+	z-index:1;
+	// overflow:hidden;
+
+	.has-header-image.home.blog &,
+	.has-header-video.home.blog & {
+		display: table;
+		height: 300px;
+		// height: 75vh;
+		width: 100%;
+	}
+}
+
+.hero-full {
+	.custom-header-media {
+		bottom: 0;
+		left: 0;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+		// height: 400px;
+
+		.wp-custom-header:before {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.3+75 */
+			background: -moz-linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 75%, rgba(0, 0, 0, 0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#4d000000", GradientType=0); /* IE6-9 */
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			z-index: 2;
+		}
+		// .wp-custom-header{
+		// 	width: inherit;
+		// 	position: relative;
+		// }
+		.has-header-image & img,
+		.has-header-video & video,
+		.has-header-video & iframe {
+			position: fixed;
+			height: auto;
+			left: 50%;
+			width: inherit;
+			// max-width: 1000%;
+			// min-height: 100%;
+			// min-width: 100%;
+			// min-width: 100vw; /* vw prevents 1px gap on left that 100% has */
+			width: inherit;
+			top: 50%;
+			padding-bottom: 1px; /* Prevent header from extending beyond the footer */
+			// -ms-transform: translateX(-50%) translateY(-50%);
+			// -moz-transform: translateX(-50%) translateY(-50%);
+			// -webkit-transform: translateX(-50%) translateY(-50%);
+			// transform: translateX(-50%) translateY(-50%);
+
+
+
+			/* For browsers that support 'object-fit' */
+			@supports ( object-fit: cover ) {
+				height: 100%;
+				left: 0;
+				-o-object-fit: cover;
+				object-fit: cover;
+				top: 0;
+				-ms-transform: none;
+				-moz-transform: none;
+				-webkit-transform: none;
+				transform: none;
+// -ms-transform: translateX(-50%);
+			// -moz-transform: translateX(-50%);
+			// -webkit-transform: translateX(-50%);
+			// transform: translateX(-50%);
+
+				width: 100%;
+			}
+		}
+	}
+
+	.hero-container {
+		background: rgba(255, 255, 255, 0.49);
+
+		position: absolute;
+		height: 100%;
+		left:0;
+		right:0;
+		color: $white;
+	}
+	.hero-text {
+	  text-align: left;
+	    position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  width: 80%
+	}
+
+	@include breakpoint(large) {
+		.custom-header-media {
+			.has-header-image & img,
+			.has-header-video & video,
+			.has-header-video & iframe {
+				left: $sidebar-menu-width;
+								-o-object-fit: cover;
+				object-fit: cover;
+				width: calc(100% - 210px);
+			}
+		}
+
 	}
 }

@@ -6,13 +6,18 @@
 
 #sidebar-menu {
 	@include static-left-sidebar;
+	position: relative;
+	z-index: 99;
+	background-color: $white;
 }
 
 #content {
 
 	#inner-content {
 		padding: 0rem;
-		// background-color: color('grey', 'light');
+		position: relative;
+		z-index: 99;
+		background-color: $white;
 	}
 	#main {
 
@@ -27,6 +32,9 @@
 			}
 		}
 
+		@include breakpoint(small) {
+			@include grid-column($columns: 100%, $gutters:30px);
+		}
 		@include breakpoint(medium) {
 			@include grid-column($columns: 100%, $gutters:100px);
 		}
@@ -48,6 +56,7 @@
 
 	@include breakpoint(medium) {
 		// @include static-contentarea;
+
 		#main {
 			padding-top: 2rem;
 		}
@@ -59,7 +68,7 @@
 
 		#inner-content {
 			padding: 0rem;
-			// background-color: color('grey', 'light');
+			background-color: color('grey', 'light');
 		}
 		#main {
 			padding-top: 3rem;

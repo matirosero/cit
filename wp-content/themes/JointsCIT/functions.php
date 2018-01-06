@@ -27,6 +27,9 @@ require_once(get_template_directory().'/assets/translation/translation.php');
  * MRo
  */
 
+// Template functions
+require_once(get_template_directory().'/assets/functions/template-functions.php'); 
+
 // Hooks
 require_once(get_template_directory().'/assets/functions/hooks.php'); 
 

@@ -102,3 +102,6 @@ $topbar-height: (
 @function topbar-height($size) {
     @return map-get($topbar-height, $size);
 }
+
+
+$sidebar-menu-width: 210px;

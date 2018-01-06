@@ -6,15 +6,17 @@
 
 	<div id="content" class="columns">
 
-		<div id="inner-content" class="row" data-equalizer data-equalize-on="large">
+		<?php
+		$layout = mro_cit_page_layout();
+		// var_dump($layout);
+		if ( $layout == 'hero') :
+			get_template_part( 'parts/hero/hero', 'full' );
+		elseif  ( $layout == 'hero-img-left' || $layout == 'hero-img-right') :
+			get_template_part( 'parts/hero/hero', 'side' );
+		endif;
+		?>
 
-			<?php
-			$layout = mro_cit_page_layout();
-			// var_dump($layout);
-			if ( $layout ) {
-				get_template_part( 'parts/hero/header', 'image' );
-			}
-			?>
+		<div id="inner-content" class="row" data-equalizer data-equalize-on="large">
 
 			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch>
 
