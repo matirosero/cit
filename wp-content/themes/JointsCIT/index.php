@@ -8,6 +8,8 @@
 
 		<div id="inner-content" class="row" data-equalizer data-equalize-on="large">
 
+			<?php get_template_part( 'parts/hero/header', 'image' ); ?>
+
 			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch>
 
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

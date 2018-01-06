@@ -9,6 +9,9 @@ function joints_theme_support() {
 	// Default thumbnail size
 	set_post_thumbnail_size(125, 125, true);
 
+	add_image_size( 'cit-featured-image', 2000, 1200, true );
+	add_image_size( 'cit-hero-image', 2000, 1064, true );
+
 	// Add RSS Support
 	add_theme_support( 'automatic-feed-links' );
 	

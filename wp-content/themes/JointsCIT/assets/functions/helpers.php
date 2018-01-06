@@ -4,6 +4,23 @@ function force_relative_url($url) {
     return preg_replace ('/^(http)?s?:?\/\/[^\/]*(\/?.*)$/i', '$2', '' . $url);
 }
 
+function mro_cit_page_layout() {
+  global $post;
+  $layout = get_post_meta( $post->ID, 'mro_cit_page_layout', true );
+  // var_dump(get_post_meta( $post->ID, 'mro_cit_page_layout', true ));
+  if ( empty($layout) ) {
+    return false;
+  } else {
+    return $layout;
+  }
+}
+
+function mro_cit_secondary_content() {
+  global $post;
+  $content = get_post_meta( $post->ID, 'mro_cit_page_secondary_content', true );
+  echo do_shortcode( wpautop( $content ) );
+}
+
 
 function crunchify_print_scripts_styles() {
 

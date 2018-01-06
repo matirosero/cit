@@ -41,6 +41,11 @@ require_once(get_template_directory().'/assets/functions/helpers.php');
 require_once(get_template_directory().'/assets/functions/eventcal-helpers.php'); 
 require_once(get_template_directory().'/assets/functions/csv-helpers.php'); 
 
+
+// Customizer
+require_once(get_template_directory().'/assets/functions/custom-header.php'); 
+
+
 // Remove 4.2 Emoji Support
 // require_once(get_template_directory().'/assets/functions/disable-emoji.php'); 
 
