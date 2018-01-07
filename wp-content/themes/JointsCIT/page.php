@@ -12,7 +12,7 @@
 		if ( $layout == 'hero') :
 			get_template_part( 'parts/hero/hero', 'full' );
 		elseif  ( $layout == 'hero-img-left' || $layout == 'hero-img-right') :
-			get_template_part( 'parts/hero/hero', 'side' );
+			// get_template_part( 'parts/hero/hero', 'side' );
 		endif;
 		?>
 

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="container" class="row expand medium-collapse ">
+<div id="container" class="row expand small-collapse ">
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 

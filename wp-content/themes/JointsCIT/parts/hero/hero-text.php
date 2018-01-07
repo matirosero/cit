@@ -16,11 +16,13 @@
 				<?php echo wpautop( get_theme_mod( 'cit_hero_text', 'No copyright information has been saved yet.' ) ); ?>
 				</div>
 			<?php else : ?>
-				<h1 class="page-title"><?php echo get_the_title($post->ID); ?></h1>
-				<?php 
-				$post_object = get_post( $post->ID );
-				echo do_shortcode( wpautop( $post_object->post_content ) );
-				?>
+				<div class="hero-text">
+					<h1 class="page-title"><?php echo get_the_title($post->ID); ?></h1>
+					<?php 
+					$post_object = get_post( $post->ID );
+					echo do_shortcode( wpautop( $post_object->post_content ) );
+					?>
+				</div>
 			<?php endif; ?>
 
 <?php /*

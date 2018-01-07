@@ -6372,11 +6372,14 @@ HERO STYLES
 .custom-header {
   position: relative;
   z-index: 1; }
+  .has-header-image.page .custom-header,
   .has-header-image.home.blog .custom-header,
   .has-header-video.home.blog .custom-header {
     display: table;
     height: 300px;
     width: 100%; }
+  .has-header-image.page .custom-header {
+    min-height: 300px; }
 
 .hero-full .custom-header-media {
   bottom: 0;
@@ -6413,6 +6416,7 @@ HERO STYLES
     top: 50%;
     padding-bottom: 1px;
     /* Prevent header from extending beyond the footer */
+    transform: translateX(-50%) translateY(-50%);
     /* For browsers that support 'object-fit' */ }
     @supports (object-fit: cover) {
       .has-header-image .hero-full .custom-header-media img,
@@ -6426,15 +6430,14 @@ HERO STYLES
         width: 100%; } }
 
 .hero-full .hero-container {
-  background: rgba(255, 255, 255, 0.49);
-  position: absolute;
   height: 100%;
   left: 0;
   right: 0;
-  color: #fefefe; }
+  color: #fefefe;
+  z-index: 999; }
 
 .hero-full .hero-text {
-  text-align: left;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6448,6 +6451,18 @@ HERO STYLES
     left: 210px;
     object-fit: cover;
     width: calc(100% - 210px); } }
+
+.hero-text {
+  z-index: 999; }
+  .hero-text p:last-child, .hero-text #tribe-events .tribe-events-content p:last-child, #tribe-events .tribe-events-content .hero-text p:last-child {
+    margin-bottom: 0; }
+    .hero-text p:last-child .button, .hero-text #tribe-events .tribe-events-content p:last-child .button, #tribe-events .tribe-events-content .hero-text p:last-child .button, .hero-text p:last-child .ddownload-link, .hero-text #tribe-events .tribe-events-content p:last-child .ddownload-link, #tribe-events .tribe-events-content .hero-text p:last-child .ddownload-link, .hero-text p:last-child #tribe-events .tribe-events-button, #tribe-events .hero-text p:last-child .tribe-events-button, .hero-text p:last-child
+    .tribe-events-button, .hero-text #tribe-events .tribe-events-content p:last-child
+    .tribe-events-button, .hero-text p:last-child
+    .tribe-events-read-more, .hero-text #tribe-events .tribe-events-content p:last-child
+    .tribe-events-read-more, #tribe-events .tribe-events-content .hero-text p:last-child
+    .tribe-events-read-more, .hero-text p:last-child #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .hero-text p:last-child input[type=submit] {
+      margin-bottom: 0; }
 
 /*********************
 NAVIGATION STYLES
