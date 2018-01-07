@@ -7,14 +7,10 @@
 	<div id="content" class="columns">
 
 		<?php
-		// $layout = mro_cit_page_layout();
-		// // var_dump($layout);
-		// if ( $layout == 'hero') :
-		// 	get_template_part( 'parts/hero/hero', 'full' );
-		// elseif  ( $layout == 'hero-img-left' || $layout == 'hero-img-right') :
-		// 	// get_template_part( 'parts/hero/hero', 'side' );
-		// endif;
-		get_template_part( 'parts/page/content', 'page-header' );
+		$layout = mro_cit_page_layout();
+		if ( $layout ) :
+			get_template_part( 'parts/page/content', 'page-header' );
+		endif;
 		?>
 
 		<div id="inner-content" class="row" data-equalizer data-equalize-on="large">

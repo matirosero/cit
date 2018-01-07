@@ -6945,7 +6945,8 @@ PAGGE HEADER STYLES
   .page-header-image:last-child:not(:first-child) {
     float: right; }
   .page-header-image img {
-    object-fit: cover; }
+    object-fit: cover;
+    height: 100%; }
 
 .page-header-text {
   padding-top: 1rem;
