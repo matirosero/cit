@@ -205,10 +205,13 @@ Fonts
 BORDERS
 *********************/
 /*********************
-COLORS
+Block padding
 *********************/
 /*********************
 Topbar
+*********************/
+/*********************
+Sidebar Menu
 *********************/
 /******************************************************************
 
@@ -6924,6 +6927,73 @@ POSTS & CONTENT STYLES
 
 .suggestions-404 .medium-6.column:nth-child(3), .suggestions-404 .medium-6.columns:nth-child(3) {
   padding-left: 20px; }
+
+/*********************
+PAGGE HEADER STYLES
+*********************/
+.page-header {
+  background-color: #0589E2;
+  background-image: linear-gradient(to bottom, #263F81, #0589E2);
+  color: #fefefe; }
+
+.page-header-image {
+  background: red;
+  width: 100%;
+  float: left;
+  padding-right: 0;
+  padding-left: 0; }
+  .page-header-image:last-child:not(:first-child) {
+    float: right; }
+  .page-header-image img {
+    object-fit: cover; }
+
+.page-header-text {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  float: left;
+  padding-right: 0.85227rem;
+  padding-left: 0.85227rem; }
+  .page-header-text:last-child:not(:first-child) {
+    float: right; }
+
+@media print, screen and (min-width: 40em) {
+  .page-header-image {
+    width: 33.3333%;
+    float: left;
+    padding-right: 0;
+    padding-left: 0; }
+    .page-header-image:last-child:not(:first-child) {
+      float: right; }
+  .page-header-text {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 66.66667%;
+    float: left;
+    padding-right: 0.85227rem;
+    padding-left: 0.85227rem; }
+    .page-header-text:last-child:not(:first-child) {
+      float: right; } }
+
+@media print, screen and (min-width: 64em) {
+  .page-header-text {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 66.66667%;
+    float: left;
+    padding-right: 0.85227rem;
+    padding-left: 0.85227rem; }
+    .page-header-text:last-child:not(:first-child) {
+      float: right; } }
+
+@media screen and (min-width: 75em) {
+  .page-header-text {
+    width: 66.66667%;
+    float: left;
+    padding-right: 4.26136rem;
+    padding-left: 4.26136rem; }
+    .page-header-text:last-child:not(:first-child) {
+      float: right; } }
 
 /*********************
 PAST EVENTS STYLES

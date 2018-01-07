@@ -58,7 +58,6 @@ $colors: (
 //   color: color('grey', 'dark');
 // }
 
-
 /*********************
 Fonts
 *********************/
@@ -80,12 +79,18 @@ $divider-base: 1px solid color( 'grey', 'base' );
 
 
 /*********************
-COLORS
+Block padding
 *********************/
 
-// $blue: #006CB5;
-// $dark-blue: #263F81;
-// $orange: #F03626;
+$block-padding: (
+   small: 1rem,
+   medium: 2rem,
+   large: 3rem,
+);
+
+@function block-padding($size) {
+    @return map-get($block-padding, $size);
+}
 
 
 /*********************
@@ -104,4 +109,7 @@ $topbar-height: (
 }
 
 
+/*********************
+Sidebar Menu
+*********************/
 $sidebar-menu-width: 210px;
