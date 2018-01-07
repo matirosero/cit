@@ -6732,7 +6732,8 @@ POSTS & CONTENT STYLES
       margin-bottom: 3rem; } }
 
 .single-title,
-.page-title {
+.page-title,
+.section-title {
   text-align: center; }
 
 .archive .page-title {
@@ -6810,6 +6811,12 @@ POSTS & CONTENT STYLES
       right: 43%;
       bottom: -1px;
       border-bottom: 1px solid #333; }
+
+.section-title {
+  margin-bottom: 1.25rem; }
+  @media print, screen and (min-width: 40em) {
+    .section-title {
+      margin-bottom: 2rem; } }
 
 .byline, .tribe-events-schedule h2 {
   color: #999;
@@ -6958,7 +6965,7 @@ PAGGE HEADER STYLES
     float: right; }
   .page-header-image img {
     object-fit: cover;
-    height: 100%; }
+    height: inherit; }
 
 .page-header-text {
   padding-top: 1rem;
@@ -6969,6 +6976,9 @@ PAGGE HEADER STYLES
   padding-left: 0.85227rem; }
   .page-header-text:last-child:not(:first-child) {
     float: right; }
+
+.page-section {
+  padding-bottom: 1rem; }
 
 @media print, screen and (min-width: 40em) {
   .page-header-image {
@@ -6986,7 +6996,9 @@ PAGGE HEADER STYLES
     padding-right: 0.85227rem;
     padding-left: 0.85227rem; }
     .page-header-text:last-child:not(:first-child) {
-      float: right; } }
+      float: right; }
+  .page-section {
+    padding-bottom: 2rem; } }
 
 @media print, screen and (min-width: 64em) {
   .page-header-text {
@@ -7007,6 +7019,16 @@ PAGGE HEADER STYLES
     padding-left: 4.26136rem; }
     .page-header-text:last-child:not(:first-child) {
       float: right; } }
+
+.fix-equalizer {
+  padding: 0;
+  margin: 0;
+  height: 14px; }
+  .fix-equalizer div {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 1px !important;
+    overflow: hidden; }
 
 /*********************
 PAST EVENTS STYLES

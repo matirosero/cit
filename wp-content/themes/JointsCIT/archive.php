@@ -6,9 +6,9 @@
 
 	<div id="content" class="columns">
 
-		<div id="inner-content" class="row" data-equalizer data-equalize-on="large">
+		<div id="inner-content" class="row" data-equalizer="main-side" data-equalize-on="large">
 
-			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch>
+			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch="main-side" >
 
 		    	<!-- <header>
 		    		<h1 class="page-title"><?php the_archive_title();?></h1>

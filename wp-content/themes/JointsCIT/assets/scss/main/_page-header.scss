@@ -11,8 +11,8 @@
 	img {
 		-o-object-fit: cover;
 		object-fit: cover;
-		height: 100%;
-		
+		height: inherit;
+		// display: none;
 	}
 }
 .page-header-text {
@@ -25,6 +25,10 @@
 	}
 }
 
+.page-section {
+	padding-bottom: block-padding(small);
+}
+
 @include breakpoint(medium) {
 	.page-header-image {
 		@include grid-column($columns: 33.3333%, $gutters: 0px);
@@ -34,6 +38,9 @@
 		padding-bottom: block-padding(medium);
 		@include grid-column($columns: 66.66667%, $gutters: 30px);
 	}
+	.page-section {
+		padding-bottom: block-padding(medium);
+	}
 }
 
 @include breakpoint(large) {
@@ -42,9 +49,24 @@
 		padding-bottom: block-padding(large);
 		@include grid-column($columns: 66.66667%, $gutters: 30px);
 	}
+	.page-section {
+		// padding-bottom: block-padding(large);
+	}
 }
 @include breakpoint(xlarge) {
 	.page-header-text {
 		@include grid-column($columns: 66.66667%, $gutters: 150px);
+	}
+}
+
+.fix-equalizer {
+	padding: 0;
+	margin: 0;
+	height: 14px;
+	div {
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 1px !important;
+		overflow: hidden;
 	}
 }

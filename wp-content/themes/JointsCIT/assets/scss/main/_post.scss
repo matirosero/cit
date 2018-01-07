@@ -13,7 +13,8 @@ POSTS & CONTENT STYLES
 }
 
 .single-title,
-.page-title {
+.page-title,
+.section-title {
 	text-align: center;
 }
 
@@ -86,6 +87,13 @@ POSTS & CONTENT STYLES
 	}
 	.page-header & {
 		@include divider( color('grey', 'dark') );
+	}
+}
+
+.section-title {
+	margin-bottom: 1.25rem;
+	@include breakpoint(medium) {
+		margin-bottom: 2rem;
 	}
 }
 

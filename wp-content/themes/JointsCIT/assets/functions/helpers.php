@@ -15,9 +15,7 @@ function mro_cit_page_layout() {
   }
 }
 
-function mro_cit_secondary_content() {
-  global $post;
-  $content = get_post_meta( $post->ID, 'mro_cit_page_secondary_content', true );
+function cit_content_filter($content) {
   echo do_shortcode( wpautop( $content ) );
 }
 
