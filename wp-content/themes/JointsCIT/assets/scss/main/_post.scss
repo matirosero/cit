@@ -84,6 +84,9 @@ POSTS & CONTENT STYLES
 			padding-top: 0.25rem;
 		}
 	}
+	.page-header & {
+		@include divider( color('grey', 'dark') );
+	}
 }
 
 // Post meta

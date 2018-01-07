@@ -125,11 +125,10 @@ BUTTON GRADIENT
   }
 }
 
-// $divider-base: 1px solid color( 'grey', 'base' );
 /*********************
 DIVIDER LINE
 *********************/
-@mixin divider {
+@mixin divider( $accent-color: color( 'blue', 'base' ) ) {
   border-bottom: $divider-base;
   position: relative;
   &:after {
@@ -140,7 +139,7 @@ DIVIDER LINE
       top:0;
       right:43%;
       bottom:-1px; 
-      border-bottom: 1px solid color( 'blue', 'base' );
+      border-bottom: 1px solid $accent-color;
   }
 }
 

@@ -6798,6 +6798,18 @@ POSTS & CONTENT STYLES
       padding-bottom: 1rem; }
       .single .article-header {
         padding-top: 0.25rem; } }
+  .page-header .article-header {
+    border-bottom: 1px solid #D8D8D8;
+    position: relative; }
+    .page-header .article-header:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 43%;
+      top: 0;
+      right: 43%;
+      bottom: -1px;
+      border-bottom: 1px solid #333; }
 
 .byline, .tribe-events-schedule h2 {
   color: #999;
