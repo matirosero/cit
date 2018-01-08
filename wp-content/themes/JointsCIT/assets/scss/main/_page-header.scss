@@ -58,15 +58,3 @@
 		@include grid-column($columns: 66.66667%, $gutters: 150px);
 	}
 }
-
-.fix-equalizer {
-	padding: 0;
-	margin: 0;
-	height: 14px;
-	div {
-		padding-top: 0;
-		padding-bottom: 0;
-		height: 1px !important;
-		overflow: hidden;
-	}
-}

@@ -6463,16 +6463,23 @@ HERO STYLES
     margin-bottom: 1rem; }
   .hero-text p:last-child, .hero-text #tribe-events .tribe-events-content p:last-child, #tribe-events .tribe-events-content .hero-text p:last-child {
     margin-bottom: 0; }
-    .hero-text p:last-child .button, .hero-text #tribe-events .tribe-events-content p:last-child .button, #tribe-events .tribe-events-content .hero-text p:last-child .button, .hero-text p:last-child .ddownload-link, .hero-text #tribe-events .tribe-events-content p:last-child .ddownload-link, #tribe-events .tribe-events-content .hero-text p:last-child .ddownload-link, .hero-text p:last-child #tribe-events .tribe-events-button, #tribe-events .hero-text p:last-child .tribe-events-button, .hero-text p:last-child
-    .tribe-events-button, .hero-text #tribe-events .tribe-events-content p:last-child
-    .tribe-events-button, .hero-text p:last-child
-    .tribe-events-read-more, .hero-text #tribe-events .tribe-events-content p:last-child
-    .tribe-events-read-more, #tribe-events .tribe-events-content .hero-text p:last-child
-    .tribe-events-read-more, .hero-text p:last-child #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .hero-text p:last-child input[type=submit] {
-      margin: 0 0.25rem; }
+  .hero-text p .button, .hero-text #tribe-events .tribe-events-content p .button, #tribe-events .tribe-events-content .hero-text p .button, .hero-text p .ddownload-link, .hero-text #tribe-events .tribe-events-content p .ddownload-link, #tribe-events .tribe-events-content .hero-text p .ddownload-link, .hero-text p #tribe-events .tribe-events-button, #tribe-events .hero-text p .tribe-events-button, .hero-text p
+  .tribe-events-button, .hero-text #tribe-events .tribe-events-content p
+  .tribe-events-button, .hero-text p
+  .tribe-events-read-more, .hero-text #tribe-events .tribe-events-content p
+  .tribe-events-read-more, #tribe-events .tribe-events-content .hero-text p
+  .tribe-events-read-more, .hero-text p #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .hero-text p input[type=submit] {
+    margin-bottom: 0.5rem; }
   @media print, screen and (min-width: 40em) {
     .hero-text h1 {
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem; }
+    .hero-text p .button, .hero-text #tribe-events .tribe-events-content p .button, #tribe-events .tribe-events-content .hero-text p .button, .hero-text p .ddownload-link, .hero-text #tribe-events .tribe-events-content p .ddownload-link, #tribe-events .tribe-events-content .hero-text p .ddownload-link, .hero-text p #tribe-events .tribe-events-button, #tribe-events .hero-text p .tribe-events-button, .hero-text p
+    .tribe-events-button, .hero-text #tribe-events .tribe-events-content p
+    .tribe-events-button, .hero-text p
+    .tribe-events-read-more, .hero-text #tribe-events .tribe-events-content p
+    .tribe-events-read-more, #tribe-events .tribe-events-content .hero-text p
+    .tribe-events-read-more, .hero-text p #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .hero-text p input[type=submit] {
+      margin: 0 0.25rem; } }
 
 /*********************
 NAVIGATION STYLES
@@ -7028,16 +7035,6 @@ PAGGE HEADER STYLES
     padding-left: 4.26136rem; }
     .page-header-text:last-child:not(:first-child) {
       float: right; } }
-
-.fix-equalizer {
-  padding: 0;
-  margin: 0;
-  height: 14px; }
-  .fix-equalizer div {
-    padding-top: 0;
-    padding-bottom: 0;
-    height: 1px !important;
-    overflow: hidden; }
 
 /*********************
 PAST EVENTS STYLES
