@@ -734,12 +734,12 @@ img {
 textarea {
   height: auto;
   min-height: 50px;
-  border-radius: 3px; }
+  border-radius: 0; }
 
 select {
   box-sizing: border-box;
   width: 100%;
-  border-radius: 3px; }
+  border-radius: 0; }
 
 .map_canvas img,
 .map_canvas embed,
@@ -755,7 +755,7 @@ button {
   -moz-appearance: none;
   appearance: none;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0;
   background: transparent;
   line-height: 1; }
   [data-whatinput='mouse'] button {
@@ -775,7 +775,7 @@ pre {
   margin: 0 0 1rem 0;
   padding: 1rem;
   border: 1px solid rgba(74, 74, 74, 0.25);
-  border-radius: 3px;
+  border-radius: 0;
   background-color: white;
   color: #4A4A4A; }
   .callout > :first-child, .login #login_error > :first-child, .login .message > :first-child {
@@ -1003,8 +1003,7 @@ kbd {
   padding: 0.11364rem 0.22727rem 0;
   background-color: #e6e6e6;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  color: #4A4A4A;
-  border-radius: 3px; }
+  color: #4A4A4A; }
 
 .subheader {
   margin-top: 0.2rem;
@@ -1148,7 +1147,7 @@ textarea {
   margin: 0 0 0.90909rem;
   padding: 0.45455rem;
   border: 1px solid #cacaca;
-  border-radius: 3px;
+  border-radius: 0;
   background-color: #fefefe;
   box-shadow: inset 0 1px 2px rgba(74, 74, 74, 0.1);
   font-family: inherit;
@@ -1191,7 +1190,7 @@ textarea[readonly] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px; }
+  border-radius: 0; }
 
 input[type='search'] {
   box-sizing: border-box; }
@@ -1241,9 +1240,9 @@ label {
   width: 100%;
   margin-bottom: 0.90909rem; }
   .input-group > :first-child {
-    border-radius: 3px 0 0 3px; }
+    border-radius: 0 0 0 0; }
   .input-group > :last-child > * {
-    border-radius: 0 3px 3px 0; }
+    border-radius: 0 0 0 0; }
 
 .input-group-label, .input-group-field, .input-group-button, .input-group-button a,
 .input-group-button input,
@@ -1317,7 +1316,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   border: 1px solid #cacaca;
-  border-radius: 3px;
+  border-radius: 0;
   background-color: #fefefe;
   font-family: inherit;
   font-size: 0.90909rem;
@@ -1376,7 +1375,7 @@ select {
   padding: 0.85em 1em;
   -webkit-appearance: none;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 0;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-size: 0.9rem;
   line-height: 1;

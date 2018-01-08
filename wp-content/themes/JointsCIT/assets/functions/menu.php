@@ -134,6 +134,9 @@ function required_active_nav_class( $classes, $item ) {
     
     $url = strpos( $item->url, '/sobre-el-club/#' );
 
+    if ( $item->url === "#" ) {
+        $classes[] = 'no-hover';
+    }
     if ( ( $item->current == 1 || $item->current_item_ancestor == true ) && $url=== false ) {
         $classes[] = 'active';
     }
