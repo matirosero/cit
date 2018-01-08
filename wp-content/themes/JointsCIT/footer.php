@@ -6,7 +6,9 @@
 	    					</nav>
 	    				</div>
 						<div class="large-12 medium-12 columns">
-							<p class="source-org copyright">&copy; 1988 - <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+							<p class="source-org copyright">&copy; 1988 - <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.
+								<br /><small>Diseño y desarollo: <a href="https://matilderosero.com">Matilde Rosero</a></small>
+							</p>
 						</div>
 					</div> <!-- end #inner-footer -->
 				</footer> <!-- end .footer -->

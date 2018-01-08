@@ -6052,6 +6052,11 @@ a:link, a:visited:link {
 .off-canvas a, .off-canvas a:visited {
   color: #fff; }
 
+#site-footer a, #site-footer a:visited {
+  color: #fefefe; }
+  #site-footer a:active, #site-footer a:focus, #site-footer a:hover, #site-footer a:visited:active, #site-footer a:visited:focus, #site-footer a:visited:hover {
+    color: #F03626; }
+
 /*********************
 BUTTON STYLES
 *********************/
@@ -6457,6 +6462,8 @@ HERO STYLES
 
 .hero-text {
   z-index: 99; }
+  .hero-text h1 {
+    margin-bottom: 1rem; }
   .hero-text p:last-child, .hero-text #tribe-events .tribe-events-content p:last-child, #tribe-events .tribe-events-content .hero-text p:last-child {
     margin-bottom: 0; }
     .hero-text p:last-child .button, .hero-text #tribe-events .tribe-events-content p:last-child .button, #tribe-events .tribe-events-content .hero-text p:last-child .button, .hero-text p:last-child .ddownload-link, .hero-text #tribe-events .tribe-events-content p:last-child .ddownload-link, #tribe-events .tribe-events-content .hero-text p:last-child .ddownload-link, .hero-text p:last-child #tribe-events .tribe-events-button, #tribe-events .hero-text p:last-child .tribe-events-button, .hero-text p:last-child
@@ -6465,7 +6472,10 @@ HERO STYLES
     .tribe-events-read-more, .hero-text #tribe-events .tribe-events-content p:last-child
     .tribe-events-read-more, #tribe-events .tribe-events-content .hero-text p:last-child
     .tribe-events-read-more, .hero-text p:last-child #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .hero-text p:last-child input[type=submit] {
-      margin-bottom: 0; }
+      margin: 0 0.25rem; }
+  @media print, screen and (min-width: 40em) {
+    .hero-text h1 {
+      margin-bottom: 2rem; } }
 
 /*********************
 NAVIGATION STYLES

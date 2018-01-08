@@ -29,7 +29,12 @@ a, a:visited {
 	.off-canvas & {
 		color: color('white', 'base');
 	}
-
+	#site-footer & {
+		color: $white;
+		@include hover {
+			color: $anchor-color-hover;
+		}
+	}
 
 
 }
