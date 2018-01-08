@@ -3,7 +3,7 @@ HEADER STYLES
 *********************/
 .header {
 	position: relative;
-	z-index: 99;
+	z-index: 999;
 	ul.off-canvas-list li {
 		list-style: none;
 	}
@@ -107,7 +107,7 @@ HERO STYLES
 		left:0;
 		right:0;
 		color: $white;
-		z-index: 999;
+		z-index: 99;
 	}
 	.hero-text {
 		text-align: center;
@@ -129,12 +129,11 @@ HERO STYLES
 				width: calc(100% - 210px);
 			}
 		}
-
 	}
 }
 
 .hero-text {
-	z-index: 999;
+	z-index: 99;
 	p:last-child {
 		margin-bottom: 0;
 		.button {

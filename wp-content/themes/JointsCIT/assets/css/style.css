@@ -6365,7 +6365,7 @@ HEADER STYLES
 *********************/
 .header {
   position: relative;
-  z-index: 99; }
+  z-index: 999; }
   .header ul.off-canvas-list li {
     list-style: none; }
 
@@ -6437,7 +6437,7 @@ HERO STYLES
   left: 0;
   right: 0;
   color: #fefefe;
-  z-index: 999; }
+  z-index: 99; }
 
 .hero-full .hero-text {
   text-align: center;
@@ -6456,7 +6456,7 @@ HERO STYLES
     width: calc(100% - 210px); } }
 
 .hero-text {
-  z-index: 999; }
+  z-index: 99; }
   .hero-text p:last-child, .hero-text #tribe-events .tribe-events-content p:last-child, #tribe-events .tribe-events-content .hero-text p:last-child {
     margin-bottom: 0; }
     .hero-text p:last-child .button, .hero-text #tribe-events .tribe-events-content p:last-child .button, #tribe-events .tribe-events-content .hero-text p:last-child .button, .hero-text p:last-child .ddownload-link, .hero-text #tribe-events .tribe-events-content p:last-child .ddownload-link, #tribe-events .tribe-events-content .hero-text p:last-child .ddownload-link, .hero-text p:last-child #tribe-events .tribe-events-button, #tribe-events .hero-text p:last-child .tribe-events-button, .hero-text p:last-child
