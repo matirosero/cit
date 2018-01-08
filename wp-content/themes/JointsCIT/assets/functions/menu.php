@@ -131,7 +131,10 @@ function joints_footer_links_fallback() {
 
 // Add Foundation active class to menu
 function required_active_nav_class( $classes, $item ) {
-    if ( $item->current == 1 || $item->current_item_ancestor == true ) {
+    
+    $url = strpos( $item->url, '/sobre-el-club/#' );
+
+    if ( ( $item->current == 1 || $item->current_item_ancestor == true ) && $url=== false ) {
         $classes[] = 'active';
     }
     return $classes;
