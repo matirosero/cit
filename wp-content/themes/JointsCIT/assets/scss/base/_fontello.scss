@@ -64,6 +64,8 @@
 .icon-tag:before { content: '\e802'; } /* '' */
 .icon-download:before { content: '\e803'; } /* '' */
 .icon-tags:before { content: '\e804'; } /* '' */
+.icon-ok:before { content: '\e805'; } /* '' */
+.icon-cancel:before { content: '\e806'; } /* '' */
 .icon-attention-circled:before { content: '\e807'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
@@ -84,5 +86,5 @@
 }
 /*
  * USAGE
- * <i class="demo-icon icon-search"></i>
+ * <i class="icon-search"></i>
  */

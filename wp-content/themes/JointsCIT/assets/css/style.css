@@ -132,6 +132,14 @@ CSS file.
   content: '\e804'; }
 
 /* '' */
+.icon-ok:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-cancel:before {
+  content: '\e806'; }
+
+/* '' */
 .icon-attention-circled:before {
   content: '\e807'; }
 
@@ -188,8 +196,86 @@ CSS file.
 
 /*
  * USAGE
- * <i class="demo-icon icon-search"></i>
+ * <i class="icon-search"></i>
  */
+.icon-search:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-mail:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-tag:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-download:before, .ddownload-link:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-tags:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-ok:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-cancel:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-attention-circled:before {
+  content: '\e807'; }
+
+/* '' */
+.icon-facebook:before {
+  content: '\f09a'; }
+
+/* '' */
+.icon-menu:before {
+  content: '\f0c9'; }
+
+/* '' */
+.icon-linkedin:before {
+  content: '\f0e1'; }
+
+/* '' */
+.icon-doc-text:before {
+  content: '\f0f6'; }
+
+/* '' */
+.icon-angle-double-left:before {
+  content: '\f100'; }
+
+/* '' */
+.icon-angle-double-right:before, .button.read-more:after, .read-more.ddownload-link:after, #tribe-events .read-more.tribe-events-button:after,
+.read-more.tribe-events-button:after,
+.read-more.tribe-events-read-more:after, #tribe-bar-form .tribe-bar-submit input.read-more[type=submit]:after {
+  content: '\f101'; }
+
+/* '' */
+.icon-quote-left:before {
+  content: '\f10d'; }
+
+/* '' */
+.icon-quote-right:before {
+  content: '\f10e'; }
+
+/* '' */
+.icon-doc-text-inv:before {
+  content: '\f15c'; }
+
+/* '' */
+.icon-calendar-plus-o:before {
+  content: '\f271'; }
+
+/* '' */
+.icon-user-circle:before {
+  content: '\f2bd'; }
+
+/* '' */
 /******************************************************************
 
 Stylesheet: Variables
@@ -7297,6 +7383,89 @@ SIDEBARS & ASIDES
     padding-bottom: 5px;
     margin-bottom: 5px;
     border-bottom: 1px solid #D8D8D8; }
+
+/*********************
+PRICING TABLE
+*********************/
+.pricing > div {
+  position: relative;
+  z-index: 90; }
+
+@media print, screen and (min-width: 64em) {
+  .pricing > div:hover {
+    z-index: 100;
+    box-shadow: 0 0 0 4px #006CB5, 0 0 16px 8px rgba(14, 27, 35, 0.15); } }
+
+.pricing-option {
+  background: #fafafa;
+  border: 1px solid #eee;
+  margin-bottom: 1rem;
+  text-align: center;
+  z-index: 90; }
+  .pricing-option:hover {
+    z-index: 100;
+    box-shadow: 0 0 0 4px #006CB5, 0 0 16px 8px rgba(14, 27, 35, 0.15); }
+  .pricing-option .pricing-header {
+    background-color: #F5F5F5;
+    padding: 1.3em 1em; }
+    .pricing-option .pricing-header h2 {
+      font-size: 1.25rem; }
+    .pricing-option .pricing-header .cd-price {
+      display: inline-block;
+      font-weight: bold; }
+      .pricing-option .pricing-header .cd-price span {
+        float: left; }
+        .pricing-option .pricing-header .cd-price span:nth-of-type(2) {
+          color: #b0b0b0; }
+          .pricing-option .pricing-header .cd-price span:nth-of-type(2)::before {
+            content: '/'; }
+  .pricing-option .cd-pricing-features {
+    padding: 2.8em 1em 2em; }
+    .pricing-option .cd-pricing-features ul {
+      list-style: none;
+      margin-left: 0;
+      margin-bottom: 0; }
+    .pricing-option .cd-pricing-features li {
+      line-height: 1.5;
+      margin-bottom: .75em; }
+      .pricing-option .cd-pricing-features li:before {
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        margin-right: .2em;
+        text-align: center;
+        /* opacity: .8; */
+        /* For safety - reset parent styles, that can break glyph codes*/
+        font-variant: normal;
+        text-transform: none;
+        /* fix buttons height, for twitter bootstrap */
+        line-height: 1em;
+        /* Animation center compensation - margins should be symmetric */
+        /* remove if not needed */
+        margin-left: .2em;
+        /* you can be more comfortable with increased icons size */
+        font-size: 120%;
+        /* Font smoothing. That was taken from TWBS */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* Uncomment for 3D effect */
+        /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+      .pricing-option .cd-pricing-features li.unavailable {
+        color: #b0b0b0; }
+  @media screen and (max-width: 63.9375em) {
+    .pricing-option:hover {
+      z-index: 100;
+      box-shadow: 0 0 0 4px #006CB5, 0 0 16px 8px rgba(14, 27, 35, 0.15); } }
+  @media print, screen and (min-width: 64em) {
+    .pricing-option {
+      margin-bottom: 0; } }
+
+.cd-pricing-footer {
+  padding-bottom: 0.7em; }
 
 /*********************
 LOGIN
