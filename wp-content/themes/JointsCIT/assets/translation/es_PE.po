@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: JointsCIT\n"
-"POT-Creation-Date: 2018-01-03 22:38-0600\n"
-"PO-Revision-Date: 2018-01-03 22:38-0600\n"
+"POT-Creation-Date: 2018-01-13 01:58-0600\n"
+"PO-Revision-Date: 2018-01-13 01:59-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_PE\n"
@@ -94,6 +94,18 @@ msgstr "(Editar)"
 #: assets/functions/comments.php:23
 msgid "Your comment is awaiting moderation."
 msgstr "Su comentario está esperando moderación."
+
+#: assets/functions/custom-header.php:49
+msgid "Default Header Image"
+msgstr ""
+
+#: assets/functions/custom-header.php:119
+msgid "Play background video"
+msgstr ""
+
+#: assets/functions/custom-header.php:120
+msgid "Pause background video"
+msgstr ""
 
 #: assets/functions/custom-post-type.php:22
 msgid "Custom Types"
@@ -420,13 +432,13 @@ msgstr "Leer más..."
 
 #: parts/loop-archive.php:40 parts/loop-cit_report.php:15
 #: parts/loop-single-past-event.php:176 parts/loop-single-profile.php:22
-#: parts/loop-single-report.php:56 parts/loop-single.php:15
+#: parts/loop-single-report.php:59 parts/loop-single.php:18
 msgid "Tags:"
 msgstr "Etiquetas:"
 
 #: parts/loop-cit_report.php:14 parts/loop-single-past-event.php:175
-#: parts/loop-single-profile.php:21 parts/loop-single-report.php:55
-#: parts/loop-single.php:14
+#: parts/loop-single-profile.php:21 parts/loop-single-report.php:58
+#: parts/loop-single.php:17
 msgid "Pages:"
 msgstr "Páginas:"
 
@@ -486,11 +498,6 @@ msgstr "Página Web:"
 msgctxt "%s Events plural label"
 msgid "All %s"
 msgstr ""
-
-#: tribe-events/single-event.php:108
-#, php-format
-msgid "%s Navigation"
-msgstr "%s Navegación"
 
 #: tribe-events/tickets/tickets/rsvp.php:34
 msgctxt "form heading"
@@ -564,6 +571,9 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://www.matilderosero.com"
 msgstr ""
+
+#~ msgid "%s Navigation"
+#~ msgstr "%s Navegación"
 
 #~ msgid "Year"
 #~ msgstr "Año"
