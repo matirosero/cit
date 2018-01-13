@@ -10,7 +10,6 @@
 	> div {
 		position: relative;
 		z-index: 90;
-		
 	}
 	@include breakpoint(large) {
 		> div {
