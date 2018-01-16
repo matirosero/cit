@@ -22,3 +22,12 @@
 		}
 	}
 }
+
+fieldset {
+	&.register-secondary-contact,
+	&.edit-secondary-contact {
+		@include light-grey-box;
+		padding: 0.5rem 1rem 0;
+		margin-bottom: 1rem;
+	}
+}
