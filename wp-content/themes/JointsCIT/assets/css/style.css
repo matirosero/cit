@@ -331,6 +331,9 @@ Topbar
 /*********************
 Sidebar Menu
 *********************/
+/*********************
+Reports List
+*********************/
 /******************************************************************
 
 Stylesheet: Mixins & Constants Stylesheet
@@ -7180,6 +7183,49 @@ POSTS & CONTENT STYLES
 
 .suggestions-404 .medium-6.column:nth-child(3), .suggestions-404 .medium-6.columns:nth-child(3) {
   padding-left: 20px; }
+
+/*********************
+REPORTS STYLES
+*********************/
+.list-reports .cit_report {
+  margin-bottom: 1rem;
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid #D8D8D8; }
+
+.list-reports .entry-title, .list-reports .tribe-events-list .tribe-events-list-event-title, .tribe-events-list .list-reports .tribe-events-list-event-title {
+  margin-bottom: 0; }
+
+.list-report-buttons {
+  margin-top: 0.5rem; }
+  .list-report-buttons .button, .list-report-buttons .ddownload-link, .list-report-buttons .button-primary, .list-report-buttons .button-secondary, .list-report-buttons #tribe-events .tribe-events-button, #tribe-events .list-report-buttons .tribe-events-button, .list-report-buttons
+  .tribe-events-button, .list-report-buttons
+  .tribe-events-read-more, .list-report-buttons #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .list-report-buttons input[type=submit] {
+    margin-bottom: 0; }
+
+@media print, screen and (min-width: 40em) {
+  .list-reports .cit_report {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.7rem; }
+  .list-reports .entry-title, .list-reports .tribe-events-list .tribe-events-list-event-title, .tribe-events-list .list-reports .tribe-events-list-event-title {
+    font-size: 22px; } }
+
+@supports (display: grid) {
+  @media print, screen and (min-width: 40em) {
+    .list-reports .cit_report {
+      display: grid;
+      grid-template-columns: auto 140px; }
+      .logged-in .list-reports .cit_report {
+        grid-template-columns: auto 265px; }
+    .list-report-information {
+      padding-right: 30px; }
+      .list-report-information p:last-child, .list-report-information #tribe-events .tribe-events-content p:last-child, #tribe-events .tribe-events-content .list-report-information p:last-child {
+        margin-bottom: 0; }
+    .list-report-buttons {
+      margin-top: 0.35rem;
+      text-align: right; } }
+  @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+    .logged-in .list-reports .cit_report {
+      grid-template-columns: auto 140px; } } }
 
 /*********************
 PAGGE HEADER STYLES

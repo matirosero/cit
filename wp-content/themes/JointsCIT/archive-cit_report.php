@@ -13,15 +13,21 @@
 				<header class="article-header">
 					<h1 class="entry-title" itemprop="headline">Informes de investigación</h1>
 
-					<p>El esfuerzo conjunto de los miembros del Club a su alcance. Para esto nacimos.<br />Acceda a todos los informes de investigación generados por el intercambio de nuestra comunidad. </p>    
+					<p>El esfuerzo conjunto de los miembros del Club a su alcance. Para esto nacimos.<br />Acceda a todos los informes de investigación generados por el intercambio de nuestra comunidad. </p>
 				</header>
 
-			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			    <?php if (have_posts()) : ?>
 
-					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive' ); ?>
+			    	<div class="list-reports">
 
-				<?php endwhile; ?>
+					    <?php while (have_posts()) : the_post(); ?>
+
+							<!-- To see additional archive styles, visit the /parts directory -->
+							<?php get_template_part( 'parts/loop', 'report' ); ?>
+
+						<?php endwhile; ?>
+
+					</div>
 
 					<?php joints_page_navi(); ?>
 

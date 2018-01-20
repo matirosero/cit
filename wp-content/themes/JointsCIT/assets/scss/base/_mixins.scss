@@ -161,6 +161,20 @@ MY GRID
 }
 
 
+@mixin list-report-buttons {
+  width: $list-report-buttons-width;
+  width: 200px;
+float: right;
+}
+@mixin list-report-information {
+  margin-left: $list-report-buttons-width;
+width: 100%;
+// background: #f1f2ea url(background.gif) repeat-y right;
+float: left;
+margin-right: -200px;
+}
+
+
 /*********************
 Callout box
 *********************/
