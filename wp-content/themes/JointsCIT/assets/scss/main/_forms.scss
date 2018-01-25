@@ -31,3 +31,26 @@ fieldset {
 		margin-bottom: 1rem;
 	}
 }
+
+
+#password-strength {
+	display: none;
+	@extend .callout;
+
+	&.bad,
+	&.good,
+	&.strong,
+	&.short {
+		display: block;
+	}
+
+	&.good,
+	&.strong {
+		@extend .success;
+	}
+
+	&.bad,
+	&.short {
+		@extend .alert;
+	}
+}
