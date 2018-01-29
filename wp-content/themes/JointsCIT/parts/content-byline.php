@@ -1,3 +1,7 @@
+<?php
+$author = get_the_author();
+if( $author != 'Mat Rosero' ) :
+?>
 <p class="byline">
 	<?php
 	if ( !is_post_type_archive('cit_past_event') && !is_singular('cit_past_event') ) {
@@ -13,6 +17,7 @@
 		}
 	} ?>
 </p>
+<?php endif; ?>
 
 <p class="date">
 	<?php
