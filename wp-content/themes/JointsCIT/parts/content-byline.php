@@ -19,16 +19,21 @@ if( $author != 'Matilde Rosero' && $author != 'Mat Rosero' ) :
 </p>
 <?php endif; ?>
 
-<p class="date">
-	<?php
-	if ( is_post_type_archive('cit_report') || is_singular('cit_report') ) {
-		$date_format = 'F Y';
-	} else {
-		$date_format = 'F j, Y';
-	}
-	the_time($date_format);
-	if ( !is_singular('cit_past_event') && !is_post_type_archive('cit_past_event') ) {
-		echo ' - ';
-		the_category(', ');
-	} ?>
-</p>
+<?php
+$check_date = get_the_date('Y-m-d');
+if ( $check_date != '2017-08-01' ) :
+?>
+	<p class="date">
+		<?php
+		if ( is_post_type_archive('cit_report') || is_singular('cit_report') ) {
+			$date_format = 'F Y';
+		} else {
+			$date_format = 'F j, Y';
+		}
+		the_time($date_format);
+		if ( !is_singular('cit_past_event') && !is_post_type_archive('cit_past_event') ) {
+			echo ' - ';
+			the_category(', ');
+		} ?>
+	</p>
+<?php endif; ?>
