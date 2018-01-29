@@ -1,6 +1,6 @@
 <?php
 $author = get_the_author();
-if( $author != 'Mat Rosero' ) :
+if( $author != 'Matilde Rosero' && $author != 'Mat Rosero' ) :
 ?>
 <p class="byline">
 	<?php
