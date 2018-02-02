@@ -26,3 +26,12 @@
 		margin-bottom: 0;
 	}
 }
+
+.temporary-subscribers {
+	+ .add-temporary-subscriber {
+		margin-top: 1rem;
+		@include breakpoint(medium) {
+			margin-top: 2rem;
+		}
+	}
+}

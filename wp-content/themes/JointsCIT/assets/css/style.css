@@ -6485,6 +6485,11 @@ a:link, a:visited:link {
   #site-footer a:active, #site-footer a:focus, #site-footer a:hover, #site-footer a:visited:active, #site-footer a:visited:focus, #site-footer a:visited:hover {
     color: #F03626; }
 
+a.delete, a:visited.delete {
+  color: #a00; }
+  a.delete:active, a.delete:focus, a.delete:hover, a:visited.delete:active, a:visited.delete:focus, a:visited.delete:hover {
+    color: #ff0000; }
+
 /*********************
 BUTTON STYLES
 *********************/
@@ -7587,6 +7592,12 @@ PROFILE STYLES
   .single-tribe_events .profile-block .section-title, .profile-block .single-tribe_events .tribe-events-single-event-title, .single-tribe_events .profile-block .tribe-events-single-event-title {
     margin-top: 0.5rem;
     margin-bottom: 0; }
+
+.temporary-subscribers + .add-temporary-subscriber {
+  margin-top: 1rem; }
+  @media print, screen and (min-width: 40em) {
+    .temporary-subscribers + .add-temporary-subscriber {
+      margin-top: 2rem; } }
 
 /*********************
 IMAGE GALLERY STYLES

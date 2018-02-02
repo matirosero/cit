@@ -36,5 +36,11 @@ a, a:visited {
 		}
 	}
 
+	&.delete {
+		color: color('red', 'base');
+		@include hover {
+			color: color('red', 'light');
+		}
+	}
 
 }
