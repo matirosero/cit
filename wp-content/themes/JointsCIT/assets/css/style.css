@@ -4613,12 +4613,12 @@ select {
   .close-button.small, .caldera-grid .close-button.alert, .caldera-grid .close-button#password-strength.bad, .caldera-grid .close-button#password-strength.short {
     right: 0.66rem;
     top: 0.33em;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1; }
   .close-button, .close-button.medium {
     right: 1rem;
     top: 0.5rem;
-    font-size: 2em;
+    font-size: 1em;
     line-height: 1; }
 
 .menu {
@@ -6661,6 +6661,11 @@ BUTTON STYLES
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
   margin-right: 0.25rem; }
+
+.close-button .icon-cancel:before {
+  width: auto;
+  margin-right: 0;
+  margin-left: 0; }
 
 /*********************
 FORM STYLES

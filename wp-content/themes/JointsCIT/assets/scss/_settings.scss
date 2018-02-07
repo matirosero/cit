@@ -307,8 +307,8 @@ $closebutton-offset-vertical: (
   medium: 0.5rem,
 );
 $closebutton-size: (
-  small: 1.5em,
-  medium: 2em,
+  small: 1em,
+  medium: 1em, //1.5em
 );
 $closebutton-lineheight: 1;
 $closebutton-color: $dark-gray;

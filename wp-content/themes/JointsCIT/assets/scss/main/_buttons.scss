@@ -53,3 +53,11 @@
 		@extend .icon-download:before;
 	}
 }
+
+.close-button {
+	.icon-cancel:before {
+		width: auto;
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
