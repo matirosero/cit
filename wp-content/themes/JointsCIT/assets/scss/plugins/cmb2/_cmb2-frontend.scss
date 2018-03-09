@@ -19,6 +19,9 @@
 		@include icon-before;
 		margin-right: 0.4rem;
 	}
+	.dashicons {
+		display: none;
+	}
 }
 
 .button-primary,
@@ -64,5 +67,53 @@
 	// closed
 	#cmb2-metabox-mro_cit_user_frontend_additional_contacts.cmb2-metabox .postbox.closed & {
 		content: '\e80a';
+	}
+}
+
+.page .cmb-repeatable-group .cmb-shift-rows .dashicons {
+	display: none;
+}
+
+#cmb2-metabox-mro_cit_user_frontend_additional_contacts .cmb-repeatable-grouping {
+
+	.cmb-repeat-group-field {
+
+		.cmb-th {
+				width: 100%;
+			}
+			.cmb-td {
+				width: 100% !important;
+				// float: none;
+			}
+
+		@include breakpoint(small only) {
+			padding-top: 0rem;
+			padding-bottom: 0;
+			margin-bottom: 0;
+			&:first-child {
+				padding-top: 0.5rem;
+			}
+		}
+		@include breakpoint(medium) {
+			width: 30%;
+			float: left;
+			padding-right: 10px;
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+			
+			&:nth-child(3){
+				width: 39%;
+				padding-right: 0;
+				// background:red;
+			}
+
+		}
+	}
+	.cmb-remove-field-row {
+		padding-top: 0.5rem;
+		padding-bottom: 0;
+		// .cmb-remove-group-row-button {
+		// 	margin-left: 0;
+		// }
 	}
 }

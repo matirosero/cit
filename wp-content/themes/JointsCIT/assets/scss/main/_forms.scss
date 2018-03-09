@@ -54,3 +54,22 @@ fieldset {
 		@extend .alert;
 	}
 }
+
+.edit-member-contacts {
+	.parent,
+	.additional-contact { 
+		display: flex; 
+		 align-items: center;
+		flex-wrap: nowrap;
+		height: 100%; 
+	} 
+	.child,
+	.additional-contact-child { 
+		width: 30%;
+		padding-right: 10px;
+		&.additional-contact-delete {
+			width: 10%;
+		}
+	}
+}
+

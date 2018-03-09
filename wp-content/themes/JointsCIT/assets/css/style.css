@@ -6699,6 +6699,24 @@ fieldset.register-secondary-contact, fieldset.edit-secondary-contact {
   #password-strength.bad, #password-strength.good, #password-strength.strong, #password-strength.short {
     display: block; }
 
+.edit-member-contacts .parent,
+.edit-member-contacts .additional-contact {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%; }
+
+.edit-member-contacts .child,
+.edit-member-contacts .additional-contact-child {
+  width: 30%;
+  padding-right: 10px; }
+  .edit-member-contacts .child.additional-contact-delete,
+  .edit-member-contacts .additional-contact-child.additional-contact-delete {
+    width: 10%; }
+
 /*********************
 LINK Typography
 *********************/
@@ -8049,6 +8067,9 @@ PLUGIN STYLES
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
   margin-right: 0.4rem; }
 
+.button-secondary .dashicons {
+  display: none; }
+
 .button-primary,
 .button-secondary {
   margin-bottom: 0; }
@@ -8131,6 +8152,38 @@ PLUGIN STYLES
 
 #cmb2-metabox-mro_cit_user_frontend_additional_contacts.cmb2-metabox .postbox.closed .cmbhandle::before {
   content: '\e80a'; }
+
+.page .cmb-repeatable-group .cmb-shift-rows .dashicons {
+  display: none; }
+
+#cmb2-metabox-mro_cit_user_frontend_additional_contacts .cmb-repeatable-grouping .cmb-repeat-group-field .cmb-th {
+  width: 100%; }
+
+#cmb2-metabox-mro_cit_user_frontend_additional_contacts .cmb-repeatable-grouping .cmb-repeat-group-field .cmb-td {
+  width: 100% !important; }
+
+@media screen and (max-width: 39.9375em) {
+  #cmb2-metabox-mro_cit_user_frontend_additional_contacts .cmb-repeatable-grouping .cmb-repeat-group-field {
+    padding-top: 0rem;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+    #cmb2-metabox-mro_cit_user_frontend_additional_contacts .cmb-repeatable-grouping .cmb-repeat-group-field:first-child {
+      padding-top: 0.5rem; } }
+
+@media print, screen and (min-width: 40em) {
+  #cmb2-metabox-mro_cit_user_frontend_additional_contacts .cmb-repeatable-grouping .cmb-repeat-group-field {
+    width: 30%;
+    float: left;
+    padding-right: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+    #cmb2-metabox-mro_cit_user_frontend_additional_contacts .cmb-repeatable-grouping .cmb-repeat-group-field:nth-child(3) {
+      width: 39%;
+      padding-right: 0; } }
+
+#cmb2-metabox-mro_cit_user_frontend_additional_contacts .cmb-repeatable-grouping .cmb-remove-field-row {
+  padding-top: 0.5rem;
+  padding-bottom: 0; }
 
 #tribe-bar-form input[type=text] {
   border-bottom: 1px solid #D8D8D8; }
