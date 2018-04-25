@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Better Search Replace - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-01-04 10:17:22+0000\n"
+"PO-Revision-Date: 2018-04-04 17:57:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -154,7 +154,7 @@ msgstr "Esta herramienta te permite buscar y sustituir texto en tu base de datos
 
 #: templates/bsr-help.php:29
 msgid "Download System Info"
-msgstr "Información del sistema de descargas"
+msgstr "Descargar información del sistema"
 
 #: templates/bsr-help.php:23
 msgid "Found a bug or have a feature request? Please submit an issue on <a href=\"%s\">GitHub</a>!"
