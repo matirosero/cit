@@ -130,7 +130,7 @@ gulp.task('serve', function() {
 
     browserSync.init(files, {
 	    // Replace with URL of your local site
-	    proxy: "http://cit.dev/",
+	    proxy: "http://cit.test/",
     });
 
     gulp.watch('./assets/scss/**/*.scss', ['styles']);
