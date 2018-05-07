@@ -165,7 +165,8 @@ function mro_cit_tribe_modify_events_title( $title, $depth ) {
  * Add RSVP to events, depending on user capabilities.
  */
 function mro_cit_rsvp_form() {
-    if ( !tribe_is_past_event() ) :
+
+    if ( !tribe_is_past_event() && get_post_meta( get_the_ID(), 'mro_cit_event_include_rsvp', true ) == 'on' ) :
 	    if ( current_user_can( 'rsvp_event' ) || current_user_can( 'buy_event_tickets' )) :
 	    	echo '<h3>Confirme su asistencia</h3>';
 	    endif;
