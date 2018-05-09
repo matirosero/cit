@@ -2,10 +2,10 @@
 	@include navigation-type-style;
 	@include border-radius(20px);
 	@include button-gradient( 
-		color('blue', 'light'), 
-		color('blue', 'dark'), 
-		color('orange', 'light'), 
-		color('orange', 'dark'), 
+		color('blue-gradient', 'light'), 
+		color('blue-gradient', 'dark'), 
+		color('blue-gradient', 'hover-light'), 
+		color('blue-gradient', 'hover-dark'), 
 		color('white', 'base'), 
 		color('white', 'base') 
 	);
@@ -21,8 +21,8 @@
 		@include button-gradient( 
 			color('grey', 'light'), 
 			color('grey', 'base'), 
-			color('orange', 'light'), 
-			color('orange', 'dark'), 
+			color('blue-gradient', 'hover-light'), 
+			color('blue-gradient', 'hover-dark'),
 			lighten(color('grey', 'dark'), 20), 
 			color('white', 'base') 
 		);
