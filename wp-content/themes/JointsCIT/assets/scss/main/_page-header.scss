@@ -1,5 +1,5 @@
 .page-header {
-	@include css-gradient(color('blue', 'dark'), color('blue', 'light') );
+	@include css-gradient(color('blue-gradient', 'dark'), color('blue-gradient', 'light') );
 	color: $white;
 }
 

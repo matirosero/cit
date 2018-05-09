@@ -220,7 +220,7 @@ NAVIGATION STYLES
 			// overflow: hidden;
 			@include hover {
 				background-color: color('grey', 'light');
-				border-left: 5px solid color( 'orange', 'base' );
+				border-left: 5px solid color( 'aqua', 'base' );
 				// overflow: auto;
 			}
 			&.active {
@@ -248,7 +248,7 @@ NAVIGATION STYLES
 			&.active {
 				@include hover {
 					background-color: color('grey', 'light');
-					border-left: 5px solid color( 'orange', 'base' );
+					border-left: 5px solid color( 'aqua', 'base' );
 					// overflow: auto;
 				}
 			}
@@ -280,10 +280,10 @@ NAVIGATION STYLES
 
 		&:hover {
 			li {
-				// border-left: 5px solid color( 'orange', 'base' );
+				// border-left: 5px solid color( 'aqua', 'base' );
 
 				&:hover {
-					// border-left: 5px solid darken(color( 'orange', 'dark' ), 5%);
+					// border-left: 5px solid darken(color( 'aqua', 'dark' ), 5%);
 					background-color: darken(color('grey', 'light'), 3);
 				}
 			}
@@ -320,7 +320,7 @@ NAVIGATION STYLES
 				background-color: $anchor-color-hover;
 			}
 			&.active {
-				background-color: color('blue', 'dark');
+				background-color: color('blue', 'base');
 			}
 		}
 	}

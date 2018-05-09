@@ -718,7 +718,7 @@ pre {
   .callout > :last-child, .login #login_error > :last-child, .login .message > :last-child {
     margin-bottom: 0; }
   .callout.primary, .login .primary#login_error, .login #login_error.message, .login .message {
-    background-color: #def2ff;
+    background-color: #e9f0f9;
     color: #4A4A4A; }
   .callout.secondary, .login .secondary#login_error, .login .secondary.message {
     background-color: #f1f1f1;
@@ -857,11 +857,11 @@ h6 {
 
 a {
   line-height: inherit;
-  color: #006CB5;
+  color: #326aac;
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #F03626; }
+    color: #55b3c5; }
   a img {
     border: 0; }
 
@@ -1316,12 +1316,12 @@ select {
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  background-color: #006CB5;
+  background-color: #326aac;
   color: #fefefe; }
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
-    background-color: #005c9a;
+    background-color: #2b5a92;
     color: #fefefe; }
   .button.tiny {
     font-size: 0.6rem; }
@@ -1335,10 +1335,10 @@ select {
     margin-right: 0;
     margin-left: 0; }
   .button.primary, .login .button.message {
-    background-color: #006CB5;
+    background-color: #326aac;
     color: #fefefe; }
     .button.primary:hover, .login .button.message:hover, .button.primary:focus, .login .button.message:focus {
-      background-color: #005691;
+      background-color: #28558a;
       color: #fefefe; }
   .button.secondary {
     background-color: #767676;
@@ -1365,19 +1365,19 @@ select {
       background-color: #d01e0e;
       color: #fefefe; }
   .button.hollow {
-    border: 1px solid #006CB5;
-    color: #006CB5; }
+    border: 1px solid #326aac;
+    color: #326aac; }
     .button.hollow, .button.hollow:hover, .button.hollow:focus {
       background-color: transparent; }
     .button.hollow:hover, .button.hollow:focus {
-      border-color: #00365b;
-      color: #00365b; }
+      border-color: #193556;
+      color: #193556; }
     .button.hollow.primary, .login .button.hollow.message {
-      border: 1px solid #006CB5;
-      color: #006CB5; }
+      border: 1px solid #326aac;
+      color: #326aac; }
       .button.hollow.primary:hover, .login .button.hollow.message:hover, .button.hollow.primary:focus, .login .button.hollow.message:focus {
-        border-color: #00365b;
-        color: #00365b; }
+        border-color: #193556;
+        color: #193556; }
     .button.hollow.secondary {
       border: 1px solid #767676;
       color: #767676; }
@@ -1406,13 +1406,13 @@ select {
     opacity: 0.25;
     cursor: not-allowed; }
     .button.disabled, .button.disabled:hover, .button.disabled:focus, .button[disabled], .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #006CB5;
+      background-color: #326aac;
       color: #fefefe; }
     .button.disabled.primary, .login .button.disabled.message, .button[disabled].primary, .login .button[disabled].message {
       opacity: 0.25;
       cursor: not-allowed; }
       .button.disabled.primary, .login .button.disabled.message, .button.disabled.primary:hover, .login .button.disabled.message:hover, .button.disabled.primary:focus, .login .button.disabled.message:focus, .button[disabled].primary, .login .button[disabled].message, .button[disabled].primary:hover, .login .button[disabled].message:hover, .button[disabled].primary:focus, .login .button[disabled].message:focus {
-        background-color: #006CB5;
+        background-color: #326aac;
         color: #fefefe; }
     .button.disabled.secondary, .button[disabled].secondary {
       opacity: 0.25;
@@ -1453,9 +1453,9 @@ select {
     float: right;
     margin-left: 1em; }
   .button.dropdown.hollow::after {
-    border-top-color: #006CB5; }
+    border-top-color: #326aac; }
   .button.dropdown.hollow.primary::after, .login .button.dropdown.hollow.message::after {
-    border-top-color: #006CB5; }
+    border-top-color: #326aac; }
   .button.dropdown.hollow.secondary::after {
     border-top-color: #767676; }
   .button.dropdown.hollow.success::after {
@@ -1489,14 +1489,14 @@ select {
   border-radius: 20px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  background-color: #263F81;
-  background-image: linear-gradient(to bottom, #0589E2, #263F81);
+  background-color: #2555a5;
+  background-image: linear-gradient(to bottom, #53a3be, #2555a5);
   color: #fff;
   margin-bottom: 2rem;
   border: 0;
   text-shadow: none;
   box-shadow: none; }
   #wp-submit:active, #wp-submit:focus, #wp-submit:hover {
-    background-color: #E02818;
-    background-image: linear-gradient(to bottom, #F9664D, #E02818);
+    background-color: #3a78b0;
+    background-image: linear-gradient(to bottom, #6ac8ca, #3a78b0);
     color: #fff; }

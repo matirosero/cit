@@ -11,14 +11,26 @@ COLORS
 
 $colors: (
  'blue': (
-   dark: 	#263F81,
-   base: 	#006CB5,
-   light:	#0589E2,
-   lightest: #F2F5F8,
-
-   // trans: transparentize(#0069AA, .35),
-   // trans-light: transparentize(#76D8FF, .35),
-   // trans-dark: transparentize(#051C35, .35),
+   dark: 	darken(#326aac,15%),
+   base: 	#326aac,//#006CB5,**
+   light:	lighten(#326aac,15%),
+   lightest: lighten(#326aac,25%),
+ ),
+ 'aqua': (
+   dark:    darken(#55b3c5,15%),
+   base:    #55b3c5,
+   light:   lighten(#55b3c5,15%),
+   lightest: lighten(#55b3c5,25%),
+ ),
+ 'blue-gradient': (
+   light:   #53a3be,
+   dark:    #2555a5,
+   hover-light:   #6ac8ca,
+   hover-dark:    #3a78b0,
+ ),
+ 'grey-gradient': (
+   light:   #8b8b8b,
+   dark:    #002454,
  ),
  'orange': (
    dark: 	#E02818,
