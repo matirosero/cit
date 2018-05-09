@@ -80,10 +80,7 @@ NAVIGATION STYLES
 
 	@include breakpoint(small only) {
 		.title-area {
-			width: 180px;
-			// position: absolute;
-			// left: 50%;
-			// margin-left: -65px
+			width: 181px;
 		}
 
 		.menu {
@@ -296,10 +293,6 @@ NAVIGATION STYLES
 
 	.menu.nested {
 		margin-left: 0;
-		// position: absolute;
-		// left: -5px;
-		// right: 0;
-		// display: block;
 		li {
 			padding-left: 0.75rem;
 		}
@@ -344,4 +337,3 @@ NAVIGATION STYLES
 		}
 	}
 }
-
