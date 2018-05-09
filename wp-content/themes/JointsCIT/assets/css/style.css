@@ -6939,7 +6939,7 @@ NAVIGATION STYLES
       margin: 0; }
   @media screen and (max-width: 39.9375em) {
     .top-bar .title-area {
-      width: 130px; }
+      width: 180px; }
     .top-bar .menu {
       background-color: #fefefe; } }
   @media print, screen and (min-width: 40em) {
@@ -6957,7 +6957,7 @@ NAVIGATION STYLES
         .top-bar .top-bar-search .search-field {
           margin-right: 0; }
       .top-bar .title-area {
-        width: 130px; } }
+        width: 180px; } }
   @media print, screen and (min-width: 64em) {
     .top-bar {
       height: 115px;
