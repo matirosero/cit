@@ -7874,7 +7874,7 @@ LOGIN
 ELEMENTS STYLES
 *********************/
 .members-list {
-  column-count: 3;
+  column-count: 2;
   column-width: 200px;
   /* Chrome, Safari, Opera */
   /* Firefox */
