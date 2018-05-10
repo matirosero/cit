@@ -7864,6 +7864,13 @@ LOGIN
   margin-bottom: 0; }
 
 /*********************
+ELEMENTS STYLES
+*********************/
+.members-list {
+  column-count: 2;
+  column-width: 200px; }
+
+/*********************
 FOOTER STYLES
 *********************/
 /*********************
