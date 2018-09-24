@@ -7,7 +7,7 @@
 	<div id="content" class="columns">
 
 		<?php
-		if ( has_header_image() ) :
+		if ( has_header_image() && ! is_paged() ) :
 			get_template_part( 'parts/hero/hero', 'full' );
 		endif;
 		?>
