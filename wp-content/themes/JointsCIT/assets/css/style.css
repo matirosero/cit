@@ -6615,7 +6615,8 @@ FORM STYLES
     #content-not-found .search-form {
       margin: 3rem 0 4rem; } }
 
-fieldset.register-secondary-contact, fieldset.edit-secondary-contact {
+.register-password,
+.edit-password {
   background: #fafafa;
   border: 1px solid #eee;
   padding: 0.5rem 1rem 0;
