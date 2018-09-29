@@ -1,5 +1,23 @@
 <?php
 
+
+function mro_cit_check_if_me( $post_id ) {
+  $me = 'webdev';
+
+  $coauthors = get_coauthors( $post_id );
+
+  $return = false;
+
+  foreach ($coauthors as $key => $coauthor) {
+    if ( $coauthor->user_login == $me ) {
+      $return = true;
+    }
+  }
+
+  return $return;
+}
+
+
 function force_relative_url($url) {
     return preg_replace ('/^(http)?s?:?\/\/[^\/]*(\/?.*)$/i', '$2', '' . $url);
 }

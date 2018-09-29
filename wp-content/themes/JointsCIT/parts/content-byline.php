@@ -1,6 +1,13 @@
 <?php
-$author = get_the_author();
-if( $author != 'Matilde Rosero' && $author != 'Mat Rosero' ) :
+
+
+// if ( ! mro_cit_check_if_me( get_the_ID() ) ) {
+// 	echo 'not me';
+// }
+
+
+// $author = get_the_author();
+if ( ! mro_cit_check_if_me( get_the_ID() ) ) :
 ?>
 <p class="byline">
 	<?php
@@ -22,7 +29,7 @@ if( $author != 'Matilde Rosero' && $author != 'Mat Rosero' ) :
 <p class="date">
 	<?php
 	$check_date = get_the_date('Y-m-d');
-	if ( $check_date != '2017-08-01' ) :
+	if ( $check_date != '2017-08-01' && $check_date != '1990-01-01' ) :
 	?>
 
 		<?php
@@ -32,9 +39,10 @@ if( $author != 'Matilde Rosero' && $author != 'Mat Rosero' ) :
 			$date_format = 'F j, Y';
 		}
 		the_time($date_format);
+		echo ' - ';
 	endif;
 	if ( !is_singular('cit_past_event') && !is_post_type_archive('cit_past_event') ) {
-		echo ' - ';
+		
 		the_category(', ');
 	} ?>
 </p>
