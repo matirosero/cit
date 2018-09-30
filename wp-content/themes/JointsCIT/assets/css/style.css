@@ -6597,6 +6597,10 @@ BUTTON STYLES
 /*********************
 FORM STYLES
 *********************/
+legend {
+  float: left;
+  width: 100%; }
+
 [type='number'] {
   width: auto; }
   .tribe-events-single-event-description [type='number'] {
@@ -6616,7 +6620,8 @@ FORM STYLES
       margin: 3rem 0 4rem; } }
 
 .register-password,
-.edit-password {
+.edit-password,
+.choose_membership {
   background: #fafafa;
   border: 1px solid #eee;
   padding: 0.5rem 1rem 0;

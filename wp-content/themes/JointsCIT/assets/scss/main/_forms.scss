@@ -1,3 +1,8 @@
+legend {
+	float:left;
+	width: 100%;
+}
+
 [type='number'] {
 	width: auto;
 	.tribe-events-single-event-description & {
@@ -24,7 +29,8 @@
 }
 
 .register-password,
-.edit-password {
+.edit-password,
+.choose_membership {
 	@include light-grey-box;
 	padding: 0.5rem 1rem 0;
 	margin-bottom: 1rem;
