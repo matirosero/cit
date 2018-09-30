@@ -6650,6 +6650,12 @@ legend {
   .edit-member-contacts .additional-contact-child.additional-contact-delete {
     width: 10%; }
 
+[data-showfor] {
+  transition: all 1s ease;
+  border: 3px solid red; }
+  [data-showfor][aria-hidden="true"] {
+    border: 3px solid blue; }
+
 /*********************
 LINK Typography
 *********************/

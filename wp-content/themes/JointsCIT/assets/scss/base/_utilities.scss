@@ -64,6 +64,15 @@ $layers: (
 }
 
 
+// Animation transition
+@mixin animation-transition($duration:1s) {
+    -webkit-transition: all $duration ease;
+    -moz-transition: all $duration ease;
+    -o-transition: all $duration ease;
+    transition: all $duration ease;
+}
+
+
 //Border radius
 
 @mixin border-radius($radius) {

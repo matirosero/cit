@@ -77,3 +77,19 @@ legend {
 	}
 }
 
+[data-showfor] {
+	@include animation-transition();
+	border: 3px solid red;
+	// 	height: auto;
+	// 	opacity: 1;
+	// 	visibility: visible;
+	// 	margin-bottom: 1rem;
+
+	&[aria-hidden="true"] {
+		border: 3px solid blue;
+		// opacity: 0;
+		// visibility: hidden;
+		// height: 1px;
+		// margin-bottom: 0;
+	}
+}
