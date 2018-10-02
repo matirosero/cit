@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - The Events Calendar - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-09-03 19:15:09+0000\n"
+"PO-Revision-Date: 2018-09-24 11:34:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2895,7 +2895,7 @@ msgstr "Complementos instalados"
 
 #: common/src/Tribe/Extension.php:368
 msgid "Unable to run Tribe Extensions. Your website host is running PHP 5.2 or older, and has likely disabled or misconfigured debug_backtrace(). You, or your website host, will need to upgrade PHP or properly configure debug_backtrace() for Tribe Extensions to work."
-msgstr "No se puede ejecutar Tribe Extensions. El host de su sitio web está ejecutando PHP 5.2 o una versión anterior, y probablemente ha deshabilitado o configurado incorrectamente debug_backtrace (). Usted o el anfitrión de su sitio web necesitarán actualizar PHP o configurar adecuadamente debug_backtrace () para que Tribe Extensions funcione."
+msgstr "No se puede ejecutar Tribe Extensions. El host de tu web está ejecutando PHP 5.2 o una versión anterior, y probablemente ha deshabilitado o configurado incorrectamente debug_backtrace (). El gestor de tu hospedaje o tú vais a tener que actualizar PHP o configurar adecuadamente debug_backtrace () para que Tribe Extensions funcione."
 
 #: common/src/Tribe/Extension.php:144
 msgid "Tutorial"
@@ -5341,10 +5341,6 @@ msgstr "%s: un vistazo completo a las características que puede esperar ver de 
 msgid "Settings overview"
 msgstr "Descripción general de configuración"
 
-#: src/Tribe/Main.php:1068
-msgid "%s: A thorough walkthrough of The Events Calendar and the settings that are available to you."
-msgstr "%s: un recorrido completo de The Events Calendar y la configuración que está disponible para usted."
-
 #: src/Tribe/Main.php:1052
 msgid "New User Primer"
 msgstr "Nuevo manual de usuario"
@@ -5371,6 +5367,10 @@ msgstr "%s: Nuestra introducción más completa a la personalización del calend
 msgid "We are committed to helping make your calendar spectacular and have a wealth of resources available, including a handy %s to get your calendar up and running."
 msgstr "Nos hemos comprometido a a ayudarte a hacer que tu calendario sea espectacular y tenemos gran cantidad de recursos disponibles, incluyendo una %s práctica sobre como poner en marcha tu calendario."
 
+#: src/Tribe/Main.php:1068
+msgid "%s: A thorough walkthrough of The Events Calendar and the settings that are available to you."
+msgstr "%s: un recorrido completo de The Events Calendar y los ajustes que tienes disponibles."
+
 #: src/Tribe/Linked_Posts/Chooser_Meta_Box.php:170
 msgid "Create New %s"
 msgstr "Crear nuevo %s"
@@ -5379,10 +5379,6 @@ msgstr "Crear nuevo %s"
 msgid "Clear"
 msgstr "Limpiar"
 
-#: src/Tribe/Linked_Posts/Chooser_Meta_Box.php:257
-msgid "Add another %s"
-msgstr "Agregar otro %s"
-
 #: src/Tribe/Organizer.php:375
 msgid "Unnamed %s"
 msgstr "Sin nombre %s"
@@ -5390,6 +5386,10 @@ msgstr "Sin nombre %s"
 #: common/src/admin-views/tribe-options-licenses.php:47
 msgid "Only license fields for %1$snetwork activated%2$s plugins will be listed on this screen. "
 msgstr "Solo los campos de licencia para %1$snetwork activados%2$s complementos se mostrarán en esta pantalla."
+
+#: src/Tribe/Linked_Posts/Chooser_Meta_Box.php:257
+msgid "Add another %s"
+msgstr "Añadir otro %s"
 
 #: common/src/admin-views/tribe-options-help.php:38
 msgid "Read more about our support policy"
@@ -6384,10 +6384,6 @@ msgstr "Si está familiarizado con HTML, puede agregar código adicional antes d
 msgid "Add HTML after event content"
 msgstr "Añadir HTML después del contenido del evento"
 
-#: src/admin-views/tribe-options-display.php:221
-msgid "If you are familiar with HTML, you can add additional code after the event template. Some themes may require this to help with styling or layout."
-msgstr "Si usted esta familiarizado con HTML, puede agregar código adicional después de la plantilla del evento. Algunos temas pueden requerirlo para hacer que se vean correctamente."
-
 #: src/admin-views/tribe-options-general.php:13
 msgid "Finding & extending your calendar."
 msgstr "Búsqueda y ampliación de su calendario."
@@ -6925,6 +6921,10 @@ msgstr "San Vicente y las Granadinas"
 #: common/src/Tribe/Languages/Locations.php:239
 msgid "Saint Kitts and Nevis"
 msgstr "San Cristóbal y Nevis"
+
+#: src/admin-views/tribe-options-display.php:221
+msgid "If you are familiar with HTML, you can add additional code after the event template. Some themes may require this to help with styling or layout."
+msgstr "Si estás familiarizado con HTML, puedes añadir código adicional después de la plantilla del evento. Puede ser necesario para para controlar la apariencia en algunos temas."
 
 #: src/Tribe/Template/Month.php:462
 msgid "No matching %1$s listed under %2$s. Please try viewing the full calendar for a complete list of events."
@@ -8435,15 +8435,6 @@ msgstr "Lista de eventos"
 msgid "Upcoming Events"
 msgstr "Próximos eventos"
 
-#: src/Tribe/Main.php:1759 src/Tribe/Organizer.php:91 src/Tribe/Venue.php:110
-msgid "Add New"
-msgstr "Agregar nuevo"
-
-#: src/Tribe/Main.php:1760 src/Tribe/Main.php:1892 src/Tribe/Main.php:1893
-#: src/Tribe/Organizer.php:92 src/Tribe/Venue.php:111
-msgid "Add New %s"
-msgstr "Agregar nuevo %s"
-
 #: src/Tribe/Main.php:1766 src/Tribe/Organizer.php:98 src/Tribe/Venue.php:117
 msgid "No %s found in Trash"
 msgstr "No hay %s en la papelera"
@@ -8562,3 +8553,12 @@ msgstr "Un problema impidió que terminara el proceso de actualización de zona 
 msgctxt "Cost range separator"
 msgid " – "
 msgstr " – "
+
+#: src/Tribe/Main.php:1760 src/Tribe/Main.php:1892 src/Tribe/Main.php:1893
+#: src/Tribe/Organizer.php:92 src/Tribe/Venue.php:111
+msgid "Add New %s"
+msgstr "Añadir nuevo %s"
+
+#: src/Tribe/Main.php:1759 src/Tribe/Organizer.php:91 src/Tribe/Venue.php:110
+msgid "Add New"
+msgstr "Añadir nuevo"
