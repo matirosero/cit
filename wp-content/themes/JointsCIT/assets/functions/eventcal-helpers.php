@@ -73,7 +73,7 @@ function mro_cit_rsvp_form() {
 
 
 					// Check that email is in array, return key
-					if ( !is_bool(array_search( $email, array_column( $additional_contacts, 'email' ) ) ) ) {
+					if ( in_array( $email, array_column( $additional_contacts, 'email' ) ) ) {
 
 						// echo '5. email is in array of contacts:<br />';
 
