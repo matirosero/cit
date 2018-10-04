@@ -1,4 +1,153 @@
 <?php
+
+
+
+/*
+ * Add RSVP to events, depending on user capabilities.
+ */
+function mro_cit_rsvp_form() {
+
+    if ( !tribe_is_past_event() && get_post_meta( get_the_ID(), 'mro_cit_event_include_rsvp', true ) == 'on' ) :
+
+
+    	$match_mailchimp_url = false;
+
+
+		if ( isset( $_GET['user'] ) && isset( $_GET['email'] ) && isset( $_GET['guestname'] ) ) {
+
+			// echo '0. yes, all 3 values exist:<br />';
+
+
+			// Sanitize values
+			$email = sanitize_email( $_GET['email'] );
+			$username = sanitize_user( $_GET['user'] );
+			$name = sanitize_text_field( $_GET['guestname'] );
+
+			// echo '0.1 email: '.$email.'<br />
+			// 	0.2 username: '.$username.'<br />
+			// 	0.3 name: '.$name.'<br /><br />';
+
+
+			if ( username_exists( $username ) && is_email( $email ) ) {
+
+				// echo '1. yes, sanitized email is email and sanitized username exists<br />';
+
+
+				// Get user ID
+				$user_id = username_exists( $username );
+				// echo '2. user id: '.$user_id.'</br>';
+
+				//Get user
+				$user = get_userdata( $user_id );
+
+
+				$compare_name = esc_html( $user->user_firstname ).' '.esc_html( $user->user_lastname );
+				$compare_email = esc_html( $user->user_email );
+
+				// echo '2.1 compare name to: '.$compare_name.'<br />';
+				// echo '2.2 compare email to: '.$compare_email.'<br /><br />';
+
+
+				// Compare to main contact
+				if ( $email == $compare_email && $name == $compare_name ) {
+
+					// echo '3. YES IT MATCHES, WE ARE DONE<br />';
+
+					// Change match to true
+					$match_mailchimp_url = true;
+
+				} elseif ( get_user_meta( $user_id, 'mro_cit_user_additional_contacts' ) ) {
+
+					// Additional contacts exist
+					// echo '3. No match but there are additional contacts, go on to additional contacts<br /><br />';
+
+
+					// Get additional contacts
+					$additional_contacts = get_user_meta( $user_id, 'mro_cit_user_additional_contacts', true );
+
+					// echo '4. Additional contacts: <pre>';
+					// var_dump($additional_contacts);
+					// echo '</pre><br />';
+
+					// echo '4.1. Compare '.$email.' to...<br />';
+
+
+					// Check that email is in array, return key
+					if ( !is_bool(array_search( $email, array_column( $additional_contacts, 'email' ) ) ) ) {
+
+						// echo '5. email is in array of contacts:<br />';
+
+						// Get key for contact that matches email
+						$key = array_search( $email, array_column( $additional_contacts, 'email' ) );
+
+						// echo '5.1 key is '.$key.'<br />';
+
+						// echo '5.2. Additional contacts: <pre>';
+						// var_dump($additional_contacts[$key]);
+						// echo '</pre><br />';
+
+
+						// Get values to compare to
+						$compare_name = esc_html( $additional_contacts[$key]['name'] ).' '.esc_html( $additional_contacts[$key]['lastname'] );
+
+						// echo '5.3. Compare '.$name.' to: '.$compare_name.'<br /><br />';
+
+
+						if ( $name == $compare_name ) {
+
+							// echo '6. YES IT MATCHES, WE ARE DONE<br />';
+
+							// Change match to true
+							$match_mailchimp_url = true;
+						}
+					} else {
+						// echo 'NOT IN ARAY';
+					}
+				}
+			}
+		}
+
+
+	    if ( current_user_can( 'rsvp_event' ) || current_user_can( 'buy_event_tickets' ) || $match_mailchimp_url ) :
+	    	echo '<h3>Confirme su asistencia</h3>';
+	    endif;
+
+
+	    if ( current_user_can( 'rsvp_event' ) || $match_mailchimp_url ) :
+		    echo '<p>Llene este formulario, o comuníquese con Leda Mora, teléfono 2223-5923, fax 2223-1997, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a></p>';
+
+		    if ( members_current_user_has_role( 'afiliado_empresarial' ) || members_current_user_has_role( 'afiliado_institucional' ) ) :
+
+		    	echo do_shortcode( '[caldera_form id="CF5a1708a8ae022"]' );
+
+			elseif ( $match_mailchimp_url ) :
+
+				// THIS WILL NEED TO BE UPDATED!!!!!
+
+				echo do_shortcode( '[caldera_form id="CF5bb303fed777a"]' );
+
+		    else:
+
+		    	echo do_shortcode( '[caldera_form id="CF5a7b293be0d36"]' );
+
+		    endif;
+
+		elseif ( current_user_can( 'buy_event_tickets' ) ) :
+			echo '<p class="callout primary small">Los Afiliados Personales tienen la posibilidad de adquirir entradas a los eventos del Club. Llene este formulario y nos comunicaremos con más detalles.</p>'
+				.do_shortcode( '[caldera_form id="CF5a222f8dca7c7"]' );
+		elseif ( members_current_user_has_role( 'afiliado_empresarial_pendiente' ) || members_current_user_has_role( 'afiliado_institucional_pendiente' ) ) :
+			echo '<h3>Adquiera entradas al evento</h3>';
+			echo '<p class="callout warning small">Aún está pendiente finalizar su afiliación. Comuníquese con Leda Mora, teléfono 2223-5923, fax 2223-1997, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a> si desea asistir al evento.</p>';
+		else:
+			echo '<p class="callout primary small">Si es afiliado, ingrese a su cuenta para confirmar su asistencia.</p>'
+				.do_shortcode( '[login_form] ' );
+		endif;
+	endif;
+}
+// remain same
+add_action('tribe_events_single_event_after_the_content','mro_cit_rsvp_form');
+
+
 /*
  * Past events list in reverse chronological order
  */
@@ -115,14 +264,14 @@ function mro_cit_tribe_modify_events_title( $title, $depth ) {
 
 
 	// If there's a date selected in the tribe bar, show the date range of the currently showing events
-	
+
 	// MRo edit for Year filter
 	if ( isset( $_REQUEST['tribe-bar-year-field'] ) && $wp_query->have_posts() ) {
 
 		$year = $_REQUEST['tribe-bar-year-field'];
 
 		$title = sprintf( __( '%1$s for %2$s', 'jointswp' ), $events_label_plural, $year );
-	
+
 	// End MRo edit (originally if statemente starts here)
 	} elseif ( isset( $_REQUEST['tribe-bar-date'] ) && $wp_query->have_posts() ) {
 		$first_returned_date = tribe_get_start_date( $wp_query->posts[0], false, Tribe__Date_Utils::DBDATEFORMAT );
@@ -159,42 +308,3 @@ function mro_cit_tribe_modify_events_title( $title, $depth ) {
 	}
 	return $title;
 }
-
-
-/*
- * Add RSVP to events, depending on user capabilities.
- */
-function mro_cit_rsvp_form() {
-
-    if ( !tribe_is_past_event() && get_post_meta( get_the_ID(), 'mro_cit_event_include_rsvp', true ) == 'on' ) :
-	    if ( current_user_can( 'rsvp_event' ) || current_user_can( 'buy_event_tickets' )) :
-	    	echo '<h3>Confirme su asistencia</h3>';
-	    endif;
-
-	    if ( current_user_can( 'rsvp_event' ) ) :
-		    echo '<p>Llene este formulario, o comuníquese con Leda Mora, teléfono 2223-5923, fax 2223-1997, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a></p>';
-
-		    if ( members_current_user_has_role( 'afiliado_empresarial' ) || members_current_user_has_role( 'afiliado_institucional' ) ) :
-
-		    	echo do_shortcode( '[caldera_form id="CF5a1708a8ae022"]' );
-
-		    else: 
-
-		    	echo do_shortcode( '[caldera_form id="CF5a7b293be0d36"]' );
-
-		    endif;
-
-		elseif ( current_user_can( 'buy_event_tickets' ) ) :
-			echo '<p class="callout primary small">Los Afiliados Personales tienen la posibilidad de adquirir entradas a los eventos del Club. Llene este formulario y nos comunicaremos con más detalles.</p>'
-				.do_shortcode( '[caldera_form id="CF5a222f8dca7c7"]' );
-		elseif ( members_current_user_has_role( 'afiliado_empresarial_pendiente' ) || members_current_user_has_role( 'afiliado_institucional_pendiente' ) ) :
-			echo '<h3>Adquiera entradas al evento</h3>';
-			echo '<p class="callout warning small">Aún está pendiente finalizar su afiliación. Comuníquese con Leda Mora, teléfono 2223-5923, fax 2223-1997, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a> si desea asistir al evento.</p>';
-		else:
-			echo '<p class="callout primary small">Si es afiliado, ingrese a su cuenta para confirmar su asistencia.</p>'
-				.do_shortcode( '[login_form] ' );
-		endif;
-	endif;
-}
-// remain same
-add_action('tribe_events_single_event_after_the_content','mro_cit_rsvp_form');
