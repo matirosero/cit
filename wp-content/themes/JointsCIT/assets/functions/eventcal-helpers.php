@@ -3,7 +3,8 @@
 
 
 /*
- * Add RSVP to events, depending on user capabilities.
+ * Add RSVP to events, depending on user capabilities,
+ * or on Mailchimp URL parameters.
  */
 function mro_cit_rsvp_form() {
 
@@ -23,14 +24,14 @@ function mro_cit_rsvp_form() {
 			$username = sanitize_user( $_GET['user'] );
 			$name = sanitize_text_field( $_GET['guestname'] );
 
-			// echo '0.1 email: '.$email.'<br />
-			// 	0.2 username: '.$username.'<br />
-			// 	0.3 name: '.$name.'<br /><br />';
+			echo '0.1 email: '.$email.'<br />
+				0.2 username: '.$username.'<br />
+				0.3 name: "'.$name.'"<br /><br />';
 
 
 			if ( username_exists( $username ) && is_email( $email ) ) {
 
-				// echo '1. yes, sanitized email is email and sanitized username exists<br />';
+				echo '1. yes, sanitized email is email and sanitized username exists<br />';
 
 
 				// Get user ID
@@ -41,17 +42,17 @@ function mro_cit_rsvp_form() {
 				$user = get_userdata( $user_id );
 
 
-				$compare_name = esc_html( $user->user_firstname ).' '.esc_html( $user->user_lastname );
+				$compare_name = trim( esc_html( $user->user_firstname ).' '.esc_html( $user->user_lastname ) );
 				$compare_email = esc_html( $user->user_email );
 
-				// echo '2.1 compare name to: '.$compare_name.'<br />';
-				// echo '2.2 compare email to: '.$compare_email.'<br /><br />';
+				echo '2.1 compare name to: "'.$compare_name.'"<br />';
+				echo '2.2 compare email to: '.$compare_email.'<br /><br />';
 
 
 				// Compare to main contact
 				if ( $email == $compare_email && $name == $compare_name ) {
 
-					// echo '3. YES IT MATCHES, WE ARE DONE<br />';
+					echo '3. YES IT MATCHES, WE ARE DONE<br />';
 
 					// Change match to true
 					$match_mailchimp_url = true;
@@ -59,43 +60,43 @@ function mro_cit_rsvp_form() {
 				} elseif ( get_user_meta( $user_id, 'mro_cit_user_additional_contacts' ) ) {
 
 					// Additional contacts exist
-					// echo '3. No match but there are additional contacts, go on to additional contacts<br /><br />';
+					echo '3. No match but there are additional contacts, go on to additional contacts<br /><br />';
 
 
 					// Get additional contacts
 					$additional_contacts = get_user_meta( $user_id, 'mro_cit_user_additional_contacts', true );
 
-					// echo '4. Additional contacts: <pre>';
-					// var_dump($additional_contacts);
-					// echo '</pre><br />';
+					echo '4. Additional contacts: <pre>';
+					var_dump($additional_contacts);
+					echo '</pre><br />';
 
-					// echo '4.1. Compare '.$email.' to...<br />';
+					echo '4.1. Compare '.$email.' to...<br />';
 
 
 					// Check that email is in array, return key
 					if ( in_array( $email, array_column( $additional_contacts, 'email' ) ) ) {
 
-						// echo '5. email is in array of contacts:<br />';
+						echo '5. email is in array of contacts:<br />';
 
 						// Get key for contact that matches email
 						$key = array_search( $email, array_column( $additional_contacts, 'email' ) );
 
-						// echo '5.1 key is '.$key.'<br />';
+						echo '5.1 key is '.$key.'<br />';
 
-						// echo '5.2. Additional contacts: <pre>';
-						// var_dump($additional_contacts[$key]);
-						// echo '</pre><br />';
+						echo '5.2. Additional contacts: <pre>';
+						var_dump($additional_contacts[$key]);
+						echo '</pre><br />';
 
 
 						// Get values to compare to
-						$compare_name = esc_html( $additional_contacts[$key]['name'] ).' '.esc_html( $additional_contacts[$key]['lastname'] );
+						$compare_name = trim( esc_html( $additional_contacts[$key]['name'] ).' '.esc_html( $additional_contacts[$key]['lastname'] ) );
 
-						// echo '5.3. Compare '.$name.' to: '.$compare_name.'<br /><br />';
+						echo '5.3. Compare "'.$name.'" to: "'.$compare_name.'"<br /><br />';
 
 
 						if ( $name == $compare_name ) {
 
-							// echo '6. YES IT MATCHES, WE ARE DONE<br />';
+							echo '6. YES IT MATCHES, WE ARE DONE<br />';
 
 							// Change match to true
 							$match_mailchimp_url = true;
@@ -103,6 +104,8 @@ function mro_cit_rsvp_form() {
 					} else {
 						// echo 'NOT IN ARAY';
 					}
+				} else {
+					echo '3. no additional contacts';
 				}
 			}
 		}
