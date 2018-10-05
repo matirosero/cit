@@ -107,6 +107,11 @@ function mro_cit_rsvp_form() {
 				} else {
 					echo '3. no additional contacts';
 				}
+			} elseif ( $username == 'cortesia' ) {
+
+				echo '1. Courtesy/temporary invitation!';
+				// Change match to true
+				$match_mailchimp_url = true;
 			}
 		}
 
