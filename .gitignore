@@ -17,7 +17,7 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 !wp-content/mu-plugins/
-!wp-content/languages/
+# !wp-content/languages/
 
 wp-content/plugins/*
 
@@ -28,4 +28,5 @@ wp-content/themes/*
 
 
 
-wp-content/languages/*
+# wp-content/languages/*
+# wp-content/languages/plugins/*

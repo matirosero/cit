@@ -141,7 +141,8 @@ function mro_cit_rsvp_form() {
 		    endif;
 
 		elseif ( current_user_can( 'buy_event_tickets' ) ) :
-			echo '<p class="callout primary small">Los Afiliados Personales tienen la posibilidad de adquirir entradas a los eventos del Club. Llene este formulario y nos comunicaremos con más detalles.</p>'
+			echo '<p class="callout primary small">Los Afiliados Personales tienen la posibilidad de adquirir entradas a los eventos del Club. Llene este formulario y nos comunicaremos con más detalles.</p>
+				<p class="callout primary small">Su información se llena automáticamente en el formulario. <strong>Si su nombre no aparece, debe completar sus datos antes de enviar el formulario.</strong></p>'
 				.do_shortcode( '[caldera_form id="CF5a222f8dca7c7"]' );
 		elseif ( members_current_user_has_role( 'afiliado_empresarial_pendiente' ) || members_current_user_has_role( 'afiliado_institucional_pendiente' ) ) :
 			echo '<h3>Adquiera entradas al evento</h3>';
