@@ -1,0 +1,137 @@
+/******************************************************************
+
+Stylesheet: Variables
+
+******************************************************************/
+
+
+/*********************
+COLORS
+*********************/
+
+$colors: (
+ 'blue': (
+   dark: 	darken(#326aac,15%),
+   base: 	#326aac,//#006CB5,**
+   light:	lighten(#326aac,15%),
+   lightest: lighten(#326aac,25%),
+ ),
+ 'aqua': (
+   dark:    darken(#55b3c5,15%),
+   base:    #55b3c5,
+   light:   lighten(#55b3c5,15%),
+   lightest: lighten(#55b3c5,25%),
+ ),
+ 'blue-gradient': (
+   light:   #53a3be,
+   dark:    #2555a5,
+   hover-light:   #6ac8ca,
+   hover-dark:    #3a78b0,
+ ),
+ 'grey-gradient': (
+   light:   #8b8b8b,
+   dark:    #002454,
+ ),
+ 'orange': (
+   dark: 	#E02818,
+   base: 	#F03626,
+   light: 	#F9664D,
+ ),
+ 'red': (
+   base: #a00,
+   light: #ff0000,
+ ),
+ 'grey': (
+   dark: 	  #333,
+   base: 	  #D8D8D8,
+   lightish:  #e9e9e9, //for dropdown
+   light: 	  #F5F5F5,
+ ),
+ 'black': (
+   base: 	#4A4A4A,
+   trans: 	transparentize(#4A4A4A, .3)
+ ),
+ 'white': (
+   base: 	#fff,
+   trans: 	transparentize(#fff, .5)
+ ),
+ 'social': (
+   facebook:	#3c5a9a,
+   twitter: 	#55acee,
+   google: 		#de4b39,
+   reddit: 		#cee3f8,
+   linkedin: 	#007bb5,
+   youtube: 	#cc181e,
+ )
+);
+
+@function color($color-name, $tone: base) {
+    @return map-get(map-get($colors, $color-name), $tone);
+}
+
+//usage
+// a {
+//   color: color('grey', 'dark');
+// }
+
+/*********************
+Fonts
+*********************/
+
+$serif-family: 'Roboto Slab', Georgia, serif;
+$header-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$sans-family: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+
+$larger-font-size: 1.25rem;
+$sidebar-small-text: 13px;
+$sidebar-line-height: 1.6;
+
+
+/*********************
+BORDERS
+*********************/
+
+$divider-base: 1px solid color( 'grey', 'base' );
+
+
+/*********************
+Block padding
+*********************/
+
+$block-padding: (
+   small: 1rem,
+   medium: 2rem,
+   large: 3rem,
+);
+
+@function block-padding($size) {
+    @return map-get($block-padding, $size);
+}
+
+
+/*********************
+Topbar
+*********************/
+
+$topbar-height: (
+	minimal: 39px,
+	small: 90px,
+	medium: 90px,
+	large: 115px,
+);
+
+@function topbar-height($size) {
+    @return map-get($topbar-height, $size);
+}
+
+
+/*********************
+Sidebar Menu
+*********************/
+$sidebar-menu-width: 210px;
+
+
+/*********************
+Reports List
+*********************/
+$list-report-buttons-width: 265px;
