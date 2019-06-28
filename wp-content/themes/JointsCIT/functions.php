@@ -41,7 +41,34 @@ require_once(get_template_directory().'/functions/translation/translation.php');
 // require_once(get_template_directory().'/functions/custom-post-type.php');
 
 // Customize the WordPress login menu
-// require_once(get_template_directory().'/functions/login.php'); 
+require_once(get_template_directory().'/functions/login.php'); 
 
 // Customize the WordPress admin
 // require_once(get_template_directory().'/functions/admin.php'); 
+
+
+
+/*
+ * MRo
+ */
+
+// Template functions
+require_once(get_template_directory().'/functions/template-functions.php'); 
+
+// Hooks
+require_once(get_template_directory().'/functions/hooks.php'); 
+
+// Filters
+require_once(get_template_directory().'/functions/filters.php'); 
+
+// Actions
+require_once(get_template_directory().'/functions/actions.php'); 
+
+// Helpers
+require_once(get_template_directory().'/functions/helpers.php'); 
+require_once(get_template_directory().'/functions/eventcal-helpers.php'); 
+require_once(get_template_directory().'/functions/csv-helpers.php'); 
+
+
+// Customizer
+require_once(get_template_directory().'/functions/custom-header.php'); 
