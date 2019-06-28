@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Full Width (No Sidebar)
+Template Name: Debug
 */
 ?>
 
@@ -12,13 +12,13 @@ Template Name: Full Width (No Sidebar)
 
 	<div id="content" class="columns">
 
-		<div id="inner-content" class="row">
+		<div id="" class="row">
 
-		    <main id="main" class="large-12 medium-12 columns" role="main">
+		    <main id="" class="large-12 medium-12 columns" role="main">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<?php get_template_part( 'parts/loop', 'page' ); ?>
+					<?php get_template_part( 'parts/content', 'debug' ); ?>
 
 				<?php endwhile; endif; ?>
 

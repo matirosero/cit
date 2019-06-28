@@ -1,6 +1,6 @@
 <?php
 /*
-General Single post template
+Template Name: For Events Calendar
 */
 ?>
 
@@ -18,16 +18,7 @@ General Single post template
 
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			    	<?php
-			    	if ( is_singular('cit_report') ) :
-			    		get_template_part( 'parts/loop', 'single-report' );
-			    	elseif ( is_singular('cit_past_event') ) :
-			    		get_template_part( 'parts/loop', 'single-past-event' );
-			    	else:
-			    		// get_template_part( 'parts/content', 'dev-info' );
-			    		get_template_part( 'parts/loop', 'single' );
-			    	endif;
-			    	?>
+			    	<?php get_template_part( 'parts/loop', 'single' ); ?>
 
 			    <?php endwhile; else : ?>
 

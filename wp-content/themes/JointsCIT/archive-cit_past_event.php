@@ -1,20 +1,20 @@
 <?php get_header(); ?>
 
-<div id="container" class="row expand small-collapse ">
+<div id="container" class="row expand medium-collapse ">
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
 	<div id="content" class="columns">
 
-		<?php
-		if ( has_header_image() && ! is_paged() ) :
-			get_template_part( 'parts/hero/hero', 'full' );
-		endif;
-		?>
-
 		<div id="inner-content" class="row" data-equalizer="main-side" data-equalize-on="large">
 
 			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch="main-side" >
+
+				<header class="article-header">
+					<h1 class="entry-title" itemprop="headline">Eventos pasados</h1>
+
+					<p>Póngase al día con todo el conocimiento y experiencia de eventos anteriores. </p>    
+				</header>
 
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

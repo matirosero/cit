@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Registration
+*/
+?>
+
 <?php get_header(); ?>
 
 <div id="container" class="row expand medium-collapse ">
@@ -9,27 +15,16 @@
 		<div id="inner-content" class="row" data-equalizer="main-side" data-equalize-on="large">
 
 			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch="main-side" >
-				
-				<header class="article-header">
-					<h1 class="archive-title"><?php _e( 'Search Results for:', 'jointswp' ); ?> <?php echo esc_attr(get_search_query()); ?></h1>
-				</header>
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive' ); ?>
+			    	<?php get_template_part( 'parts/loop', 'page' ); ?>
 
-				<?php endwhile; ?>
+			    <?php endwhile; endif; ?>
 
-					<?php joints_page_navi(); ?>
+			    <?php mro_cit_frontend_registration(); ?>
 
-				<?php else : ?>
-
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
-
-			    <?php endif; ?>
-
-		    </main> <!-- end #main -->
+			</main> <!-- end #main -->
 
 		    <?php get_sidebar(); ?>
 

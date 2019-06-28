@@ -1,6 +1,15 @@
 <?php
 /*
-General Single post template
+This is the custom post type post template.
+If you edit the post type name, you've got
+to change the name of this template to
+reflect that name change.
+
+i.e. if your custom post type is called
+register_post_type( 'bookmarks',
+then your single template should be
+single-bookmarks.php
+
 */
 ?>
 
@@ -18,16 +27,7 @@ General Single post template
 
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			    	<?php
-			    	if ( is_singular('cit_report') ) :
-			    		get_template_part( 'parts/loop', 'single-report' );
-			    	elseif ( is_singular('cit_past_event') ) :
-			    		get_template_part( 'parts/loop', 'single-past-event' );
-			    	else:
-			    		// get_template_part( 'parts/content', 'dev-info' );
-			    		get_template_part( 'parts/loop', 'single' );
-			    	endif;
-			    	?>
+			    	<?php get_template_part( 'parts/loop', 'single' ); ?>
 
 			    <?php endwhile; else : ?>
 

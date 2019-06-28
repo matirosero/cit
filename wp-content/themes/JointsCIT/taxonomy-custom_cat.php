@@ -1,22 +1,35 @@
+<?php
+/*
+This is the custom post type taxonomy template.
+If you edit the custom taxonomy name, you've got
+to change the name of this template to
+reflect that name change.
+
+i.e. if your custom taxonomy is called
+register_taxonomy( 'shoes',
+then your single template should be
+taxonomy-shoes.php
+
+*/
+?>
+
 <?php get_header(); ?>
 
-<div id="container" class="row expand small-collapse ">
+<div id="container" class="row expand medium-collapse ">
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
 	<div id="content" class="columns">
 
-		<?php
-		if ( has_header_image() && ! is_paged() ) :
-			get_template_part( 'parts/hero/hero', 'full' );
-		endif;
-		?>
-
 		<div id="inner-content" class="row" data-equalizer="main-side" data-equalize-on="large">
 
 			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch="main-side" >
 
-			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			    <header>
+			    	<h1 class="page-title"><span><?php _e( 'Posts Categorized:', 'jointswp' ); ?></span> <?php single_cat_title(); ?></h1>
+			    </header>
+
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<!-- To see additional archive styles, visit the /parts directory -->
 					<?php get_template_part( 'parts/loop', 'archive' ); ?>

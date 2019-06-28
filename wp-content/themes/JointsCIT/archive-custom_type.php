@@ -1,16 +1,10 @@
 <?php get_header(); ?>
 
-<div id="container" class="row expand small-collapse ">
+<div id="container" class="row expand medium-collapse ">
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
 	<div id="content" class="columns">
-
-		<?php
-		if ( has_header_image() && ! is_paged() ) :
-			get_template_part( 'parts/hero/hero', 'full' );
-		endif;
-		?>
 
 		<div id="inner-content" class="row" data-equalizer="main-side" data-equalize-on="large">
 
