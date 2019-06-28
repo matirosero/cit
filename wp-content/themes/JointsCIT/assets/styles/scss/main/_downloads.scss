@@ -1,0 +1,29 @@
+.download-box {
+	@include light-grey-box;
+	padding-top: 1.25rem;
+	text-align: center;
+	.ddownload-link {
+		margin-bottom: 0.5rem;
+	}
+	p {
+		font-size: $small-font-size;
+	}
+	@media only screen and (max-width: 750px ) {
+		width: 100%;
+	}
+	@media only screen and (min-width: 751px ) {
+		margin-top: 0.25rem;
+		&.float-left,
+		&.float-right {
+			max-width: 240px;
+		}
+		&.float-left {
+			margin-right: map-get($grid-column-gutter, medium);
+		}
+
+		.heateor_sss_horizontal_sharing + & {
+			clear: left;
+		}
+	}
+}
+

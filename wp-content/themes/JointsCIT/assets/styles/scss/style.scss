@@ -81,4 +81,14 @@ CSS file.
 @include foundation-float-classes;
 
 // Import your custom styles
-@import "global";
+// @import "global";
+
+// Import your custom styles
+@import "main/main";
+
+
+// Import Foundation style tweaks
+@import "foundation/foundation";
+
+// Import your plugin styles
+@import "plugins/plugins";
