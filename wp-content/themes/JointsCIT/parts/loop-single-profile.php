@@ -1,15 +1,19 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 	<header class="article-header">
+		<?php the_post_thumbnail('thumbnail'); ?>
 		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-		<?php get_template_part( 'parts/content', 'byline' ); ?>
+		<?php
+		if ( get_post_meta( $post->ID, 'mro_cit_board_member_email', true )) : ?>
+			<p class="profile-meta">
+				<?php $email = get_post_meta( $post->ID, 'mro_cit_board_member_email', true ); ?>
+				<a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+			</p>
+		<?php endif; ?>
     </header> <!-- end article header -->
 
     <section class="entry-content" itemprop="articleBody">
-		<?php the_post_thumbnail('full'); ?>
-		<?php if ( shortcode_exists( 'Sassy_Social_Share' ) ) {
-            echo do_shortcode( '[Sassy_Social_Share title="Compartir"]' );
-        } ?>
+		<?php //the_post_thumbnail('thumbnail'); ?>
 		<?php the_content(); ?>
 	</section> <!-- end article section -->
 
@@ -20,6 +24,6 @@
 
 	<?php //the_post_navigation(); ?>
 
-	<?php comments_template(); ?>
+	<?php //comments_template(); ?>
 
 </article> <!-- end article -->
