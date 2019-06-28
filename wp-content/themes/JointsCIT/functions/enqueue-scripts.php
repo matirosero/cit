@@ -17,9 +17,9 @@ function site_scripts() {
      * TEMP SCRIPTS
      */
     // wp_enqueue_script( 'load-tab-content-js', get_template_directory_uri() . '/assets/js/mro-load-tab-content.js', array( 'jquery' ), '', true );
-    wp_enqueue_script( 'reload-eq', get_template_directory_uri() . '/assets/js/mro-reload-eq.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'reload-eq', get_template_directory_uri() . '/assets/scripts/mro-reload-eq.js', array( 'jquery' ), '', true );
 
-    wp_enqueue_script( 'toggle-fields', get_template_directory_uri() . '/assets/js/mro-toggle-fields.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'toggle-fields', get_template_directory_uri() . '/assets/scripts/mro-toggle-fields.js', array( 'jquery' ), '', true );
 
     /*
      * Google Fonts
