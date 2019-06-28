@@ -1,48 +1,32 @@
-<?php
-/*
-General Single post template
-*/
-?>
+<?php 
+/**
+ * The template for displaying all single posts and attachments
+ */
 
-<?php get_header(); ?>
+get_header(); ?>
+			
+<div class="content">
 
-<div id="container" class="row expand medium-collapse ">
+	<div class="inner-content grid-x grid-margin-x grid-padding-x">
 
-	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
+		<main class="main small-12 medium-8 large-8 cell" role="main">
+		
+		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		
+		    	<?php get_template_part( 'parts/loop', 'single' ); ?>
+		    	
+		    <?php endwhile; else : ?>
+		
+		   		<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-	<div id="content" class="columns">
+		    <?php endif; ?>
 
-		<div id="inner-content" class="row" data-equalizer="main-side" data-equalize-on="large">
+		</main> <!-- end #main -->
 
-			<main id="main" class="large-8 xlarge-9 columns" role="main" data-equalizer-watch="main-side" >
+		<?php get_sidebar(); ?>
 
-			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	</div> <!-- end #inner-content -->
 
-			    	<?php
-			    	if ( is_singular('cit_report') ) :
-			    		get_template_part( 'parts/loop', 'single-report' );
-			    	elseif ( is_singular('cit_past_event') ) :
-			    		get_template_part( 'parts/loop', 'single-past-event' );
-			    	else:
-			    		// get_template_part( 'parts/content', 'dev-info' );
-			    		get_template_part( 'parts/loop', 'single' );
-			    	endif;
-			    	?>
-
-			    <?php endwhile; else : ?>
-
-			   		<?php get_template_part( 'parts/content', 'missing' ); ?>
-
-			    <?php endif; ?>
-
-			</main> <!-- end #main -->
-
-			<?php get_sidebar(); ?>
-
-		</div> <!-- end #inner-content -->
-
-	</div> <!-- end #content -->
-
-</div><!-- end #container -->
+</div> <!-- end #content -->
 
 <?php get_footer(); ?>

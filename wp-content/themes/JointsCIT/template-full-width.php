@@ -2,32 +2,25 @@
 /*
 Template Name: Full Width (No Sidebar)
 */
-?>
 
-<?php get_header(); ?>
-
-<div id="container" class="row expand medium-collapse ">
-
-	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
-
-	<div id="content" class="columns">
-
-		<div id="inner-content" class="row">
-
-		    <main id="main" class="large-12 medium-12 columns" role="main">
-
+get_header(); ?>
+			
+	<div class="content">
+	
+		<div class="inner-content grid-x grid-margin-x grid-padding-x">
+	
+		    <main class="main small-12 medium-12 large-12 cell" role="main">
+				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<?php get_template_part( 'parts/loop', 'page' ); ?>
-
-				<?php endwhile; endif; ?>
+					
+				<?php endwhile; endif; ?>							
 
 			</main> <!-- end #main -->
-
+		    
 		</div> <!-- end #inner-content -->
-
+	
 	</div> <!-- end #content -->
-
-</div><!-- end #container -->
 
 <?php get_footer(); ?>

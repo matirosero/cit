@@ -25,6 +25,7 @@ wp-content/mu-plugins/*
 
 wp-content/themes/*
 !wp-content/themes/JointsCIT/
+!wp-content/themes/JointsCIT-backup/
 
 
 
