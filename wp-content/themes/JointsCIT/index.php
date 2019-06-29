@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="container" class="grid-x grid-padding-x expand small-collapse ">
+<div id="container" class="expand small-collapse ">
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
