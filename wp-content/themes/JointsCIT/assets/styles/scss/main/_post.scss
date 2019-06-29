@@ -142,15 +142,28 @@ POSTS & CONTENT STYLES
 
 	.single-post & p:first-of-type {
 		font-size: $larger-font-size;
+		// color: blue;
 		&:first-letter {
-			box-sizing: border-box;
+			color: color('blue', 'base');
 			float: left;
-			font-size: $larger-font-size*3.25;
-			line-height: $larger-font-size*2.75;
-			padding-top: 4px;
-			padding-right: 0.25rem;
-			padding-left: 3px;
+			font-size: 120px;
+		    line-height: 80px;
+		    padding-top: .6rem;
+		    padding-right: .75rem;
+		    padding-left: 3px;
 		}
+		@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
+			&::first-letter {
+				-webkit-initial-letter: 3;
+				initial-letter: 3;
+				padding: 0;
+				float: none;
+				font-size: inherit;
+				margin-right: 0.5em;
+				font-family: $serif-family;
+			}
+		}
+
 	}
 
 	.executive-summary-subtitle {
