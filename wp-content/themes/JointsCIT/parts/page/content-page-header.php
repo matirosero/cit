@@ -7,7 +7,7 @@ $layout = mro_cit_page_layout();
 ?>
 
 
-<div class="page-header row" data-equalizer="page-header" data-equalizer-mq="medium-up">
+<div class="page-header grid-x grid-padding-x" data-equalizer="page-header" data-equalizer-mq="medium-up">
 
 	<?php
 	if ( $layout == 'hero-img-left' ) : ?>

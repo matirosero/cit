@@ -4,7 +4,7 @@
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
-	<div id="content" class="columns">
+	<div id="content" class="">
 
 		<?php
 		if ( has_header_image() && ! is_paged() ) :

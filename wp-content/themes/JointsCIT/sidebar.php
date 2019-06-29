@@ -1,4 +1,4 @@
-<div id="sidebar1" class="sidebar large-4 xlarge-3 columns" role="complementary" data-equalizer-watch="main-side">
+<div id="sidebar1" class="sidebar large-4 xlarge-3 cell" role="complementary" data-equalizer-watch="main-side">
 
 	<?php get_template_part( 'parts/sidebar', 'login' ); ?>
 

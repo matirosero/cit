@@ -152,12 +152,14 @@ MY GRID
 *********************/
 @mixin static-left-sidebar {
   width: $sidebar-menu-width;
+  float: left;
   // background-color: red;
 }
 @mixin static-contentarea {
-  margin-left: $sidebar-menu-width;
-  float: none;
-  width: auto;
+  // margin-left: $sidebar-menu-width;
+  float: left;
+  width: calc(100% - #{$sidebar-menu-width});//auto;
+  // border: 1px solid red;
 }
 
 
