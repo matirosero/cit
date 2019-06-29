@@ -1,3 +1,9 @@
+.button,
+button,
+input[type="submit"] {
+	border: 0;
+}
+
 .button {
 	@include navigation-type-style;
 	@include border-radius(20px);
