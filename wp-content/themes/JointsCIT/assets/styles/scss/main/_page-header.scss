@@ -4,9 +4,7 @@
 }
 
 .page-header-image {
-	background: red;
 	@include grid-column($columns: 100%, $gutters: 0px);
-
 
 	img {
 		-o-object-fit: cover;
@@ -19,10 +17,6 @@
 	padding-top: block-padding(small);
 	padding-bottom: block-padding(small);
 	@include grid-column($columns: 100%, $gutters: 30px);
-
-	@include breakpoint(medium) {
-		// @include grid-column($columns: 66.66667%, $gutters: 30px);
-	}
 }
 
 .page-section {
@@ -48,9 +42,6 @@
 		padding-top: block-padding(large);
 		padding-bottom: block-padding(large);
 		@include grid-column($columns: 66.66667%, $gutters: 30px);
-	}
-	.page-section {
-		// padding-bottom: block-padding(large);
 	}
 }
 @include breakpoint(xlarge) {
