@@ -6,7 +6,10 @@
     </header> <!-- end article header -->
 
     <section class="entry-content" itemprop="articleBody">
-		<?php the_post_thumbnail('full'); ?>
+		<?php
+		if ( has_post_thumbnail() ) { ?>
+			<div class="article-image"><?php the_post_thumbnail('full'); ?></div>
+		<?php } ?>
 		<?php if ( shortcode_exists( 'Sassy_Social_Share' ) ) {
             echo do_shortcode( '[Sassy_Social_Share title="Compartir"]' );
         } ?>

@@ -23,6 +23,11 @@
 	padding-bottom: block-padding(small);
 }
 
+.article-image {
+	margin-bottom: 1rem;
+	display: block;
+}
+
 @include breakpoint(medium) {
 	.page-header-image {
 		@include grid-column($columns: 33.3333%, $gutters: 0px);
