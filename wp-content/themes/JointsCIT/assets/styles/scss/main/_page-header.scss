@@ -24,8 +24,9 @@
 }
 
 .article-image {
-	margin-bottom: 1rem;
+	margin-bottom: 1.75rem;
 	display: block;
+	text-align: center;
 }
 
 @include breakpoint(medium) {
