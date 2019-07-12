@@ -95,12 +95,16 @@ if ( $pdfs || $video_text || $videos || $gallery_text || $gallery || $evaluation
 
 				<?php
 				if ( $video_text ) :
-					echo wpautop($video_text);
+					echo apply_filters('the_content', $video_text);
 				endif;
 
 				if ( $videos ) :
 					foreach ( $videos as $video ) {
-						echo wp_oembed_get( $video );
+						if( wp_oembed_get( $video ) ) {
+							echo wp_oembed_get( $video );
+						} else {
+							echo apply_filters('the_content',$video);
+						}	
 					}
 				endif;
 				?>
