@@ -72,3 +72,6 @@ require_once(get_template_directory().'/functions/csv-helpers.php');
 
 // Customizer
 require_once(get_template_directory().'/functions/custom-header.php'); 
+
+// oEmbeds
+require_once(get_template_directory().'/functions/oembed.php'); 
