@@ -10,7 +10,7 @@
 add_action( 'init', function() {
     wp_embed_register_handler( 
         'zoom', 
-        '#https://zoom\.us/recording/share/([a-zA-Z0-9_-]+)/?#i', 
+        '#(https://zoom\.us/recording/[a-z]+/[a-zA-Z0-9_-]+)/?#i', 
         'wp_embed_handler_zoom' 
     );
 
@@ -18,7 +18,7 @@ add_action( 'init', function() {
 
 function wp_embed_handler_zoom( $matches, $attr, $url, $rawattr ) {
     $embed = sprintf(
-        '<div class="zoom-container"><iframe class="zoom-embed" src="https://zoom.us/recording/share/%1$s" width="1200" height="675" frameborder="0" scrolling="no"></iframe></div>',
+        '<div class="zoom-container"><iframe class="zoom-embed" src="%1$s" width="1200" height="675" frameborder="0" scrolling="no"></iframe></div>',
         esc_attr( $matches[1] ) 
      );
 

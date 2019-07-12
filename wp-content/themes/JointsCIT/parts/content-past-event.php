@@ -121,7 +121,7 @@ if ( $pdfs || $video_text || $videos || $gallery_text || $gallery || $evaluation
 
 				<?php
 				if ( $gallery_text ) :
-					echo wpautop($gallery_text);
+					echo apply_filters('the_content', $gallery_text);
 				endif;
 
 				if ( $gallery ) : ?>
