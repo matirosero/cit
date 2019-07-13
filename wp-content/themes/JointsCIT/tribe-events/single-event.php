@@ -66,28 +66,20 @@ $event_id = get_the_ID();
 
 	<?php while ( have_posts() ) :  the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<!-- Event featured image, but exclude link -->
-			<?php //echo tribe_event_featured_image( $event_id, 'full', false ); ?>
 
 			<!-- Event content -->
-			<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
-			<?php
+			<?php do_action( 'tribe_events_single_event_before_the_content' ); 
+
 			/*
 			 * MRo: if is past event, show content part for past event
 			 */
 			if ( tribe_is_past_event() ) :
-				
-				get_template_part( 'parts/content', 'past-event' );
-			else: ?>
-				<div class="tribe-events-single-event-description tribe-events-content">
-					<?php if ( shortcode_exists( 'Sassy_Social_Share' ) ) {
-			            echo do_shortcode( '[Sassy_Social_Share title="Compartir"]' );
-			        } ?>
-					<?php the_content(); ?>
-				</div>
-				<!-- .tribe-events-single-event-description -->
-			<?php endif; ?>
-			<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
+				get_template_part( 'parts/event/single', 'past' );
+			else:
+				get_template_part( 'parts/event/single', 'future' );
+			endif;
+
+			do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
 
 			<?php
