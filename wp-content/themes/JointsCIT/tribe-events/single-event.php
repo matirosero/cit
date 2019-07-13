@@ -67,7 +67,7 @@ $event_id = get_the_ID();
 	<?php while ( have_posts() ) :  the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<!-- Event featured image, but exclude link -->
-			<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
+			<?php //echo tribe_event_featured_image( $event_id, 'full', false ); ?>
 
 			<!-- Event content -->
 			<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
@@ -76,6 +76,7 @@ $event_id = get_the_ID();
 			 * MRo: if is past event, show content part for past event
 			 */
 			if ( tribe_is_past_event() ) :
+				
 				get_template_part( 'parts/content', 'past-event' );
 			else: ?>
 				<div class="tribe-events-single-event-description tribe-events-content">

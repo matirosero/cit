@@ -44,7 +44,9 @@ if ( $pdfs || $video_text || $videos || $gallery_text || $gallery || $evaluation
 
 		<section id="event-information" data-magellan-target="event-information">
 
-			<?php the_post_thumbnail('full'); ?>
+			<?php //the_post_thumbnail('full'); ?>
+			<!-- Event featured image, but exclude link -->
+			<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
 			<?php if ( shortcode_exists( 'Sassy_Social_Share' ) ) {
 	            echo do_shortcode( '[Sassy_Social_Share title="Compartir"]' );
 	        } ?>
