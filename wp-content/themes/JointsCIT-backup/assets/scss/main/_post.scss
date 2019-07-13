@@ -1,0 +1,258 @@
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+.post,
+.type-tribe_events,
+.cit_past_event,
+.cit_report {
+	margin-bottom: 1rem;
+	@include breakpoint(medium) {
+		margin-bottom: 3rem;
+	}
+}
+
+.single-title,
+.page-title,
+.section-title {
+	text-align: center;
+}
+
+.single-title {
+	.single-cit_report &,
+	.single-cit_past_event & {
+		@extend h3;
+		// text-align: left;
+	}
+}
+
+.page-title {
+
+	.archive & {
+		@include navigation-type-style();
+		@include divider;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
+		@include breakpoint(medium) {
+			margin-bottom: 2rem;
+		}
+		@include breakpoint(large) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	// Remove Foundation vcard styling from author page titles
+	.vcard {
+		border: 0px;
+		padding: 0px;
+	}
+}
+
+.archive-title {
+
+}
+
+.entry-title {
+	margin-bottom: .5rem;
+	@include breakpoint(medium) {
+		margin-bottom: 1rem;
+	}
+	.post-type-archive-cit_report &,
+	.post-type-archive-cit_past_event &{
+		@extend h4;
+	}
+
+	// .post-type-archive-cit_report & {
+	// 	@extend h5;
+	// }
+}
+
+.archive-title {
+	margin-bottom: .5rem;
+
+	@include breakpoint(medium) {
+		margin-bottom: 1rem;
+	}
+	@extend h4;
+}
+
+.article-header {
+	position: relative;
+	margin-bottom: 1.25rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	@include divider;
+	@include breakpoint(medium) {
+	  	margin-bottom: 2rem;
+	  	padding-bottom: 1rem;
+		.single & {
+			padding-top: 0.25rem;
+		}
+	}
+	.page-header & {
+		@include divider( color('grey', 'dark') );
+	}
+}
+
+.section-title {
+	margin-bottom: 1.25rem;
+	@include breakpoint(medium) {
+		margin-bottom: 2rem;
+	}
+}
+
+// Post meta
+.byline {
+	color: #999;
+	margin-bottom: 0;
+	font-family: $sans-family;
+	@include breakpoint(small only) {
+		font-size: $small-font-size;
+	}
+}
+
+.date,
+.tribe-events-duration {
+	// margin-bottom: 0;
+	color: #999;
+	font-family: $sans-family;
+	time {}
+	@include breakpoint(small only) {
+		font-size: $small-font-size;
+		margin-bottom: .5rem;
+	}
+}
+
+.post-type.label {
+	font-family: $sans-family;
+	margin-bottom: 0.5rem;
+	@include breakpoint(small only) {
+		font-size: $small-font-size;
+	}
+}
+
+
+
+// Entry content
+.entry-content {
+
+	// .single-post & p:first-of-type {
+	// 	color: red;
+	// }
+
+	.single-post & p:first-of-type {
+		font-size: $larger-font-size;
+		&:first-letter {
+			box-sizing: border-box;
+			float: left;
+			font-size: $larger-font-size*3.25;
+			line-height: $larger-font-size*2.75;
+			padding-top: 4px;
+			padding-right: 0.25rem;
+			padding-left: 3px;
+		}
+	}
+
+	.executive-summary-subtitle {
+		@extend h4;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.alignleft, img.alignleft, img[align="left"] {
+		margin-right: 1.5em;
+		display: inline;
+		float: left;
+	}
+	.alignright, img.alignright, img[align="right"]  {
+		margin-left: 1.5em;
+		display: inline;
+		float: right;
+	}
+	.aligncenter, img.aligncenter, img[align="center"]  {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		clear: both;
+	}
+
+	video, object {
+		max-width: 100%;
+		height: auto;
+	}
+
+	pre {
+		background: #eee;
+		border: 1px solid #cecece;
+		padding: 10px;
+	}
+
+}
+
+.wp-caption {
+	max-width: 100%;
+	background: #eee;
+	padding: 5px;
+
+	// Images inside wp-caption
+	img {
+		max-width: 100%;
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	p.wp-caption-text {
+		font-size: 0.85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
+}
+
+// Add Foundation styling to password protect button
+.post-password-form input[type="submit"] {
+	@include button;
+}
+
+.nav-links {
+	@include grid-row;
+	.nav-previous,
+	.nav-next {
+		@include grid-column($columns: 50%, $gutters: 0);
+	}
+	.nav-previous {
+		padding-right: map-get($grid-column-gutter, small);
+	}
+	.nav-next {
+		padding-left: map-get($grid-column-gutter, small);
+		text-align: right;
+	}
+}
+
+.suggestions-404 {
+	.medium-6.column {
+		&:nth-child(2) {
+			padding-right: map-get($grid-column-gutter, medium)/2;
+		}
+		&:nth-child(3) {
+			padding-left: map-get($grid-column-gutter, medium)/2;
+		}
+	}
+}
+
+.members-list {
+	-webkit-column-count: 2;
+    -moz-column-count: 2;
+	column-count: 2;
+
+  	-webkit-column-width: 200px;
+    -moz-column-width: 200px;
+	column-width: 200px;
+
+	-webkit-column-gap: 2rem; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2rem; /* Firefox */
+    column-gap: 2rem;
+
+}

@@ -95,12 +95,16 @@ if ( $pdfs || $video_text || $videos || $gallery_text || $gallery || $evaluation
 
 				<?php
 				if ( $video_text ) :
-					echo wpautop($video_text);
+					echo apply_filters('the_content', $video_text);
 				endif;
 
 				if ( $videos ) :
 					foreach ( $videos as $video ) {
-						echo wp_oembed_get( $video );
+						if( wp_oembed_get( $video ) ) {
+							echo wp_oembed_get( $video );
+						} else {
+							echo apply_filters('the_content',$video);
+						}	
 					}
 				endif;
 				?>
@@ -117,15 +121,15 @@ if ( $pdfs || $video_text || $videos || $gallery_text || $gallery || $evaluation
 
 				<?php
 				if ( $gallery_text ) :
-					echo wpautop($gallery_text);
+					echo apply_filters('the_content', $gallery_text);
 				endif;
 
 				if ( $gallery ) : ?>
 
-					<div class="row small-up-2 medium-up-3 large-up-3 xlarge-up-4">
+					<div class="grid-x grid-padding-x small-up-2 medium-up-3 large-up-3 xlarge-up-4">
 
 						<?php foreach ( $gallery as $attachment_id => $attachment_url ) {
-							echo '<div class="column column-block">';
+							echo '<div class="cell column-block">';
 							echo wp_get_attachment_image( $attachment_id );
 							echo '</div>';
 						} ?>

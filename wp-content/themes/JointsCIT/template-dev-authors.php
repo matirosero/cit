@@ -6,15 +6,15 @@ Template Name: Dev Authors
 
 <?php get_header(); ?>
 
-<div id="container" class="row expand medium-collapse ">
+<div id="container" class="expand medium-collapse ">
 
 	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
 
-	<div id="content" class="columns">
+	<div id="content" class="">
 
-		<div id="inner-content" class="row">
+		<div id="inner-content" class="grid-x grid-padding-x">
 
-		    <main id="main" class="large-12 medium-12 columns" role="main">
+		    <main id="main" class="large-12 medium-12 cell" role="main">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

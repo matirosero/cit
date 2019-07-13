@@ -32,7 +32,11 @@
 	</header> <!-- end article header -->
 
 	<section class="entry-content" itemprop="articleBody">
-		<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('full'); ?></a>
+		<?php
+		if ( has_post_thumbnail() ) { ?>
+			<a href="<?php the_permalink() ?>" class="article-image"><?php the_post_thumbnail('full'); ?></a>
+		<?php } ?>
+
 		<?php the_excerpt(); ?>
 	</section> <!-- end article section -->
 

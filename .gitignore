@@ -25,8 +25,13 @@ wp-content/mu-plugins/*
 
 wp-content/themes/*
 !wp-content/themes/JointsCIT/
+!wp-content/themes/JointsCIT-backup/
 
 
 
 wp-content/languages/*
 !wp-content/languages/plugins/
+wp-content/languages/plugins/*
+!wp-content/languages/plugins/co-authors-plus-es_PE.*
+!wp-content/languages/plugins/members-es_PE.*
+!wp-content/languages/plugins/the-events-calendar-es_PE-es_PE.*

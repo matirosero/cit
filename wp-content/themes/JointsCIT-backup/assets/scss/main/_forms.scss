@@ -1,0 +1,97 @@
+legend {
+	float:left;
+	width: 100%;
+}
+
+[type='number'] {
+	width: auto;
+	.tribe-events-single-event-description & {
+		width: 4.5rem;
+	}
+}
+
+.search-form {
+	button {
+		margin-right: 1rem;
+		[class^="icon-"]:before, [class*=" icon-"]:before {
+			font-size: 1.25rem;
+			line-height: 12px;
+			margin-left: 0;
+		}
+	}
+
+	#content-not-found & {
+		margin: 1.5rem 0 2rem;
+		@include breakpoint(medium) {
+			margin: 3rem 0 4rem;
+		}
+	}
+}
+
+.register-password,
+.edit-password,
+.choose_membership {
+	@include light-grey-box;
+	padding: 0.5rem 1rem 0;
+	margin-bottom: 1rem;
+}
+
+
+#password-strength {
+	display: none;
+	@extend .callout;
+
+	&.bad,
+	&.good,
+	&.strong,
+	&.short {
+		display: block;
+	}
+
+	&.good,
+	&.strong {
+		@extend .success;
+	}
+
+	&.bad,
+	&.short {
+		@extend .alert;
+	}
+}
+
+.edit-member-contacts {
+	.parent,
+	.additional-contact { 
+		display: flex; 
+		 align-items: center;
+		flex-wrap: nowrap;
+		height: 100%; 
+	} 
+	.child,
+	.additional-contact-child { 
+		width: 30%;
+		padding-right: 10px;
+		&.additional-contact-delete {
+			width: 10%;
+		}
+	}
+}
+
+// #mro_cit_registration_form p {
+// 	@include animation-transition();
+// }
+
+[data-showfor] {
+	// @include animation-transition();
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+	margin-bottom: 1rem;
+
+	&[aria-hidden="true"] {
+		opacity: 0;
+		visibility: hidden;
+		height: 1px;
+		margin-bottom: 0;
+	}
+}

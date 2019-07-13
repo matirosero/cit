@@ -1,0 +1,69 @@
+.button,
+button,
+input[type="submit"] {
+	border: 0;
+}
+
+.button {
+	@include navigation-type-style;
+	@include border-radius(20px);
+	@include button-gradient( 
+		color('blue-gradient', 'light'), 
+		color('blue-gradient', 'dark'), 
+		color('blue-gradient', 'hover-light'), 
+		color('blue-gradient', 'hover-dark'), 
+		color('white', 'base'), 
+		color('white', 'base') 
+	);
+	margin-bottom: 2rem;
+
+	&.search-submit {
+		@include border-left-radius(0);
+		// @include border-radius(10px)
+	}
+
+	&.secondary,
+	.off-canvas & {
+		@include button-gradient( 
+			color('grey', 'light'), 
+			color('grey', 'base'), 
+			color('blue-gradient', 'hover-light'), 
+			color('blue-gradient', 'hover-dark'),
+			lighten(color('grey', 'dark'), 20), 
+			color('white', 'base') 
+		);
+	}
+
+	&.read-more {
+		padding-left: 1.25em;
+		&:after {
+			@include icon-before;
+			margin-left: 0.25rem;
+			margin-right: 0;
+			@extend .icon-angle-double-right:before;
+		}
+	}
+}
+
+.input-group > :last-child > * {
+    @include navigation-type-style;
+    @include border-left-radius(0);
+    @include border-right-radius(20px);
+}
+
+.ddownload-link {
+	@extend .button;
+	&:before {
+		@include icon-before;
+		margin-right: 0.25rem;
+		@extend .icon-download:before;
+	}
+}
+
+.close-button {
+	.icon-cancel:before {
+		width: auto;
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
