@@ -18,7 +18,7 @@ Template Name: Dev Authors
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<?php get_template_part( 'parts/content', 'dev-authors' ); ?>
+					<?php get_template_part( 'parts/dev/authors' );  ?>
 
 				<?php endwhile; endif; ?>
 

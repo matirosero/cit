@@ -1,11 +1,5 @@
 <?php
 
-
-// if ( ! mro_cit_check_if_me( get_the_ID() ) ) {
-// 	echo 'not me';
-// }
-
-
 // $author = get_the_author();
 if ( ! mro_cit_check_if_me( get_the_ID() ) ) :
 ?>

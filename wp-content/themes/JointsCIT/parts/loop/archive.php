@@ -18,15 +18,11 @@
 		<?php
 		if ( is_singular('cit_report') || is_post_type_archive('cit_report') || get_post_type() == 'cit_report' ) :
 
-			get_template_part( 'parts/content', 'byline' );
+			get_template_part( 'parts/content/byline' );
 
 		elseif ( is_singular('post') || is_post_type_archive('post') || get_post_type() == 'post' ) :
 
-			get_template_part( 'parts/content', 'byline' );
-
-		elseif ( is_singular('cit_past_event') || is_post_type_archive('cit_past_event') || get_post_type() == 'cit_past_event' ):
-
-			get_template_part( 'parts/content', 'date' );
+			get_template_part( 'parts/content/byline' );
 
 		endif; ?>
 	</header> <!-- end article header -->

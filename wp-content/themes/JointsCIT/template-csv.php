@@ -18,7 +18,7 @@ Template Name: CSV
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<?php get_template_part( 'parts/generate', 'csv-redirection' ); ?>
+					<?php get_template_part( 'parts/generate/csv', 'redirection' ); ?>
 
 				<?php endwhile; endif; ?>
 
