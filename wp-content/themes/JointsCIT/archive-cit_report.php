@@ -33,7 +33,7 @@
 
 				<?php else : ?>
 
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
+					<?php get_template_part( 'parts/content/missing' ); ?>
 
 				<?php endif; ?>
 

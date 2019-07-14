@@ -19,7 +19,7 @@
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive' ); ?>
+					<?php get_template_part( 'parts/loop/archive' ); ?>
 
 				<?php endwhile; ?>
 
@@ -27,7 +27,7 @@
 
 				<?php else : ?>
 
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
+					<?php get_template_part( 'parts/content/missing' ); ?>
 
 				<?php endif; ?>
 
