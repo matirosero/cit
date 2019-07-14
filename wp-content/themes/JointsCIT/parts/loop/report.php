@@ -1,8 +1,11 @@
 <?php
+
 $title = get_the_title();
 $pattern = '/\(Por [a-zA-Z0-9\-_.,\)\(\p{L}\s]*/u';
 $title = preg_replace( $pattern, "", $title, 1 );
+
 ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
 	
 	<div class="list-report-information">

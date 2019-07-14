@@ -23,7 +23,7 @@
 					    <?php while (have_posts()) : the_post(); ?>
 
 							<!-- To see additional archive styles, visit the /parts directory -->
-							<?php get_template_part( 'parts/loop', 'report' ); ?>
+							<?php get_template_part( 'parts/loop/report' ); ?>
 
 						<?php endwhile; ?>
 

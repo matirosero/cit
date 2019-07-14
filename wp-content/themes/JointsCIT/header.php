@@ -40,7 +40,7 @@
 
 		<div class="off-canvas-wrapper">
 
-			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
+			<?php get_template_part( 'parts/content/offcanvas' ); ?>
 
 			<div class="off-canvas-content" data-off-canvas-content>
 
@@ -48,6 +48,6 @@
 
 					 <!-- This navs will be applied to the topbar, above all content
 						  To see additional nav styles, visit the /parts directory -->
-					 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
+					 <?php get_template_part( 'parts/nav/offcanvas', 'topbar' ); ?>
 
 				</header> <!-- end .header -->
