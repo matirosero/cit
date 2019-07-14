@@ -20,12 +20,14 @@ General Single post template
 
 			    	<?php
 			    	if ( is_singular('cit_report') ) :
-			    		get_template_part( 'parts/loop', 'single-report' );
-			    	elseif ( is_singular('cit_past_event') ) :
-			    		get_template_part( 'parts/loop', 'single-past-event' );
+
+			    		get_template_part( 'parts/loop/single', 'report' );
+
 			    	else:
-			    		// get_template_part( 'parts/content', 'dev-info' );
-			    		get_template_part( 'parts/loop', 'single' );
+
+			    		// get_template_part( 'parts/content/dev', 'info' );
+			    		get_template_part( 'parts/loop/single' );
+
 			    	endif;
 			    	?>
 
