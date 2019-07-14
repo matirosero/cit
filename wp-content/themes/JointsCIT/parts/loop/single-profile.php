@@ -2,7 +2,7 @@
 
 	<header class="article-header">
 		<?php the_post_thumbnail('thumbnail'); ?>
-		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+		<h1 class="entry-title single-title" itemprop="headline">jhdf ksdf<?php the_title(); ?></h1>
 		<?php
 		if ( get_post_meta( $post->ID, 'mro_cit_board_member_email', true )) : ?>
 			<p class="profile-meta">
