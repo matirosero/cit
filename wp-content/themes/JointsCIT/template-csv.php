@@ -8,7 +8,7 @@ Template Name: CSV
 
 <div id="container" class="expand medium-collapse ">
 
-	<?php get_template_part( 'parts/nav', 'sidebar' ); ?>
+	<?php get_template_part( 'parts/nav/sidebar' ); ?>
 
 	<div id="content" class="">
 
