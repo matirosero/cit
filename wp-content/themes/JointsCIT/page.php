@@ -20,11 +20,11 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 			    	<?php if ( is_singular('tribe_events') || is_archive('tribe_events') ) :
-			    		get_template_part( 'parts/loop', 'empty-page' );
+			    		get_template_part( 'parts/loop/page', 'empty' );
 			    	elseif( $layout ):
 			    		get_template_part( 'parts/page/content', 'page-blocks' );
 			    	else:
-				    	get_template_part( 'parts/loop', 'page' );
+				    	get_template_part( 'parts/loop/page' );
 				    endif; ?>
 
 			    <?php endwhile; endif; ?>
