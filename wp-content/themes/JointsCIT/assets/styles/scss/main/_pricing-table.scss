@@ -79,7 +79,7 @@
 	@include breakpoint(medium down) {
 		@include hover-outline;
 	}
-	@include breakpoint(large) {
+	@include breakpoint(xxlarge) {
 		margin-bottom: 0;
 	}
 
