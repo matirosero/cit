@@ -20,7 +20,7 @@ $venue_addy = get_post_meta( $venue_id, 'mro_cit_event-venue-direccion-tica', tr
 ?>
 
 <div class="tribe-events-meta-group tribe-events-meta-group-venue">
-	<h3 class="tribe-events-single-section-title"> <?php esc_html_e( tribe_get_venue_label_singular(), 'the-events-calendar' ) ?> </h3>
+	<h3 class="tribe-events-single-section-title"> <?php esc_html_e( tribe_get_venue_label_singular(), 'jointswp' ) ?> </h3>
 	<dl>
 		<?php do_action( 'tribe_events_single_meta_venue_section_start' ) ?>
 
@@ -46,12 +46,12 @@ $venue_addy = get_post_meta( $venue_id, 'mro_cit_event-venue-direccion-tica', tr
 		<?php endif; ?>
 
 		<?php if ( ! empty( $phone ) ): ?>
-			<dt> <?php esc_html_e( 'Phone:', 'the-events-calendar' ) ?> </dt>
+			<dt> <?php esc_html_e( 'Phone:', 'jointswp' ) ?> </dt>
 			<dd class="tribe-venue-tel"> <?php echo $phone ?> </dd>
 		<?php endif ?>
 
 		<?php if ( ! empty( $website ) ): ?>
-			<dt> <?php esc_html_e( 'Website:', 'the-events-calendar' ) ?> </dt>
+			<dt> <?php esc_html_e( 'Website:', 'jointswp' ) ?> </dt>
 			<dd class="url"> <?php echo $website ?> </dd>
 		<?php endif ?>
 
