@@ -10,7 +10,13 @@
 		margin-bottom: 0;
 	}
 }
-.login {
-	@extend .callout;
-	@extend .download-box;
+.login {	
+	.sidebar & {
+		@extend .callout;
+		@include light-grey-box;
+	}
+
+	.top-bar & {
+		padding: $global-menu-padding;
+	}
 }
