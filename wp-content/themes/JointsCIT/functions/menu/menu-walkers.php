@@ -20,10 +20,23 @@ class Topbar_Menu_Walker extends Walker_Nav_Menu {
 
         if ( in_array('menu-item-login', $classes) ) {
 
+            $login  = (isset($_GET['login']) ) ? $_GET['login'] : 0;
+            if ( $login === "failed" ) {
+                $classes[] = 'menu-item-has-alert';
+            }
+
             $output .= '<li id="'.$item->ID.'" class="' . implode(" ", $classes) . ' menu-item-has-children is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true" aria-label="Login" data-is-click="false">';
 
             $output .= '<a href="#">';
-            $output .= 'login';
+            $output .= $title;
+
+            
+
+            //Show error message
+            if ( $login === "failed" ) {
+                $output .= ' <i class="icon icon-attention-circled"></i>';
+            }
+
             $output .= '</a>';
 
 

@@ -21,6 +21,8 @@ function site_scripts() {
 
     wp_enqueue_script( 'toggle-fields', get_template_directory_uri() . '/assets/scripts/mro-toggle-fields.js', array( 'jquery' ), '', true );
 
+    // wp_enqueue_script( 'menu-login-alert', get_template_directory_uri() . '/assets/scripts/mro-menu-login-alert.js', array( 'jquery' ), '', true );
+
     /*
      * Google Fonts
      *

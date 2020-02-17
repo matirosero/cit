@@ -20,6 +20,9 @@ NAVIGATION STYLES
 				&.is-dropdown-submenu-parent {
 
 					> a {
+						.icon-attention-circled {
+							color: map-get($foundation-palette,'alert');
+						}
 						@include hover {
 							background-color: color('grey', 'lightish');
 							color: $black;
@@ -124,7 +127,7 @@ NAVIGATION STYLES
 						@include border-radius($global-radius);
 						@include border-top-left-radius(0px);
 
-						a {
+						.is-submenu-item > a {
 							@include hover {
 								background-color: $anchor-color-hover;
 								color: $white;
@@ -169,35 +172,9 @@ NAVIGATION STYLES
 
 			.dropdown.menu.medium-horizontal {
 				> li {
-					// &.is-dropdown-submenu-parent {
-					// 	> a {
-					// 		padding-right: 1rem + rem-calc(19px);
-					// 		&::after {
-					// 			right:16px !important;
-					// 		}
-					// 	}
-					// }
 
 					> .is-dropdown-submenu {
 						top: rem-calc( topbar-height('large') ) / 2 + 1rem;
-						// left: 0.15rem;
-						// background-color: color('grey', 'lightish');
-						// overflow: hidden;
-						// border: 0;
-
-						// @include border-radius($global-radius);
-						// @include border-top-left-radius(0px);
-
-						// a {
-						// 	@include hover {
-						// 		background-color: $anchor-color-hover;
-						// 		color: $white;
-						// 	}
-						// }
-						// li.active a {
-						// 	background-color: color( 'blue', 'base' );
-						// 	color: $white;
-						// }
 					}
 				}
 			}
@@ -234,7 +211,7 @@ NAVIGATION STYLES
 	}
 }
 
-.menu a {
+.menu .menu-item > a {
 	@include navigation-type-style;
 }
 
@@ -368,5 +345,11 @@ NAVIGATION STYLES
 				padding: 1.2rem 0.9rem;
 			}
 		}
+	}
+}
+
+.menu-item-login {
+	.is-dropdown-submenu {
+		min-width: 220px;
 	}
 }
