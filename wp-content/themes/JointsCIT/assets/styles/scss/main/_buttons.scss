@@ -17,8 +17,10 @@ input[type="submit"] {
 	);
 	margin-bottom: 2rem;
 
+	.input-group > :last-child.input-group-button > &,
 	&.search-submit {
 		@include border-left-radius(0);
+		@include border-right-radius(20px);
 		// @include border-radius(10px)
 	}
 
