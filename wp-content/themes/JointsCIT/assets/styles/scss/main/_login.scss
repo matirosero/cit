@@ -17,7 +17,8 @@
 		@include light-grey-box;
 	}
 
-	.top-bar & {
+	.top-bar &,
+	.off-canvas & {
 		padding: $global-menu-padding;
 		input[type="checkbox"] {
 			margin-right: 0.5rem;

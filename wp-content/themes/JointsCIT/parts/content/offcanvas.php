@@ -3,7 +3,19 @@
    <!--  <button class="close-button" aria-label="Close menu" type="button" data-close>
       <span aria-hidden="true">&times;</span>
     </button> -->
+    
+    <?php
+	if ( !is_user_logged_in() ) : ?>
+    	<ul class="vertical menu">
 
+      		<li>
+      			<div class="login">
+					<?php echo do_shortcode( '[login_form]' ); ?>
+				</div>
+			</li>
+
+	    </ul>
+	<?php endif; ?>
 
     <!-- Menu -->
     <ul class="vertical menu">
@@ -25,16 +37,5 @@
     </ul>
 
 	<?php joints_off_canvas_nav(); ?>
-
-    <?php
-	if ( !is_user_logged_in() ) : ?>
-    	<ul class="vertical menu">
-
-      		<li>
-				<?php echo do_shortcode( '[login_form]' ); ?>
-			</li>
-
-	    </ul>
-	<?php endif; ?>
 
 </div>

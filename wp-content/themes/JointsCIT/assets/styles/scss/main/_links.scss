@@ -43,4 +43,11 @@ a, a:visited {
 		}
 	}
 
+	.callout.alert & {
+		color: map-get($foundation-palette,'alert');
+		@include hover {
+			color: darken(map-get($foundation-palette,'alert'),30%);
+		}
+	}
+
 }
