@@ -213,6 +213,9 @@ NAVIGATION STYLES
 
 .menu .menu-item > a {
 	@include navigation-type-style;
+	.off-canvas & {
+		text-transform: initial;
+	}
 }
 
 

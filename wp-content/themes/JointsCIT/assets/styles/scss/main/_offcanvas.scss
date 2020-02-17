@@ -1,19 +1,26 @@
 .off-canvas {
 	color: $white;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	
 	.menu {
 		margin-bottom: 1rem;
 	}
 
+	.submenu.is-active {
+		background-color: lighten(color('blue', 'base'), 8%);
+	}
+
 	a {
 		@include hover {
 			background-color: color('aqua', 'base');
-
 		}
 	}
+
 	label {
 		color: $white;
 	}
+
 	li {
 		> form, > span {
 			padding: $global-menu-padding;

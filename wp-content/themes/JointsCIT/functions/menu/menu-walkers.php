@@ -13,10 +13,7 @@ class Topbar_Menu_Walker extends Walker_Nav_Menu {
         $classes = $item->classes;
 
         $menu_item_id = $item->object_id;
-
-
-
-        
+     
 
         if ( in_array('menu-item-login', $classes) ) {
 

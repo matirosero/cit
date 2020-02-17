@@ -3,7 +3,7 @@
 add_filter( 'wp_nav_menu_items', 'mro_cit_add_loginout_link', 10, 2 );
 function mro_cit_add_loginout_link( $items, $args ) {
     if (is_user_logged_in() && $args->theme_location == 'mobile-nav') {
-        $items .= '<li><a href="' . wp_logout_url() . '">' . __( 'Log out', 'jointswp' ) . '</a></li>';
+        $items .= '<li class="menu-item"><a href="' . wp_logout_url() . '">' . __( 'Log out', 'jointswp' ) . '</a></li>';
     }
     return $items;
 }

@@ -69,11 +69,11 @@ CSS3 GRADIENTS.
 /*********************
 TYPOGRAPHY: NAVIGATION STYLE
 *********************/
-@mixin navigation-type-style($size:14px) {
+@mixin navigation-type-style($size:14px,$case:uppercase) {
   font-family: $sans-family;
   font-size: $size;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: $case;
 }
 
 @mixin sidebar-small-text {
