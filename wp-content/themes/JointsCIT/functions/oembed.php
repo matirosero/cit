@@ -10,7 +10,7 @@
 add_action( 'init', function() {
     wp_embed_register_handler( 
         'zoom', 
-        '#(https://zoom\.us/recording/[a-z]+/[a-zA-Z0-9_-]+)/?#i', 
+        '#(https://zoom\.us/[a-z]+/[a-z]+/[a-zA-Z0-9_-]+)/?#i', 
         'wp_embed_handler_zoom' 
     );
 
