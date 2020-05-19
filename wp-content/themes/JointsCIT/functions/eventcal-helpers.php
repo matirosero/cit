@@ -121,6 +121,7 @@ function mro_cit_rsvp_form() {
 	    endif;
 
 
+	    /*
 	    if ( current_user_can( 'rsvp_event' ) || $match_mailchimp_url ) :
 		    echo '<p>Llene este formulario, o comuníquese con Leda Mora, teléfono 2223-5923, fax 2223-1997, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a></p>';
 
@@ -147,13 +148,22 @@ function mro_cit_rsvp_form() {
 		elseif ( members_current_user_has_role( 'afiliado_empresarial_pendiente' ) || members_current_user_has_role( 'afiliado_institucional_pendiente' ) ) :
 			echo '<h3>Adquiera entradas al evento</h3>';
 			echo '<p class="callout warning small">Aún está pendiente finalizar su afiliación. Comuníquese con Leda Mora, teléfono 2223-5923, fax 2223-1997, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a> si desea asistir al evento.</p>';
-		else:
+		
+			//THIS ONE
+		else:*/
+
+			if ( get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 )) {
+				$form_shortcode = get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 );
+			} else {
+				$form_shortcode = '[caldera_form id="CF5e72a522c8465"]';
+			}
+			
 			echo '<p class="callout primary small">Llene este formulario para reservar el espacio.</p>';
-			echo do_shortcode( '[caldera_form id="CF5e72a522c8465"]' );
+			echo do_shortcode( $form_shortcode );
 			// echo '<p class="callout primary small">Si es afiliado, ingrese a su cuenta para confirmar su asistencia.</p>'
 				// .do_shortcode( '[login_form] ' );
 
-		endif;
+		// endif;
 	endif;
 }
 // remain same
