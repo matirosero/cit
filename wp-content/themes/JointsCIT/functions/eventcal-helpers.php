@@ -158,7 +158,7 @@ function mro_cit_rsvp_form() {
 				$form_shortcode = '[caldera_form id="CF5e72a522c8465"]';
 			}
 			
-			echo '<p class="callout primary small">Llene este formulario para reservar el espacio.</p>';
+			echo '<p class="callout primary small">Llene este formulario para reservar el espacio o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
 			echo do_shortcode( $form_shortcode );
 			// echo '<p class="callout primary small">Si es afiliado, ingrese a su cuenta para confirmar su asistencia.</p>'
 				// .do_shortcode( '[login_form] ' );
