@@ -56,7 +56,7 @@ if ( get_post_meta( get_the_ID(), 'mro_cit_livestream_chat', 1 ) ) {
 							?>
 
 							<div class="livestream-chat-container">
-								<iframe allowfullscreen="" frameborder="0" height="540" src="https://www.youtube.com/live_chat?v=<?php echo $youtube_id; ?>&embed_domain=www.tedxpuravida.org" width="480"></iframe>
+								<iframe allowfullscreen="" frameborder="0" height="540" src="https://www.youtube.com/live_chat?v=<?php echo $youtube_id; ?>&embed_domain=www.clubdeinvestigacion.com" width="480"></iframe>
 							</div>
 
 						<?php
