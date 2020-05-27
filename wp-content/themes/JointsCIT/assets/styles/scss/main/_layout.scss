@@ -70,7 +70,7 @@
 	@include breakpoint(medium) {
 		// @include static-contentarea;
 
-		#main-livestream,
+		// #main-livestream,
 		#main {
 			padding-top: 2rem;
 		}
@@ -84,7 +84,7 @@
 			padding: 0rem;
 			background-color: color('grey', 'light');
 		}
-		#main-livestream,
+		// #main-livestream,
 		#main {
 			padding-top: 3rem;
 			background: color('white', 'base');
