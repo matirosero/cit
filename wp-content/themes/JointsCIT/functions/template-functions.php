@@ -29,3 +29,13 @@ function mro_cit_body_classes( $classes ) {
     return $classes;
 
 }
+
+
+// Extract YT ID from meta field (must be get_post_meta())
+function cit_get_youtube_id($youtube_url) {
+
+    preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $youtube_url, $match);
+    $youtube_id = $match[1];
+
+    return $youtube_id;
+}

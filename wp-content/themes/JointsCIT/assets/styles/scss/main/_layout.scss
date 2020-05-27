@@ -20,7 +20,16 @@
 		background-color: $white;
 	}
 	#main-livestream {
-		// background-color: red;
+		background-color: #fff;
+		padding-top: 1rem;
+
+		@include breakpoint(medium) {
+			body:not(.single):not(.post-type-archive-tribe_events):not(.page) & > article:first-of-type {
+				.entry-content {
+					font-size: $larger-font-size;
+				}
+			}
+		}
 	}
 	#main {
 
@@ -53,6 +62,7 @@
 	}
 
 	#main,
+	#main-livestream,
 	.sidebar {
 		padding-bottom: 2rem;
 	}
@@ -60,6 +70,7 @@
 	@include breakpoint(medium) {
 		// @include static-contentarea;
 
+		#main-livestream,
 		#main {
 			padding-top: 2rem;
 		}
@@ -73,6 +84,7 @@
 			padding: 0rem;
 			background-color: color('grey', 'light');
 		}
+		#main-livestream,
 		#main {
 			padding-top: 3rem;
 			background: color('white', 'base');
