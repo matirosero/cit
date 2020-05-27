@@ -9,6 +9,10 @@
 .livestream-chat-container {
 	min-height: 540px;
 
+	.responsive-embed {
+		padding-bottom: 150%;
+	}
+
 	iframe {
 		width: 100%;
 		height: 100%;
