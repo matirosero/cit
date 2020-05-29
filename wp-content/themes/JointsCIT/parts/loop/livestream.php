@@ -24,6 +24,7 @@ if ( get_post_meta( get_the_ID(), 'mro_cit_livestream_chat', 1 ) ) {
 
 	    	<p  class="callout primary">Debe ser Afiliado para accesar esta página.</p>
             <?php echo do_shortcode( '[members_login_form] ' ); ?>
+            <p><a href="/contrasena-perdida/">¿Olvidó su contraseña?</a></p>
 
 	    <?php } elseif ( current_user_can( 'download_report' ) ) {
 
