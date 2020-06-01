@@ -152,6 +152,9 @@ function mro_cit_rsvp_form() {
 			//THIS ONE
 		else:*/
 
+
+		if ( isset( $_GET['email']) ) {
+
 			if ( get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 )) {
 				$form_shortcode = get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 );
 			} else {
@@ -162,6 +165,10 @@ function mro_cit_rsvp_form() {
 			echo do_shortcode( $form_shortcode );
 			// echo '<p class="callout primary small">Si es afiliado, ingrese a su cuenta para confirmar su asistencia.</p>'
 				// .do_shortcode( '[login_form] ' );
+							
+		}
+
+
 
 		// endif;
 	endif;
