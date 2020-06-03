@@ -168,7 +168,7 @@ function mro_cit_rsvp_form() {
 							
 
 		// Logged in
-		} elseif ( current_user_can( 'buy_event_tickets' ) ||current_user_can( 'rsvp_events' ) || $match_mailchimp_url ) {
+		} elseif ( current_user_can( 'buy_event_tickets' ) ||current_user_can( 'rsvp_event' ) || $match_mailchimp_url ) {
 
 			$form_shortcode_personal = get_post_meta( get_the_ID(), 'mro_cit_event_personal_acct_form_shortcode', 1 );
 
