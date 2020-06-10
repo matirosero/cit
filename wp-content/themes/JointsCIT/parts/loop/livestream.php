@@ -43,9 +43,15 @@ if ( get_post_meta( get_the_ID(), 'mro_cit_livestream_chat', 1 ) ) {
 				    		<?php
 				    		// The embedded video
 				    		$url = esc_url( get_post_meta( get_the_ID(), 'mro_cit_livestream_embed', 1 ) );
+
 							echo wp_oembed_get( $url );
 
+							// echo str_replace('youtube', 'youtube-nocookie', wp_oembed_get( $url ));
+
 							?>
+
+							<div class="livestream-block-top"></div>
+							<div class="livestream-block-bottom"></div>
 						</div>
 					</div>
 
