@@ -39,3 +39,37 @@ function cit_get_youtube_id($youtube_url) {
 
     return $youtube_id;
 }
+
+
+function cit_log_users_on_page() {
+	global $current_user, $wp_roles;
+
+
+	// if ( is_user_logged_in() && current_user_can( 'edit_others_posts' ) ) {
+	// 	$access_log = get_post_meta( get_the_ID(), '_cit_page_users_log', 1 );
+	// 		echo '<pre>';
+	// 		var_dump($access_log);
+	// 		echo '<pre>';
+	// }
+
+	if ( is_user_logged_in() && !current_user_can( 'edit_others_posts' ) ) {
+
+		$date = current_datetime();
+		$access_log = array();
+
+
+
+		if ( get_post_meta( get_the_ID(), '_cit_page_users_log', 1 )) {
+
+			$access_log = get_post_meta( get_the_ID(), '_cit_page_users_log', 1 );
+
+		}
+
+		$access_log[] = array(
+			'date'		=> $date,
+			'user_id'	=> $current_user->ID
+		);
+				
+		update_post_meta( get_the_ID(), '_cit_page_users_log', $access_log );
+	}
+}
