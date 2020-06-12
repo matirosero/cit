@@ -46,6 +46,24 @@
 	right: 7%;
 }
 
+.page-log {
+	@include reset-list;
+	display: flex;
+	flex-direction: column;
+	li {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		span {
+			margin-right: 1rem;
+		}
+	}
+}
+
+.log-date {
+	font-size: $sidebar-small-text;
+	width: 100%;
+}
 
 @include breakpoint(large) {
 	.livestream-with-chat {

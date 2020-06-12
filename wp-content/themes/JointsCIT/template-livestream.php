@@ -16,6 +16,8 @@ Template Name: Livestream
 
 			<main id="main-livestream" class="small-12 cell" role="main" data-equalizer-watch="main-side" >
 
+				<?php cit_view_log_users_on_page(); ?>
+
 				<?php cit_log_users_on_page(); ?> 
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
