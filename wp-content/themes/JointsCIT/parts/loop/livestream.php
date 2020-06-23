@@ -31,7 +31,7 @@ if ( get_post_meta( get_the_ID(), 'mro_cit_livestream_chat', 1 ) ) {
 
 	    	if ( !get_post_meta( get_the_ID(), 'mro_cit_livestream_active', 1 ) ) { ?>
 	    		
-	    		<p>No hay ningún evento en vivo en este momento</p>
+	    		<?php the_content(); ?>
 
 	    	<?php } elseif ( get_post_meta( get_the_ID(), 'mro_cit_livestream_embed', 1 ) ) { ?>
 
