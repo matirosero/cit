@@ -177,7 +177,23 @@ function mro_cit_rsvp_form() {
 		
 		// Logged out, no invite
 		} else {
-			echo '<p class="callout warning small">Debe ingresar al sitio para inscribirse en el evento.</p>';
+
+			// Public event
+			if (get_field('cit_public_event')) {
+
+				echo '<h3>Confirme su asistencia</h3>';
+
+				echo '<p class="callout warning small">Puede registrarse para recibir el enlace, pero para ver el evento deberá registrarse en el sitio.</p>';
+		
+				// echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
+				echo do_shortcode( get_field('cit_event_open_form_shortcode') );
+
+
+			//Normal event
+			} else {
+				echo '<p class="callout warning small">Debe ingresar al sitio para inscribirse en el evento.</p>';
+			}
+			
 		}
 
 
