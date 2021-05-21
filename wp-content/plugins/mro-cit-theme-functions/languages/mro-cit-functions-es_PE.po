@@ -1,0 +1,1713 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CIT Theme Functions\n"
+"POT-Creation-Date: 2018-01-15 22:08-0600\n"
+"PO-Revision-Date: 2018-01-15 22:08-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_PE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: mro-cit-theme-functions.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/demo-register-custom-fields.php:16
+#: vendor/cmb2/example-functions.php:117
+msgid "Test Metabox"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:32
+#: vendor/cmb2/example-functions.php:130 vendor/cmb2/example-functions.php:456
+msgid "Test Text"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:33
+#: includes/demo-register-custom-fields.php:46
+#: includes/demo-register-custom-fields.php:59
+#: includes/demo-register-custom-fields.php:66
+#: includes/demo-register-custom-fields.php:79
+#: includes/demo-register-custom-fields.php:87
+#: includes/demo-register-custom-fields.php:96
+#: includes/demo-register-custom-fields.php:104
+#: includes/demo-register-custom-fields.php:119
+#: includes/demo-register-custom-fields.php:127
+#: includes/demo-register-custom-fields.php:135
+#: includes/demo-register-custom-fields.php:152
+#: includes/demo-register-custom-fields.php:161
+#: includes/demo-register-custom-fields.php:174
+#: includes/demo-register-custom-fields.php:181
+#: includes/demo-register-custom-fields.php:188
+#: includes/demo-register-custom-fields.php:202
+#: includes/demo-register-custom-fields.php:215
+#: includes/demo-register-custom-fields.php:228
+#: includes/demo-register-custom-fields.php:240
+#: includes/demo-register-custom-fields.php:249
+#: includes/demo-register-custom-fields.php:257
+#: includes/demo-register-custom-fields.php:266
+#: includes/demo-register-custom-fields.php:273
+#: includes/demo-register-custom-fields.php:287
+#: includes/register-custom-fields.php:61
+#: includes/register-custom-fields.php:84 vendor/cmb2/example-functions.php:131
+#: vendor/cmb2/example-functions.php:144 vendor/cmb2/example-functions.php:157
+#: vendor/cmb2/example-functions.php:164 vendor/cmb2/example-functions.php:177
+#: vendor/cmb2/example-functions.php:185 vendor/cmb2/example-functions.php:194
+#: vendor/cmb2/example-functions.php:202 vendor/cmb2/example-functions.php:217
+#: vendor/cmb2/example-functions.php:225 vendor/cmb2/example-functions.php:233
+#: vendor/cmb2/example-functions.php:250 vendor/cmb2/example-functions.php:259
+#: vendor/cmb2/example-functions.php:272 vendor/cmb2/example-functions.php:279
+#: vendor/cmb2/example-functions.php:286 vendor/cmb2/example-functions.php:300
+#: vendor/cmb2/example-functions.php:313 vendor/cmb2/example-functions.php:326
+#: vendor/cmb2/example-functions.php:338 vendor/cmb2/example-functions.php:347
+#: vendor/cmb2/example-functions.php:355 vendor/cmb2/example-functions.php:364
+#: vendor/cmb2/example-functions.php:371 vendor/cmb2/example-functions.php:385
+#: vendor/cmb2/example-functions.php:457 vendor/cmb2/example-functions.php:548
+#: vendor/cmb2/example-functions.php:556 vendor/cmb2/example-functions.php:563
+#: vendor/cmb2/example-functions.php:570 vendor/cmb2/example-functions.php:577
+#: vendor/cmb2/example-functions.php:584 vendor/cmb2/example-functions.php:591
+#: vendor/cmb2/example-functions.php:618 vendor/cmb2/example-functions.php:626
+#: vendor/cmb2/example-functions.php:633 vendor/cmb2/example-functions.php:678
+msgid "field description (optional)"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:45
+#: vendor/cmb2/example-functions.php:143
+msgid "Test Text Small"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:58
+#: vendor/cmb2/example-functions.php:156
+msgid "Test Text Medium"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:65
+#: vendor/cmb2/example-functions.php:163
+msgid "Read-only Disabled Field"
+msgstr "Campo desactivado"
+
+#: includes/demo-register-custom-fields.php:69
+#: vendor/cmb2/example-functions.php:167
+msgid "Hey there, I'm a read-only field"
+msgstr "Hola, soy un campo de sólo lectura"
+
+#: includes/demo-register-custom-fields.php:78
+#: vendor/cmb2/example-functions.php:176
+msgid "Custom Rendered Field"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:86
+#: vendor/cmb2/example-functions.php:184
+msgid "Website URL"
+msgstr "URL del sitio"
+
+#: includes/demo-register-custom-fields.php:95
+#: vendor/cmb2/example-functions.php:193
+msgid "Test Text Email"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:103
+#: vendor/cmb2/example-functions.php:201
+msgid "Test Time"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:111
+#: includes/demo-register-custom-fields.php:112
+#: vendor/cmb2/example-functions.php:209 vendor/cmb2/example-functions.php:210
+msgid "Time zone"
+msgstr "Zona horaria"
+
+#: includes/demo-register-custom-fields.php:118
+#: vendor/cmb2/example-functions.php:216
+msgid "Test Date Picker"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:126
+#: vendor/cmb2/example-functions.php:224
+msgid "Test Date Picker (UNIX timestamp)"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:134
+#: vendor/cmb2/example-functions.php:232
+msgid "Test Date/Time Picker Combo (UNIX timestamp)"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:151
+#: vendor/cmb2/example-functions.php:249
+msgid "Test Money"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:160
+#: vendor/cmb2/example-functions.php:258
+msgid "Test Color Picker"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:173
+#: vendor/cmb2/example-functions.php:271
+msgid "Test Text Area"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:180
+#: vendor/cmb2/example-functions.php:278
+msgid "Test Text Area Small"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:187
+#: vendor/cmb2/example-functions.php:285
+msgid "Test Text Area for Code"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:194
+#: vendor/cmb2/example-functions.php:292
+msgid "Test Title Weeeee"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:195
+#: vendor/cmb2/example-functions.php:293
+msgid "This is a title description"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:201
+#: vendor/cmb2/example-functions.php:299
+msgid "Test Select"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:207
+#: includes/demo-register-custom-fields.php:220
+#: includes/demo-register-custom-fields.php:232
+#: vendor/cmb2/example-functions.php:305 vendor/cmb2/example-functions.php:318
+#: vendor/cmb2/example-functions.php:330
+msgid "Option One"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:208
+#: includes/demo-register-custom-fields.php:221
+#: includes/demo-register-custom-fields.php:233
+#: vendor/cmb2/example-functions.php:306 vendor/cmb2/example-functions.php:319
+#: vendor/cmb2/example-functions.php:331
+msgid "Option Two"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:209
+#: includes/demo-register-custom-fields.php:222
+#: includes/demo-register-custom-fields.php:234
+#: vendor/cmb2/example-functions.php:307 vendor/cmb2/example-functions.php:320
+#: vendor/cmb2/example-functions.php:332
+msgid "Option Three"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:214
+#: vendor/cmb2/example-functions.php:312
+msgid "Test Radio inline"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:227
+#: vendor/cmb2/example-functions.php:325
+msgid "Test Radio"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:239
+#: vendor/cmb2/example-functions.php:337
+msgid "Test Taxonomy Radio"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:248
+#: vendor/cmb2/example-functions.php:346
+msgid "Test Taxonomy Select"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:256
+#: vendor/cmb2/example-functions.php:354
+msgid "Test Taxonomy Multi Checkbox"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:265
+#: vendor/cmb2/example-functions.php:363
+msgid "Test Checkbox"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:272
+#: vendor/cmb2/example-functions.php:370
+msgid "Test Multi Checkbox"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:278
+#: vendor/cmb2/example-functions.php:376
+msgid "Check One"
+msgstr "Marque una"
+
+#: includes/demo-register-custom-fields.php:279
+#: vendor/cmb2/example-functions.php:377
+msgid "Check Two"
+msgstr "Marque dos"
+
+#: includes/demo-register-custom-fields.php:280
+#: vendor/cmb2/example-functions.php:378
+msgid "Check Three"
+msgstr "Marque tres"
+
+#: includes/demo-register-custom-fields.php:286
+#: vendor/cmb2/example-functions.php:384
+msgid "Test wysiwyg"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:296
+#: vendor/cmb2/example-functions.php:394
+msgid "Test Image"
+msgstr ""
+
+#: includes/demo-register-custom-fields.php:297
+#: vendor/cmb2/example-functions.php:395
+msgid "Upload an image or enter a URL."
+msgstr "Subir una imagen o introducir un URL."
+
+#: includes/demo-register-custom-fields.php:303
+#: vendor/cmb2/example-functions.php:401
+msgid "Multiple Files"
+msgstr "Archivos múltiples"
+
+#: includes/demo-register-custom-fields.php:304
+#: includes/register-custom-fields.php:298
+#: vendor/cmb2/example-functions.php:402
+msgid "Upload or add multiple images/attachments."
+msgstr "﻿Subir o añadir varias imágenes."
+
+#: includes/demo-register-custom-fields.php:311
+#: vendor/cmb2/example-functions.php:409
+msgid "oEmbed"
+msgstr ""
+
+#. translators: %s: link to codex.wordpress.org/Embeds
+#: includes/demo-register-custom-fields.php:314
+#: includes/register-custom-fields.php:277
+#: vendor/cmb2/example-functions.php:412
+#, php-format
+msgid ""
+"Enter a youtube, twitter, or instagram URL. Supports services listed at %s."
+msgstr ""
+"Introduzca una URL de youtube, twitter o instagram. Lista de servicios "
+"disponibles en %s."
+
+#: includes/eventscalendar-custom-fields.php:15
+#: includes/register-custom-fields.php:139
+#: includes/register-custom-fields.php:215
+msgid "Additional information"
+msgstr "Información adicional"
+
+#: includes/eventscalendar-custom-fields.php:24
+msgid "Dirección tica"
+msgstr ""
+
+#: includes/register-cpt.php:24
+msgid "Affiliates"
+msgstr "Afiliados"
+
+#: includes/register-cpt.php:25
+msgid "Affiliate"
+msgstr "Afiliado"
+
+#: includes/register-cpt.php:26
+msgid "All Affiliates"
+msgstr "Todos los afiliados"
+
+#: includes/register-cpt.php:27 includes/register-cpt.php:69
+#: includes/register-cpt.php:111 includes/register-cpt.php:153
+#: includes/register-cpt.php:195 includes/register-cpt.php:279
+#: includes/register-cpt.php:321 includes/register-cpt.php:363
+msgid "Add New"
+msgstr "Añadir nuevo"
+
+#: includes/register-cpt.php:28
+msgid "Add New Affiliate"
+msgstr "Añadir nuevo afiliado"
+
+#: includes/register-cpt.php:29 includes/register-cpt.php:71
+#: includes/register-cpt.php:113 includes/register-cpt.php:155
+#: includes/register-cpt.php:197 includes/register-cpt.php:281
+#: includes/register-cpt.php:323 includes/register-cpt.php:365
+msgid "Edit"
+msgstr "Editar"
+
+#: includes/register-cpt.php:30
+msgid "Edit Affiliate"
+msgstr "Editar afiliado"
+
+#: includes/register-cpt.php:31
+msgid "New Affiliate"
+msgstr "Nuevo afiliado"
+
+#: includes/register-cpt.php:32
+msgid "View Affiliate"
+msgstr "Ver afiliado"
+
+#: includes/register-cpt.php:33
+msgid "Search Affiliates"
+msgstr "Buscar afiliados"
+
+#: includes/register-cpt.php:34
+msgid "No affiliates found"
+msgstr "No hay afiliados"
+
+#: includes/register-cpt.php:35
+msgid "No affiliates found in Trash"
+msgstr "No hay afiliados en la papelera"
+
+#: includes/register-cpt.php:38
+msgid "Affiliate items"
+msgstr "Artículos de afiliados"
+
+#: includes/register-cpt.php:66
+msgid "Alliances"
+msgstr "Alianzas"
+
+#: includes/register-cpt.php:67
+msgid "Alliance"
+msgstr "Alianza"
+
+#: includes/register-cpt.php:68
+msgid "All Alliances"
+msgstr "Todas las alianzas"
+
+#: includes/register-cpt.php:70
+msgid "Add New Alliance"
+msgstr "Añadir nueva alianza"
+
+#: includes/register-cpt.php:72
+msgid "Edit Alliance"
+msgstr "Editar alianza"
+
+#: includes/register-cpt.php:73
+msgid "New Alliance"
+msgstr "Nueva alianza"
+
+#: includes/register-cpt.php:74
+msgid "View Alliance"
+msgstr "Ver alianza"
+
+#: includes/register-cpt.php:75
+msgid "Search Alliances"
+msgstr "Buscar alianzas"
+
+#: includes/register-cpt.php:76
+msgid "No alliances found"
+msgstr "No hay alianzas"
+
+#: includes/register-cpt.php:77
+msgid "No alliances found in Trash"
+msgstr "No hay alianzas en la papelera"
+
+#: includes/register-cpt.php:80
+msgid "Alliance items"
+msgstr "Alianzas"
+
+#: includes/register-cpt.php:108
+msgid "Archives"
+msgstr "Archivos"
+
+#: includes/register-cpt.php:109
+msgid "Archive"
+msgstr "Archivo"
+
+#: includes/register-cpt.php:110
+msgid "All Archives"
+msgstr "Todos los archivos"
+
+#: includes/register-cpt.php:112
+msgid "Add New Archive"
+msgstr "Añadir nuevo archivo"
+
+#: includes/register-cpt.php:114
+msgid "Edit Archive"
+msgstr "Editar archivo"
+
+#: includes/register-cpt.php:115
+msgid "New Archive"
+msgstr "Nuevo archivo"
+
+#: includes/register-cpt.php:116
+msgid "View Archive"
+msgstr "Ver archivado"
+
+#: includes/register-cpt.php:117
+msgid "Search Archives"
+msgstr "Buscar archivados"
+
+#: includes/register-cpt.php:118
+msgid "No archives found"
+msgstr "No hay archivados"
+
+#: includes/register-cpt.php:119
+msgid "No archives found in Trash"
+msgstr "No hay archivados en la papelera"
+
+#: includes/register-cpt.php:122
+msgid "Archive items"
+msgstr "Archivados"
+
+#: includes/register-cpt.php:150
+msgid "Unknowns"
+msgstr "Desconocidos"
+
+#: includes/register-cpt.php:151
+msgid "Unknown"
+msgstr "Desconocido"
+
+#: includes/register-cpt.php:152
+msgid "All Unknowns"
+msgstr "Todos los desconocidos"
+
+#: includes/register-cpt.php:154
+msgid "Add New Unknown"
+msgstr "Añadir nuevo desconocido"
+
+#: includes/register-cpt.php:156
+msgid "Edit Unknown"
+msgstr "Editar desconocido"
+
+#: includes/register-cpt.php:157
+msgid "New Unknown"
+msgstr "Nuevo desconocido"
+
+#: includes/register-cpt.php:158
+msgid "View Unknown"
+msgstr "Ver desconocido"
+
+#: includes/register-cpt.php:159
+msgid "Search Unknowns"
+msgstr "Buscar desconocidos"
+
+#: includes/register-cpt.php:160
+msgid "No unknowns found"
+msgstr "No hay desconocidos"
+
+#: includes/register-cpt.php:161
+msgid "No unknowns found in Trash"
+msgstr "No hay desconocidos en la papelera"
+
+#: includes/register-cpt.php:164
+msgid "Unknown items"
+msgstr "Elementos desconocidos"
+
+#: includes/register-cpt.php:192
+msgid "Board members"
+msgstr "Junta directiva"
+
+#: includes/register-cpt.php:193
+msgid "Board member"
+msgstr "Miembro de Junta Directiva"
+
+#: includes/register-cpt.php:194
+msgid "All Board members"
+msgstr "Todos los miembros de junta"
+
+#: includes/register-cpt.php:196
+msgid "Add New Board member"
+msgstr "Añadir a miembro de junta directiva nuevo"
+
+#: includes/register-cpt.php:198
+msgid "Edit Board member"
+msgstr "Editar miembro de junta directiva"
+
+#: includes/register-cpt.php:199
+msgid "New Board member"
+msgstr "Nuevo miembro de junta"
+
+#: includes/register-cpt.php:200
+msgid "View Board member"
+msgstr "Ver miembro de junta directiva"
+
+#: includes/register-cpt.php:201
+msgid "Search Board members"
+msgstr "Buscar miembros de junta directiva"
+
+#: includes/register-cpt.php:202
+msgid "No board members found"
+msgstr "No hay miembros de junta directiva"
+
+#: includes/register-cpt.php:203
+msgid "No board members found in Trash"
+msgstr "No hay miembros de junta directiva en la papelera"
+
+#: includes/register-cpt.php:206
+msgid "Board member items"
+msgstr "Miembros de Junta Directiva"
+
+#: includes/register-cpt.php:276
+msgid "Profiles"
+msgstr "Biografías"
+
+#: includes/register-cpt.php:277
+msgid "Profile"
+msgstr "Biografía"
+
+#: includes/register-cpt.php:278
+msgid "All Profiles"
+msgstr "Todas las biografías"
+
+#: includes/register-cpt.php:280
+msgid "Add New Profile"
+msgstr "Añadir nueva biografía"
+
+#: includes/register-cpt.php:282
+msgid "Edit Profile"
+msgstr "Editar perfil"
+
+#: includes/register-cpt.php:283
+msgid "New Profile"
+msgstr "Nueva biografía"
+
+#: includes/register-cpt.php:284
+msgid "View Profile"
+msgstr "Ver biografía"
+
+#: includes/register-cpt.php:285
+msgid "Search Profiles"
+msgstr "Buscar biografías"
+
+#: includes/register-cpt.php:286
+msgid "No profiles found"
+msgstr "No se ha encontrado ninguna biografía"
+
+#: includes/register-cpt.php:287
+msgid "No profiles found in Trash"
+msgstr "No hay biografías en la papelera"
+
+#: includes/register-cpt.php:290
+msgid "Profile items"
+msgstr "Artículos de biografía"
+
+#: includes/register-cpt.php:318
+msgid "Testimonials"
+msgstr "Testimoniales"
+
+#: includes/register-cpt.php:319
+msgid "Testimonial"
+msgstr "Testimonial"
+
+#: includes/register-cpt.php:320
+msgid "All Testimonials"
+msgstr "Todos los testimoniales"
+
+#: includes/register-cpt.php:322
+msgid "Add New Testimonial"
+msgstr "Añadir nuevo testimonial"
+
+#: includes/register-cpt.php:324
+msgid "Edit Testimonial"
+msgstr "Editar testimonial"
+
+#: includes/register-cpt.php:325
+msgid "New Testimonial"
+msgstr "Nuevo testimonial"
+
+#: includes/register-cpt.php:326
+msgid "View Testimonial"
+msgstr "Ver testimonial"
+
+#: includes/register-cpt.php:327
+msgid "Search Testimonials"
+msgstr "Buscar testimoniales"
+
+#: includes/register-cpt.php:328
+msgid "No testimonials found"
+msgstr "No hay testimoniales"
+
+#: includes/register-cpt.php:329
+msgid "No testimonials found in Trash"
+msgstr "No hay testimoniales en la papelera"
+
+#: includes/register-cpt.php:332
+msgid "Testimonial items"
+msgstr "Testimoniales"
+
+#: includes/register-cpt.php:360
+msgid "Reports"
+msgstr "Informes"
+
+#: includes/register-cpt.php:361
+msgid "Report"
+msgstr "Informe"
+
+#: includes/register-cpt.php:362
+msgid "All Reports"
+msgstr "Todos los informes"
+
+#: includes/register-cpt.php:364
+msgid "Add New Report"
+msgstr "Añadir nuevo informe"
+
+#: includes/register-cpt.php:366
+msgid "Edit Report"
+msgstr "Editar informe"
+
+#: includes/register-cpt.php:367
+msgid "New Report"
+msgstr "Nuevo informe"
+
+#: includes/register-cpt.php:368
+msgid "View Report"
+msgstr "Ver informe"
+
+#: includes/register-cpt.php:369
+msgid "Search Reports"
+msgstr "Buscar informes"
+
+#: includes/register-cpt.php:370
+msgid "No reports found"
+msgstr "No se ha encontrado ningún informe"
+
+#: includes/register-cpt.php:371
+msgid "No reports found in Trash"
+msgstr "No hay informes en la papelera"
+
+#: includes/register-cpt.php:374
+msgid "Report items"
+msgstr "Elementos de informe"
+
+#: includes/register-custom-fields.php:23
+msgid "Content"
+msgstr ""
+
+#: includes/register-custom-fields.php:33
+msgid "Layout"
+msgstr ""
+
+#: includes/register-custom-fields.php:40
+msgid "Hero image to the left"
+msgstr ""
+
+#: includes/register-custom-fields.php:41
+msgid "Hero image to the right"
+msgstr ""
+
+#: includes/register-custom-fields.php:60
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: includes/register-custom-fields.php:73
+msgid "Primary text"
+msgstr "Texto principal"
+
+#: includes/register-custom-fields.php:74
+msgid ""
+"If there is a hero image, this is the text that goes with it. In the "
+"traditional layout, this is the only text."
+msgstr ""
+
+#: includes/register-custom-fields.php:83
+msgid "Secondary text"
+msgstr "Texto secundario"
+
+#: includes/register-custom-fields.php:98
+msgid "Additional content blocks"
+msgstr "Bloques de contenido adicional"
+
+#: includes/register-custom-fields.php:99
+msgid "Add another content block"
+msgstr "Agregue otro bloque de contenido"
+
+#: includes/register-custom-fields.php:100
+msgid "Remove content block"
+msgstr ""
+
+#: includes/register-custom-fields.php:106
+msgid "Block Title"
+msgstr ""
+
+#: includes/register-custom-fields.php:107
+msgid "Enter the title for the content block."
+msgstr "Ingrese el título para el bloque de contenido."
+
+#: includes/register-custom-fields.php:113
+msgid "Block ID"
+msgstr ""
+
+#: includes/register-custom-fields.php:114
+msgid "Lowercase and dashes (-) only"
+msgstr ""
+
+#: includes/register-custom-fields.php:120
+msgid "Block Content"
+msgstr "Bloque de contenido"
+
+#: includes/register-custom-fields.php:121
+msgid "Enter the content."
+msgstr ""
+
+#: includes/register-custom-fields.php:148
+msgid "Position"
+msgstr "Puesto"
+
+#: includes/register-custom-fields.php:155
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: includes/register-custom-fields.php:173
+msgid "Report download information"
+msgstr "Información de descarga de reporte"
+
+#: includes/register-custom-fields.php:192
+msgid "Download ID"
+msgstr "ID de descarga"
+
+#: includes/register-custom-fields.php:193
+msgid "ID de desccarga (bajo Downloads)"
+msgstr ""
+
+#: includes/register-custom-fields.php:229
+msgid "Presentation"
+msgstr "Presentación"
+
+#: includes/register-custom-fields.php:230
+msgid "Add another Presentation"
+msgstr "Añadir otra presentación"
+
+#: includes/register-custom-fields.php:231
+msgid "Remove Presentation"
+msgstr "Eliminar presentación"
+
+#: includes/register-custom-fields.php:239
+msgid "Upload file"
+msgstr "Subir archivo"
+
+#: includes/register-custom-fields.php:240
+msgid "Upload a PDF or enter a URL for one."
+msgstr "Subir un PDF o introducir un URL."
+
+#: includes/register-custom-fields.php:264
+msgid "Video text"
+msgstr "Texto del video"
+
+#: includes/register-custom-fields.php:265
+msgid "Texto o videos con embeds raros como los de Jimmy."
+msgstr ""
+
+#: includes/register-custom-fields.php:274
+msgid "Video"
+msgstr ""
+
+#: includes/register-custom-fields.php:286
+msgid "Gallery text"
+msgstr "Texto galería"
+
+#: includes/register-custom-fields.php:287
+msgid "Texto o embeds de Facebook"
+msgstr ""
+
+#: includes/register-custom-fields.php:297
+msgid "Photos"
+msgstr "Fotos"
+
+#: includes/register-custom-fields.php:305
+msgid "Evaluación de la actividad"
+msgstr ""
+
+#: includes/register-custom-fields.php:328
+#: includes/register-custom-fields.php:375
+msgid "Migration Information"
+msgstr "Información de Migración"
+
+#: includes/register-custom-fields.php:348
+msgid "Old URL"
+msgstr "URL viejo"
+
+#: includes/register-custom-fields.php:401
+msgid "Manual author"
+msgstr "Autor manual"
+
+#: includes/register-custom-fields.php:402
+msgid "Read-only: author"
+msgstr "Campo desactivado: autor"
+
+#: includes/register-custom-fields.php:429
+msgid "Manual date"
+msgstr "Fecha manual"
+
+#: includes/register-custom-fields.php:430
+msgid "Read-only: date from text itself"
+msgstr "Campo desactivado: fecha dentro del texto"
+
+#: includes/register-custom-fields.php:442
+msgid "Yoast SEO Title"
+msgstr "Título SEO Coast"
+
+#: includes/register-custom-fields.php:443
+#: includes/register-custom-fields.php:456
+msgid "Read-only"
+msgstr "Solo lectura"
+
+#: includes/register-custom-fields.php:455
+msgid "Yoast SEO Description"
+msgstr "Descripción SEO Yoast"
+
+#: includes/register-taxonomies.php:60
+msgctxt "taxonomy general name"
+msgid "Problems"
+msgstr "Problemas"
+
+#: includes/register-taxonomies.php:61
+msgctxt "taxonomy singular name"
+msgid "Problem"
+msgstr "Problema"
+
+#: includes/register-taxonomies.php:62
+msgid "Search Problems"
+msgstr "Buscar problemas"
+
+#: includes/register-taxonomies.php:63
+msgid "Popular Problems"
+msgstr "Problemas populares"
+
+#: includes/register-taxonomies.php:64
+msgid "All Problems"
+msgstr "Todos los problemas"
+
+#: includes/register-taxonomies.php:67
+msgid "Edit Problem"
+msgstr "Editar problema"
+
+#: includes/register-taxonomies.php:68
+msgid "Update Problem"
+msgstr "Actualizar problema"
+
+#: includes/register-taxonomies.php:69
+msgid "Add New Problem"
+msgstr "Añadir nuevo problema"
+
+#: includes/register-taxonomies.php:70
+msgid "New Problem Name"
+msgstr "Nombre de nuevo problema"
+
+#: includes/register-taxonomies.php:71
+msgid "Separate problems with commas"
+msgstr "Separar problemas con comas"
+
+#: includes/register-taxonomies.php:72
+msgid "Add or remove problems"
+msgstr "Añadir o eliminar problemas"
+
+#: includes/register-taxonomies.php:73
+msgid "Choose from the most used problems"
+msgstr "Elegir entre los más utilizados"
+
+#: includes/register-taxonomies.php:74
+msgid "No problems found."
+msgstr "No se ha encontrado ningún problema."
+
+#: includes/register-taxonomies.php:75
+msgid "Problems"
+msgstr "Problemas"
+
+#: includes/register-taxonomies.php:97
+msgctxt "taxonomy general name"
+msgid "Sources"
+msgstr "Orígenes"
+
+#: includes/register-taxonomies.php:98
+msgctxt "taxonomy singular name"
+msgid "Source"
+msgstr "Origen"
+
+#: includes/register-taxonomies.php:99
+msgid "Search Sources"
+msgstr "Buscar orígenes"
+
+#: includes/register-taxonomies.php:100
+msgid "Popular Sources"
+msgstr "Orígenes populares"
+
+#: includes/register-taxonomies.php:101
+msgid "All Sources"
+msgstr "Todos los orígenes"
+
+#: includes/register-taxonomies.php:104
+msgid "Edit Source"
+msgstr "Editar origen"
+
+#: includes/register-taxonomies.php:105
+msgid "Update Source"
+msgstr "Actualizar origen"
+
+#: includes/register-taxonomies.php:106
+msgid "Add New Source"
+msgstr "Añadir nuevo origen"
+
+#: includes/register-taxonomies.php:107
+msgid "New Source Name"
+msgstr "Nombre de nuevo origen"
+
+#: includes/register-taxonomies.php:108
+msgid "Separate sources with commas"
+msgstr "Separar orígenes con coma"
+
+#: includes/register-taxonomies.php:109
+msgid "Add or remove sources"
+msgstr "Añadir o eliminar orígenes"
+
+#: includes/register-taxonomies.php:110
+msgid "Choose from the most used sources"
+msgstr "Elegir entre los más utilizados"
+
+#: includes/register-taxonomies.php:111
+msgid "No sources found."
+msgstr "No se ha encontrado ningún origen."
+
+#: includes/register-taxonomies.php:112
+msgid "Sources"
+msgstr "Orígenes"
+
+#: includes/register-taxonomies.php:134
+msgctxt "taxonomy general name"
+msgid "Years"
+msgstr "Años"
+
+#: includes/register-taxonomies.php:135
+msgctxt "taxonomy singular name"
+msgid "Year"
+msgstr "Año"
+
+#: includes/register-taxonomies.php:136
+msgid "Search Years"
+msgstr "Buscar años"
+
+#: includes/register-taxonomies.php:137
+msgid "Popular Years"
+msgstr "Años populares"
+
+#: includes/register-taxonomies.php:138
+msgid "All Years"
+msgstr "Todos los años"
+
+#: includes/register-taxonomies.php:141
+msgid "Edit Year"
+msgstr "Editar año"
+
+#: includes/register-taxonomies.php:142
+msgid "Update Year"
+msgstr "Actualizar año"
+
+#: includes/register-taxonomies.php:143
+msgid "Add New Year"
+msgstr "Añadir nuevo año"
+
+#: includes/register-taxonomies.php:144
+msgid "New Year Name"
+msgstr "Nombre de nuevo año"
+
+#: includes/register-taxonomies.php:145
+msgid "Separate years with commas"
+msgstr "Separar años con comas"
+
+#: includes/register-taxonomies.php:146
+msgid "Add or remove years"
+msgstr "Añadir o eliminar años"
+
+#: includes/register-taxonomies.php:147
+msgid "Choose from the most used years"
+msgstr "Elegir entre los más utilizados"
+
+#: includes/register-taxonomies.php:148
+msgid "No years found."
+msgstr "No hay años."
+
+#: includes/register-taxonomies.php:149
+msgid "Years"
+msgstr "Años"
+
+#: includes/register-taxonomies.php:170
+msgctxt "taxonomy general name"
+msgid "Weird Dates"
+msgstr "Fecha extrañas"
+
+#: includes/register-taxonomies.php:171
+msgctxt "taxonomy singular name"
+msgid "Weird Date"
+msgstr "Fecha extraña"
+
+#: includes/register-taxonomies.php:172
+msgid "Search Weird Dates"
+msgstr "Buscar fechas extrañas"
+
+#: includes/register-taxonomies.php:173
+msgid "Popular Weird Dates"
+msgstr "Fechas extrañas populares"
+
+#: includes/register-taxonomies.php:174
+msgid "All Weird Dates"
+msgstr "Todas las fechas raras"
+
+#: includes/register-taxonomies.php:177
+msgid "Edit Weird Date"
+msgstr "Editar fecha extraña"
+
+#: includes/register-taxonomies.php:178
+msgid "Update Weird Date"
+msgstr "Actualizar fecha extraña"
+
+#: includes/register-taxonomies.php:179
+msgid "Add New Weird Date"
+msgstr "Añadir nueva fecha extraña"
+
+#: includes/register-taxonomies.php:180
+msgid "New Weird Date Name"
+msgstr "Nombre de nueva fecha extraña"
+
+#: includes/register-taxonomies.php:181
+msgid "Separate weird dates with commas"
+msgstr "Separar fechas extrañas con comas"
+
+#: includes/register-taxonomies.php:182
+msgid "Add or remove weird dates"
+msgstr "Añadir o eliminar fechas extrañas"
+
+#: includes/register-taxonomies.php:183
+msgid "Choose from the most used weird dates"
+msgstr "Elegir entre los más utilizados"
+
+#: includes/register-taxonomies.php:184
+msgid "No weird dates found."
+msgstr "No hay fechas extrañas."
+
+#: includes/register-taxonomies.php:185
+msgid "Weird Dates"
+msgstr "Fecha extrañas"
+
+#: includes/user-custom-fields.php:11
+msgid "Afiliado Personal Profile Metabox"
+msgstr ""
+
+#: includes/user-custom-fields.php:25
+msgid "Afiliado Personal"
+msgstr ""
+
+#: includes/user-custom-fields.php:34 includes/user-custom-fields.php:96
+msgid "Phone number"
+msgstr "Teléfono"
+
+#: includes/user-custom-fields.php:41 includes/user-custom-fields.php:103
+msgid "Country"
+msgstr "País"
+
+#: includes/user-custom-fields.php:49
+msgid "Occupation"
+msgstr "Ocupación"
+
+#: includes/user-custom-fields.php:56
+msgid "Company"
+msgstr "Compañía"
+
+#: includes/user-custom-fields.php:72
+msgid "Afiliado Empresarial Profile Metabox"
+msgstr ""
+
+#: includes/user-custom-fields.php:88
+msgid "Afiliado Empresarial"
+msgstr ""
+
+#: includes/user-custom-fields.php:111
+msgid "Business sector"
+msgstr "Sector empresarial"
+
+#: includes/user-custom-fields.php:118
+msgid "CC: Email"
+msgstr "CC: Correo electrónico"
+
+#: includes/user-custom-fields.php:119
+msgid "Email address to copy messages to."
+msgstr "Copiar a este correo electrónico."
+
+#: includes/user-custom-fields.php:135
+msgid "Additional Contacts Metabox"
+msgstr "Contactos adicionales Metabox"
+
+#: includes/user-custom-fields.php:151 includes/user-custom-fields.php:161
+msgid "Additional contacts"
+msgstr "Contactos adicionales"
+
+#: includes/user-custom-fields.php:164
+msgid "Contact {#}"
+msgstr "Contacto {#}"
+
+#: includes/user-custom-fields.php:165
+msgid "Add Another Contact"
+msgstr "Añadir otro contacto"
+
+#: includes/user-custom-fields.php:166
+msgid "Remove Contact"
+msgstr "Eliminar contacto"
+
+#: includes/user-custom-fields.php:174
+msgid "Contact name"
+msgstr "Nombre del contacto"
+
+#: includes/user-custom-fields.php:180
+msgid "Contact last name"
+msgstr "Apellidos del contacto"
+
+#: includes/user-custom-fields.php:186
+msgid "Contact email"
+msgstr "Correo electrónico del contacto"
+
+#: vendor/cmb2/example-functions.php:445
+msgid "About Page Metabox"
+msgstr "Meta box de página About"
+
+#: vendor/cmb2/example-functions.php:476
+msgid "Repeating Field Group"
+msgstr "Grupo repetible"
+
+#: vendor/cmb2/example-functions.php:484
+msgid "Generates reusable form entries"
+msgstr ""
+
+#: vendor/cmb2/example-functions.php:486
+msgid "Entry {#}"
+msgstr "Entrada {#}"
+
+#: vendor/cmb2/example-functions.php:487
+msgid "Add Another Entry"
+msgstr "Agregar otra Entrada"
+
+#: vendor/cmb2/example-functions.php:488
+msgid "Remove Entry"
+msgstr "Eliminar Entrada"
+
+#: vendor/cmb2/example-functions.php:501
+msgid "Entry Title"
+msgstr "Título de la entrada"
+
+#: vendor/cmb2/example-functions.php:508
+msgid "Description"
+msgstr "Descripción"
+
+#: vendor/cmb2/example-functions.php:509
+msgid "Write a short description for this entry"
+msgstr ""
+
+#: vendor/cmb2/example-functions.php:515
+msgid "Entry Image"
+msgstr ""
+
+#: vendor/cmb2/example-functions.php:521
+msgid "Image Caption"
+msgstr ""
+
+#: vendor/cmb2/example-functions.php:540
+msgid "User Profile Metabox"
+msgstr "Metabox de perfil del usuario"
+
+#: vendor/cmb2/example-functions.php:547 vendor/cmb2/example-functions.php:617
+msgid "Extra Info"
+msgstr "Información extra"
+
+#: vendor/cmb2/example-functions.php:555
+msgid "Avatar"
+msgstr ""
+
+#: vendor/cmb2/example-functions.php:562
+msgid "Facebook URL"
+msgstr "URL de Facebook"
+
+#: vendor/cmb2/example-functions.php:569
+msgid "Twitter URL"
+msgstr "URL de Twitter"
+
+#: vendor/cmb2/example-functions.php:576
+msgid "Google+ URL"
+msgstr "URL de Google+"
+
+#: vendor/cmb2/example-functions.php:583
+msgid "Linkedin URL"
+msgstr "URL de LinkedIn"
+
+#: vendor/cmb2/example-functions.php:590
+msgid "User Field"
+msgstr "Campo de usuario"
+
+#: vendor/cmb2/example-functions.php:610
+msgid "Category Metabox"
+msgstr "Metabox de categoría"
+
+#: vendor/cmb2/example-functions.php:625
+msgid "Term Image"
+msgstr ""
+
+#: vendor/cmb2/example-functions.php:632
+msgid "Arbitrary Term Field"
+msgstr "Campo arbitrario"
+
+#: vendor/cmb2/example-functions.php:651
+msgid "Theme Options"
+msgstr "Opciones del tema"
+
+#: vendor/cmb2/example-functions.php:677
+msgid "Site Background Color"
+msgstr "Color de fondo del sitio"
+
+#: vendor/cmb2/example-functions.php:713
+msgid "REST Test Box"
+msgstr ""
+
+#: vendor/cmb2/example-functions.php:722
+msgid "REST Test Text"
+msgstr ""
+
+#: vendor/cmb2/example-functions.php:723
+msgid "Will show in the REST API for this box and for pages."
+msgstr ""
+
+#: vendor/cmb2/example-functions.php:729
+msgid "REST Editable Test Text"
+msgstr ""
+
+#: vendor/cmb2/example-functions.php:730
+msgid "Will show in REST API \"editable\" contexts only (`POST` requests)."
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2.php:175
+msgid "Metabox configuration is required to have an ID parameter."
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2.php:553
+msgid "Click to toggle"
+msgstr "Haga clic para alternar"
+
+#: vendor/cmb2/includes/CMB2_Ajax.php:75
+msgid "Please Try Again"
+msgstr "Por favor inténtalo de nuevo"
+
+#: vendor/cmb2/includes/CMB2_Ajax.php:181
+msgid "Remove Embed"
+msgstr "Eliminar Embed"
+
+#. translators: 1: results for. 2: link to codex.wordpress.org/Embeds
+#: vendor/cmb2/includes/CMB2_Ajax.php:189
+#: vendor/cmb2/includes/helper-functions.php:105
+#, php-format
+msgid "No oEmbed Results Found for %1$s. View more info at %2$s."
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2_Base.php:406
+#, php-format
+msgid ""
+"The \"%1$s\" field parameter has been deprecated in favor of the \"%1$s\" "
+"parameter."
+msgstr ""
+"El parámetro de campo \"%1$s\" ha sido descontinuado a favor del parámetro "
+"\"%1$s\"."
+
+#: vendor/cmb2/includes/CMB2_Base.php:410
+#, php-format
+msgid ""
+"Using the \"%1$s\" field parameter as a callback has been deprecated in "
+"favor of the \"%1$s\" parameter."
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2_Base.php:440
+#, php-format
+msgid ""
+"%1$s was called with a parameter that is <strong>deprecated</strong> since "
+"version %2$s! %3$s"
+msgstr ""
+"%1$s fue llamado con un argumento que está <strong>discontinuado</strong> "
+"desde la versión %2$s! %3$s"
+
+#: vendor/cmb2/includes/CMB2_Base.php:442
+#, php-format
+msgid ""
+"%1$s was called with a parameter that is <strong>deprecated</strong> since "
+"version %2$s with no alternative available."
+msgstr ""
+"%1$s fue llamado con un argumento que está <strong>discontinuado</strong> "
+"desde la versión %2$s y no hay alternativas disponibles."
+
+#: vendor/cmb2/includes/CMB2_Base.php:475
+#: vendor/cmb2/includes/CMB2_Hookup_Base.php:100
+#: vendor/cmb2/includes/CMB2_Options_Hookup.php:233
+#: vendor/cmb2/includes/types/CMB2_Type_Base.php:149
+#, php-format
+msgid "Invalid %1$s property: %2$s"
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2_Base.php:490
+#: vendor/cmb2/includes/types/CMB2_Type_Base.php:133
+#, php-format
+msgid "Invalid %1$s method: %2$s"
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2_Field.php:1174
+msgid "Add Group"
+msgstr "Añadir grupo"
+
+#: vendor/cmb2/includes/CMB2_Field.php:1175
+msgid "Remove Group"
+msgstr "Eliminar Grupo"
+
+#: vendor/cmb2/includes/CMB2_Field.php:1197
+#: vendor/cmb2/includes/CMB2_Field.php:1201
+msgid "None"
+msgstr "Ninguno"
+
+#: vendor/cmb2/includes/CMB2_Field.php:1262
+msgid "Sorry, this field does not have a cmb_id specified."
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2_Field_Display.php:432
+#: vendor/cmb2/includes/CMB2_JS.php:167
+#: vendor/cmb2/includes/types/CMB2_Type_File_Base.php:78
+msgid "File:"
+msgstr "Archivo:"
+
+#: vendor/cmb2/includes/CMB2_Hookup_Base.php:42
+#, php-format
+msgid "%1$s should be implemented by the extended class."
+msgstr "%1$s deberá ser implementada por la clase extendida."
+
+#: vendor/cmb2/includes/CMB2_JS.php:107 vendor/cmb2/includes/CMB2_JS.php:147
+msgid "Clear"
+msgstr "Limpiar"
+
+#: vendor/cmb2/includes/CMB2_JS.php:108
+msgid "Default"
+msgstr "Por defecto"
+
+#: vendor/cmb2/includes/CMB2_JS.php:109
+msgid "Select Color"
+msgstr "Seleccionar Color"
+
+#: vendor/cmb2/includes/CMB2_JS.php:110
+msgid "Current Color"
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2_JS.php:137
+msgctxt "Valid formatDate string for jquery-ui datepicker"
+msgid "mm/dd/yy"
+msgstr "mm/dd/yy"
+
+#: vendor/cmb2/includes/CMB2_JS.php:138
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr "Domingo, Lunes, Martes, Miércoles, Jueves, Viernes, Sábado"
+
+#: vendor/cmb2/includes/CMB2_JS.php:139
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr "Do, Lu, Ma, Mi, Ju, Vi, Sa"
+
+#: vendor/cmb2/includes/CMB2_JS.php:140
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr "Lun, Mar, Mie, Jue, Vie, Sab, Dom"
+
+#: vendor/cmb2/includes/CMB2_JS.php:141
+msgid ""
+"January, February, March, April, May, June, July, August, September, "
+"October, November, December"
+msgstr ""
+"Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, "
+"Octubre, Noviembre, Diciembre"
+
+#: vendor/cmb2/includes/CMB2_JS.php:142
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr "Ene, Feb, Mar, Apr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic"
+
+#: vendor/cmb2/includes/CMB2_JS.php:143
+msgid "Next"
+msgstr "Siguiente"
+
+#: vendor/cmb2/includes/CMB2_JS.php:144
+msgid "Prev"
+msgstr "Anterior"
+
+#: vendor/cmb2/includes/CMB2_JS.php:145
+msgid "Today"
+msgstr "Hoy"
+
+#: vendor/cmb2/includes/CMB2_JS.php:146 vendor/cmb2/includes/CMB2_JS.php:156
+msgid "Done"
+msgstr "Finalizar"
+
+#: vendor/cmb2/includes/CMB2_JS.php:150
+msgid "Choose Time"
+msgstr "Elegir hora"
+
+#: vendor/cmb2/includes/CMB2_JS.php:151
+msgid "Time"
+msgstr "Hora"
+
+#: vendor/cmb2/includes/CMB2_JS.php:152
+msgid "Hour"
+msgstr "Hora"
+
+#: vendor/cmb2/includes/CMB2_JS.php:153
+msgid "Minute"
+msgstr "Minuto"
+
+#: vendor/cmb2/includes/CMB2_JS.php:154
+msgid "Second"
+msgstr "Segundo"
+
+#: vendor/cmb2/includes/CMB2_JS.php:155
+msgid "Now"
+msgstr "Ahora"
+
+#: vendor/cmb2/includes/CMB2_JS.php:157
+msgctxt ""
+"Valid formatting string, as per http://trentrichardson.com/examples/"
+"timepicker/"
+msgid "hh:mm TT"
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2_JS.php:163
+msgid "Use this file"
+msgstr "Usar este archivo"
+
+#: vendor/cmb2/includes/CMB2_JS.php:164
+msgid "Use these files"
+msgstr "Usar estos archivos"
+
+#: vendor/cmb2/includes/CMB2_JS.php:165
+#: vendor/cmb2/includes/types/CMB2_Type_File_Base.php:63
+msgid "Remove Image"
+msgstr "Eliminar Imagen"
+
+#: vendor/cmb2/includes/CMB2_JS.php:166 vendor/cmb2/includes/CMB2_Types.php:412
+#: vendor/cmb2/includes/types/CMB2_Type_File_Base.php:83
+msgid "Remove"
+msgstr "Quitar"
+
+#: vendor/cmb2/includes/CMB2_JS.php:168
+#: vendor/cmb2/includes/types/CMB2_Type_File_Base.php:81
+msgid "Download"
+msgstr "Descarga"
+
+#: vendor/cmb2/includes/CMB2_JS.php:169
+msgid "Select / Deselect All"
+msgstr "Seleccionar / Deseleccionar todo"
+
+#: vendor/cmb2/includes/CMB2_Options_Hookup.php:111
+msgid "Settings updated."
+msgstr "Ajustes actualizados."
+
+#: vendor/cmb2/includes/CMB2_Options_Hookup.php:113
+msgid "Nothing to update."
+msgstr "No hay nada que actualizar."
+
+#: vendor/cmb2/includes/CMB2_Types.php:231
+msgid "Custom CMB2 field type classes must extend CMB2_Type_Base."
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2_Types.php:349
+msgid "Add Row"
+msgstr "Añadir fila"
+
+#: vendor/cmb2/includes/CMB2_Types.php:412
+msgid "Remove Row"
+msgstr "Eliminar fila"
+
+#: vendor/cmb2/includes/CMB2_hookup.php:181
+msgid ""
+"Term Metadata is a WordPress 4.4+ feature. Please upgrade your WordPress "
+"install."
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2_hookup.php:185
+msgid "Term metaboxes configuration requires a \"taxonomies\" parameter."
+msgstr ""
+
+#: vendor/cmb2/includes/CMB2_hookup.php:458
+#, php-format
+msgid "Toggle panel: %s"
+msgstr ""
+
+#: vendor/cmb2/includes/helper-functions.php:303
+msgid "Save"
+msgstr "Guardar"
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller.php:257
+msgid "This box does not have read permissions."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller.php:277
+msgid "This box does not have write permissions."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller.php:300
+msgid ""
+"No box found by that id. A box needs to be registered with the \"show_in_rest"
+"\" parameter configured."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller.php:378
+msgid "A human-readable description of the object."
+msgstr "Una descripción legible del tipo de entrada."
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller.php:385
+msgid "The id for the object."
+msgstr "ID del objeto."
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller.php:392
+msgid "The title for the object."
+msgstr "El título para el objeto."
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:51
+msgid "Includes the registered fields for the box in the response."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:72
+msgid ""
+"Includes the fully rendered attributes, 'form_open', 'form_close', as well "
+"as the enqueued 'js_dependencies' script handles, and 'css_dependencies' "
+"stylesheet handles."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Boxes.php:122
+msgid "No boxes found."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:27
+msgid ""
+"Includes the box object which the fields are registered to in the response."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:30
+msgid ""
+"When the '_rendered' argument is passed, the renderable field attributes "
+"will be returned fully rendered. By default, the names of the callback "
+"handers for the renderable attributes will be returned."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:33
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:36
+msgid ""
+"To view or modify the field's value, the 'object_id' and 'object_type' "
+"arguments are required."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:236
+msgid ""
+"CMB2 Field value cannot be updated without the value parameter specified."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:297
+msgid ""
+"CMB2 Field value cannot be modified without the object_id and object_type "
+"parameters specified."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:312
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:341
+msgid "No field found by that id."
+msgstr ""
+
+#: vendor/cmb2/includes/rest-api/CMB2_REST_Controller_Fields.php:415
+#, php-format
+msgid "Value Error for %s"
+msgstr ""
+
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:24
+msgid "The register_routes() method must be overridden"
+msgstr ""
+
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:34
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:46
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:58
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:70
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:82
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:94
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:106
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:118
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:130
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:142
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:154
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:167
+#, php-format
+msgid "Method '%s' not implemented. Must be overridden in subclass."
+msgstr ""
+
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:272
+msgid "Current page of the collection."
+msgstr ""
+
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:280
+msgid "Maximum number of items to be returned in result set."
+msgstr ""
+
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:289
+msgid "Limit results to those matching a string."
+msgstr ""
+
+#: vendor/cmb2/includes/shim/WP_REST_Controller.php:307
+msgid ""
+"Scope under which the request is made; determines fields present in response."
+msgstr ""
+
+#: vendor/cmb2/includes/types/CMB2_Type_File.php:76
+msgid "Add or Upload File"
+msgstr "Añadir o subir archivo"
+
+#: vendor/cmb2/includes/types/CMB2_Type_File_List.php:41
+msgid "Add or Upload Files"
+msgstr "Añadir o subir archivos"
+
+#: vendor/cmb2/includes/types/CMB2_Type_Taxonomy_Base.php:99
+msgid "No terms"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "CIT Theme Functions"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/matirosero/cit-theme-functions"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Custom functions for the Club de Investigación Tecnológica website."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mat Rosero"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.matilderosero.com/"
+msgstr ""
+
+#~ msgid "Secondary Contact: First Name"
+#~ msgstr "Nombre del contacto secundario"
+
+#~ msgid "Past events"
+#~ msgstr "Eventos pasados"
+
+#~ msgid "Past event"
+#~ msgstr "Evento pasado"
+
+#~ msgid "All Past events"
+#~ msgstr "Todos los eventos pasados"
+
+#~ msgid "Add New Past event"
+#~ msgstr "Editar evento pasado"
+
+#~ msgid "Edit Past event"
+#~ msgstr "Editar evento pasado"
+
+#~ msgid "New Past event"
+#~ msgstr "Nuevo evento pasado"
+
+#~ msgid "File path"
+#~ msgstr "Ruta del archivo"
+
+#~ msgid "Download shortcode"
+#~ msgstr "Shortcode de descarga"
+
+#~ msgid "File name"
+#~ msgstr "Nombre de archivo"
+
+#~ msgid "Membership type"
+#~ msgstr "Tipo de afiliación"

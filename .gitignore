@@ -22,6 +22,7 @@ wp-content/*
 
 wp-content/plugins/*
 !wp-content/plugins/mro-cit-front-end-registration/
+!wp-content/plugins/mro-cit-theme-functions/
 
 wp-content/mu-plugins/*
 
