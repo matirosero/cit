@@ -1,0 +1,758 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CIT Front End Registration and Login\n"
+"POT-Creation-Date: 2020-02-15 16:24-0600\n"
+"PO-Revision-Date: 2020-02-15 23:36-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_PE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: mro-cit-front-end-registration.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/edit-profile.php:33
+msgid "Your account has been created successfully."
+msgstr "Su perfil ha sido creado con éxito."
+
+#: includes/edit-profile.php:40
+msgid "You must log in to edit your profile."
+msgstr "Ingrese al sitio para editar su perfil."
+
+#: includes/edit-profile.php:75
+msgctxt "Registration date"
+msgid "Member since"
+msgstr "Afiliado desde"
+
+#: includes/edit-profile.php:101
+msgid "Edit your account"
+msgstr "Edite su cuenta"
+
+#: includes/edit-profile.php:120 includes/frontend-fields-callback.php:56
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: includes/edit-profile.php:124
+msgid "Usernames can't be changed."
+msgstr "Los nombres de usuario no se pueden cambiar."
+
+#: includes/edit-profile.php:138 includes/frontend-fields-callback.php:24
+msgid "Representative's First Name"
+msgstr "Nombre del representante"
+
+#: includes/edit-profile.php:139
+msgid "Representative's Last Name"
+msgstr "Apellidos del representante"
+
+#: includes/edit-profile.php:140
+msgid "Representative's Email"
+msgstr "Correo electrónico del representante"
+
+#: includes/edit-profile.php:142 includes/frontend-fields-callback.php:28
+msgid "First Name"
+msgstr "Nombre"
+
+#: includes/edit-profile.php:143 includes/frontend-fields-callback.php:29
+msgid "Last Name"
+msgstr "Apellidos"
+
+#: includes/edit-profile.php:144 includes/frontend-fields-callback.php:30
+#: includes/mailchimp-manage-temp-users.php:182
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: includes/edit-profile.php:178 includes/frontend-fields-callback.php:124
+msgid "Phone"
+msgstr "Teléfono"
+
+#: includes/edit-profile.php:186 includes/frontend-fields-callback.php:140
+msgid "Business sector"
+msgstr "Sector empresarial"
+
+#: includes/edit-profile.php:196 includes/frontend-fields-callback.php:157
+msgid "Occupation"
+msgstr "Ocupación"
+
+#: includes/edit-profile.php:200
+msgid "Lugar de trabajo o estudio"
+msgstr ""
+
+#: includes/edit-profile.php:207 includes/frontend-fields-callback.php:184
+msgid "Country"
+msgstr "País"
+
+#: includes/edit-profile.php:233 includes/edit-profile.php:236
+msgid "New Password"
+msgstr "Nueva contraseña"
+
+#: includes/edit-profile.php:234
+msgid "Leave blank to keep password unchanged."
+msgstr "Deje en blanco para mantener la misma contraseña."
+
+#: includes/edit-profile.php:240
+msgid "New Password Again"
+msgstr "Repetir nueva contraseña"
+
+#: includes/edit-profile.php:251
+msgid "Edit profile"
+msgstr "Editar perfil"
+
+#: includes/edit-profile.php:285 includes/frontend-manage-members.php:421
+#: includes/mailchimp-manage-temp-users.php:129
+#: includes/mailchimp-manage-temp-users.php:225 includes/registration.php:199
+msgid "Invalid email"
+msgstr "Correo inválido"
+
+#: includes/edit-profile.php:288 includes/frontend-manage-members.php:424
+#: includes/registration.php:204
+msgid "Email already registered"
+msgstr "Correo previamente registrado"
+
+#: includes/edit-profile.php:309 includes/registration.php:291
+msgid "Please enter a phone number"
+msgstr "Por favor, introduzca un número de teléfono"
+
+#: includes/edit-profile.php:321 includes/registration.php:371
+msgid "Please choose a valid country."
+msgstr "Por favor elija un país válido."
+
+#: includes/edit-profile.php:335 includes/registration.php:313
+msgid "Please enter a business sector"
+msgstr "Por favor, introduzca un sector empresarial"
+
+#: includes/edit-profile.php:362 includes/registration.php:341
+msgid "Please enter an occupation"
+msgstr "Por favor, introduzca una ocupación"
+
+#: includes/edit-profile.php:378 includes/registration.php:357
+msgid "Please enter a company or school"
+msgstr "Por favor, ingrese un lugar de trabajo o estudios"
+
+#: includes/edit-profile.php:395 includes/registration.php:264
+msgid "Please enter a first name"
+msgstr "Por favor, introduzca un nombre"
+
+#: includes/edit-profile.php:404 includes/registration.php:279
+msgid "Please enter a last name"
+msgstr "Por favor, introduzca apellidos"
+
+#: includes/edit-profile.php:421 includes/registration.php:411
+msgid "Please fill in your company's name."
+msgstr "Por favor indique el nombre de su empresa."
+
+#: includes/edit-profile.php:463
+msgid "Invalid secondary email"
+msgstr "Correo electrónico secundario inválido"
+
+#: includes/edit-profile.php:501 includes/registration.php:398
+msgid "Passwords do not match"
+msgstr "Las contraseñas no coinciden"
+
+#: includes/edit-profile.php:569
+msgid "Your profile has been succesfully edited!"
+msgstr "¡Su perfil ha sido editado correctamente!"
+
+#: includes/emails.php:59
+#, php-format
+msgid "Se ha registrado un nuevo afiliado al Club, y desea ser %s."
+msgstr ""
+
+#. translators: %s: user login
+#: includes/emails.php:62 includes/emails.php:107 includes/emails.php:142
+#: includes/emails.php:169 includes/emails.php:259 includes/emails.php:281
+#: includes/emails.php:300 includes/emails.php:317
+#, php-format
+msgid "Usuario: %s"
+msgstr ""
+
+#: includes/emails.php:64 includes/emails.php:109
+#, php-format
+msgid "Empresa/Institución: %s"
+msgstr ""
+
+#: includes/emails.php:66 includes/emails.php:111
+#, php-format
+msgid "Industria: %s"
+msgstr ""
+
+#: includes/emails.php:68 includes/emails.php:113 includes/emails.php:149
+#: includes/emails.php:176
+#, php-format
+msgid "País: %s"
+msgstr ""
+
+#: includes/emails.php:70 includes/emails.php:115 includes/emails.php:147
+#: includes/emails.php:174
+#, php-format
+msgid "Teléfono: %s"
+msgstr ""
+
+#: includes/emails.php:72 includes/emails.php:117
+msgid "CONTACTO PRINCIPAL"
+msgstr ""
+
+#. translators: %s: user email address
+#: includes/emails.php:74 includes/emails.php:119 includes/emails.php:144
+#: includes/emails.php:171 includes/emails.php:260 includes/emails.php:282
+#: includes/emails.php:301 includes/emails.php:318
+#, php-format
+msgid "Email: %s"
+msgstr "Correo electrónico: %s"
+
+#: includes/emails.php:77 includes/emails.php:122 includes/emails.php:145
+#: includes/emails.php:172
+#, php-format
+msgid "Nombre: %1$s %2$s"
+msgstr ""
+
+#: includes/emails.php:104
+#, php-format
+msgid "Se ha registrado un nuevo %s al Club."
+msgstr ""
+
+#. translators: %s: site title
+#: includes/emails.php:139 includes/emails.php:166
+#, php-format
+msgid "Se ha registrado un nuevo afiliado en %s:"
+msgstr ""
+
+#: includes/emails.php:151 includes/emails.php:178
+#, php-format
+msgid "Ocupación: %s"
+msgstr ""
+
+#: includes/emails.php:153 includes/emails.php:180
+#, php-format
+msgid "Empresa: %s"
+msgstr ""
+
+#: includes/emails.php:254 includes/emails.php:274
+#, php-format
+msgid ""
+"¡Nos da gran placer dar la bienvenida a %s al Club de Investigación "
+"Tecnológica!"
+msgstr ""
+
+#: includes/emails.php:256
+msgid ""
+"Pronto nos pondremos en contacto para finalizar el proceso de afiliación. "
+"Mientras tanto, esta cuenta está en estado \"Pendiente\": puede ingresar al "
+"sitio, descargar informes de investigación y añadir contactos adicionales. "
+"En cuanto finalice la afiliación, también será posible tramitar sus reservas "
+"a nuestros eventos. "
+msgstr ""
+
+#: includes/emails.php:258
+msgid "Puede usar estas credenciales para ingresar al sitio:"
+msgstr ""
+
+#: includes/emails.php:262 includes/emails.php:284
+#, php-format
+msgid "Si aún no ha escogido contraseña: %s"
+msgstr ""
+
+#: includes/emails.php:276
+msgid ""
+"A partir de ahora, usted recibirá las invitaciones a los eventos del Club en "
+"esta dirección. Puede confirmar su asistencia a los eventos del Club en "
+"nuestro sitio web usando sus credenciales. Para evitar que nuestros correos "
+"caigan en spam, favor de añadir nuestro correo, info@clubdeinvestigacion."
+"com, a su lista de contactos. "
+msgstr ""
+
+#: includes/emails.php:278
+msgid ""
+"Al ingresar al sitio, también puede descargar informes de investigación y "
+"añadir contactos adicionales si desea que alguien más reciba las "
+"invitaciones."
+msgstr ""
+
+#: includes/emails.php:280
+msgid "Sus credenciales para ingresar al sitio:"
+msgstr ""
+
+#: includes/emails.php:303 includes/emails.php:320
+#, php-format
+msgid "Si aún no ha escogido contraseña, visite la siguiente dirección: %s"
+msgstr ""
+
+#. translators: Password change notification email subject. %s: Site title
+#: includes/emails.php:339
+msgid "Bienvenido al Club de Investigación Tecnológica"
+msgstr ""
+
+#: includes/emails.php:459
+msgid ""
+"Hola ###USERNAME###,\n"
+"\n"
+"Esta es una confirmación de que el correo electrónico asociado con su cuenta "
+"en ###SITENAME### fue cambiado a ###NEW_EMAIL###.\n"
+"\n"
+"Si usted no cambió su correo, por favor contacte al administrador del sitio "
+"al correo ###ADMIN_EMAIL###\n"
+"\n"
+"Este mensaje fue enviado a ###EMAIL###\n"
+"\n"
+"Saludos cordiales,\n"
+"###SITENAME###\n"
+"###SITEURL###"
+msgstr ""
+
+#: includes/emails.php:492
+msgid ""
+"Hola ###USERNAME###,\n"
+"\n"
+"Esta es una confirmación de que su contraseña en ###SITENAME### fue "
+"cambiada.\n"
+"\n"
+"Si usted no cambió su contraseña, por favor contacte al administrador del "
+"sitio al correo ###ADMIN_EMAIL###\n"
+"\n"
+"Este mensaje fue enviado a ###EMAIL###\n"
+"\n"
+"Saludos cordiales,\n"
+"###SITENAME###\n"
+"###SITEURL###"
+msgstr ""
+
+#: includes/frontend-fields-callback.php:25
+msgid "Representative's  Last Name"
+msgstr "Apellidos del representante"
+
+#: includes/frontend-fields-callback.php:26
+msgid "Representative's  Email"
+msgstr "Correo electrónico del representante"
+
+#: includes/frontend-fields-callback.php:38
+msgid "Choose Membership type"
+msgstr "Elija tipo de membresía"
+
+#: includes/frontend-fields-callback.php:173
+msgid "Company or educational institution"
+msgstr "Lugar de trabajo o estudios"
+
+#: includes/frontend-fields-callback.php:207
+msgid "Password"
+msgstr "Contraseña"
+
+#: includes/frontend-fields-callback.php:212
+msgid "Password Again"
+msgstr "Repetir contraseña"
+
+#: includes/frontend-fields-callback.php:244
+#: includes/mailchimp-manage-temp-users.php:198
+msgid "Add member"
+msgstr "Añadir suscriptor"
+
+#: includes/frontend-fields-callback.php:246 includes/registration.php:11
+msgid "Become a member"
+msgstr "Convertirse en afiliado"
+
+#: includes/frontend-manage-members.php:81
+#: includes/mailchimp-manage-temp-users.php:27
+#: includes/user-additional-contacts.php:157
+msgid "Your account doesn't have permission to see this page."
+msgstr "Su cuenta no tiene permiso para ver esta página."
+
+#: includes/frontend-manage-members.php:217
+#: includes/frontend-manage-members.php:414
+#: includes/frontend-manage-members.php:565 includes/registration.php:183
+msgid "Invalid username"
+msgstr "Nombre de usuario inválido"
+
+#: includes/frontend-manage-members.php:223
+msgid "Member is already approved"
+msgstr "El afiliado ya estaba aprobado"
+
+#: includes/frontend-manage-members.php:226
+msgid "Member is not approved (can't unapprove)"
+msgstr "El afiliado no estaba aprobado (no se puede eliminar)."
+
+#: includes/helpers.php:17 includes/user-additional-contacts.php:142
+msgid "Error"
+msgstr "Error"
+
+#: includes/login.php:66
+msgid "<strong>ERROR:</strong> Invalid username and/or password."
+msgstr "<strong>ERROR</strong>: usuario o contraseña inválidos."
+
+#: includes/login.php:67 includes/lost-password.php:42
+msgid "Lost password?"
+msgstr "¿Olvidó su contraseña?"
+
+#: includes/login.php:73
+msgid "<strong>ERROR:</strong> Username and/or Password is empty."
+msgstr "<strong>ERROR</strong>: nombre de usuario o contraseña vacíos."
+
+#: includes/login.php:75
+msgid "<strong>ERROR:</strong> You are logged out."
+msgstr "<strong>ERROR:</strong> Su sesión ha terminado."
+
+#: includes/login.php:98
+msgid "Username or Email Address"
+msgstr "Usuario o correo electrónico"
+
+#: includes/lost-password.php:27
+msgid "A password can't be reset if the user is logged in."
+msgstr ""
+"La contraseña no se puede restablecer si el usuario tiene sesión activa."
+
+#: includes/lost-password.php:56
+msgid ""
+"Please enter your username or email address. You will receive a link to "
+"create a new password via email."
+msgstr ""
+"Por favor introduzca su nombre de usuario o dirección de correo electrónico. "
+"Recibirá un enlace para crear una contraseña nueva por correo electrónico."
+
+#: includes/lost-password.php:59
+msgid "Username or E-mail"
+msgstr "Usuario o correo electrónico"
+
+#: includes/lost-password.php:69
+msgid "Get New Password"
+msgstr "Obtener nueva contraseña"
+
+#: includes/lost-password.php:86
+msgid "Enter a username or email address."
+msgstr "Ingrese su usuario o email."
+
+#: includes/lost-password.php:93
+msgid "There is no user registered with that email address."
+msgstr ""
+"No hay ningún usuario registrado con esta dirección de correo electrónico."
+
+#: includes/lost-password.php:102
+msgid "There is no user registered with that username."
+msgstr "No hay ningún usuario registrado con ese nombre de usuario."
+
+#: includes/lost-password.php:138
+msgid "Someone has requested a password reset for the following account:"
+msgstr "Solicitaron un cambio de password para la siguiente cuenta:"
+
+#. translators: %s: site name
+#: includes/lost-password.php:140
+#, php-format
+msgid "Site Name: %s"
+msgstr "Nombre del sitio: %s"
+
+#. translators: %s: user login
+#: includes/lost-password.php:142
+#, php-format
+msgid "Username: %s"
+msgstr "Nombre de usuario: %s"
+
+#: includes/lost-password.php:143
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+"Si esto fue un error, por favor ignore este correo electrónico y no pasará "
+"nada."
+
+#: includes/lost-password.php:144
+msgid "To reset your password, visit the following address:"
+msgstr ""
+"Para restablecer tu contraseña, por favor visita la siguiente dirección:"
+
+#. translators: Password reset email subject. %s: Site name
+#: includes/lost-password.php:148
+#, php-format
+msgid "[%s] Password Reset"
+msgstr "[%s] Restablecer contraseña"
+
+#: includes/lost-password.php:180
+msgid "The email could not be sent."
+msgstr "El mail no fue enviado."
+
+#: includes/lost-password.php:180
+msgid "Possible reason: your host may have disabled the mail() function."
+msgstr ""
+"Posible razón: su anfitrión puede haber deshabilitado la función mail()."
+
+#: includes/lost-password.php:182
+msgid "Check your email for your confirmation link."
+msgstr "Revise su correo para encontrar el enlace de confirmación."
+
+#: includes/mailchimp-manage-temp-users.php:179
+msgid "Add temporary members"
+msgstr "Añadir suscriptores temporales"
+
+#: includes/mailchimp-manage-temp-users.php:186
+msgid "Name"
+msgstr "Nombre"
+
+#: includes/mailchimp-manage-temp-users.php:190
+msgid "Lastname"
+msgstr "Apellidos"
+
+#: includes/mailchimp-manage-users.php:14
+msgid "Enter your email to subscribe to our newsletter"
+msgstr "Ingrese su correo para suscribirse a nuestra lista de correo"
+
+#: includes/mailchimp-manage-users.php:15
+msgid "Email . . ."
+msgstr "Correo electrónico..."
+
+#: includes/mailchimp-manage-users.php:20
+msgid "Sign Up"
+msgstr "Registrarse"
+
+#: includes/mailchimp-manage-users.php:54
+msgid "Your email address is invalid"
+msgstr "Correo electrónico inválido"
+
+#: includes/mailchimp-manage-users.php:54
+msgid "Invalid Email"
+msgstr "Correo inválido"
+
+#: includes/mailchimp-settings.php:23
+msgid "Mail Chimp"
+msgstr ""
+
+#: includes/mailchimp-settings.php:35
+msgid "Mail Chimp Settings"
+msgstr ""
+
+#: includes/mailchimp-settings.php:41
+msgid "Mail Chimp API Key"
+msgstr ""
+
+#: includes/mailchimp-settings.php:45
+msgid ""
+"Enter your Mail Chimp API key to enable a newsletter signup option with the "
+"registration form."
+msgstr ""
+
+#: includes/mailchimp-settings.php:59
+msgid "no lists"
+msgstr ""
+
+#: includes/mailchimp-settings.php:63
+msgid "Newsletter List"
+msgstr ""
+
+#: includes/mailchimp-settings.php:65
+msgid "Choose the list to subscribe users to"
+msgstr "Elija la lista a la que suscribir usuarios"
+
+#: includes/mailchimp-settings.php:79
+msgid "no segments"
+msgstr ""
+
+#: includes/mailchimp-settings.php:83
+msgid "Temporary members segment"
+msgstr ""
+
+#: includes/mailchimp-settings.php:85
+msgid "Choose the temporary members segment"
+msgstr ""
+
+#: includes/mailchimp-settings.php:89
+msgid "Save Options"
+msgstr "Guardar Opciones"
+
+#: includes/registration.php:41
+msgid "User registration is not enabled"
+msgstr "El registro de usuarios no está habilitado"
+
+#: includes/registration.php:69
+msgid "Use this form if you wish to sign up for a Personal membership."
+msgstr "Utilice este formulario si desea inscribirse como Afiliado Personal."
+
+#: includes/registration.php:178
+msgid "Username already taken"
+msgstr "El nombre de usuario ya está en uso"
+
+#: includes/registration.php:188
+msgid "Please enter a username"
+msgstr "Por favor, introducir un nombre de usuario"
+
+#: includes/registration.php:214
+msgid "Please enter a valid membership type."
+msgstr "Por favor introduzca un tipo de afiliación válida."
+
+#: includes/registration.php:393
+msgid "Please enter a password"
+msgstr "Por favor, introducir una contraseña"
+
+#: includes/user-additional-contacts.php:19
+msgid ""
+"Agregue los contactos de personas en la organización a quienes quiere "
+"suscribir al boletín informativo. A estos contactos les llegarán "
+"invitaciones a eventos, pero no les llegarán las notificaciones "
+"administrativas (cambios de contraseña, etc)."
+msgstr ""
+
+#: includes/user-additional-contacts.php:22
+msgid "Contact {#}"
+msgstr "Contacto {#}"
+
+#: includes/user-additional-contacts.php:23
+msgid "Add Another Contact"
+msgstr "Añadir otro contacto"
+
+#: includes/user-additional-contacts.php:24
+msgid "Remove Contact"
+msgstr "Eliminar contacto"
+
+#: includes/user-additional-contacts.php:31
+msgid "Contact name"
+msgstr "Nombre del contacto"
+
+#: includes/user-additional-contacts.php:36
+msgid "Contact last name"
+msgstr "Apellidos del contacto"
+
+#: includes/user-additional-contacts.php:41
+msgid "Contact email"
+msgstr "Correo electrónico del contacto"
+
+#: includes/user-additional-contacts.php:147
+#, php-format
+msgid "Your contacts have been updated, %s."
+msgstr "Sus contactos han sido actualizados, %s."
+
+#: includes/user-additional-contacts.php:153
+msgid "Save contacts"
+msgstr "Guardar contactos"
+
+#: includes/user-additional-contacts.php:186
+msgid "Security check failed."
+msgstr "La comprobación de seguridad ha fallado."
+
+#: includes/user-additional-contacts.php:191
+msgid "You must log in to do this."
+msgstr "Ingrese al sitio para hacer esto."
+
+#: includes/user-additional-contacts.php:196
+msgid "Your account doesn't have permission to do this."
+msgstr "Su cuenta no tiene permiso para hacer esto."
+
+#: includes/user-additional-contacts.php:231
+msgid "Invalid email."
+msgstr "Correo inválido."
+
+#: includes/user-additional-contacts.php:272
+msgid "All contacts must have an email."
+msgstr "Todos los contactos deben tener un correo electrónico."
+
+#. Plugin Name of the plugin/theme
+msgid "CIT Front End Registration and Login"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://pippinsplugins.com/creating-custom-front-end-registration-and-login-"
+"forms"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Provides simple front end registration and login forms. Based on the "
+"tutorial by Pippin Williamson @ https://pippinsplugins.com/creating-custom-"
+"front-end-registration-and-login-forms"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mat Rosero"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://matilderosero.com"
+msgstr ""
+
+#~ msgid "Secondary Contact (cc:)"
+#~ msgstr "Contacto secundario (cc:)"
+
+#~ msgid ""
+#~ "Fill this in if you'd like someone copied on all website account "
+#~ "management emails."
+#~ msgstr ""
+#~ "Llene estos campos si desea que se copie a alguien más en todos los "
+#~ "correos que tienen que ver con administración de su cuenta."
+
+#~ msgid "Secondary Contact Email"
+#~ msgstr "Correo electrónico de contacto secundario"
+
+#~ msgid "Secondary Contact: First Name"
+#~ msgstr "Nombre del contacto secundario"
+
+#~ msgid "Secondary Contact: Last Name"
+#~ msgstr "Apellidos del contacto secundario"
+
+#~ msgid "Company"
+#~ msgstr "Compañía"
+
+#~ msgid "The email address "
+#~ msgstr "Correo electrónico "
+
+#, php-format
+#~ msgid "The email address %d has been unsubscribed."
+#~ msgstr "La dirección de correo %d ha sido eliminada."
+
+#~ msgid "Manage additional contacts by adding, removing or editing them here."
+#~ msgstr ""
+#~ "Administrar contactos adicionales aquí, añadiéndolos, borrándolos y "
+#~ "editándolos."
+
+#~ msgid "Additional contacts"
+#~ msgstr "Contactos adicionales"
+
+#~ msgid "Submit Post"
+#~ msgstr "Enviar"
+
+#~ msgid "Register as a Member"
+#~ msgstr "Registrarse como afiliado"
+
+#~ msgid "Sign up for an Enterprise membership instead."
+#~ msgstr "Inscríbase como Afiliado Empresarial en vez."
+
+#~ msgid ""
+#~ "Use this form if you wish to sign up for an Enterprise membership. We "
+#~ "will be in contact with you to arrange payment and other final details."
+#~ msgstr ""
+#~ "Utilice este formulario si desea inscribirse como Afiliado Empresarial. "
+#~ "Estaremos en contacto para finalizar la afiliación."
+
+#~ msgid "Sign up for a Personal membership instead."
+#~ msgstr "Inscríbase como Afiliado Personal en vez."
+
+#~ msgid "Sector/industry"
+#~ msgstr "Sector/industria"
+
+#~ msgid ""
+#~ "Please <a href=\"%s\">log out</a> in order to register a new account."
+#~ msgstr ""
+#~ "Por favor, <a href=“%s”>cierre sesión</a> para realizar una nueva "
+#~ "afiliación."
+
+#~ msgid "<strong>ERROR</strong>: Enter a username or email address."
+#~ msgstr ""
+#~ "<strong> ERROR </ strong>: ingrese un nombre de usuario o dirección de "
+#~ "correo electrónico."
+
+#~ msgid "<strong>ERROR</strong>: Please choose a valid country."
+#~ msgstr "<strong>ERROR</strong>: por favor elija un país válido."
+
+#~ msgid ""
+#~ "<p class=\"callout alert login-msg\"><strong>ERROR:</strong> Username and/"
+#~ "or Password is empty.</p>"
+#~ msgstr ""
+#~ "<p class=“callout alert login-msn”><strong>ERROR:</strong> nombre de "
+#~ "usuario o contraseña vacíos.</p>"
+
+#~ msgid ""
+#~ "<p class=\"callout warning login-msg\"><strong>ERROR:</strong> You are "
+#~ "logged out.</p>"
+#~ msgstr ""
+#~ "<p class=“callout warning login-msn”><strong>ERROR:</strong> su sesión ha "
+#~ "terminado.</p>"
