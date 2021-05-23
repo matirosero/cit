@@ -43,5 +43,8 @@
     "watch": "gulp watch",
     "browsersync": "gulp browsersync",
     "update-foundation": "npm install foundation-sites"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1"
   }
 }

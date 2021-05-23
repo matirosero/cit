@@ -1,0 +1,45 @@
+.tribe-events .tribe-events-c-ical__link {
+  border: 1px solid color("blue", "base");
+  color: color("blue", "base");
+}
+
+.tribe-events .tribe-events-c-ical__link:active,
+.tribe-events .tribe-events-c-ical__link:focus,
+.tribe-events .tribe-events-c-ical__link:hover {
+  background-color: color("blue", "base");
+}
+
+.tribe-common {
+  .tribe-common-c-svgicon {
+    color: color("blue", "base");
+  }
+  .tribe-common-c-btn,
+  .tribe-common a.tribe-common-c-btn {
+    // font-family: inherit;
+    background-color: color("blue", "base");
+    &:focus,
+    &:hover {
+      // border: 3px solid red;
+      background-color: color("aqua", "base");
+    }
+  }
+}
+
+.tribe-events .tribe-events-c-events-bar__search-button::before {
+  background-color: color("blue", "base");
+}
+
+.tribe-events .datepicker .day.active,
+.tribe-events .datepicker .day.active.focused,
+.tribe-events .datepicker .day.active:focus,
+.tribe-events .datepicker .day.active:hover,
+.tribe-events .datepicker .month.active,
+.tribe-events .datepicker .month.active.focused,
+.tribe-events .datepicker .month.active:focus,
+.tribe-events .datepicker .month.active:hover,
+.tribe-events .datepicker .year.active,
+.tribe-events .datepicker .year.active.focused,
+.tribe-events .datepicker .year.active:focus,
+.tribe-events .datepicker .year.active:hover {
+  background-color: color("blue", "base");
+}

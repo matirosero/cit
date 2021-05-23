@@ -16,6 +16,87 @@
 
 			<main id="main" class="large-8 xlarge-9 cell" role="main" data-equalizer-watch="main-side" >
 
+				<?php
+				$event_heading = "Evento más reciente";
+
+				// Grab the 5 next "party" events (by tag)
+				$events = tribe_get_events( [
+					'eventDisplay' => 'upcoming',
+					'start_date' => 'now',
+					'posts_per_page' => 1,
+				] );
+
+				if ( !$events ) {
+					$event_heading = "Próximo evento";
+					$events = tribe_get_events( [
+						'eventDisplay' => 'past',
+						'start_date' => '',
+						'posts_per_page' => 1,
+						// 'events' => 'past'
+					] );
+				} 
+
+
+			
+				
+
+				foreach ( $events as $post ) {
+					setup_postdata( $post );
+				  
+					// This time, let's throw in an event-specific
+					// template tag to show the date after the title!
+					?>
+					<div class="home-event">
+						<div class="home-event__event-date-tag">
+							<time class="home-event__event-date-tag-datetime" datetime="2020-09-24">
+								<span class="home-event__event-date-tag-weekday">
+									<?php echo tribe_get_start_date($post, false, 'M'); ?>
+								</span>
+								<span class="home-event__event-date-tag-daynum">
+									<?php echo tribe_get_start_date($post, false, 'j'); ?>
+								</span>
+								
+							</time>
+						</div>
+
+						<div class="home-event__event-wrapper">
+
+							<header class="home-event__event-header">
+
+								<h3 class="home-event__event-meta"><?php echo $event_heading; ?></h3>
+
+								<time class="home-event__event-datetime">
+									<?php
+									echo ' ' . tribe_get_start_date($post, false, 'F j, Y @ g:i a') . ' '; 
+									?>
+								</time>
+								<?php
+								echo '<h4 class="home-event__event-title"><a href="'.get_permalink($post->ID).'">' . $post->post_title . '</a></h4>';
+								?>
+
+							</header>
+
+							<?php
+							if (get_field('cit_speaker',$post->ID )) {
+
+								echo '<p class="home-event__event-meta">Ponente</p>';
+								the_field('cit_speaker',$post->ID );
+							}
+
+							// if (get_field('cit_target_audience',$post->ID )) {
+							// 	the_field('cit_target_audience',$post->ID );
+							// }
+							
+							?>
+
+						</div>
+					</div>	
+
+				<?php }
+
+				wp_reset_postdata();
+				?>
+
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<!-- To see additional archive styles, visit the /parts directory -->
