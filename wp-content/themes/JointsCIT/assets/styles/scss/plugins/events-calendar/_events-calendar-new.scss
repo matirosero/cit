@@ -26,6 +26,7 @@
 
   .tribe-common-b2 {
     font-family: $serif-family;
+    color: $body-font-color;
   }
 
   .tribe-common-h2,
@@ -39,6 +40,18 @@
   a.tribe-common-c-btn {
     font-family: $sans-family;
   }
+
+  .tribe-common-h2,
+  .tribe-common-h3,
+  .tribe-common-h4,
+  .tribe-common-h5,
+  .tribe-common-h6 {
+    color: $body-font-color;
+  }
+
+  .tribe-common-h6 {
+    font-size: $global-font-size;
+  }
 }
 
 .tribe-common--breakpoint-medium.tribe-common
@@ -50,7 +63,8 @@
 .tribe-events .datepicker .datepicker-switch,
 .tribe-events .datepicker .day,
 .tribe-events .datepicker .dow,
-.tribe-common .tribe-common-b2 .tribe-event-date-start {
+.tribe-common .tribe-common-b2 .tribe-event-date-start,
+.tribe-events-c-messages__message-list {
   font-family: $sans-family;
 }
 
@@ -72,3 +86,62 @@
 .tribe-events .datepicker .year.active:hover {
   background-color: color("blue", "base");
 }
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-b2 {
+  font-size: $global-font-size;
+}
+
+.tribe-common--breakpoint-medium.tribe-events
+  .tribe-events-calendar-latest-past__event-details {
+  width: 100%;
+}
+
+// .tribe-events-calendar-list__event-datetime-wrapper
+//   .tribe-common-b2
+.tribe-events-calendar-latest-past__event-datetime,
+.tribe-common--breakpoint-medium.tribe-common
+  .tribe-common-b2
+  .tribe-events-calendar-list__event-datetime {
+  font-size: $small-font-size;
+  font-family: $sans-family;
+}
+
+// .tribe-events-c-top-bar__datepicker-mobile
+.tribe-events-c-top-bar__datepicker-time {
+  text-transform: lowercase;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.tribe-events-calendar-latest-past__heading {
+  font-family: $header-font-family !important;
+}
+
+.tribe-common a,
+.tribe-common a:visited {
+  color: $body-font-color;
+}
+.tribe-common a:active,
+.tribe-common a:focus,
+.tribe-common a:hover {
+  color: $anchor-color;
+}
+
+// .tribe-common .tribe-common-anchor-thin:active,
+// .tribe-common .tribe-common-anchor-thin:focus,
+// .tribe-common .tribe-common-anchor-thin:hover {
+//   border-bottom: 1px solid #141827;
+// }
+
+.tribe-events-notices {
+  padding: 0.25rem 0.75rem;
+}
+
+.article-header .tribe-events-schedule {
+  justify-content: center;
+}
+
+// .tribe-events-schedule h2 {
+//   flex-grow: 1;
+// }
