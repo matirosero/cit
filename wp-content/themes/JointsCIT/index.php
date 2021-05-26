@@ -17,7 +17,7 @@
 			<main id="main" class="large-8 xlarge-9 cell" role="main" data-equalizer-watch="main-side" >
 
 				<?php
-				$event_heading = "Evento más reciente";
+				
 
 				// Grab the 5 next "party" events (by tag)
 				$events = tribe_get_events( [
@@ -27,14 +27,17 @@
 				] );
 
 				if ( !$events ) {
-					$event_heading = "Próximo evento";
+					
+					$event_heading = "Evento más reciente";
 					$events = tribe_get_events( [
 						'eventDisplay' => 'past',
 						'start_date' => '',
 						'posts_per_page' => 1,
 						// 'events' => 'past'
 					] );
-				} 
+				} else {
+					$event_heading = "Próximo evento";
+				}
 
 
 			
@@ -81,6 +84,10 @@
 
 								echo '<p class="home-event__event-meta">Ponente</p>';
 								the_field('cit_speaker',$post->ID );
+							}
+
+							if (has_excerpt( $post->ID )) {
+								the_excerpt();
 							}
 
 							// if (get_field('cit_target_audience',$post->ID )) {
