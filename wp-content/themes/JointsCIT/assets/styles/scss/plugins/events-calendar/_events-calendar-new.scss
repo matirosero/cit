@@ -1,20 +1,19 @@
-.tribe-events .tribe-events-c-ical__link {
-  border: 1px solid color("blue", "base");
-  color: color("blue", "base");
-}
-
-.tribe-events .tribe-events-c-ical__link:active,
-.tribe-events .tribe-events-c-ical__link:focus,
-.tribe-events .tribe-events-c-ical__link:hover {
-  background-color: color("blue", "base");
-}
-
 .tribe-common {
+  a,
+  a:visited {
+    color: $body-font-color;
+  }
+  a:active,
+  a:focus,
+  a:hover {
+    color: $anchor-color;
+  }
+
   .tribe-common-c-svgicon {
     color: color("blue", "base");
   }
   .tribe-common-c-btn,
-  .tribe-common a.tribe-common-c-btn {
+  a.tribe-common-c-btn {
     // font-family: inherit;
     background-color: color("blue", "base");
     &:focus,
@@ -29,11 +28,6 @@
     color: $body-font-color;
   }
 
-  .tribe-common-h2,
-  .tribe-common-h3,
-  .tribe-common-h4,
-  .tribe-common-h5,
-  .tribe-common-h6,
   .tribe-common-c-btn-border-small,
   a.tribe-common-c-btn-border-small,
   .tribe-common-c-btn,
@@ -46,6 +40,7 @@
   .tribe-common-h4,
   .tribe-common-h5,
   .tribe-common-h6 {
+    font-family: $sans-family;
     color: $body-font-color;
   }
 
@@ -55,36 +50,59 @@
 }
 
 .tribe-common--breakpoint-medium.tribe-common
-  .tribe-common-form-control-text__input,
-.tribe-common .tribe-common-form-control-text__input,
-.tribe-events .tribe-events-c-view-selector__list-item-text,
-.tribe-events .tribe-events-calendar-latest-past__event-date-tag-month,
-.tribe-events .tribe-events-calendar-latest-past__event-date-tag-year,
-.tribe-events .datepicker .datepicker-switch,
-.tribe-events .datepicker .day,
-.tribe-events .datepicker .dow,
-.tribe-common .tribe-common-b2 .tribe-event-date-start,
-.tribe-events-c-messages__message-list {
+  .tribe-common-form-control-text__input {
   font-family: $sans-family;
 }
-
-.tribe-events .tribe-events-c-events-bar__search-button::before {
-  background-color: color("blue", "base");
+.tribe-common {
+  .tribe-common-form-control-text__input,
+  .tribe-common-b2 .tribe-event-date-start {
+    font-family: $sans-family;
+  }
 }
 
-.tribe-events .datepicker .day.active,
-.tribe-events .datepicker .day.active.focused,
-.tribe-events .datepicker .day.active:focus,
-.tribe-events .datepicker .day.active:hover,
-.tribe-events .datepicker .month.active,
-.tribe-events .datepicker .month.active.focused,
-.tribe-events .datepicker .month.active:focus,
-.tribe-events .datepicker .month.active:hover,
-.tribe-events .datepicker .year.active,
-.tribe-events .datepicker .year.active.focused,
-.tribe-events .datepicker .year.active:focus,
-.tribe-events .datepicker .year.active:hover {
-  background-color: color("blue", "base");
+.tribe-events {
+  .tribe-events-c-ical__link {
+    border: 1px solid color("blue", "base");
+    color: color("blue", "base");
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: color("blue", "base");
+    }
+  }
+
+  .tribe-events-c-view-selector__list-item-text,
+  .tribe-events-calendar-latest-past__event-date-tag-month,
+  .tribe-events-calendar-latest-past__event-date-tag-year,
+  .datepicker .datepicker-switch,
+  .datepicker .day,
+  .datepicker .dow {
+    font-family: $sans-family;
+  }
+  .tribe-events-c-events-bar__search-button::before {
+    background-color: color("blue", "base");
+  }
+
+  .datepicker {
+    .day.active,
+    .day.active.focused,
+    .day.active:focus,
+    .day.active:hover,
+    .month.active,
+    .month.active.focused,
+    .month.active:focus,
+    .month.active:hover,
+    .year.active,
+    .year.active.focused,
+    .year.active:focus,
+    .year.active:hover {
+      background-color: color("blue", "base");
+    }
+  }
+}
+
+.tribe-events-c-messages__message-list {
+  font-family: $sans-family;
 }
 
 .tribe-common--breakpoint-medium.tribe-common .tribe-common-b2 {
@@ -109,6 +127,15 @@
 .tribe-events-content {
   font-family: $serif-family;
   color: $body-font-color;
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $header-family;
+    color: $body-font-color;
+  }
 }
 
 // .tribe-events-c-top-bar__datepicker-mobile
@@ -122,22 +149,6 @@
 .tribe-events-calendar-latest-past__heading {
   font-family: $header-font-family !important;
 }
-
-.tribe-common a,
-.tribe-common a:visited {
-  color: $body-font-color;
-}
-.tribe-common a:active,
-.tribe-common a:focus,
-.tribe-common a:hover {
-  color: $anchor-color;
-}
-
-// .tribe-common .tribe-common-anchor-thin:active,
-// .tribe-common .tribe-common-anchor-thin:focus,
-// .tribe-common .tribe-common-anchor-thin:hover {
-//   border-bottom: 1px solid #141827;
-// }
 
 .tribe-events-notices {
   padding: 0.25rem 0.75rem;
