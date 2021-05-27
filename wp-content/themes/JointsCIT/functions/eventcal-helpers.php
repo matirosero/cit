@@ -116,12 +116,9 @@ function mro_cit_rsvp_form() {
 		}
 
 
-	    if ( current_user_can( 'rsvp_event' ) || current_user_can( 'buy_event_tickets' ) || $match_mailchimp_url ) :
-	    	echo '<h3>Confirme su asistencia</h3>';
-	    endif;
-
-
 		if ( isset( $_GET['email']) ) {
+
+			echo '<h3>Confirme su asistencia</h3>';
 
 			if ( get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 )) {
 				$form_shortcode = get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 );
@@ -135,13 +132,23 @@ function mro_cit_rsvp_form() {
 				// .do_shortcode( '[login_form] ' );
 							
 
-		// Logged in
-		} elseif ( current_user_can( 'buy_event_tickets' ) ||current_user_can( 'rsvp_event' ) || $match_mailchimp_url ) {
+		// personal form exists
+		} elseif (get_post_meta( get_the_ID(), 'mro_cit_event_personal_acct_form_shortcode', 1 )) {
 
-			$form_shortcode_personal = get_post_meta( get_the_ID(), 'mro_cit_event_personal_acct_form_shortcode', 1 );
+			echo '<h3>Confirme su asistencia</h3>';
+			
+			// Logged in
+			if ( current_user_can( 'buy_event_tickets' ) || current_user_can( 'rsvp_event' ) || $match_mailchimp_url ) {
 
-			echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
-			echo do_shortcode( $form_shortcode_personal );
+				$form_shortcode_personal = get_post_meta( get_the_ID(), 'mro_cit_event_personal_acct_form_shortcode', 1 );
+	
+				echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
+				echo do_shortcode( $form_shortcode_personal );
+			
+			//Normal event
+			} else {
+				echo '<p class="callout warning small">Debe ingresar al sitio para inscribirse en el evento.</p>';
+			}
 		
 		// Logged out, no invite
 		} else {
@@ -157,10 +164,8 @@ function mro_cit_rsvp_form() {
 				echo do_shortcode( get_field('cit_event_open_form_shortcode') );
 
 
-			//Normal event
-			} else {
-				echo '<p class="callout warning small">Debe ingresar al sitio para inscribirse en el evento.</p>';
-			}
+			
+			} 
 			
 		}
 
