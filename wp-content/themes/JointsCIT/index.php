@@ -23,7 +23,7 @@
 				$events = tribe_get_events( [
 					'eventDisplay' => 'upcoming',
 					'start_date' => 'now',
-					'posts_per_page' => 1,
+					'posts_per_page' => 5,
 				] );
 
 				if ( !$events ) {
