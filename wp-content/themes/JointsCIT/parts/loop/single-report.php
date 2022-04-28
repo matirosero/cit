@@ -19,8 +19,7 @@
     		<div class="callout float-left download-box">
 
     			<?php
-                // Check current user capabilities
-                if ( current_user_can( 'download_report' ) ) :
+
 
                     // If download ID is used
                     if ( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) && is_numeric( get_post_meta( $post->ID, 'mro_cit_report_download_id', true ) ) ) :
@@ -33,13 +32,9 @@
 
                     <p>Haga click para descargar y leer el informe.</p>
 
-                <?php
+                
 
-                // Login form if user is logged out
-                else: ?>
-                    <p  class="callout primary">Debe ser Afiliado e ingresar a su cuenta para descargar el informe.</p>
-                    <?php echo do_shortcode( '[members_login_form] ' ); ?>
-                <?php endif; ?>
+                
 
     		</div>
 
