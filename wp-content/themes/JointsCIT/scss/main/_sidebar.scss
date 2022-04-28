@@ -1,0 +1,69 @@
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidebar {
+	// @include navigation-type-style;
+	
+	padding-top: 1rem;
+	@include breakpoint(medium) {
+		// padding-top: 3rem;
+		// height: 100vh;
+		// position: fixed;
+	}
+	@include breakpoint(large) {
+		// background: color('grey', 'light');
+	}
+}
+
+#searchsubmit {
+}
+
+.widgettitle {
+	@include navigation-type-style($size:14px);
+	position: relative;
+	margin-bottom: 1.25rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	@include divider;
+}
+
+.widget {
+	margin-bottom: 2rem;
+	font-size: $small-font-size;
+	ul {
+		margin: 0;
+
+		li {
+			list-style: none;
+
+			&:first-child {}
+
+			&:last-child {}
+
+			a {}
+
+			// deep nesting
+			ul {}
+
+		}
+	}
+
+	h4,
+	.tribe-events-title,
+	.tribe-mini-calendar-event .list-info h2 {
+		@include sidebar-list-item-heading;
+	}
+	.date,
+	.tribe-events-duration {
+		@include sidebar-small-text;
+	}
+
+	&.latest_cpt_widget {
+		li {
+			@include sidebar-list-item;
+		}
+	}
+
+
+}
+

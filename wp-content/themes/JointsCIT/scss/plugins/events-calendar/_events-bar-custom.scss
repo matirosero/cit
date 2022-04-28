@@ -1,0 +1,15 @@
+.tribe-bar-year-field-filter {
+	padding: 15px;
+	float: left;
+	width: 25%;
+	margin-bottom: 0;
+	.tribe-bar-collapse & {
+		width: 100%;
+		float: none;
+		clear: both;
+		padding: 15px;
+	}
+	.tribe-bar-mini & {
+		padding: 10px;
+	}
+}

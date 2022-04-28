@@ -1,0 +1,53 @@
+/*********************
+LINK STYLES
+*********************/
+a,
+a:visited {
+  // Mobile tap color
+  &:link {
+    //Highlight links on iOS, Similar to :hover for mobile devices.
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .entry-title &,
+  .top-bar &,
+  .tribe-events-list-event-title &,
+  .home-event__event-title & {
+    color: $black;
+    @include hover {
+      color: color("blue", "base");
+      .tribe-event-featured & {
+        color: hsla(0, 0%, 100%, 0.9);
+      }
+    }
+  }
+  #sidebar-menu & {
+    color: $black;
+    @include hover {
+      color: $black;
+    }
+  }
+  .off-canvas & {
+    color: color("white", "base");
+  }
+  #site-footer & {
+    color: $white;
+    @include hover {
+      color: $anchor-color-hover;
+    }
+  }
+
+  &.delete {
+    color: color("red", "base");
+    @include hover {
+      color: color("red", "light");
+    }
+  }
+
+  .callout.alert & {
+    color: map-get($foundation-palette, "alert");
+    @include hover {
+      color: darken(map-get($foundation-palette, "alert"), 30%);
+    }
+  }
+}
