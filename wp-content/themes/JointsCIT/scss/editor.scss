@@ -32,7 +32,7 @@ http://codex.wordpress.org/Creating_Admin_Themes
 
 
 @import "settings";
-@import "../../../node_modules/foundation-sites/scss/foundation";
+@import "../node_modules/foundation-sites/scss/foundation";
 @include foundation-typography;
 
 @import "editor/editor";

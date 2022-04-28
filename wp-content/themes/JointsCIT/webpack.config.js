@@ -14,6 +14,8 @@ const entryPoints = {
   // 'customizer': jsPath + '/customizer.js',
   // 'navigation': jsPath + '/navigation.js',
   'style': cssPath + '/style.scss',
+  'editor-style': cssPath + '/editor.scss',
+  'login-style': cssPath + '/login.scss',
 };
 
 module.exports = {
