@@ -8,166 +8,61 @@
  */
 function mro_cit_rsvp_form() {
 
-    if ( !tribe_is_past_event() && get_post_meta( get_the_ID(), 'mro_cit_event_include_rsvp', true ) == 'on' ) :
+    if ( !tribe_is_past_event() && ( get_post_meta( get_the_ID(), 'cit_event_include_rsvp', 1 ) || get_post_meta( get_the_ID(), 'mro_cit_event_include_rsvp', true ) == 'on' ) ) :
 
 
-    	$match_mailchimp_url = false;
+		echo '<h3>Confirme su asistencia</h3>';
 
-
-		if ( isset( $_GET['user'] ) && isset( $_GET['email'] ) && isset( $_GET['guestname'] ) ) {
-
-			// echo '0. yes, all 3 values exist:<br />';
-
-
-			// Sanitize values
-			$email = sanitize_email( $_GET['email'] );
-			$username = sanitize_user( $_GET['user'] );
-			$name = sanitize_text_field( $_GET['guestname'] );
-
-			// echo '0.1 email: '.$email.'<br />
-			// 	0.2 username: '.$username.'<br />
-			// 	0.3 name: "'.$name.'"<br /><br />';
-
-
-			if ( username_exists( $username ) && is_email( $email ) ) {
-
-				// echo '1. yes, sanitized email is email and sanitized username exists<br />';
-
-
-				// Get user ID
-				$user_id = username_exists( $username );
-				// echo '2. user id: '.$user_id.'</br>';
-
-				//Get user
-				$user = get_userdata( $user_id );
-
-
-				$compare_name = trim( esc_html( $user->user_firstname ).' '.esc_html( $user->user_lastname ) );
-				$compare_email = esc_html( $user->user_email );
-
-				// echo '2.1 compare name to: "'.$compare_name.'"<br />';
-				// echo '2.2 compare email to: '.$compare_email.'<br /><br />';
-
-
-				// Compare to main contact
-				if ( $email == $compare_email && $name == $compare_name ) {
-
-					// echo '3. YES IT MATCHES, WE ARE DONE<br />';
-
-					// Change match to true
-					$match_mailchimp_url = true;
-
-				} elseif ( get_user_meta( $user_id, 'mro_cit_user_additional_contacts' ) ) {
-
-					// Additional contacts exist
-					// echo '3. No match but there are additional contacts, go on to additional contacts<br /><br />';
-
-
-					// Get additional contacts
-					$additional_contacts = get_user_meta( $user_id, 'mro_cit_user_additional_contacts', true );
-
-					// echo '4. Additional contacts: <pre>';
-					// var_dump($additional_contacts);
-					// echo '</pre><br />';
-
-					// echo '4.1. Compare '.$email.' to...<br />';
-
-
-					// Check that email is in array, return key
-					if ( in_array( $email, array_column( $additional_contacts, 'email' ) ) ) {
-
-						// echo '5. email is in array of contacts:<br />';
-
-						// Get key for contact that matches email
-						$key = array_search( $email, array_column( $additional_contacts, 'email' ) );
-
-						// echo '5.1 key is '.$key.'<br />';
-
-						// echo '5.2. Additional contacts: <pre>';
-						// var_dump($additional_contacts[$key]);
-						// echo '</pre><br />';
-
-
-						// Get values to compare to
-						$compare_name = trim( esc_html( $additional_contacts[$key]['name'] ).' '.esc_html( $additional_contacts[$key]['lastname'] ) );
-
-						// echo '5.3. Compare "'.$name.'" to: "'.$compare_name.'"<br /><br />';
-
-
-						if ( $name == $compare_name ) {
-
-							// echo '6. YES IT MATCHES, WE ARE DONE<br />';
-
-							// Change match to true
-							$match_mailchimp_url = true;
-						}
-					} else {
-						// echo 'NOT IN ARAY';
-					}
-				} else {
-					// echo '3. no additional contacts';
-				}
-			} elseif ( $username == md5( 'cortesia' ) ) {
-
-				// echo '1. Courtesy/temporary invitation!';
-				// Change match to true
-				$match_mailchimp_url = true;
-			}
-		}
-
-
+		// If link contains invitee info
 		if ( isset( $_GET['email']) ) {
 
-			echo '<h3>Confirme su asistencia</h3>';
+			// If in person event
+			if ( get_post_meta(get_the_ID(), 'cit_event_in-person', 1 ) ) {
 
-			if ( get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 )) {
-				$form_shortcode = get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 );
+			
+			// Not in person
 			} else {
-				$form_shortcode = '[caldera_form id="CF5e72a522c8465"]';
+
+				if ( get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 )) {
+					$form_shortcode = get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 );
+				} else {
+					$form_shortcode = '[caldera_form id="CF5e72a522c8465"]';
+				}
+				
+				echo '<p class="callout primary small">Llene este formulario para reservar el espacio o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
+				echo do_shortcode( $form_shortcode );
+
 			}
-			
-			echo '<p class="callout primary small">Llene este formulario para reservar el espacio o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
-			echo do_shortcode( $form_shortcode );
-			// echo '<p class="callout primary small">Si es afiliado, ingrese a su cuenta para confirmar su asistencia.</p>'
-				// .do_shortcode( '[login_form] ' );
-							
 
-		// personal form exists
-		} elseif (get_post_meta( get_the_ID(), 'mro_cit_event_personal_acct_form_shortcode', 1 )) {
+		// Logged in
+		} elseif ( current_user_can( 'buy_event_tickets' ) || current_user_can( 'rsvp_event' ) ) {
 
-			echo '<h3>Confirme su asistencia</h3>';
-			
-			// Logged in
-			if ( current_user_can( 'buy_event_tickets' ) || current_user_can( 'rsvp_event' ) || $match_mailchimp_url ) {
-
-				$form_shortcode_personal = get_post_meta( get_the_ID(), 'mro_cit_event_personal_acct_form_shortcode', 1 );
+			$form_shortcode_personal = get_post_meta( get_the_ID(), 'mro_cit_event_personal_acct_form_shortcode', 1 );
 	
-				echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
-				echo do_shortcode( $form_shortcode_personal );
-			
-			//Normal event
-			} else {
-				echo '<p class="callout warning small">Debe ingresar al sitio para inscribirse en el evento.</p>';
-			}
-		
-		// Logged out, no invite
+			echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
+
+			echo do_shortcode( $form_shortcode_personal );
+
+		// Logged out but public event
+		} elseif ( get_field('cit_public_event') ) {
+
+			echo '<h3>Confirme su asistencia</h3>';
+
+			echo '<p class="callout warning small">Puede registrarse para recibir el enlace, pero para ver el evento deberá registrarse en el sitio.</p>';
+	
+			// echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
+			echo do_shortcode( get_field('cit_event_open_form_shortcode') );
+
+		//Logged out, no info
 		} else {
 
-			// Public event
-			if (get_field('cit_public_event')) {
+			echo '<p class="callout warning small">Debe ingresar al sitio para inscribirse en el evento.</p>';
 
-				echo '<h3>Confirme su asistencia</h3>';
-
-				echo '<p class="callout warning small">Puede registrarse para recibir el enlace, pero para ver el evento deberá registrarse en el sitio.</p>';
-		
-				// echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
-				echo do_shortcode( get_field('cit_event_open_form_shortcode') );
-
-
-			
-			} 
-			
 		}
+
+
+
+
 
 
 
