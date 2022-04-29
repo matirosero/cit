@@ -9815,6 +9815,10 @@ input[type="submit"] {
   margin-right: 0;
   margin-left: 0; }
 
+.tribe-events-cal-links a {
+  background-image: none;
+  background-size: auto; }
+
 /*********************
 FORM STYLES
 *********************/
@@ -11405,12 +11409,27 @@ FOUNDATION STYLES
   border: none; }
 
 .tabs-title > a {
+  background-color: #F5F5F5;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase; }
   .tabs-title > a:active, .tabs-title > a:focus, .tabs-title > a:hover {
+    background-color: #3a78b0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ac8ca), to(#3a78b0));
+    background-image: -webkit-linear-gradient(top, #6ac8ca, #3a78b0);
+    background-image: -moz-linear-gradient(top, #6ac8ca, #3a78b0);
+    background-image: -o-linear-gradient(top, #6ac8ca, #3a78b0);
+    background-image: linear-gradient(to bottom, #6ac8ca, #3a78b0);
     color: #fefefe; }
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+  background-color: #2555a5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#53a3be), to(#2555a5));
+  background-image: -webkit-linear-gradient(top, #53a3be, #2555a5);
+  background-image: -moz-linear-gradient(top, #53a3be, #2555a5);
+  background-image: -o-linear-gradient(top, #53a3be, #2555a5);
+  background-image: linear-gradient(to bottom, #53a3be, #2555a5); }
 
 .tabs-content {
   border-top: 1px solid #e6e6e6; }

@@ -3,12 +3,21 @@
 }
 .tabs-title > a {
     // @extend .button;
+    background-color: color('grey','light');
     @include navigation-type-style;
+
     @include hover {
+        @include css-gradient(color("blue-gradient", "hover-light"), color("blue-gradient", "hover-dark"));
         color: $white;
     }
+}
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected="true"] {
+    @include css-gradient(color("blue-gradient", "light"), color("blue-gradient", "dark"));
 }
 
 .tabs-content {
     border-top: 1px solid $light-gray;
 }
+
+
