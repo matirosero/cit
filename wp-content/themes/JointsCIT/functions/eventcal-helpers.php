@@ -45,11 +45,6 @@ function mro_cit_rsvp_form() {
 				</div>
 
 				<?php
-
-
-				
-
-				
 			
 			// Remote
 			} else {

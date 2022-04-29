@@ -1,0 +1,14 @@
+.tabs {
+    border: none;
+}
+.tabs-title > a {
+    // @extend .button;
+    @include navigation-type-style;
+    @include hover {
+        color: $white;
+    }
+}
+
+.tabs-content {
+    border-top: 1px solid $light-gray;
+}

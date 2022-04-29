@@ -8755,11 +8755,11 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     [data-whatinput='mouse'] .tabs-title > a {
       outline: 0; }
     .tabs-title > a:hover {
-      background: #fefefe;
+      background: #55b3c5;
       color: #2b5b94; }
     .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-      background: #e6e6e6;
-      color: #326aac; }
+      background: #326aac;
+      color: #fefefe; }
 
 .tabs-content {
   border: 1px solid #e6e6e6;
@@ -11400,6 +11400,20 @@ FOUNDATION STYLES
 .callout.alert, .alert#password-strength, #password-strength.bad, #password-strength.short, .sidebar .alert.login, .caldera-grid .alert {
   border-color: #fcd1cd;
   color: #751108; }
+
+.tabs {
+  border: none; }
+
+.tabs-title > a {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .tabs-title > a:active, .tabs-title > a:focus, .tabs-title > a:hover {
+    color: #fefefe; }
+
+.tabs-content {
+  border-top: 1px solid #e6e6e6; }
 
 /*********************
 PLUGIN STYLES
