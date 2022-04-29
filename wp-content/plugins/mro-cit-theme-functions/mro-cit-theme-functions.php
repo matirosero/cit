@@ -136,6 +136,14 @@ require_once( dirname( __FILE__ ) . '/includes/widget-latest-cpt.php' );
 
 
 /**
+ * ACF Options.
+ *
+ * @since 0.1.0
+ */
+require_once( dirname( __FILE__ ) . '/includes/acf-options.php' );
+
+
+/**
  * Redirect.
  *
  * @since 0.1.0

@@ -19,15 +19,44 @@ function mro_cit_rsvp_form() {
 			// If in person event
 			if ( get_post_meta(get_the_ID(), 'cit_event_in-person', 1 ) ) {
 
+				$form_shortcode_remote =  get_field('cit_shortcode_credentials_remote', 'option');
+				$form_shortcode_inperson =  get_field('cit_shortcode_credentials_in-person', 'option');
+
+				?>
+
+				<ul class="tabs" data-tabs id="example-tabs">
+					<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Inscripción presencial</a></li>
+					<li class="tabs-title"><a href="#panel2">Inscripción remota</a></li>
+				</ul>
+
+				<div class="tabs-content" data-tabs-content="example-tabs">
+					<div class="tabs-panel is-active" id="panel1">
+						<?php
+						echo '<p class="callout primary small">Llene este formulario para <strong>asistir al evento presencialmente</strong> o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
+						echo do_shortcode( $form_shortcode_inperson );
+						?>
+					</div>
+					<div class="tabs-panel" id="panel2">
+						<?php
+						echo '<p class="callout primary small">Llene este formulario para <strong>asistir al evento de manera remota</strong>, o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
+						echo do_shortcode( $form_shortcode_remote );
+						?>
+					</div>
+				</div>
+
+				<?php
+
+
+				
+
+				
 			
-			// Not in person
+			// Remote
 			} else {
 
-				if ( get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 )) {
-					$form_shortcode = get_post_meta( get_the_ID(), 'mro_cit_event_form_shortcode', 1 );
-				} else {
-					$form_shortcode = '[caldera_form id="CF5e72a522c8465"]';
-				}
+				if ( get_field('cit_shortcode_credentials_remote', 'option') ) {
+					$form_shortcode = get_field('cit_shortcode_credentials_remote', 'option');
+				} 
 				
 				echo '<p class="callout primary small">Llene este formulario para reservar el espacio o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
 				echo do_shortcode( $form_shortcode );
@@ -37,7 +66,7 @@ function mro_cit_rsvp_form() {
 		// Logged in
 		} elseif ( current_user_can( 'buy_event_tickets' ) || current_user_can( 'rsvp_event' ) ) {
 
-			$form_shortcode_personal = get_post_meta( get_the_ID(), 'mro_cit_event_personal_acct_form_shortcode', 1 );
+			$form_shortcode_personal = get_field('cit_shortcode_loggedin', 'option');
 	
 			echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
 
@@ -51,7 +80,7 @@ function mro_cit_rsvp_form() {
 			echo '<p class="callout warning small">Puede registrarse para recibir el enlace, pero para ver el evento deberá registrarse en el sitio.</p>';
 	
 			// echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
-			echo do_shortcode( get_field('cit_event_open_form_shortcode') );
+			echo do_shortcode( get_field('cit_shortcode_open', 'option') );
 
 		//Logged out, no info
 		} else {
