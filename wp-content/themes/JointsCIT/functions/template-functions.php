@@ -40,6 +40,16 @@ function cit_get_youtube_id($youtube_url) {
     return $youtube_id;
 }
 
+function cit_reset_users_button() {
+	global $current_user, $wp_roles;
+	if ( is_user_logged_in() && current_user_can( 'manage_options' ) ) { ?>
+		<button class="button round" type="button">
+			Reset users list
+		</button>
+
+	<?php }
+}
+
 function cit_view_log_users_on_page() {
 	global $current_user, $wp_roles;
 

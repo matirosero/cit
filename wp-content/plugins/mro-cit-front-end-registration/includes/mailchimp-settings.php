@@ -4,7 +4,9 @@
  * https://rudrastyh.com/category/mailchimp-api
  * https://pippinsplugins.com/create-a-simple-mail-chimp-sign-up-form/
  */
-
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 $mc_options = get_option('mro_cit_mailchimp_settings');
 

@@ -24,25 +24,17 @@ function mro_cit_rsvp_form() {
 
 				?>
 
-				<ul class="tabs" data-tabs id="example-tabs">
-					<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Inscripción presencial</a></li>
-					<li class="tabs-title"><a href="#panel2">Inscripción remota</a></li>
-				</ul>
 
-				<div class="tabs-content" data-tabs-content="example-tabs">
-					<div class="tabs-panel is-active" id="panel1">
 						<?php
-						echo '<p class="callout primary small">Llene este formulario para <strong>asistir al evento presencialmente</strong> o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
+						echo '<p class="callout primary small">Llene este formulario para <strong>asistir al evento</strong> o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
 						echo do_shortcode( $form_shortcode_inperson );
 						?>
-					</div>
-					<div class="tabs-panel" id="panel2">
+
 						<?php
-						echo '<p class="callout primary small">Llene este formulario para <strong>asistir al evento de manera remota</strong>, o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
-						echo do_shortcode( $form_shortcode_remote );
+						// echo '<p class="callout primary small">Llene este formulario para <strong>asistir al evento de manera remota</strong>, o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
+						// echo do_shortcode( $form_shortcode_remote );
 						?>
-					</div>
-				</div>
+
 
 				<?php
 			
