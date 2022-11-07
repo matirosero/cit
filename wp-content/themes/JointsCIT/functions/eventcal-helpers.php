@@ -25,16 +25,17 @@ function mro_cit_rsvp_form() {
 				?>
 
 
-						<?php
-						echo '<p class="callout primary small">Llene este formulario para <strong>asistir al evento</strong> o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
-						echo do_shortcode( $form_shortcode_inperson );
-						?>
+					<?php
+					echo '<p class="callout primary small">Llene este formulario para <strong>asistir al evento</strong> o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
 
-						<?php
-						// echo '<p class="callout primary small">Llene este formulario para <strong>asistir al evento de manera remota</strong>, o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
-						// echo do_shortcode( $form_shortcode_remote );
-						?>
+	
+					if (get_post_meta(get_the_ID(), 'cit_event_no_online',1) == 1) {
+						echo '<style>#fld_1470598_1-wrap .checkbox {display:none;}</style>';
+					}
 
+
+					echo do_shortcode( $form_shortcode_inperson );
+					?>
 
 				<?php
 			
@@ -53,11 +54,17 @@ function mro_cit_rsvp_form() {
 		// Logged in
 		} elseif ( current_user_can( 'buy_event_tickets' ) || current_user_can( 'rsvp_event' ) ) {
 
-			$form_shortcode_personal = get_field('cit_shortcode_loggedin', 'option');
-	
-			echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
 
-			echo do_shortcode( $form_shortcode_personal );
+			if (get_post_meta(get_the_ID(), 'cit_event_no_online',1) == 1) {
+				echo '<p>Lo sentimos, este evento es solo para afiliados empresariales.</p>';
+			} else {
+				$form_shortcode_personal = get_field('cit_shortcode_loggedin', 'option');
+	
+				echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
+	
+				echo do_shortcode( $form_shortcode_personal );
+			}
+
 
 		// Logged out but public event
 		} elseif ( get_field('cit_public_event') ) {
