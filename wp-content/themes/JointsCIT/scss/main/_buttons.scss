@@ -42,7 +42,7 @@ input[type="submit"] {
       @include icon-before;
       margin-left: 0.25rem;
       margin-right: 0;
-      @extend .icon-angle-double-right:before;
+      @extend .icon-angle-double-right,:before;
     }
   }
 }
@@ -58,7 +58,7 @@ input[type="submit"] {
   &:before {
     @include icon-before;
     margin-right: 0.25rem;
-    @extend .icon-download:before;
+    @extend .icon-download, :before;
   }
 }
 

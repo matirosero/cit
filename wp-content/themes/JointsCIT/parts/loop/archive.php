@@ -20,11 +20,17 @@
 
 			get_template_part( 'parts/content/byline' );
 
-		elseif ( is_singular('post') || is_post_type_archive('post') || get_post_type() == 'post' ) :
+		elseif ( ( is_singular('post') || is_post_type_archive('post') || get_post_type() == 'post' ) && !has_category('descarga') ) :
 
 			get_template_part( 'parts/content/byline' );
 
 		endif; ?>
+
+		<?php
+		if ( has_category('descarga')) {
+			echo "DESCARGA";
+		}
+		?>
 	</header> <!-- end article header -->
 
 	<section class="entry-content" itemprop="articleBody">

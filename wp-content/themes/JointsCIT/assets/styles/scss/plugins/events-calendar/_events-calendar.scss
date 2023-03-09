@@ -148,7 +148,7 @@
 
 
 .tribe-events-notices {
-	@extend .callout.primary;
+	@extend .callout, .primary;
 	margin: 10px 0 18px;
 }
 

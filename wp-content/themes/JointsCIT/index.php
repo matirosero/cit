@@ -39,10 +39,6 @@
 					$event_heading = "Próximo evento";
 				}
 
-
-			
-				
-
 				foreach ( $events as $post ) {
 					setup_postdata( $post );
 				  
@@ -107,7 +103,16 @@
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop/archive' ); ?>
+					<?php 
+					if ( has_category('descarga') ) {
+
+						get_template_part( 'parts/loop/download' );
+
+					} else {
+						get_template_part( 'parts/loop/archive' ); 
+					}
+					
+					?>
 
 				<?php endwhile; ?>
 
