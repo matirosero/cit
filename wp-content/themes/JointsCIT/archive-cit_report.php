@@ -16,6 +16,12 @@
 					<p>El esfuerzo conjunto de los miembros del Club a su alcance. Para esto nacimos.<br />Acceda a todos los informes de investigación generados por el intercambio de nuestra comunidad. </p>
 				</header>
 
+				<?php 
+
+				echo do_shortcode('[show-download-post id=3031]');
+
+				?>
+
 			    <?php if (have_posts()) : ?>
 
 			    	<div class="list-reports">
