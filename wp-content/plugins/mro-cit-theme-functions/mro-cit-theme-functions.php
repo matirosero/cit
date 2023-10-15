@@ -140,6 +140,8 @@ require_once( dirname( __FILE__ ) . '/includes/widget-latest-cpt.php' );
  *
  * @since 0.1.0
  */
+
+ // Options page for RSVP events
 require_once( dirname( __FILE__ ) . '/includes/acf-options.php' );
 
 

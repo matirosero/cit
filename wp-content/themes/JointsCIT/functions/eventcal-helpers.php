@@ -1,6 +1,25 @@
 <?php
 
 
+/**
+ * Changes Past Event Reverse Chronological Order
+ *
+ * @param array $template_vars An array of variables used to display the current view.
+ *
+ * @return array Same as above. 
+ */
+function ci_past_reverse_chronological_v2( $template_vars ) {
+ 
+	if ( ! empty( $template_vars['is_past'] ) ) {
+	  $template_vars['events'] = array_reverse( $template_vars['events'] );
+	}
+   
+	return $template_vars;
+  }
+  // Change List View to Past Event Reverse Chronological Order 
+  add_filter( 'tribe_events_views_v2_view_list_template_vars', 'ci_past_reverse_chronological_v2', 100 );
+  // Change Photo View to Past Event Reverse Chronological Order
+  add_filter( 'tribe_events_views_v2_view_photo_template_vars', 'ci_past_reverse_chronological_v2', 100 );
 
 /*
  * Add RSVP to events, depending on user capabilities,
@@ -9,7 +28,6 @@
 function mro_cit_rsvp_form() {
 
     if ( !tribe_is_past_event() && ( get_post_meta( get_the_ID(), 'cit_event_include_rsvp', 1 ) || get_post_meta( get_the_ID(), 'mro_cit_event_include_rsvp', true ) == 'on' ) ) :
-
 
 		echo '<h3>Confirme su asistencia</h3>';
 
@@ -52,8 +70,11 @@ function mro_cit_rsvp_form() {
 
 			}
 
-		// Logged in
-		} elseif ( current_user_can( 'buy_event_tickets' ) || current_user_can( 'rsvp_event' ) ) {
+		} elseif ( get_field('cit_event_empresariales_only') ) {
+			echo '<p class="callout primary small">Lo sentimos, este evento es solo para afiliados empresariales.</p>';
+
+			// Logged in
+		} elseif ( (current_user_can( 'buy_event_tickets' ) || current_user_can( 'rsvp_event') ) ) {
 
 
 			if (get_post_meta(get_the_ID(), 'cit_event_no_online',1) == 1) {
@@ -96,22 +117,6 @@ function mro_cit_rsvp_form() {
 // remain same
 add_action('tribe_events_single_event_after_the_content','mro_cit_rsvp_form');
 
-
-/*
- * Past events list in reverse chronological order
- */
-// Changes past event views to reverse chronological order
-// function mro_cit_past_reverse_chronological ($post_object) {
-
-// 	$past_ajax = (defined( 'DOING_AJAX' ) && DOING_AJAX && $_REQUEST['tribe_event_display'] === 'past' ) ? true : false;
-
-// 	if(tribe_is_past() || $past_ajax || !empty( $_REQUEST['tribe-bar-year-field'] ) ) {
-// 		$post_object = array_reverse($post_object);
-// 	}
-
-// 	return $post_object;
-// }
-// add_filter('the_posts', 'mro_cit_past_reverse_chronological', 100);
 
 
 /*
