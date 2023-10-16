@@ -419,7 +419,7 @@ Callout box
  * Licensed under MIT Open Source
  */
 @media print, screen and (min-width: 40em) {
-  .reveal.large, .reveal.small, .caldera-grid .reveal.alert, .caldera-grid .reveal#password-strength.bad, .caldera-grid .reveal#password-strength.short, .reveal.tiny, .reveal {
+  .reveal.large, .reveal.small, .reveal.tiny, .reveal {
     right: auto;
     left: auto;
     margin: 0 auto;
@@ -5882,13 +5882,7 @@ select[multiple] {
 }
 .button.small, #tribe-bar-form .tribe-bar-submit input.small[type=submit], #tribe-events .small.tribe-events-button,
 .small.tribe-events-button,
-.small.tribe-events-read-more, .small.button-secondary, .small.button-primary, .caldera-grid .button.alert, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert[type=submit], .caldera-grid #tribe-events .alert.tribe-events-button, #tribe-events .caldera-grid .alert.tribe-events-button,
-.caldera-grid .alert.tribe-events-button,
-.caldera-grid .alert.tribe-events-read-more, .caldera-grid .alert.button-secondary, .caldera-grid .alert.button-primary, .caldera-grid .button#password-strength.bad, .caldera-grid #tribe-bar-form .tribe-bar-submit input#password-strength.bad[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input#password-strength.bad[type=submit],
-.caldera-grid #password-strength.bad.tribe-events-button,
-.caldera-grid #password-strength.bad.tribe-events-read-more, .caldera-grid #password-strength.bad.button-secondary, .caldera-grid #password-strength.bad.button-primary, .caldera-grid .button#password-strength.short, .caldera-grid #tribe-bar-form .tribe-bar-submit input#password-strength.short[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input#password-strength.short[type=submit],
-.caldera-grid #password-strength.short.tribe-events-button,
-.caldera-grid #password-strength.short.tribe-events-read-more, .caldera-grid #password-strength.short.button-secondary, .caldera-grid #password-strength.short.button-primary, .small.ddownload-link, .caldera-grid .ddownload-link.alert, .caldera-grid .ddownload-link#password-strength.bad, .caldera-grid .ddownload-link#password-strength.short {
+.small.tribe-events-read-more, .small.button-secondary, .small.button-primary, .small.ddownload-link {
   font-size: 0.75rem;
 }
 .button.large, #tribe-bar-form .tribe-bar-submit input.large[type=submit], #tribe-events .large.tribe-events-button,
@@ -5985,45 +5979,27 @@ select[multiple] {
 }
 .button.success, #tribe-bar-form .tribe-bar-submit input.success[type=submit], #tribe-events .success.tribe-events-button,
 .success.tribe-events-button,
-.success.tribe-events-read-more, .success.button-secondary, .success.button-primary, .caldera-grid .button.alert.alert-success, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert.alert-success[type=submit], .caldera-grid #tribe-events .alert.alert-success.tribe-events-button, #tribe-events .caldera-grid .alert.alert-success.tribe-events-button,
-.caldera-grid .alert.alert-success.tribe-events-button,
-.caldera-grid .alert.alert-success.tribe-events-read-more, .caldera-grid .alert.alert-success.button-secondary, .caldera-grid .alert.alert-success.button-primary, .caldera-grid .button.alert-success#password-strength.bad, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert-success#password-strength.bad[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert-success#password-strength.bad[type=submit],
-.caldera-grid .alert-success#password-strength.bad.tribe-events-button,
-.caldera-grid .alert-success#password-strength.bad.tribe-events-read-more, .caldera-grid .alert-success#password-strength.bad.button-secondary, .caldera-grid .alert-success#password-strength.bad.button-primary, .caldera-grid .button.alert-success#password-strength.short, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert-success#password-strength.short[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert-success#password-strength.short[type=submit],
-.caldera-grid .alert-success#password-strength.short.tribe-events-button,
-.caldera-grid .alert-success#password-strength.short.tribe-events-read-more, .caldera-grid .alert-success#password-strength.short.button-secondary, .caldera-grid .alert-success#password-strength.short.button-primary, .button#password-strength.good, #tribe-bar-form .tribe-bar-submit input#password-strength.good[type=submit],
+.success.tribe-events-read-more, .success.button-secondary, .success.button-primary, .button#password-strength.good, #tribe-bar-form .tribe-bar-submit input#password-strength.good[type=submit],
 #password-strength.good.tribe-events-button,
 #password-strength.good.tribe-events-read-more, #password-strength.good.button-secondary, #password-strength.good.button-primary, .button#password-strength.strong, #tribe-bar-form .tribe-bar-submit input#password-strength.strong[type=submit],
 #password-strength.strong.tribe-events-button,
-#password-strength.strong.tribe-events-read-more, #password-strength.strong.button-secondary, #password-strength.strong.button-primary, .success.ddownload-link, .caldera-grid .ddownload-link.alert.alert-success, .caldera-grid .ddownload-link.alert-success#password-strength.bad, .caldera-grid .ddownload-link.alert-success#password-strength.short, .ddownload-link#password-strength.good, .ddownload-link#password-strength.strong {
+#password-strength.strong.tribe-events-read-more, #password-strength.strong.button-secondary, #password-strength.strong.button-primary, .success.ddownload-link, .ddownload-link#password-strength.good, .ddownload-link#password-strength.strong {
   background-color: #3adb76;
   color: #4A4A4A;
 }
 .button.success:hover, #tribe-bar-form .tribe-bar-submit input.success[type=submit]:hover, #tribe-events .success.tribe-events-button:hover,
 .success.tribe-events-button:hover,
-.success.tribe-events-read-more:hover, .success.button-secondary:hover, .success.button-primary:hover, .caldera-grid .button.alert.alert-success:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert.alert-success[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert.alert-success[type=submit]:hover, .caldera-grid #tribe-events .alert.alert-success.tribe-events-button:hover, #tribe-events .caldera-grid .alert.alert-success.tribe-events-button:hover,
-.caldera-grid .alert.alert-success.tribe-events-button:hover,
-.caldera-grid .alert.alert-success.tribe-events-read-more:hover, .caldera-grid .alert.alert-success.button-secondary:hover, .caldera-grid .alert.alert-success.button-primary:hover, .caldera-grid .button.alert-success#password-strength.bad:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert-success#password-strength.bad[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert-success#password-strength.bad[type=submit]:hover,
-.caldera-grid .alert-success#password-strength.bad.tribe-events-button:hover,
-.caldera-grid .alert-success#password-strength.bad.tribe-events-read-more:hover, .caldera-grid .alert-success#password-strength.bad.button-secondary:hover, .caldera-grid .alert-success#password-strength.bad.button-primary:hover, .caldera-grid .button.alert-success#password-strength.short:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert-success#password-strength.short[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert-success#password-strength.short[type=submit]:hover,
-.caldera-grid .alert-success#password-strength.short.tribe-events-button:hover,
-.caldera-grid .alert-success#password-strength.short.tribe-events-read-more:hover, .caldera-grid .alert-success#password-strength.short.button-secondary:hover, .caldera-grid .alert-success#password-strength.short.button-primary:hover, .button#password-strength.good:hover, #tribe-bar-form .tribe-bar-submit input#password-strength.good[type=submit]:hover,
+.success.tribe-events-read-more:hover, .success.button-secondary:hover, .success.button-primary:hover, .button#password-strength.good:hover, #tribe-bar-form .tribe-bar-submit input#password-strength.good[type=submit]:hover,
 #password-strength.good.tribe-events-button:hover,
 #password-strength.good.tribe-events-read-more:hover, #password-strength.good.button-secondary:hover, #password-strength.good.button-primary:hover, .button#password-strength.strong:hover, #tribe-bar-form .tribe-bar-submit input#password-strength.strong[type=submit]:hover,
 #password-strength.strong.tribe-events-button:hover,
-#password-strength.strong.tribe-events-read-more:hover, #password-strength.strong.button-secondary:hover, #password-strength.strong.button-primary:hover, .success.ddownload-link:hover, .caldera-grid .ddownload-link.alert.alert-success:hover, .caldera-grid .ddownload-link.alert-success#password-strength.bad:hover, .caldera-grid .ddownload-link.alert-success#password-strength.short:hover, .ddownload-link#password-strength.good:hover, .ddownload-link#password-strength.strong:hover, .button.success:focus, #tribe-bar-form .tribe-bar-submit input.success[type=submit]:focus, #tribe-events .success.tribe-events-button:focus,
+#password-strength.strong.tribe-events-read-more:hover, #password-strength.strong.button-secondary:hover, #password-strength.strong.button-primary:hover, .success.ddownload-link:hover, .ddownload-link#password-strength.good:hover, .ddownload-link#password-strength.strong:hover, .button.success:focus, #tribe-bar-form .tribe-bar-submit input.success[type=submit]:focus, #tribe-events .success.tribe-events-button:focus,
 .success.tribe-events-button:focus,
-.success.tribe-events-read-more:focus, .success.button-secondary:focus, .success.button-primary:focus, .caldera-grid .button.alert.alert-success:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert.alert-success[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert.alert-success[type=submit]:focus, .caldera-grid #tribe-events .alert.alert-success.tribe-events-button:focus, #tribe-events .caldera-grid .alert.alert-success.tribe-events-button:focus,
-.caldera-grid .alert.alert-success.tribe-events-button:focus,
-.caldera-grid .alert.alert-success.tribe-events-read-more:focus, .caldera-grid .alert.alert-success.button-secondary:focus, .caldera-grid .alert.alert-success.button-primary:focus, .caldera-grid .button.alert-success#password-strength.bad:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert-success#password-strength.bad[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert-success#password-strength.bad[type=submit]:focus,
-.caldera-grid .alert-success#password-strength.bad.tribe-events-button:focus,
-.caldera-grid .alert-success#password-strength.bad.tribe-events-read-more:focus, .caldera-grid .alert-success#password-strength.bad.button-secondary:focus, .caldera-grid .alert-success#password-strength.bad.button-primary:focus, .caldera-grid .button.alert-success#password-strength.short:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.alert-success#password-strength.short[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.alert-success#password-strength.short[type=submit]:focus,
-.caldera-grid .alert-success#password-strength.short.tribe-events-button:focus,
-.caldera-grid .alert-success#password-strength.short.tribe-events-read-more:focus, .caldera-grid .alert-success#password-strength.short.button-secondary:focus, .caldera-grid .alert-success#password-strength.short.button-primary:focus, .button#password-strength.good:focus, #tribe-bar-form .tribe-bar-submit input#password-strength.good[type=submit]:focus,
+.success.tribe-events-read-more:focus, .success.button-secondary:focus, .success.button-primary:focus, .button#password-strength.good:focus, #tribe-bar-form .tribe-bar-submit input#password-strength.good[type=submit]:focus,
 #password-strength.good.tribe-events-button:focus,
 #password-strength.good.tribe-events-read-more:focus, #password-strength.good.button-secondary:focus, #password-strength.good.button-primary:focus, .button#password-strength.strong:focus, #tribe-bar-form .tribe-bar-submit input#password-strength.strong[type=submit]:focus,
 #password-strength.strong.tribe-events-button:focus,
-#password-strength.strong.tribe-events-read-more:focus, #password-strength.strong.button-secondary:focus, #password-strength.strong.button-primary:focus, .success.ddownload-link:focus, .caldera-grid .ddownload-link.alert.alert-success:focus, .caldera-grid .ddownload-link.alert-success#password-strength.bad:focus, .caldera-grid .ddownload-link.alert-success#password-strength.short:focus, .ddownload-link#password-strength.good:focus, .ddownload-link#password-strength.strong:focus {
+#password-strength.strong.tribe-events-read-more:focus, #password-strength.strong.button-secondary:focus, #password-strength.strong.button-primary:focus, .success.ddownload-link:focus, .ddownload-link#password-strength.good:focus, .ddownload-link#password-strength.strong:focus {
   background-color: #22bb5b;
   color: #4A4A4A;
 }
@@ -6193,57 +6169,33 @@ select[multiple] {
 }
 .button.disabled.success, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit], #tribe-events .disabled.success.tribe-events-button,
 .disabled.success.tribe-events-button,
-.disabled.success.tribe-events-read-more, .disabled.success.button-secondary, .disabled.success.button-primary, .caldera-grid .button.disabled.alert.alert-success, .caldera-grid #tribe-bar-form .tribe-bar-submit input.disabled.alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.disabled.alert.alert-success[type=submit], .caldera-grid #tribe-events .disabled.alert.alert-success.tribe-events-button, #tribe-events .caldera-grid .disabled.alert.alert-success.tribe-events-button,
-.caldera-grid .disabled.alert.alert-success.tribe-events-button,
-.caldera-grid .disabled.alert.alert-success.tribe-events-read-more, .caldera-grid .disabled.alert.alert-success.button-secondary, .caldera-grid .disabled.alert.alert-success.button-primary, .caldera-grid .button.disabled.alert-success#password-strength.bad, .caldera-grid #tribe-bar-form .tribe-bar-submit input.disabled.alert-success#password-strength.bad[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.disabled.alert-success#password-strength.bad[type=submit],
-.caldera-grid .disabled.alert-success#password-strength.bad.tribe-events-button,
-.caldera-grid .disabled.alert-success#password-strength.bad.tribe-events-read-more, .caldera-grid .disabled.alert-success#password-strength.bad.button-secondary, .caldera-grid .disabled.alert-success#password-strength.bad.button-primary, .caldera-grid .button.disabled.alert-success#password-strength.short, .caldera-grid #tribe-bar-form .tribe-bar-submit input.disabled.alert-success#password-strength.short[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.disabled.alert-success#password-strength.short[type=submit],
-.caldera-grid .disabled.alert-success#password-strength.short.tribe-events-button,
-.caldera-grid .disabled.alert-success#password-strength.short.tribe-events-read-more, .caldera-grid .disabled.alert-success#password-strength.short.button-secondary, .caldera-grid .disabled.alert-success#password-strength.short.button-primary, .button.disabled#password-strength.good, #tribe-bar-form .tribe-bar-submit input.disabled#password-strength.good[type=submit],
+.disabled.success.tribe-events-read-more, .disabled.success.button-secondary, .disabled.success.button-primary, .button.disabled#password-strength.good, #tribe-bar-form .tribe-bar-submit input.disabled#password-strength.good[type=submit],
 .disabled#password-strength.good.tribe-events-button,
 .disabled#password-strength.good.tribe-events-read-more, .disabled#password-strength.good.button-secondary, .disabled#password-strength.good.button-primary, .button.disabled#password-strength.strong, #tribe-bar-form .tribe-bar-submit input.disabled#password-strength.strong[type=submit],
 .disabled#password-strength.strong.tribe-events-button,
-.disabled#password-strength.strong.tribe-events-read-more, .disabled#password-strength.strong.button-secondary, .disabled#password-strength.strong.button-primary, .disabled.success.ddownload-link, .caldera-grid .disabled.ddownload-link.alert.alert-success, .caldera-grid .disabled.ddownload-link.alert-success#password-strength.bad, .caldera-grid .disabled.ddownload-link.alert-success#password-strength.short, .disabled.ddownload-link#password-strength.good, .disabled.ddownload-link#password-strength.strong, .button[disabled].success, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit], #tribe-events [disabled].success.tribe-events-button,
+.disabled#password-strength.strong.tribe-events-read-more, .disabled#password-strength.strong.button-secondary, .disabled#password-strength.strong.button-primary, .disabled.success.ddownload-link, .disabled.ddownload-link#password-strength.good, .disabled.ddownload-link#password-strength.strong, .button[disabled].success, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit], #tribe-events [disabled].success.tribe-events-button,
 [disabled].success.tribe-events-button,
-[disabled].success.tribe-events-read-more, [disabled].success.button-secondary, [disabled].success.button-primary, .caldera-grid .button[disabled].alert.alert-success, .caldera-grid #tribe-bar-form .tribe-bar-submit input[disabled].alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input[disabled].alert.alert-success[type=submit], .caldera-grid #tribe-events [disabled].alert.alert-success.tribe-events-button, #tribe-events .caldera-grid [disabled].alert.alert-success.tribe-events-button,
-.caldera-grid [disabled].alert.alert-success.tribe-events-button,
-.caldera-grid [disabled].alert.alert-success.tribe-events-read-more, .caldera-grid [disabled].alert.alert-success.button-secondary, .caldera-grid [disabled].alert.alert-success.button-primary, .caldera-grid .button[disabled].alert-success#password-strength.bad, .caldera-grid #tribe-bar-form .tribe-bar-submit input[disabled].alert-success#password-strength.bad[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input[disabled].alert-success#password-strength.bad[type=submit],
-.caldera-grid [disabled].alert-success#password-strength.bad.tribe-events-button,
-.caldera-grid [disabled].alert-success#password-strength.bad.tribe-events-read-more, .caldera-grid [disabled].alert-success#password-strength.bad.button-secondary, .caldera-grid [disabled].alert-success#password-strength.bad.button-primary, .caldera-grid .button[disabled].alert-success#password-strength.short, .caldera-grid #tribe-bar-form .tribe-bar-submit input[disabled].alert-success#password-strength.short[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input[disabled].alert-success#password-strength.short[type=submit],
-.caldera-grid [disabled].alert-success#password-strength.short.tribe-events-button,
-.caldera-grid [disabled].alert-success#password-strength.short.tribe-events-read-more, .caldera-grid [disabled].alert-success#password-strength.short.button-secondary, .caldera-grid [disabled].alert-success#password-strength.short.button-primary, .button[disabled]#password-strength.good, #tribe-bar-form .tribe-bar-submit input[disabled]#password-strength.good[type=submit],
+[disabled].success.tribe-events-read-more, [disabled].success.button-secondary, [disabled].success.button-primary, .button[disabled]#password-strength.good, #tribe-bar-form .tribe-bar-submit input[disabled]#password-strength.good[type=submit],
 [disabled]#password-strength.good.tribe-events-button,
 [disabled]#password-strength.good.tribe-events-read-more, [disabled]#password-strength.good.button-secondary, [disabled]#password-strength.good.button-primary, .button[disabled]#password-strength.strong, #tribe-bar-form .tribe-bar-submit input[disabled]#password-strength.strong[type=submit],
 [disabled]#password-strength.strong.tribe-events-button,
-[disabled]#password-strength.strong.tribe-events-read-more, [disabled]#password-strength.strong.button-secondary, [disabled]#password-strength.strong.button-primary, [disabled].success.ddownload-link, .caldera-grid [disabled].ddownload-link.alert.alert-success, .caldera-grid [disabled].ddownload-link.alert-success#password-strength.bad, .caldera-grid [disabled].ddownload-link.alert-success#password-strength.short, [disabled].ddownload-link#password-strength.good, [disabled].ddownload-link#password-strength.strong {
+[disabled]#password-strength.strong.tribe-events-read-more, [disabled]#password-strength.strong.button-secondary, [disabled]#password-strength.strong.button-primary, [disabled].success.ddownload-link, [disabled].ddownload-link#password-strength.good, [disabled].ddownload-link#password-strength.strong {
   opacity: 0.25;
   cursor: not-allowed;
 }
 .button.disabled.success, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit], #tribe-events .disabled.success.tribe-events-button,
 .disabled.success.tribe-events-button,
-.disabled.success.tribe-events-read-more, .disabled.success.button-secondary, .disabled.success.button-primary, .caldera-grid .button.disabled.alert.alert-success, .caldera-grid #tribe-bar-form .tribe-bar-submit input.disabled.alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.disabled.alert.alert-success[type=submit], .caldera-grid #tribe-events .disabled.alert.alert-success.tribe-events-button, #tribe-events .caldera-grid .disabled.alert.alert-success.tribe-events-button,
-.caldera-grid .disabled.alert.alert-success.tribe-events-button,
-.caldera-grid .disabled.alert.alert-success.tribe-events-read-more, .caldera-grid .disabled.alert.alert-success.button-secondary, .caldera-grid .disabled.alert.alert-success.button-primary, .caldera-grid .button.disabled.alert-success#password-strength.bad, .caldera-grid #tribe-bar-form .tribe-bar-submit input.disabled.alert-success#password-strength.bad[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.disabled.alert-success#password-strength.bad[type=submit],
-.caldera-grid .disabled.alert-success#password-strength.bad.tribe-events-button,
-.caldera-grid .disabled.alert-success#password-strength.bad.tribe-events-read-more, .caldera-grid .disabled.alert-success#password-strength.bad.button-secondary, .caldera-grid .disabled.alert-success#password-strength.bad.button-primary, .caldera-grid .button.disabled.alert-success#password-strength.short, .caldera-grid #tribe-bar-form .tribe-bar-submit input.disabled.alert-success#password-strength.short[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.disabled.alert-success#password-strength.short[type=submit],
-.caldera-grid .disabled.alert-success#password-strength.short.tribe-events-button,
-.caldera-grid .disabled.alert-success#password-strength.short.tribe-events-read-more, .caldera-grid .disabled.alert-success#password-strength.short.button-secondary, .caldera-grid .disabled.alert-success#password-strength.short.button-primary, .button.disabled#password-strength.good, #tribe-bar-form .tribe-bar-submit input.disabled#password-strength.good[type=submit],
+.disabled.success.tribe-events-read-more, .disabled.success.button-secondary, .disabled.success.button-primary, .button.disabled#password-strength.good, #tribe-bar-form .tribe-bar-submit input.disabled#password-strength.good[type=submit],
 .disabled#password-strength.good.tribe-events-button,
 .disabled#password-strength.good.tribe-events-read-more, .disabled#password-strength.good.button-secondary, .disabled#password-strength.good.button-primary, .button.disabled#password-strength.strong, #tribe-bar-form .tribe-bar-submit input.disabled#password-strength.strong[type=submit],
 .disabled#password-strength.strong.tribe-events-button,
-.disabled#password-strength.strong.tribe-events-read-more, .disabled#password-strength.strong.button-secondary, .disabled#password-strength.strong.button-primary, .disabled.success.ddownload-link, .caldera-grid .disabled.ddownload-link.alert.alert-success, .caldera-grid .disabled.ddownload-link.alert-success#password-strength.bad, .caldera-grid .disabled.ddownload-link.alert-success#password-strength.short, .disabled.ddownload-link#password-strength.good, .disabled.ddownload-link#password-strength.strong, .button.disabled.success:hover, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit]:hover, .button.disabled.success:focus, #tribe-bar-form .tribe-bar-submit input.disabled.success[type=submit]:focus, .button[disabled].success, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit], #tribe-events [disabled].success.tribe-events-button,
+.disabled#password-strength.strong.tribe-events-read-more, .disabled#password-strength.strong.button-secondary, .disabled#password-strength.strong.button-primary, .disabled.success.ddownload-link, .disabled.ddownload-link#password-strength.good, .disabled.ddownload-link#password-strength.strong, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit], #tribe-events [disabled].success.tribe-events-button,
 [disabled].success.tribe-events-button,
-[disabled].success.tribe-events-read-more, [disabled].success.button-secondary, [disabled].success.button-primary, .caldera-grid .button[disabled].alert.alert-success, .caldera-grid #tribe-bar-form .tribe-bar-submit input[disabled].alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input[disabled].alert.alert-success[type=submit], .caldera-grid #tribe-events [disabled].alert.alert-success.tribe-events-button, #tribe-events .caldera-grid [disabled].alert.alert-success.tribe-events-button,
-.caldera-grid [disabled].alert.alert-success.tribe-events-button,
-.caldera-grid [disabled].alert.alert-success.tribe-events-read-more, .caldera-grid [disabled].alert.alert-success.button-secondary, .caldera-grid [disabled].alert.alert-success.button-primary, .caldera-grid .button[disabled].alert-success#password-strength.bad, .caldera-grid #tribe-bar-form .tribe-bar-submit input[disabled].alert-success#password-strength.bad[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input[disabled].alert-success#password-strength.bad[type=submit],
-.caldera-grid [disabled].alert-success#password-strength.bad.tribe-events-button,
-.caldera-grid [disabled].alert-success#password-strength.bad.tribe-events-read-more, .caldera-grid [disabled].alert-success#password-strength.bad.button-secondary, .caldera-grid [disabled].alert-success#password-strength.bad.button-primary, .caldera-grid .button[disabled].alert-success#password-strength.short, .caldera-grid #tribe-bar-form .tribe-bar-submit input[disabled].alert-success#password-strength.short[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input[disabled].alert-success#password-strength.short[type=submit],
-.caldera-grid [disabled].alert-success#password-strength.short.tribe-events-button,
-.caldera-grid [disabled].alert-success#password-strength.short.tribe-events-read-more, .caldera-grid [disabled].alert-success#password-strength.short.button-secondary, .caldera-grid [disabled].alert-success#password-strength.short.button-primary, .button[disabled]#password-strength.good, #tribe-bar-form .tribe-bar-submit input[disabled]#password-strength.good[type=submit],
+[disabled].success.tribe-events-read-more, [disabled].success.button-secondary, [disabled].success.button-primary, .button[disabled]#password-strength.good, #tribe-bar-form .tribe-bar-submit input[disabled]#password-strength.good[type=submit],
 [disabled]#password-strength.good.tribe-events-button,
 [disabled]#password-strength.good.tribe-events-read-more, [disabled]#password-strength.good.button-secondary, [disabled]#password-strength.good.button-primary, .button[disabled]#password-strength.strong, #tribe-bar-form .tribe-bar-submit input[disabled]#password-strength.strong[type=submit],
 [disabled]#password-strength.strong.tribe-events-button,
-[disabled]#password-strength.strong.tribe-events-read-more, [disabled]#password-strength.strong.button-secondary, [disabled]#password-strength.strong.button-primary, [disabled].success.ddownload-link, .caldera-grid [disabled].ddownload-link.alert.alert-success, .caldera-grid [disabled].ddownload-link.alert-success#password-strength.bad, .caldera-grid [disabled].ddownload-link.alert-success#password-strength.short, [disabled].ddownload-link#password-strength.good, [disabled].ddownload-link#password-strength.strong, .button[disabled].success:hover, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit]:hover, .button[disabled].success:focus, #tribe-bar-form .tribe-bar-submit input[disabled].success[type=submit]:focus {
+[disabled]#password-strength.strong.tribe-events-read-more, [disabled]#password-strength.strong.button-secondary, [disabled]#password-strength.strong.button-primary, [disabled].success.ddownload-link, [disabled].ddownload-link#password-strength.good, [disabled].ddownload-link#password-strength.strong, .button[disabled].success:hover, .button[disabled].success:focus {
   background-color: #3adb76;
   color: #4A4A4A;
 }
@@ -6526,97 +6478,55 @@ select[multiple] {
 }
 .button.hollow.success, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit], #tribe-events .hollow.success.tribe-events-button,
 .hollow.success.tribe-events-button,
-.hollow.success.tribe-events-read-more, .hollow.success.button-secondary, .hollow.success.button-primary, .caldera-grid .button.hollow.alert.alert-success, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert.alert-success[type=submit], .caldera-grid #tribe-events .hollow.alert.alert-success.tribe-events-button, #tribe-events .caldera-grid .hollow.alert.alert-success.tribe-events-button,
-.caldera-grid .hollow.alert.alert-success.tribe-events-button,
-.caldera-grid .hollow.alert.alert-success.tribe-events-read-more, .caldera-grid .hollow.alert.alert-success.button-secondary, .caldera-grid .hollow.alert.alert-success.button-primary, .caldera-grid .button.hollow.alert-success#password-strength.bad, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.bad[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.bad[type=submit],
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-button,
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-read-more, .caldera-grid .hollow.alert-success#password-strength.bad.button-secondary, .caldera-grid .hollow.alert-success#password-strength.bad.button-primary, .caldera-grid .button.hollow.alert-success#password-strength.short, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.short[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.short[type=submit],
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-button,
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-read-more, .caldera-grid .hollow.alert-success#password-strength.short.button-secondary, .caldera-grid .hollow.alert-success#password-strength.short.button-primary, .button.hollow#password-strength.good, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit],
+.hollow.success.tribe-events-read-more, .hollow.success.button-secondary, .hollow.success.button-primary, .button.hollow#password-strength.good, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit],
 .hollow#password-strength.good.tribe-events-button,
 .hollow#password-strength.good.tribe-events-read-more, .hollow#password-strength.good.button-secondary, .hollow#password-strength.good.button-primary, .button.hollow#password-strength.strong, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.strong[type=submit],
 .hollow#password-strength.strong.tribe-events-button,
-.hollow#password-strength.strong.tribe-events-read-more, .hollow#password-strength.strong.button-secondary, .hollow#password-strength.strong.button-primary, .hollow.success.ddownload-link, .caldera-grid .hollow.ddownload-link.alert.alert-success, .caldera-grid .hollow.ddownload-link.alert-success#password-strength.bad, .caldera-grid .hollow.ddownload-link.alert-success#password-strength.short, .hollow.ddownload-link#password-strength.good, .hollow.ddownload-link#password-strength.strong {
+.hollow#password-strength.strong.tribe-events-read-more, .hollow#password-strength.strong.button-secondary, .hollow#password-strength.strong.button-primary, .hollow.success.ddownload-link, .hollow.ddownload-link#password-strength.good, .hollow.ddownload-link#password-strength.strong {
   border: 1px solid #3adb76;
   color: #3adb76;
 }
 .button.hollow.success:hover, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:hover, #tribe-events .hollow.success.tribe-events-button:hover,
 .hollow.success.tribe-events-button:hover,
-.hollow.success.tribe-events-read-more:hover, .hollow.success.button-secondary:hover, .hollow.success.button-primary:hover, .caldera-grid .button.hollow.alert.alert-success:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert.alert-success[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert.alert-success[type=submit]:hover, .caldera-grid #tribe-events .hollow.alert.alert-success.tribe-events-button:hover, #tribe-events .caldera-grid .hollow.alert.alert-success.tribe-events-button:hover,
-.caldera-grid .hollow.alert.alert-success.tribe-events-button:hover,
-.caldera-grid .hollow.alert.alert-success.tribe-events-read-more:hover, .caldera-grid .hollow.alert.alert-success.button-secondary:hover, .caldera-grid .hollow.alert.alert-success.button-primary:hover, .caldera-grid .button.hollow.alert-success#password-strength.bad:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.bad[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.bad[type=submit]:hover,
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-button:hover,
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-read-more:hover, .caldera-grid .hollow.alert-success#password-strength.bad.button-secondary:hover, .caldera-grid .hollow.alert-success#password-strength.bad.button-primary:hover, .caldera-grid .button.hollow.alert-success#password-strength.short:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.short[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.short[type=submit]:hover,
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-button:hover,
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-read-more:hover, .caldera-grid .hollow.alert-success#password-strength.short.button-secondary:hover, .caldera-grid .hollow.alert-success#password-strength.short.button-primary:hover, .button.hollow#password-strength.good:hover, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:hover,
+.hollow.success.tribe-events-read-more:hover, .hollow.success.button-secondary:hover, .hollow.success.button-primary:hover, .button.hollow#password-strength.good:hover, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:hover,
 .hollow#password-strength.good.tribe-events-button:hover,
 .hollow#password-strength.good.tribe-events-read-more:hover, .hollow#password-strength.good.button-secondary:hover, .hollow#password-strength.good.button-primary:hover, .button.hollow#password-strength.strong:hover, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.strong[type=submit]:hover,
 .hollow#password-strength.strong.tribe-events-button:hover,
-.hollow#password-strength.strong.tribe-events-read-more:hover, .hollow#password-strength.strong.button-secondary:hover, .hollow#password-strength.strong.button-primary:hover, .hollow.success.ddownload-link:hover, .caldera-grid .hollow.ddownload-link.alert.alert-success:hover, .caldera-grid .hollow.ddownload-link.alert-success#password-strength.bad:hover, .caldera-grid .hollow.ddownload-link.alert-success#password-strength.short:hover, .hollow.ddownload-link#password-strength.good:hover, .hollow.ddownload-link#password-strength.strong:hover, .button.hollow.success:focus, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:focus, #tribe-events .hollow.success.tribe-events-button:focus,
+.hollow#password-strength.strong.tribe-events-read-more:hover, .hollow#password-strength.strong.button-secondary:hover, .hollow#password-strength.strong.button-primary:hover, .hollow.success.ddownload-link:hover, .hollow.ddownload-link#password-strength.good:hover, .hollow.ddownload-link#password-strength.strong:hover, .button.hollow.success:focus, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:focus, #tribe-events .hollow.success.tribe-events-button:focus,
 .hollow.success.tribe-events-button:focus,
-.hollow.success.tribe-events-read-more:focus, .hollow.success.button-secondary:focus, .hollow.success.button-primary:focus, .caldera-grid .button.hollow.alert.alert-success:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert.alert-success[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert.alert-success[type=submit]:focus, .caldera-grid #tribe-events .hollow.alert.alert-success.tribe-events-button:focus, #tribe-events .caldera-grid .hollow.alert.alert-success.tribe-events-button:focus,
-.caldera-grid .hollow.alert.alert-success.tribe-events-button:focus,
-.caldera-grid .hollow.alert.alert-success.tribe-events-read-more:focus, .caldera-grid .hollow.alert.alert-success.button-secondary:focus, .caldera-grid .hollow.alert.alert-success.button-primary:focus, .caldera-grid .button.hollow.alert-success#password-strength.bad:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.bad[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.bad[type=submit]:focus,
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-button:focus,
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-read-more:focus, .caldera-grid .hollow.alert-success#password-strength.bad.button-secondary:focus, .caldera-grid .hollow.alert-success#password-strength.bad.button-primary:focus, .caldera-grid .button.hollow.alert-success#password-strength.short:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.short[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.short[type=submit]:focus,
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-button:focus,
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-read-more:focus, .caldera-grid .hollow.alert-success#password-strength.short.button-secondary:focus, .caldera-grid .hollow.alert-success#password-strength.short.button-primary:focus, .button.hollow#password-strength.good:focus, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:focus,
+.hollow.success.tribe-events-read-more:focus, .hollow.success.button-secondary:focus, .hollow.success.button-primary:focus, .button.hollow#password-strength.good:focus, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:focus,
 .hollow#password-strength.good.tribe-events-button:focus,
 .hollow#password-strength.good.tribe-events-read-more:focus, .hollow#password-strength.good.button-secondary:focus, .hollow#password-strength.good.button-primary:focus, .button.hollow#password-strength.strong:focus, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.strong[type=submit]:focus,
 .hollow#password-strength.strong.tribe-events-button:focus,
-.hollow#password-strength.strong.tribe-events-read-more:focus, .hollow#password-strength.strong.button-secondary:focus, .hollow#password-strength.strong.button-primary:focus, .hollow.success.ddownload-link:focus, .caldera-grid .hollow.ddownload-link.alert.alert-success:focus, .caldera-grid .hollow.ddownload-link.alert-success#password-strength.bad:focus, .caldera-grid .hollow.ddownload-link.alert-success#password-strength.short:focus, .hollow.ddownload-link#password-strength.good:focus, .hollow.ddownload-link#password-strength.strong:focus {
+.hollow#password-strength.strong.tribe-events-read-more:focus, .hollow#password-strength.strong.button-secondary:focus, .hollow#password-strength.strong.button-primary:focus, .hollow.success.ddownload-link:focus, .hollow.ddownload-link#password-strength.good:focus, .hollow.ddownload-link#password-strength.strong:focus {
   border-color: #157539;
   color: #157539;
 }
 .button.hollow.success:hover.disabled, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:hover.disabled, #tribe-events .hollow.success.tribe-events-button:hover.disabled,
 .hollow.success.tribe-events-button:hover.disabled,
-.hollow.success.tribe-events-read-more:hover.disabled, .hollow.success.button-secondary:hover.disabled, .hollow.success.button-primary:hover.disabled, .caldera-grid .button.hollow.alert.alert-success:hover.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert.alert-success[type=submit]:hover.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert.alert-success[type=submit]:hover.disabled, .caldera-grid #tribe-events .hollow.alert.alert-success.tribe-events-button:hover.disabled, #tribe-events .caldera-grid .hollow.alert.alert-success.tribe-events-button:hover.disabled,
-.caldera-grid .hollow.alert.alert-success.tribe-events-button:hover.disabled,
-.caldera-grid .hollow.alert.alert-success.tribe-events-read-more:hover.disabled, .caldera-grid .hollow.alert.alert-success.button-secondary:hover.disabled, .caldera-grid .hollow.alert.alert-success.button-primary:hover.disabled, .caldera-grid .button.hollow.alert-success#password-strength.bad:hover.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.bad[type=submit]:hover.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.bad[type=submit]:hover.disabled,
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-button:hover.disabled,
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-read-more:hover.disabled, .caldera-grid .hollow.alert-success#password-strength.bad.button-secondary:hover.disabled, .caldera-grid .hollow.alert-success#password-strength.bad.button-primary:hover.disabled, .caldera-grid .button.hollow.alert-success#password-strength.short:hover.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.short[type=submit]:hover.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.short[type=submit]:hover.disabled,
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-button:hover.disabled,
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-read-more:hover.disabled, .caldera-grid .hollow.alert-success#password-strength.short.button-secondary:hover.disabled, .caldera-grid .hollow.alert-success#password-strength.short.button-primary:hover.disabled, .button.hollow#password-strength.good:hover.disabled, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:hover.disabled,
+.hollow.success.tribe-events-read-more:hover.disabled, .hollow.success.button-secondary:hover.disabled, .hollow.success.button-primary:hover.disabled, .button.hollow#password-strength.good:hover.disabled, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:hover.disabled,
 .hollow#password-strength.good.tribe-events-button:hover.disabled,
 .hollow#password-strength.good.tribe-events-read-more:hover.disabled, .hollow#password-strength.good.button-secondary:hover.disabled, .hollow#password-strength.good.button-primary:hover.disabled, .button.hollow#password-strength.strong:hover.disabled, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.strong[type=submit]:hover.disabled,
 .hollow#password-strength.strong.tribe-events-button:hover.disabled,
-.hollow#password-strength.strong.tribe-events-read-more:hover.disabled, .hollow#password-strength.strong.button-secondary:hover.disabled, .hollow#password-strength.strong.button-primary:hover.disabled, .hollow.success.ddownload-link:hover.disabled, .caldera-grid .hollow.ddownload-link.alert.alert-success:hover.disabled, .caldera-grid .hollow.ddownload-link.alert-success#password-strength.bad:hover.disabled, .caldera-grid .hollow.ddownload-link.alert-success#password-strength.short:hover.disabled, .hollow.ddownload-link#password-strength.good:hover.disabled, .hollow.ddownload-link#password-strength.strong:hover.disabled, .button.hollow.success:hover[disabled], #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:hover[disabled], #tribe-events .hollow.success.tribe-events-button:hover[disabled],
+.hollow#password-strength.strong.tribe-events-read-more:hover.disabled, .hollow#password-strength.strong.button-secondary:hover.disabled, .hollow#password-strength.strong.button-primary:hover.disabled, .hollow.success.ddownload-link:hover.disabled, .hollow.ddownload-link#password-strength.good:hover.disabled, .hollow.ddownload-link#password-strength.strong:hover.disabled, .button.hollow.success:hover[disabled], #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:hover[disabled], #tribe-events .hollow.success.tribe-events-button:hover[disabled],
 .hollow.success.tribe-events-button:hover[disabled],
-.hollow.success.tribe-events-read-more:hover[disabled], .hollow.success.button-secondary:hover[disabled], .hollow.success.button-primary:hover[disabled], .caldera-grid .button.hollow.alert.alert-success:hover[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert.alert-success[type=submit]:hover[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert.alert-success[type=submit]:hover[disabled], .caldera-grid #tribe-events .hollow.alert.alert-success.tribe-events-button:hover[disabled], #tribe-events .caldera-grid .hollow.alert.alert-success.tribe-events-button:hover[disabled],
-.caldera-grid .hollow.alert.alert-success.tribe-events-button:hover[disabled],
-.caldera-grid .hollow.alert.alert-success.tribe-events-read-more:hover[disabled], .caldera-grid .hollow.alert.alert-success.button-secondary:hover[disabled], .caldera-grid .hollow.alert.alert-success.button-primary:hover[disabled], .caldera-grid .button.hollow.alert-success#password-strength.bad:hover[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.bad[type=submit]:hover[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.bad[type=submit]:hover[disabled],
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-button:hover[disabled],
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-read-more:hover[disabled], .caldera-grid .hollow.alert-success#password-strength.bad.button-secondary:hover[disabled], .caldera-grid .hollow.alert-success#password-strength.bad.button-primary:hover[disabled], .caldera-grid .button.hollow.alert-success#password-strength.short:hover[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.short[type=submit]:hover[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.short[type=submit]:hover[disabled],
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-button:hover[disabled],
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-read-more:hover[disabled], .caldera-grid .hollow.alert-success#password-strength.short.button-secondary:hover[disabled], .caldera-grid .hollow.alert-success#password-strength.short.button-primary:hover[disabled], .button.hollow#password-strength.good:hover[disabled], #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:hover[disabled],
+.hollow.success.tribe-events-read-more:hover[disabled], .hollow.success.button-secondary:hover[disabled], .hollow.success.button-primary:hover[disabled], .button.hollow#password-strength.good:hover[disabled], #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:hover[disabled],
 .hollow#password-strength.good.tribe-events-button:hover[disabled],
 .hollow#password-strength.good.tribe-events-read-more:hover[disabled], .hollow#password-strength.good.button-secondary:hover[disabled], .hollow#password-strength.good.button-primary:hover[disabled], .button.hollow#password-strength.strong:hover[disabled], #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.strong[type=submit]:hover[disabled],
 .hollow#password-strength.strong.tribe-events-button:hover[disabled],
-.hollow#password-strength.strong.tribe-events-read-more:hover[disabled], .hollow#password-strength.strong.button-secondary:hover[disabled], .hollow#password-strength.strong.button-primary:hover[disabled], .hollow.success.ddownload-link:hover[disabled], .caldera-grid .hollow.ddownload-link.alert.alert-success:hover[disabled], .caldera-grid .hollow.ddownload-link.alert-success#password-strength.bad:hover[disabled], .caldera-grid .hollow.ddownload-link.alert-success#password-strength.short:hover[disabled], .hollow.ddownload-link#password-strength.good:hover[disabled], .hollow.ddownload-link#password-strength.strong:hover[disabled], .button.hollow.success:focus.disabled, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:focus.disabled, #tribe-events .hollow.success.tribe-events-button:focus.disabled,
+.hollow#password-strength.strong.tribe-events-read-more:hover[disabled], .hollow#password-strength.strong.button-secondary:hover[disabled], .hollow#password-strength.strong.button-primary:hover[disabled], .hollow.success.ddownload-link:hover[disabled], .hollow.ddownload-link#password-strength.good:hover[disabled], .hollow.ddownload-link#password-strength.strong:hover[disabled], .button.hollow.success:focus.disabled, #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:focus.disabled, #tribe-events .hollow.success.tribe-events-button:focus.disabled,
 .hollow.success.tribe-events-button:focus.disabled,
-.hollow.success.tribe-events-read-more:focus.disabled, .hollow.success.button-secondary:focus.disabled, .hollow.success.button-primary:focus.disabled, .caldera-grid .button.hollow.alert.alert-success:focus.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert.alert-success[type=submit]:focus.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert.alert-success[type=submit]:focus.disabled, .caldera-grid #tribe-events .hollow.alert.alert-success.tribe-events-button:focus.disabled, #tribe-events .caldera-grid .hollow.alert.alert-success.tribe-events-button:focus.disabled,
-.caldera-grid .hollow.alert.alert-success.tribe-events-button:focus.disabled,
-.caldera-grid .hollow.alert.alert-success.tribe-events-read-more:focus.disabled, .caldera-grid .hollow.alert.alert-success.button-secondary:focus.disabled, .caldera-grid .hollow.alert.alert-success.button-primary:focus.disabled, .caldera-grid .button.hollow.alert-success#password-strength.bad:focus.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.bad[type=submit]:focus.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.bad[type=submit]:focus.disabled,
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-button:focus.disabled,
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-read-more:focus.disabled, .caldera-grid .hollow.alert-success#password-strength.bad.button-secondary:focus.disabled, .caldera-grid .hollow.alert-success#password-strength.bad.button-primary:focus.disabled, .caldera-grid .button.hollow.alert-success#password-strength.short:focus.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.short[type=submit]:focus.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.short[type=submit]:focus.disabled,
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-button:focus.disabled,
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-read-more:focus.disabled, .caldera-grid .hollow.alert-success#password-strength.short.button-secondary:focus.disabled, .caldera-grid .hollow.alert-success#password-strength.short.button-primary:focus.disabled, .button.hollow#password-strength.good:focus.disabled, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:focus.disabled,
+.hollow.success.tribe-events-read-more:focus.disabled, .hollow.success.button-secondary:focus.disabled, .hollow.success.button-primary:focus.disabled, .button.hollow#password-strength.good:focus.disabled, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:focus.disabled,
 .hollow#password-strength.good.tribe-events-button:focus.disabled,
 .hollow#password-strength.good.tribe-events-read-more:focus.disabled, .hollow#password-strength.good.button-secondary:focus.disabled, .hollow#password-strength.good.button-primary:focus.disabled, .button.hollow#password-strength.strong:focus.disabled, #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.strong[type=submit]:focus.disabled,
 .hollow#password-strength.strong.tribe-events-button:focus.disabled,
-.hollow#password-strength.strong.tribe-events-read-more:focus.disabled, .hollow#password-strength.strong.button-secondary:focus.disabled, .hollow#password-strength.strong.button-primary:focus.disabled, .hollow.success.ddownload-link:focus.disabled, .caldera-grid .hollow.ddownload-link.alert.alert-success:focus.disabled, .caldera-grid .hollow.ddownload-link.alert-success#password-strength.bad:focus.disabled, .caldera-grid .hollow.ddownload-link.alert-success#password-strength.short:focus.disabled, .hollow.ddownload-link#password-strength.good:focus.disabled, .hollow.ddownload-link#password-strength.strong:focus.disabled, .button.hollow.success:focus[disabled], #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:focus[disabled], #tribe-events .hollow.success.tribe-events-button:focus[disabled],
+.hollow#password-strength.strong.tribe-events-read-more:focus.disabled, .hollow#password-strength.strong.button-secondary:focus.disabled, .hollow#password-strength.strong.button-primary:focus.disabled, .hollow.success.ddownload-link:focus.disabled, .hollow.ddownload-link#password-strength.good:focus.disabled, .hollow.ddownload-link#password-strength.strong:focus.disabled, .button.hollow.success:focus[disabled], #tribe-bar-form .tribe-bar-submit input.hollow.success[type=submit]:focus[disabled], #tribe-events .hollow.success.tribe-events-button:focus[disabled],
 .hollow.success.tribe-events-button:focus[disabled],
-.hollow.success.tribe-events-read-more:focus[disabled], .hollow.success.button-secondary:focus[disabled], .hollow.success.button-primary:focus[disabled], .caldera-grid .button.hollow.alert.alert-success:focus[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert.alert-success[type=submit]:focus[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert.alert-success[type=submit]:focus[disabled], .caldera-grid #tribe-events .hollow.alert.alert-success.tribe-events-button:focus[disabled], #tribe-events .caldera-grid .hollow.alert.alert-success.tribe-events-button:focus[disabled],
-.caldera-grid .hollow.alert.alert-success.tribe-events-button:focus[disabled],
-.caldera-grid .hollow.alert.alert-success.tribe-events-read-more:focus[disabled], .caldera-grid .hollow.alert.alert-success.button-secondary:focus[disabled], .caldera-grid .hollow.alert.alert-success.button-primary:focus[disabled], .caldera-grid .button.hollow.alert-success#password-strength.bad:focus[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.bad[type=submit]:focus[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.bad[type=submit]:focus[disabled],
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-button:focus[disabled],
-.caldera-grid .hollow.alert-success#password-strength.bad.tribe-events-read-more:focus[disabled], .caldera-grid .hollow.alert-success#password-strength.bad.button-secondary:focus[disabled], .caldera-grid .hollow.alert-success#password-strength.bad.button-primary:focus[disabled], .caldera-grid .button.hollow.alert-success#password-strength.short:focus[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.hollow.alert-success#password-strength.short[type=submit]:focus[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.hollow.alert-success#password-strength.short[type=submit]:focus[disabled],
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-button:focus[disabled],
-.caldera-grid .hollow.alert-success#password-strength.short.tribe-events-read-more:focus[disabled], .caldera-grid .hollow.alert-success#password-strength.short.button-secondary:focus[disabled], .caldera-grid .hollow.alert-success#password-strength.short.button-primary:focus[disabled], .button.hollow#password-strength.good:focus[disabled], #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:focus[disabled],
+.hollow.success.tribe-events-read-more:focus[disabled], .hollow.success.button-secondary:focus[disabled], .hollow.success.button-primary:focus[disabled], .button.hollow#password-strength.good:focus[disabled], #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.good[type=submit]:focus[disabled],
 .hollow#password-strength.good.tribe-events-button:focus[disabled],
 .hollow#password-strength.good.tribe-events-read-more:focus[disabled], .hollow#password-strength.good.button-secondary:focus[disabled], .hollow#password-strength.good.button-primary:focus[disabled], .button.hollow#password-strength.strong:focus[disabled], #tribe-bar-form .tribe-bar-submit input.hollow#password-strength.strong[type=submit]:focus[disabled],
 .hollow#password-strength.strong.tribe-events-button:focus[disabled],
-.hollow#password-strength.strong.tribe-events-read-more:focus[disabled], .hollow#password-strength.strong.button-secondary:focus[disabled], .hollow#password-strength.strong.button-primary:focus[disabled], .hollow.success.ddownload-link:focus[disabled], .caldera-grid .hollow.ddownload-link.alert.alert-success:focus[disabled], .caldera-grid .hollow.ddownload-link.alert-success#password-strength.bad:focus[disabled], .caldera-grid .hollow.ddownload-link.alert-success#password-strength.short:focus[disabled], .hollow.ddownload-link#password-strength.good:focus[disabled], .hollow.ddownload-link#password-strength.strong:focus[disabled] {
+.hollow#password-strength.strong.tribe-events-read-more:focus[disabled], .hollow#password-strength.strong.button-secondary:focus[disabled], .hollow#password-strength.strong.button-primary:focus[disabled], .hollow.success.ddownload-link:focus[disabled], .hollow.ddownload-link#password-strength.good:focus[disabled], .hollow.ddownload-link#password-strength.strong:focus[disabled] {
   border: 1px solid #3adb76;
   color: #3adb76;
 }
@@ -6979,113 +6889,65 @@ select[multiple] {
 }
 .button.clear.success, #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit], #tribe-events .clear.success.tribe-events-button,
 .clear.success.tribe-events-button,
-.clear.success.tribe-events-read-more, .clear.success.button-secondary, .clear.success.button-primary, .caldera-grid .button.clear.alert.alert-success, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert.alert-success[type=submit], .caldera-grid #tribe-events .clear.alert.alert-success.tribe-events-button, #tribe-events .caldera-grid .clear.alert.alert-success.tribe-events-button,
-.caldera-grid .clear.alert.alert-success.tribe-events-button,
-.caldera-grid .clear.alert.alert-success.tribe-events-read-more, .caldera-grid .clear.alert.alert-success.button-secondary, .caldera-grid .clear.alert.alert-success.button-primary, .caldera-grid .button.clear.alert-success#password-strength.bad, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.bad[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.bad[type=submit],
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-button,
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-read-more, .caldera-grid .clear.alert-success#password-strength.bad.button-secondary, .caldera-grid .clear.alert-success#password-strength.bad.button-primary, .caldera-grid .button.clear.alert-success#password-strength.short, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.short[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.short[type=submit],
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-button,
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-read-more, .caldera-grid .clear.alert-success#password-strength.short.button-secondary, .caldera-grid .clear.alert-success#password-strength.short.button-primary, .button.clear#password-strength.good, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit],
+.clear.success.tribe-events-read-more, .clear.success.button-secondary, .clear.success.button-primary, .button.clear#password-strength.good, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit],
 .clear#password-strength.good.tribe-events-button,
 .clear#password-strength.good.tribe-events-read-more, .clear#password-strength.good.button-secondary, .clear#password-strength.good.button-primary, .button.clear#password-strength.strong, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.strong[type=submit],
 .clear#password-strength.strong.tribe-events-button,
-.clear#password-strength.strong.tribe-events-read-more, .clear#password-strength.strong.button-secondary, .clear#password-strength.strong.button-primary, .clear.success.ddownload-link, .caldera-grid .clear.ddownload-link.alert.alert-success, .caldera-grid .clear.ddownload-link.alert-success#password-strength.bad, .caldera-grid .clear.ddownload-link.alert-success#password-strength.short, .clear.ddownload-link#password-strength.good, .clear.ddownload-link#password-strength.strong {
+.clear#password-strength.strong.tribe-events-read-more, .clear#password-strength.strong.button-secondary, .clear#password-strength.strong.button-primary, .clear.success.ddownload-link, .clear.ddownload-link#password-strength.good, .clear.ddownload-link#password-strength.strong {
   border: 1px solid #3adb76;
   color: #3adb76;
 }
 .button.clear.success:hover, #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit]:hover, #tribe-events .clear.success.tribe-events-button:hover,
 .clear.success.tribe-events-button:hover,
-.clear.success.tribe-events-read-more:hover, .clear.success.button-secondary:hover, .clear.success.button-primary:hover, .caldera-grid .button.clear.alert.alert-success:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert.alert-success[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert.alert-success[type=submit]:hover, .caldera-grid #tribe-events .clear.alert.alert-success.tribe-events-button:hover, #tribe-events .caldera-grid .clear.alert.alert-success.tribe-events-button:hover,
-.caldera-grid .clear.alert.alert-success.tribe-events-button:hover,
-.caldera-grid .clear.alert.alert-success.tribe-events-read-more:hover, .caldera-grid .clear.alert.alert-success.button-secondary:hover, .caldera-grid .clear.alert.alert-success.button-primary:hover, .caldera-grid .button.clear.alert-success#password-strength.bad:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.bad[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.bad[type=submit]:hover,
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-button:hover,
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-read-more:hover, .caldera-grid .clear.alert-success#password-strength.bad.button-secondary:hover, .caldera-grid .clear.alert-success#password-strength.bad.button-primary:hover, .caldera-grid .button.clear.alert-success#password-strength.short:hover, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.short[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.short[type=submit]:hover,
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-button:hover,
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-read-more:hover, .caldera-grid .clear.alert-success#password-strength.short.button-secondary:hover, .caldera-grid .clear.alert-success#password-strength.short.button-primary:hover, .button.clear#password-strength.good:hover, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:hover,
+.clear.success.tribe-events-read-more:hover, .clear.success.button-secondary:hover, .clear.success.button-primary:hover, .button.clear#password-strength.good:hover, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:hover,
 .clear#password-strength.good.tribe-events-button:hover,
 .clear#password-strength.good.tribe-events-read-more:hover, .clear#password-strength.good.button-secondary:hover, .clear#password-strength.good.button-primary:hover, .button.clear#password-strength.strong:hover, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.strong[type=submit]:hover,
 .clear#password-strength.strong.tribe-events-button:hover,
-.clear#password-strength.strong.tribe-events-read-more:hover, .clear#password-strength.strong.button-secondary:hover, .clear#password-strength.strong.button-primary:hover, .clear.success.ddownload-link:hover, .caldera-grid .clear.ddownload-link.alert.alert-success:hover, .caldera-grid .clear.ddownload-link.alert-success#password-strength.bad:hover, .caldera-grid .clear.ddownload-link.alert-success#password-strength.short:hover, .clear.ddownload-link#password-strength.good:hover, .clear.ddownload-link#password-strength.strong:hover, .button.clear.success:focus, #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit]:focus, #tribe-events .clear.success.tribe-events-button:focus,
+.clear#password-strength.strong.tribe-events-read-more:hover, .clear#password-strength.strong.button-secondary:hover, .clear#password-strength.strong.button-primary:hover, .clear.success.ddownload-link:hover, .clear.ddownload-link#password-strength.good:hover, .clear.ddownload-link#password-strength.strong:hover, .button.clear.success:focus, #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit]:focus, #tribe-events .clear.success.tribe-events-button:focus,
 .clear.success.tribe-events-button:focus,
-.clear.success.tribe-events-read-more:focus, .clear.success.button-secondary:focus, .clear.success.button-primary:focus, .caldera-grid .button.clear.alert.alert-success:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert.alert-success[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert.alert-success[type=submit]:focus, .caldera-grid #tribe-events .clear.alert.alert-success.tribe-events-button:focus, #tribe-events .caldera-grid .clear.alert.alert-success.tribe-events-button:focus,
-.caldera-grid .clear.alert.alert-success.tribe-events-button:focus,
-.caldera-grid .clear.alert.alert-success.tribe-events-read-more:focus, .caldera-grid .clear.alert.alert-success.button-secondary:focus, .caldera-grid .clear.alert.alert-success.button-primary:focus, .caldera-grid .button.clear.alert-success#password-strength.bad:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.bad[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.bad[type=submit]:focus,
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-button:focus,
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-read-more:focus, .caldera-grid .clear.alert-success#password-strength.bad.button-secondary:focus, .caldera-grid .clear.alert-success#password-strength.bad.button-primary:focus, .caldera-grid .button.clear.alert-success#password-strength.short:focus, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.short[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.short[type=submit]:focus,
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-button:focus,
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-read-more:focus, .caldera-grid .clear.alert-success#password-strength.short.button-secondary:focus, .caldera-grid .clear.alert-success#password-strength.short.button-primary:focus, .button.clear#password-strength.good:focus, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:focus,
+.clear.success.tribe-events-read-more:focus, .clear.success.button-secondary:focus, .clear.success.button-primary:focus, .button.clear#password-strength.good:focus, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:focus,
 .clear#password-strength.good.tribe-events-button:focus,
 .clear#password-strength.good.tribe-events-read-more:focus, .clear#password-strength.good.button-secondary:focus, .clear#password-strength.good.button-primary:focus, .button.clear#password-strength.strong:focus, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.strong[type=submit]:focus,
 .clear#password-strength.strong.tribe-events-button:focus,
-.clear#password-strength.strong.tribe-events-read-more:focus, .clear#password-strength.strong.button-secondary:focus, .clear#password-strength.strong.button-primary:focus, .clear.success.ddownload-link:focus, .caldera-grid .clear.ddownload-link.alert.alert-success:focus, .caldera-grid .clear.ddownload-link.alert-success#password-strength.bad:focus, .caldera-grid .clear.ddownload-link.alert-success#password-strength.short:focus, .clear.ddownload-link#password-strength.good:focus, .clear.ddownload-link#password-strength.strong:focus {
+.clear#password-strength.strong.tribe-events-read-more:focus, .clear#password-strength.strong.button-secondary:focus, .clear#password-strength.strong.button-primary:focus, .clear.success.ddownload-link:focus, .clear.ddownload-link#password-strength.good:focus, .clear.ddownload-link#password-strength.strong:focus {
   border-color: #157539;
   color: #157539;
 }
 .button.clear.success:hover.disabled, #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit]:hover.disabled, #tribe-events .clear.success.tribe-events-button:hover.disabled,
 .clear.success.tribe-events-button:hover.disabled,
-.clear.success.tribe-events-read-more:hover.disabled, .clear.success.button-secondary:hover.disabled, .clear.success.button-primary:hover.disabled, .caldera-grid .button.clear.alert.alert-success:hover.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert.alert-success[type=submit]:hover.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert.alert-success[type=submit]:hover.disabled, .caldera-grid #tribe-events .clear.alert.alert-success.tribe-events-button:hover.disabled, #tribe-events .caldera-grid .clear.alert.alert-success.tribe-events-button:hover.disabled,
-.caldera-grid .clear.alert.alert-success.tribe-events-button:hover.disabled,
-.caldera-grid .clear.alert.alert-success.tribe-events-read-more:hover.disabled, .caldera-grid .clear.alert.alert-success.button-secondary:hover.disabled, .caldera-grid .clear.alert.alert-success.button-primary:hover.disabled, .caldera-grid .button.clear.alert-success#password-strength.bad:hover.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.bad[type=submit]:hover.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.bad[type=submit]:hover.disabled,
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-button:hover.disabled,
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-read-more:hover.disabled, .caldera-grid .clear.alert-success#password-strength.bad.button-secondary:hover.disabled, .caldera-grid .clear.alert-success#password-strength.bad.button-primary:hover.disabled, .caldera-grid .button.clear.alert-success#password-strength.short:hover.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.short[type=submit]:hover.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.short[type=submit]:hover.disabled,
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-button:hover.disabled,
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-read-more:hover.disabled, .caldera-grid .clear.alert-success#password-strength.short.button-secondary:hover.disabled, .caldera-grid .clear.alert-success#password-strength.short.button-primary:hover.disabled, .button.clear#password-strength.good:hover.disabled, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:hover.disabled,
+.clear.success.tribe-events-read-more:hover.disabled, .clear.success.button-secondary:hover.disabled, .clear.success.button-primary:hover.disabled, .button.clear#password-strength.good:hover.disabled, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:hover.disabled,
 .clear#password-strength.good.tribe-events-button:hover.disabled,
 .clear#password-strength.good.tribe-events-read-more:hover.disabled, .clear#password-strength.good.button-secondary:hover.disabled, .clear#password-strength.good.button-primary:hover.disabled, .button.clear#password-strength.strong:hover.disabled, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.strong[type=submit]:hover.disabled,
 .clear#password-strength.strong.tribe-events-button:hover.disabled,
-.clear#password-strength.strong.tribe-events-read-more:hover.disabled, .clear#password-strength.strong.button-secondary:hover.disabled, .clear#password-strength.strong.button-primary:hover.disabled, .clear.success.ddownload-link:hover.disabled, .caldera-grid .clear.ddownload-link.alert.alert-success:hover.disabled, .caldera-grid .clear.ddownload-link.alert-success#password-strength.bad:hover.disabled, .caldera-grid .clear.ddownload-link.alert-success#password-strength.short:hover.disabled, .clear.ddownload-link#password-strength.good:hover.disabled, .clear.ddownload-link#password-strength.strong:hover.disabled, .button.clear.success:hover[disabled], #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit]:hover[disabled], #tribe-events .clear.success.tribe-events-button:hover[disabled],
+.clear#password-strength.strong.tribe-events-read-more:hover.disabled, .clear#password-strength.strong.button-secondary:hover.disabled, .clear#password-strength.strong.button-primary:hover.disabled, .clear.success.ddownload-link:hover.disabled, .clear.ddownload-link#password-strength.good:hover.disabled, .clear.ddownload-link#password-strength.strong:hover.disabled, .button.clear.success:hover[disabled], #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit]:hover[disabled], #tribe-events .clear.success.tribe-events-button:hover[disabled],
 .clear.success.tribe-events-button:hover[disabled],
-.clear.success.tribe-events-read-more:hover[disabled], .clear.success.button-secondary:hover[disabled], .clear.success.button-primary:hover[disabled], .caldera-grid .button.clear.alert.alert-success:hover[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert.alert-success[type=submit]:hover[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert.alert-success[type=submit]:hover[disabled], .caldera-grid #tribe-events .clear.alert.alert-success.tribe-events-button:hover[disabled], #tribe-events .caldera-grid .clear.alert.alert-success.tribe-events-button:hover[disabled],
-.caldera-grid .clear.alert.alert-success.tribe-events-button:hover[disabled],
-.caldera-grid .clear.alert.alert-success.tribe-events-read-more:hover[disabled], .caldera-grid .clear.alert.alert-success.button-secondary:hover[disabled], .caldera-grid .clear.alert.alert-success.button-primary:hover[disabled], .caldera-grid .button.clear.alert-success#password-strength.bad:hover[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.bad[type=submit]:hover[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.bad[type=submit]:hover[disabled],
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-button:hover[disabled],
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-read-more:hover[disabled], .caldera-grid .clear.alert-success#password-strength.bad.button-secondary:hover[disabled], .caldera-grid .clear.alert-success#password-strength.bad.button-primary:hover[disabled], .caldera-grid .button.clear.alert-success#password-strength.short:hover[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.short[type=submit]:hover[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.short[type=submit]:hover[disabled],
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-button:hover[disabled],
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-read-more:hover[disabled], .caldera-grid .clear.alert-success#password-strength.short.button-secondary:hover[disabled], .caldera-grid .clear.alert-success#password-strength.short.button-primary:hover[disabled], .button.clear#password-strength.good:hover[disabled], #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:hover[disabled],
+.clear.success.tribe-events-read-more:hover[disabled], .clear.success.button-secondary:hover[disabled], .clear.success.button-primary:hover[disabled], .button.clear#password-strength.good:hover[disabled], #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:hover[disabled],
 .clear#password-strength.good.tribe-events-button:hover[disabled],
 .clear#password-strength.good.tribe-events-read-more:hover[disabled], .clear#password-strength.good.button-secondary:hover[disabled], .clear#password-strength.good.button-primary:hover[disabled], .button.clear#password-strength.strong:hover[disabled], #tribe-bar-form .tribe-bar-submit input.clear#password-strength.strong[type=submit]:hover[disabled],
 .clear#password-strength.strong.tribe-events-button:hover[disabled],
-.clear#password-strength.strong.tribe-events-read-more:hover[disabled], .clear#password-strength.strong.button-secondary:hover[disabled], .clear#password-strength.strong.button-primary:hover[disabled], .clear.success.ddownload-link:hover[disabled], .caldera-grid .clear.ddownload-link.alert.alert-success:hover[disabled], .caldera-grid .clear.ddownload-link.alert-success#password-strength.bad:hover[disabled], .caldera-grid .clear.ddownload-link.alert-success#password-strength.short:hover[disabled], .clear.ddownload-link#password-strength.good:hover[disabled], .clear.ddownload-link#password-strength.strong:hover[disabled], .button.clear.success:focus.disabled, #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit]:focus.disabled, #tribe-events .clear.success.tribe-events-button:focus.disabled,
+.clear#password-strength.strong.tribe-events-read-more:hover[disabled], .clear#password-strength.strong.button-secondary:hover[disabled], .clear#password-strength.strong.button-primary:hover[disabled], .clear.success.ddownload-link:hover[disabled], .clear.ddownload-link#password-strength.good:hover[disabled], .clear.ddownload-link#password-strength.strong:hover[disabled], .button.clear.success:focus.disabled, #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit]:focus.disabled, #tribe-events .clear.success.tribe-events-button:focus.disabled,
 .clear.success.tribe-events-button:focus.disabled,
-.clear.success.tribe-events-read-more:focus.disabled, .clear.success.button-secondary:focus.disabled, .clear.success.button-primary:focus.disabled, .caldera-grid .button.clear.alert.alert-success:focus.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert.alert-success[type=submit]:focus.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert.alert-success[type=submit]:focus.disabled, .caldera-grid #tribe-events .clear.alert.alert-success.tribe-events-button:focus.disabled, #tribe-events .caldera-grid .clear.alert.alert-success.tribe-events-button:focus.disabled,
-.caldera-grid .clear.alert.alert-success.tribe-events-button:focus.disabled,
-.caldera-grid .clear.alert.alert-success.tribe-events-read-more:focus.disabled, .caldera-grid .clear.alert.alert-success.button-secondary:focus.disabled, .caldera-grid .clear.alert.alert-success.button-primary:focus.disabled, .caldera-grid .button.clear.alert-success#password-strength.bad:focus.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.bad[type=submit]:focus.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.bad[type=submit]:focus.disabled,
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-button:focus.disabled,
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-read-more:focus.disabled, .caldera-grid .clear.alert-success#password-strength.bad.button-secondary:focus.disabled, .caldera-grid .clear.alert-success#password-strength.bad.button-primary:focus.disabled, .caldera-grid .button.clear.alert-success#password-strength.short:focus.disabled, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.short[type=submit]:focus.disabled, #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.short[type=submit]:focus.disabled,
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-button:focus.disabled,
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-read-more:focus.disabled, .caldera-grid .clear.alert-success#password-strength.short.button-secondary:focus.disabled, .caldera-grid .clear.alert-success#password-strength.short.button-primary:focus.disabled, .button.clear#password-strength.good:focus.disabled, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:focus.disabled,
+.clear.success.tribe-events-read-more:focus.disabled, .clear.success.button-secondary:focus.disabled, .clear.success.button-primary:focus.disabled, .button.clear#password-strength.good:focus.disabled, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:focus.disabled,
 .clear#password-strength.good.tribe-events-button:focus.disabled,
 .clear#password-strength.good.tribe-events-read-more:focus.disabled, .clear#password-strength.good.button-secondary:focus.disabled, .clear#password-strength.good.button-primary:focus.disabled, .button.clear#password-strength.strong:focus.disabled, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.strong[type=submit]:focus.disabled,
 .clear#password-strength.strong.tribe-events-button:focus.disabled,
-.clear#password-strength.strong.tribe-events-read-more:focus.disabled, .clear#password-strength.strong.button-secondary:focus.disabled, .clear#password-strength.strong.button-primary:focus.disabled, .clear.success.ddownload-link:focus.disabled, .caldera-grid .clear.ddownload-link.alert.alert-success:focus.disabled, .caldera-grid .clear.ddownload-link.alert-success#password-strength.bad:focus.disabled, .caldera-grid .clear.ddownload-link.alert-success#password-strength.short:focus.disabled, .clear.ddownload-link#password-strength.good:focus.disabled, .clear.ddownload-link#password-strength.strong:focus.disabled, .button.clear.success:focus[disabled], #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit]:focus[disabled], #tribe-events .clear.success.tribe-events-button:focus[disabled],
+.clear#password-strength.strong.tribe-events-read-more:focus.disabled, .clear#password-strength.strong.button-secondary:focus.disabled, .clear#password-strength.strong.button-primary:focus.disabled, .clear.success.ddownload-link:focus.disabled, .clear.ddownload-link#password-strength.good:focus.disabled, .clear.ddownload-link#password-strength.strong:focus.disabled, .button.clear.success:focus[disabled], #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit]:focus[disabled], #tribe-events .clear.success.tribe-events-button:focus[disabled],
 .clear.success.tribe-events-button:focus[disabled],
-.clear.success.tribe-events-read-more:focus[disabled], .clear.success.button-secondary:focus[disabled], .clear.success.button-primary:focus[disabled], .caldera-grid .button.clear.alert.alert-success:focus[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert.alert-success[type=submit]:focus[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert.alert-success[type=submit]:focus[disabled], .caldera-grid #tribe-events .clear.alert.alert-success.tribe-events-button:focus[disabled], #tribe-events .caldera-grid .clear.alert.alert-success.tribe-events-button:focus[disabled],
-.caldera-grid .clear.alert.alert-success.tribe-events-button:focus[disabled],
-.caldera-grid .clear.alert.alert-success.tribe-events-read-more:focus[disabled], .caldera-grid .clear.alert.alert-success.button-secondary:focus[disabled], .caldera-grid .clear.alert.alert-success.button-primary:focus[disabled], .caldera-grid .button.clear.alert-success#password-strength.bad:focus[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.bad[type=submit]:focus[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.bad[type=submit]:focus[disabled],
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-button:focus[disabled],
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-read-more:focus[disabled], .caldera-grid .clear.alert-success#password-strength.bad.button-secondary:focus[disabled], .caldera-grid .clear.alert-success#password-strength.bad.button-primary:focus[disabled], .caldera-grid .button.clear.alert-success#password-strength.short:focus[disabled], .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.short[type=submit]:focus[disabled], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.short[type=submit]:focus[disabled],
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-button:focus[disabled],
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-read-more:focus[disabled], .caldera-grid .clear.alert-success#password-strength.short.button-secondary:focus[disabled], .caldera-grid .clear.alert-success#password-strength.short.button-primary:focus[disabled], .button.clear#password-strength.good:focus[disabled], #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:focus[disabled],
+.clear.success.tribe-events-read-more:focus[disabled], .clear.success.button-secondary:focus[disabled], .clear.success.button-primary:focus[disabled], .button.clear#password-strength.good:focus[disabled], #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit]:focus[disabled],
 .clear#password-strength.good.tribe-events-button:focus[disabled],
 .clear#password-strength.good.tribe-events-read-more:focus[disabled], .clear#password-strength.good.button-secondary:focus[disabled], .clear#password-strength.good.button-primary:focus[disabled], .button.clear#password-strength.strong:focus[disabled], #tribe-bar-form .tribe-bar-submit input.clear#password-strength.strong[type=submit]:focus[disabled],
 .clear#password-strength.strong.tribe-events-button:focus[disabled],
-.clear#password-strength.strong.tribe-events-read-more:focus[disabled], .clear#password-strength.strong.button-secondary:focus[disabled], .clear#password-strength.strong.button-primary:focus[disabled], .clear.success.ddownload-link:focus[disabled], .caldera-grid .clear.ddownload-link.alert.alert-success:focus[disabled], .caldera-grid .clear.ddownload-link.alert-success#password-strength.bad:focus[disabled], .caldera-grid .clear.ddownload-link.alert-success#password-strength.short:focus[disabled], .clear.ddownload-link#password-strength.good:focus[disabled], .clear.ddownload-link#password-strength.strong:focus[disabled] {
+.clear#password-strength.strong.tribe-events-read-more:focus[disabled], .clear#password-strength.strong.button-secondary:focus[disabled], .clear#password-strength.strong.button-primary:focus[disabled], .clear.success.ddownload-link:focus[disabled], .clear.ddownload-link#password-strength.good:focus[disabled], .clear.ddownload-link#password-strength.strong:focus[disabled] {
   border: 1px solid #3adb76;
   color: #3adb76;
 }
 .button.clear.success, #tribe-bar-form .tribe-bar-submit input.clear.success[type=submit], #tribe-events .clear.success.tribe-events-button,
 .clear.success.tribe-events-button,
-.clear.success.tribe-events-read-more, .clear.success.button-secondary, .clear.success.button-primary, .caldera-grid .button.clear.alert.alert-success, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert.alert-success[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert.alert-success[type=submit], .caldera-grid #tribe-events .clear.alert.alert-success.tribe-events-button, #tribe-events .caldera-grid .clear.alert.alert-success.tribe-events-button,
-.caldera-grid .clear.alert.alert-success.tribe-events-button,
-.caldera-grid .clear.alert.alert-success.tribe-events-read-more, .caldera-grid .clear.alert.alert-success.button-secondary, .caldera-grid .clear.alert.alert-success.button-primary, .caldera-grid .button.clear.alert-success#password-strength.bad, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.bad[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.bad[type=submit],
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-button,
-.caldera-grid .clear.alert-success#password-strength.bad.tribe-events-read-more, .caldera-grid .clear.alert-success#password-strength.bad.button-secondary, .caldera-grid .clear.alert-success#password-strength.bad.button-primary, .caldera-grid .button.clear.alert-success#password-strength.short, .caldera-grid #tribe-bar-form .tribe-bar-submit input.clear.alert-success#password-strength.short[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid input.clear.alert-success#password-strength.short[type=submit],
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-button,
-.caldera-grid .clear.alert-success#password-strength.short.tribe-events-read-more, .caldera-grid .clear.alert-success#password-strength.short.button-secondary, .caldera-grid .clear.alert-success#password-strength.short.button-primary, .button.clear#password-strength.good, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit],
+.clear.success.tribe-events-read-more, .clear.success.button-secondary, .clear.success.button-primary, .button.clear#password-strength.good, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.good[type=submit],
 .clear#password-strength.good.tribe-events-button,
 .clear#password-strength.good.tribe-events-read-more, .clear#password-strength.good.button-secondary, .clear#password-strength.good.button-primary, .button.clear#password-strength.strong, #tribe-bar-form .tribe-bar-submit input.clear#password-strength.strong[type=submit],
 .clear#password-strength.strong.tribe-events-button,
-.clear#password-strength.strong.tribe-events-read-more, .clear#password-strength.strong.button-secondary, .clear#password-strength.strong.button-primary, .clear.success.ddownload-link, .caldera-grid .clear.ddownload-link.alert.alert-success, .caldera-grid .clear.ddownload-link.alert-success#password-strength.bad, .caldera-grid .clear.ddownload-link.alert-success#password-strength.short, .clear.ddownload-link#password-strength.good, .clear.ddownload-link#password-strength.strong, .button.clear.success.disabled, .button.clear.success[disabled], .button.clear.success:hover, .button.clear.success:hover.disabled, .button.clear.success:hover[disabled], .button.clear.success:focus, .button.clear.success:focus.disabled, .button.clear.success:focus[disabled] {
+.clear#password-strength.strong.tribe-events-read-more, .clear#password-strength.strong.button-secondary, .clear#password-strength.strong.button-primary, .clear.success.ddownload-link, .clear.ddownload-link#password-strength.good, .clear.ddownload-link#password-strength.strong, .button.clear.success.disabled, .button.clear.success[disabled], .button.clear.success:hover, .button.clear.success:hover.disabled, .button.clear.success:hover[disabled], .button.clear.success:focus, .button.clear.success:focus.disabled, .button.clear.success:focus[disabled] {
   border-color: transparent;
 }
 .button.clear.warning, #tribe-bar-form .tribe-bar-submit input.clear.warning[type=submit], #tribe-events .clear.warning.tribe-events-button,
@@ -7256,29 +7118,17 @@ select[multiple] {
 }
 .button.dropdown.hollow.success::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.success[type=submit]::after, #tribe-events .dropdown.hollow.success.tribe-events-button::after,
 .dropdown.hollow.success.tribe-events-button::after,
-.dropdown.hollow.success.tribe-events-read-more::after, .dropdown.hollow.success.button-secondary::after, .dropdown.hollow.success.button-primary::after, .caldera-grid .button.dropdown.hollow.alert.alert-success::after, .caldera-grid #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.alert.alert-success[type=submit]::after, #tribe-bar-form .tribe-bar-submit .caldera-grid input.dropdown.hollow.alert.alert-success[type=submit]::after, .caldera-grid #tribe-events .dropdown.hollow.alert.alert-success.tribe-events-button::after, #tribe-events .caldera-grid .dropdown.hollow.alert.alert-success.tribe-events-button::after,
-.caldera-grid .dropdown.hollow.alert.alert-success.tribe-events-button::after,
-.caldera-grid .dropdown.hollow.alert.alert-success.tribe-events-read-more::after, .caldera-grid .dropdown.hollow.alert.alert-success.button-secondary::after, .caldera-grid .dropdown.hollow.alert.alert-success.button-primary::after, .caldera-grid .button.dropdown.hollow.alert-success#password-strength.bad::after, .caldera-grid #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.alert-success#password-strength.bad[type=submit]::after, #tribe-bar-form .tribe-bar-submit .caldera-grid input.dropdown.hollow.alert-success#password-strength.bad[type=submit]::after,
-.caldera-grid .dropdown.hollow.alert-success#password-strength.bad.tribe-events-button::after,
-.caldera-grid .dropdown.hollow.alert-success#password-strength.bad.tribe-events-read-more::after, .caldera-grid .dropdown.hollow.alert-success#password-strength.bad.button-secondary::after, .caldera-grid .dropdown.hollow.alert-success#password-strength.bad.button-primary::after, .caldera-grid .button.dropdown.hollow.alert-success#password-strength.short::after, .caldera-grid #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.alert-success#password-strength.short[type=submit]::after, #tribe-bar-form .tribe-bar-submit .caldera-grid input.dropdown.hollow.alert-success#password-strength.short[type=submit]::after,
-.caldera-grid .dropdown.hollow.alert-success#password-strength.short.tribe-events-button::after,
-.caldera-grid .dropdown.hollow.alert-success#password-strength.short.tribe-events-read-more::after, .caldera-grid .dropdown.hollow.alert-success#password-strength.short.button-secondary::after, .caldera-grid .dropdown.hollow.alert-success#password-strength.short.button-primary::after, .button.dropdown.hollow#password-strength.good::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow#password-strength.good[type=submit]::after,
+.dropdown.hollow.success.tribe-events-read-more::after, .dropdown.hollow.success.button-secondary::after, .dropdown.hollow.success.button-primary::after, .button.dropdown.hollow#password-strength.good::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow#password-strength.good[type=submit]::after,
 .dropdown.hollow#password-strength.good.tribe-events-button::after,
 .dropdown.hollow#password-strength.good.tribe-events-read-more::after, .dropdown.hollow#password-strength.good.button-secondary::after, .dropdown.hollow#password-strength.good.button-primary::after, .button.dropdown.hollow#password-strength.strong::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow#password-strength.strong[type=submit]::after,
 .dropdown.hollow#password-strength.strong.tribe-events-button::after,
-.dropdown.hollow#password-strength.strong.tribe-events-read-more::after, .dropdown.hollow#password-strength.strong.button-secondary::after, .dropdown.hollow#password-strength.strong.button-primary::after, .dropdown.hollow.success.ddownload-link::after, .caldera-grid .dropdown.hollow.ddownload-link.alert.alert-success::after, .caldera-grid .dropdown.hollow.ddownload-link.alert-success#password-strength.bad::after, .caldera-grid .dropdown.hollow.ddownload-link.alert-success#password-strength.short::after, .dropdown.hollow.ddownload-link#password-strength.good::after, .dropdown.hollow.ddownload-link#password-strength.strong::after, .button.dropdown.clear.success::after, #tribe-bar-form .tribe-bar-submit input.dropdown.clear.success[type=submit]::after, #tribe-events .dropdown.clear.success.tribe-events-button::after,
+.dropdown.hollow#password-strength.strong.tribe-events-read-more::after, .dropdown.hollow#password-strength.strong.button-secondary::after, .dropdown.hollow#password-strength.strong.button-primary::after, .dropdown.hollow.success.ddownload-link::after, .dropdown.hollow.ddownload-link#password-strength.good::after, .dropdown.hollow.ddownload-link#password-strength.strong::after, .button.dropdown.clear.success::after, #tribe-bar-form .tribe-bar-submit input.dropdown.clear.success[type=submit]::after, #tribe-events .dropdown.clear.success.tribe-events-button::after,
 .dropdown.clear.success.tribe-events-button::after,
-.dropdown.clear.success.tribe-events-read-more::after, .dropdown.clear.success.button-secondary::after, .dropdown.clear.success.button-primary::after, .caldera-grid .button.dropdown.clear.alert.alert-success::after, .caldera-grid #tribe-bar-form .tribe-bar-submit input.dropdown.clear.alert.alert-success[type=submit]::after, #tribe-bar-form .tribe-bar-submit .caldera-grid input.dropdown.clear.alert.alert-success[type=submit]::after, .caldera-grid #tribe-events .dropdown.clear.alert.alert-success.tribe-events-button::after, #tribe-events .caldera-grid .dropdown.clear.alert.alert-success.tribe-events-button::after,
-.caldera-grid .dropdown.clear.alert.alert-success.tribe-events-button::after,
-.caldera-grid .dropdown.clear.alert.alert-success.tribe-events-read-more::after, .caldera-grid .dropdown.clear.alert.alert-success.button-secondary::after, .caldera-grid .dropdown.clear.alert.alert-success.button-primary::after, .caldera-grid .button.dropdown.clear.alert-success#password-strength.bad::after, .caldera-grid #tribe-bar-form .tribe-bar-submit input.dropdown.clear.alert-success#password-strength.bad[type=submit]::after, #tribe-bar-form .tribe-bar-submit .caldera-grid input.dropdown.clear.alert-success#password-strength.bad[type=submit]::after,
-.caldera-grid .dropdown.clear.alert-success#password-strength.bad.tribe-events-button::after,
-.caldera-grid .dropdown.clear.alert-success#password-strength.bad.tribe-events-read-more::after, .caldera-grid .dropdown.clear.alert-success#password-strength.bad.button-secondary::after, .caldera-grid .dropdown.clear.alert-success#password-strength.bad.button-primary::after, .caldera-grid .button.dropdown.clear.alert-success#password-strength.short::after, .caldera-grid #tribe-bar-form .tribe-bar-submit input.dropdown.clear.alert-success#password-strength.short[type=submit]::after, #tribe-bar-form .tribe-bar-submit .caldera-grid input.dropdown.clear.alert-success#password-strength.short[type=submit]::after,
-.caldera-grid .dropdown.clear.alert-success#password-strength.short.tribe-events-button::after,
-.caldera-grid .dropdown.clear.alert-success#password-strength.short.tribe-events-read-more::after, .caldera-grid .dropdown.clear.alert-success#password-strength.short.button-secondary::after, .caldera-grid .dropdown.clear.alert-success#password-strength.short.button-primary::after, .button.dropdown.clear#password-strength.good::after, #tribe-bar-form .tribe-bar-submit input.dropdown.clear#password-strength.good[type=submit]::after,
+.dropdown.clear.success.tribe-events-read-more::after, .dropdown.clear.success.button-secondary::after, .dropdown.clear.success.button-primary::after, .button.dropdown.clear#password-strength.good::after, #tribe-bar-form .tribe-bar-submit input.dropdown.clear#password-strength.good[type=submit]::after,
 .dropdown.clear#password-strength.good.tribe-events-button::after,
 .dropdown.clear#password-strength.good.tribe-events-read-more::after, .dropdown.clear#password-strength.good.button-secondary::after, .dropdown.clear#password-strength.good.button-primary::after, .button.dropdown.clear#password-strength.strong::after, #tribe-bar-form .tribe-bar-submit input.dropdown.clear#password-strength.strong[type=submit]::after,
 .dropdown.clear#password-strength.strong.tribe-events-button::after,
-.dropdown.clear#password-strength.strong.tribe-events-read-more::after, .dropdown.clear#password-strength.strong.button-secondary::after, .dropdown.clear#password-strength.strong.button-primary::after, .dropdown.clear.success.ddownload-link::after, .caldera-grid .dropdown.clear.ddownload-link.alert.alert-success::after, .caldera-grid .dropdown.clear.ddownload-link.alert-success#password-strength.bad::after, .caldera-grid .dropdown.clear.ddownload-link.alert-success#password-strength.short::after, .dropdown.clear.ddownload-link#password-strength.good::after, .dropdown.clear.ddownload-link#password-strength.strong::after {
+.dropdown.clear#password-strength.strong.tribe-events-read-more::after, .dropdown.clear#password-strength.strong.button-secondary::after, .dropdown.clear#password-strength.strong.button-primary::after, .dropdown.clear.success.ddownload-link::after, .dropdown.clear.ddownload-link#password-strength.good::after, .dropdown.clear.ddownload-link#password-strength.strong::after {
   border-top-color: #3adb76;
 }
 .button.dropdown.hollow.warning::after, #tribe-bar-form .tribe-bar-submit input.dropdown.hollow.warning[type=submit]::after, #tribe-events .dropdown.hollow.warning.tribe-events-button::after,
@@ -7492,7 +7342,7 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
   background: #767676;
   color: #fefefe;
 }
-.badge.success, .caldera-grid .badge.alert.alert-success, .caldera-grid .badge.alert-success#password-strength.bad, .caldera-grid .badge.alert-success#password-strength.short, .badge#password-strength.good, .badge#password-strength.strong {
+.badge.success, .badge#password-strength.good, .badge#password-strength.strong {
   background: #3adb76;
   color: #4A4A4A;
 }
@@ -7576,13 +7426,7 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
 }
 .button-group.small .button, .button-group.small #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.small input[type=submit], .button-group.small #tribe-events .tribe-events-button, #tribe-events .button-group.small .tribe-events-button,
 .button-group.small .tribe-events-button,
-.button-group.small .tribe-events-read-more, .button-group.small .button-secondary, .button-group.small .button-primary, .caldera-grid .button-group.alert .button, .caldera-grid .button-group.alert #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert input[type=submit], .caldera-grid .button-group.alert #tribe-events .tribe-events-button, #tribe-events .caldera-grid .button-group.alert .tribe-events-button,
-.caldera-grid .button-group.alert .tribe-events-button,
-.caldera-grid .button-group.alert .tribe-events-read-more, .caldera-grid .button-group.alert .button-secondary, .caldera-grid .button-group.alert .button-primary, .caldera-grid .button-group#password-strength.bad .button, .caldera-grid .button-group#password-strength.bad #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group#password-strength.bad input[type=submit],
-.caldera-grid .button-group#password-strength.bad .tribe-events-button,
-.caldera-grid .button-group#password-strength.bad .tribe-events-read-more, .caldera-grid .button-group#password-strength.bad .button-secondary, .caldera-grid .button-group#password-strength.bad .button-primary, .caldera-grid .button-group#password-strength.short .button, .caldera-grid .button-group#password-strength.short #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group#password-strength.short input[type=submit],
-.caldera-grid .button-group#password-strength.short .tribe-events-button,
-.caldera-grid .button-group#password-strength.short .tribe-events-read-more, .caldera-grid .button-group#password-strength.short .button-secondary, .caldera-grid .button-group#password-strength.short .button-primary, .button-group.small .ddownload-link, .caldera-grid .button-group.alert .ddownload-link, .caldera-grid .button-group#password-strength.bad .ddownload-link, .caldera-grid .button-group#password-strength.short .ddownload-link {
+.button-group.small .tribe-events-read-more, .button-group.small .button-secondary, .button-group.small .button-primary, .button-group.small .ddownload-link {
   font-size: 0.75rem;
 }
 .button-group.large .button, .button-group.large #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.large input[type=submit], .button-group.large #tribe-events .tribe-events-button, #tribe-events .button-group.large .tribe-events-button,
@@ -8089,45 +7933,27 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
 }
 .button-group.success .button, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit], .button-group.success #tribe-events .tribe-events-button, #tribe-events .button-group.success .tribe-events-button,
 .button-group.success .tribe-events-button,
-.button-group.success .tribe-events-read-more, .button-group.success .button-secondary, .button-group.success .button-primary, .caldera-grid .button-group.alert.alert-success .button, .caldera-grid .button-group.alert.alert-success #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert.alert-success input[type=submit], .caldera-grid .button-group.alert.alert-success #tribe-events .tribe-events-button, #tribe-events .caldera-grid .button-group.alert.alert-success .tribe-events-button,
-.caldera-grid .button-group.alert.alert-success .tribe-events-button,
-.caldera-grid .button-group.alert.alert-success .tribe-events-read-more, .caldera-grid .button-group.alert.alert-success .button-secondary, .caldera-grid .button-group.alert.alert-success .button-primary, .caldera-grid .button-group.alert-success#password-strength.bad .button, .caldera-grid .button-group.alert-success#password-strength.bad #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert-success#password-strength.bad input[type=submit],
-.caldera-grid .button-group.alert-success#password-strength.bad .tribe-events-button,
-.caldera-grid .button-group.alert-success#password-strength.bad .tribe-events-read-more, .caldera-grid .button-group.alert-success#password-strength.bad .button-secondary, .caldera-grid .button-group.alert-success#password-strength.bad .button-primary, .caldera-grid .button-group.alert-success#password-strength.short .button, .caldera-grid .button-group.alert-success#password-strength.short #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert-success#password-strength.short input[type=submit],
-.caldera-grid .button-group.alert-success#password-strength.short .tribe-events-button,
-.caldera-grid .button-group.alert-success#password-strength.short .tribe-events-read-more, .caldera-grid .button-group.alert-success#password-strength.short .button-secondary, .caldera-grid .button-group.alert-success#password-strength.short .button-primary, .button-group#password-strength.good .button, .button-group#password-strength.good #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group#password-strength.good input[type=submit],
+.button-group.success .tribe-events-read-more, .button-group.success .button-secondary, .button-group.success .button-primary, .button-group#password-strength.good .button, .button-group#password-strength.good #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group#password-strength.good input[type=submit],
 .button-group#password-strength.good .tribe-events-button,
 .button-group#password-strength.good .tribe-events-read-more, .button-group#password-strength.good .button-secondary, .button-group#password-strength.good .button-primary, .button-group#password-strength.strong .button, .button-group#password-strength.strong #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-bar-form .tribe-bar-submit .button-group#password-strength.strong input[type=submit],
 .button-group#password-strength.strong .tribe-events-button,
-.button-group#password-strength.strong .tribe-events-read-more, .button-group#password-strength.strong .button-secondary, .button-group#password-strength.strong .button-primary, .button-group.success .ddownload-link, .caldera-grid .button-group.alert.alert-success .ddownload-link, .caldera-grid .button-group.alert-success#password-strength.bad .ddownload-link, .caldera-grid .button-group.alert-success#password-strength.short .ddownload-link, .button-group#password-strength.good .ddownload-link, .button-group#password-strength.strong .ddownload-link {
+.button-group#password-strength.strong .tribe-events-read-more, .button-group#password-strength.strong .button-secondary, .button-group#password-strength.strong .button-primary, .button-group.success .ddownload-link, .button-group#password-strength.good .ddownload-link, .button-group#password-strength.strong .ddownload-link {
   background-color: #3adb76;
   color: #4A4A4A;
 }
 .button-group.success .button:hover, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit]:hover, .button-group.success #tribe-events .tribe-events-button:hover, #tribe-events .button-group.success .tribe-events-button:hover,
 .button-group.success .tribe-events-button:hover,
-.button-group.success .tribe-events-read-more:hover, .button-group.success .button-secondary:hover, .button-group.success .button-primary:hover, .caldera-grid .button-group.alert.alert-success .button:hover, .caldera-grid .button-group.alert.alert-success #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert.alert-success input[type=submit]:hover, .caldera-grid .button-group.alert.alert-success #tribe-events .tribe-events-button:hover, #tribe-events .caldera-grid .button-group.alert.alert-success .tribe-events-button:hover,
-.caldera-grid .button-group.alert.alert-success .tribe-events-button:hover,
-.caldera-grid .button-group.alert.alert-success .tribe-events-read-more:hover, .caldera-grid .button-group.alert.alert-success .button-secondary:hover, .caldera-grid .button-group.alert.alert-success .button-primary:hover, .caldera-grid .button-group.alert-success#password-strength.bad .button:hover, .caldera-grid .button-group.alert-success#password-strength.bad #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert-success#password-strength.bad input[type=submit]:hover,
-.caldera-grid .button-group.alert-success#password-strength.bad .tribe-events-button:hover,
-.caldera-grid .button-group.alert-success#password-strength.bad .tribe-events-read-more:hover, .caldera-grid .button-group.alert-success#password-strength.bad .button-secondary:hover, .caldera-grid .button-group.alert-success#password-strength.bad .button-primary:hover, .caldera-grid .button-group.alert-success#password-strength.short .button:hover, .caldera-grid .button-group.alert-success#password-strength.short #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert-success#password-strength.short input[type=submit]:hover,
-.caldera-grid .button-group.alert-success#password-strength.short .tribe-events-button:hover,
-.caldera-grid .button-group.alert-success#password-strength.short .tribe-events-read-more:hover, .caldera-grid .button-group.alert-success#password-strength.short .button-secondary:hover, .caldera-grid .button-group.alert-success#password-strength.short .button-primary:hover, .button-group#password-strength.good .button:hover, .button-group#password-strength.good #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group#password-strength.good input[type=submit]:hover,
+.button-group.success .tribe-events-read-more:hover, .button-group.success .button-secondary:hover, .button-group.success .button-primary:hover, .button-group#password-strength.good .button:hover, .button-group#password-strength.good #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group#password-strength.good input[type=submit]:hover,
 .button-group#password-strength.good .tribe-events-button:hover,
 .button-group#password-strength.good .tribe-events-read-more:hover, .button-group#password-strength.good .button-secondary:hover, .button-group#password-strength.good .button-primary:hover, .button-group#password-strength.strong .button:hover, .button-group#password-strength.strong #tribe-bar-form .tribe-bar-submit input[type=submit]:hover, #tribe-bar-form .tribe-bar-submit .button-group#password-strength.strong input[type=submit]:hover,
 .button-group#password-strength.strong .tribe-events-button:hover,
-.button-group#password-strength.strong .tribe-events-read-more:hover, .button-group#password-strength.strong .button-secondary:hover, .button-group#password-strength.strong .button-primary:hover, .button-group.success .ddownload-link:hover, .caldera-grid .button-group.alert.alert-success .ddownload-link:hover, .caldera-grid .button-group.alert-success#password-strength.bad .ddownload-link:hover, .caldera-grid .button-group.alert-success#password-strength.short .ddownload-link:hover, .button-group#password-strength.good .ddownload-link:hover, .button-group#password-strength.strong .ddownload-link:hover, .button-group.success .button:focus, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit]:focus, .button-group.success #tribe-events .tribe-events-button:focus, #tribe-events .button-group.success .tribe-events-button:focus,
+.button-group#password-strength.strong .tribe-events-read-more:hover, .button-group#password-strength.strong .button-secondary:hover, .button-group#password-strength.strong .button-primary:hover, .button-group.success .ddownload-link:hover, .button-group#password-strength.good .ddownload-link:hover, .button-group#password-strength.strong .ddownload-link:hover, .button-group.success .button:focus, .button-group.success #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group.success input[type=submit]:focus, .button-group.success #tribe-events .tribe-events-button:focus, #tribe-events .button-group.success .tribe-events-button:focus,
 .button-group.success .tribe-events-button:focus,
-.button-group.success .tribe-events-read-more:focus, .button-group.success .button-secondary:focus, .button-group.success .button-primary:focus, .caldera-grid .button-group.alert.alert-success .button:focus, .caldera-grid .button-group.alert.alert-success #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert.alert-success input[type=submit]:focus, .caldera-grid .button-group.alert.alert-success #tribe-events .tribe-events-button:focus, #tribe-events .caldera-grid .button-group.alert.alert-success .tribe-events-button:focus,
-.caldera-grid .button-group.alert.alert-success .tribe-events-button:focus,
-.caldera-grid .button-group.alert.alert-success .tribe-events-read-more:focus, .caldera-grid .button-group.alert.alert-success .button-secondary:focus, .caldera-grid .button-group.alert.alert-success .button-primary:focus, .caldera-grid .button-group.alert-success#password-strength.bad .button:focus, .caldera-grid .button-group.alert-success#password-strength.bad #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert-success#password-strength.bad input[type=submit]:focus,
-.caldera-grid .button-group.alert-success#password-strength.bad .tribe-events-button:focus,
-.caldera-grid .button-group.alert-success#password-strength.bad .tribe-events-read-more:focus, .caldera-grid .button-group.alert-success#password-strength.bad .button-secondary:focus, .caldera-grid .button-group.alert-success#password-strength.bad .button-primary:focus, .caldera-grid .button-group.alert-success#password-strength.short .button:focus, .caldera-grid .button-group.alert-success#password-strength.short #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .caldera-grid .button-group.alert-success#password-strength.short input[type=submit]:focus,
-.caldera-grid .button-group.alert-success#password-strength.short .tribe-events-button:focus,
-.caldera-grid .button-group.alert-success#password-strength.short .tribe-events-read-more:focus, .caldera-grid .button-group.alert-success#password-strength.short .button-secondary:focus, .caldera-grid .button-group.alert-success#password-strength.short .button-primary:focus, .button-group#password-strength.good .button:focus, .button-group#password-strength.good #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group#password-strength.good input[type=submit]:focus,
+.button-group.success .tribe-events-read-more:focus, .button-group.success .button-secondary:focus, .button-group.success .button-primary:focus, .button-group#password-strength.good .button:focus, .button-group#password-strength.good #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group#password-strength.good input[type=submit]:focus,
 .button-group#password-strength.good .tribe-events-button:focus,
 .button-group#password-strength.good .tribe-events-read-more:focus, .button-group#password-strength.good .button-secondary:focus, .button-group#password-strength.good .button-primary:focus, .button-group#password-strength.strong .button:focus, .button-group#password-strength.strong #tribe-bar-form .tribe-bar-submit input[type=submit]:focus, #tribe-bar-form .tribe-bar-submit .button-group#password-strength.strong input[type=submit]:focus,
 .button-group#password-strength.strong .tribe-events-button:focus,
-.button-group#password-strength.strong .tribe-events-read-more:focus, .button-group#password-strength.strong .button-secondary:focus, .button-group#password-strength.strong .button-primary:focus, .button-group.success .ddownload-link:focus, .caldera-grid .button-group.alert.alert-success .ddownload-link:focus, .caldera-grid .button-group.alert-success#password-strength.bad .ddownload-link:focus, .caldera-grid .button-group.alert-success#password-strength.short .ddownload-link:focus, .button-group#password-strength.good .ddownload-link:focus, .button-group#password-strength.strong .ddownload-link:focus {
+.button-group#password-strength.strong .tribe-events-read-more:focus, .button-group#password-strength.strong .button-secondary:focus, .button-group#password-strength.strong .button-primary:focus, .button-group.success .ddownload-link:focus, .button-group#password-strength.good .ddownload-link:focus, .button-group#password-strength.strong .ddownload-link:focus {
   background-color: #22bb5b;
   color: #4A4A4A;
 }
@@ -9423,7 +9249,7 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
   }
 }
 
-.callout, .tribe-events-notices, .caldera-grid .alert, .caldera-grid #password-strength.bad, .caldera-grid #password-strength.short, .sidebar .login, #password-strength {
+.callout, .tribe-events-notices, .sidebar .login, #password-strength {
   position: relative;
   margin: 0 0 1rem 0;
   padding: 1rem;
@@ -9432,13 +9258,13 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
   background-color: white;
   color: #4A4A4A;
 }
-.callout > :first-child, .tribe-events-notices > :first-child, .caldera-grid .alert > :first-child, .sidebar .login > :first-child, #password-strength > :first-child {
+.callout > :first-child, .tribe-events-notices > :first-child, .sidebar .login > :first-child, #password-strength > :first-child {
   margin-top: 0;
 }
-.callout > :last-child, .tribe-events-notices > :last-child, .caldera-grid .alert > :last-child, .sidebar .login > :last-child, #password-strength > :last-child {
+.callout > :last-child, .tribe-events-notices > :last-child, .sidebar .login > :last-child, #password-strength > :last-child {
   margin-bottom: 0;
 }
-.callout.primary, .tribe-events-notices, .caldera-grid .primary.alert, .caldera-grid .alert.tribe-events-notices, .sidebar .primary.login, .sidebar .login.tribe-events-notices, .primary#password-strength, #password-strength.tribe-events-notices {
+.callout.primary, .tribe-events-notices, .sidebar .primary.login, .sidebar .login.tribe-events-notices, .primary#password-strength, #password-strength.tribe-events-notices {
   background-color: #dee8f5;
   color: #4A4A4A;
 }
@@ -9446,11 +9272,7 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
 .tribe-event-featured .callout.tribe-events-button,
 .tribe-event-featured .tribe-events-button.tribe-events-notices,
 .tribe-event-featured .callout.tribe-events-read-more,
-.tribe-event-featured .tribe-events-read-more.tribe-events-notices, .callout.button-secondary, .button-secondary.tribe-events-notices, .caldera-grid .secondary.alert, .caldera-grid .tribe-event-featured #tribe-events .alert.tribe-events-button, .tribe-event-featured #tribe-events .caldera-grid .alert.tribe-events-button,
-.caldera-grid .tribe-event-featured .alert.tribe-events-button,
-.tribe-event-featured .caldera-grid .alert.tribe-events-button,
-.caldera-grid .tribe-event-featured .alert.tribe-events-read-more,
-.tribe-event-featured .caldera-grid .alert.tribe-events-read-more, .caldera-grid .alert.button-secondary, .sidebar .secondary.login, .sidebar .tribe-event-featured #tribe-events .login.tribe-events-button, .tribe-event-featured #tribe-events .sidebar .login.tribe-events-button,
+.tribe-event-featured .tribe-events-read-more.tribe-events-notices, .callout.button-secondary, .button-secondary.tribe-events-notices, .sidebar .secondary.login, .sidebar .tribe-event-featured #tribe-events .login.tribe-events-button, .tribe-event-featured #tribe-events .sidebar .login.tribe-events-button,
 .sidebar .tribe-event-featured .login.tribe-events-button,
 .tribe-event-featured .sidebar .login.tribe-events-button,
 .sidebar .tribe-event-featured .login.tribe-events-read-more,
@@ -9460,25 +9282,25 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
   background-color: #eaeaea;
   color: #4A4A4A;
 }
-.callout.success, .success.tribe-events-notices, .caldera-grid .success.alert, .caldera-grid .alert.alert-success, .sidebar .success.login, .success#password-strength, .caldera-grid #password-strength.alert.alert-success, .caldera-grid #password-strength.alert-success.bad, .caldera-grid #password-strength.alert-success.short, #password-strength.good, #password-strength.strong {
+.callout.success, .success.tribe-events-notices, .sidebar .success.login, .success#password-strength, #password-strength.good, #password-strength.strong {
   background-color: #e1faea;
   color: #4A4A4A;
 }
-.callout.warning, .warning.tribe-events-notices, .caldera-grid .warning.alert, .sidebar .warning.login, .warning#password-strength {
+.callout.warning, .warning.tribe-events-notices, .sidebar .warning.login, .warning#password-strength {
   background-color: #fff3d9;
   color: #4A4A4A;
 }
-.callout.alert, .alert.tribe-events-notices, .caldera-grid .alert, .sidebar .alert.login, .alert#password-strength, #password-strength.bad, #password-strength.short {
+.callout.alert, .alert.tribe-events-notices, .sidebar .alert.login, .alert#password-strength, #password-strength.bad, #password-strength.short {
   background-color: #fde1de;
   color: #4A4A4A;
 }
-.callout.small, .small.tribe-events-notices, .caldera-grid .alert, .sidebar .small.login, .small#password-strength, .caldera-grid #password-strength.alert, .caldera-grid #password-strength.bad, .caldera-grid #password-strength.short {
+.callout.small, .small.tribe-events-notices, .sidebar .small.login, .small#password-strength {
   padding-top: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
 }
-.callout.large, .large.tribe-events-notices, .caldera-grid .large.alert, .sidebar .large.login, .large#password-strength {
+.callout.large, .large.tribe-events-notices, .sidebar .large.login, .large#password-strength {
   padding-top: 3rem;
   padding-right: 3rem;
   padding-bottom: 3rem;
@@ -9528,7 +9350,7 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
 .close-button:hover, .close-button:focus {
   color: #4A4A4A;
 }
-.close-button.small, .caldera-grid .close-button.alert, .caldera-grid .close-button#password-strength.bad, .caldera-grid .close-button#password-strength.short {
+.close-button.small {
   right: 0.66rem;
   top: 0.33em;
   font-size: 1.5em;
@@ -9976,7 +9798,7 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
   width: 100px;
 }
 
-.dropdown-pane.small, .caldera-grid .dropdown-pane.alert, .caldera-grid .dropdown-pane#password-strength.bad, .caldera-grid .dropdown-pane#password-strength.short {
+.dropdown-pane.small {
   width: 200px;
 }
 
@@ -10465,7 +10287,7 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
   background: #767676;
   color: #fefefe;
 }
-.label.success, .tribe-events-schedule .success.tribe-events-cost, .caldera-grid .label.alert.alert-success, .caldera-grid .tribe-events-schedule .alert.alert-success.tribe-events-cost, .tribe-events-schedule .caldera-grid .alert.alert-success.tribe-events-cost, .caldera-grid .label.alert-success#password-strength.bad, .caldera-grid .tribe-events-schedule .alert-success#password-strength.bad.tribe-events-cost, .tribe-events-schedule .caldera-grid .alert-success#password-strength.bad.tribe-events-cost, .caldera-grid .label.alert-success#password-strength.short, .caldera-grid .tribe-events-schedule .alert-success#password-strength.short.tribe-events-cost, .tribe-events-schedule .caldera-grid .alert-success#password-strength.short.tribe-events-cost, .label#password-strength.good, .tribe-events-schedule #password-strength.good.tribe-events-cost, .label#password-strength.strong, .tribe-events-schedule #password-strength.strong.tribe-events-cost {
+.label.success, .tribe-events-schedule .success.tribe-events-cost, .label#password-strength.good, .tribe-events-schedule #password-strength.good.tribe-events-cost, .label#password-strength.strong, .tribe-events-schedule #password-strength.strong.tribe-events-cost {
   background: #3adb76;
   color: #4A4A4A;
 }
@@ -11259,7 +11081,7 @@ a.tribe-events-read-more:focus, a.button-secondary:focus, a.button-primary:focus
 .tribe-event-featured .progress.tribe-events-read-more .progress-meter, .progress.button-secondary .progress-meter {
   background-color: #767676;
 }
-.progress.success .progress-meter, .caldera-grid .progress.alert.alert-success .progress-meter, .caldera-grid .progress.alert-success#password-strength.bad .progress-meter, .caldera-grid .progress.alert-success#password-strength.short .progress-meter, .progress#password-strength.good .progress-meter, .progress#password-strength.strong .progress-meter {
+.progress.success .progress-meter, .progress#password-strength.good .progress-meter, .progress#password-strength.strong .progress-meter {
   background-color: #3adb76;
 }
 .progress.warning .progress-meter {
@@ -11464,7 +11286,7 @@ html.is-reveal-open body {
   }
 }
 @media print, screen and (min-width: 40em) {
-  .reveal.small, .caldera-grid .reveal.alert, .caldera-grid .reveal#password-strength.bad, .caldera-grid .reveal#password-strength.short {
+  .reveal.small {
     width: 50%;
     max-width: 68.1818181818rem;
   }
@@ -11601,21 +11423,21 @@ input:checked + label > .switch-inactive {
   left: 1.75rem;
 }
 
-.switch.small, .caldera-grid .switch.alert, .caldera-grid .switch#password-strength.bad, .caldera-grid .switch#password-strength.short {
+.switch.small {
   height: 1.75rem;
 }
-.switch.small .switch-paddle, .caldera-grid .switch.alert .switch-paddle, .caldera-grid .switch#password-strength.bad .switch-paddle, .caldera-grid .switch#password-strength.short .switch-paddle {
+.switch.small .switch-paddle {
   width: 3.5rem;
   height: 1.75rem;
   font-size: 0.6818181818rem;
 }
-.switch.small .switch-paddle::after, .caldera-grid .switch.alert .switch-paddle::after, .caldera-grid .switch#password-strength.bad .switch-paddle::after, .caldera-grid .switch#password-strength.short .switch-paddle::after {
+.switch.small .switch-paddle::after {
   top: 0.25rem;
   left: 0.25rem;
   width: 1.25rem;
   height: 1.25rem;
 }
-.switch.small input:checked ~ .switch-paddle::after, .caldera-grid .switch.alert input:checked ~ .switch-paddle::after, .caldera-grid .switch#password-strength.bad input:checked ~ .switch-paddle::after, .caldera-grid .switch#password-strength.short input:checked ~ .switch-paddle::after {
+.switch.small input:checked ~ .switch-paddle::after {
   left: 2rem;
 }
 
@@ -12841,11 +12663,11 @@ a:visited.delete:focus,
 a:visited.delete:hover {
   color: #ff0000;
 }
-.callout.alert a, .alert.tribe-events-notices a, .caldera-grid .alert a, .sidebar .alert.login a, .alert#password-strength a, #password-strength.bad a, #password-strength.short a,
+.callout.alert a, .alert.tribe-events-notices a, .sidebar .alert.login a, .alert#password-strength a, #password-strength.bad a, #password-strength.short a,
 .callout.alert a:visited {
   color: #F03626;
 }
-.callout.alert a:active, .alert.tribe-events-notices a:active, .caldera-grid .alert a:active, .sidebar .alert.login a:active, .alert#password-strength a:active, #password-strength.bad a:active, #password-strength.short a:active, .callout.alert a:focus, .alert.tribe-events-notices a:focus, .caldera-grid .alert a:focus, .sidebar .alert.login a:focus, .alert#password-strength a:focus, #password-strength.bad a:focus, #password-strength.short a:focus, .callout.alert a:hover, .alert.tribe-events-notices a:hover, .caldera-grid .alert a:hover, .sidebar .alert.login a:hover, .alert#password-strength a:hover, #password-strength.bad a:hover, #password-strength.short a:hover,
+.callout.alert a:active, .alert.tribe-events-notices a:active, .sidebar .alert.login a:active, .alert#password-strength a:active, #password-strength.bad a:active, #password-strength.short a:active, .callout.alert a:focus, .alert.tribe-events-notices a:focus, .sidebar .alert.login a:focus, .alert#password-strength a:focus, #password-strength.bad a:focus, #password-strength.short a:focus, .callout.alert a:hover, .alert.tribe-events-notices a:hover, .sidebar .alert.login a:hover, .alert#password-strength a:hover, #password-strength.bad a:hover, #password-strength.short a:hover,
 .callout.alert a:visited:active,
 .callout.alert a:visited:focus,
 .callout.alert a:visited:hover {
@@ -15108,22 +14930,22 @@ FOUNDATION STYLES
   max-width: none;
 }
 
-.callout.small, .small.tribe-events-notices, .caldera-grid .alert, .small#password-strength, .caldera-grid #password-strength.alert, .caldera-grid #password-strength.bad, .caldera-grid #password-strength.short, .sidebar .small.login {
+.callout.small, .small.tribe-events-notices, .small#password-strength, .sidebar .small.login {
   padding: 8px 1rem;
 }
-.callout.primary, .tribe-events-notices, .caldera-grid .primary.alert, .caldera-grid .alert.tribe-events-notices, .primary#password-strength, #password-strength.tribe-events-notices, .sidebar .primary.login, .sidebar .login.tribe-events-notices {
+.callout.primary, .tribe-events-notices, .primary#password-strength, #password-strength.tribe-events-notices, .sidebar .primary.login, .sidebar .login.tribe-events-notices {
   border-color: #e5eef8;
   color: #214571;
 }
-.callout.success, .success.tribe-events-notices, .caldera-grid .success.alert, .caldera-grid .alert.alert-success, .success#password-strength, .caldera-grid #password-strength.alert.alert-success, .caldera-grid #password-strength.alert-success.bad, .caldera-grid #password-strength.alert-success.short, .sidebar .success.login, #password-strength.good, #password-strength.strong {
+.callout.success, .success.tribe-events-notices, .success#password-strength, .sidebar .success.login, #password-strength.good, #password-strength.strong {
   border-color: #c0f3d3;
   color: #136933;
 }
-.callout.warning, .warning.tribe-events-notices, .caldera-grid .warning.alert, .warning#password-strength, .sidebar .warning.login {
+.callout.warning, .warning.tribe-events-notices, .warning#password-strength, .sidebar .warning.login {
   border-color: #ffe7b3;
   color: #664600;
 }
-.callout.alert, .alert.tribe-events-notices, .caldera-grid .alert, .alert#password-strength, .sidebar .alert.login, #password-strength.bad, #password-strength.short {
+.callout.alert, .alert.tribe-events-notices, .alert#password-strength, .sidebar .alert.login, #password-strength.bad, #password-strength.short {
   border-color: #fcd1cd;
   color: #751108;
 }
@@ -15209,21 +15031,6 @@ PLUGIN STYLES
     float: right;
     margin-left: 30px;
   }
-}
-
-.caldera_forms_form .form-group {
-  margin-bottom: 1rem;
-}
-.caldera_forms_form .form-group input {
-  margin-bottom: 0;
-}
-.caldera_forms_form .control-label,
-.caldera_forms_form .help-block {
-  font-size: 80%;
-}
-.caldera_forms_form .control-label.caldera_ajax_error_block,
-.caldera_forms_form .help-block.caldera_ajax_error_block {
-  color: #F03626;
 }
 
 #cmb2-metabox-mro_cit_user_frontend_additional_contacts p.cmb2-metabox-description {
@@ -15407,6 +15214,15 @@ PLUGIN STYLES
   padding-bottom: 0;
 }
 
+:root {
+  --tec-color-background-events-bar-submit-button: #326aac;
+  --tec-color-link-primary: #326aac;
+  --tec-color-link-accent: #326aac;
+  --tec-color-accent-primary: #326aac;
+  --tec-color-button-primary: #326aac;
+  --tec-color-background-events-bar-submit-button-hover: #55b3c5;
+}
+
 #tribe-bar-form input[type=text] {
   border-bottom: 1px solid #D8D8D8;
 }
@@ -15536,6 +15352,10 @@ body.single-tribe_events .past-event-content .tribe-events-cal-links {
 
 .tribe-events-adv-list-widget .tribe-event-featured .list-info, .tribe-mini-calendar-list-wrapper .tribe-event-featured .list-info {
   padding: 0.25rem 1rem !important;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-details {
+  width: 100%;
 }
 
 .tribe-bar-year-field-filter {
@@ -15716,7 +15536,7 @@ body.single-tribe_events .past-event-content .tribe-events-cal-links {
   justify-content: center;
 }
 
-.tribe-events-single > .tribe_events > .primary.callout, .tribe-events-single > .tribe_events > .primary#password-strength, .tribe-events-single > .tribe_events > .tribe-events-notices#password-strength, .sidebar .tribe-events-single > .tribe_events > .primary.login, .caldera-grid .tribe-events-single > .tribe_events > .primary.alert, .tribe-events-single > .tribe_events > .tribe-events-notices {
+.tribe-events-single > .tribe_events > .primary.callout, .tribe-events-single > .tribe_events > .primary#password-strength, .tribe-events-single > .tribe_events > .tribe-events-notices#password-strength, .sidebar .tribe-events-single > .tribe_events > .primary.login, .tribe-events-single > .tribe_events > .tribe-events-notices {
   order: 1 !important;
   width: 100%;
 }

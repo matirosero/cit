@@ -10,41 +10,41 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Abide": () => (/* binding */ Abide),
-/* harmony export */   "Accordion": () => (/* binding */ Accordion),
-/* harmony export */   "AccordionMenu": () => (/* binding */ AccordionMenu),
-/* harmony export */   "Box": () => (/* binding */ Box),
-/* harmony export */   "Core": () => (/* binding */ Foundation),
-/* harmony export */   "CoreUtils": () => (/* binding */ foundation_core_utils),
-/* harmony export */   "Drilldown": () => (/* binding */ Drilldown),
-/* harmony export */   "Dropdown": () => (/* binding */ Dropdown),
-/* harmony export */   "DropdownMenu": () => (/* binding */ DropdownMenu),
-/* harmony export */   "Equalizer": () => (/* binding */ Equalizer),
-/* harmony export */   "Foundation": () => (/* binding */ Foundation),
-/* harmony export */   "Interchange": () => (/* binding */ Interchange),
-/* harmony export */   "Keyboard": () => (/* binding */ Keyboard),
-/* harmony export */   "Magellan": () => (/* binding */ Magellan),
-/* harmony export */   "MediaQuery": () => (/* binding */ MediaQuery),
-/* harmony export */   "Motion": () => (/* binding */ Motion),
-/* harmony export */   "Move": () => (/* binding */ Move),
-/* harmony export */   "Nest": () => (/* binding */ Nest),
-/* harmony export */   "OffCanvas": () => (/* binding */ OffCanvas),
-/* harmony export */   "Orbit": () => (/* binding */ Orbit),
-/* harmony export */   "ResponsiveAccordionTabs": () => (/* binding */ ResponsiveAccordionTabs),
-/* harmony export */   "ResponsiveMenu": () => (/* binding */ ResponsiveMenu),
-/* harmony export */   "ResponsiveToggle": () => (/* binding */ ResponsiveToggle),
-/* harmony export */   "Reveal": () => (/* binding */ Reveal),
-/* harmony export */   "Slider": () => (/* binding */ Slider),
-/* harmony export */   "SmoothScroll": () => (/* binding */ SmoothScroll),
-/* harmony export */   "Sticky": () => (/* binding */ Sticky),
-/* harmony export */   "Tabs": () => (/* binding */ Tabs),
-/* harmony export */   "Timer": () => (/* binding */ Timer),
-/* harmony export */   "Toggler": () => (/* binding */ Toggler),
-/* harmony export */   "Tooltip": () => (/* binding */ Tooltip),
-/* harmony export */   "Touch": () => (/* binding */ Touch),
-/* harmony export */   "Triggers": () => (/* binding */ Triggers),
+/* harmony export */   Abide: () => (/* binding */ Abide),
+/* harmony export */   Accordion: () => (/* binding */ Accordion),
+/* harmony export */   AccordionMenu: () => (/* binding */ AccordionMenu),
+/* harmony export */   Box: () => (/* binding */ Box),
+/* harmony export */   Core: () => (/* binding */ Foundation),
+/* harmony export */   CoreUtils: () => (/* binding */ foundation_core_utils),
+/* harmony export */   Drilldown: () => (/* binding */ Drilldown),
+/* harmony export */   Dropdown: () => (/* binding */ Dropdown),
+/* harmony export */   DropdownMenu: () => (/* binding */ DropdownMenu),
+/* harmony export */   Equalizer: () => (/* binding */ Equalizer),
+/* harmony export */   Foundation: () => (/* binding */ Foundation),
+/* harmony export */   Interchange: () => (/* binding */ Interchange),
+/* harmony export */   Keyboard: () => (/* binding */ Keyboard),
+/* harmony export */   Magellan: () => (/* binding */ Magellan),
+/* harmony export */   MediaQuery: () => (/* binding */ MediaQuery),
+/* harmony export */   Motion: () => (/* binding */ Motion),
+/* harmony export */   Move: () => (/* binding */ Move),
+/* harmony export */   Nest: () => (/* binding */ Nest),
+/* harmony export */   OffCanvas: () => (/* binding */ OffCanvas),
+/* harmony export */   Orbit: () => (/* binding */ Orbit),
+/* harmony export */   ResponsiveAccordionTabs: () => (/* binding */ ResponsiveAccordionTabs),
+/* harmony export */   ResponsiveMenu: () => (/* binding */ ResponsiveMenu),
+/* harmony export */   ResponsiveToggle: () => (/* binding */ ResponsiveToggle),
+/* harmony export */   Reveal: () => (/* binding */ Reveal),
+/* harmony export */   Slider: () => (/* binding */ Slider),
+/* harmony export */   SmoothScroll: () => (/* binding */ SmoothScroll),
+/* harmony export */   Sticky: () => (/* binding */ Sticky),
+/* harmony export */   Tabs: () => (/* binding */ Tabs),
+/* harmony export */   Timer: () => (/* binding */ Timer),
+/* harmony export */   Toggler: () => (/* binding */ Toggler),
+/* harmony export */   Tooltip: () => (/* binding */ Tooltip),
+/* harmony export */   Touch: () => (/* binding */ Touch),
+/* harmony export */   Triggers: () => (/* binding */ Triggers),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "onImagesLoaded": () => (/* binding */ onImagesLoaded)
+/* harmony export */   onImagesLoaded: () => (/* binding */ onImagesLoaded)
 /* harmony export */ });
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
@@ -1555,7 +1555,7 @@ function onTouchEnd(e) {
 }
 
 function onTouchMove(e) {
-  if ((jquery__WEBPACK_IMPORTED_MODULE_0___default().spotSwipe.preventDefault)) {
+  if ((jquery__WEBPACK_IMPORTED_MODULE_0___default().spotSwipe).preventDefault) {
     e.preventDefault();
   }
 
@@ -1567,7 +1567,7 @@ function onTouchMove(e) {
     didMoved = true;
     elapsedTime = new Date().getTime() - startTime;
 
-    if (Math.abs(dx) >= (jquery__WEBPACK_IMPORTED_MODULE_0___default().spotSwipe.moveThreshold) && elapsedTime <= (jquery__WEBPACK_IMPORTED_MODULE_0___default().spotSwipe.timeThreshold)) {
+    if (Math.abs(dx) >= (jquery__WEBPACK_IMPORTED_MODULE_0___default().spotSwipe).moveThreshold && elapsedTime <= (jquery__WEBPACK_IMPORTED_MODULE_0___default().spotSwipe).timeThreshold) {
       dir = dx > 0 ? 'left' : 'right';
     } // else if(Math.abs(dy) >= $.spotSwipe.moveThreshold && elapsedTime <= $.spotSwipe.timeThreshold) {
     //   dir = dy > 0 ? 'down' : 'up';
