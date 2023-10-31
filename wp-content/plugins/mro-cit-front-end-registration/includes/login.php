@@ -53,7 +53,7 @@ function pippin_login_form() {
 		// set this to true so the CSS is loaded
 		$pippin_load_css = true;
 
-
+		$output = pippin_login_form_fields();
 		//From Hongkiat tut
 
 		//Check login variable
@@ -82,7 +82,7 @@ function pippin_login_form() {
 		}
 
 		if ( isset($alert) ) {
-			$output = $alert.pippin_login_form_fields();
+			$output = $alert.$output;
 		}
 		
 	} else {
