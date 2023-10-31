@@ -44,6 +44,8 @@ function mro_cit_login_page( $login_url, $redirect, $force_reauth ) {
 // user login form
 function pippin_login_form() {
 
+	$output = '';
+
 	if(!is_user_logged_in()) {
 
 		global $pippin_load_css;
@@ -73,14 +75,16 @@ function pippin_login_form() {
 		  	$alert = __( '<strong>ERROR:</strong> You are logged out.', 'mro-cit-frontend');
 		}
 
-		if ( $alert != '' ) {
+		if ( isset($alert) && $alert != '' ) {
 			$alert = '<p class="callout alert login-msg"  data-closable>'
 				. $alert
 				. '</p>';
 		}
 
-
-		$output = $alert.pippin_login_form_fields();
+		if ( isset($alert) ) {
+			$output = $alert.pippin_login_form_fields();
+		}
+		
 	} else {
 		// could show some logged in user info here
 		// $output = 'user info here';
@@ -140,6 +144,9 @@ function mro_cit_front_end_login_fail( $username ) {
 **/
 add_action( 'authenticate', 'mro_cit_check_username_password', 1, 3);
 function mro_cit_check_username_password( $login, $username, $password ) {
+
+	if(!isset($_SERVER['HTTP_REFERER']))
+		return false;
 
 	// Getting URL of the login page
 	$referrer = $_SERVER['HTTP_REFERER'];

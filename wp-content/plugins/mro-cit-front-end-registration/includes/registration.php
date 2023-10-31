@@ -252,11 +252,11 @@ function pippin_add_new_member() {
 			$user_first = sanitize_text_field( $_POST["pippin_user_first"] );
 			// write_log('10. First name is '.$user_first);
 
-			if ( $subscribe_mailchimp == true ) {
+			if ( $subscribe_mailchimp == true) {
 				$mc_merge_fields['FNAME'] = $user_first;
 				// write_log('MERGE FIELD: FNAME: '.$mc_merge_fields['FNAME']);
 
-				$mc_merge_fields['LNAME'] = $user_last;
+				// $mc_merge_fields['LNAME'] = $user_last;
 				// write_log('MERGE FIELD: LNAME: '.$mc_merge_fields['LNAME']);
 			}
 
@@ -482,11 +482,17 @@ function pippin_add_new_member() {
 
 					// write_log('User is not logged in, so log in');
 
+					wp_set_current_user($new_user_id, $user_login);
+
 					// https://developer.wordpress.org/reference/functions/wp_set_auth_cookie/
 					wp_set_auth_cookie( $new_user_id, true);
 
-					wp_set_current_user($new_user_id, $user_login);
-					do_action('wp_login', $user_login);
+					
+					$user = get_user_by('ID',$new_user_id);
+					
+
+					
+					do_action('wp_login', $user_login, $user);
 
 					// send the newly created user to the home page after logging them in
 					// write_log('Redirect to '.get_edit_user_link() . "?registration=complete");
