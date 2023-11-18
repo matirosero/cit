@@ -15,11 +15,11 @@ function ci_past_reverse_chronological_v2( $template_vars ) {
 	}
    
 	return $template_vars;
-  }
-  // Change List View to Past Event Reverse Chronological Order 
-  add_filter( 'tribe_events_views_v2_view_list_template_vars', 'ci_past_reverse_chronological_v2', 100 );
-  // Change Photo View to Past Event Reverse Chronological Order
-  add_filter( 'tribe_events_views_v2_view_photo_template_vars', 'ci_past_reverse_chronological_v2', 100 );
+}
+// Change List View to Past Event Reverse Chronological Order 
+add_filter( 'tribe_events_views_v2_view_list_template_vars', 'ci_past_reverse_chronological_v2', 100 );
+// Change Photo View to Past Event Reverse Chronological Order
+add_filter( 'tribe_events_views_v2_view_photo_template_vars', 'ci_past_reverse_chronological_v2', 100 );
 
 /*
  * Add RSVP to events, depending on user capabilities,
@@ -40,16 +40,10 @@ function mro_cit_rsvp_form() {
 				$form_shortcode_remote =  get_field('cit_shortcode_credentials_remote', 'option');
 				$form_shortcode_inperson =  get_field('cit_shortcode_credentials_in-person', 'option');
 
-				?>
-
-
-					<?php
 					echo '<p class="callout primary small">Llene este formulario para <strong>asistir al evento</strong> o comuníquese con Leda Mora, correo <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a>.</p>';
 
-					
-	
 					if ( get_post_meta( get_the_ID(), 'cit_event_no_online',1 ) == 1 || get_post_meta( get_the_ID(),'cit_event_request_remote',1 ) != 1  ) {
-						echo '<style>#fld_1470598_1-wrap .checkbox {display:none;}</style>';
+						echo '<style>#nf-field-36-container, #fld_1470598_1-wrap .checkbox {display:none;}</style>';
 					}
 
 

@@ -12685,6 +12685,40 @@ input[type=submit] {
   border: 0;
 }
 
+.nf-form-content.nf-form-content button,
+.nf-form-content.nf-form-content input[type=button],
+.nf-form-content.nf-form-content input[type=submit] {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: #2555a5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#53a3be), to(#2555a5));
+  background-image: -webkit-linear-gradient(top, #53a3be, #2555a5);
+  background-image: -moz-linear-gradient(top, #53a3be, #2555a5);
+  background-image: -o-linear-gradient(top, #53a3be, #2555a5);
+  background-image: linear-gradient(to bottom, #53a3be, #2555a5);
+  color: #fff;
+  margin-bottom: 2rem;
+  height: auto;
+}
+.nf-form-content.nf-form-content button:active, .nf-form-content.nf-form-content button:focus, .nf-form-content.nf-form-content button:hover,
+.nf-form-content.nf-form-content input[type=button]:active,
+.nf-form-content.nf-form-content input[type=button]:focus,
+.nf-form-content.nf-form-content input[type=button]:hover,
+.nf-form-content.nf-form-content input[type=submit]:active,
+.nf-form-content.nf-form-content input[type=submit]:focus,
+.nf-form-content.nf-form-content input[type=submit]:hover {
+  background-color: #3a78b0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6ac8ca), to(#3a78b0));
+  background-image: -webkit-linear-gradient(top, #6ac8ca, #3a78b0);
+  background-image: -moz-linear-gradient(top, #6ac8ca, #3a78b0);
+  background-image: -o-linear-gradient(top, #6ac8ca, #3a78b0);
+  background-image: linear-gradient(to bottom, #6ac8ca, #3a78b0);
+  color: #fff;
+}
+
 .button, #tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-events .tribe-events-button,
 .tribe-events-button,
 .tribe-events-read-more, .button-secondary, .button-primary, .ddownload-link {
@@ -14555,13 +14589,6 @@ PRICING TABLE
   position: relative;
   z-index: 90;
 }
-@media print, screen and (min-width: 68.75em) {
-  .pricing > div:hover {
-    z-index: 100;
-    box-shadow: 0 0 0 4px #326aac, 0 0 16px 8px rgba(14, 27, 35, 0.15);
-  }
-}
-
 .pricing-option {
   background: #fafafa;
   border: 1px solid #eee;

@@ -4,6 +4,26 @@ input[type="submit"] {
   border: 0;
 }
 
+
+
+.nf-form-content.nf-form-content {
+  button, 
+  input[type="button"], 
+  input[type="submit"] {
+    @include navigation-type-style;
+    @include border-radius(20px);
+    @include button-gradient(
+      color("blue-gradient", "light"),
+      color("blue-gradient", "dark"),
+      color("blue-gradient", "hover-light"),
+      color("blue-gradient", "hover-dark"),
+      color("white", "base"),
+      color("white", "base")
+    );
+    margin-bottom: 2rem;
+    height: auto;
+  }
+}
 .button {
   @include navigation-type-style;
   @include border-radius(20px);

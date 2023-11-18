@@ -12,7 +12,7 @@
 	}
 	@include breakpoint(large) {
 		> div {
-			@include hover-outline;
+			// @include hover-outline;
 		}
 	}
 }
