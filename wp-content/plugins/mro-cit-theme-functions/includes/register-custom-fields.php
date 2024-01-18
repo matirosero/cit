@@ -355,7 +355,7 @@ function mro_cit_register_report_metabox() {
 
 /*
  * Events custom fields
- */
+ *//*
 add_action( 'cmb2_admin_init', 'mro_cit_register_events_rsvp_metabox' );
 function mro_cit_register_events_rsvp_metabox() {
 	$prefix = 'mro_cit_event_';
@@ -394,7 +394,7 @@ function mro_cit_register_events_rsvp_metabox() {
 		'default'    => esc_attr__( '[caldera_form id="CF5ed7e0f6e05ae"]', 'mro-cit-functions' ),
 	) );
 }
-
+*/
 
 
 
@@ -491,14 +491,11 @@ function mro_cit_register_events_metabox() {
 
 /*
  * Old URL link in sidebar
- */
+ *//*
 add_action( 'cmb2_admin_init', 'mro_cit_register_migration_sidebar_metabox' );
 function mro_cit_register_migration_sidebar_metabox() {
 	$prefix = 'mro_cit_migration_sidebar_';
 
-	/**
-	 * Sample metabox to demonstrate each field type included
-	 */
 	$cmb_demo = new_cmb2_box( array(
 		'id'            => $prefix . 'metabox',
 		'title'         => esc_html__( 'Migration Information', 'mro-cit-functions' ),
@@ -534,6 +531,7 @@ function mro_cit_register_migration_sidebar_metabox() {
 		'before_field'  => 'link_to_old_url',
 	) );
 }
+*/
 
 
 /*
