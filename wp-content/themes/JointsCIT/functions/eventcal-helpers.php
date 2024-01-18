@@ -107,6 +107,8 @@ function mro_cit_rsvp_form() {
 
 		// endif;
 	endif;
+
+
 }
 // remain same
 add_action('tribe_events_single_event_after_the_content','mro_cit_rsvp_form');
