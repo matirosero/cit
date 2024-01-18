@@ -32,8 +32,8 @@ function add_content_after($content) {
                 setup_postdata($post);
                 // var_dump($post);
                 ?>
-                <li>
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail'); ?></a>    
+                <li class="cit__event-speaker">
+                    <div class="cit__event-speaker__pic"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail'); ?></a></div> 
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 </li>
                 <?php

@@ -1,0 +1,29 @@
+ul.cit__event-speakers {
+    list-style: none;
+    margin-left: 0 !important;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    .cit__event-speaker {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            border-bottom: 0;
+            @include hover {
+                color: color('aqua', 'base');
+            }
+        }
+    }
+
+}
+.cit__event-speaker__pic {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
