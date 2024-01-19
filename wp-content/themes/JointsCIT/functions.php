@@ -68,7 +68,11 @@ require_once(get_template_directory().'/functions/actions.php');
 
 // Helpers
 require_once(get_template_directory().'/functions/helpers.php'); 
+
+
+// The Events Calendar
 require_once(get_template_directory().'/functions/eventcal-speakers.php'); 
+require_once(get_template_directory().'/functions/eventcal/include-forms.php'); 
 require_once(get_template_directory().'/functions/eventcal-helpers.php');
 require_once(get_template_directory().'/functions/csv-helpers.php'); 
 

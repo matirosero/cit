@@ -99,6 +99,14 @@ $event_id = get_the_ID();
 	<?php endwhile; ?>
 
 	<?php
+
+	if ( get_field('cit_event_waitlist_exists') ) {
+		echo '<div id="sugiera-invitado" class="box">';
+		echo '<h3>Sugiera un invitado</h3>'; 
+		echo '<p>En caso de que haya espacios disponibles, estaremos enviando invitaciones adicionales.</p>';
+		echo do_shortcode('[ninja_form id=9]');
+		echo '</div>';
+	}
 	/*
 	<!-- Event footer -->
 	<div id="tribe-events-footer">

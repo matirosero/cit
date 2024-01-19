@@ -12,3 +12,18 @@
     column-gap: 2rem;
 
 }
+
+.box {
+	background: #fafafa;
+    border: 1px solid #eee;
+    padding: 1rem;
+
+	> *:first-child {
+		margin-top: 0;
+	}
+	> *:last-child,
+	.submit-container,
+	input[type="submit"] {
+		margin-bottom: 0 !important;
+	}
+}

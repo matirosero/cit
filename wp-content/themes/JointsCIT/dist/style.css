@@ -14909,6 +14909,20 @@ ELEMENTS STYLES
   column-gap: 2rem;
 }
 
+.box {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 1rem;
+}
+.box > *:first-child {
+  margin-top: 0;
+}
+.box > *:last-child,
+.box .submit-container,
+.box input[type=submit] {
+  margin-bottom: 0 !important;
+}
+
 /*********************
 MEDIA STYLES
 *********************/
