@@ -62,11 +62,17 @@ function mro_cit_rsvp_form() {
 			} else {
 				$form_shortcode_personal = get_field('cit_shortcode_loggedin', 'option');
 
-                //If special forms
-                if ( get_field('cit_event_choose_forms') ) {
-                    $form_shortcode_personal = '[[ninja_form id=8]]';
-                }
-	
+
+
+				if (get_post_meta(get_the_ID(), 'cit_event_request_remote_personales',1) == 1) {
+					$form_shortcode_personal = get_field('cit_shortcode_loggedin_hybrid', 'option');
+				}
+
+				//If special forms
+				if ( get_field('cit_event_choose_forms') ) {
+					$form_shortcode_personal = '[[ninja_form id=8]]';
+				}
+
 				echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
 	
 				echo do_shortcode( $form_shortcode_personal );

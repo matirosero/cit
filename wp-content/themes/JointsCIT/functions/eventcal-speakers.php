@@ -39,11 +39,24 @@ function add_content_after($content) {
                 <?php
             }
             echo '</ul>';
+
             wp_reset_postdata();
             $speakers = ob_get_clean();
         }
+
+        
         
         $content .= $speakers;
+
+        $add = '';
+        if (get_post_meta($post->ID,'cit_event_sponsors',1)) {
+            // $logos = get_post_meta($post->ID,'cit_event_sponsors',1);
+            // if( $logos ) {
+                $add = wp_get_attachment_image( get_post_meta($post->ID,'cit_event_sponsors',1), 'full' );
+                
+            // }
+        }
+        $content .= $logos . '<h3 style="margin-top: 40px;">Patrocinan</h3>' . $add;
     }
     return $content;
 }
