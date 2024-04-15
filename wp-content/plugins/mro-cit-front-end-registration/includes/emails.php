@@ -85,7 +85,7 @@ if ( !function_exists( 'wp_new_user_notification' ) ) {
 				);
 
 
-			// Admin email is Afiliado Personal
+			// Admin email is Afiliado Empresarial
 			} elseif ( in_array( 'afiliado_empresarial', $user_roles) || in_array( 'afiliado_institucional', $user_roles) ) {
 
 				if ( in_array( 'afiliado_empresarial', $user_roles) ) {
@@ -132,15 +132,12 @@ if ( !function_exists( 'wp_new_user_notification' ) ) {
 
 			// Admin email is Afiliado Personal
 			} elseif ( in_array( 'afiliado_personal', $user_roles) ) {
-
+				/*
 				$subject = 'Nuevo afiliado personal al  Club de Investigación Tecnológica';
 
-				/* translators: %s: site title */
 				$message  = sprintf( __( 'Se ha registrado un nuevo afiliado en %s:' ), $blogname ) . "\r\n\r\n";
 
-				/* translators: %s: user login */
 				$message .= sprintf( __( 'Usuario: %s' ), $user->user_login ) . "\r\n\r\n";
-				/* translators: %s: user email address */
 				$message .= sprintf( __( 'Email: %s' ), $user->user_email ) . "\r\n";
 				$message .= sprintf( __( 'Nombre: %1$s %2$s' ), $user->first_name, $user->last_name ) . "\r\n\r\n";
 
@@ -156,18 +153,19 @@ if ( !function_exists( 'wp_new_user_notification' ) ) {
 					get_option( 'admin_email' ),
 					'gekidasa+admincit@gmail.com',
 				);
+				*/
 
 			// Admin email is Afiliado Personal
 			} else {
 
+				/*
+
 				$subject = 'Nuevo afiliado al Club de Investigación Tecnológica';
 
-				/* translators: %s: site title */
 				$message  = sprintf( __( 'Se ha registrado un nuevo afiliado en %s:' ), $blogname ) . "\r\n\r\n";
 
-				/* translators: %s: user login */
 				$message .= sprintf( __( 'Usuario: %s' ), $user->user_login ) . "\r\n\r\n";
-				/* translators: %s: user email address */
+
 				$message .= sprintf( __( 'Email: %s' ), $user->user_email ) . "\r\n";
 				$message .= sprintf( __( 'Nombre: %1$s %2$s' ), $user->first_name, $user->last_name ) . "\r\n\r\n";
 
@@ -183,42 +181,48 @@ if ( !function_exists( 'wp_new_user_notification' ) ) {
 					get_option( 'admin_email' ),
 					'gekidasa+admincit@gmail.com',
 				);
+
+				*/
 			}
 
+			if ( !in_array( 'afiliado_personal', $user_roles) ) {
 
-			// Set up admin notification email
-			$wp_new_user_notification_email_admin = array(
-				'to'      => $recipient,
-				/* translators: Password change notification email subject. %s: Site title */
-				'subject' => $subject,
-				'message' => $message,
-				'headers' => '',
-			);
+				
+				// Set up admin notification email
+				$wp_new_user_notification_email_admin = array(
+					'to'      => $recipient,
+					/* translators: Password change notification email subject. %s: Site title */
+					'subject' => $subject,
+					'message' => $message,
+					'headers' => '',
+				);
 
-			/**
-			 * Filters the contents of the new user notification email sent to the site admin.
-			 *
-			 * @since 4.9.0
-			 *
-			 * @param array   $wp_new_user_notification_email {
-			 *     Used to build wp_mail().
-			 *
-			 *     @type string $to      The intended recipient - site admin email address.
-			 *     @type string $subject The subject of the email.
-			 *     @type string $message The body of the email.
-			 *     @type string $headers The headers of the email.
-			 * }
-			 * @param WP_User $user     User object for new user.
-			 * @param string  $blogname The site title.
-			 */
-			$wp_new_user_notification_email_admin = apply_filters( 'wp_new_user_notification_email_admin', $wp_new_user_notification_email_admin, $user, $blogname );
+				/**
+				 * Filters the contents of the new user notification email sent to the site admin.
+				 *
+				 * @since 4.9.0
+				 *
+				 * @param array   $wp_new_user_notification_email {
+				 *     Used to build wp_mail().
+				 *
+				 *     @type string $to      The intended recipient - site admin email address.
+				 *     @type string $subject The subject of the email.
+				 *     @type string $message The body of the email.
+				 *     @type string $headers The headers of the email.
+				 * }
+				 * @param WP_User $user     User object for new user.
+				 * @param string  $blogname The site title.
+				 */
+				$wp_new_user_notification_email_admin = apply_filters( 'wp_new_user_notification_email_admin', $wp_new_user_notification_email_admin, $user, $blogname );
 
-			@wp_mail(
-				$wp_new_user_notification_email_admin['to'],
-				wp_specialchars_decode( sprintf( $wp_new_user_notification_email_admin['subject'], $blogname ) ),
-				$wp_new_user_notification_email_admin['message'],
-				$wp_new_user_notification_email_admin['headers']
-			);
+				@wp_mail(
+					$wp_new_user_notification_email_admin['to'],
+					wp_specialchars_decode( sprintf( $wp_new_user_notification_email_admin['subject'], $blogname ) ),
+					$wp_new_user_notification_email_admin['message'],
+					$wp_new_user_notification_email_admin['headers']
+				);
+
+			}
 
 			if ( $switched_locale ) {
 				restore_previous_locale();

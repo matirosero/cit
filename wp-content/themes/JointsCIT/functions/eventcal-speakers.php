@@ -25,7 +25,7 @@ function add_content_after($content) {
 
             ob_start();
 
-            echo '<h3>Expositores</h3>';
+            echo '<h3>Panelistas</h3>';
             echo '<ul class="cit__event-speakers">';
 
             foreach( $speakers_ids as $post ) {

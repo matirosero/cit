@@ -65,34 +65,10 @@ function mro_cit_membership_table($atts) {
 
     $personal = get_permalink( get_page_by_title( 'Afiliación Personal' ) );
     $empresarial = get_permalink( get_page_by_title( 'Afiliación Empresarial' ) );
-    $institucional = get_permalink( get_page_by_title( 'Afiliación Institucional' ) );
+    // $institucional = get_permalink( get_page_by_title( 'Afiliación Institucional' ) );
 
-    $content = '<div class="pricing grid-x grid-padding-x small-up-1 xxlarge-up-3" data-equalizer="pricing" data-equalize-on="large">
-    <div class="cell">
-        <div class="pricing-option">
-            <header class="pricing-header">
-                <h2>Institucional</h2>
+    $content = '<div class="pricing grid-x grid-padding-x small-up-1 large-up-2" data-equalizer="pricing" data-equalize-on="large">
 
-                <div class="cd-price">
-                    <span>$900</span>
-                    <span>año</span>
-                </div>
-            </header> <!-- .cd-pricing-header -->
-
-            <div class="cd-pricing-features" data-equalizer-watch="pricing">
-                <ul>
-                    <li class="available">Boletín informativo</li>
-                    <li class="available">Descargar informes</li>
-                    <li class="available">3 asistentes de la institución a eventos del Club</li>
-                    <li class="available">Acceso remoto a eventos (streaming)</li>
-                </ul>
-            </div> <!-- .cd-pricing-features -->
-
-            <footer class="cd-pricing-footer">
-                <a href="'.$institucional.'" class="button">Escoger</a>
-            </footer> <!-- .cd-pricing-footer -->
-        </div>
-    </div>
 
     <div class="cell">
         <div class="pricing-option">
@@ -109,7 +85,7 @@ function mro_cit_membership_table($atts) {
                 <ul>
                     <li class="available">Boletín informativo</li>
                     <li class="available">Descargar informes</li>
-                    <li class="available">2 asistentes de la empresa a eventos del Club</li>
+                    <li class="available">Colaboradores asisten a eventos según el tema</li>
                     <li class="available">Acceso remoto a eventos (streaming)</li>
                 </ul>
             </div> <!-- .cd-pricing-features -->
