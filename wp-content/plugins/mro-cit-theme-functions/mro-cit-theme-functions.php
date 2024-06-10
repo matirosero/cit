@@ -151,3 +151,11 @@ require_once( dirname( __FILE__ ) . '/includes/acf-options.php' );
  * @since 0.1.0
  */
 require_once( dirname( __FILE__ ) . '/includes/redirect.php' );
+
+
+/**
+ * NInja forms stuff.
+ *
+ * @since 0.1.0
+ */
+require_once( dirname( __FILE__ ) . '/includes/forms/ninja/countries.php' );

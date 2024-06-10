@@ -64,37 +64,11 @@ function mro_cit_list_members($atts) {
 function mro_cit_membership_table($atts) {
 
     $personal = get_permalink( get_page_by_title( 'Afiliación Personal' ) );
+    $personalplus = get_permalink( get_page_by_title( 'Afiliación Personal Plus' ) );
     $empresarial = get_permalink( get_page_by_title( 'Afiliación Empresarial' ) );
     // $institucional = get_permalink( get_page_by_title( 'Afiliación Institucional' ) );
 
-    $content = '<div class="pricing grid-x grid-padding-x small-up-1 large-up-2" data-equalizer="pricing" data-equalize-on="large">
-
-
-    <div class="cell">
-        <div class="pricing-option">
-            <header class="pricing-header">
-                <h2>Empresarial</h2>
-
-                <div class="cd-price">
-                    <span>$650</span>
-                    <span>año</span>
-                </div>
-            </header> <!-- .cd-pricing-header -->
-
-            <div class="cd-pricing-features" data-equalizer-watch="pricing">
-                <ul>
-                    <li class="available">Boletín informativo</li>
-                    <li class="available">Descargar informes</li>
-                    <li class="available">Colaboradores asisten a eventos según el tema</li>
-                    <li class="available">Acceso remoto a eventos (streaming)</li>
-                </ul>
-            </div> <!-- .cd-pricing-features -->
-
-            <footer class="cd-pricing-footer">
-                <a href="'.$empresarial.'" class="button">Escoger</a>
-            </footer> <!-- .cd-pricing-footer -->
-        </div>
-    </div>
+    $content = '<div class="pricing grid-x grid-padding-x small-up-1 large-up-3" data-equalizer="pricing" data-equalize-on="large">
 
     <div class="cell">
         <div class="pricing-option">
@@ -109,7 +83,7 @@ function mro_cit_membership_table($atts) {
             <div class="cd-pricing-features" data-equalizer-watch="pricing">
                 <ul>
                     <li class="available">Boletín informativo</li>
-                    <li class="available">Descargar informes</li>
+                    <li class="available">Acceso remoto a eventos (streaming)</li>
                     <li class="available">Puede comprar entradas a eventos del Club</li>
                     <!-- <li class="unavailable">Acceso remoto a eventos (streaming)</li> -->
                 </ul>
@@ -120,6 +94,57 @@ function mro_cit_membership_table($atts) {
             </footer> <!-- .cd-pricing-footer -->
         </div>
     </div>
+    <div class="cell">
+        <div class="pricing-option">
+            <header class="pricing-header">
+                <h2>Personal Plus</h2>
+
+                <div class="cd-price">
+                    <span>$250</span>
+                    <span>año</span>
+                </div>
+            </header> <!-- .cd-pricing-header -->
+
+            <div class="cd-pricing-features" data-equalizer-watch="pricing">
+                <ul>
+                    <li class="available">Boletín informativo</li>
+                    <li class="available">Acceso remoto a eventos (streaming)</li>
+                    <li class="available">Asistencia presencial a eventos</li>
+                    <!-- <li class="unavailable">Acceso remoto a eventos (streaming)</li> -->
+                </ul>
+            </div> <!-- .cd-pricing-features -->
+
+            <footer class="cd-pricing-footer">
+                <a href="'.$personalplus.'" class="button">Escoger</a>
+            </footer> <!-- .cd-pricing-footer -->
+        </div>
+    </div>    
+    <div class="cell">
+        <div class="pricing-option">
+            <header class="pricing-header">
+                <h2>Empresarial</h2>
+
+                <div class="cd-price">
+                    <span>$650</span>
+                    <span>año</span>
+                </div>
+            </header> <!-- .cd-pricing-header -->
+
+            <div class="cd-pricing-features" data-equalizer-watch="pricing">
+                <ul>
+                    <li class="available">Boletín informativo</li>
+                    <li class="available">Colaboradores asisten a eventos según el tema</li>
+                    <li class="available">Colaboradore tienen acceso remoto a eventos (streaming)</li>
+                </ul>
+            </div> <!-- .cd-pricing-features -->
+
+            <footer class="cd-pricing-footer">
+                <a href="'.$empresarial.'" class="button">Escoger</a>
+            </footer> <!-- .cd-pricing-footer -->
+        </div>
+    </div>
+
+
 
     </div>';
 
