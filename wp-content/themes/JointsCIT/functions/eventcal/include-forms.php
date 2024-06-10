@@ -112,7 +112,7 @@ function mro_cit_rsvp_form() {
 
 		} else {
 			// echo '<p class="callout warning small">Debe ingresar al sitio para inscribirse en el evento.</p>';
-			echo '<p class="callout primary small">Si desea asistir al evento y no es afiliado del Club, puede adquirir una entrada por $20. Puede esribir a <a href="mailto:leda@clubdeinvestigacion.com">leda@clubdeinvestigacion.com</a> para realizar la compra.</p>';
+			echo '<p class="callout primary small">Debe ingresar al sitio para inscribirse en el evento.</p>';
 		}
 
         echo '</div>';
