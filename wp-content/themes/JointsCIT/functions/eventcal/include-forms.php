@@ -60,20 +60,23 @@ function mro_cit_rsvp_form() {
 
         //Solo empresariales, no vienen parametros correo    
 		} elseif ( get_field('cit_event_empresariales_only') ) {
-			echo '<p class="callout primary small">Lo sentimos, este evento es solo para afiliados empresariales.</p>';
+			echo '<p class="callout primary small">Lo sentimos, este evento es solo para afiliados empresariales. </p>';
 
 		// Logged in
 		} elseif ( (current_user_can( 'buy_event_tickets' ) || current_user_can( 'rsvp_event') ) ) {
 
 
-			if (get_post_meta(get_the_ID(), 'cit_event_no_online',1) == 1) {
-				echo '<p>Lo sentimos, este evento es solo para afiliados empresariales.</p>';
-			} else {
+
+			// if (get_post_meta(get_the_ID(), 'cit_event_no_online',1) == 1) {
+			// 	echo '<p>Lo sentimos, este evento es solo para afiliados.</p>';
+				
+			// } else {
 				$form_shortcode_personal = get_field('cit_shortcode_loggedin', 'option');
 
 
 
 				if (get_post_meta(get_the_ID(), 'cit_event_request_remote_personales',1) == 1) {
+					echo 'remote';
 					$form_shortcode_personal = get_field('cit_shortcode_loggedin_hybrid', 'option');
 				}
 
@@ -85,7 +88,7 @@ function mro_cit_rsvp_form() {
 				echo '<p class="callout primary small">Llene este formulario para inscribirse a la transimisión del evento.</p>';
 	
 				echo do_shortcode( $form_shortcode_personal );
-			}
+			// }
 
 
 		// Logged out but public event
